@@ -1006,11 +1006,11 @@
     .line 20
     .line 21
     .line 22
-    const-string v0, "com.miui.gallery"
+    const-string v0, "android.intent.category.APP_GALLERY"
 
     .line 23
     .line 24
-    invoke-virtual {p0, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {p0, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 25
     .line 26
@@ -1217,11 +1217,6 @@
     .line 79
     .line 80
     :goto_0
-    const-string p1, "com.miui.gallery"
-
-    .line 81
-    .line 82
-    invoke-virtual {p0, p1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 83
     .line 84
