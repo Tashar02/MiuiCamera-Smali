@@ -1637,7 +1637,7 @@
     .locals 2
 
     .line 1
-    const-string v0, "com.miui.gallery"
+    const-string v0, "com.google.android.apps.photos"
 
     .line 2
     .line 3

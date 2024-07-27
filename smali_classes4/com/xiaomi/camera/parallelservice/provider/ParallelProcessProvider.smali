@@ -6,7 +6,7 @@
 # static fields
 .field private static final CALLER_GOOGLE_PHOTO:Ljava/lang/String; = "com.google.android.apps.photos"
 
-.field private static final CALLER_MIUI_GALLERY:Ljava/lang/String; = "com.miui.gallery"
+.field private static final CALLER_MIUI_GALLERY:Ljava/lang/String; = "com.google.android.apps.photos"
 
 .field private static final CALLING_SELF:Ljava/lang/String; = "com.android.camera"
 
@@ -254,7 +254,7 @@
 
     .line 40
     :sswitch_2
-    const-string v0, "com.miui.gallery"
+    const-string v0, "com.google.android.apps.photos"
 
     .line 41
     .line 42
@@ -1221,7 +1221,7 @@
     move-result-object v2
 
     .line 12
-    const-string v3, "com.miui.gallery"
+    const-string v3, "com.google.android.apps.photos"
 
     .line 13
     .line 14

@@ -106,7 +106,7 @@
 
 .field private static final SAVE_TO_CLOUD_ALBUM_NOGAUSSIAN:Ljava/lang/String; = "extra_no_gaussian"
 
-.field private static final SAVE_TO_CLOUD_ALBUM_PACKAGE:Ljava/lang/String; = "com.miui.gallery"
+.field private static final SAVE_TO_CLOUD_ALBUM_PACKAGE:Ljava/lang/String; = "com.google.android.apps.photos"
 
 .field private static final SAVE_TO_CLOUD_ALBUM_PATH_KAY:Ljava/lang/String; = "extra_file_path"
 
@@ -5740,7 +5740,7 @@
     .line 6
     .line 7
     .line 8
-    const-string v1, "com.miui.gallery"
+    const-string v1, "com.google.android.apps.photos"
 
     .line 9
     .line 10

@@ -515,7 +515,7 @@
     move-result-object p0
 
     .line 31
-    const-string p1, "com.miui.gallery"
+    const-string p1, "com.google.android.apps.photos"
 
     .line 32
     .line 33
@@ -2948,7 +2948,7 @@
     .line 34
     .line 35
     .line 36
-    const-string v2, "com.miui.gallery"
+    const-string v2, "com.google.android.apps.photos"
 
     .line 37
     .line 38
