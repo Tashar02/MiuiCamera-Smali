@@ -3352,12 +3352,14 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+    const/4 v2, -0x1
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v0
 
     .line 9
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3378,7 +3380,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21
@@ -3423,7 +3425,8 @@
     move-result v1
 
     .line 42
-    const-string/jumbo v3, "power_double_tap"
+    # CAMERA_LAUNCH_SOURCE_POWER_DOUBLE_TAP = 1
+    const/4 v4, 0x1
 
     .line 43
     .line 44
@@ -3432,23 +3435,27 @@
 
     .line 46
     .line 47
-    invoke-static {v0, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    const/4 v2, 0x1
 
     .line 48
     .line 49
     .line 50
-    move-result p0
+    if-eq v0, v4, :cond_3
 
     .line 51
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const/4 v2, 0x0
 
     .line 52
     .line 53
     .line 54
-    move-result-object p0
+
+    :cond_3
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 55
-    return-object p0
+    move-result-object v2
+
+    return-object v2
 
     .line 56
     :cond_0
@@ -3475,65 +3482,9 @@
 
     .line 66
     .line 67
-    invoke-static {v0, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    if-eq v0, v4, :cond_1
 
-    .line 68
-    .line 69
-    .line 70
-    move-result p0
-
-    .line 71
-    if-nez p0, :cond_1
-
-    .line 72
-    .line 73
-    const-string p0, "double_click_volume_down"
-
-    .line 74
-    .line 75
-    invoke-static {v0, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    .line 76
-    .line 77
-    .line 78
-    move-result p0
-
-    .line 79
-    if-nez p0, :cond_1
-
-    .line 80
-    .line 81
-    const-string/jumbo p0, "stabilizer"
-
-    .line 82
-    .line 83
-    .line 84
-    invoke-static {v0, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    .line 85
-    .line 86
-    .line 87
-    move-result p0
-
-    .line 88
-    if-nez p0, :cond_1
-
-    .line 89
-    .line 90
-    const-string/jumbo p0, "miwatch"
-
-    .line 91
-    .line 92
-    .line 93
-    invoke-static {v0, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    .line 94
-    .line 95
-    .line 96
-    move-result p0
-
-    .line 97
-    if-eqz p0, :cond_2
+    goto :cond_2
 
     .line 98
     .line 99
@@ -4350,44 +4301,21 @@
 
     .line 56
     .line 57
-    invoke-virtual {p0, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+    const/4 v1, -0x1
 
-    .line 58
-    .line 59
-    .line 60
-    move-result-object p0
+    invoke-virtual {p0, v0, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    .line 61
-    const-string v0, "lockscreen_affordance"
-
-    .line 62
-    .line 63
-    invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    .line 64
-    .line 65
-    .line 66
-    move-result v0
-
-    .line 67
-    if-nez v0, :cond_3
-
-    .line 68
-    .line 69
-    const-string/jumbo v0, "power_double_tap"
-
-    .line 70
-    .line 71
-    .line 72
-    invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    .line 73
-    .line 74
-    .line 75
     move-result p0
 
-    .line 76
-    if-eqz p0, :cond_4
+    # CAMERA_LAUNCH_SOURCE_POWER_DOUBLE_TAP = 1
+    const/4 v1, 0x1
+    if-eq p0, v1, :cond_3
+
+    # CAMERA_LAUNCH_SOURCE_QUICK_AFFORDANCE = 3
+    const/4 v1, 0x3
+    if-eq p0, v1, :cond_3
+
+    goto :cond_4
 
     .line 77
     .line 78
