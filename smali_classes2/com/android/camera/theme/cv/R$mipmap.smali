@@ -16,7 +16,6 @@
 # static fields
 .field public static final ic_launcher_camera_cv:I = 0x7f0f0001
 
-.field public static final launcher_ic_fg_cv:I = 0x7f0f0004
 
 # direct methods
 .method private constructor <init>()V
