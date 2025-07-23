@@ -50,17 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "listItems"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,20 +63,40 @@
     .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
+    .line 5
     iput v0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSelectedItem:I
 
-    .line 3
+    .line 6
+    .line 7
     iput v0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mPreSelectedItem:I
 
-    .line 4
+    .line 8
+    .line 9
     iput-object p1, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mContext:Landroid/content/Context;
 
-    .line 5
+    .line 10
+    .line 11
     iput-object p2, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSingleCheckList:Ljava/util/List;
 
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public static synthetic OooO00o(Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->lambda$setAccessible$0(Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -97,6 +106,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSelectedItem:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -106,6 +117,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSelectedItem:I
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -115,6 +128,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -124,6 +139,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mPreSelectedItem:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -133,6 +150,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mPreSelectedItem:I
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -142,6 +161,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSingleCheckList:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -151,17 +172,24 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
-.method public static synthetic lambda$setAccessible$0(Landroid/view/View;)V
+.method private static synthetic lambda$setAccessible$0(Landroid/view/View;)V
     .locals 1
 
+    .line 1
     const/16 v0, 0x80
 
-    .line 1
+    .line 2
+    .line 3
     invoke-virtual {p0, v0}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -173,45 +201,37 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSingleCheckList:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
 .method public onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "recyclerView"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1010
-        }
-        names = {
-            "viewHolder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;
@@ -231,18 +251,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position",
-            "payloads"
-        }
-    .end annotation
 
     .line 2
     check-cast p1, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;
@@ -254,16 +262,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x10
-        }
-        names = {
-            "viewHolder",
-            "position"
-        }
-    .end annotation
 
     .line 3
     iget-object v0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSingleCheckList:Ljava/util/List;
@@ -315,19 +313,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position",
-            "payloads"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -361,16 +346,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "viewGroup",
-            "i"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;
@@ -382,16 +357,6 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "viewGroup",
-            "i"
-        }
-    .end annotation
 
     .line 2
     iget-object p2, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mContext:Landroid/content/Context;
@@ -400,7 +365,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0d012b
+    const v0, 0x7f0e0135
 
     const/4 v1, 0x0
 
@@ -419,134 +384,201 @@
 
 .method public onItemHolderClick(Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "holder"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->onItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v1, 0x0
 
-    .line 2
+    .line 6
     invoke-static {p1}, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;->access$000(Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter$SingleCheckViewHolder;)Landroid/view/View;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object v2
 
-    .line 3
+    .line 10
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->getAdapterPosition()I
 
+    .line 11
+    .line 12
+    .line 13
     move-result v3
 
+    .line 14
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->getItemId()J
 
+    .line 15
+    .line 16
+    .line 17
     move-result-wide v4
 
-    .line 4
+    .line 18
     invoke-interface/range {v0 .. v5}, Landroid/widget/AdapterView$OnItemClickListener;->onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
 
+    .line 19
+    .line 20
+    .line 21
     :cond_0
     return-void
 .end method
 
 .method public setAccessible(Landroid/view/View;IZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "desc",
-            "isSelected"
-        }
-    .end annotation
 
+    .line 1
     if-nez p1, :cond_0
 
+    .line 2
+    .line 3
     return-void
 
+    .line 4
     :cond_0
     if-eqz p3, :cond_1
 
-    .line 1
+    .line 5
+    .line 6
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 7
+    .line 8
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p3
 
+    .line 15
     invoke-virtual {p3, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p2
 
+    .line 19
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 20
+    .line 21
+    .line 22
     const-string p2, ", "
 
+    .line 23
+    .line 24
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
+    .line 25
+    .line 26
+    .line 27
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 28
+    .line 29
+    .line 30
     move-result-object p2
 
-    const p3, 0x7f1200bb
+    .line 31
+    const p3, 0x7f1300bb
 
+    .line 32
+    .line 33
+    .line 34
     invoke-virtual {p2, p3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 35
+    .line 36
+    .line 37
     move-result-object p2
 
+    .line 38
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 39
+    .line 40
+    .line 41
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 42
+    .line 43
+    .line 44
     move-result-object p0
 
-    .line 3
+    .line 45
     invoke-virtual {p1, p0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 4
+    .line 46
+    .line 47
+    .line 48
     invoke-static {}, Lcom/android/camera/Util;->isAccessible()Z
 
+    .line 49
+    .line 50
+    .line 51
     move-result p0
 
+    .line 52
     if-eqz p0, :cond_2
 
-    .line 5
-    new-instance p0, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO0OOO00/o0OoOo0;
+    .line 53
+    .line 54
+    new-instance p0, Lcom/android/camera/fragment/beauty/o0OoOo0;
 
-    invoke-direct {p0, p1}, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO0OOO00/o0OoOo0;-><init>(Landroid/view/View;)V
+    .line 55
+    .line 56
+    invoke-direct {p0, p1}, Lcom/android/camera/fragment/beauty/o0OoOo0;-><init>(Landroid/view/View;)V
 
+    .line 57
+    .line 58
+    .line 59
     const-wide/16 p2, 0x64
 
+    .line 60
+    .line 61
     invoke-virtual {p1, p0, p2, p3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
+    .line 62
+    .line 63
+    .line 64
     goto :goto_0
 
-    .line 6
+    .line 65
     :cond_1
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 66
+    .line 67
+    .line 68
     move-result-object p0
 
+    .line 69
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 70
+    .line 71
+    .line 72
     move-result-object p0
 
+    .line 73
     invoke-virtual {p1, p0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
+    .line 74
+    .line 75
+    .line 76
     :cond_2
     :goto_0
     return-void
@@ -554,51 +586,33 @@
 
 .method public setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "onItemClickListener"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->onItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setRotation(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "newDegree"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSelectedPosition(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "position"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/beauty/TemplateMakeupsAdapter;->mSelectedItem:I
 
+    .line 2
+    .line 3
     return-void
 .end method

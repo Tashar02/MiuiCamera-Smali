@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/util/pool/StateVerifier$DefaultStateVerifier;
+.class Lcom/bumptech/glide/util/pool/StateVerifier$DefaultStateVerifier;
 .super Lcom/bumptech/glide/util/pool/StateVerifier;
 .source "StateVerifier.java"
 
@@ -22,11 +22,15 @@
 .method public constructor <init>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     invoke-direct {p0, v0}, Lcom/bumptech/glide/util/pool/StateVerifier;-><init>(Lcom/bumptech/glide/util/pool/StateVerifier$1;)V
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -38,6 +42,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/bumptech/glide/util/pool/StateVerifier$DefaultStateVerifier;->isReleased:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -47,17 +53,28 @@
     .line 1
     iget-boolean p0, p0, Lcom/bumptech/glide/util/pool/StateVerifier$DefaultStateVerifier;->isReleased:Z
 
+    .line 2
+    .line 3
     if-nez p0, :cond_0
 
+    .line 4
+    .line 5
     return-void
 
-    .line 2
+    .line 6
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
+    .line 7
+    .line 8
     const-string v0, "Already released"
 
+    .line 9
+    .line 10
     invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    .line 11
+    .line 12
+    .line 13
     throw p0
 .end method

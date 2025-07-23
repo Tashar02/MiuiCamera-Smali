@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/dialog/AutoHibernationFragment$2;
+.class Lcom/android/camera/fragment/dialog/AutoHibernationFragment$2;
 .super Lmiuix/animation/listener/TransitionListener;
 .source "AutoHibernationFragment.java"
 
@@ -15,32 +15,29 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/dialog/AutoHibernationFragment;
+.field final synthetic this$0:Lcom/android/camera/fragment/dialog/AutoHibernationFragment;
 
-.field public final synthetic val$view:Landroid/view/View;
+.field final synthetic val$view:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/dialog/AutoHibernationFragment;Landroid/view/View;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$view"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/dialog/AutoHibernationFragment$2;->this$0:Lcom/android/camera/fragment/dialog/AutoHibernationFragment;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera/fragment/dialog/AutoHibernationFragment$2;->val$view:Landroid/view/View;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Lmiuix/animation/listener/TransitionListener;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -48,22 +45,21 @@
 # virtual methods
 .method public onComplete(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "toTag"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Lmiuix/animation/listener/TransitionListener;->onComplete(Ljava/lang/Object;)V
 
     .line 2
+    .line 3
+    .line 4
     iget-object p0, p0, Lcom/android/camera/fragment/dialog/AutoHibernationFragment$2;->val$view:Landroid/view/View;
 
+    .line 5
+    .line 6
     invoke-static {p0}, Lcom/android/camera/animation/FolmeUtils;->clean(Landroid/view/View;)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method

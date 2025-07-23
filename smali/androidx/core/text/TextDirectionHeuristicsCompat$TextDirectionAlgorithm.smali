@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
+.class interface abstract Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
 .super Ljava/lang/Object;
 .source "TextDirectionHeuristicsCompat.java"
 

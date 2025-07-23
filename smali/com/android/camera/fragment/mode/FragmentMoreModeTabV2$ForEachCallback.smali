@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/camera/fragment/mode/FragmentMoreModeTabV2$ForEachCallback;
+.class interface abstract Lcom/android/camera/fragment/mode/FragmentMoreModeTabV2$ForEachCallback;
 .super Ljava/lang/Object;
 .source "FragmentMoreModeTabV2.java"
 
@@ -19,12 +19,4 @@
 .end method
 
 .method public abstract run(Lcom/android/camera/fragment/mode/ModeViewHolder;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "holder"
-        }
-    .end annotation
 .end method

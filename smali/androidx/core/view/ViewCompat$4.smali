@@ -1,11 +1,11 @@
-.class public Landroidx/core/view/ViewCompat$4;
+.class Landroidx/core/view/ViewCompat$4;
 .super Landroidx/core/view/ViewCompat$AccessibilityViewProperty;
 .source "ViewCompat.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/core/view/ViewCompat;->paneTitleProperty()Landroidx/core/view/ViewCompat$AccessibilityViewProperty;
+    value = Landroidx/core/view/ViewCompat;->accessibilityHeadingProperty()Landroidx/core/view/ViewCompat$AccessibilityViewProperty;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,32 +16,39 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Landroidx/core/view/ViewCompat$AccessibilityViewProperty<",
-        "Ljava/lang/CharSequence;",
+        "Ljava/lang/Boolean;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/Class;II)V
+.method public constructor <init>(ILjava/lang/Class;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;-><init>(ILjava/lang/Class;II)V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;-><init>(ILjava/lang/Class;I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public frameworkGet(Landroid/view/View;)Ljava/lang/CharSequence;
+.method public frameworkGet(Landroid/view/View;)Ljava/lang/Boolean;
     .locals 0
     .annotation build Landroidx/annotation/RequiresApi;
         value = 0x1c
     .end annotation
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/View;->getAccessibilityPaneTitle()Ljava/lang/CharSequence;
+    invoke-static {p1}, Landroidx/core/view/ViewCompat$Api28Impl;->isAccessibilityHeading(Landroid/view/View;)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 
@@ -55,21 +62,25 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/core/view/ViewCompat$4;->frameworkGet(Landroid/view/View;)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p1}, Landroidx/core/view/ViewCompat$4;->frameworkGet(Landroid/view/View;)Ljava/lang/Boolean;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public frameworkSet(Landroid/view/View;Ljava/lang/CharSequence;)V
+.method public frameworkSet(Landroid/view/View;Ljava/lang/Boolean;)V
     .locals 0
     .annotation build Landroidx/annotation/RequiresApi;
         value = 0x1c
     .end annotation
 
     .line 2
-    invoke-virtual {p1, p2}, Landroid/view/View;->setAccessibilityPaneTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    invoke-static {p1, p0}, Landroidx/core/view/ViewCompat$Api28Impl;->setAccessibilityHeading(Landroid/view/View;Z)V
 
     return-void
 .end method
@@ -81,18 +92,18 @@
     .end annotation
 
     .line 1
-    check-cast p2, Ljava/lang/CharSequence;
+    check-cast p2, Ljava/lang/Boolean;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$4;->frameworkSet(Landroid/view/View;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$4;->frameworkSet(Landroid/view/View;Ljava/lang/Boolean;)V
 
     return-void
 .end method
 
-.method public shouldUpdate(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+.method public shouldUpdate(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
     .locals 0
 
     .line 2
-    invoke-static {p1, p2}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->booleanNullToFalseEquals(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p0
 
@@ -105,11 +116,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Ljava/lang/CharSequence;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p2, Ljava/lang/CharSequence;
+    check-cast p2, Ljava/lang/Boolean;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$4;->shouldUpdate(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$4;->shouldUpdate(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p0
 

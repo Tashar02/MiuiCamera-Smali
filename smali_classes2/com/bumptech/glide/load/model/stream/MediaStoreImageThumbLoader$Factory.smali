@@ -39,8 +39,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/model/stream/MediaStoreImageThumbLoader$Factory;->context:Landroid/content/Context;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -66,15 +70,23 @@
     .line 1
     new-instance p1, Lcom/bumptech/glide/load/model/stream/MediaStoreImageThumbLoader;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Lcom/bumptech/glide/load/model/stream/MediaStoreImageThumbLoader$Factory;->context:Landroid/content/Context;
 
+    .line 4
+    .line 5
     invoke-direct {p1, p0}, Lcom/bumptech/glide/load/model/stream/MediaStoreImageThumbLoader;-><init>(Landroid/content/Context;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-object p1
 .end method
 
 .method public teardown()V
     .locals 0
 
+    .line 1
     return-void
 .end method

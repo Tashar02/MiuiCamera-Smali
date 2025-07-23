@@ -1,4 +1,4 @@
-.class public synthetic Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoEncoderAsync$1;
+.class synthetic Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoEncoderAsync$1;
 .super Ljava/lang/Object;
 .source "XiaomiAlgoEncoderAsync.java"
 

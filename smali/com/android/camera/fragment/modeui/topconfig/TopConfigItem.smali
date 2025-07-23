@@ -42,14 +42,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem$Builder;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "builder"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -121,6 +113,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->configItem:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -130,6 +124,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->mExtraResourceUpdater:Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem$ExtraResourceUpdater;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -139,6 +135,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->gravity:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -148,6 +146,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->index:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -157,6 +157,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->onClickListener:Landroid/view/View$OnClickListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -166,6 +168,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->mResourceUpdater:Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem$ResourceUpdater;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -183,6 +187,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->subTopConfigItems:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -192,90 +198,62 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->enable:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setConfigItem(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "configItem"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->configItem:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setEnable(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->enable:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setGravity(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "gravity"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->gravity:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setIndex(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "index"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->index:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setResourceUpdater(Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem$ResourceUpdater;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mResourceUpdater"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->mResourceUpdater:Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem$ResourceUpdater;
 
+    .line 2
+    .line 3
     return-void
 .end method

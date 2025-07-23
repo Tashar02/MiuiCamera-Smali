@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness$1;
+.class synthetic Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness$1;
 .super Ljava/lang/Object;
 .source "Makeup2SettingBusiness.java"
 

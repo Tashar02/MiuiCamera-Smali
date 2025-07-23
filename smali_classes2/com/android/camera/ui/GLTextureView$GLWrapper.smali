@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract wrap(Ljavax/microedition/khronos/opengles/GL;)Ljavax/microedition/khronos/opengles/GL;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "gl"
-        }
-    .end annotation
 .end method

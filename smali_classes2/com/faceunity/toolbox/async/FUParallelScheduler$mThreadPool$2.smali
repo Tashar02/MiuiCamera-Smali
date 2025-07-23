@@ -1,35 +1,12 @@
-.class public final Lcom/faceunity/toolbox/async/FUParallelScheduler$mThreadPool$2;
-.super LOooO0o/o00ooOoO/o000O00O/o0000O0O;
+.class final Lcom/faceunity/toolbox/async/FUParallelScheduler$mThreadPool$2;
+.super Lo000oo0/o000;
 .source "FUParallelScheduler.kt"
 
 # interfaces
-.implements LOooO0o/o00ooOoO/o000O00/OooO00o;
+.implements Lo000oo00/OooOo00;
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
-    d1 = {
-        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
-    }
-    d2 = {
-        "Ljava/util/concurrent/ThreadPoolExecutor;",
-        "invoke",
-        "()Ljava/util/concurrent/ThreadPoolExecutor;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x4,
-        0x0
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/faceunity/toolbox/async/FUParallelScheduler;-><init>()V
 .end annotation
@@ -41,10 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LOooO0o/o00ooOoO/o000O00O/o0000O0O;",
-        "LOooO0o/o00ooOoO/o000O00/OooO00o<",
+        "Lo000oo0/o000;",
+        "Lo000oo00/OooOo00<",
         "Ljava/util/concurrent/ThreadPoolExecutor;",
         ">;"
+    }
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0002\u0008\u0002"
+    }
+    d2 = {
+        "<anonymous>",
+        "Ljava/util/concurrent/ThreadPoolExecutor;",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x1,
+        0xf
     }
 .end annotation
 
@@ -57,22 +56,35 @@
 .method public static constructor <clinit>()V
     .locals 1
 
+    .line 1
     new-instance v0, Lcom/faceunity/toolbox/async/FUParallelScheduler$mThreadPool$2;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lcom/faceunity/toolbox/async/FUParallelScheduler$mThreadPool$2;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/faceunity/toolbox/async/FUParallelScheduler$mThreadPool$2;->INSTANCE:Lcom/faceunity/toolbox/async/FUParallelScheduler$mThreadPool$2;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
 .method public constructor <init>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, LOooO0o/o00ooOoO/o000O00O/o0000O0O;-><init>(I)V
+    .line 2
+    invoke-direct {p0, v0}, Lo000oo0/o000;-><init>(I)V
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -91,11 +103,17 @@
 
 .method public final invoke()Ljava/util/concurrent/ThreadPoolExecutor;
     .locals 7
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 2
     new-instance p0, Ljava/util/concurrent/ThreadPoolExecutor;
+
+    const/16 v1, 0x8
+
+    const/16 v2, 0x80
+
+    const-wide/16 v3, 0x1
 
     .line 3
     sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -104,12 +122,6 @@
     new-instance v6, Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-direct {v6}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
-
-    const/16 v1, 0x8
-
-    const/16 v2, 0x80
-
-    const-wide/16 v3, 0x1
 
     move-object v0, p0
 

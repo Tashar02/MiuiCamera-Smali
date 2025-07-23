@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/utils/ViewOscillator$TranslationZset;
+.class Landroidx/constraintlayout/motion/utils/ViewOscillator$TranslationZset;
 .super Landroidx/constraintlayout/motion/utils/ViewOscillator;
 .source "ViewOscillator.java"
 
@@ -21,13 +21,16 @@
     .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/motion/utils/ViewOscillator;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
 .method public setProperty(Landroid/view/View;F)V
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x0,
@@ -40,19 +43,18 @@
     .end annotation
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     invoke-virtual {p0, p2}, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator;->get(F)F
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     invoke-virtual {p1, p0}, Landroid/view/View;->setTranslationZ(F)V
 
-    :cond_0
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

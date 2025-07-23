@@ -16,18 +16,13 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "itemView"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -37,16 +32,6 @@
 .end method
 
 .method public abstract needDownload(ZZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "need",
-            "fill"
-        }
-    .end annotation
 .end method
 
 .method public abstract setNameDownloading()V
@@ -56,25 +41,7 @@
 .end method
 
 .method public abstract setProgress(IZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "progress",
-            "anim"
-        }
-    .end annotation
 .end method
 
 .method public abstract setRotation(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
 .end method

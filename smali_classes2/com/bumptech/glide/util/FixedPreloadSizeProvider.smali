@@ -30,21 +30,34 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x2
 
+    .line 5
     new-array v0, v0, [I
 
+    .line 6
+    .line 7
     const/4 v1, 0x0
 
+    .line 8
     aput p1, v0, v1
 
+    .line 9
+    .line 10
     const/4 p1, 0x1
 
+    .line 11
     aput p2, v0, p1
 
-    .line 2
+    .line 12
+    .line 13
     iput-object v0, p0, Lcom/bumptech/glide/util/FixedPreloadSizeProvider;->size:[I
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -68,5 +81,7 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/util/FixedPreloadSizeProvider;->size:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method

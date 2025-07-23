@@ -1,4 +1,4 @@
-.class public Landroidx/core/graphics/TypefaceCompatBaseImpl$2;
+.class Landroidx/core/graphics/TypefaceCompatBaseImpl$2;
 .super Ljava/lang/Object;
 .source "TypefaceCompatBaseImpl.java"
 
@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/core/graphics/TypefaceCompatBaseImpl;
+.field final synthetic this$0:Landroidx/core/graphics/TypefaceCompatBaseImpl;
 
 
 # direct methods
@@ -37,8 +37,13 @@
     .line 1
     iput-object p1, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl$2;->this$0:Landroidx/core/graphics/TypefaceCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 

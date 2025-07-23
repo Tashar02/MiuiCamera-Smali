@@ -21,43 +21,28 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method private static a(Ljava/lang/String;)Ljava/security/interfaces/RSAPublicKey;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
         }
     .end annotation
 
+    const-string v0, "RSA"
+
     .line 11
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-static {v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
 
-    const-string v1, "RSA"
-
-    const/16 v2, 0x1c
-
-    if-lt v0, v2, :cond_0
+    move-result-object v0
 
     .line 12
-    invoke-static {v1}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, "BC"
-
-    .line 13
-    invoke-static {v1, v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyFactory;
-
-    move-result-object v0
-
-    .line 14
-    :goto_0
     new-instance v1, Ljava/security/spec/X509EncodedKeySpec;
 
     invoke-static {p0}, Lcom/ot/pubsub/c/c;->a(Ljava/lang/String;)[B
@@ -66,7 +51,7 @@
 
     invoke-direct {v1, p0}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
 
-    .line 15
+    .line 13
     invoke-virtual {v0, v1}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
 
     move-result-object p0
@@ -185,24 +170,39 @@
         }
     .end annotation
 
+    .line 1
     const-string v0, "RSA"
 
-    .line 1
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 2
+    .line 7
     new-instance v1, Ljava/security/spec/X509EncodedKeySpec;
 
+    .line 8
+    .line 9
     invoke-direct {v1, p0}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
 
-    .line 3
+    .line 10
+    .line 11
+    .line 12
     invoke-virtual {v0, v1}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
 
+    .line 13
+    .line 14
+    .line 15
     move-result-object p0
 
+    .line 16
     check-cast p0, Ljava/security/interfaces/RSAPublicKey;
 
+    .line 17
+    .line 18
     return-object p0
 .end method

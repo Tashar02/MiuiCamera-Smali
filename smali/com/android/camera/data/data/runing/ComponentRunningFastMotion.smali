@@ -22,14 +22,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dataItemBase"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/data/data/ComponentData;-><init>(Lcom/android/camera/data/data/DataItemBase;)V
@@ -58,17 +50,6 @@
 
 .method public constructor <init>(Lcom/android/camera/data/data/runing/DataItemRunning;Ljava/util/ArrayList;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "dataItemBase",
-            "list"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -96,6 +77,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->mCurrentType:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -107,17 +90,12 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "currentMode"
-        }
-    .end annotation
-
+    .line 1
     const-string/jumbo p0, "off"
 
+    .line 2
+    .line 3
+    .line 4
     return-object p0
 .end method
 
@@ -126,8 +104,10 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -145,6 +125,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->mList:Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -153,17 +135,12 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     const-string/jumbo p0, "pref_fast_motion_key"
 
+    .line 2
+    .line 3
+    .line 4
     return-object p0
 .end method
 
@@ -173,54 +150,51 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->mIsClosed:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public reInit()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
-    .line 1
+    .line 2
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
+    .line 3
+    .line 4
+    .line 5
     move-result-object v0
 
+    .line 6
     iput-object v0, p0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->mCurrentType:Ljava/lang/String;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
 .method public setClosed(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "close"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->mIsClosed:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setCurrentType(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "value"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->mCurrentType:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method

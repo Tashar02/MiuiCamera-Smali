@@ -33,7 +33,7 @@
 
 
 # instance fields
-.field public mLayoutState:Landroid/os/Parcelable;
+.field mLayoutState:Landroid/os/Parcelable;
 
 
 # direct methods
@@ -43,10 +43,17 @@
     .line 1
     new-instance v0, Landroidx/recyclerview/widget/RecyclerView$SavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/recyclerview/widget/RecyclerView$SavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/recyclerview/widget/RecyclerView$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -64,12 +71,11 @@
     :cond_0
     const-class p2, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
-    .line 3
     invoke-virtual {p2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object p2
 
-    .line 4
+    .line 3
     :goto_0
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
 
@@ -83,7 +89,7 @@
 .method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 5
+    .line 4
     invoke-direct {p0, p1}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -97,8 +103,12 @@
     .line 1
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$SavedState;->mLayoutState:Landroid/os/Parcelable;
 
+    .line 2
+    .line 3
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$SavedState;->mLayoutState:Landroid/os/Parcelable;
 
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -109,11 +119,19 @@
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
+    .line 3
+    .line 4
     iget-object p0, p0, Landroidx/recyclerview/widget/RecyclerView$SavedState;->mLayoutState:Landroid/os/Parcelable;
 
+    .line 5
+    .line 6
     const/4 p2, 0x0
 
+    .line 7
     invoke-virtual {p1, p0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

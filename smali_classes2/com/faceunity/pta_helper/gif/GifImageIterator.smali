@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -44,8 +47,12 @@
     .line 1
     invoke-virtual {p0}, Lcom/faceunity/pta_helper/gif/GifImageIterator;->next()Lcom/faceunity/pta_helper/gif/GifImage;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -55,7 +62,12 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     throw p0
 .end method

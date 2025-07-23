@@ -18,8 +18,8 @@
 
 
 # static fields
-.field public static final Oooo0:Ljava/lang/String; = "POCO"
+.field public static final OooOoO:Ljava/lang/String; = "XIAOMI"
 
-.field public static final Oooo00O:Ljava/lang/String; = "XIAOMI"
+.field public static final OooOoOO:Ljava/lang/String; = "REDMI"
 
-.field public static final Oooo00o:Ljava/lang/String; = "REDMI"
+.field public static final OooOoo0:Ljava/lang/String; = "POCO"

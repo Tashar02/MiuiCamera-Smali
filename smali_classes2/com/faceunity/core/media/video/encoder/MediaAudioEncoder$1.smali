@@ -1,4 +1,4 @@
-.class public synthetic Lcom/faceunity/core/media/video/encoder/MediaAudioEncoder$1;
+.class synthetic Lcom/faceunity/core/media/video/encoder/MediaAudioEncoder$1;
 .super Ljava/lang/Object;
 .source "MediaAudioEncoder.java"
 

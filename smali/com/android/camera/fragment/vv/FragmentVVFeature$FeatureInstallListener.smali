@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onInstalled(Ljava/lang/String;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "featureName"
-        }
-    .end annotation
 .end method

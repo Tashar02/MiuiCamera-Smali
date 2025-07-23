@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final TAG:Ljava/lang/String; = "ModuleDevice"
+.field protected static final TAG:Ljava/lang/String; = "ModuleDevice"
 
 
 # instance fields
@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -28,18 +31,12 @@
 # virtual methods
 .method public final attachModule(Lcom/android/camera/module/Module;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "module"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/features/mode/BaseModuleDevice;->mModule:Lcom/android/camera/module/Module;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -49,6 +46,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/features/mode/BaseModuleDevice;->mModule:Lcom/android/camera/module/Module;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -57,7 +56,9 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

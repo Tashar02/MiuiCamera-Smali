@@ -1,4 +1,4 @@
-.class public Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;
+.class Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;
 .super Landroidx/core/view/accessibility/AccessibilityNodeProviderCompat;
 .source "ExploreByTouchHelper.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/customview/widget/ExploreByTouchHelper;
+.field final synthetic this$0:Landroidx/customview/widget/ExploreByTouchHelper;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;->this$0:Landroidx/customview/widget/ExploreByTouchHelper;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroidx/core/view/accessibility/AccessibilityNodeProviderCompat;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -39,52 +44,81 @@
     iget-object p0, p0, Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;->this$0:Landroidx/customview/widget/ExploreByTouchHelper;
 
     .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/customview/widget/ExploreByTouchHelper;->obtainAccessibilityNodeInfo(I)Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
-    .line 3
+    .line 7
     invoke-static {p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->obtain(Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;)Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
     return-object p0
 .end method
 
 .method public findFocus(I)Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 1
 
+    .line 1
     const/4 v0, 0x2
 
+    .line 2
     if-ne p1, v0, :cond_0
 
-    .line 1
+    .line 3
+    .line 4
     iget-object p1, p0, Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;->this$0:Landroidx/customview/widget/ExploreByTouchHelper;
 
+    .line 5
+    .line 6
     iget p1, p1, Landroidx/customview/widget/ExploreByTouchHelper;->mAccessibilityFocusedVirtualViewId:I
 
+    .line 7
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     iget-object p1, p0, Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;->this$0:Landroidx/customview/widget/ExploreByTouchHelper;
 
+    .line 10
+    .line 11
     iget p1, p1, Landroidx/customview/widget/ExploreByTouchHelper;->mKeyboardFocusedVirtualViewId:I
 
+    .line 12
+    .line 13
     :goto_0
     const/high16 v0, -0x80000000
 
+    .line 14
+    .line 15
     if-ne p1, v0, :cond_1
 
+    .line 16
+    .line 17
     const/4 p0, 0x0
 
+    .line 18
     return-object p0
 
-    .line 2
+    .line 19
     :cond_1
     invoke-virtual {p0, p1}, Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;->createAccessibilityNodeInfo(I)Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object p0
 
+    .line 23
     return-object p0
 .end method
 
@@ -94,9 +128,15 @@
     .line 1
     iget-object p0, p0, Landroidx/customview/widget/ExploreByTouchHelper$MyNodeProvider;->this$0:Landroidx/customview/widget/ExploreByTouchHelper;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2, p3}, Landroidx/customview/widget/ExploreByTouchHelper;->performAction(IILandroid/os/Bundle;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method

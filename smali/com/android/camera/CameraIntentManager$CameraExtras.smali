@@ -38,6 +38,10 @@
 
 .field public static final EXTRAS_NO_UI_QUERY:Ljava/lang/String; = "NoUiQuery"
 
+.field public static final GOOGLE_CAMERA_OPEN_ONLY:Ljava/lang/String; = "com.google.assistant.extra.CAMERA_OPEN_ONLY"
+
+.field public static final KEYGUARD_SHORTCUT:Ljava/lang/String; = "from_keyguard_shortcut"
+
 .field public static final TIMER_DURATION_SECONDS:Ljava/lang/String; = "android.intent.extra.TIMER_DURATION_SECONDS"
 
 .field public static final USE_FRONT_CAMERA:Ljava/lang/String; = "android.intent.extra.USE_FRONT_CAMERA"

@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager/widget/ViewPager$ItemInfo;
+.class Landroidx/viewpager/widget/ViewPager$ItemInfo;
 .super Ljava/lang/Object;
 .source "ViewPager.java"
 
@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public object:Ljava/lang/Object;
+.field object:Ljava/lang/Object;
 
-.field public offset:F
+.field offset:F
 
-.field public position:I
+.field position:I
 
-.field public scrolling:Z
+.field scrolling:Z
 
-.field public widthFactor:F
+.field widthFactor:F
 
 
 # direct methods
@@ -33,5 +33,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

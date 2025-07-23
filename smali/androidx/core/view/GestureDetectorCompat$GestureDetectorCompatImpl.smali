@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/core/view/GestureDetectorCompat$GestureDetectorCompatImpl;
+.class interface abstract Landroidx/core/view/GestureDetectorCompat$GestureDetectorCompatImpl;
 .super Ljava/lang/Object;
 .source "GestureDetectorCompat.java"
 

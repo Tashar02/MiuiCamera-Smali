@@ -1,4 +1,4 @@
-.class public Landroidx/print/PrintHelper$1;
+.class Landroidx/print/PrintHelper$1;
 .super Landroid/os/AsyncTask;
 .source "PrintHelper.java"
 
@@ -25,21 +25,21 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/print/PrintHelper;
+.field final synthetic this$0:Landroidx/print/PrintHelper;
 
-.field public final synthetic val$attributes:Landroid/print/PrintAttributes;
+.field final synthetic val$attributes:Landroid/print/PrintAttributes;
 
-.field public final synthetic val$bitmap:Landroid/graphics/Bitmap;
+.field final synthetic val$bitmap:Landroid/graphics/Bitmap;
 
-.field public final synthetic val$cancellationSignal:Landroid/os/CancellationSignal;
+.field final synthetic val$cancellationSignal:Landroid/os/CancellationSignal;
 
-.field public final synthetic val$fileDescriptor:Landroid/os/ParcelFileDescriptor;
+.field final synthetic val$fileDescriptor:Landroid/os/ParcelFileDescriptor;
 
-.field public final synthetic val$fittingMode:I
+.field final synthetic val$fittingMode:I
 
-.field public final synthetic val$pdfAttributes:Landroid/print/PrintAttributes;
+.field final synthetic val$pdfAttributes:Landroid/print/PrintAttributes;
 
-.field public final synthetic val$writeResultCallback:Landroid/print/PrintDocumentAdapter$WriteResultCallback;
+.field final synthetic val$writeResultCallback:Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 
 
 # direct methods
@@ -49,22 +49,41 @@
     .line 1
     iput-object p1, p0, Landroidx/print/PrintHelper$1;->this$0:Landroidx/print/PrintHelper;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/print/PrintHelper$1;->val$cancellationSignal:Landroid/os/CancellationSignal;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/print/PrintHelper$1;->val$pdfAttributes:Landroid/print/PrintAttributes;
 
+    .line 6
+    .line 7
     iput-object p4, p0, Landroidx/print/PrintHelper$1;->val$bitmap:Landroid/graphics/Bitmap;
 
+    .line 8
+    .line 9
     iput-object p5, p0, Landroidx/print/PrintHelper$1;->val$attributes:Landroid/print/PrintAttributes;
 
+    .line 10
+    .line 11
     iput p6, p0, Landroidx/print/PrintHelper$1;->val$fittingMode:I
 
+    .line 12
+    .line 13
     iput-object p7, p0, Landroidx/print/PrintHelper$1;->val$fileDescriptor:Landroid/os/ParcelFileDescriptor;
 
+    .line 14
+    .line 15
     iput-object p8, p0, Landroidx/print/PrintHelper$1;->val$writeResultCallback:Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 
+    .line 16
+    .line 17
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
+    .line 18
+    .line 19
+    .line 20
     return-void
 .end method
 
@@ -200,10 +219,10 @@
     invoke-direct {v6, v7}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
 
     .line 14
-    invoke-virtual {v5, v2}, Landroid/print/pdf/PrintedPdfDocument;->finishPage(Landroid/graphics/pdf/PdfDocument$Page;)V
+    invoke-virtual {v5, v2}, Landroid/graphics/pdf/PdfDocument;->finishPage(Landroid/graphics/pdf/PdfDocument$Page;)V
 
     .line 15
-    invoke-virtual {v5}, Landroid/print/pdf/PrintedPdfDocument;->close()V
+    invoke-virtual {v5}, Landroid/graphics/pdf/PdfDocument;->close()V
 
     move-object v2, v6
 
@@ -252,7 +271,7 @@
     invoke-virtual {v2, v1, v5, v0}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V
 
     .line 21
-    invoke-virtual {p1, v3}, Landroid/print/pdf/PrintedPdfDocument;->finishPage(Landroid/graphics/pdf/PdfDocument$Page;)V
+    invoke-virtual {p1, v3}, Landroid/graphics/pdf/PdfDocument;->finishPage(Landroid/graphics/pdf/PdfDocument$Page;)V
 
     .line 22
     iget-object v2, p0, Landroidx/print/PrintHelper$1;->val$cancellationSignal:Landroid/os/CancellationSignal;
@@ -267,7 +286,7 @@
 
     .line 23
     :try_start_2
-    invoke-virtual {p1}, Landroid/print/pdf/PrintedPdfDocument;->close()V
+    invoke-virtual {p1}, Landroid/graphics/pdf/PdfDocument;->close()V
 
     .line 24
     iget-object p1, p0, Landroidx/print/PrintHelper$1;->val$fileDescriptor:Landroid/os/ParcelFileDescriptor;
@@ -314,13 +333,13 @@
     invoke-direct {v2, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V
 
     .line 30
-    invoke-virtual {p1, v2}, Landroid/print/pdf/PrintedPdfDocument;->writeTo(Ljava/io/OutputStream;)V
+    invoke-virtual {p1, v2}, Landroid/graphics/pdf/PdfDocument;->writeTo(Ljava/io/OutputStream;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 31
     :try_start_6
-    invoke-virtual {p1}, Landroid/print/pdf/PrintedPdfDocument;->close()V
+    invoke-virtual {p1}, Landroid/graphics/pdf/PdfDocument;->close()V
 
     .line 32
     iget-object p1, p0, Landroidx/print/PrintHelper$1;->val$fileDescriptor:Landroid/os/ParcelFileDescriptor;
@@ -354,7 +373,7 @@
     move-exception v0
 
     .line 36
-    invoke-virtual {p1}, Landroid/print/pdf/PrintedPdfDocument;->close()V
+    invoke-virtual {p1}, Landroid/graphics/pdf/PdfDocument;->close()V
 
     .line 37
     iget-object p1, p0, Landroidx/print/PrintHelper$1;->val$fileDescriptor:Landroid/os/ParcelFileDescriptor;

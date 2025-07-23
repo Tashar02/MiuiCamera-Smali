@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/DefaultSpecialEffectsController$9;
+.class Landroidx/fragment/app/DefaultSpecialEffectsController$9;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
+.field final synthetic this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
 
-.field public final synthetic val$transitionInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionInfo;
+.field final synthetic val$transitionInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionInfo;
 
 
 # direct methods
@@ -30,10 +30,17 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$9;->this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$9;->val$transitionInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionInfo;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -45,7 +52,12 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$9;->val$transitionInfo:Landroidx/fragment/app/DefaultSpecialEffectsController$TransitionInfo;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/DefaultSpecialEffectsController$SpecialEffectsInfo;->completeSpecialEffect()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

@@ -16,28 +16,10 @@
 
 # virtual methods
 .method public abstract onActionDown(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isLowerMoving"
-        }
-    .end annotation
 .end method
 
 .method public abstract onActionUp()V
 .end method
 
 .method public abstract onRangeChange(FF)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "low",
-            "big"
-        }
-    .end annotation
 .end method

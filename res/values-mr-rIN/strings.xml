@@ -664,6 +664,7 @@
     <string name="download_hint_cn">असे दिसते की आपले डिव्हाइस WLAN शी कनेक्ट केलेले नाही. आयटम आता डाऊनलोड करण्यासाठी %1$s MB डेटा वापरायचा?</string>
     <string name="download_hint_wifi">असे दिसते की आपले डिव्हाइस Wi-Fi शी कनेक्ट केलेले नाही. आयटम आता डाऊनलोड करण्यासाठी %1$s MB डेटा वापरायचा?</string>
     <string name="download_in_progress">डाऊनलोड होत आहे…</string>
+    <string name="download_network_error">डाऊनलोड करता आले नाही. तुमचे नेटवर्क सेटिंग्ज तपासा.</string>
     <string name="download_title">डेटा वापर इशारा</string>
     <string name="download_waiting">प्रलंबित…</string>
     <string name="dual_camera_lens_covered_toast">लेन्स कव्हर केले आहे.</string>
@@ -1478,6 +1479,7 @@
     <string name="pref_camera_peak_entry_off">बंद</string>
     <string name="pref_camera_peak_entry_on">सुरु</string>
     <string name="pref_camera_peak_title">फोकस पिकिंग</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">पूर्ण</string>
     <string name="pref_camera_picturesize_title_simple_mode">कॅमेरा फ्रेम</string>
     <string name="pref_camera_portrait_mode_entry_off">पोर्ट्रेट मोड बंद आहे</string>
     <string name="pref_camera_portrait_mode_entry_on">पोर्ट्रेट मोड सुरु आहे</string>

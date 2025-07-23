@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -32,61 +35,46 @@
 .method public onDoublePointDown()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public onDoublePointUp()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public onScale(Lcom/android/camera/ui/zoom/ScaleGestureDetector;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "detector"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public onScaleBegin(Lcom/android/camera/ui/zoom/ScaleGestureDetector;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "detector"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
 .method public onScaleEnd(Lcom/android/camera/ui/zoom/ScaleGestureDetector;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "detector"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method

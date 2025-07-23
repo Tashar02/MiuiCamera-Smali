@@ -17,31 +17,28 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/dualvideo/util/RenderSourceType;Lcom/android/gallery3d/ui/ExtTexture;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "type",
-            "tex"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x1
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mCanDraw:Z
 
-    .line 3
+    .line 6
+    .line 7
     iput-object p1, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mSourceType:Lcom/android/camera/dualvideo/util/RenderSourceType;
 
-    .line 4
+    .line 8
+    .line 9
     iput-object p2, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mTexture:Lcom/android/gallery3d/ui/ExtTexture;
 
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -49,15 +46,8 @@
 # virtual methods
 .method public attachToGL(Lcom/android/gallery3d/ui/GLCanvas;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "canvas"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -67,6 +57,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mCanDraw:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -76,6 +68,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mSourceType:Lcom/android/camera/dualvideo/util/RenderSourceType;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -84,8 +78,10 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
@@ -95,6 +91,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mTexture:Lcom/android/gallery3d/ui/ExtTexture;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -106,8 +104,10 @@
         type = 0x0
     .end annotation
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
@@ -119,11 +119,14 @@
         type = 0x0
     .end annotation
 
+    .line 1
     const/4 v0, 0x1
 
-    .line 1
+    .line 2
     iput-boolean v0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mCanDraw:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -132,31 +135,28 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "size"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public release()V
     .locals 1
 
-    const/4 v0, 0x0
-
     .line 1
-    iput-object v0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mTexture:Lcom/android/gallery3d/ui/ExtTexture;
-
     const/4 v0, 0x0
 
     .line 2
+    iput-object v0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mTexture:Lcom/android/gallery3d/ui/ExtTexture;
+
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
     iput-boolean v0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mCanDraw:Z
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -168,11 +168,14 @@
         type = 0x0
     .end annotation
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     iput-boolean v0, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mCanDraw:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -181,23 +184,17 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "tex"
-        }
-    .end annotation
-
     .line 1
     iput-object p1, p0, Lcom/android/camera/dualvideo/render/MainRenderSource;->mTexture:Lcom/android/gallery3d/ui/ExtTexture;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public updateTexImage()V
     .locals 0
 
+    .line 1
     return-void
 .end method

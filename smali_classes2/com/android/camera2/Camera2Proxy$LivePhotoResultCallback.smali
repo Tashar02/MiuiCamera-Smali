@@ -25,12 +25,4 @@
 .end method
 
 .method public abstract onLivePhotoResultCallback(Lcom/xiaomi/camera/liveshot/LivePhotoResult;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "result"
-        }
-    .end annotation
 .end method

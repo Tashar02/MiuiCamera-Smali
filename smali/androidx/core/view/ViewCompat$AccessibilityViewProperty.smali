@@ -1,4 +1,4 @@
-.class public abstract Landroidx/core/view/ViewCompat$AccessibilityViewProperty;
+.class abstract Landroidx/core/view/ViewCompat$AccessibilityViewProperty;
 .super Ljava/lang/Object;
 .source "ViewCompat.java"
 
@@ -24,6 +24,8 @@
 
 
 # instance fields
+.field private final mContentChangeType:I
+
 .field private final mFrameworkMinimumSdk:I
 
 .field private final mTagKey:I
@@ -77,29 +79,21 @@
     iput-object p2, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mType:Ljava/lang/Class;
 
     .line 5
+    iput p3, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mContentChangeType:I
+
+    .line 6
     iput p4, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mFrameworkMinimumSdk:I
 
     return-void
 .end method
 
 .method private extrasAvailable()Z
-    .locals 1
+    .locals 0
 
     .line 1
-    sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v0, 0x13
-
-    if-lt p0, v0, :cond_0
-
     const/4 p0, 0x1
 
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
+    .line 2
     return p0
 .end method
 
@@ -109,17 +103,26 @@
     .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 2
+    .line 3
     iget p0, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mFrameworkMinimumSdk:I
 
+    .line 4
+    .line 5
     if-lt v0, p0, :cond_0
 
+    .line 6
+    .line 7
     const/4 p0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 p0, 0x0
 
+    .line 10
     :goto_0
     return p0
 .end method
@@ -127,41 +130,81 @@
 
 # virtual methods
 .method public booleanNullToFalseEquals(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
-    .locals 0
-
-    const/4 p0, 0x0
-
-    if-nez p1, :cond_0
-
-    move p1, p0
-
-    goto :goto_0
+    .locals 1
 
     .line 1
-    :cond_0
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p1
-
-    :goto_0
-    if-nez p2, :cond_1
-
-    move p2, p0
-
-    goto :goto_1
+    const/4 p0, 0x1
 
     .line 2
-    :cond_1
+    const/4 v0, 0x0
+
+    .line 3
+    if-eqz p1, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p1
+
+    .line 9
+    if-eqz p1, :cond_0
+
+    .line 10
+    .line 11
+    move p1, p0
+
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    move p1, v0
+
+    .line 14
+    :goto_0
+    if-eqz p2, :cond_1
+
+    .line 15
+    .line 16
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 17
+    .line 18
+    .line 19
     move-result p2
 
+    .line 20
+    if-eqz p2, :cond_1
+
+    .line 21
+    .line 22
+    move p2, p0
+
+    .line 23
+    goto :goto_1
+
+    .line 24
+    :cond_1
+    move p2, v0
+
+    .line 25
     :goto_1
     if-ne p1, p2, :cond_2
 
-    const/4 p0, 0x1
+    .line 26
+    .line 27
+    goto :goto_2
 
+    .line 28
     :cond_2
+    move p0, v0
+
+    .line 29
+    :goto_2
     return p0
 .end method
 
@@ -198,46 +241,75 @@
     .line 1
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->frameworkAvailable()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     invoke-virtual {p0, p1}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->frameworkGet(Landroid/view/View;)Ljava/lang/Object;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
     return-object p0
 
-    .line 3
+    .line 12
     :cond_0
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->extrasAvailable()Z
 
+    .line 13
+    .line 14
+    .line 15
     move-result v0
 
+    .line 16
     if-eqz v0, :cond_1
 
-    .line 4
+    .line 17
+    .line 18
     iget v0, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mTagKey:I
 
+    .line 19
+    .line 20
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object p1
 
-    .line 5
+    .line 24
     iget-object p0, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mType:Ljava/lang/Class;
 
+    .line 25
+    .line 26
     invoke-virtual {p0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
+    .line 27
+    .line 28
+    .line 29
     move-result p0
 
+    .line 30
     if-eqz p0, :cond_1
 
+    .line 31
+    .line 32
     return-object p1
 
+    .line 33
     :cond_1
     const/4 p0, 0x0
 
+    .line 34
     return-object p0
 .end method
 
@@ -254,46 +326,80 @@
     .line 1
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->frameworkAvailable()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->frameworkSet(Landroid/view/View;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     goto :goto_0
 
-    .line 3
+    .line 11
     :cond_0
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->extrasAvailable()Z
 
+    .line 12
+    .line 13
+    .line 14
     move-result v0
 
+    .line 15
     if-eqz v0, :cond_1
 
+    .line 16
+    .line 17
     invoke-virtual {p0, p1}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->get(Landroid/view/View;)Ljava/lang/Object;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object v0
 
+    .line 21
     invoke-virtual {p0, v0, p2}, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->shouldUpdate(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 22
+    .line 23
+    .line 24
     move-result v0
 
+    .line 25
     if-eqz v0, :cond_1
 
-    .line 4
-    invoke-static {p1}, Landroidx/core/view/ViewCompat;->getOrCreateAccessibilityDelegateCompat(Landroid/view/View;)Landroidx/core/view/AccessibilityDelegateCompat;
+    .line 26
+    .line 27
+    invoke-static {p1}, Landroidx/core/view/ViewCompat;->ensureAccessibilityDelegateCompat(Landroid/view/View;)V
 
-    .line 5
-    iget p0, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mTagKey:I
+    .line 28
+    .line 29
+    .line 30
+    iget v0, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mTagKey:I
 
-    invoke-virtual {p1, p0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+    .line 31
+    .line 32
+    invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    const/4 p0, 0x0
+    .line 33
+    .line 34
+    .line 35
+    iget p0, p0, Landroidx/core/view/ViewCompat$AccessibilityViewProperty;->mContentChangeType:I
 
-    .line 6
+    .line 36
+    .line 37
     invoke-static {p1, p0}, Landroidx/core/view/ViewCompat;->notifyViewAccessibilityStateChangedIfNeeded(Landroid/view/View;I)V
 
+    .line 38
+    .line 39
+    .line 40
     :cond_1
     :goto_0
     return-void
@@ -310,9 +416,15 @@
     .line 1
     invoke-virtual {p2, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     xor-int/lit8 p0, p0, 0x1
 
+    .line 6
+    .line 7
     return p0
 .end method

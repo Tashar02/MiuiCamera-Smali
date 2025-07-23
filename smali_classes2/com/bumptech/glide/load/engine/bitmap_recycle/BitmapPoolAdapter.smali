@@ -13,6 +13,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -21,6 +24,7 @@
 .method public clearMemory()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -32,8 +36,12 @@
     .line 1
     invoke-static {p1, p2, p3}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -45,16 +53,23 @@
     .line 1
     invoke-virtual {p0, p1, p2, p3}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPoolAdapter;->get(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
 .method public getMaxSize()J
     .locals 2
 
+    .line 1
     const-wide/16 v0, 0x0
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -64,17 +79,22 @@
     .line 1
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public setSizeMultiplier(F)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public trimMemory(I)V
     .locals 0
 
+    .line 1
     return-void
 .end method

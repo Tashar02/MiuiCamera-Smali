@@ -1,4 +1,4 @@
-.class public Landroidx/activity/ComponentActivity$5;
+.class Landroidx/activity/ComponentActivity$5;
 .super Ljava/lang/Object;
 .source "ComponentActivity.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/activity/ComponentActivity;
+.field final synthetic this$0:Landroidx/activity/ComponentActivity;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$5;->this$0:Landroidx/activity/ComponentActivity;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,16 +54,29 @@
     .line 1
     iget-object p1, p0, Landroidx/activity/ComponentActivity$5;->this$0:Landroidx/activity/ComponentActivity;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->ensureViewModelStore()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget-object p1, p0, Landroidx/activity/ComponentActivity$5;->this$0:Landroidx/activity/ComponentActivity;
 
+    .line 7
+    .line 8
     invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p1
 
+    .line 12
     invoke-virtual {p1, p0}, Landroidx/lifecycle/Lifecycle;->removeObserver(Landroidx/lifecycle/LifecycleObserver;)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method

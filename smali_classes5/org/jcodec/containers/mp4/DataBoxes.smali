@@ -5,39 +5,68 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 4
+    .locals 3
 
     .line 1
-    const-class v0, Lorg/jcodec/containers/mp4/boxes/AliasBox;
-
     invoke-direct {p0}, Lorg/jcodec/containers/mp4/Boxes;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lorg/jcodec/containers/mp4/Boxes;->mappings:Ljava/util/Map;
+    .line 3
+    .line 4
+    iget-object v0, p0, Lorg/jcodec/containers/mp4/Boxes;->mappings:Ljava/util/Map;
 
+    .line 5
+    .line 6
     invoke-static {}, Lorg/jcodec/containers/mp4/boxes/UrlBox;->fourcc()Ljava/lang/String;
 
-    move-result-object v2
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
 
-    const-class v3, Lorg/jcodec/containers/mp4/boxes/UrlBox;
+    .line 10
+    const-class v2, Lorg/jcodec/containers/mp4/boxes/UrlBox;
 
-    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 11
+    .line 12
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
-    iget-object v1, p0, Lorg/jcodec/containers/mp4/Boxes;->mappings:Ljava/util/Map;
+    .line 13
+    .line 14
+    .line 15
+    iget-object v0, p0, Lorg/jcodec/containers/mp4/Boxes;->mappings:Ljava/util/Map;
 
+    .line 16
+    .line 17
     invoke-static {}, Lorg/jcodec/containers/mp4/boxes/AliasBox;->fourcc()Ljava/lang/String;
 
-    move-result-object v2
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v1
 
-    invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 21
+    const-class v2, Lorg/jcodec/containers/mp4/boxes/AliasBox;
 
-    .line 4
+    .line 22
+    .line 23
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
     iget-object p0, p0, Lorg/jcodec/containers/mp4/Boxes;->mappings:Ljava/util/Map;
 
-    const-string v1, "cios"
+    .line 27
+    .line 28
+    const-string v0, "cios"
 
-    invoke-interface {p0, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 29
+    .line 30
+    invoke-interface {p0, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method

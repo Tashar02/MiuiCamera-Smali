@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public mZoomValueListener:Lcom/android/camera/fragment/manually/ZoomValueListener;
+.field protected mZoomValueListener:Lcom/android/camera/fragment/manually/ZoomValueListener;
 
 
 # direct methods
@@ -29,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/ui/BaseHorizontalZoomView$HorizontalDrawAdapter;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -38,15 +41,6 @@
 .end method
 
 .method public abstract mapPositionToValue(F)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "position"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(F)TT;"
@@ -55,15 +49,6 @@
 .end method
 
 .method public abstract mapValueToPosition(Ljava/lang/Object;)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "value"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)F"
@@ -72,12 +57,4 @@
 .end method
 
 .method public abstract setEnable(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 .end method

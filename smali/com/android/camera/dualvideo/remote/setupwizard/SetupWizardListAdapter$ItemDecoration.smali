@@ -21,31 +21,38 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p1
 
-    const v0, 0x7f070862
+    .line 8
+    const v0, 0x7f070887
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
+    .line 12
+    .line 13
+    .line 14
     move-result p1
 
+    .line 15
     iput p1, p0, Lcom/android/camera/dualvideo/remote/setupwizard/SetupWizardListAdapter$ItemDecoration;->padding:I
 
+    .line 16
+    .line 17
     return-void
 .end method
 
@@ -65,31 +72,27 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "outRect",
-            "view",
-            "parent",
-            "state"
-        }
-    .end annotation
 
     .line 1
     iget p0, p0, Lcom/android/camera/dualvideo/remote/setupwizard/SetupWizardListAdapter$ItemDecoration;->padding:I
 
+    .line 2
+    .line 3
     div-int/lit8 p2, p0, 0x2
 
-    div-int/lit8 p0, p0, 0x2
-
+    .line 4
+    .line 5
     const/4 p3, 0x0
 
+    .line 6
+    div-int/lit8 p0, p0, 0x2
+
+    .line 7
+    .line 8
     invoke-virtual {p1, p2, p3, p0, p3}, Landroid/graphics/Rect;->set(IIII)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

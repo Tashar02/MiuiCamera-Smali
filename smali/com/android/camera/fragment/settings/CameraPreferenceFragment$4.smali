@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/settings/CameraPreferenceFragment$4;
+.class Lcom/android/camera/fragment/settings/CameraPreferenceFragment$4;
 .super Ljava/lang/Object;
 .source "CameraPreferenceFragment.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/settings/CameraPreferenceFragment;
+.field final synthetic this$0:Lcom/android/camera/fragment/settings/CameraPreferenceFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/settings/CameraPreferenceFragment;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/settings/CameraPreferenceFragment$4;->this$0:Lcom/android/camera/fragment/settings/CameraPreferenceFragment;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -48,17 +45,11 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dialog"
-        }
-    .end annotation
-
     .line 1
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

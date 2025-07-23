@@ -14,6 +14,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -23,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -202,25 +206,34 @@
 .method public static declared-synchronized b()Z
     .locals 2
 
+    .line 1
     const-class v0, Lcom/ot/pubsub/b/n;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 1
+    .line 4
     :try_start_0
     sget-boolean v1, Lcom/ot/pubsub/b/n;->b:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return v1
 
+    .line 8
     :catchall_0
     move-exception v1
 
+    .line 9
     monitor-exit v0
 
+    .line 10
     throw v1
 .end method
 
@@ -230,7 +243,11 @@
     .line 1
     invoke-static {}, Lcom/ot/pubsub/util/l;->a()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     return v0
 .end method

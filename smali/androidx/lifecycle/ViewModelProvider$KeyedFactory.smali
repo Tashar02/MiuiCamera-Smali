@@ -1,4 +1,4 @@
-.class public abstract Landroidx/lifecycle/ViewModelProvider$KeyedFactory;
+.class abstract Landroidx/lifecycle/ViewModelProvider$KeyedFactory;
 .super Landroidx/lifecycle/ViewModelProvider$OnRequeryFactory;
 .source "ViewModelProvider.java"
 
@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Landroidx/lifecycle/ViewModelProvider$OnRequeryFactory;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -51,10 +54,17 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string p1, "create(String, Class<?>) must be called on implementaions of KeyedFactory"
 
+    .line 4
+    .line 5
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     throw p0
 .end method
 

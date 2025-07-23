@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
+.class Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
 .super Ljava/lang/Object;
 .source "ActionMenuPresenter.java"
 
@@ -46,10 +46,17 @@
     .line 1
     new-instance v0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -83,8 +90,10 @@
 .method public describeContents()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -94,7 +103,12 @@
     .line 1
     iget p0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->openSubMenuId:I
 
+    .line 2
+    .line 3
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

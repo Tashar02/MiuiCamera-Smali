@@ -1,4 +1,4 @@
-.class public Lorg/jcodec/movtool/InplaceMP4Editor$1;
+.class Lorg/jcodec/movtool/InplaceMP4Editor$1;
 .super Ljava/lang/Object;
 .source "InplaceMP4Editor.java"
 
@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lorg/jcodec/movtool/InplaceMP4Editor;
+.field final synthetic this$0:Lorg/jcodec/movtool/InplaceMP4Editor;
 
 
 # direct methods
@@ -38,8 +38,13 @@
     .line 1
     iput-object p1, p0, Lorg/jcodec/movtool/InplaceMP4Editor$1;->this$0:Lorg/jcodec/movtool/InplaceMP4Editor;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 

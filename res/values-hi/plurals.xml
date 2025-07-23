@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>आप जिस कैमरा संस्करण का इस्तेमाल कर रहे हैं वह आपके डिवाइस मॉडल पर काम नहीं करता है.&lt;br>ऐप्प &lt;font color=#FFCE16>&lt;b>%1$d सेकंड&lt;/b>&lt;/font> में बंद हो जाएगा. कैमरा अपडेट अनइंस्टॉल करके फिर से कोशिश करें.&lt;/Data></item>
         <item quantity="one">&lt;Data>आप जिस कैमरा संस्करण का इस्तेमाल कर रहे हैं वह आपके डिवाइस मॉडल पर काम नहीं करता है.&lt;br>ऐप्प &lt;font color=#FFCE16>&lt;b>%1$d सेकंड&lt;/b>&lt;/font> में बंद हो जाएगा. कैमरा अपडेट अनइंस्टॉल करके फिर से कोशिश करें.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड पीछे ले जाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड पीछे ले जाएं</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d मिनट</item>
         <item quantity="one">%1$d मिनट</item>

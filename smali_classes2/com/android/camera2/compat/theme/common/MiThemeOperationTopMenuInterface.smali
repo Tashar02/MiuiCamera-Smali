@@ -5,115 +5,30 @@
 
 # virtual methods
 .method public abstract drawCircle(Landroid/graphics/Canvas;FFFFLandroid/graphics/Paint;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "canvas",
-            "currentCircleX",
-            "viewHeight",
-            "outRadius",
-            "radius",
-            "circlePaint"
-        }
-    .end annotation
 .end method
 
 .method public abstract getBackgroundColor()I
 .end method
 
 .method public abstract getBackgroundPaint(Landroid/content/Context;)Landroid/graphics/Paint;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 .end method
 
 .method public abstract getChildMarginWidth(F)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "childMargin"
-        }
-    .end annotation
 .end method
 
 .method public abstract getCircleRadius(F)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "radius"
-        }
-    .end annotation
 .end method
 
 .method public abstract getClickAnimation(Landroid/view/View;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "view"
-        }
-    .end annotation
 .end method
 
 .method public abstract getColorCircleBackgroundView(Lcom/android/camera/ui/ColorCircleBackgroundView;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "backgroundView"
-        }
-    .end annotation
 .end method
 
 .method public abstract getConfigSelectColor(ZLcom/airbnb/lottie/LottieAnimationView;FLcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;Landroid/widget/TextView;Landroid/view/View;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "needPlayAnimation",
-            "imageView",
-            "animationScaleSize",
-            "resource",
-            "textView",
-            "rightAngleView"
-        }
-    .end annotation
 .end method
 
 .method public abstract getCvTypeComponentDataItems(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "items"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,30 +46,6 @@
 .end method
 
 .method public abstract getExtraMenuAnimator(ZLandroid/view/ViewGroup;Lcom/android/camera/ui/ShapeBackGroundView;IIIIILandroid/animation/Animator$AnimatorListener;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "isExtraMenuShowing",
-            "topConfigViewGroup",
-            "topBackgroundView",
-            "originHeight",
-            "targetHeight",
-            "mDegree",
-            "fromAlpha",
-            "toAlpha",
-            "animatorListener"
-        }
-    .end annotation
 .end method
 
 .method public abstract getIndicatorColor()I
@@ -164,22 +55,6 @@
 .end method
 
 .method public abstract getItemWidth(IIIIF)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "measuredWidth",
-            "paddingLeft",
-            "paddingRight",
-            "childCount",
-            "childMargin"
-        }
-    .end annotation
 .end method
 
 .method public abstract getMulitItem()I
@@ -201,39 +76,15 @@
 .end method
 
 .method public abstract getTimerBurstBackgroundCircleRadius(F)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "radius"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTimerBurstBackgroundColor()I
 .end method
 
 .method public abstract getTimerBurstBackgroundPaint(Landroid/content/Context;)Landroid/graphics/Paint;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTimerBurstCircleRadius(F)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "radius"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTimerBurstCurrentTextColor()I
@@ -254,14 +105,25 @@
     .line 1
     invoke-static {}, Lcom/android/camera/customization/ThemeResource;->getInstance()Lcom/android/camera/customization/ThemeResource;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
-    const v0, 0x7f0603e6
+    .line 5
+    const v0, 0x7f0603eb
 
+    .line 6
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Lcom/android/camera/customization/ThemeResource;->getColor(I)I
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     return p0
 .end method
 
@@ -271,8 +133,12 @@
     .line 1
     invoke-static {}, Lcom/android/camera/customization/TintColor;->tintColor()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -283,23 +149,6 @@
 .end method
 
 .method public abstract getTopMenuOpenAnimation(Ljava/util/List;IIILjava/util/List;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "views",
-            "row",
-            "totalRow",
-            "mAnimateHeight",
-            "mRowHeightLists"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -314,30 +163,9 @@
 .end method
 
 .method public abstract getTopMenuRes(Landroid/content/Context;I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "res"
-        }
-    .end annotation
 .end method
 
 .method public abstract reInit(II)Ljava/util/List;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "currentMode",
-            "cameraId"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -349,37 +177,7 @@
 .end method
 
 .method public abstract scaleExtraSubMenu(Landroid/view/View;Landroid/view/View;Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "topExtraMenu",
-            "isShow"
-        }
-    .end annotation
 .end method
 
 .method public abstract setBackgroundAlphaAndRadius(Lcom/android/camera/ui/ShapeBackGroundView;FIIII)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "topBackgroundView",
-            "value",
-            "fromAlpha",
-            "toAlpha",
-            "backgroundHeight",
-            "maskHeight"
-        }
-    .end annotation
 .end method

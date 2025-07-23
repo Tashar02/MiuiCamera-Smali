@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/bumptech/glide/load/data/HttpUrlFetcher$HttpUrlConnectionFactory;
+.class interface abstract Lcom/bumptech/glide/load/data/HttpUrlFetcher$HttpUrlConnectionFactory;
 .super Ljava/lang/Object;
 .source "HttpUrlFetcher.java"
 

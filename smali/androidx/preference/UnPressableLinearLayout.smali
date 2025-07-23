@@ -37,5 +37,6 @@
 .method public dispatchSetPressed(Z)V
     .locals 0
 
+    .line 1
     return-void
 .end method

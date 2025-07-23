@@ -89,129 +89,45 @@
 .end method
 
 .method public abstract getTopConfigBgRes(I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "res"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTopConfigBgRes(Landroid/content/Context;I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "res"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTopConfigColor()I
 .end method
 
 .method public abstract getTopConfigRes(I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "res"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTopConfigRes(Landroid/content/Context;I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "res"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTopConfigTint(Landroid/view/View;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animView"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTopInterpolator()Landroid/animation/TimeInterpolator;
 .end method
 
 .method public abstract getTopMargin(Landroid/content/Context;)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTopTintColor()I
 .end method
 
 .method public abstract getUseGuideBackMarginEnd(Landroid/content/Context;)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 .end method
 
 .method public abstract getVibrator(Landroid/content/Context;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 .end method
 
 .method public abstract getVideoTagExpandDuration()J
 .end method
 
 .method public abstract getVideoTagPointFValue(Landroid/graphics/PointF;)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "pointF"
-        }
-    .end annotation
 .end method
 
 .method public abstract getVideoTagSize(Landroid/content/Context;)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 .end method
 
 .method public abstract getZoomMapEisResource()I
@@ -221,52 +137,10 @@
 .end method
 
 .method public abstract setTopColorAnimator(Landroid/view/View;JII)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "duration",
-            "srcColor",
-            "tarColor"
-        }
-    .end annotation
 .end method
 
 .method public abstract setVideoTagCountLayout(Landroid/content/Context;Landroid/view/ViewGroup$MarginLayoutParams;II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "marginLayoutParams",
-            "textWidth",
-            "count"
-        }
-    .end annotation
 .end method
 
 .method public abstract setVideoTagLayout(Landroid/content/Context;Landroid/view/View;Landroid/widget/ImageView;Landroid/widget/TextView;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "view",
-            "imageView",
-            "textView"
-        }
-    .end annotation
 .end method

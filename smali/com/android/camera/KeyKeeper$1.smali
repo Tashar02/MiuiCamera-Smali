@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/KeyKeeper$1;
+.class synthetic Lcom/android/camera/KeyKeeper$1;
 .super Ljava/lang/Object;
 .source "KeyKeeper.java"
 

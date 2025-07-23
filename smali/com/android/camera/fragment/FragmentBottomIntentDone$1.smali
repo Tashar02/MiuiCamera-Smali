@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/FragmentBottomIntentDone$1;
+.class Lcom/android/camera/fragment/FragmentBottomIntentDone$1;
 .super Landroid/view/View$AccessibilityDelegate;
 .source "FragmentBottomIntentDone.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/FragmentBottomIntentDone;
+.field final synthetic this$0:Lcom/android/camera/fragment/FragmentBottomIntentDone;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/FragmentBottomIntentDone;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/FragmentBottomIntentDone$1;->this$0:Lcom/android/camera/fragment/FragmentBottomIntentDone;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,24 +39,21 @@
 # virtual methods
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "host",
-            "info"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
+    .line 2
+    .line 3
+    .line 4
     const-string p0, ""
 
-    .line 2
+    .line 5
+    .line 6
     invoke-virtual {p2, p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method

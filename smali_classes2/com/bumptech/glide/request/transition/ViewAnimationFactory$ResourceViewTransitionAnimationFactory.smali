@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/request/transition/ViewAnimationFactory$ResourceViewTransitionAnimationFactory;
+.class Lcom/bumptech/glide/request/transition/ViewAnimationFactory$ResourceViewTransitionAnimationFactory;
 .super Ljava/lang/Object;
 .source "ViewAnimationFactory.java"
 
@@ -29,8 +29,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/bumptech/glide/request/transition/ViewAnimationFactory$ResourceViewTransitionAnimationFactory;->animationId:I
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,9 +46,15 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/request/transition/ViewAnimationFactory$ResourceViewTransitionAnimationFactory;->animationId:I
 
+    .line 2
+    .line 3
     invoke-static {p1, p0}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method

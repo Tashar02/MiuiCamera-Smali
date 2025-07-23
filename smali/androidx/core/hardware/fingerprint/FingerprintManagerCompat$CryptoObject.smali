@@ -105,6 +105,8 @@
     .line 1
     iget-object p0, p0, Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$CryptoObject;->mCipher:Ljavax/crypto/Cipher;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -116,6 +118,8 @@
     .line 1
     iget-object p0, p0, Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$CryptoObject;->mMac:Ljavax/crypto/Mac;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -127,5 +131,7 @@
     .line 1
     iget-object p0, p0, Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$CryptoObject;->mSignature:Ljava/security/Signature;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

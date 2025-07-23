@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/HardwareCapabilities$14;
+.class Lcom/android/camera2/HardwareCapabilities$14;
 .super Lcom/xiaomi/camera/util/TypedValue;
 .source "HardwareCapabilities.java"
 
@@ -29,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/camera/util/TypedValue;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -117,83 +120,75 @@
 
     if-ge v8, v9, :cond_2
 
-    const/4 v9, 0x0
+    const/high16 v9, 0x3f800000    # 1.0f
 
-    const/high16 v10, 0x3f800000    # 1.0f
-
-    sub-float v11, v5, v10
+    sub-float v10, v5, v9
 
     .line 12
-    invoke-static {v11}, Ljava/lang/Math;->abs(F)F
+    invoke-static {v10}, Ljava/lang/Math;->abs(F)F
 
-    move-result v11
+    move-result v10
 
-    float-to-double v11, v11
+    float-to-double v10, v10
 
-    const-wide v13, 0x3f50624dd2f1a9fcL    # 0.001
+    const-wide v12, 0x3f50624dd2f1a9fcL    # 0.001
 
-    cmpg-double v11, v11, v13
+    cmpg-double v10, v10, v12
 
-    if-gez v11, :cond_1
+    if-gez v10, :cond_1
 
     add-int/lit8 v9, v8, 0x3
 
     .line 13
-    aget v10, v4, v9
+    aget v9, v4, v9
 
-    add-int/lit8 v11, v8, 0x1
+    add-int/lit8 v10, v8, 0x1
 
-    aget v12, v4, v11
+    aget v10, v4, v10
 
-    sub-float/2addr v10, v12
+    sub-float v11, v9, v10
 
     add-int/lit8 v12, v8, 0x2
 
-    aget v13, v4, v12
+    aget v12, v4, v12
 
-    aget v14, v4, v8
+    aget v13, v4, v8
 
-    sub-float/2addr v13, v14
+    sub-float v14, v12, v13
 
-    div-float/2addr v10, v13
+    div-float/2addr v11, v14
 
-    .line 14
-    aget v13, v4, v12
+    mul-float/2addr v10, v12
 
-    aget v11, v4, v11
+    mul-float/2addr v9, v13
 
-    mul-float/2addr v13, v11
+    sub-float/2addr v10, v9
 
-    aget v9, v4, v9
+    sub-float/2addr v12, v13
 
-    aget v11, v4, v8
+    div-float/2addr v10, v12
 
-    mul-float/2addr v9, v11
+    move v9, v11
 
-    sub-float/2addr v13, v9
-
-    aget v9, v4, v12
-
-    aget v11, v4, v8
-
-    sub-float/2addr v9, v11
-
-    div-float v9, v13, v9
+    goto :goto_2
 
     :cond_1
+    const/4 v10, 0x0
+
+    :goto_2
     add-int/lit8 v11, v8, 0x1
 
-    .line 15
-    aput v10, v6, v11
+    .line 14
+    aput v9, v6, v11
 
     add-int/lit8 v8, v8, 0x2
 
-    .line 16
-    aput v9, v6, v8
+    .line 15
+    aput v10, v6, v8
 
     goto :goto_1
 
-    .line 17
+    .line 16
     :cond_2
     invoke-virtual {p0, v3}, Landroid/util/SparseArray;->keyAt(I)I
 

@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public mA:D
+.field mA:D
 
-.field public mB:D
+.field mB:D
 
-.field public mC:D
+.field mC:D
 
-.field public mD:D
+.field mD:D
 
 
 # direct methods
@@ -32,17 +32,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-wide p1, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mA:D
 
-    .line 3
+    .line 5
+    .line 6
     iput-wide p3, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mB:D
 
-    .line 4
+    .line 7
+    .line 8
     iput-wide p5, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mC:D
 
-    .line 5
+    .line 9
+    .line 10
     iput-wide p7, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mD:D
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -54,24 +61,38 @@
     .line 1
     iget-wide v0, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mD:D
 
+    .line 2
+    .line 3
     mul-double/2addr v0, p1
 
+    .line 4
     iget-wide v2, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mC:D
 
+    .line 5
+    .line 6
     add-double/2addr v0, v2
 
+    .line 7
     mul-double/2addr v0, p1
 
+    .line 8
     iget-wide v2, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mB:D
 
+    .line 9
+    .line 10
     add-double/2addr v0, v2
 
+    .line 11
     mul-double/2addr v0, p1
 
+    .line 12
     iget-wide p0, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mA:D
 
+    .line 13
+    .line 14
     add-double/2addr v0, p0
 
+    .line 15
     return-wide v0
 .end method
 
@@ -81,25 +102,41 @@
     .line 1
     iget-wide v0, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mD:D
 
+    .line 2
+    .line 3
     const-wide/high16 v2, 0x4008000000000000L    # 3.0
 
+    .line 4
+    .line 5
     mul-double/2addr v0, v2
 
+    .line 6
     mul-double/2addr v0, p1
 
+    .line 7
     iget-wide v2, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mC:D
 
+    .line 8
+    .line 9
     const-wide/high16 v4, 0x4000000000000000L    # 2.0
 
+    .line 10
+    .line 11
     mul-double/2addr v2, v4
 
+    .line 12
     add-double/2addr v0, v2
 
+    .line 13
     mul-double/2addr v0, p1
 
+    .line 14
     iget-wide p0, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline$Cubic;->mB:D
 
+    .line 15
+    .line 16
     add-double/2addr v0, p0
 
+    .line 17
     return-wide v0
 .end method

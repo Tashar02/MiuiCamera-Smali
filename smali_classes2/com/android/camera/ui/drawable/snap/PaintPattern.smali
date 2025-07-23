@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public paintBase:Lcom/android/camera/ui/drawable/CameraPaintBase;
+.field protected paintBase:Lcom/android/camera/ui/drawable/CameraPaintBase;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TP;"
@@ -27,15 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ui/drawable/CameraPaintBase;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "paintBase"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TP;)V"
@@ -46,11 +37,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/ui/drawable/snap/PaintPattern;->paintBase:Lcom/android/camera/ui/drawable/CameraPaintBase;
 
-    .line 3
+    .line 5
+    .line 6
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/PaintPattern;->prepareTargetPattern()V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -58,25 +55,17 @@
 # virtual methods
 .method public final calculateCurrentValue(FFF)F
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "src",
-            "dst",
-            "interpolatorValue"
-        }
-    .end annotation
 
+    .line 1
     sub-float/2addr p2, p1
 
+    .line 2
     mul-float/2addr p2, p3
 
+    .line 3
     add-float/2addr p1, p2
 
+    .line 4
     return p1
 .end method
 
@@ -85,15 +74,8 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "canvas"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -106,6 +88,7 @@
 .method public recycle()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -116,12 +99,4 @@
             to = 1.0
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "interpolatorValue"
-        }
-    .end annotation
 .end method

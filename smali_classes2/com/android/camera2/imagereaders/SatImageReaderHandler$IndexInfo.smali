@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;
+.class Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;
 .super Ljava/lang/Object;
 .source "SatImageReaderHandler.java"
 
@@ -25,31 +25,25 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "imageType",
-            "cameraType",
-            "index"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;->mImageFlag:I
 
-    .line 3
+    .line 5
+    .line 6
     iput p2, p0, Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;->mCameraType:I
 
-    .line 4
+    .line 7
+    .line 8
     iput p3, p0, Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;->mIndex:I
 
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -61,6 +55,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;->mCameraType:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -70,6 +66,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;->mImageFlag:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -79,5 +77,7 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/imagereaders/SatImageReaderHandler$IndexInfo;->mIndex:I
 
+    .line 2
+    .line 3
     return p0
 .end method

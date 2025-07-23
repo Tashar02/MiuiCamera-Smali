@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public expanded:Z
+.field expanded:Z
 
 .field public extraPixels:I
     .annotation runtime Landroid/view/ViewDebug$ExportedProperty;

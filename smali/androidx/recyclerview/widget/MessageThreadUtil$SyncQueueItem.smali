@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
+.class Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
 .super Ljava/lang/Object;
 .source "MessageThreadUtil.java"
 
@@ -33,7 +33,7 @@
 
 .field public data:Ljava/lang/Object;
 
-.field public next:Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
+.field next:Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
 
 .field public what:I
 
@@ -45,10 +45,17 @@
     .line 1
     new-instance v0, Ljava/lang/Object;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->sPoolLock:Ljava/lang/Object;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -58,6 +65,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -186,58 +196,84 @@
 .method public recycle()V
     .locals 2
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     iput-object v0, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->next:Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
 
+    .line 3
+    .line 4
     const/4 v1, 0x0
 
-    .line 2
+    .line 5
     iput v1, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->arg5:I
 
+    .line 6
+    .line 7
     iput v1, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->arg4:I
 
+    .line 8
+    .line 9
     iput v1, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->arg3:I
 
+    .line 10
+    .line 11
     iput v1, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->arg2:I
 
+    .line 12
+    .line 13
     iput v1, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->arg1:I
 
+    .line 14
+    .line 15
     iput v1, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->what:I
 
-    .line 3
+    .line 16
+    .line 17
     iput-object v0, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->data:Ljava/lang/Object;
 
-    .line 4
+    .line 18
+    .line 19
     sget-object v0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->sPoolLock:Ljava/lang/Object;
 
+    .line 20
+    .line 21
     monitor-enter v0
 
-    .line 5
+    .line 22
     :try_start_0
     sget-object v1, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->sPool:Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
 
+    .line 23
+    .line 24
     if-eqz v1, :cond_0
 
-    .line 6
+    .line 25
+    .line 26
     iput-object v1, p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->next:Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
 
-    .line 7
+    .line 27
+    .line 28
     :cond_0
     sput-object p0, Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;->sPool:Landroidx/recyclerview/widget/MessageThreadUtil$SyncQueueItem;
 
-    .line 8
+    .line 29
+    .line 30
     monitor-exit v0
 
+    .line 31
     return-void
 
+    .line 32
     :catchall_0
     move-exception p0
 
+    .line 33
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 34
     throw p0
 .end method

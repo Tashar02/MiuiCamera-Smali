@@ -1,4 +1,4 @@
-.class public Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;
+.class Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;
 .super Landroidx/core/view/WindowInsetsCompat$BuilderImpl;
 .source "WindowInsetsCompat.java"
 
@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final mPlatBuilder:Landroid/view/WindowInsets$Builder;
+.field final mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
 
 # direct methods
@@ -47,7 +47,7 @@
     .end param
 
     .line 3
-    invoke-direct {p0}, Landroidx/core/view/WindowInsetsCompat$BuilderImpl;-><init>()V
+    invoke-direct {p0, p1}, Landroidx/core/view/WindowInsetsCompat$BuilderImpl;-><init>(Landroidx/core/view/WindowInsetsCompat;)V
 
     .line 4
     invoke-virtual {p1}, Landroidx/core/view/WindowInsetsCompat;->toWindowInsets()Landroid/view/WindowInsets;
@@ -78,22 +78,46 @@
 
 # virtual methods
 .method public build()Landroidx/core/view/WindowInsetsCompat;
-    .locals 0
+    .locals 1
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
     .line 1
-    iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
+    invoke-virtual {p0}, Landroidx/core/view/WindowInsetsCompat$BuilderImpl;->applyInsetTypes()V
 
-    invoke-virtual {p0}, Landroid/view/WindowInsets$Builder;->build()Landroid/view/WindowInsets;
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
-    move-result-object p0
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Landroid/view/WindowInsets$Builder;->build()Landroid/view/WindowInsets;
 
-    invoke-static {p0}, Landroidx/core/view/WindowInsetsCompat;->toWindowInsetsCompat(Landroid/view/WindowInsets;)Landroidx/core/view/WindowInsetsCompat;
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
 
-    move-result-object p0
+    .line 10
+    invoke-static {v0}, Landroidx/core/view/WindowInsetsCompat;->toWindowInsetsCompat(Landroid/view/WindowInsets;)Landroidx/core/view/WindowInsetsCompat;
 
-    return-object p0
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl;->mInsetsTypeMask:[Landroidx/core/graphics/Insets;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, p0}, Landroidx/core/view/WindowInsetsCompat;->setOverriddenInsets([Landroidx/core/graphics/Insets;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-object v0
 .end method
 
 .method public setDisplayCutout(Landroidx/core/view/DisplayCutoutCompat;)V
@@ -106,20 +130,33 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
+    .line 2
+    .line 3
     if-eqz p1, :cond_0
 
+    .line 4
+    .line 5
     invoke-virtual {p1}, Landroidx/core/view/DisplayCutoutCompat;->unwrap()Landroid/view/DisplayCutout;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p1
 
+    .line 9
     goto :goto_0
 
+    .line 10
     :cond_0
     const/4 p1, 0x0
 
+    .line 11
     :goto_0
     invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setDisplayCutout(Landroid/view/DisplayCutout;)Landroid/view/WindowInsets$Builder;
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method
 
@@ -133,12 +170,21 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Landroidx/core/graphics/Insets;->toPlatformInsets()Landroid/graphics/Insets;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
+    .line 7
     invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setMandatorySystemGestureInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -152,12 +198,21 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Landroidx/core/graphics/Insets;->toPlatformInsets()Landroid/graphics/Insets;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
+    .line 7
     invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setStableInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -171,12 +226,21 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Landroidx/core/graphics/Insets;->toPlatformInsets()Landroid/graphics/Insets;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
+    .line 7
     invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setSystemGestureInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -190,12 +254,21 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Landroidx/core/graphics/Insets;->toPlatformInsets()Landroid/graphics/Insets;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
+    .line 7
     invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setSystemWindowInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -209,11 +282,20 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/WindowInsetsCompat$BuilderImpl29;->mPlatBuilder:Landroid/view/WindowInsets$Builder;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Landroidx/core/graphics/Insets;->toPlatformInsets()Landroid/graphics/Insets;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
+    .line 7
     invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setTappableElementInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

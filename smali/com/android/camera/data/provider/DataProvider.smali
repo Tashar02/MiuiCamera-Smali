@@ -24,15 +24,6 @@
 .end method
 
 .method public abstract dataConfig(I)Lcom/android/camera/data/provider/DataProvider$ProviderEvent;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cameraId"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<P::",
@@ -43,17 +34,6 @@
 .end method
 
 .method public abstract dataConfig(II)Lcom/android/camera/data/provider/DataProvider$ProviderEvent;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cameraId",
-            "intentType"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<P::",
@@ -104,20 +84,4 @@
 .end method
 
 .method public abstract reInitComponent(IILcom/android/camera2/CameraCapabilities;II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "currentMode",
-            "cameraId",
-            "p",
-            "intentType",
-            "resetType"
-        }
-    .end annotation
 .end method

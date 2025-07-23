@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/media/MediaSessionManager$MediaSessionManagerImpl;
+.class interface abstract Landroidx/media/MediaSessionManager$MediaSessionManagerImpl;
 .super Ljava/lang/Object;
 .source "MediaSessionManager.java"
 
@@ -19,4 +19,12 @@
 .end method
 
 .method public abstract isTrustedForMediaControl(Landroidx/media/MediaSessionManager$RemoteUserInfoImpl;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "userInfo"
+        }
+    .end annotation
 .end method

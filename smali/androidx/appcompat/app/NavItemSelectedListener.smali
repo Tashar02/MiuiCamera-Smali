@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/NavItemSelectedListener;
+.class Landroidx/appcompat/app/NavItemSelectedListener;
 .super Ljava/lang/Object;
 .source "NavItemSelectedListener.java"
 
@@ -18,8 +18,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/appcompat/app/NavItemSelectedListener;->mListener:Landroidx/appcompat/app/ActionBar$OnNavigationListener;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -40,11 +44,17 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/NavItemSelectedListener;->mListener:Landroidx/appcompat/app/ActionBar$OnNavigationListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-interface {p0, p3, p4, p5}, Landroidx/appcompat/app/ActionBar$OnNavigationListener;->onNavigationItemSelected(IJ)Z
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
@@ -59,5 +69,6 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method

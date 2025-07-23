@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/ImageHeaderParserUtils$1;
+.class final Lcom/bumptech/glide/load/ImageHeaderParserUtils$1;
 .super Ljava/lang/Object;
 .source "ImageHeaderParserUtils.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic val$finalIs:Ljava/io/InputStream;
+.field final synthetic val$finalIs:Ljava/io/InputStream;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/ImageHeaderParserUtils$1;->val$finalIs:Ljava/io/InputStream;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -47,26 +52,42 @@
     :try_start_0
     iget-object v0, p0, Lcom/bumptech/glide/load/ImageHeaderParserUtils$1;->val$finalIs:Ljava/io/InputStream;
 
+    .line 2
+    .line 3
     invoke-interface {p1, v0}, Lcom/bumptech/glide/load/ImageHeaderParser;->getType(Ljava/io/InputStream;)Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
+    .line 7
     iget-object p0, p0, Lcom/bumptech/glide/load/ImageHeaderParserUtils$1;->val$finalIs:Ljava/io/InputStream;
 
+    .line 8
+    .line 9
     invoke-virtual {p0}, Ljava/io/InputStream;->reset()V
 
+    .line 10
+    .line 11
+    .line 12
     return-object p1
 
+    .line 13
     :catchall_0
     move-exception p1
 
+    .line 14
     iget-object p0, p0, Lcom/bumptech/glide/load/ImageHeaderParserUtils$1;->val$finalIs:Ljava/io/InputStream;
 
+    .line 15
+    .line 16
     invoke-virtual {p0}, Ljava/io/InputStream;->reset()V
 
-    .line 3
+    .line 17
+    .line 18
+    .line 19
     throw p1
 .end method

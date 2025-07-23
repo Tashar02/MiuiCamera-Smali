@@ -16,18 +16,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/graphics/Rect;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "r",
-            "isSnapshot"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawAttribute;-><init>()V
@@ -58,20 +46,6 @@
 
 .method public constructor <init>(ILandroid/graphics/Rect;ZI)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "r",
-            "isSnapshot",
-            "rotation"
-        }
-    .end annotation
 
     .line 7
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawAttribute;-><init>()V

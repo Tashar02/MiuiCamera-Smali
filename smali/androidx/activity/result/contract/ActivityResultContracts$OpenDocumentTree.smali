@@ -34,13 +34,16 @@
     .line 1
     invoke-direct {p0}, Landroidx/activity/result/contract/ActivityResultContract;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
 .method public createIntent(Landroid/content/Context;Landroid/net/Uri;)Landroid/content/Intent;
-    .locals 1
+    .locals 0
     .param p1    # Landroid/content/Context;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -62,18 +65,11 @@
 
     invoke-direct {p0, p1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 3
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v0, 0x1a
-
-    if-lt p1, v0, :cond_0
-
     if-eqz p2, :cond_0
 
     const-string p1, "android.provider.extra.INITIAL_URI"
 
-    .line 4
+    .line 3
     invoke-virtual {p0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     :cond_0
@@ -131,6 +127,7 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
     return-object p0
@@ -149,7 +146,7 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
+    .line 2
     check-cast p2, Landroid/net/Uri;
 
     invoke-virtual {p0, p1, p2}, Landroidx/activity/result/contract/ActivityResultContracts$OpenDocumentTree;->getSynchronousResult(Landroid/content/Context;Landroid/net/Uri;)Landroidx/activity/result/contract/ActivityResultContract$SynchronousResult;

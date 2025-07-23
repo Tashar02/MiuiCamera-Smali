@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/settings/SmartGuideFragment$2;
+.class Lcom/android/camera/fragment/settings/SmartGuideFragment$2;
 .super Landroid/os/AsyncTask;
 .source "SmartGuideFragment.java"
 
@@ -25,26 +25,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/settings/SmartGuideFragment;
+.field final synthetic this$0:Lcom/android/camera/fragment/settings/SmartGuideFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/settings/SmartGuideFragment;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/settings/SmartGuideFragment$2;->this$0:Lcom/android/camera/fragment/settings/SmartGuideFragment;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -52,14 +49,6 @@
 # virtual methods
 .method public bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "params"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, [Ljava/lang/Void;
@@ -73,14 +62,6 @@
 
 .method public varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "params"
-        }
-    .end annotation
 
     const-string p1, "SmartGuideFragment"
 
@@ -103,14 +84,14 @@
 
     move-result-object p0
 
-    const-string v0, "com.xiaomi.scanner"
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const-string v2, "com.xiaomi.scanner"
 
     .line 5
-    invoke-static {p1, v0, p0, v1, v2}, Lcom/android/camera/Util;->installPackage(Landroid/content/Context;Ljava/lang/String;Lcom/android/camera/lib/compatibility/util/CompatibilityUtils$PackageInstallerListener;ZZ)V
+    invoke-static {p1, v2, p0, v0, v1}, Lcom/android/camera/Util;->installPackage(Landroid/content/Context;Ljava/lang/String;Lcom/android/camera/lib/compatibility/util/CompatibilityUtils$PackageInstallerListener;ZZ)V
 
     const/4 p0, 0x0
 

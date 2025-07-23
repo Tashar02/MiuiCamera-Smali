@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public sampleCount:I
+.field sampleCount:I
 
-.field public sampleDuration:I
+.field sampleDuration:I
 
 
 # direct methods
@@ -28,11 +28,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleCount:I
 
-    .line 3
+    .line 5
+    .line 6
     iput p2, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleDuration:I
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -44,6 +49,8 @@
     .line 1
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleCount:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -53,6 +60,8 @@
     .line 1
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleDuration:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -62,12 +71,18 @@
     .line 1
     iget v0, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleCount:I
 
+    .line 2
+    .line 3
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleDuration:I
 
+    .line 4
+    .line 5
     mul-int/2addr v0, p0
 
+    .line 6
     int-to-long v0, v0
 
+    .line 7
     return-wide v0
 .end method
 
@@ -77,6 +92,8 @@
     .line 1
     iput p1, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleCount:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -86,5 +103,7 @@
     .line 1
     iput p1, p0, Lorg/jcodec/containers/mp4/boxes/TimeToSampleBox$TimeToSampleEntry;->sampleDuration:I
 
+    .line 2
+    .line 3
     return-void
 .end method

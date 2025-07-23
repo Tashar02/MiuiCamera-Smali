@@ -5,27 +5,9 @@
 
 # virtual methods
 .method public abstract create(Ljava/lang/String;Ljava/lang/String;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "vertexCode",
-            "fragmentCode"
-        }
-    .end annotation
 .end method
 
 .method public abstract getAttributeLocation(Ljava/lang/String;)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "attribute"
-        }
-    .end annotation
 .end method
 
 .method public abstract unUse()V

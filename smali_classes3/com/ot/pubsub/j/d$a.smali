@@ -1,4 +1,4 @@
-.class public Lcom/ot/pubsub/j/d$a;
+.class Lcom/ot/pubsub/j/d$a;
 .super Landroid/os/Handler;
 
 
@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/ot/pubsub/j/d;
+.field final synthetic a:Lcom/ot/pubsub/j/d;
 
 
 # direct methods
@@ -47,17 +47,30 @@
     .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
+    .line 2
+    .line 3
     const/16 v0, 0x7b
 
+    .line 4
+    .line 5
     if-ne p1, v0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     new-instance p1, Lcom/ot/pubsub/j/j;
 
+    .line 8
+    .line 9
     invoke-direct {p1, p0}, Lcom/ot/pubsub/j/j;-><init>(Lcom/ot/pubsub/j/d$a;)V
 
+    .line 10
+    .line 11
+    .line 12
     invoke-static {p1}, Lcom/ot/pubsub/util/e;->a(Ljava/lang/Runnable;)V
 
+    .line 13
+    .line 14
+    .line 15
     :cond_0
     return-void
 .end method

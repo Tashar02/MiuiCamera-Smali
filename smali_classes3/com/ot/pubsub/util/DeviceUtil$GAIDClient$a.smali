@@ -1,4 +1,4 @@
-.class public final Lcom/ot/pubsub/util/DeviceUtil$GAIDClient$a;
+.class final Lcom/ot/pubsub/util/DeviceUtil$GAIDClient$a;
 .super Ljava/lang/Object;
 
 # interfaces
@@ -28,8 +28,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/ot/pubsub/util/DeviceUtil$GAIDClient$a;->a:Landroid/os/IBinder;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -207,5 +211,7 @@
     .line 1
     iget-object p0, p0, Lcom/ot/pubsub/util/DeviceUtil$GAIDClient$a;->a:Landroid/os/IBinder;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

@@ -1,23 +1,40 @@
-.class public final Lcom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$$inlined$apply$lambda$1;
-.super LOooO0o/o00ooOoO/o000O00O/o0000O0O;
+.class final Lcom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$$inlined$apply$lambda$1;
+.super Lo000oo0/o000;
 .source "Avatar.kt"
 
 # interfaces
-.implements LOooO0o/o00ooOoO/o000O00/OooO00o;
+.implements Lo000oo00/OooOo00;
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/faceunity/core/avatar/model/Avatar;->initAvatarFromJson(Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lo000oo0/o000;",
+        "Lo000oo00/OooOo00<",
+        "Lo000Oo0O/oo00oO;",
+        ">;"
     }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nAvatar.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Avatar.kt\ncom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$1$1\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,507:1\n13506#2,2:508\n*E\n*S KotlinDebug\n*F\n+ 1 Avatar.kt\ncom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$1$1\n*L\n98#1,2:508\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0004\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002\u00a8\u0006\u0003"
     }
     d2 = {
-        "LOooO0o/o00OOOOo;",
+        "Lo000Oo0O/oo00oO;",
         "invoke",
         "()V",
         "com/faceunity/core/avatar/model/Avatar$initAvatarFromJson$1$1",
@@ -31,47 +48,34 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/faceunity/core/avatar/model/Avatar;->initAvatarFromJson(Ljava/lang/String;)V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "LOooO0o/o00ooOoO/o000O00O/o0000O0O;",
-        "LOooO0o/o00ooOoO/o000O00/OooO00o<",
-        "LOooO0o/o00OOOOo;",
-        ">;"
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAvatar.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Avatar.kt\ncom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$1$1\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,507:1\n13506#2,2:508\n*E\n*S KotlinDebug\n*F\n+ 1 Avatar.kt\ncom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$1$1\n*L\n98#1,2:508\n*E\n"
-.end annotation
-
 
 # instance fields
-.field public final synthetic $this_apply:Lcom/faceunity/wrapper/faceunity$AvatarSetting;
+.field final synthetic $this_apply:Lcom/faceunity/wrapper/faceunity$AvatarSetting;
 
-.field public final synthetic this$0:Lcom/faceunity/core/avatar/model/Avatar;
+.field final synthetic this$0:Lcom/faceunity/core/avatar/model/Avatar;
 
 
 # direct methods
 .method public constructor <init>(Lcom/faceunity/wrapper/faceunity$AvatarSetting;Lcom/faceunity/core/avatar/model/Avatar;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$$inlined$apply$lambda$1;->$this_apply:Lcom/faceunity/wrapper/faceunity$AvatarSetting;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$$inlined$apply$lambda$1;->this$0:Lcom/faceunity/core/avatar/model/Avatar;
 
+    .line 4
+    .line 5
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, LOooO0o/o00ooOoO/o000O00O/o0000O0O;-><init>(I)V
+    .line 6
+    invoke-direct {p0, p1}, Lo000oo0/o000;-><init>(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -83,7 +87,7 @@
     .line 1
     invoke-virtual {p0}, Lcom/faceunity/core/avatar/model/Avatar$initAvatarFromJson$$inlined$apply$lambda$1;->invoke()V
 
-    sget-object p0, LOooO0o/o00OOOOo;->OooO00o:LOooO0o/o00OOOOo;
+    sget-object p0, Lo000Oo0O/oo00oO;->OooO00o:Lo000Oo0O/oo00oO;
 
     return-object p0
 .end method
@@ -119,7 +123,7 @@
 
     const-string v3, "it"
 
-    invoke-static {v6, v3}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOO(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v3}, Lo000oo0/o0000O;->OooOOOO(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v5, 0x0
 
@@ -133,7 +137,7 @@
 
     move-object v4, v6
 
-    invoke-direct/range {v3 .. v9}, Lcom/faceunity/core/entity/FUBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v3 .. v9}, Lcom/faceunity/core/entity/FUBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILo000oo0/o0O0O00;)V
 
     invoke-virtual {v10, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

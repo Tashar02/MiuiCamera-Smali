@@ -1,27 +1,35 @@
 .class public final synthetic Lcom/uber/rxdogtag/o000OOo;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic o0000o:Ljava/lang/Throwable;
+.field public final synthetic o0000o:Lcom/uber/rxdogtag/DogTagSingleObserver;
 
-.field public final synthetic o0000o0o:Lcom/uber/rxdogtag/DogTagSubscriber;
+.field public final synthetic o0000oO0:Lio/reactivex/disposables/Disposable;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagSubscriber;Ljava/lang/Throwable;)V
+.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagSingleObserver;Lio/reactivex/disposables/Disposable;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/o000OOo;->o0000o0o:Lcom/uber/rxdogtag/DogTagSubscriber;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/o000OOo;->o0000o:Lcom/uber/rxdogtag/DogTagSingleObserver;
 
-    iput-object p2, p0, Lcom/uber/rxdogtag/o000OOo;->o0000o:Ljava/lang/Throwable;
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/uber/rxdogtag/o000OOo;->o0000oO0:Lio/reactivex/disposables/Disposable;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -30,11 +38,19 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/uber/rxdogtag/o000OOo;->o0000o0o:Lcom/uber/rxdogtag/DogTagSubscriber;
+    .line 1
+    iget-object v0, p0, Lcom/uber/rxdogtag/o000OOo;->o0000o:Lcom/uber/rxdogtag/DogTagSingleObserver;
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/o000OOo;->o0000o:Ljava/lang/Throwable;
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/uber/rxdogtag/o000OOo;->o0000oO0:Lio/reactivex/disposables/Disposable;
 
-    invoke-virtual {v0, p0}, Lcom/uber/rxdogtag/DogTagSubscriber;->OooO0OO(Ljava/lang/Throwable;)V
+    .line 4
+    .line 5
+    invoke-static {v0, p0}, Lcom/uber/rxdogtag/DogTagSingleObserver;->OooO0o0(Lcom/uber/rxdogtag/DogTagSingleObserver;Lio/reactivex/disposables/Disposable;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

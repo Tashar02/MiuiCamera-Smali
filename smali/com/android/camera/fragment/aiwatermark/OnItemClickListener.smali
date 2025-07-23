@@ -5,16 +5,4 @@
 
 # virtual methods
 .method public abstract onItemClick(Lcom/android/camera/aiwatermark/data/WatermarkItem;ILandroid/view/View;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "item",
-            "position",
-            "view"
-        }
-    .end annotation
 .end method

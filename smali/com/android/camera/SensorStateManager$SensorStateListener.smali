@@ -21,24 +21,18 @@
 .method public notifyDevicePostureChanged()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onDeviceBeginMoving()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public abstract onDeviceKeepMoving(D)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "a"
-        }
-    .end annotation
 .end method
 
 .method public onDeviceLieChanged(Z)V
@@ -46,52 +40,19 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isLying"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public abstract onDeviceOrientationChanged(FZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "orientation",
-            "isLying"
-        }
-    .end annotation
 .end method
 
 .method public onDeviceRotationChanged([F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "rotation"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public abstract onSensorChanged(Landroid/hardware/SensorEvent;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "e"
-        }
-    .end annotation
 .end method

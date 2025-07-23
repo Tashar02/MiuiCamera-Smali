@@ -6,21 +6,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/view/View$OnClickListener;Ljava/util/List;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "currentMode",
-            "onClickListener",
-            "componentDataList",
-            "itemWidth"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -34,6 +19,9 @@
     .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;-><init>(ILandroid/view/View$OnClickListener;Ljava/util/List;I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -41,16 +29,6 @@
 # virtual methods
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -62,16 +40,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
     .locals 12
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     iget-object v0, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mComponentDataList:Ljava/util/List;
@@ -101,7 +69,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setRotation(F)V
 
-    const v0, 0x7f0a033b
+    const v0, 0x7f0b0373
 
     .line 6
     invoke-virtual {p1, v0}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -110,7 +78,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0a033c
+    const v1, 0x7f0b0374
 
     .line 7
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -119,7 +87,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a033d
+    const v2, 0x7f0b0375
 
     .line 8
     invoke-virtual {p1, v2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -171,10 +139,10 @@
     invoke-virtual {p1, v9}, Landroid/view/View;->setEnabled(Z)V
 
     .line 13
-    invoke-virtual {v1, v9}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v9}, Landroid/view/View;->setVisibility(I)V
 
     .line 14
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setBackgroundResource(I)V
+    invoke-virtual {v1, v5}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 15
     iget p0, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mCurrentMode:I
@@ -189,19 +157,19 @@
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 17
-    invoke-virtual {v2, v7}, Landroid/widget/ImageView;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v2, v7}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 18
-    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v0, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 19
-    invoke-virtual {v1, v8}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v1, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 20
-    invoke-virtual {v2, v8}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 21
-    invoke-virtual {v1, v9}, Landroid/widget/TextView;->setActivated(Z)V
+    invoke-virtual {v1, v9}, Landroid/view/View;->setActivated(Z)V
 
     return-void
 
@@ -242,13 +210,13 @@
     invoke-virtual {v10, v9}, Landroid/view/View;->setEnabled(Z)V
 
     .line 26
-    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v0, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 27
-    invoke-virtual {v1, v8}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v1, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 28
-    invoke-virtual {v2, v8}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v8}, Landroid/view/View;->setAlpha(F)V
 
     goto :goto_1
 
@@ -256,13 +224,13 @@
     const/high16 v8, 0x3f800000    # 1.0f
 
     .line 29
-    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v0, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 30
-    invoke-virtual {v1, v8}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v1, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 31
-    invoke-virtual {v2, v8}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v8}, Landroid/view/View;->setAlpha(F)V
 
     .line 32
     :goto_1
@@ -314,19 +282,19 @@
     if-nez v11, :cond_6
 
     .line 37
-    invoke-virtual {v1, v9}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v9}, Landroid/view/View;->setVisibility(I)V
 
     .line 38
     invoke-virtual {v1, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 39
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setBackgroundResource(I)V
+    invoke-virtual {v1, v5}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 40
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setActivated(Z)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setActivated(Z)V
 
     .line 41
-    invoke-virtual {v2, v7}, Landroid/widget/ImageView;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v2, v7}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 42
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setVisibility(I)V
@@ -339,7 +307,7 @@
 
     move-result v8
 
-    const v11, 0x7f1208d3
+    const v11, 0x7f13090e
 
     if-ne v8, v11, :cond_7
 
@@ -378,7 +346,7 @@
 
     .line 48
     :goto_3
-    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
     .line 49
     iget v4, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mCurrentMode:I
@@ -449,22 +417,22 @@
 
     move-result v4
 
-    invoke-virtual {v8, v9, v9, p0, v4}, Landroid/graphics/drawable/LayerDrawable;->setBounds(IIII)V
+    invoke-virtual {v8, v9, v9, p0, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 55
     invoke-virtual {v2, v8}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 56
-    invoke-virtual {v2, v5}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+    invoke-virtual {v2, v5}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 57
     invoke-virtual {v2, v9}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 58
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setActivated(Z)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setActivated(Z)V
 
     .line 59
-    invoke-virtual {v1, v7}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v1, v7}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 60
     :goto_4
@@ -526,7 +494,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f12008d
+    const v0, 0x7f13008d
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -548,16 +516,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera2/compat/theme/custom/cv/manual/ManuallyAdapterCV;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -569,19 +527,9 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -589,7 +537,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0d00bc
+    const v0, 0x7f0e00c6
 
     const/4 v1, 0x0
 

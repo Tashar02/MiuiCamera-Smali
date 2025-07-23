@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/data/observeable/RxData$DataObservable$1;
+.class Lcom/android/camera/data/observeable/RxData$DataObservable$1;
 .super Ljava/lang/Object;
 .source "RxData.java"
 
@@ -29,26 +29,23 @@
 
 
 # instance fields
-.field public final synthetic val$dataCheck:Lcom/android/camera/data/observeable/RxData$DataCheck;
+.field final synthetic val$dataCheck:Lcom/android/camera/data/observeable/RxData$DataCheck;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/data/observeable/RxData$DataCheck;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "val$dataCheck"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/observeable/RxData$DataObservable$1;->val$dataCheck:Lcom/android/camera/data/observeable/RxData$DataCheck;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -56,15 +53,6 @@
 # virtual methods
 .method public apply(Lio/reactivex/Observable;)Lcom/android/camera/data/observeable/RxData$DataObservable;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "tObservable"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -87,15 +75,6 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "tObservable"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

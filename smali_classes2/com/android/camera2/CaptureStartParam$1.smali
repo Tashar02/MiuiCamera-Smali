@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera2/CaptureStartParam$1;
+.class synthetic Lcom/android/camera2/CaptureStartParam$1;
 .super Ljava/lang/Object;
 .source "CaptureStartParam.java"
 

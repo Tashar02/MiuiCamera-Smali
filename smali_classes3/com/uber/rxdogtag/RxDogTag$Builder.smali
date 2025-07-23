@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public disableAnnotations:Z
+.field disableAnnotations:Z
 
-.field public guardObserverCallbacks:Z
+.field guardObserverCallbacks:Z
 
-.field public ignoredPackages:Ljava/util/Set;
+.field ignoredPackages:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field public observerHandlers:Ljava/util/List;
+.field observerHandlers:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -39,7 +39,7 @@
     .end annotation
 .end field
 
-.field public repackageOnErrorNotImplementedExceptions:Z
+.field repackageOnErrorNotImplementedExceptions:Z
 
 
 # direct methods
@@ -49,33 +49,53 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x1
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->guardObserverCallbacks:Z
 
+    .line 6
+    .line 7
     const/4 v1, 0x0
 
-    .line 3
+    .line 8
     iput-boolean v1, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->disableAnnotations:Z
 
-    .line 4
+    .line 9
+    .line 10
     new-instance v1, Ljava/util/ArrayList;
 
+    .line 11
+    .line 12
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 13
+    .line 14
+    .line 15
     iput-object v1, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->observerHandlers:Ljava/util/List;
 
-    .line 5
+    .line 16
+    .line 17
     new-instance v1, Ljava/util/LinkedHashSet;
 
+    .line 18
+    .line 19
     invoke-direct {v1}, Ljava/util/LinkedHashSet;-><init>()V
 
+    .line 20
+    .line 21
+    .line 22
     iput-object v1, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->ignoredPackages:Ljava/util/Set;
 
-    .line 6
+    .line 23
+    .line 24
     iput-boolean v0, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->repackageOnErrorNotImplementedExceptions:Z
 
+    .line 25
+    .line 26
     return-void
 .end method
 
@@ -157,28 +177,37 @@
     .line 1
     invoke-interface {p1, p0}, Lcom/uber/rxdogtag/RxDogTag$Configurer;->apply(Lcom/uber/rxdogtag/RxDogTag$Builder;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-object p0
 .end method
 
 .method public disableAnnotations()Lcom/uber/rxdogtag/RxDogTag$Builder;
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
-    .line 1
+    .line 2
     iput-boolean v0, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->disableAnnotations:Z
 
+    .line 3
+    .line 4
     return-object p0
 .end method
 
 .method public disableRepackagingOnErrorNotImplementedExceptions()Lcom/uber/rxdogtag/RxDogTag$Builder;
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     iput-boolean v0, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->repackageOnErrorNotImplementedExceptions:Z
 
+    .line 3
+    .line 4
     return-object p0
 .end method
 
@@ -188,6 +217,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/uber/rxdogtag/RxDogTag$Builder;->guardObserverCallbacks:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -197,9 +228,17 @@
     .line 1
     new-instance v0, Lcom/uber/rxdogtag/RxDogTag$Configuration;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p0}, Lcom/uber/rxdogtag/RxDogTag$Configuration;-><init>(Lcom/uber/rxdogtag/RxDogTag$Builder;)V
 
+    .line 4
+    .line 5
+    .line 6
     invoke-static {v0}, Lcom/uber/rxdogtag/RxDogTag;->access$000(Lcom/uber/rxdogtag/RxDogTag$Configuration;)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method

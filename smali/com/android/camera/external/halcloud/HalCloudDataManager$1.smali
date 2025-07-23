@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/external/halcloud/HalCloudDataManager$1;
+.class synthetic Lcom/android/camera/external/halcloud/HalCloudDataManager$1;
 .super Ljava/lang/Object;
 .source "HalCloudDataManager.java"
 

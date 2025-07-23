@@ -22,15 +22,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "db"
-        }
-    .end annotation
-
     .line 1
     new-instance v0, Lorg/greenrobot/greendao/database/StandardDatabase;
 
@@ -43,14 +34,6 @@
 
 .method public constructor <init>(Lorg/greenrobot/greendao/database/Database;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "db"
-        }
-    .end annotation
 
     const/4 v0, 0x7
 
@@ -72,45 +55,35 @@
 
 .method public static createAllTables(Lorg/greenrobot/greendao/database/Database;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "db",
-            "ifNotExists"
-        }
-    .end annotation
 
     .line 1
     invoke-static {p0, p1}, Lcom/android/camera/db/greendao/SaveTaskDao;->createTable(Lorg/greenrobot/greendao/database/Database;Z)V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {p0, p1}, Lcom/android/camera/db/greendao/InnerTaskDao;->createTable(Lorg/greenrobot/greendao/database/Database;Z)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
 .method public static dropAllTables(Lorg/greenrobot/greendao/database/Database;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "db",
-            "ifExists"
-        }
-    .end annotation
 
     .line 1
     invoke-static {p0, p1}, Lcom/android/camera/db/greendao/SaveTaskDao;->dropTable(Lorg/greenrobot/greendao/database/Database;Z)V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {p0, p1}, Lcom/android/camera/db/greendao/InnerTaskDao;->dropTable(Lorg/greenrobot/greendao/database/Database;Z)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -119,36 +92,41 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "name"
-        }
-    .end annotation
-
     .line 1
     new-instance v0, Lcom/android/camera/db/greendao/DaoMaster$DevOpenHelper;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p0, p1}, Lcom/android/camera/db/greendao/DaoMaster$DevOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {v0}, Lorg/greenrobot/greendao/database/DatabaseOpenHelper;->getWritableDb()Lorg/greenrobot/greendao/database/Database;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object p0
 
-    .line 2
+    .line 10
     new-instance p1, Lcom/android/camera/db/greendao/DaoMaster;
 
+    .line 11
+    .line 12
     invoke-direct {p1, p0}, Lcom/android/camera/db/greendao/DaoMaster;-><init>(Lorg/greenrobot/greendao/database/Database;)V
 
-    .line 3
+    .line 13
+    .line 14
+    .line 15
     invoke-virtual {p1}, Lcom/android/camera/db/greendao/DaoMaster;->newSession()Lcom/android/camera/db/greendao/DaoSession;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p0
 
+    .line 19
     return-object p0
 .end method
 
@@ -173,14 +151,6 @@
 
 .method public newSession(Lorg/greenrobot/greendao/identityscope/IdentityScopeType;)Lcom/android/camera/db/greendao/DaoSession;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 
     .line 4
     new-instance v0, Lcom/android/camera/db/greendao/DaoSession;
@@ -207,14 +177,6 @@
 
 .method public bridge synthetic newSession(Lorg/greenrobot/greendao/identityscope/IdentityScopeType;)Lorg/greenrobot/greendao/AbstractDaoSession;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 
     .line 2
     invoke-virtual {p0, p1}, Lcom/android/camera/db/greendao/DaoMaster;->newSession(Lorg/greenrobot/greendao/identityscope/IdentityScopeType;)Lcom/android/camera/db/greendao/DaoSession;

@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/load/model/MultiModelLoaderFactory$Factory;
+.class Lcom/bumptech/glide/load/model/MultiModelLoaderFactory$Factory;
 .super Ljava/lang/Object;
 .source "MultiModelLoaderFactory.java"
 
@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -61,7 +64,12 @@
     .line 1
     new-instance p0, Lcom/bumptech/glide/load/model/MultiModelLoader;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p1, p2}, Lcom/bumptech/glide/load/model/MultiModelLoader;-><init>(Ljava/util/List;Landroidx/core/util/Pools$Pool;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method

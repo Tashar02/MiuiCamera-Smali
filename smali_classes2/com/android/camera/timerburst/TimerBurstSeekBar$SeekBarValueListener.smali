@@ -16,18 +16,4 @@
 
 # virtual methods
 .method public abstract currentSeekBarValue(Landroid/view/View;FII)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "viewX",
-            "currentValue",
-            "step"
-        }
-    .end annotation
 .end method

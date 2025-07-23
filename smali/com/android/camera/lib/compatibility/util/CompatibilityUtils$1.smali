@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/lib/compatibility/util/CompatibilityUtils$1;
+.class Lcom/android/camera/lib/compatibility/util/CompatibilityUtils$1;
 .super Ljava/lang/Object;
 .source "CompatibilityUtils.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic val$handler:Landroid/os/Handler;
+.field final synthetic val$handler:Landroid/os/Handler;
 
 
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "val$handler"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/lib/compatibility/util/CompatibilityUtils$1;->val$handler:Landroid/os/Handler;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,19 +42,16 @@
 # virtual methods
 .method public execute(Ljava/lang/Runnable;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "command"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/lib/compatibility/util/CompatibilityUtils$1;->val$handler:Landroid/os/Handler;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

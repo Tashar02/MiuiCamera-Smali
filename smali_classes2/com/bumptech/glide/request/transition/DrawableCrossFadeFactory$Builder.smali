@@ -56,12 +56,21 @@
     .line 1
     new-instance v0, Lcom/bumptech/glide/request/transition/DrawableCrossFadeFactory;
 
+    .line 2
+    .line 3
     iget v1, p0, Lcom/bumptech/glide/request/transition/DrawableCrossFadeFactory$Builder;->durationMillis:I
 
+    .line 4
+    .line 5
     iget-boolean p0, p0, Lcom/bumptech/glide/request/transition/DrawableCrossFadeFactory$Builder;->isCrossFadeEnabled:Z
 
+    .line 6
+    .line 7
     invoke-direct {v0, v1, p0}, Lcom/bumptech/glide/request/transition/DrawableCrossFadeFactory;-><init>(IZ)V
 
+    .line 8
+    .line 9
+    .line 10
     return-object v0
 .end method
 
@@ -71,5 +80,7 @@
     .line 1
     iput-boolean p1, p0, Lcom/bumptech/glide/request/transition/DrawableCrossFadeFactory$Builder;->isCrossFadeEnabled:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method

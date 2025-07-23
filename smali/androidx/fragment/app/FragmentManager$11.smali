@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentManager$11;
+.class Landroidx/fragment/app/FragmentManager$11;
 .super Ljava/lang/Object;
 .source "FragmentManager.java"
 
@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/FragmentManager;
+.field final synthetic this$0:Landroidx/fragment/app/FragmentManager;
 
 
 # direct methods
@@ -39,8 +39,13 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$11;->this$0:Landroidx/fragment/app/FragmentManager;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 

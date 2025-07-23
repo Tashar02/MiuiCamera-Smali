@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/bumptech/glide/load/resource/gif/GifFrameLoader$OnEveryFrameListener;
+.class interface abstract Lcom/bumptech/glide/load/resource/gif/GifFrameLoader$OnEveryFrameListener;
 .super Ljava/lang/Object;
 .source "GifFrameLoader.java"
 

@@ -102,6 +102,8 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/request/target/CustomTarget;->request:Lcom/bumptech/glide/request/Request;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -115,16 +117,24 @@
     .line 1
     iget v0, p0, Lcom/bumptech/glide/request/target/CustomTarget;->width:I
 
+    .line 2
+    .line 3
     iget p0, p0, Lcom/bumptech/glide/request/target/CustomTarget;->height:I
 
+    .line 4
+    .line 5
     invoke-interface {p1, v0, p0}, Lcom/bumptech/glide/request/target/SizeReadyCallback;->onSizeReady(II)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
 .method public onDestroy()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -135,6 +145,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
@@ -145,18 +156,21 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
 .method public onStart()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onStop()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -167,6 +181,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
@@ -180,5 +195,7 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/request/target/CustomTarget;->request:Lcom/bumptech/glide/request/Request;
 
+    .line 2
+    .line 3
     return-void
 .end method

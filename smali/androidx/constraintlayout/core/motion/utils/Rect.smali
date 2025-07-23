@@ -20,6 +20,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -31,10 +34,15 @@
     .line 1
     iget v0, p0, Landroidx/constraintlayout/core/motion/utils/Rect;->bottom:I
 
+    .line 2
+    .line 3
     iget p0, p0, Landroidx/constraintlayout/core/motion/utils/Rect;->top:I
 
+    .line 4
+    .line 5
     sub-int/2addr v0, p0
 
+    .line 6
     return v0
 .end method
 
@@ -44,9 +52,14 @@
     .line 1
     iget v0, p0, Landroidx/constraintlayout/core/motion/utils/Rect;->right:I
 
+    .line 2
+    .line 3
     iget p0, p0, Landroidx/constraintlayout/core/motion/utils/Rect;->left:I
 
+    .line 4
+    .line 5
     sub-int/2addr v0, p0
 
+    .line 6
     return v0
 .end method

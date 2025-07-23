@@ -22,14 +22,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/camera/CameraSize;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "pictureSize"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -64,6 +56,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera2/CaptureStartParam;->mPictureSize:Lcom/android/camera/CameraSize;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -73,6 +67,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera2/CaptureStartParam;->mQuickViewParam:Lcom/android/camera2/QuickViewParam;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -82,6 +78,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera2/CaptureStartParam;->mSatCameraId:I
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -93,6 +91,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/CaptureStartParam;->mPictureSize:Lcom/android/camera/CameraSize;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -102,6 +102,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/CaptureStartParam;->mQuickViewParam:Lcom/android/camera2/QuickViewParam;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -111,5 +113,7 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/CaptureStartParam;->mSatCameraId:I
 
+    .line 2
+    .line 3
     return p0
 .end method

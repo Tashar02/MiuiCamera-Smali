@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/effect/renders/SnapshotRenderManager$1;
+.class synthetic Lcom/android/camera/effect/renders/SnapshotRenderManager$1;
 .super Ljava/lang/Object;
 .source "SnapshotRenderManager.java"
 

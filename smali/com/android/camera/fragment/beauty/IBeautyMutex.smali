@@ -13,14 +13,6 @@
 .end method
 
 .method public abstract handleMutex(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isMutex"
-        }
-    .end annotation
 .end method
 
 .method public abstract isMutexOther()Z
@@ -29,5 +21,6 @@
 .method public oneKeyCloseMutex()V
     .locals 0
 
+    .line 1
     return-void
 .end method

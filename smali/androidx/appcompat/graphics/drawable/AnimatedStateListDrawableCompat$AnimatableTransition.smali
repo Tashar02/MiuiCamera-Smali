@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$AnimatableTransition;
+.class Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$AnimatableTransition;
 .super Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$Transition;
 .source "AnimatedStateListDrawableCompat.java"
 
@@ -22,14 +22,19 @@
 .method public constructor <init>(Landroid/graphics/drawable/Animatable;)V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     invoke-direct {p0, v0}, Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$Transition;-><init>(Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$1;)V
 
-    .line 2
+    .line 3
+    .line 4
+    .line 5
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$AnimatableTransition;->mA:Landroid/graphics/drawable/Animatable;
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -41,8 +46,13 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$AnimatableTransition;->mA:Landroid/graphics/drawable/Animatable;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroid/graphics/drawable/Animatable;->start()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -52,7 +62,12 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$AnimatableTransition;->mA:Landroid/graphics/drawable/Animatable;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroid/graphics/drawable/Animatable;->stop()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

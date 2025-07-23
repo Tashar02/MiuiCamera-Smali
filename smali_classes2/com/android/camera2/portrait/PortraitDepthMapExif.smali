@@ -78,14 +78,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "builder"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -264,6 +256,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->algorithmName:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -273,6 +267,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->cameraPreferredMode:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -284,6 +280,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->coordinatesOfOfTheRegionUnderWatermarks:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -293,6 +291,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->cvWatermarkJpeg:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -302,6 +302,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->depthLength:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -313,6 +315,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->dulCameraWaterMarkLocation:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -324,6 +328,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->dulWaterMark:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -333,6 +339,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->jpeg:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -344,6 +352,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->jpegDataOfTheRegionUnderWatermarks:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -353,6 +363,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->lightingPattern:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -362,6 +374,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->pictureInfo:Lcom/xiaomi/camera/core/PictureInfo;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -371,6 +385,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->portraitLightingVersioin:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -380,6 +396,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->rawLength:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -389,6 +407,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->rotation:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -398,6 +418,8 @@
     .line 1
     iget-wide v0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->timeStamp:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -409,6 +431,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->timeWaterMark:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -420,6 +444,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->timeWaterMarkLocation:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -429,6 +455,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->isBokehFrontCamera:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -438,6 +466,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->isCinematicAspectRatio:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -447,6 +477,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->isFrontMirror:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -456,6 +488,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->isLTR:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -470,5 +504,7 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif;->isSupportZeroDegreeOrientationImage:Z
 
+    .line 2
+    .line 3
     return p0
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust$1;
+.class Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust$1;
 .super Landroid/os/Handler;
 .source "FragmentDualCameraAdjust.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;
+.field final synthetic this$0:Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust$1;->this$0:Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,44 +39,55 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "msg"
-        }
-    .end annotation
 
     .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
+    .line 2
+    .line 3
     const/4 v0, 0x1
 
+    .line 4
     if-eq p1, v0, :cond_1
 
+    .line 5
+    .line 6
     const/4 v0, 0x2
 
+    .line 7
     if-eq p1, v0, :cond_0
 
+    .line 8
+    .line 9
     goto :goto_0
 
-    .line 2
+    .line 10
     :cond_0
     iget-object p0, p0, Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust$1;->this$0:Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;
 
+    .line 11
+    .line 12
     invoke-virtual {p0}, Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;->resetSlideTip()V
 
+    .line 13
+    .line 14
+    .line 15
     goto :goto_0
 
-    .line 3
+    .line 16
     :cond_1
     iget-object p0, p0, Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust$1;->this$0:Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;
 
+    .line 17
+    .line 18
     const/4 p1, 0x5
 
+    .line 19
     invoke-virtual {p0, p1}, Lcom/android/camera/fragment/dual/FragmentDualCameraAdjust;->onBackEvent(I)Z
 
+    .line 20
+    .line 21
+    .line 22
     :goto_0
     return-void
 .end method

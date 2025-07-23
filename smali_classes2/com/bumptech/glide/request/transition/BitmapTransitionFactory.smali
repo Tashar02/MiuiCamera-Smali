@@ -32,6 +32,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/bumptech/glide/request/transition/BitmapContainerTransitionFactory;-><init>(Lcom/bumptech/glide/request/transition/TransitionFactory;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -46,6 +49,7 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
+    .line 1
     return-object p1
 .end method
 
@@ -58,7 +62,7 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
+    .line 2
     check-cast p1, Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/request/transition/BitmapTransitionFactory;->getBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;

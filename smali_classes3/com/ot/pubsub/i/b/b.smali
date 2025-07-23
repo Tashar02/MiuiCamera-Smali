@@ -29,6 +29,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -38,18 +39,29 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/ot/pubsub/i/b/b;->d:Z
 
-    .line 3
+    .line 6
+    .line 7
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 8
+    .line 9
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
+    .line 10
+    .line 11
+    .line 12
     iput-object v0, p0, Lcom/ot/pubsub/i/b/b;->e:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 13
+    .line 14
     return-void
 .end method
 
@@ -195,7 +207,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
@@ -245,48 +257,74 @@
 .method private c(Ljava/lang/String;)Lcom/ot/pubsub/i/b/a;
     .locals 2
 
+    .line 1
     const/4 p0, 0x0
 
-    .line 1
+    .line 2
     :try_start_0
     invoke-static {}, Lcom/ot/pubsub/util/u;->b()Ljava/lang/String;
 
+    .line 3
+    .line 4
+    .line 5
     move-result-object v0
 
-    .line 2
+    .line 6
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
+    .line 7
+    .line 8
+    .line 9
     move-result v1
 
+    .line 10
     if-eqz v1, :cond_0
 
+    .line 11
+    .line 12
     return-object p0
 
-    .line 3
+    .line 13
     :cond_0
     sget-object v1, Lcom/ot/pubsub/c/a;->a:Ljava/lang/String;
 
+    .line 14
+    .line 15
     invoke-static {v0, v1}, Lcom/ot/pubsub/c/a;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object v0
 
-    .line 4
+    .line 19
     new-instance v1, Lorg/json/JSONObject;
 
+    .line 20
+    .line 21
     invoke-direct {v1, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 5
+    .line 22
+    .line 23
+    .line 24
     invoke-virtual {v1, p1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 25
+    .line 26
+    .line 27
     move-result-object p1
 
-    .line 6
+    .line 28
     invoke-static {p1}, Lcom/ot/pubsub/i/b/a;->a(Ljava/lang/String;)Lcom/ot/pubsub/i/b/a;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 32
     :catch_0
     return-object p0
 .end method
@@ -294,113 +332,180 @@
 .method private d(Ljava/lang/String;)Lcom/ot/pubsub/i/b/a;
     .locals 6
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     const/4 v1, 0x0
 
-    .line 1
+    .line 3
     :try_start_0
     iget-boolean v2, p0, Lcom/ot/pubsub/i/b/b;->d:Z
 
+    .line 4
+    .line 5
     if-nez v2, :cond_1
 
+    .line 6
+    .line 7
     sget-object v2, Lcom/ot/pubsub/i/b/b;->b:Ljava/lang/String;
 
+    .line 8
+    .line 9
     invoke-static {v2}, Lcom/ot/pubsub/util/m;->e(Ljava/lang/String;)Z
 
+    .line 10
+    .line 11
+    .line 12
     move-result v2
 
+    .line 13
     if-eqz v2, :cond_0
 
+    .line 14
+    .line 15
     goto :goto_0
 
+    .line 16
     :cond_0
     const/4 v2, 0x1
 
-    .line 2
+    .line 17
     iput-boolean v2, p0, Lcom/ot/pubsub/i/b/b;->d:Z
 
-    .line 3
+    .line 18
+    .line 19
     invoke-static {}, Lcom/ot/pubsub/b/o;->a()Lcom/ot/pubsub/b/o;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object v2
 
+    .line 23
     invoke-virtual {v2, p1}, Lcom/ot/pubsub/b/o;->a(Ljava/lang/String;)Lcom/ot/pubsub/Configuration;
 
+    .line 24
+    .line 25
+    .line 26
     move-result-object p1
 
+    .line 27
     if-eqz p1, :cond_2
 
-    .line 4
+    .line 28
+    .line 29
     invoke-virtual {p1}, Lcom/ot/pubsub/Configuration;->getPrivateKeyId()Ljava/lang/String;
 
+    .line 30
+    .line 31
+    .line 32
     move-result-object p1
 
-    .line 5
+    .line 33
     new-instance v2, Ljava/util/HashMap;
 
+    .line 34
+    .line 35
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    const-string/jumbo v3, "timestamp"
+    .line 36
+    .line 37
+    .line 38
+    const-string v3, "timestamp"
 
-    .line 6
+    .line 39
+    .line 40
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 41
+    .line 42
+    .line 43
     move-result-wide v4
 
+    .line 44
     invoke-static {v4, v5}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
+    .line 45
+    .line 46
+    .line 47
     move-result-object v4
 
+    .line 48
     invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
+    .line 49
+    .line 50
+    .line 51
     invoke-static {}, Lcom/ot/pubsub/g/l;->a()Lcom/ot/pubsub/g/l;
 
+    .line 52
+    .line 53
+    .line 54
     move-result-object v3
 
+    .line 55
     invoke-virtual {v3}, Lcom/ot/pubsub/g/l;->b()Ljava/lang/String;
 
+    .line 56
+    .line 57
+    .line 58
     move-result-object v3
 
+    .line 59
     invoke-static {p1, v3, v2}, Lcom/ot/pubsub/i/a/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
 
+    .line 60
+    .line 61
+    .line 62
     move-result-object p1
 
-    .line 8
+    .line 63
     invoke-static {p1}, Lcom/ot/pubsub/i/b/a;->a(Ljava/lang/String;)Lcom/ot/pubsub/i/b/a;
 
+    .line 64
+    .line 65
+    .line 66
     move-result-object p1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-object v0, p1
+    .line 67
+    move-object v1, p1
 
+    .line 68
     goto :goto_1
 
-    .line 9
+    .line 69
     :cond_1
     :goto_0
-    iput-boolean v1, p0, Lcom/ot/pubsub/i/b/b;->d:Z
+    iput-boolean v0, p0, Lcom/ot/pubsub/i/b/b;->d:Z
 
-    return-object v0
+    .line 70
+    .line 71
+    return-object v1
 
+    .line 72
     :catchall_0
     move-exception p1
 
-    iput-boolean v1, p0, Lcom/ot/pubsub/i/b/b;->d:Z
+    .line 73
+    iput-boolean v0, p0, Lcom/ot/pubsub/i/b/b;->d:Z
 
-    .line 10
+    .line 74
+    .line 75
     throw p1
 
-    .line 11
+    .line 76
     :catch_0
     :cond_2
     :goto_1
-    iput-boolean v1, p0, Lcom/ot/pubsub/i/b/b;->d:Z
+    iput-boolean v0, p0, Lcom/ot/pubsub/i/b/b;->d:Z
 
-    return-object v0
+    .line 77
+    .line 78
+    return-object v1
 .end method
 
 
@@ -679,7 +784,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 

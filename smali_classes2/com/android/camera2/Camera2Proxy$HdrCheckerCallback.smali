@@ -19,45 +19,13 @@
 .end method
 
 .method public abstract isMatchCurrentHdrMode(I)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "hdrMode"
-        }
-    .end annotation
 .end method
 
 .method public abstract onHdrMotionDetectionResult(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "detected"
-        }
-    .end annotation
 .end method
 
 .method public abstract onHdrSceneChanged(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isInHdr"
-        }
-    .end annotation
 .end method
 
 .method public abstract onHdrThermalDetectionResult(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isHighTemperature"
-        }
-    .end annotation
 .end method

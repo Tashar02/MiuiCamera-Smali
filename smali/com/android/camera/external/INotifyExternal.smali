@@ -8,14 +8,4 @@
 .end method
 
 .method public abstract notifyModeAndFacing(II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "mode",
-            "facing"
-        }
-    .end annotation
 .end method

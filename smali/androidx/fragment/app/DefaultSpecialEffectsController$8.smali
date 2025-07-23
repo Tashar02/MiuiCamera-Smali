@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/DefaultSpecialEffectsController$8;
+.class Landroidx/fragment/app/DefaultSpecialEffectsController$8;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
+.field final synthetic this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
 
-.field public final synthetic val$transitioningViews:Ljava/util/ArrayList;
+.field final synthetic val$transitioningViews:Ljava/util/ArrayList;
 
 
 # direct methods
@@ -30,10 +30,17 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$8;->this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$8;->val$transitioningViews:Ljava/util/ArrayList;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -45,9 +52,15 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$8;->val$transitioningViews:Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     const/4 v0, 0x4
 
+    .line 4
     invoke-static {p0, v0}, Landroidx/fragment/app/FragmentTransition;->setViewVisibility(Ljava/util/ArrayList;I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method

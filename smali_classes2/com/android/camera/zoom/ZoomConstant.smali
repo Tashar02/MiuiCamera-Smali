@@ -44,10 +44,16 @@
     .line 1
     invoke-static {}, Lcom/android/camera/zoom/ZoomConstant;->getUltraRatio()F
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     sput v0, Lcom/android/camera/zoom/ZoomConstant;->RATIO_ULTRA:F
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -57,6 +63,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -64,41 +73,69 @@
     .locals 5
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
-
-    move-result-object v0
-
-    const/16 v1, 0xa3
-
-    invoke-virtual {v0, v1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000OO00(I)[F
-
-    move-result-object v0
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/16 v1, 0xa3
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Lo000Oo0/OooO00o;->o000OO00(I)[F
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
     array-length v1, v0
 
+    .line 12
     const/4 v2, 0x0
 
+    .line 13
     :goto_0
     if-ge v2, v1, :cond_1
 
+    .line 14
+    .line 15
     aget v3, v0, v2
 
+    .line 16
+    .line 17
     const/high16 v4, 0x3f800000    # 1.0f
 
+    .line 18
+    .line 19
     cmpg-float v4, v3, v4
 
+    .line 20
+    .line 21
     if-gez v4, :cond_0
 
+    .line 22
+    .line 23
     return v3
 
+    .line 24
     :cond_0
     add-int/lit8 v2, v2, 0x1
 
+    .line 25
+    .line 26
     goto :goto_0
 
+    .line 27
     :cond_1
     const v0, 0x3f19999a    # 0.6f
 
+    .line 28
+    .line 29
+    .line 30
     return v0
 .end method

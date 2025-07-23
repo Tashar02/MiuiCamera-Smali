@@ -46,43 +46,12 @@
 .end method
 
 .method public abstract notifyAfterFrameAvailable(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "arrivedType"
-        }
-    .end annotation
 .end method
 
 .method public abstract notifyDataChanged(II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "dataChangeType",
-            "currentMode"
-        }
-    .end annotation
 .end method
 
 .method public abstract notifyThemeChanged(ILjava/util/List;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "newMode",
-            "animateInElements",
-            "themeChangeType"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -94,19 +63,6 @@
 .end method
 
 .method public abstract provideAnimateElement(ILjava/util/List;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "newMode",
-            "animateInElements",
-            "resetType"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -118,17 +74,6 @@
 .end method
 
 .method public abstract provideRotateItem(Ljava/util/List;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10,
-            0x0
-        }
-        names = {
-            "pendingRotateItems",
-            "degree"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -140,12 +85,4 @@
 .end method
 
 .method public abstract setClickEnable(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 .end method

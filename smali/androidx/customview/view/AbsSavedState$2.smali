@@ -1,4 +1,4 @@
-.class public final Landroidx/customview/view/AbsSavedState$2;
+.class final Landroidx/customview/view/AbsSavedState$2;
 .super Ljava/lang/Object;
 .source "AbsSavedState.java"
 
@@ -33,6 +33,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

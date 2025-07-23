@@ -1,4 +1,4 @@
-.class public Landroidx/core/text/util/LinkifyCompat$LinkSpec;
+.class Landroidx/core/text/util/LinkifyCompat$LinkSpec;
 .super Ljava/lang/Object;
 .source "LinkifyCompat.java"
 
@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public end:I
+.field end:I
 
-.field public frameworkAddedSpan:Landroid/text/style/URLSpan;
+.field frameworkAddedSpan:Landroid/text/style/URLSpan;
 
-.field public start:I
+.field start:I
 
-.field public url:Ljava/lang/String;
+.field url:Ljava/lang/String;
 
 
 # direct methods
@@ -31,5 +31,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

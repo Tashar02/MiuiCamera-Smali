@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/zxing/decoders/qrcode/MlkitWrapper$1;
+.class synthetic Lcom/android/zxing/decoders/qrcode/MlkitWrapper$1;
 .super Ljava/lang/Object;
 .source "MlkitWrapper.java"
 

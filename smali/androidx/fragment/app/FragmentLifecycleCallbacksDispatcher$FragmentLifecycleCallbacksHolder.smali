@@ -1,4 +1,4 @@
-.class public final Landroidx/fragment/app/FragmentLifecycleCallbacksDispatcher$FragmentLifecycleCallbacksHolder;
+.class final Landroidx/fragment/app/FragmentLifecycleCallbacksDispatcher$FragmentLifecycleCallbacksHolder;
 .super Ljava/lang/Object;
 .source "FragmentLifecycleCallbacksDispatcher.java"
 
@@ -15,12 +15,12 @@
 
 
 # instance fields
-.field public final mCallback:Landroidx/fragment/app/FragmentManager$FragmentLifecycleCallbacks;
+.field final mCallback:Landroidx/fragment/app/FragmentManager$FragmentLifecycleCallbacks;
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 .end field
 
-.field public final mRecursive:Z
+.field final mRecursive:Z
 
 
 # direct methods
@@ -35,10 +35,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/fragment/app/FragmentLifecycleCallbacksDispatcher$FragmentLifecycleCallbacksHolder;->mCallback:Landroidx/fragment/app/FragmentManager$FragmentLifecycleCallbacks;
 
-    .line 3
+    .line 5
+    .line 6
     iput-boolean p2, p0, Landroidx/fragment/app/FragmentLifecycleCallbacksDispatcher$FragmentLifecycleCallbacksHolder;->mRecursive:Z
 
+    .line 7
+    .line 8
     return-void
 .end method

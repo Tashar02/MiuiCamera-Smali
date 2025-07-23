@@ -16,15 +16,7 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -40,15 +32,7 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -64,17 +48,10 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
-
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
@@ -90,27 +67,11 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public abstract addRequestListener(Lcom/android/camera/CameraScreenNail$RequestRenderListener;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "requestRenderListener"
-        }
-    .end annotation
 .end method
 
 .method public abstract clearAnimation()V
@@ -120,14 +81,6 @@
 .end method
 
 .method public abstract getAnimationResult(I)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 .end method
 
 .method public abstract getCameraScreenNail()Lcom/android/camera/CameraScreenNail;
@@ -180,15 +133,8 @@
 
 .method public needFinallyTexture(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isNeeded"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -202,18 +148,6 @@
 .end method
 
 .method public abstract onSurfaceChanged(Landroid/view/SurfaceHolder;II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "width",
-            "height"
-        }
-    .end annotation
 .end method
 
 .method public abstract onSurfaceCreated()V
@@ -230,31 +164,14 @@
         type = 0x0
     .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public abstract postToGL(Ljava/lang/Runnable;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "r"
-        }
-    .end annotation
 .end method
 
 .method public abstract postToGLAndWait(Lcom/xiaomi/gl/BlockingRunnable;J)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "r",
-            "timeout"
-        }
-    .end annotation
 .end method
 
 .method public abstract releaseCameraScreenNail()V
@@ -272,15 +189,7 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -296,15 +205,7 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -320,40 +221,14 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public abstract removeRequestListener(Lcom/android/camera/CameraScreenNail$RequestRenderListener;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "requestRenderListener"
-        }
-    .end annotation
 .end method
 
 .method public varargs abstract requestReadPixels(I[Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "type",
-            "args"
-        }
-    .end annotation
 .end method
 
 .method public abstract requestRender()V
@@ -363,16 +238,6 @@
 .end method
 
 .method public abstract setAnimationType(ILjava/lang/Object;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "type",
-            "ext"
-        }
-    .end annotation
 .end method
 
 .method public abstract setAnimationTypeForPure(I)V
@@ -381,73 +246,25 @@
         key = "isAndroidGo"
         type = 0x0
     .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 .end method
 
 .method public abstract setCameraPreviewRect(Landroid/graphics/Rect;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "rect"
-        }
-    .end annotation
 .end method
 
 .method public abstract setColorSpace(Lcom/xiaomi/renderengine/ColorSpace$Description;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "csd"
-        }
-    .end annotation
 .end method
 
 .method public abstract setDisplayColorSpace(Lcom/xiaomi/renderengine/ColorSpace;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dpyColorSpace"
-        }
-    .end annotation
 .end method
 
 .method public setDrawPreview(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isDrawPreview"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public abstract setExternalFrameProcessor(Lcom/android/camera/SurfaceTextureScreenNail$ExternalFrameProcessor;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "extFrameProcessor"
-        }
-    .end annotation
 .end method
 
 .method public abstract setPictureAnimationTypeForPure(I)V
@@ -456,39 +273,12 @@
         key = "isSupportPureSurfaceView"
         type = 0x0
     .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 .end method
 
 .method public abstract setPreviewSaveListener(Lcom/android/camera/ui/render_engine/PreviewSaveListener;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listener"
-        }
-    .end annotation
 .end method
 
 .method public abstract setPreviewSize(II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "previewWidth",
-            "previewHeight"
-        }
-    .end annotation
 .end method
 
 .method public abstract setPureSurface(Landroid/view/Surface;)V
@@ -496,15 +286,6 @@
         ignore = false
         key = "isSupportPureSurfaceView"
         type = 0x0
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "surface"
-        }
     .end annotation
 .end method
 
@@ -516,17 +297,7 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "rendererType",
-            "data"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -545,17 +316,7 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "type",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -567,36 +328,12 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listener"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public abstract setSurfaceViewListener(Lcom/android/camera/ui/render_engine/SurfaceViewListener;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listener"
-        }
-    .end annotation
 .end method
 
 .method public abstract setTextureColorSpace(Lcom/xiaomi/renderengine/ColorSpace;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "texColorSpace"
-        }
-    .end annotation
 .end method

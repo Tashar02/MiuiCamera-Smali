@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder$GifDecoderFactory;
+.class Lcom/bumptech/glide/load/resource/gif/ByteBufferGifDecoder$GifDecoderFactory;
 .super Ljava/lang/Object;
 .source "ByteBufferGifDecoder.java"
 
@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -35,7 +38,12 @@
     .line 1
     new-instance p0, Lcom/bumptech/glide/gifdecoder/StandardGifDecoder;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/gifdecoder/StandardGifDecoder;-><init>(Lcom/bumptech/glide/gifdecoder/GifDecoder$BitmapProvider;Lcom/bumptech/glide/gifdecoder/GifHeader;Ljava/nio/ByteBuffer;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method

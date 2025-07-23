@@ -36,59 +36,48 @@
 # direct methods
 .method public constructor <init>(IIIII)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "index",
-            "nameResId",
-            "iconResId",
-            "order",
-            "mode"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIndex:I
 
-    .line 3
+    .line 5
+    .line 6
     iput p4, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mOrder:I
 
-    .line 4
+    .line 7
+    .line 8
     iput p2, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mNameResId:I
 
-    .line 5
+    .line 9
+    .line 10
     iput p3, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIconResId:I
 
-    .line 6
+    .line 11
+    .line 12
     iput p5, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mSceneMode:I
 
+    .line 13
+    .line 14
     return-void
 .end method
 
 .method public static getIndex(I)I
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "id"
-        }
-    .end annotation
 
+    .line 1
     const v0, 0xffff
 
+    .line 2
+    .line 3
+    .line 4
     and-int/2addr p0, v0
 
+    .line 5
     return p0
 .end method
 
@@ -100,14 +89,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "another"
-        }
-    .end annotation
 
     .line 2
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mOrder:I
@@ -127,14 +108,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "another"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/ambilight/AmbilightInfo;
@@ -148,36 +121,42 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "object"
-        }
-    .end annotation
 
     .line 1
     instance-of v0, p1, Lcom/android/camera/fragment/ambilight/AmbilightInfo;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     if-nez v0, :cond_0
 
+    .line 5
+    .line 6
     return v1
 
-    .line 2
+    .line 7
     :cond_0
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIndex:I
 
+    .line 8
+    .line 9
     check-cast p1, Lcom/android/camera/fragment/ambilight/AmbilightInfo;
 
+    .line 10
+    .line 11
     iget p1, p1, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIndex:I
 
+    .line 12
+    .line 13
     if-ne p0, p1, :cond_1
 
+    .line 14
+    .line 15
     const/4 v1, 0x1
 
+    .line 16
     :cond_1
     return v1
 .end method
@@ -188,6 +167,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIconResId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -197,6 +178,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIndex:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -206,6 +189,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mNameResId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -215,6 +200,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mOrder:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -224,6 +211,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mSceneMode:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -233,6 +222,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->tagUniqueFilterId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -242,90 +233,62 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIsNeedRect:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setIconResId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "resId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIconResId:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setNameResId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "resId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mNameResId:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setNeedRect(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "needRect"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mIsNeedRect:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setOrder(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "order"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->mOrder:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setTagUniqueFilterId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "tagUniqueFilterId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/ambilight/AmbilightInfo;->tagUniqueFilterId:I
 
+    .line 2
+    .line 3
     return-void
 .end method

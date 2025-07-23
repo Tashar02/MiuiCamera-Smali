@@ -14,23 +14,32 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public static closeQuietly(Ljava/io/Closeable;)V
     .locals 0
 
+    .line 1
     if-nez p0, :cond_0
 
+    .line 2
+    .line 3
     return-void
 
-    .line 1
+    .line 4
     :cond_0
     :try_start_0
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 5
+    .line 6
+    .line 7
     :catch_0
     return-void
 .end method
@@ -43,31 +52,48 @@
         }
     .end annotation
 
+    .line 1
     const/16 v0, 0x1000
 
+    .line 2
+    .line 3
     new-array v0, v0, [B
 
+    .line 4
+    .line 5
     const/4 v1, 0x0
 
+    .line 6
     move v2, v1
 
+    .line 7
     :goto_0
-    const/4 v3, -0x1
-
-    .line 1
     invoke-virtual {p0, v0}, Ljava/io/InputStream;->read([B)I
 
-    move-result v4
+    .line 8
+    .line 9
+    .line 10
+    move-result v3
 
-    if-eq v3, v4, :cond_0
+    .line 11
+    const/4 v4, -0x1
 
-    .line 2
-    invoke-virtual {p1, v0, v1, v4}, Ljava/io/OutputStream;->write([BII)V
+    .line 12
+    if-eq v4, v3, :cond_0
 
-    add-int/2addr v2, v4
+    .line 13
+    .line 14
+    invoke-virtual {p1, v0, v1, v3}, Ljava/io/OutputStream;->write([BII)V
 
+    .line 15
+    .line 16
+    .line 17
+    add-int/2addr v2, v3
+
+    .line 18
     goto :goto_0
 
+    .line 19
     :cond_0
     return v2
 .end method

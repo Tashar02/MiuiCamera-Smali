@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/effect/renders/LightEffectRender$CropOperation;
+.class Lcom/android/camera/effect/renders/LightEffectRender$CropOperation;
 .super Ljava/lang/Object;
 .source "LightEffectRender.java"
 
@@ -15,24 +15,16 @@
 
 
 # instance fields
-.field public matrix:Landroid/graphics/Matrix;
+.field matrix:Landroid/graphics/Matrix;
 
-.field public rect:Landroid/graphics/Rect;
+.field rect:Landroid/graphics/Rect;
 
-.field public final synthetic this$0:Lcom/android/camera/effect/renders/LightEffectRender;
+.field final synthetic this$0:Lcom/android/camera/effect/renders/LightEffectRender;
 
 
 # direct methods
 .method private constructor <init>(Lcom/android/camera/effect/renders/LightEffectRender;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/renders/LightEffectRender$CropOperation;->this$0:Lcom/android/camera/effect/renders/LightEffectRender;

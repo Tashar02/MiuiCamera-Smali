@@ -10,10 +10,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/FragmentBeauty;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -23,10 +29,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/bottom/action/FragmentBottomAction;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -36,10 +48,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -49,10 +67,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/CvLens/FragmentCvLens;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -62,10 +86,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/CvLens/CvLensNewbieDialogFragment;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -75,10 +105,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/dialog/CvTypeGuideNewbieDialogFragment;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -88,10 +124,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/dialog/IDCardModeNewbieDialogFragment;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -101,10 +143,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/live/FragmentLiveSpeed;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -114,10 +162,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -127,10 +181,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/FragmentMasterFilter;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -140,10 +200,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/modeselector/FragmentModeSelector;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -153,10 +219,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/mode/FragmentMoreModeEdit;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -166,10 +238,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/mode/FragmentMoreModeNormal;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -179,10 +257,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/mode/FragmentMoreModePopup;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -192,10 +276,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/FragmentBottomPopupTips;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -205,10 +295,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/dialog/PrivacyWatermarkNewbieDialogFragment;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -218,10 +314,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/clone/FragmentTimeFreezeProcess;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -231,10 +333,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/vv/FragmentVVFeature;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -244,10 +352,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/videoprompter/FragmentVideoPrompterAdjust;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -257,10 +371,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/videoprompter/FragmentVideoPrompterEdit;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -270,10 +390,16 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/videoprompter/FragmentVideoPrompter;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -283,17 +409,25 @@
     .line 1
     const-class p0, Lcom/android/camera/fragment/modeselector/FragmentZoomView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
 .method public isNeedTrackFocusHintShow()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method

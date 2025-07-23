@@ -1,4 +1,4 @@
-.class public abstract Landroidx/media/AudioAttributesCompat$AudioManagerHidden;
+.class abstract Landroidx/media/AudioAttributesCompat$AudioManagerHidden;
 .super Ljava/lang/Object;
 .source "AudioAttributesCompat.java"
 
@@ -31,5 +31,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

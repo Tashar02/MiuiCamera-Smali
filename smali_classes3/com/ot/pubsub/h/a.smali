@@ -13,7 +13,7 @@
 
 
 # static fields
-.field public static final a:I = 0x1
+.field protected static final a:I = 0x1
 
 .field public static final b:I = 0x0
 
@@ -579,6 +579,8 @@
     .line 1
     iget p0, p0, Lcom/ot/pubsub/h/a;->k:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -588,6 +590,8 @@
     .line 1
     iget-object p0, p0, Lcom/ot/pubsub/h/a;->l:Lorg/json/JSONObject;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -597,6 +601,8 @@
     .line 1
     iget-wide v0, p0, Lcom/ot/pubsub/h/a;->m:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -606,6 +612,8 @@
     .line 1
     iget-object p0, p0, Lcom/ot/pubsub/h/a;->f:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -616,63 +624,108 @@
     :try_start_0
     iget-object v0, p0, Lcom/ot/pubsub/h/a;->l:Lorg/json/JSONObject;
 
-    if-eqz v0, :cond_0
-
-    const-string v1, "H"
-
-    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/ot/pubsub/h/a;->l:Lorg/json/JSONObject;
-
-    const-string v1, "B"
-
     .line 2
-    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/ot/pubsub/h/a;->h:Ljava/lang/String;
-
     .line 3
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object p0, p0, Lcom/ot/pubsub/h/a;->i:Ljava/lang/String;
+    if-eqz v0, :cond_0
 
     .line 4
+    .line 5
+    const-string v1, "H"
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Lcom/ot/pubsub/h/a;->l:Lorg/json/JSONObject;
+
+    .line 14
+    .line 15
+    const-string v1, "B"
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-eqz v0, :cond_0
+
+    .line 22
+    .line 23
+    iget-object v0, p0, Lcom/ot/pubsub/h/a;->h:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v0
+
+    .line 29
+    if-nez v0, :cond_0
+
+    .line 30
+    .line 31
+    iget-object p0, p0, Lcom/ot/pubsub/h/a;->i:Ljava/lang/String;
+
+    .line 32
+    .line 33
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
+    .line 34
+    .line 35
+    .line 36
     move-result p0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 37
     if-nez p0, :cond_0
 
+    .line 38
+    .line 39
     const/4 p0, 0x1
 
+    .line 40
     return p0
 
+    .line 41
     :catch_0
     move-exception p0
 
+    .line 42
     const-string v0, "BaseMessage"
 
+    .line 43
+    .line 44
     const-string v1, "check event isValid error, "
 
-    .line 5
+    .line 45
+    .line 46
     invoke-static {v0, v1, p0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 47
+    .line 48
+    .line 49
     :cond_0
     const/4 p0, 0x0
 
+    .line 50
     return p0
 .end method

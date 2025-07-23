@@ -16,23 +16,7 @@
 
 # virtual methods
 .method public abstract onSelectedDelete(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "index"
-        }
-    .end annotation
 .end method
 
 .method public abstract onSelectedRecording(Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "workspaceItem"
-        }
-    .end annotation
 .end method

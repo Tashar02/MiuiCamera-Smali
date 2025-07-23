@@ -10,7 +10,7 @@
 
 
 # static fields
-.field public static final TAG:Ljava/lang/String; = "MiCameraCompat"
+.field protected static final TAG:Ljava/lang/String; = "MiCameraCompat"
 
 
 # direct methods
@@ -20,6 +20,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -33,26 +36,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ASD_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -64,26 +65,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "scene"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->AI_SCENE_APPLY:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -95,74 +94,95 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyAiAIIEPreviewEnable:"
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->AI_AIIE_PREVIEWENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
 .method public applyAiASDEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->AI_SCENE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -174,26 +194,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->AI_MOON_EFFECT_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -205,74 +223,95 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyAiPortraitDeblur: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ENABLE_AI_PORTRAIT_DEBLUR:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
 .method public applyAiScenePeriod(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "period"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->AI_SCENE_PERIOD:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -284,78 +323,115 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     invoke-virtual {p0}, Lcom/android/camera/data/data/global/DataItemGlobal;->getCurrentMode()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
-    .line 2
+    .line 9
     invoke-static {p0}, Lcom/android/camera/CameraSettings;->isCurrentModeSupportAIS(I)Z
 
+    .line 10
+    .line 11
+    .line 12
     move-result p0
 
+    .line 13
     const/4 v0, 0x0
 
+    .line 14
     if-eqz p0, :cond_0
 
-    .line 3
+    .line 15
+    .line 16
     invoke-static {p2}, Lcom/android/camera/CameraSettings;->getAISDefaultBehavior(Z)B
 
+    .line 17
+    .line 18
+    .line 19
     move-result p0
 
+    .line 20
     goto :goto_0
 
+    .line 21
     :cond_0
     move p0, v0
 
-    .line 4
+    .line 22
     :goto_0
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 23
+    .line 24
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 25
+    .line 26
+    .line 27
     const-string v1, "applyAiShutterEnable: "
 
+    .line 28
+    .line 29
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 30
+    .line 31
+    .line 32
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 36
+    .line 37
+    .line 38
     move-result-object p2
 
+    .line 39
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 40
+    .line 41
     const-string v1, "MiCameraCompat"
 
+    .line 42
+    .line 43
     invoke-static {v1, p2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 5
+    .line 44
+    .line 45
+    .line 46
     sget-object p2, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->XIAOMI_AISHUTTER_FEATURE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
-    .line 6
+    .line 47
+    .line 48
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 49
+    .line 50
+    .line 51
     move-result-object v0
 
-    .line 7
+    .line 52
     invoke-static {p1, p2, v0}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 53
+    .line 54
+    .line 55
     return p0
 .end method
 
@@ -364,17 +440,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "exist"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -383,17 +449,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "aeTarget"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -402,88 +458,94 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public applyAnchorTimestamp(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Long;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "timeStamp"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ANCHOR_FRAME_TIMESTAMP:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public applyAppModule(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "index"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyAppModule "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->APP_MODULE:Lcom/android/camera2/vendortag/VendorTag;
 
-    .line 3
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
-    .line 4
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -495,26 +557,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ASD_ALGORITHM_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -526,26 +586,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ASD_DIRTY_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -557,26 +615,24 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->AUTOZOOM_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -588,26 +644,24 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "offset"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->AUTOZOOM_SCALE_OFFSET:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -619,26 +673,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "flag"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BACK_SOFT_LIGHT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -650,26 +702,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "flag"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BACKWARD_CAPTURE_HINT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -681,44 +731,29 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BOKEH_BEAUTY_LENS:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applyBeautyParameter(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/util/HashSet;Lcom/android/camera/fragment/beauty/BeautyValues;)V
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "supportedVendorKeys",
-            "beautyValues"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -734,209 +769,388 @@
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BEAUTY_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     iget-object v0, p3, Lcom/android/camera/fragment/beauty/BeautyValues;->mBeautyLevel:Ljava/lang/String;
 
+    .line 4
+    .line 5
     invoke-static {p1, p0, v0}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 2
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
-    invoke-virtual {p0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OoOoOo()Z
+    .line 12
+    invoke-virtual {p0}, Lo000Oo0/OooO00o;->o0O000Oo()Z
 
+    .line 13
+    .line 14
+    .line 15
     move-result p0
 
+    .line 16
     if-nez p0, :cond_1
 
-    .line 3
+    .line 17
+    .line 18
     sget-object p0, Lcom/android/camera/constant/BeautyConstant;->BEAUTY_VENDOR_TAG_MAP:Ljava/util/Map;
 
+    .line 19
+    .line 20
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object p0
 
+    .line 24
     invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
+    .line 25
+    .line 26
+    .line 27
     move-result-object p0
 
+    .line 28
     :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 29
+    .line 30
+    .line 31
     move-result v0
 
+    .line 32
     if-eqz v0, :cond_5
 
+    .line 33
+    .line 34
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 35
+    .line 36
+    .line 37
     move-result-object v0
 
+    .line 38
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 4
+    .line 39
+    .line 40
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
+    .line 41
+    .line 42
+    .line 43
     move-result-object v1
 
+    .line 44
     check-cast v1, Lcom/android/camera2/vendortag/VendorTag;
 
-    .line 5
+    .line 45
+    .line 46
     invoke-virtual {v1}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 47
+    .line 48
+    .line 49
     move-result-object v2
 
+    .line 50
     invoke-virtual {p2, v2}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
+    .line 51
+    .line 52
+    .line 53
     move-result v2
 
+    .line 54
     if-eqz v2, :cond_0
 
-    .line 6
+    .line 55
+    .line 56
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
+    .line 57
+    .line 58
+    .line 59
     move-result-object v0
 
+    .line 60
     check-cast v0, Ljava/lang/String;
 
+    .line 61
+    .line 62
     invoke-virtual {p3, v0}, Lcom/android/camera/fragment/beauty/BeautyValues;->getValueByType(Ljava/lang/String;)I
 
+    .line 63
+    .line 64
+    .line 65
     move-result v0
 
-    .line 7
+    .line 66
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 67
+    .line 68
+    .line 69
     move-result-object v2
 
+    .line 70
     invoke-static {p1, v1, v2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 8
+    .line 71
+    .line 72
+    .line 73
     new-instance v2, Ljava/lang/StringBuilder;
 
+    .line 74
+    .line 75
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 76
+    .line 77
+    .line 78
     const-string v3, "requestKey: "
 
+    .line 79
+    .line 80
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 81
+    .line 82
+    .line 83
     invoke-virtual {v1}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 84
+    .line 85
+    .line 86
     move-result-object v1
 
+    .line 87
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 88
+    .line 89
+    .line 90
     const-string v1, ",value: "
 
+    .line 91
+    .line 92
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 93
+    .line 94
+    .line 95
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 96
+    .line 97
+    .line 98
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 99
+    .line 100
+    .line 101
     move-result-object v0
 
+    .line 102
     const/4 v1, 0x0
 
+    .line 103
     new-array v1, v1, [Ljava/lang/Object;
 
+    .line 104
+    .line 105
     const-string v2, "BeautyConstant"
 
+    .line 106
+    .line 107
     invoke-static {v2, v0, v1}, Lcom/android/camera/log/LogC;->v(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 108
+    .line 109
+    .line 110
     goto :goto_0
 
-    .line 9
+    .line 111
     :cond_1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BEAUTY_SKIN_COLOR:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 112
+    .line 113
     invoke-virtual {p0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 114
+    .line 115
+    .line 116
     move-result-object v0
 
+    .line 117
     invoke-virtual {p2, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
+    .line 118
+    .line 119
+    .line 120
     move-result v0
 
+    .line 121
     if-eqz v0, :cond_2
 
-    .line 10
+    .line 122
+    .line 123
     iget v0, p3, Lcom/android/camera/fragment/beauty/BeautyValues;->mBeautySkinColor:I
 
+    .line 124
+    .line 125
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 126
+    .line 127
+    .line 128
     move-result-object v0
 
+    .line 129
     invoke-static {p1, p0, v0}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 11
+    .line 130
+    .line 131
+    .line 132
     :cond_2
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BEAUTY_SLIM_FACE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 133
+    .line 134
     invoke-virtual {p0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 135
+    .line 136
+    .line 137
     move-result-object v0
 
+    .line 138
     invoke-virtual {p2, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
+    .line 139
+    .line 140
+    .line 141
     move-result v0
 
+    .line 142
     if-eqz v0, :cond_3
 
-    .line 12
+    .line 143
+    .line 144
     iget v0, p3, Lcom/android/camera/fragment/beauty/BeautyValues;->mBeautySlimFace:I
 
+    .line 145
+    .line 146
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 147
+    .line 148
+    .line 149
     move-result-object v0
 
+    .line 150
     invoke-static {p1, p0, v0}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 13
+    .line 151
+    .line 152
+    .line 153
     :cond_3
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BEAUTY_SKIN_SMOOTH:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 154
+    .line 155
     invoke-virtual {p0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 156
+    .line 157
+    .line 158
     move-result-object v0
 
+    .line 159
     invoke-virtual {p2, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
+    .line 160
+    .line 161
+    .line 162
     move-result v0
 
+    .line 163
     if-eqz v0, :cond_4
 
-    .line 14
+    .line 164
+    .line 165
     iget v0, p3, Lcom/android/camera/fragment/beauty/BeautyValues;->mBeautySkinSmooth:I
 
+    .line 166
+    .line 167
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 168
+    .line 169
+    .line 170
     move-result-object v0
 
+    .line 171
     invoke-static {p1, p0, v0}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 15
+    .line 172
+    .line 173
+    .line 174
     :cond_4
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BEAUTY_ENLARGE_EYE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 175
+    .line 176
     invoke-virtual {p0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 177
+    .line 178
+    .line 179
     move-result-object v0
 
+    .line 180
     invoke-virtual {p2, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
+    .line 181
+    .line 182
+    .line 183
     move-result p2
 
+    .line 184
     if-eqz p2, :cond_5
 
-    .line 16
+    .line 185
+    .line 186
     iget p2, p3, Lcom/android/camera/fragment/beauty/BeautyValues;->mBeautyEnlargeEye:I
 
+    .line 187
+    .line 188
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 189
+    .line 190
+    .line 191
     move-result-object p2
 
+    .line 192
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 193
+    .line 194
+    .line 195
     :cond_5
     return-void
 .end method
@@ -946,17 +1160,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -968,49 +1172,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "bokehRole"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyBokehRole "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BOKEH_ROLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -1022,26 +1248,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "hint"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BURST_CAPTURE_HINT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1050,17 +1274,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1072,26 +1286,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CAMERA_AI_30:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1103,26 +1315,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CINEMATIC_PHOTO_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1134,26 +1344,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CINEMATIC_VIDEO_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1165,26 +1373,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->COLOR_ENHANCE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1193,17 +1399,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1212,17 +1408,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "cropRegion"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1231,17 +1417,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "awbValue"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1253,22 +1429,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "applied"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CUSTOM_WATERMARK_TEXT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1280,22 +1450,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BOKEH_CV_LENS:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1307,22 +1471,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SESSIONKEY_BOKEH_CV_LENS:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1331,17 +1489,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1353,26 +1501,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->DEPURPLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1384,31 +1530,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "orientation"
-        }
-    .end annotation
-
+    .line 1
     if-gez p2, :cond_0
 
+    .line 2
+    .line 3
     return-void
 
-    .line 1
+    .line 4
     :cond_0
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->DEVICE_ORIENTATION:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 5
+    .line 6
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object p2
 
+    .line 10
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -1417,17 +1564,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1439,26 +1576,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->DUAL_BOKEH_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1467,73 +1602,87 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public applyExposureTime(Landroid/hardware/camera2/CaptureRequest$Builder;J)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "exposureTime"
-        }
-    .end annotation
-
-    const-wide/16 v0, 0x0
-
-    cmp-long p0, p2, v0
-
-    if-lez p0, :cond_0
 
     .line 1
-    sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
-
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, p0, v0}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+    const-wide/16 v0, 0x0
 
     .line 2
+    .line 3
+    cmp-long p0, p2, v0
+
+    .line 4
+    .line 5
+    if-lez p0, :cond_0
+
+    .line 6
+    .line 7
+    sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 8
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    invoke-virtual {p1, p0, v0}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    .line 15
+    .line 16
+    .line 17
     sget-object p0, Landroid/hardware/camera2/CaptureRequest;->SENSOR_EXPOSURE_TIME:Landroid/hardware/camera2/CaptureRequest$Key;
 
+    .line 18
+    .line 19
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object p2
 
+    .line 23
     invoke-virtual {p1, p0, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    .line 24
+    .line 25
+    .line 26
     goto :goto_0
 
-    .line 3
+    .line 27
     :cond_0
     sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
+    .line 28
+    .line 29
     const/4 p2, 0x1
 
+    .line 30
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 31
+    .line 32
+    .line 33
     move-result-object p2
 
+    .line 34
     invoke-virtual {p1, p0, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    .line 35
+    .line 36
+    .line 37
     :goto_0
     return-void
 .end method
@@ -1543,17 +1692,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1565,22 +1704,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "fNumber"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->BOKEH_F_NUMBER:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1592,74 +1725,95 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->FACE_AGE_ANALYZE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applyFaceDetection(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyFaceDetection: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Landroid/hardware/camera2/CaptureRequest;->STATISTICS_FACE_DETECT_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-virtual {p1, p0, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -1671,26 +1825,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MORE_FACE_POSE_INFORMATION_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1699,17 +1851,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "face"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1718,17 +1860,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1737,17 +1869,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1759,49 +1881,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyFlashCurrent: value = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->FLASH_CURRENT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -1813,49 +1957,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyFlashMode: mode = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->FLASH_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -1867,26 +2033,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->FLAW_DETECT_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -1895,17 +2059,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -1917,49 +2071,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyFrameRatio: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->FRAME_RATIO:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -1971,26 +2147,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->FRONT_MIRROR:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2000,19 +2174,6 @@
         ignore = false
         key = "isSupportFrontSoftLightAdjust"
         type = 0x2
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "supportedVendorKeys",
-            "mode"
-        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -2028,65 +2189,122 @@
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyFrontSoftLightParameter: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->FRONT_FLASH_COLOR:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-virtual {p0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
+    .line 32
     invoke-interface {p2, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
+    .line 33
+    .line 34
+    .line 35
     move-result v0
 
+    .line 36
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 37
+    .line 38
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 39
+    .line 40
+    .line 41
     move-result-object p3
 
+    .line 42
     invoke-static {p1, p0, p3}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 4
+    .line 43
+    .line 44
+    .line 45
     :cond_0
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SOFTLIGHT_FLASH_ADJUST_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 46
+    .line 47
     invoke-virtual {p0}, Lcom/android/camera2/vendortag/VendorTag;->getName()Ljava/lang/String;
 
+    .line 48
+    .line 49
+    .line 50
     move-result-object p3
 
+    .line 51
     invoke-interface {p2, p3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
+    .line 52
+    .line 53
+    .line 54
     move-result p2
 
+    .line 55
     if-eqz p2, :cond_1
 
-    .line 5
+    .line 56
+    .line 57
     sget-object p2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
+    .line 58
+    .line 59
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 60
+    .line 61
+    .line 62
     :cond_1
     return-void
 .end method
@@ -2099,26 +2317,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2130,26 +2346,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDR_CHECKER_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2161,26 +2375,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "status"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDR_CHECKER_STATUS:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2192,45 +2404,64 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "hdrMode"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyHDRMode:"
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const-string v0, "MiCameraCompat"
 
-    invoke-static {v0, p0}, LOooO0OO/OooO0O0/OooO0OO/OooO0o;->OooO0o(Ljava/lang/String;Ljava/lang/String;)V
+    .line 19
+    .line 20
+    invoke-static {v0, p0}, Lo00000O0/OooO0OO;->OooO0o(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 21
+    .line 22
+    .line 23
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDR_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 24
+    .line 25
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 26
+    .line 27
+    .line 28
     move-result-object p2
 
+    .line 29
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 30
+    .line 31
+    .line 32
     return-void
 .end method
 
@@ -2239,17 +2470,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "hdr10Mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2261,26 +2482,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HHT_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2292,49 +2511,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyHdrBokeh: enabled = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDR_BOKEH_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -2343,17 +2584,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2365,29 +2596,25 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "sceneType",
-            "adrc"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDR_CHECKER_SCENETYPE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDR_CHECKER_ADRC:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 7
+    .line 8
     invoke-static {p1, p0, p3}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -2396,17 +2623,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2415,17 +2632,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2434,17 +2641,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2453,17 +2650,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2472,17 +2659,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2491,26 +2668,24 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "iso"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Landroid/hardware/camera2/CaptureRequest;->SENSOR_SENSITIVITY:Landroid/hardware/camera2/CaptureRequest$Key;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-virtual {p1, p0, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2519,42 +2694,31 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public applyIsHfrPreview(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "isPreview"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->IS_HFR_PREVIEW:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2563,17 +2727,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "frameCount"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2582,17 +2736,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "frameIndex"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2601,17 +2745,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2620,17 +2754,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "type"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2639,17 +2763,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2658,17 +2772,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2677,17 +2781,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "ispTuningHint"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2696,17 +2790,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "tuningIndex"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2715,17 +2799,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -2737,26 +2811,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->LENS_DIRTY_DETECT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2765,65 +2837,78 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public applyLiveShot(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyLiveShot: enable = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->LIVE_SHOT_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -2835,26 +2920,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MACRO_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2866,45 +2949,64 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyMfnrEnable: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const-string v0, "MiCameraCompat"
 
-    invoke-static {v0, p0}, LOooO0OO/OooO0O0/OooO0OO/OooO0o;->OooO0o0(Ljava/lang/String;Ljava/lang/String;)V
+    .line 19
+    .line 20
+    invoke-static {v0, p0}, Lo00000O0/OooO0OO;->OooO0o0(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 21
+    .line 22
+    .line 23
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MFNR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 24
+    .line 25
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 26
+    .line 27
+    .line 28
     move-result-object p2
 
+    .line 29
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 30
+    .line 31
+    .line 32
     return-void
 .end method
 
@@ -2913,42 +3015,31 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "frameNum"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public applyMiHDRSR(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MI_HDR_SR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2960,26 +3051,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MIVI_NIGHT_ICON_STATUS:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -2991,49 +3080,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyMiviNightMotionMode: mode = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MIVI_NIGHT_MOTION_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -3045,26 +3156,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MIVI_SUPER_NIGHT_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -3076,45 +3185,64 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->IS_QUICK_SHOT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     invoke-static {p1, p0, v0}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
-    .line 2
+    .line 8
+    .line 9
+    .line 10
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 11
+    .line 12
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 13
+    .line 14
+    .line 15
     const-string p1, "quickshot | applyMixQuickShot -> set isQuickSnapshot tag: "
 
+    .line 16
+    .line 17
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 18
+    .line 19
+    .line 20
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 21
+    .line 22
+    .line 23
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 24
+    .line 25
+    .line 26
     move-result-object p0
 
+    .line 27
     const-string p1, "MiCameraCompat"
 
+    .line 28
+    .line 29
     invoke-static {p1, p0}, Lcom/android/camera/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 30
+    .line 31
+    .line 32
     return-void
 .end method
 
@@ -3126,45 +3254,63 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "rect"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyMotionDetectionArea  end: rect = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MOTION_DETECTION_AREA:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 29
+    .line 30
+    .line 31
     return-void
 .end method
 
@@ -3176,26 +3322,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MOTION_DETECTION_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -3204,17 +3348,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3223,49 +3357,71 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "num"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyMultiFrameCount: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CONTROL_CAPTURE_FOR_MULTIFRAME_FRAME_COUNT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -3274,97 +3430,142 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "num"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyMultiFrameIndex: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CONTROL_CAPTURE_FOR_MULTIFRAME_FRAME_INDEX:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
 .method public applyMultiFrameInputNum(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "num"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyMultiFrameInputNum "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->MULTIFRAME_INPUTNUM:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -3373,17 +3574,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3395,49 +3586,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyNormalWideLDC: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->NORMAL_WIDE_LENS_DISTORTION_CORRECTION_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -3446,17 +3659,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3465,47 +3668,40 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->OFFLINE_LOG_FLUSH:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applyOnTripodModeStatus(Landroid/hardware/camera2/CaptureRequest$Builder;[Lcom/android/camera2/vendortag/struct/MarshalQueryableASDScene$ASDScene;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "onTripodScene"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ON_TRIPOD_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3514,17 +3710,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3533,17 +3719,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "name"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3552,17 +3728,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3571,17 +3737,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3593,26 +3749,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "pattern"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->PORTRAIT_LIGHTING:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -3624,49 +3778,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyPortraitRepair: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ENABLE_PORTRAIT_REPAIR:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -3675,17 +3851,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "cropRegion"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3694,17 +3860,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3716,22 +3872,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->PREVIEW_FULL_SIZE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3743,51 +3893,48 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->PREVIEW_MIRROR:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applyProcessId(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "processId"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->PROCESS_ID:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -3799,49 +3946,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyPureViewEnabled : "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->XIAOMI_PURE_VIEW_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -3850,69 +4019,55 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public applyRawHDR(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->RAW_HDR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applyRemosaicEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CONTROL_ENABLE_REMOSAIC:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
-    .line 3
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -3921,17 +4076,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -3943,49 +4088,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applySATUltraWideLDC: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SAT_ULTRA_WIDE_LENS_DISTORTION_CORRECTION_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -3994,17 +4161,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4013,17 +4170,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4035,28 +4182,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CONTROL_SAT_FUSION_SHOT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
-    .line 3
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4068,76 +4211,95 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "type"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CONTROL_SAT_FUSION_TYPE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
-    .line 3
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applySatIsZooming(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applySatIsZooming:"
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SAT_IS_ZOOMING:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -4146,17 +4308,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4168,26 +4320,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "flag"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SCREEN_LIGHT_HINT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4199,26 +4349,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SCREEN_LIGHT_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4227,17 +4375,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4249,26 +4387,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "shutterTimestamp"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SHUTTER_TIMESTAMP:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4280,26 +4416,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SINGLE_CAMERA_BOKEH:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4311,28 +4445,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "type",
-            "strength"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SKIN_COLOR_TYPE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4341,17 +4471,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4360,17 +4480,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4382,45 +4492,63 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applySnapshotReqInfo: value = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SNAPSHOT_REQ_INFO:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 29
+    .line 30
+    .line 31
     return-void
 .end method
 
@@ -4432,26 +4560,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SNAP_SHOT_TORCH:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4460,17 +4586,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4482,97 +4598,142 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applySuperNightBokeh: enabled = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SUPER_NIGHT_BOKEH_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
 .method public applySuperNightMfnr(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applySuperNightMfnr "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SUPER_NIGHT_MFNR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -4581,17 +4742,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4603,26 +4754,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SUPER_NIGHT_SCENE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4634,47 +4783,40 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SUPER_RESOLUTION_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applySuperResolutionHdsrEvArray(Landroid/hardware/camera2/CaptureRequest$Builder;[I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "evArray"
-        }
-    .end annotation
 
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->HDSR_ORIGIN_EV_ARRAY:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4686,49 +4828,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applySwMfnrEnable: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->SW_MFNR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -4740,26 +4904,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "targetZoom"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->TARGET_ZOOM:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -4771,42 +4933,31 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->THERMAL_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public applyTimeLapseValue(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "timeLapseValue"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -4818,22 +4969,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "applied"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->WATERMARK_TIME:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4842,17 +4987,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4864,49 +4999,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyUltraWideLDC: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->ULTRA_WIDE_LENS_DISTORTION_CORRECTION_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -4918,49 +5075,71 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "videoBokehLevel"
-        }
-    .end annotation
-
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyVideoBokehBackLevel "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->VIDEO_BOKEH_BACK_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -4969,17 +5148,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -4988,17 +5157,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -5010,26 +5169,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "videoBokehLevel"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->VIDEO_BOKEH_FRONT_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -5041,26 +5198,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->VIDEO_FILTER_COLOR_RETENTION_BACK:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -5072,26 +5227,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->VIDEO_FILTER_COLOR_RETENTION_FRONT:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -5103,26 +5256,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "videoFilterId"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->VIDEO_FILTER_ID:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -5131,17 +5282,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -5150,17 +5291,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
+    .line 2
     return-void
 .end method
 
@@ -5172,26 +5303,24 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->PRO_VIDEO_LOG_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p2
 
+    .line 7
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -5200,17 +5329,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -5219,17 +5338,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "start"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -5241,22 +5350,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "applied"
-        }
-    .end annotation
-
     .line 1
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->WATERMARK_APPLIEDTYPE:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValue(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -5265,115 +5368,149 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public applyZsl(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyZsl: "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Landroid/hardware/camera2/CaptureRequest;->CONTROL_ENABLE_ZSL:Landroid/hardware/camera2/CaptureRequest$Key;
 
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
+    .line 32
     invoke-virtual {p1, p0, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
 .method public applyZslHdrEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v0, "applyZslHdrEnabled: enabled = "
 
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     const/4 v0, 0x0
 
+    .line 19
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v1, "MiCameraCompat"
 
+    .line 22
+    .line 23
     invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     sget-object p0, Lcom/android/camera2/vendortag/CaptureRequestVendorTags;->CONTROL_ZSL_HDR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
-    .line 3
+    .line 27
+    .line 28
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p2
 
-    .line 4
+    .line 32
     invoke-static {p1, p0, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueQuietly(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -5382,17 +5519,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "result",
-            "request"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -5401,17 +5528,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "result",
-            "request"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -5431,7 +5548,9 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method

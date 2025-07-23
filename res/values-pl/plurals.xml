@@ -108,6 +108,18 @@
         <item quantity="few">&lt;Data>Wersja Aparatu, z której korzystasz, nie jest kompatybilna z Twoim urządzeniem.&lt;br>Aplikacja zostanie zamknięta za &lt;font color=#FFCE16>&lt;b>%1$d sek.&lt;/b>&lt;/font> Odinstaluj aktualizacje Aparatu i spróbuj ponownie.&lt;/Data></item>
         <item quantity="many">&lt;Data>Wersja Aparatu, z której korzystasz, nie jest kompatybilna z Twoim urządzeniem.&lt;br>Aplikacja zostanie zamknięta za &lt;font color=#FFCE16>&lt;b>%1$d sek.&lt;/b>&lt;/font> Odinstaluj aktualizacje Aparatu i spróbuj ponownie.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Przewiń do przodu o %d sekundy</item>
+        <item quantity="one">Przewiń do przodu o %d sekundę</item>
+        <item quantity="few">Przewiń do przodu o %d sekundy</item>
+        <item quantity="many">Przewiń do przodu o %d sekund</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Przewiń do tyłu o %d sekundy</item>
+        <item quantity="one">Przewiń do tyłu o %d sekundę</item>
+        <item quantity="few">Przewiń do tyłu o %d sekundy</item>
+        <item quantity="many">Przewiń do tyłu o %d sekund</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min</item>
         <item quantity="one">%1$d min</item>

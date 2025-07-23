@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/view/menu/MenuItemImpl$1;
+.class Landroidx/appcompat/view/menu/MenuItemImpl$1;
 .super Ljava/lang/Object;
 .source "MenuItemImpl.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/view/menu/MenuItemImpl;
+.field final synthetic this$0:Landroidx/appcompat/view/menu/MenuItemImpl;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/MenuItemImpl$1;->this$0:Landroidx/appcompat/view/menu/MenuItemImpl;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,9 +46,16 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/view/menu/MenuItemImpl$1;->this$0:Landroidx/appcompat/view/menu/MenuItemImpl;
 
+    .line 2
+    .line 3
     iget-object p1, p0, Landroidx/appcompat/view/menu/MenuItemImpl;->mMenu:Landroidx/appcompat/view/menu/MenuBuilder;
 
+    .line 4
+    .line 5
     invoke-virtual {p1, p0}, Landroidx/appcompat/view/menu/MenuBuilder;->onItemVisibleChanged(Landroidx/appcompat/view/menu/MenuItemImpl;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

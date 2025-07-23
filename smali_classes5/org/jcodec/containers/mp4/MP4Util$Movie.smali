@@ -28,11 +28,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lorg/jcodec/containers/mp4/MP4Util$Movie;->ftyp:Lorg/jcodec/containers/mp4/boxes/FileTypeBox;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Lorg/jcodec/containers/mp4/MP4Util$Movie;->moov:Lorg/jcodec/containers/mp4/boxes/MovieBox;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -42,6 +47,8 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/containers/mp4/MP4Util$Movie;->moov:Lorg/jcodec/containers/mp4/boxes/MovieBox;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -53,6 +60,8 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/containers/mp4/MP4Util$Movie;->ftyp:Lorg/jcodec/containers/mp4/boxes/FileTypeBox;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -62,5 +71,7 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/containers/mp4/MP4Util$Movie;->moov:Lorg/jcodec/containers/mp4/boxes/MovieBox;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

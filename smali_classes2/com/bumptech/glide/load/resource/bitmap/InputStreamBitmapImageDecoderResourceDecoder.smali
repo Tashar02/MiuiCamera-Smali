@@ -34,12 +34,21 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/BitmapImageDecoderResourceDecoder;
 
+    .line 5
+    .line 6
     invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/BitmapImageDecoderResourceDecoder;-><init>()V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/InputStreamBitmapImageDecoderResourceDecoder;->wrapped:Lcom/bumptech/glide/load/resource/bitmap/BitmapImageDecoderResourceDecoder;
 
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -142,6 +151,7 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x1
 
     return p0
@@ -163,7 +173,7 @@
         }
     .end annotation
 
-    .line 1
+    .line 2
     check-cast p1, Ljava/io/InputStream;
 
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/resource/bitmap/InputStreamBitmapImageDecoderResourceDecoder;->handles(Ljava/io/InputStream;Lcom/bumptech/glide/load/Options;)Z

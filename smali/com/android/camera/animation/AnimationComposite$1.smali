@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/animation/AnimationComposite$1;
+.class Lcom/android/camera/animation/AnimationComposite$1;
 .super Ljava/lang/Object;
 .source "AnimationComposite.java"
 
@@ -27,26 +27,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/animation/AnimationComposite;
+.field final synthetic this$0:Lcom/android/camera/animation/AnimationComposite;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/animation/AnimationComposite;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/animation/AnimationComposite$1;->this$0:Lcom/android/camera/animation/AnimationComposite;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -54,15 +51,6 @@
 # virtual methods
 .method public subscribe(Lio/reactivex/ObservableEmitter;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "e"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -81,7 +69,12 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/animation/AnimationComposite$1;->this$0:Lcom/android/camera/animation/AnimationComposite;
 
+    .line 2
+    .line 3
     invoke-static {p0, p1}, Lcom/android/camera/animation/AnimationComposite;->access$002(Lcom/android/camera/animation/AnimationComposite;Lio/reactivex/ObservableEmitter;)Lio/reactivex/ObservableEmitter;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

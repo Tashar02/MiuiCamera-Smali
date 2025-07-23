@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onAngleChanged(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "angle"
-        }
-    .end annotation
 .end method

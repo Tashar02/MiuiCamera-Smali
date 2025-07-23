@@ -240,55 +240,70 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/data/data/DataItemBase;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mIsWidgetLaunch:Z
 
-    .line 3
+    .line 6
+    .line 7
     iput v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mMultiFrameTotalCaptureDuration:I
 
-    .line 4
+    .line 8
+    .line 9
     iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSuperNightMismatch:Z
 
+    .line 10
+    .line 11
     const/4 v0, 0x1
 
-    .line 5
+    .line 12
     iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mFirstMimojiEntry:Z
 
+    .line 13
+    .line 14
     const-string v0, ""
 
-    .line 6
+    .line 15
+    .line 16
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSuspendShutterSnapRegion:Ljava/lang/String;
 
-    .line 7
+    .line 17
+    .line 18
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningUltraPixel;
 
+    .line 19
+    .line 20
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningUltraPixel;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 21
+    .line 22
+    .line 23
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentUltraPixel:Lcom/android/camera/data/data/config/ComponentRunningUltraPixel;
 
-    .line 8
+    .line 24
+    .line 25
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningShine;
 
+    .line 26
+    .line 27
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningShine;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 28
+    .line 29
+    .line 30
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningShine:Lcom/android/camera/data/data/runing/ComponentRunningShine;
 
+    .line 31
+    .line 32
     return-void
 .end method
 
 .method private getAIWatermarkData(I)Ljava/util/ArrayList;
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -301,167 +316,295 @@
     .line 1
     new-instance p0, Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    const/4 v0, 0x2
-
-    const/4 v1, 0x3
-
-    const/4 v2, 0x1
-
-    const/4 v3, -0x1
-
-    const/16 v4, 0xbc
-
-    if-eq p1, v4, :cond_0
-
-    .line 2
-    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
-
-    const v4, 0x7f120acf
-
-    const/4 v5, 0x0
-
-    .line 3
-    invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {p1, v3, v3, v4, v5}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
-
     .line 4
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 5
-    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
-
-    const v4, 0x7f120ad1
-
     .line 6
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {p1, v3, v3, v4, v5}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+    const/16 v0, 0xbc
 
     .line 7
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 8
-    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
-
-    const v4, 0x7f120ace
+    const/4 v1, 0x2
 
     .line 9
-    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p1, v3, v3, v4, v0}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+    const/4 v2, 0x3
 
     .line 10
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    const/4 v3, 0x1
 
     .line 11
-    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
-
-    const v0, 0x7f120ad0
+    const/4 v4, -0x1
 
     .line 12
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p1, v3, v3, v0, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+    if-eq p1, v0, :cond_0
 
     .line 13
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 14
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->oooo00o()I
-
-    move-result p1
-
-    if-ne p1, v2, :cond_4
-
-    .line 15
     new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
 
-    const v0, 0x7f120acd
-
-    const/4 v1, 0x4
-
+    .line 15
     .line 16
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p1, v3, v3, v0, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+    const/4 v0, 0x0
 
     .line 17
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     .line 18
-    :cond_0
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 19
+    .line 20
+    move-result-object v0
 
+    .line 21
+    const v5, 0x7f130b09
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-direct {p1, v4, v4, v5, v0}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
+
+    .line 31
+    .line 32
+    const v0, 0x7f130b0b
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v5
+
+    .line 39
+    invoke-direct {p1, v4, v4, v0, v5}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 43
+    .line 44
+    .line 45
+    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
+
+    .line 46
+    .line 47
+    const v0, 0x7f130b08
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v1
+
+    .line 54
+    invoke-direct {p1, v4, v4, v0, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 58
+    .line 59
+    .line 60
+    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
+
+    .line 61
+    .line 62
+    const v0, 0x7f130b0a
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v1
+
+    .line 69
+    invoke-direct {p1, v4, v4, v0, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
+
+    .line 76
+    .line 77
+    .line 78
     move-result-object p1
 
-    invoke-virtual {p1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000OO0O()I
+    .line 79
+    invoke-virtual {p1}, Lo000Oo0/OooO00o;->oooo00o()I
 
+    .line 80
+    .line 81
+    .line 82
     move-result p1
 
-    if-eq p1, v1, :cond_1
+    .line 83
+    if-ne p1, v3, :cond_4
 
-    if-ne p1, v0, :cond_2
+    .line 84
+    .line 85
+    new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
 
-    .line 19
+    .line 86
+    .line 87
+    const/4 v0, 0x4
+
+    .line 88
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object v0
+
+    .line 92
+    const v1, 0x7f130b07
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-direct {p1, v4, v4, v1, v0}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+
+    .line 96
+    .line 97
+    .line 98
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 99
+    .line 100
+    .line 101
+    goto :goto_0
+
+    .line 102
+    :cond_0
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object p1
+
+    .line 106
+    invoke-virtual {p1}, Lo000Oo0/OooO00o;->o000OO0O()I
+
+    .line 107
+    .line 108
+    .line 109
+    move-result p1
+
+    .line 110
+    if-eq p1, v2, :cond_1
+
+    .line 111
+    .line 112
+    if-ne p1, v1, :cond_2
+
+    .line 113
+    .line 114
     :cond_1
     new-instance v0, Lcom/android/camera/data/data/ComponentDataItem;
 
-    const v4, 0x7f120ad2
+    .line 115
+    .line 116
+    const/16 v1, 0xb
 
-    const/16 v5, 0xb
+    .line 117
+    .line 118
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
-    .line 20
-    invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    .line 119
+    .line 120
+    .line 121
+    move-result-object v1
 
-    move-result-object v5
+    .line 122
+    const v5, 0x7f130b0c
 
-    invoke-direct {v0, v3, v3, v4, v5}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+    .line 123
+    .line 124
+    .line 125
+    invoke-direct {v0, v4, v4, v5, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    .line 21
+    .line 126
+    .line 127
+    .line 128
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 129
+    .line 130
+    .line 131
     :cond_2
-    if-eq p1, v1, :cond_3
+    if-eq p1, v2, :cond_3
 
-    if-ne p1, v2, :cond_4
+    .line 132
+    .line 133
+    if-ne p1, v3, :cond_4
 
-    .line 22
+    .line 134
+    .line 135
     :cond_3
     new-instance p1, Lcom/android/camera/data/data/ComponentDataItem;
 
-    const v0, 0x7f120ad3
+    .line 136
+    .line 137
+    const/16 v0, 0xc
 
-    const/16 v1, 0xc
+    .line 138
+    .line 139
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
-    .line 23
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    .line 140
+    .line 141
+    .line 142
+    move-result-object v0
 
-    move-result-object v1
+    .line 143
+    const v1, 0x7f130b0d
 
-    invoke-direct {p1, v3, v3, v0, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+    .line 144
+    .line 145
+    .line 146
+    invoke-direct {p1, v4, v4, v1, v0}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    .line 24
+    .line 147
+    .line 148
+    .line 149
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 150
+    .line 151
+    .line 152
     :cond_4
     :goto_0
     return-object p0
@@ -487,44 +630,76 @@
     .line 1
     new-instance p0, Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
-    new-instance v0, Lcom/android/camera/data/data/ComponentDataItem;
-
-    const/4 v1, 0x1
-
-    .line 3
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, -0x1
-
-    const v3, 0x7f12075f
-
-    invoke-direct {v0, v2, v2, v3, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
-
     .line 4
-    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 5
-    new-instance v0, Lcom/android/camera/data/data/ComponentDataItem;
-
-    const/4 v1, 0x2
-
     .line 6
-    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    const v3, 0x7f12075c
-
-    invoke-direct {v0, v2, v2, v3, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+    new-instance v0, Lcom/android/camera/data/data/ComponentDataItem;
 
     .line 7
+    .line 8
+    const/4 v1, 0x1
+
+    .line 9
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    const/4 v2, -0x1
+
+    .line 14
+    const v3, 0x7f13079a
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-direct {v0, v2, v2, v3, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 21
+    .line 22
+    .line 23
+    new-instance v0, Lcom/android/camera/data/data/ComponentDataItem;
+
+    .line 24
+    .line 25
+    const/4 v1, 0x2
+
+    .line 26
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    const v3, 0x7f130797
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-direct {v0, v2, v2, v3, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 37
+    .line 38
+    .line 39
     return-object p0
 .end method
 
@@ -548,27 +723,46 @@
     .line 1
     new-instance p0, Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     new-instance v0, Lcom/android/camera/data/data/ComponentDataItem;
 
+    .line 7
+    .line 8
     const/4 v1, 0x3
 
-    .line 3
+    .line 9
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v1
 
+    .line 13
     const/4 v2, -0x1
 
-    const v3, 0x7f12042c
+    .line 14
+    const v3, 0x7f130462
 
+    .line 15
+    .line 16
+    .line 17
     invoke-direct {v0, v2, v2, v3, v1}, Lcom/android/camera/data/data/ComponentDataItem;-><init>(IIILjava/lang/String;)V
 
-    .line 4
+    .line 18
+    .line 19
+    .line 20
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 21
+    .line 22
+    .line 23
     return-object p0
 .end method
 
@@ -580,70 +774,106 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cameraId",
-            "modeIndex"
-        }
-    .end annotation
-
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
-    invoke-virtual {p0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00ooOoO()Z
+    .line 5
+    invoke-virtual {p0}, Lo000Oo0/OooO00o;->o00ooOoo()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     if-eqz p0, :cond_1
 
+    .line 10
+    .line 11
     if-nez p1, :cond_1
 
+    .line 12
+    .line 13
     const/16 p0, 0xa3
 
+    .line 14
+    .line 15
     if-eq p0, p2, :cond_0
 
+    .line 16
+    .line 17
     const/16 p0, 0xa2
 
+    .line 18
+    .line 19
     if-eq p0, p2, :cond_0
 
+    .line 20
+    .line 21
     const/16 p0, 0xcc
 
+    .line 22
+    .line 23
     if-eq p0, p2, :cond_0
 
+    .line 24
+    .line 25
     const/16 p0, 0xb4
 
+    .line 26
+    .line 27
     if-eq p0, p2, :cond_0
 
+    .line 28
+    .line 29
     const/16 p0, 0xa9
 
+    .line 30
+    .line 31
     if-eq p0, p2, :cond_0
 
+    .line 32
+    .line 33
     const/16 p0, 0xac
 
+    .line 34
+    .line 35
     if-eq p0, p2, :cond_0
 
+    .line 36
+    .line 37
     const/16 p0, 0xba
 
+    .line 38
+    .line 39
     if-eq p0, p2, :cond_0
 
+    .line 40
+    .line 41
     const/16 p0, 0xa7
 
+    .line 42
+    .line 43
     if-ne p0, p2, :cond_1
 
+    .line 44
+    .line 45
     :cond_0
     const/4 p0, 0x1
 
+    .line 46
     return p0
 
+    .line 47
     :cond_1
     const/4 p0, 0x0
 
+    .line 48
     return p0
 .end method
 
@@ -656,35 +886,56 @@
     invoke-super {p0}, Lcom/android/camera/data/data/DataItemBase;->clearArrayMap()V
 
     .line 2
+    .line 3
+    .line 4
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAIWatermarkExtend:Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
+    .line 5
+    .line 6
     if-eqz v0, :cond_0
 
+    .line 7
+    .line 8
     const/4 v1, 0x1
 
-    .line 3
+    .line 9
     invoke-virtual {v0, v1}, Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;->resetAIWatermark(Z)V
 
-    .line 4
+    .line 10
+    .line 11
+    .line 12
     :cond_0
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningDualVideo:Lcom/android/camera/data/data/runing/ComponentRunningDualVideo;
 
+    .line 13
+    .line 14
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 15
+    .line 16
     invoke-virtual {v0}, Lcom/android/camera/data/data/runing/ComponentRunningDualVideo;->reInit()V
 
-    .line 6
+    .line 17
+    .line 18
+    .line 19
     :cond_1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningCosmeticMirror:Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;
 
+    .line 20
+    .line 21
     if-eqz v0, :cond_2
 
-    .line 7
+    .line 22
+    .line 23
     iget p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mEntranceMode:I
 
+    .line 24
+    .line 25
     invoke-virtual {v0, p0}, Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;->reset(I)V
 
+    .line 26
+    .line 27
+    .line 28
     :cond_2
     return-void
 .end method
@@ -697,30 +948,44 @@
         type = 0x0
     .end annotation
 
+    .line 1
     const-string v0, "AI_108_SR_UPSCALE"
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
-    .line 1
+    .line 4
     invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     return p0
 .end method
 
 .method public getBackupKey()I
     .locals 2
 
+    .line 1
     const-string v0, "camera_running_backup"
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
-    .line 1
+    .line 4
     invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getInt(Ljava/lang/String;I)I
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     return p0
 .end method
 
@@ -730,58 +995,97 @@
     .line 1
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getUiStyle()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     const/4 v0, 0x4
 
+    .line 6
     if-eq p0, v0, :cond_1
 
+    .line 7
+    .line 8
     const/4 v0, 0x5
 
+    .line 9
     if-eq p0, v0, :cond_0
 
+    .line 10
+    .line 11
     return p0
 
+    .line 12
     :cond_0
     const/4 p0, 0x1
 
+    .line 13
     return p0
 
-    .line 2
+    .line 14
     :cond_1
     invoke-static {}, Lcom/android/camera/module/ModuleManager;->isSquareModule()Z
 
+    .line 15
+    .line 16
+    .line 17
     move-result p0
 
+    .line 18
     if-nez p0, :cond_2
 
+    .line 19
+    .line 20
     invoke-static {}, Lcom/android/camera/module/ModuleManager;->isProPhotoModule()Z
 
+    .line 21
+    .line 22
+    .line 23
     move-result p0
 
+    .line 24
     if-eqz p0, :cond_3
 
-    .line 3
+    .line 25
+    .line 26
     :cond_2
     invoke-static {}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getInstance()Lcom/android/camera/module/loader/camera2/Camera2DataContainer;
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object p0
 
+    .line 30
     invoke-virtual {p0}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getCurrentCameraCapabilities()Lcom/android/camera2/CameraCapabilities;
 
+    .line 31
+    .line 32
+    .line 33
     move-result-object p0
 
+    .line 34
     invoke-static {p0}, Lcom/android/camera2/CameraCapabilitiesUtil;->isSupportedRealSquare(Lcom/android/camera2/CameraCapabilities;)Z
 
+    .line 35
+    .line 36
+    .line 37
     move-result p0
 
+    .line 38
     if-nez p0, :cond_4
 
+    .line 39
+    .line 40
     :cond_3
     const/4 p0, 0x0
 
+    .line 41
     return p0
 
+    .line 42
     :cond_4
     return v0
 .end method
@@ -791,30 +1095,45 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const-string v0, "camera_snap_paint_second_clockwise"
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
-    .line 1
+    .line 4
     invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     return p0
 .end method
 
 .method public getCameraSnapPaintSecondTimeAngleRunning()F
     .locals 2
 
+    .line 1
     const-string v0, "camera_snap_paint_second_time_angle"
 
+    .line 2
+    .line 3
     const/high16 v1, 0x43b40000    # 360.0f
 
-    .line 1
+    .line 4
+    .line 5
     invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getFloat(Ljava/lang/String;F)F
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -829,19 +1148,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mCinematicAspectRatio:Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mCinematicAspectRatio:Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mCinematicAspectRatio:Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -856,19 +1186,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentConfigAmbilight:Lcom/android/camera/data/data/config/ComponentConfigAmbilight;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentConfigAmbilight;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentConfigAmbilight;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentConfigAmbilight:Lcom/android/camera/data/data/config/ComponentConfigAmbilight;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentConfigAmbilight:Lcom/android/camera/data/data/config/ComponentConfigAmbilight;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -878,59 +1219,100 @@
     .line 1
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-virtual {v0}, Lcom/android/camera/data/data/global/DataItemGlobal;->getCurrentMode()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     const/16 v1, 0xbc
 
+    .line 10
+    .line 11
     if-ne v0, v1, :cond_1
 
-    .line 2
+    .line 12
+    .line 13
     iget-object v1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAIWatermarkExtend:Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
+    .line 14
+    .line 15
     if-nez v1, :cond_0
 
-    .line 3
+    .line 16
+    .line 17
     new-instance v1, Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
+    .line 18
+    .line 19
     invoke-direct {p0, v0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getAIWatermarkData(I)Ljava/util/ArrayList;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object v2
 
+    .line 23
     invoke-direct {v1, p0, v2, v0}, Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;Ljava/util/ArrayList;I)V
 
+    .line 24
+    .line 25
+    .line 26
     iput-object v1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAIWatermarkExtend:Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
-    .line 4
+    .line 27
+    .line 28
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAIWatermarkExtend:Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
+    .line 29
+    .line 30
     return-object p0
 
-    .line 5
+    .line 31
     :cond_1
     iget-object v1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAIWatermark:Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
+    .line 32
+    .line 33
     if-nez v1, :cond_2
 
-    .line 6
+    .line 34
+    .line 35
     new-instance v1, Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
+    .line 36
+    .line 37
     invoke-direct {p0, v0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getAIWatermarkData(I)Ljava/util/ArrayList;
 
+    .line 38
+    .line 39
+    .line 40
     move-result-object v2
 
+    .line 41
     invoke-direct {v1, p0, v2, v0}, Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;Ljava/util/ArrayList;I)V
 
+    .line 42
+    .line 43
+    .line 44
     iput-object v1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAIWatermark:Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
-    .line 7
+    .line 45
+    .line 46
     :cond_2
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAIWatermark:Lcom/android/camera/data/data/runing/ComponentRunningAIWatermark;
 
+    .line 47
+    .line 48
     return-object p0
 .end method
 
@@ -945,19 +1327,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudio:Lcom/android/camera/data/data/runing/ComponentRunningAiAudio;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningAiAudio;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningAiAudio;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudio:Lcom/android/camera/data/data/runing/ComponentRunningAiAudio;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudio:Lcom/android/camera/data/data/runing/ComponentRunningAiAudio;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -967,19 +1360,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudioNew:Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudioNew:Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudioNew:Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -989,19 +1393,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudioSingle:Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudioSingle:Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiAudioSingle:Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1016,19 +1431,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiEnhancedVideo:Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiEnhancedVideo:Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAiEnhancedVideo:Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1043,19 +1469,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAmbientLighting:Lcom/android/camera/data/data/runing/ComponentRunningAmbientLighting;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningAmbientLighting;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningAmbientLighting;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAmbientLighting:Lcom/android/camera/data/data/runing/ComponentRunningAmbientLighting;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAmbientLighting:Lcom/android/camera/data/data/runing/ComponentRunningAmbientLighting;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1070,19 +1507,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAutoZoom:Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAutoZoom:Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningAutoZoom:Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1092,19 +1540,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMimojiAvatar:Lcom/android/camera/data/data/runing/ComponentRunningAvatar;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningAvatar;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningAvatar;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMimojiAvatar:Lcom/android/camera/data/data/runing/ComponentRunningAvatar;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMimojiAvatar:Lcom/android/camera/data/data/runing/ComponentRunningAvatar;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1119,19 +1578,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningBeautyLens:Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningBeautyLens:Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningBeautyLens:Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1146,19 +1616,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningColorEnhance:Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;-><init>(Lcom/android/camera/data/data/DataItemBase;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningColorEnhance:Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningColorEnhance:Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1168,19 +1649,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningCosmeticMirror:Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningCosmeticMirror:Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningCosmeticMirror:Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1195,23 +1687,37 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningCvLens:Lcom/android/camera/data/data/runing/ComponentRunningCvLens;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-static {}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOperationCvLens()Lcom/android/camera2/compat/theme/common/MiThemeOperationCvLensInterface;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
+    .line 9
     invoke-interface {v0, p0}, Lcom/android/camera2/compat/theme/common/MiThemeOperationCvLensInterface;->getComponentRunningCvLens(Lcom/android/camera/data/data/runing/DataItemRunning;)Lcom/android/camera/data/data/runing/ComponentRunningCvLens;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v0
 
+    .line 13
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningCvLens:Lcom/android/camera/data/data/runing/ComponentRunningCvLens;
 
-    .line 3
+    .line 14
+    .line 15
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningCvLens:Lcom/android/camera/data/data/runing/ComponentRunningCvLens;
 
+    .line 16
+    .line 17
     return-object p0
 .end method
 
@@ -1221,19 +1727,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningDocument:Lcom/android/camera/data/data/runing/ComponentRunningDocument;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningDocument;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningDocument;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningDocument:Lcom/android/camera/data/data/runing/ComponentRunningDocument;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningDocument:Lcom/android/camera/data/data/runing/ComponentRunningDocument;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1243,19 +1760,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningDualVideo:Lcom/android/camera/data/data/runing/ComponentRunningDualVideo;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningDualVideo;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningDualVideo;-><init>(Lcom/android/camera/data/data/DataItemBase;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningDualVideo:Lcom/android/camera/data/data/runing/ComponentRunningDualVideo;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningDualVideo:Lcom/android/camera/data/data/runing/ComponentRunningDualVideo;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1265,19 +1793,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningEisPro:Lcom/android/camera/data/data/runing/ComponentRunningEisPro;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningEisPro;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningEisPro;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningEisPro:Lcom/android/camera/data/data/runing/ComponentRunningEisPro;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningEisPro:Lcom/android/camera/data/data/runing/ComponentRunningEisPro;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1287,19 +1826,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFNumber:Lcom/android/camera/data/data/config/ComponentRunningFNumber;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningFNumber;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningFNumber;-><init>(Lcom/android/camera/data/data/DataItemBase;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFNumber:Lcom/android/camera/data/data/config/ComponentRunningFNumber;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFNumber:Lcom/android/camera/data/data/config/ComponentRunningFNumber;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1314,23 +1864,38 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->ComponentRunningFastMotion:Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getFastMotionData()Ljava/util/ArrayList;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v1
 
+    .line 11
     invoke-direct {v0, p0, v1}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;Ljava/util/ArrayList;)V
 
+    .line 12
+    .line 13
+    .line 14
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->ComponentRunningFastMotion:Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;
 
-    .line 3
+    .line 15
+    .line 16
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->ComponentRunningFastMotion:Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;
 
+    .line 17
+    .line 18
     return-object p0
 .end method
 
@@ -1345,19 +1910,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionDuration:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionDuration:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionDuration:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1372,23 +1948,38 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionPro:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionPro;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionPro;
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getFastMotionDataPro()Ljava/util/ArrayList;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v1
 
+    .line 11
     invoke-direct {v0, p0, v1}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionPro;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;Ljava/util/ArrayList;)V
 
+    .line 12
+    .line 13
+    .line 14
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionPro:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionPro;
 
-    .line 3
+    .line 15
+    .line 16
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionPro:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionPro;
 
+    .line 17
+    .line 18
     return-object p0
 .end method
 
@@ -1403,19 +1994,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionSpeed:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionSpeed:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFastMotionSpeed:Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1425,19 +2027,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFilter:Lcom/android/camera/data/data/runing/ComponentRunningFilter;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningFilter;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningFilter;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFilter:Lcom/android/camera/data/data/runing/ComponentRunningFilter;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningFilter:Lcom/android/camera/data/data/runing/ComponentRunningFilter;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1447,19 +2060,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningKaleidoscope:Lcom/android/camera/data/data/runing/ComponentRunningKaleidoscope;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningKaleidoscope;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningKaleidoscope;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningKaleidoscope:Lcom/android/camera/data/data/runing/ComponentRunningKaleidoscope;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningKaleidoscope:Lcom/android/camera/data/data/runing/ComponentRunningKaleidoscope;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1474,19 +2098,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningLighting:Lcom/android/camera/data/data/runing/ComponentRunningLighting;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningLighting;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningLighting;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningLighting:Lcom/android/camera/data/data/runing/ComponentRunningLighting;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningLighting:Lcom/android/camera/data/data/runing/ComponentRunningLighting;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1501,19 +2136,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMacroMode:Lcom/android/camera/data/data/config/ComponentRunningMacroMode;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningMacroMode;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningMacroMode;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMacroMode:Lcom/android/camera/data/data/config/ComponentRunningMacroMode;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMacroMode:Lcom/android/camera/data/data/config/ComponentRunningMacroMode;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1523,19 +2169,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMakeups:Lcom/android/camera/data/data/runing/ComponentRunningMakeups;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningMakeups;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningMakeups;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMakeups:Lcom/android/camera/data/data/runing/ComponentRunningMakeups;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMakeups:Lcom/android/camera/data/data/runing/ComponentRunningMakeups;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1545,19 +2202,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMasterFilter:Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMasterFilter:Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningMasterFilter:Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1567,19 +2235,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningPictureStyle:Lcom/android/camera/data/data/runing/ComponentRunningPictureStyle;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningPictureStyle;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningPictureStyle;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningPictureStyle:Lcom/android/camera/data/data/runing/ComponentRunningPictureStyle;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningPictureStyle:Lcom/android/camera/data/data/runing/ComponentRunningPictureStyle;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1589,6 +2268,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningShine:Lcom/android/camera/data/data/runing/ComponentRunningShine;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -1598,19 +2279,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningSubtitle:Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningSubtitle:Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningSubtitle:Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1620,19 +2312,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningSuperEIS:Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningSuperEIS:Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningSuperEIS:Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1642,19 +2345,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->componentRunningTiltValue:Lcom/android/camera/data/data/runing/ComponentRunningTiltValue;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningTiltValue;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningTiltValue;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->componentRunningTiltValue:Lcom/android/camera/data/data/runing/ComponentRunningTiltValue;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->componentRunningTiltValue:Lcom/android/camera/data/data/runing/ComponentRunningTiltValue;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1664,19 +2378,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningTimer:Lcom/android/camera/data/data/runing/ComponentRunningTimer;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningTimer;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningTimer;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningTimer:Lcom/android/camera/data/data/runing/ComponentRunningTimer;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningTimer:Lcom/android/camera/data/data/runing/ComponentRunningTimer;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1686,19 +2411,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningTopItemAnim:Lcom/android/camera/data/data/config/ComponentRunningTopItemAnim;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningTopItemAnim;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningTopItemAnim;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningTopItemAnim:Lcom/android/camera/data/data/config/ComponentRunningTopItemAnim;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningTopItemAnim:Lcom/android/camera/data/data/config/ComponentRunningTopItemAnim;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1708,19 +2444,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningVideoPrompter:Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningVideoPrompter:Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningVideoPrompter:Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1735,19 +2482,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningVideoSky:Lcom/android/camera/data/data/config/ComponentRunningVideoSky;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningVideoSky;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningVideoSky;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningVideoSky:Lcom/android/camera/data/data/config/ComponentRunningVideoSky;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningVideoSky:Lcom/android/camera/data/data/config/ComponentRunningVideoSky;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1757,19 +2515,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentConfigZoom:Lcom/android/camera/data/data/config/ComponentRunningZoom;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/config/ComponentRunningZoom;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/config/ComponentRunningZoom;-><init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentConfigZoom:Lcom/android/camera/data/data/config/ComponentRunningZoom;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentConfigZoom:Lcom/android/camera/data/data/config/ComponentRunningZoom;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -1779,30 +2548,30 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentUltraPixel:Lcom/android/camera/data/data/config/ComponentRunningUltraPixel;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public getEntranceMode(I)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "modeIfNotFound"
-        }
-    .end annotation
 
     .line 1
     iget p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mEntranceMode:I
 
+    .line 2
+    .line 3
     if-nez p0, :cond_0
 
+    .line 4
+    .line 5
     goto :goto_0
 
+    .line 6
     :cond_0
     move p1, p0
 
+    .line 7
     :goto_0
     return p1
 .end method
@@ -1815,15 +2584,23 @@
         type = 0x0
     .end annotation
 
+    .line 1
     const-string/jumbo v0, "pref_hand_gesture_status"
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v1, 0x0
 
-    .line 1
+    .line 5
     invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -1833,6 +2610,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mIsWidgetLaunch:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -1842,15 +2621,23 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mLastPaintCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
+    .line 2
+    .line 3
     if-nez p0, :cond_0
 
+    .line 4
+    .line 5
     const/4 p0, 0x0
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     iget p0, p0, Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;->mTargetUiStyle:I
 
+    .line 8
+    .line 9
     :goto_0
     return p0
 .end method
@@ -1861,6 +2648,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mMiviSuperNightData:Lcom/android/camera2/vendortag/struct/MiviSuperNightData;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -1870,6 +2659,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mMultiFrameTotalCaptureDuration:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -1879,6 +2670,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mPaintCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -1890,15 +2683,23 @@
         type = 0x0
     .end annotation
 
+    .line 1
     const-string/jumbo v0, "pref_pro_video_recording_simple"
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v1, 0x0
 
-    .line 1
+    .line 5
     invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -1908,6 +2709,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mRecordingClosedElements:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -1917,6 +2720,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSuspendShutterSnapRegion:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -1926,15 +2731,23 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mPaintCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
+    .line 2
+    .line 3
     if-nez p0, :cond_0
 
+    .line 4
+    .line 5
     const/4 p0, 0x0
 
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     iget p0, p0, Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;->mTargetUiStyle:I
 
+    .line 8
+    .line 9
     :goto_0
     return p0
 .end method
@@ -1942,22 +2755,37 @@
 .method public getVideoSpeed()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "pref_video_speed_fast_key"
 
-    .line 1
+    .line 2
+    .line 3
+    .line 4
     invoke-virtual {p0, v0}, Lcom/android/camera/data/data/runing/DataItemRunning;->isSwitchOn(Ljava/lang/String;)Z
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     if-eqz p0, :cond_0
 
+    .line 9
+    .line 10
     const-string p0, "fast"
 
+    .line 11
+    .line 12
     return-object p0
 
+    .line 13
     :cond_0
     const-string/jumbo p0, "normal"
 
+    .line 14
+    .line 15
+    .line 16
     return-object p0
 .end method
 
@@ -1969,15 +2797,22 @@
         type = 0x2
     .end annotation
 
+    .line 1
     const-string v0, "XXXM_STATUS"
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
-    .line 1
+    .line 4
     invoke-virtual {p0, v0, v1}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     return p0
 .end method
 
@@ -1987,19 +2822,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningESPDisplay:Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-instance v0, Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;
 
+    .line 6
+    .line 7
     invoke-direct {v0, p0}, Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;-><init>(Lcom/android/camera/data/data/DataItemBase;)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningESPDisplay:Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;
 
-    .line 3
+    .line 11
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningESPDisplay:Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;
 
+    .line 13
+    .line 14
     return-object p0
 .end method
 
@@ -2008,43 +2854,62 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "sumExposureTime"
-        }
-    .end annotation
-
     .line 1
     iput p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mMultiFrameTotalCaptureDuration:I
 
     .line 2
+    .line 3
     new-instance p1, Ljava/lang/StringBuilder;
 
+    .line 4
+    .line 5
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     const-string v0, "initMultiFrameTotalCaptureDuration: "
 
+    .line 9
+    .line 10
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 11
+    .line 12
+    .line 13
     iget p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mMultiFrameTotalCaptureDuration:I
 
+    .line 14
+    .line 15
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 16
+    .line 17
+    .line 18
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 19
+    .line 20
+    .line 21
     move-result-object p0
 
+    .line 22
     const/4 p1, 0x0
 
+    .line 23
     new-array p1, p1, [Ljava/lang/Object;
 
+    .line 24
+    .line 25
     const-string v0, "DataItemRunning"
 
+    .line 26
+    .line 27
     invoke-static {v0, p0, p1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 28
+    .line 29
+    .line 30
     return-void
 .end method
 
@@ -2054,6 +2919,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mBokehFallBackEnable:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -2063,6 +2930,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mDummySystemEnable:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -2072,6 +2941,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mFirstMimojiEntry:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -2086,29 +2957,50 @@
     .line 1
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-virtual {v0}, Lcom/android/camera/data/data/global/DataItemGlobal;->isOnSuperNightAlgoUpAndQuickShot()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     if-eqz v0, :cond_0
 
+    .line 10
+    .line 11
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getMultiFrameTotalCaptureDuration()I
 
+    .line 12
+    .line 13
+    .line 14
     move-result p0
 
+    .line 15
     const/16 v0, 0x258
 
+    .line 16
+    .line 17
     if-le p0, v0, :cond_0
 
+    .line 18
+    .line 19
     const/4 p0, 0x1
 
+    .line 20
     goto :goto_0
 
+    .line 21
     :cond_0
     const/4 p0, 0x0
 
+    .line 22
     :goto_0
     return p0
 .end method
@@ -2119,35 +3011,36 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSuperNightMismatch:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public isSwitchOn(Ljava/lang/String;)Z
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
 
     .line 1
+    const/4 v0, 0x0
+
+    .line 2
     invoke-virtual {p0, p1, v0}, Lcom/android/camera/data/data/DataItemBase;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 3
+    .line 4
+    .line 5
     move-result p0
 
+    .line 6
     return p0
 .end method
 
 .method public isTransient()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
@@ -2156,8 +3049,11 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const-string p0, "camera_running"
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -2169,414 +3065,673 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "currentMode",
-            "newRatioValue"
-        }
-    .end annotation
-
     .line 1
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getCinematicAspectRatio()Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-virtual {v0, p1}, Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;->isSwitchOn(I)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     const-string v1, "16x9"
 
-    .line 2
+    .line 10
+    .line 11
     invoke-virtual {v1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 12
+    .line 13
+    .line 14
     move-result p2
 
+    .line 15
     const/4 v1, 0x0
 
+    .line 16
     if-nez p2, :cond_0
 
+    .line 17
+    .line 18
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 19
+    .line 20
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getCinematicAspectRatio()Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object p0
 
+    .line 24
     invoke-virtual {p0, p1, v1}, Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;->setEnabled(IZ)V
 
+    .line 25
+    .line 26
+    .line 27
     const/4 p0, 0x1
 
+    .line 28
     return p0
 
+    .line 29
     :cond_0
     return v1
 .end method
 
 .method public reInitComponent(IILcom/android/camera2/CameraCapabilities;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "currentMode",
-            "cameraId",
-            "p",
-            "intentType"
-        }
-    .end annotation
 
+    .line 1
     if-nez p4, :cond_0
 
+    .line 2
+    .line 3
     const/4 p4, 0x1
 
+    .line 4
     goto :goto_0
 
+    .line 5
     :cond_0
     const/4 p4, 0x0
 
-    .line 1
+    .line 6
     :goto_0
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentUltraPixel:Lcom/android/camera/data/data/config/ComponentRunningUltraPixel;
 
+    .line 7
+    .line 8
     invoke-virtual {v0, p1, p2, p3}, Lcom/android/camera/data/data/config/ComponentRunningUltraPixel;->reInit(IILcom/android/camera2/CameraCapabilities;)V
 
-    .line 2
+    .line 9
+    .line 10
+    .line 11
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningShine:Lcom/android/camera/data/data/runing/ComponentRunningShine;
 
+    .line 12
+    .line 13
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/camera/data/data/runing/ComponentRunningShine;->reInit(IILcom/android/camera2/CameraCapabilities;Z)V
 
-    .line 3
+    .line 14
+    .line 15
+    .line 16
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningColorEnhance()Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;
 
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2}, Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;->reInit(II)V
-
-    .line 4
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningMacroMode()Lcom/android/camera/data/data/config/ComponentRunningMacroMode;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/config/ComponentRunningMacroMode;->reInit(IZ)V
-
-    .line 5
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAutoZoom()Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;->reInit(I)V
-
-    .line 6
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAiEnhancedVideo()Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;->reInit(I)V
-
-    .line 7
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningSubtitle()Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;->reInit(IZ)V
-
-    .line 8
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningVideoPrompter()Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p4}, Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;->reInit(Z)V
-
-    .line 9
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningDocument()Lcom/android/camera/data/data/runing/ComponentRunningDocument;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningDocument;->reInit(IIZ)V
-
-    .line 10
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningSuperEIS()Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;->reInit(IZ)V
-
-    .line 11
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFastMotion()Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->reInit()V
-
-    .line 12
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFastMotionDuration()Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p3}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;->reInit(ILcom/android/camera2/CameraCapabilities;)Ljava/util/List;
-
-    .line 13
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFastMotionSpeed()Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p3}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;->reInit(ILcom/android/camera2/CameraCapabilities;)Ljava/util/List;
-
-    .line 14
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningLighting()Lcom/android/camera/data/data/runing/ComponentRunningLighting;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p3}, Lcom/android/camera/data/data/runing/ComponentRunningLighting;->reInit(Lcom/android/camera2/CameraCapabilities;)V
-
-    .line 15
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFilter()Lcom/android/camera/data/data/runing/ComponentRunningFilter;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p3}, Lcom/android/camera/data/data/runing/ComponentRunningFilter;->reInit(Lcom/android/camera2/CameraCapabilities;)V
-
-    .line 16
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getCinematicAspectRatio()Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;->reInit(I)V
-
     .line 17
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningMasterFilter()Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;->reInit(IILcom/android/camera2/CameraCapabilities;)V
-
     .line 18
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningZoom()Lcom/android/camera/data/data/config/ComponentRunningZoom;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p3, p1, p2}, Lcom/android/camera/data/data/config/ComponentRunningZoom;->reInit(Lcom/android/camera2/CameraCapabilities;II)V
-
     .line 19
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAiAudioNew()Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;
-
     move-result-object v0
-
-    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;->reInit(IZ)V
 
     .line 20
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAiAudioSingle()Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;->reInit(IZ)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/camera/data/data/runing/ComponentRunningColorEnhance;->reInit(II)V
 
     .line 21
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getmComponentRunningESPDisplay()Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;->reInit(IIZ)V
-
     .line 22
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningBeautyLens()Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;
-
-    move-result-object p4
-
-    invoke-virtual {p4, p3, p1, p2}, Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;->reInit(Lcom/android/camera2/CameraCapabilities;II)V
-
     .line 23
-    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningCvLens()Lcom/android/camera/data/data/runing/ComponentRunningCvLens;
-
-    move-result-object p4
-
-    invoke-virtual {p4, p3, p1, p2}, Lcom/android/camera/data/data/runing/ComponentRunningCvLens;->reInit(Lcom/android/camera2/CameraCapabilities;II)V
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningMacroMode()Lcom/android/camera/data/data/config/ComponentRunningMacroMode;
 
     .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/config/ComponentRunningMacroMode;->reInit(IZ)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAutoZoom()Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    invoke-virtual {v0, p2}, Lcom/android/camera/data/data/runing/ComponentRunningAutoZoom;->reInit(I)V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAiEnhancedVideo()Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    invoke-virtual {v0, p2}, Lcom/android/camera/data/data/runing/ComponentRunningAiEnhancedVideo;->reInit(I)V
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningSubtitle()Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningSubtitle;->reInit(IZ)V
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningVideoPrompter()Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v0
+
+    .line 55
+    invoke-virtual {v0, p4}, Lcom/android/camera/data/data/runing/ComponentRunningVideoPrompter;->reInit(Z)V
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningDocument()Lcom/android/camera/data/data/runing/ComponentRunningDocument;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v0
+
+    .line 62
+    invoke-virtual {v0, p1, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningDocument;->reInit(IIZ)V
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningSuperEIS()Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningSuperEIS;->reInit(IZ)V
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFastMotion()Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v0
+
+    .line 76
+    invoke-virtual {v0}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotion;->reInit()V
+
+    .line 77
+    .line 78
+    .line 79
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFastMotionDuration()Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v0
+
+    .line 83
+    invoke-virtual {v0, p1, p3}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionDuration;->reInit(ILcom/android/camera2/CameraCapabilities;)Ljava/util/List;
+
+    .line 84
+    .line 85
+    .line 86
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFastMotionSpeed()Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v0
+
+    .line 90
+    invoke-virtual {v0, p1, p3}, Lcom/android/camera/data/data/runing/ComponentRunningFastMotionSpeed;->reInit(ILcom/android/camera2/CameraCapabilities;)Ljava/util/List;
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningLighting()Lcom/android/camera/data/data/runing/ComponentRunningLighting;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object v0
+
+    .line 97
+    invoke-virtual {v0, p3}, Lcom/android/camera/data/data/runing/ComponentRunningLighting;->reInit(Lcom/android/camera2/CameraCapabilities;)V
+
+    .line 98
+    .line 99
+    .line 100
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFilter()Lcom/android/camera/data/data/runing/ComponentRunningFilter;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object v0
+
+    .line 104
+    invoke-virtual {v0, p3}, Lcom/android/camera/data/data/runing/ComponentRunningFilter;->reInit(Lcom/android/camera2/CameraCapabilities;)V
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getCinematicAspectRatio()Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v0
+
+    .line 111
+    invoke-virtual {v0, p1}, Lcom/android/camera/data/data/config/ComponentRunningCinematicAspectRatio;->reInit(I)V
+
+    .line 112
+    .line 113
+    .line 114
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningMasterFilter()Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;
+
+    .line 115
+    .line 116
+    .line 117
+    move-result-object v0
+
+    .line 118
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/camera/data/data/config/ComponentRunningMasterFilter;->reInit(IILcom/android/camera2/CameraCapabilities;)V
+
+    .line 119
+    .line 120
+    .line 121
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningZoom()Lcom/android/camera/data/data/config/ComponentRunningZoom;
+
+    .line 122
+    .line 123
+    .line 124
+    move-result-object v0
+
+    .line 125
+    invoke-virtual {v0, p3, p1, p2}, Lcom/android/camera/data/data/config/ComponentRunningZoom;->reInit(Lcom/android/camera2/CameraCapabilities;II)V
+
+    .line 126
+    .line 127
+    .line 128
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAiAudioNew()Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-object v0
+
+    .line 132
+    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioNew;->reInit(IZ)V
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAiAudioSingle()Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v0
+
+    .line 139
+    invoke-virtual {v0, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningAiAudioSingle;->reInit(IZ)V
+
+    .line 140
+    .line 141
+    .line 142
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getmComponentRunningESPDisplay()Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v0
+
+    .line 146
+    invoke-virtual {v0, p1, p2, p4}, Lcom/android/camera/data/data/runing/ComponentRunningESPDisplay;->reInit(IIZ)V
+
+    .line 147
+    .line 148
+    .line 149
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningBeautyLens()Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object p4
+
+    .line 153
+    invoke-virtual {p4, p3, p1, p2}, Lcom/android/camera/data/data/runing/ComponentRunningBeautyLens;->reInit(Lcom/android/camera2/CameraCapabilities;II)V
+
+    .line 154
+    .line 155
+    .line 156
+    invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningCvLens()Lcom/android/camera/data/data/runing/ComponentRunningCvLens;
+
+    .line 157
+    .line 158
+    .line 159
+    move-result-object p4
+
+    .line 160
+    invoke-virtual {p4, p3, p1, p2}, Lcom/android/camera/data/data/runing/ComponentRunningCvLens;->reInit(Lcom/android/camera2/CameraCapabilities;II)V
+
+    .line 161
+    .line 162
+    .line 163
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningFNumber()Lcom/android/camera/data/data/config/ComponentRunningFNumber;
 
+    .line 164
+    .line 165
+    .line 166
     move-result-object p2
 
+    .line 167
     invoke-virtual {p2, p3}, Lcom/android/camera/data/data/config/ComponentRunningFNumber;->reInit(Lcom/android/camera2/CameraCapabilities;)V
 
-    .line 25
+    .line 168
+    .line 169
+    .line 170
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningAmbientLighting()Lcom/android/camera/data/data/runing/ComponentRunningAmbientLighting;
 
+    .line 171
+    .line 172
+    .line 173
     move-result-object p2
 
+    .line 174
     invoke-virtual {p2, p1, p3}, Lcom/android/camera/data/data/runing/ComponentRunningAmbientLighting;->reInit(ILcom/android/camera2/CameraCapabilities;)V
 
-    .line 26
+    .line 175
+    .line 176
+    .line 177
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getComponentRunningComponentRunningCosmeticMirror()Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;
 
+    .line 178
+    .line 179
+    .line 180
     move-result-object p0
 
+    .line 181
     invoke-virtual {p0, p1}, Lcom/android/camera/features/mode/cosmeticmirror/config/ComponentRunningCosmeticMirror;->reInit(I)V
 
+    .line 182
+    .line 183
+    .line 184
     return-void
 .end method
 
 .method public reInitSupport(II)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "currentMode",
-            "cameraId"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
 
     .line 1
-    iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportHandGesture:Z
+    const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportSpeechShutter:Z
+    iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportHandGesture:Z
 
     .line 3
-    iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportMacroMode:Z
-
-    const/16 v0, 0xcd
-
-    const/16 v1, 0xab
-
-    const/16 v2, 0xa3
-
-    const/4 v3, 0x1
-
-    if-ne p2, v3, :cond_1
-
-    if-eq p1, v2, :cond_0
-
-    if-eq p1, v1, :cond_0
-
-    if-ne p1, v0, :cond_1
-
     .line 4
-    :cond_0
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00oo()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
+    iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportSpeechShutter:Z
 
     .line 5
-    iput-boolean v3, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportHandGesture:Z
-
     .line 6
-    :cond_1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0O0O0oO()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_5
+    iput-boolean v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportMacroMode:Z
 
     .line 7
-    invoke-static {}, Lcom/android/camera/Util;->isLocaleChinese()Z
+    .line 8
+    const/16 v0, 0xcd
 
+    .line 9
+    .line 10
+    const/16 v1, 0xab
+
+    .line 11
+    .line 12
+    const/16 v2, 0xa3
+
+    .line 13
+    .line 14
+    const/4 v3, 0x1
+
+    .line 15
+    if-ne p2, v3, :cond_1
+
+    .line 16
+    .line 17
+    if-eq p1, v2, :cond_0
+
+    .line 18
+    .line 19
+    if-eq p1, v1, :cond_0
+
+    .line 20
+    .line 21
+    if-ne p1, v0, :cond_1
+
+    .line 22
+    .line 23
+    :cond_0
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v4
+
+    .line 27
+    invoke-virtual {v4}, Lo000Oo0/OooO00o;->o00oo()Z
+
+    .line 28
+    .line 29
+    .line 30
     move-result v4
 
-    if-nez v4, :cond_2
+    .line 31
+    if-eqz v4, :cond_1
 
-    invoke-static {}, Lcom/android/camera/Util;->isLocaleEnglish()Z
+    .line 32
+    .line 33
+    iput-boolean v3, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportHandGesture:Z
 
+    .line 34
+    .line 35
+    :cond_1
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v4
+
+    .line 39
+    invoke-virtual {v4}, Lo000Oo0/OooO00o;->o0O0O0oo()Z
+
+    .line 40
+    .line 41
+    .line 42
     move-result v4
 
+    .line 43
     if-eqz v4, :cond_5
 
-    .line 8
+    .line 44
+    .line 45
+    invoke-static {}, Lcom/android/camera/Util;->isLocaleChinese()Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v4
+
+    .line 49
+    if-nez v4, :cond_2
+
+    .line 50
+    .line 51
+    invoke-static {}, Lcom/android/camera/Util;->isLocaleEnglish()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v4
+
+    .line 55
+    if-eqz v4, :cond_5
+
+    .line 56
+    .line 57
     :cond_2
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemObservable()Lcom/android/camera/data/observeable/DataItemObservable;
 
+    .line 58
+    .line 59
+    .line 60
     move-result-object v4
 
+    .line 61
     const-class v5, Lcom/xiaomi/mimoji/common/MimojiProcessing;
 
+    .line 62
+    .line 63
     invoke-virtual {v4, v5}, Lcom/android/camera/data/observeable/DataItemObservable;->get(Ljava/lang/Class;)Lcom/android/camera/data/observeable/VMBase;
 
+    .line 64
+    .line 65
+    .line 66
     move-result-object v4
 
+    .line 67
     check-cast v4, Lcom/xiaomi/mimoji/common/MimojiProcessing;
 
+    .line 68
+    .line 69
     if-eq p1, v2, :cond_4
 
+    .line 70
+    .line 71
     if-eq p1, v1, :cond_4
 
+    .line 72
+    .line 73
     const/16 v1, 0xad
 
+    .line 74
+    .line 75
     if-eq p1, v1, :cond_4
 
+    .line 76
+    .line 77
     const/16 v1, 0xb8
 
+    .line 78
+    .line 79
     if-ne p1, v1, :cond_3
 
-    .line 9
+    .line 80
+    .line 81
     invoke-virtual {v4}, Lcom/xiaomi/mimoji/common/MimojiProcessing;->getPreviewState()I
 
+    .line 82
+    .line 83
+    .line 84
     move-result v1
 
+    .line 85
     if-eqz v1, :cond_4
 
+    .line 86
+    .line 87
     :cond_3
     if-eq p1, v0, :cond_4
 
+    .line 88
+    .line 89
     const/16 v0, 0xbc
 
+    .line 90
+    .line 91
     if-eq p1, v0, :cond_4
 
+    .line 92
+    .line 93
     const/16 v0, 0xaf
 
+    .line 94
+    .line 95
     if-eq p1, v0, :cond_4
 
+    .line 96
+    .line 97
     const/16 v0, 0xb9
 
+    .line 98
+    .line 99
     if-eq p1, v0, :cond_4
 
+    .line 100
+    .line 101
     const/16 v0, 0xa7
 
+    .line 102
+    .line 103
     if-eq p1, v0, :cond_4
 
+    .line 104
+    .line 105
     const/16 v0, 0xd2
 
+    .line 106
+    .line 107
     if-eq p1, v0, :cond_4
 
+    .line 108
+    .line 109
     const/16 v0, 0xbb
 
+    .line 110
+    .line 111
     if-ne p1, v0, :cond_5
 
-    .line 10
+    .line 112
+    .line 113
     :cond_4
     iput-boolean v3, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportSpeechShutter:Z
 
-    .line 11
+    .line 114
+    .line 115
     :cond_5
     invoke-direct {p0, p2, p1}, Lcom/android/camera/data/data/runing/DataItemRunning;->isModeSupportMacro(II)Z
 
+    .line 116
+    .line 117
+    .line 118
     move-result p1
 
+    .line 119
     iput-boolean p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportMacroMode:Z
 
+    .line 120
+    .line 121
     return-void
 .end method
 
@@ -2585,20 +3740,32 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     iput v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mMultiFrameTotalCaptureDuration:I
 
-    new-array p0, v0, [Ljava/lang/Object;
+    .line 3
+    .line 4
+    const-string/jumbo p0, "resetMultiFrameTotalCaptureDuration"
 
-    const-string v0, "DataItemRunning"
+    .line 5
+    .line 6
+    .line 7
+    new-array v0, v0, [Ljava/lang/Object;
 
-    const-string/jumbo v1, "resetMultiFrameTotalCaptureDuration"
+    .line 8
+    .line 9
+    const-string v1, "DataItemRunning"
 
-    .line 2
-    invoke-static {v0, v1, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 10
+    .line 11
+    invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method
 
@@ -2610,56 +3777,43 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "running"
-        }
-    .end annotation
-
+    .line 1
     const-string v0, "AI_108_SR_UPSCALE"
 
-    .line 1
+    .line 2
+    .line 3
     invoke-virtual {p0, v0, p1}, Lcom/android/camera/data/data/DataItemBase;->putBoolean(Ljava/lang/String;Z)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public setBackupKey(I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "backupKey"
-        }
-    .end annotation
-
-    const-string v0, "camera_running_backup"
 
     .line 1
+    const-string v0, "camera_running_backup"
+
+    .line 2
+    .line 3
     invoke-virtual {p0, v0, p1}, Lcom/android/camera/data/data/DataItemBase;->putInt(Ljava/lang/String;I)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public setBokehFallBackEnable(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "fallBackEnable"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mBokehFallBackEnable:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -2668,113 +3822,113 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "clockwise"
-        }
-    .end annotation
-
+    .line 1
     const-string v0, "camera_snap_paint_second_clockwise"
 
-    .line 1
+    .line 2
+    .line 3
     invoke-virtual {p0, v0, p1}, Lcom/android/camera/data/data/DataItemBase;->putBoolean(Ljava/lang/String;Z)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public setCameraSnapPaintSecondTimeAngleRunning(F)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timeAngle"
-        }
-    .end annotation
-
-    const-string v0, "camera_snap_paint_second_time_angle"
 
     .line 1
+    const-string v0, "camera_snap_paint_second_time_angle"
+
+    .line 2
+    .line 3
     invoke-virtual {p0, v0, p1}, Lcom/android/camera/data/data/DataItemBase;->putFloat(Ljava/lang/String;F)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public final setDummySystemEnable(Z)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string/jumbo v1, "setDummyEnable"
 
+    .line 7
+    .line 8
+    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 10
+    .line 11
+    .line 12
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 13
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object v0
 
+    .line 19
     const/4 v1, 0x0
 
+    .line 20
     new-array v1, v1, [Ljava/lang/Object;
 
+    .line 21
+    .line 22
     const-string v2, "DataItemRunning"
 
+    .line 23
+    .line 24
     invoke-static {v2, v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 25
+    .line 26
+    .line 27
     iput-boolean p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mDummySystemEnable:Z
 
+    .line 28
+    .line 29
     return-void
 .end method
 
 .method public setEntranceMode(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "entranceMode"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mEntranceMode:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setFirstMimojiEntry(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isFirstMimojiEntry"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mFirstMimojiEntry:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -2786,101 +3940,110 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "running"
-        }
-    .end annotation
-
+    .line 1
     const-string/jumbo v0, "pref_hand_gesture_status"
 
-    .line 1
+    .line 2
+    .line 3
+    .line 4
     invoke-virtual {p0, v0, p1}, Lcom/android/camera/data/data/DataItemBase;->putBoolean(Ljava/lang/String;Z)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
 .method public setIsWidgetLauncher(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isWidgetLaunch"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mIsWidgetLaunch:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setMiviSuperNightData(Lcom/android/camera2/vendortag/struct/MiviSuperNightData;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "data"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mMiviSuperNightData:Lcom/android/camera2/vendortag/struct/MiviSuperNightData;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setPaintCondition(Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "paintCondition"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string/jumbo v1, "setPaintCondition: "
 
+    .line 7
+    .line 8
+    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 10
+    .line 11
+    .line 12
     iget v1, p1, Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;->mTargetUiStyle:I
 
+    .line 13
+    .line 14
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 15
+    .line 16
+    .line 17
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object v0
 
+    .line 21
     const/4 v1, 0x0
 
+    .line 22
     new-array v1, v1, [Ljava/lang/Object;
 
+    .line 23
+    .line 24
     const-string v2, "DataItemRunning"
 
+    .line 25
+    .line 26
     invoke-static {v2, v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 27
+    .line 28
+    .line 29
     iget-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mPaintCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
+    .line 30
+    .line 31
     iput-object v0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mLastPaintCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
-    .line 3
+    .line 32
+    .line 33
     iput-object p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mPaintCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -2892,71 +4055,50 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "running"
-        }
-    .end annotation
-
+    .line 1
     const-string/jumbo v0, "pref_pro_video_recording_simple"
 
-    .line 1
+    .line 2
+    .line 3
+    .line 4
     invoke-virtual {p0, v0, p1}, Lcom/android/camera/data/data/DataItemBase;->putBoolean(Ljava/lang/String;Z)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
 .method public setRecordingClosedElements([I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "recordingClosedElements"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mRecordingClosedElements:[I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSuperNightMismatch(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mismatch"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSuperNightMismatch:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSuspendShutterSnapRegion(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "value"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSuspendShutterSnapRegion:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -2968,20 +4110,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "running"
-        }
-    .end annotation
-
+    .line 1
     const-string v0, "XXXM_STATUS"
 
-    .line 1
+    .line 2
+    .line 3
     invoke-virtual {p0, v0, p1}, Lcom/android/camera/data/data/DataItemBase;->putBoolean(Ljava/lang/String;Z)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2996,6 +4134,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportHandGesture:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -3007,41 +4147,49 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cameraId",
-            "moduleIndex"
-        }
-    .end annotation
-
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/android/camera/data/data/runing/DataItemRunning;->isModeSupportMacro(II)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     if-eqz p0, :cond_0
 
+    .line 6
+    .line 7
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
     invoke-virtual {p0}, Lcom/android/camera/data/data/global/DataItemGlobal;->isNormalIntent()Z
 
+    .line 12
+    .line 13
+    .line 14
     move-result p0
 
+    .line 15
     if-eqz p0, :cond_0
 
+    .line 16
+    .line 17
     const/4 p0, 0x1
 
+    .line 18
     goto :goto_0
 
+    .line 19
     :cond_0
     const/4 p0, 0x0
 
+    .line 20
     :goto_0
     return p0
 .end method
@@ -3052,10 +4200,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningShine:Lcom/android/camera/data/data/runing/ComponentRunningShine;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/ComponentRunningShine;->supportPopUpEntry()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -3070,6 +4224,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportSpeechShutter:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -3082,56 +4238,96 @@
     .end annotation
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooO0o()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooO0o()Z
 
     .line 2
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000ooO()Z
-
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-nez v0, :cond_0
 
-    .line 3
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 6
+    .line 7
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00Ooo0o()Z
+    .line 11
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o000ooO()Z
 
+    .line 12
+    .line 13
+    .line 14
     move-result v0
 
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o00Ooo0o()Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v0
+
+    .line 25
     if-eqz v0, :cond_0
 
+    .line 26
+    .line 27
     iget-boolean p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mSupportMacroMode:Z
 
+    .line 28
+    .line 29
     if-eqz p0, :cond_0
 
-    .line 4
+    .line 30
+    .line 31
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
 
+    .line 32
+    .line 33
+    .line 34
     move-result-object p0
 
+    .line 35
     invoke-virtual {p0}, Lcom/android/camera/data/data/global/DataItemGlobal;->isNormalIntent()Z
 
+    .line 36
+    .line 37
+    .line 38
     move-result p0
 
+    .line 39
     if-eqz p0, :cond_0
 
+    .line 40
+    .line 41
     const/4 p0, 0x1
 
+    .line 42
     goto :goto_0
 
+    .line 43
     :cond_0
     const/4 p0, 0x0
 
+    .line 44
     :goto_0
     return p0
 .end method
@@ -3142,10 +4338,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentRunningShine:Lcom/android/camera/data/data/runing/ComponentRunningShine;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/ComponentRunningShine;->isTopFilterEntry()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -3155,50 +4357,50 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/data/runing/DataItemRunning;->mComponentUltraPixel:Lcom/android/camera/data/data/config/ComponentRunningUltraPixel;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/data/data/ComponentData;->isEmpty()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     xor-int/lit8 p0, p0, 0x1
 
+    .line 8
+    .line 9
     return p0
 .end method
 
 .method public switchOff(Ljava/lang/String;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
 
     .line 1
+    const/4 v0, 0x0
+
+    .line 2
     invoke-virtual {p0, p1, v0}, Lcom/android/camera/data/data/DataItemBase;->putBoolean(Ljava/lang/String;Z)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method
 
 .method public switchOn(Ljava/lang/String;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
-
-    const/4 v0, 0x1
 
     .line 1
+    const/4 v0, 0x1
+
+    .line 2
     invoke-virtual {p0, p1, v0}, Lcom/android/camera/data/data/DataItemBase;->putBoolean(Ljava/lang/String;Z)Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -3207,34 +4409,38 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
-
     .line 1
     invoke-virtual {p0, p1}, Lcom/android/camera/data/data/runing/DataItemRunning;->isSwitchOn(Ljava/lang/String;)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     invoke-virtual {p0, p1}, Lcom/android/camera/data/data/runing/DataItemRunning;->switchOff(Ljava/lang/String;)V
 
+    .line 8
+    .line 9
+    .line 10
     const/4 p0, 0x0
 
+    .line 11
     return p0
 
-    .line 3
+    .line 12
     :cond_0
     invoke-virtual {p0, p1}, Lcom/android/camera/data/data/runing/DataItemRunning;->switchOn(Ljava/lang/String;)V
 
+    .line 13
+    .line 14
+    .line 15
     const/4 p0, 0x1
 
+    .line 16
     return p0
 .end method

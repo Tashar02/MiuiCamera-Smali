@@ -1,40 +1,50 @@
 .class public final synthetic Lcom/uber/rxdogtag/OooOo00;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
 
 
 # instance fields
-.field public final synthetic o0000o:Lio/reactivex/disposables/Disposable;
-
-.field public final synthetic o0000o0o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
+.field public final synthetic OooO00o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagMaybeObserver;Lio/reactivex/disposables/Disposable;)V
+.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagMaybeObserver;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/OooOo00;->o0000o0o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/OooOo00;->OooO00o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
 
-    iput-object p2, p0, Lcom/uber/rxdogtag/OooOo00;->o0000o:Lio/reactivex/disposables/Disposable;
-
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/uber/rxdogtag/OooOo00;->o0000o0o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
+    .line 1
+    iget-object p0, p0, Lcom/uber/rxdogtag/OooOo00;->OooO00o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/OooOo00;->o0000o:Lio/reactivex/disposables/Disposable;
+    .line 2
+    .line 3
+    check-cast p1, Ljava/lang/Throwable;
 
-    invoke-virtual {v0, p0}, Lcom/uber/rxdogtag/DogTagMaybeObserver;->OooO0o0(Lio/reactivex/disposables/Disposable;)V
+    .line 4
+    .line 5
+    invoke-static {p0, p1}, Lcom/uber/rxdogtag/DogTagMaybeObserver;->OooO00o(Lcom/uber/rxdogtag/DogTagMaybeObserver;Ljava/lang/Throwable;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/top/TopExpandAdapter$1;
+.class Lcom/android/camera/fragment/top/TopExpandAdapter$1;
 .super Landroid/view/View$AccessibilityDelegate;
 .source "TopExpandAdapter.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/top/TopExpandAdapter;
+.field final synthetic this$0:Lcom/android/camera/fragment/top/TopExpandAdapter;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/top/TopExpandAdapter;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/top/TopExpandAdapter$1;->this$0:Lcom/android/camera/fragment/top/TopExpandAdapter;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,24 +39,20 @@
 # virtual methods
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "info"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 p0, 0x1
 
-    .line 2
+    .line 5
     invoke-virtual {p2, p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setEnabled(Z)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

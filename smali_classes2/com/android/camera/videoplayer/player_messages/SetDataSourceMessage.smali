@@ -10,6 +10,9 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/android/camera/videoplayer/player_messages/PlayerMessage;-><init>(Lcom/android/camera/videoplayer/ui/VideoPlayerView;Lcom/android/camera/videoplayer/manager/VideoPlayerManagerCallback;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -21,6 +24,8 @@
     .line 1
     sget-object p0, Lcom/android/camera/videoplayer/PlayerMessageState;->DATA_SOURCE_SET:Lcom/android/camera/videoplayer/PlayerMessageState;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -30,5 +35,7 @@
     .line 1
     sget-object p0, Lcom/android/camera/videoplayer/PlayerMessageState;->SETTING_DATA_SOURCE:Lcom/android/camera/videoplayer/PlayerMessageState;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

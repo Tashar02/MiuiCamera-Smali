@@ -36,6 +36,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -45,6 +48,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem$BaseBuilder;->mDataItem:Lcom/android/camera/data/data/ComponentDataItem;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -54,6 +59,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem$BaseBuilder;->isCommon:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -65,22 +72,18 @@
     .line 1
     new-instance v0, Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p0}, Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem;-><init>(Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem$BaseBuilder;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object v0
 .end method
 
 .method public setCommon(Z)Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "common"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)TT;"
@@ -90,20 +93,13 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem$BaseBuilder;->isCommon:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setDataItem(Lcom/android/camera/data/data/ComponentDataItem;)Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dataItem"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -115,5 +111,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/modeselector/BaseModeSelectorItem$BaseBuilder;->mDataItem:Lcom/android/camera/data/data/ComponentDataItem;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

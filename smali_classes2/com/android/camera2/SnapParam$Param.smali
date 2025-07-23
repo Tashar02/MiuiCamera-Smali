@@ -31,7 +31,7 @@
 
 .field public forceParam:Lcom/android/camera2/SnapParam$Param$ForceParam;
 
-.field public fusionType:LOooO0Oo/OooO0OO;
+.field public fusionType:Lo000OOO/OooO0OO;
 
 .field public halSuperNightValues:[B
 
@@ -111,16 +111,23 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, -0x1
 
-    .line 2
+    .line 5
     iput v0, p0, Lcom/android/camera2/SnapParam$Param;->previewTriggerHdrType:I
 
-    .line 3
+    .line 6
+    .line 7
     iput v0, p0, Lcom/android/camera2/SnapParam$Param;->baseEvValue:I
 
-    .line 4
+    .line 8
+    .line 9
     iput v0, p0, Lcom/android/camera2/SnapParam$Param;->numOfNonBaseEvs:I
 
+    .line 10
+    .line 11
     return-void
 .end method

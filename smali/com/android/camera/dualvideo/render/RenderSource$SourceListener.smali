@@ -16,23 +16,7 @@
 
 # virtual methods
 .method public abstract onImageUpdated(Lcom/android/camera/dualvideo/util/RenderSourceType;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "sourceType"
-        }
-    .end annotation
 .end method
 
 .method public abstract onNewStreamAvailable(Lcom/android/camera/dualvideo/util/RenderSourceType;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "sourceType"
-        }
-    .end annotation
 .end method

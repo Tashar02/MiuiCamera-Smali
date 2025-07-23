@@ -11,6 +11,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -20,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -156,13 +160,20 @@
     .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
-    .line 2
+    .line 5
     invoke-static {p0, p1, p2}, Landroidx/core/content/res/ResourcesCompat;->getDrawable(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
+    .line 9
     return-object p0
 .end method
 
@@ -177,20 +188,31 @@
         .end annotation
     .end param
 
+    .line 1
     if-eqz p2, :cond_0
 
-    .line 1
+    .line 2
+    .line 3
     new-instance v0, Landroidx/appcompat/view/ContextThemeWrapper;
 
+    .line 4
+    .line 5
     invoke-direct {v0, p0, p2}, Landroidx/appcompat/view/ContextThemeWrapper;-><init>(Landroid/content/Context;Landroid/content/res/Resources$Theme;)V
 
+    .line 6
+    .line 7
+    .line 8
     move-object p0, v0
 
-    .line 2
+    .line 9
     :cond_0
     invoke-static {p0, p1}, Landroidx/appcompat/content/res/AppCompatResources;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object p0
 
+    .line 13
     return-object p0
 .end method

@@ -23,30 +23,26 @@
 
 
 # instance fields
-.field public downloadState:I
+.field downloadState:I
 
-.field public progress:I
+.field progress:I
 
-.field public type:I
+.field type:I
 
 
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera/fragment/mode/ModeAdapter$PlayLoad;->type:I
 
+    .line 5
+    .line 6
     return-void
 .end method

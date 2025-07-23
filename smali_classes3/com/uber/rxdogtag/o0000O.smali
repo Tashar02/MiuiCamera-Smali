@@ -1,40 +1,56 @@
 .class public final synthetic Lcom/uber/rxdogtag/o0000O;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
-.implements Lio/reactivex/functions/BiFunction;
+.implements Ljava/lang/Thread$UncaughtExceptionHandler;
 
 
 # instance fields
-.field public final synthetic o0000o0o:Lcom/uber/rxdogtag/RxDogTag$Configuration;
+.field public final synthetic OooO00o:Ljava/lang/Thread$UncaughtExceptionHandler;
+
+.field public final synthetic OooO0O0:Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/uber/rxdogtag/RxDogTag$Configuration;)V
+.method public synthetic constructor <init>(Ljava/lang/Thread$UncaughtExceptionHandler;Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/o0000O;->o0000o0o:Lcom/uber/rxdogtag/RxDogTag$Configuration;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/o0000O;->OooO00o:Ljava/lang/Thread$UncaughtExceptionHandler;
 
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/uber/rxdogtag/o0000O;->OooO0O0:Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+    .locals 1
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/o0000O;->o0000o0o:Lcom/uber/rxdogtag/RxDogTag$Configuration;
+    .line 1
+    iget-object v0, p0, Lcom/uber/rxdogtag/o0000O;->OooO00o:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    check-cast p1, Lio/reactivex/Completable;
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/uber/rxdogtag/o0000O;->OooO0O0:Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
 
-    check-cast p2, Lio/reactivex/CompletableObserver;
+    .line 4
+    .line 5
+    invoke-static {v0, p0, p1, p2}, Lcom/uber/rxdogtag/RxDogTag;->OooO0Oo(Ljava/lang/Thread$UncaughtExceptionHandler;Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
-    invoke-static {p0, p1, p2}, Lcom/uber/rxdogtag/RxDogTag;->lambda$installWithBuilder$4(Lcom/uber/rxdogtag/RxDogTag$Configuration;Lio/reactivex/Completable;Lio/reactivex/CompletableObserver;)Lio/reactivex/CompletableObserver;
-
-    move-result-object p0
-
-    return-object p0
+    .line 6
+    .line 7
+    .line 8
+    return-void
 .end method

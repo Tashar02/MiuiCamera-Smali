@@ -9,6 +9,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -35,7 +38,7 @@
     :cond_1
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
 
-    const-string/jumbo v0, "value"
+    const-string v0, "value"
 
     .line 9
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I

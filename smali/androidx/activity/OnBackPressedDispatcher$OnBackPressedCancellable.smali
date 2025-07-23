@@ -1,4 +1,4 @@
-.class public Landroidx/activity/OnBackPressedDispatcher$OnBackPressedCancellable;
+.class Landroidx/activity/OnBackPressedDispatcher$OnBackPressedCancellable;
 .super Ljava/lang/Object;
 .source "OnBackPressedDispatcher.java"
 
@@ -20,7 +20,7 @@
 # instance fields
 .field private final mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
 
-.field public final synthetic this$0:Landroidx/activity/OnBackPressedDispatcher;
+.field final synthetic this$0:Landroidx/activity/OnBackPressedDispatcher;
 
 
 # direct methods
@@ -30,11 +30,17 @@
     .line 1
     iput-object p1, p0, Landroidx/activity/OnBackPressedDispatcher$OnBackPressedCancellable;->this$0:Landroidx/activity/OnBackPressedDispatcher;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iput-object p2, p0, Landroidx/activity/OnBackPressedDispatcher$OnBackPressedCancellable;->mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -46,16 +52,29 @@
     .line 1
     iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$OnBackPressedCancellable;->this$0:Landroidx/activity/OnBackPressedDispatcher;
 
+    .line 2
+    .line 3
     iget-object v0, v0, Landroidx/activity/OnBackPressedDispatcher;->mOnBackPressedCallbacks:Ljava/util/ArrayDeque;
 
+    .line 4
+    .line 5
     iget-object v1, p0, Landroidx/activity/OnBackPressedDispatcher$OnBackPressedCancellable;->mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
 
+    .line 6
+    .line 7
     invoke-virtual {v0, v1}, Ljava/util/ArrayDeque;->remove(Ljava/lang/Object;)Z
 
-    .line 2
+    .line 8
+    .line 9
+    .line 10
     iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher$OnBackPressedCancellable;->mOnBackPressedCallback:Landroidx/activity/OnBackPressedCallback;
 
+    .line 11
+    .line 12
     invoke-virtual {v0, p0}, Landroidx/activity/OnBackPressedCallback;->removeCancellable(Landroidx/activity/Cancellable;)V
 
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AppCompatDelegateImpl$4;
+.class Landroidx/appcompat/app/AppCompatDelegateImpl$4;
 .super Ljava/lang/Object;
 .source "AppCompatDelegateImpl.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field final synthetic this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$4;->this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,13 +46,22 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$4;->this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     invoke-virtual {p0, v0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->updateStatusGuard(Landroidx/core/view/WindowInsetsCompat;Landroid/graphics/Rect;)I
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     iput p0, p1, Landroid/graphics/Rect;->top:I
 
+    .line 9
+    .line 10
     return-void
 .end method

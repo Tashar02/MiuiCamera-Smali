@@ -23,6 +23,9 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/data/cloud/DataCloudItemBase;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -31,8 +34,12 @@
 .method public getCacheExpireTime()J
     .locals 2
 
+    .line 1
     const-wide/32 v0, 0x1499700
 
+    .line 2
+    .line 3
+    .line 4
     return-wide v0
 .end method
 
@@ -42,30 +49,29 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/cloud/DataCloudItemHal;->data:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public provideKey()Ljava/lang/String;
     .locals 0
 
+    .line 1
     const-string p0, "camera_hal"
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setData(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "data"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/cloud/DataCloudItemHal;->data:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method

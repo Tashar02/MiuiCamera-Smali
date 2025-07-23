@@ -12,7 +12,7 @@
 
 .field private static sOneTime:J = 0x0L
 
-.field public static sToast:Landroid/widget/Toast; = null
+.field protected static sToast:Landroid/widget/Toast; = null
 
 .field private static sTwoTime:J = 0x0L
 
@@ -23,6 +23,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -34,136 +35,179 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method private static getWindowParams(Landroid/widget/Toast;)Landroid/view/WindowManager$LayoutParams;
     .locals 5
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "toast"
-        }
-    .end annotation
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     if-nez p0, :cond_0
 
+    .line 3
+    .line 4
     return-object v0
 
+    .line 5
     :cond_0
     const/4 v1, 0x0
 
-    .line 1
+    .line 6
     :try_start_0
     const-class v2, Landroid/widget/Toast;
 
+    .line 7
+    .line 8
     const-string v3, "getWindowParams"
 
+    .line 9
+    .line 10
     new-array v4, v1, [Ljava/lang/Class;
 
+    .line 11
+    .line 12
     invoke-virtual {v2, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
+    .line 13
+    .line 14
+    .line 15
     move-result-object v2
 
+    .line 16
     const/4 v3, 0x1
 
-    .line 2
-    invoke-virtual {v2, v3}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    .line 17
+    invoke-virtual {v2, v3}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
+    .line 18
+    .line 19
+    .line 20
     new-array v3, v1, [Ljava/lang/Object;
 
-    .line 3
+    .line 21
+    .line 22
     invoke-virtual {v2, p0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 23
+    .line 24
+    .line 25
     move-result-object p0
 
+    .line 26
     check-cast p0, Landroid/view/WindowManager$LayoutParams;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 27
+    .line 28
     return-object p0
 
+    .line 29
     :catch_0
     move-exception p0
 
-    const-string v2, "ToastUtils"
+    .line 30
+    const-string v2, "getWindowParams: failed: "
 
-    const-string v3, "getWindowParams: failed: "
+    .line 31
+    .line 32
+    const-string v3, "ToastUtils"
 
-    .line 4
-    invoke-static {v2, v3, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    .line 33
+    .line 34
+    invoke-static {v3, v2, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 5
+    .line 35
+    .line 36
+    .line 37
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 38
+    .line 39
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "getWindowsParam: ret: "
+    .line 40
+    .line 41
+    .line 42
+    const-string v2, "getWindowsParam: ret: "
 
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 43
+    .line 44
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 45
+    .line 46
+    .line 47
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 48
+    .line 49
+    .line 50
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 51
+    .line 52
+    .line 53
     move-result-object p0
 
+    .line 54
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v2, p0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 55
+    .line 56
+    invoke-static {v3, p0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 57
+    .line 58
+    .line 59
     return-object v0
 .end method
 
 .method private static prepareShowOnKeyguard(Landroid/widget/Toast;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "toast"
-        }
-    .end annotation
 
     .line 1
     invoke-static {p0}, Lcom/android/camera/ToastUtils;->getWindowParams(Landroid/widget/Toast;)Landroid/view/WindowManager$LayoutParams;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     iget v0, p0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
+    .line 8
+    .line 9
     const/high16 v1, 0x80000
 
+    .line 10
+    .line 11
     or-int/2addr v0, v1
 
+    .line 12
     iput v0, p0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
+    .line 13
+    .line 14
     :cond_0
     return-void
 .end method
 
 .method public static showToast(Landroid/content/Context;I)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "resID"
-        }
-    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -199,18 +243,6 @@
 
 .method public static showToast(Landroid/content/Context;II)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "resID",
-            "gravity"
-        }
-    .end annotation
 
     if-eqz p0, :cond_1
 
@@ -260,18 +292,6 @@
 
 .method public static showToast(Landroid/content/Context;IZ)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "resID",
-            "isDefaultGravity"
-        }
-    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -307,16 +327,6 @@
 
 .method public static showToast(Landroid/content/Context;Ljava/lang/String;)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "s"
-        }
-    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -350,18 +360,6 @@
 
 .method public static showToast(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "contentText",
-            "gravity"
-        }
-    .end annotation
 
     if-eqz p0, :cond_1
 
@@ -409,22 +407,6 @@
 
 .method public static showToast(Landroid/content/Context;Ljava/lang/String;III)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "contentText",
-            "gravity",
-            "xOffset",
-            "yOffset"
-        }
-    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -458,25 +440,6 @@
 
 .method private static showToast(Ljava/lang/ref/WeakReference;Ljava/lang/String;IIIZ)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "activity",
-            "contentText",
-            "gravity",
-            "xOffset",
-            "yOffset",
-            "isDefaultGravity"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -489,7 +452,7 @@
     .end annotation
 
     .line 17
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -593,7 +556,7 @@
     sput-object p1, Lcom/android/camera/ToastUtils;->sToast:Landroid/widget/Toast;
 
     .line 30
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_1
 

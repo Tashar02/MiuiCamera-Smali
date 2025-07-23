@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public mCurveFit:Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;
+.field mCurveFit:Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;
 
 
 # direct methods
@@ -19,106 +19,182 @@
     invoke-direct {p0}, Landroidx/constraintlayout/core/motion/utils/Easing;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/constraintlayout/core/motion/utils/Easing;->str:Ljava/lang/String;
 
-    .line 3
+    .line 5
+    .line 6
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     div-int/lit8 v0, v0, 0x2
 
+    .line 11
+    .line 12
     new-array v0, v0, [D
 
+    .line 13
+    .line 14
     const/16 v1, 0x28
 
-    .line 4
+    .line 15
+    .line 16
     invoke-virtual {p1, v1}, Ljava/lang/String;->indexOf(I)I
 
+    .line 17
+    .line 18
+    .line 19
     move-result v1
 
+    .line 20
     add-int/lit8 v1, v1, 0x1
 
+    .line 21
+    .line 22
     const/16 v2, 0x2c
 
-    .line 5
+    .line 23
+    .line 24
     invoke-virtual {p1, v2, v1}, Ljava/lang/String;->indexOf(II)I
 
+    .line 25
+    .line 26
+    .line 27
     move-result v3
 
+    .line 28
     const/4 v4, 0x0
 
+    .line 29
     :goto_0
     const/4 v5, -0x1
 
+    .line 30
     if-eq v3, v5, :cond_0
 
-    .line 6
+    .line 31
+    .line 32
     invoke-virtual {p1, v1, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
+    .line 33
+    .line 34
+    .line 35
     move-result-object v1
 
+    .line 36
     invoke-virtual {v1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
+    .line 37
+    .line 38
+    .line 39
     move-result-object v1
 
+    .line 40
     add-int/lit8 v5, v4, 0x1
 
-    .line 7
+    .line 41
+    .line 42
     invoke-static {v1}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
+    .line 43
+    .line 44
+    .line 45
     move-result-wide v6
 
+    .line 46
     aput-wide v6, v0, v4
 
+    .line 47
+    .line 48
     add-int/lit8 v1, v3, 0x1
 
-    .line 8
+    .line 49
+    .line 50
     invoke-virtual {p1, v2, v1}, Ljava/lang/String;->indexOf(II)I
 
+    .line 51
+    .line 52
+    .line 53
     move-result v3
 
+    .line 54
     move v4, v5
 
+    .line 55
     goto :goto_0
 
+    .line 56
     :cond_0
     const/16 v2, 0x29
 
-    .line 9
+    .line 57
+    .line 58
     invoke-virtual {p1, v2, v1}, Ljava/lang/String;->indexOf(II)I
 
+    .line 59
+    .line 60
+    .line 61
     move-result v2
 
-    .line 10
+    .line 62
     invoke-virtual {p1, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
+    .line 63
+    .line 64
+    .line 65
     move-result-object p1
 
+    .line 66
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
+    .line 67
+    .line 68
+    .line 69
     move-result-object p1
 
+    .line 70
     add-int/lit8 v1, v4, 0x1
 
-    .line 11
+    .line 71
+    .line 72
     invoke-static {p1}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
+    .line 73
+    .line 74
+    .line 75
     move-result-wide v2
 
+    .line 76
     aput-wide v2, v0, v4
 
-    .line 12
+    .line 77
+    .line 78
     invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([DI)[D
 
+    .line 79
+    .line 80
+    .line 81
     move-result-object p1
 
+    .line 82
     invoke-static {p1}, Landroidx/constraintlayout/core/motion/utils/StepCurve;->genSpline([D)Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;
 
+    .line 83
+    .line 84
+    .line 85
     move-result-object p1
 
+    .line 86
     iput-object p1, p0, Landroidx/constraintlayout/core/motion/utils/StepCurve;->mCurveFit:Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;
 
+    .line 87
+    .line 88
     return-void
 .end method
 
@@ -200,7 +276,7 @@
     aput v1, v2, v4
 
     .line 7
-    const-class v9, D
+    sget-object v9, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
     invoke-static {v9, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
@@ -344,12 +420,19 @@
     .line 1
     iget-object p0, p0, Landroidx/constraintlayout/core/motion/utils/StepCurve;->mCurveFit:Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     invoke-virtual {p0, p1, p2, v0}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;->getPos(DI)D
 
+    .line 5
+    .line 6
+    .line 7
     move-result-wide p0
 
+    .line 8
     return-wide p0
 .end method
 
@@ -359,11 +442,18 @@
     .line 1
     iget-object p0, p0, Landroidx/constraintlayout/core/motion/utils/StepCurve;->mCurveFit:Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     invoke-virtual {p0, p1, p2, v0}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;->getSlope(DI)D
 
+    .line 5
+    .line 6
+    .line 7
     move-result-wide p0
 
+    .line 8
     return-wide p0
 .end method

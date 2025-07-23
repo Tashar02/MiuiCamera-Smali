@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/resource/BaseResourceList;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -31,75 +34,53 @@
 # virtual methods
 .method public getItemJsonArray(Lorg/json/JSONObject;)Lorg/json/JSONArray;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "jsonObject"
-        }
-    .end annotation
-
-    const-string p0, "data"
 
     .line 1
+    const-string p0, "data"
+
+    .line 2
+    .line 3
     invoke-virtual {p1, p0}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
 .method public getLocalVersion(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listVersionTag"
-        }
-    .end annotation
 
+    .line 1
     const-string p0, ""
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public getResourceType()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x3
 
+    .line 2
     return p0
 .end method
 
 .method public parseInitialData(Lorg/json/JSONObject;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "jsonObject"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public parseSingleItem(Lorg/json/JSONObject;I)Lcom/android/camera/fragment/film/FilmItem;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "jsonObject",
-            "index"
-        }
-    .end annotation
 
     .line 2
     new-instance p0, Lcom/android/camera/fragment/film/FilmItem;
@@ -114,16 +95,6 @@
 
 .method public bridge synthetic parseSingleItem(Lorg/json/JSONObject;I)Lcom/android/camera/resource/BaseResourceItem;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "jsonObject",
-            "index"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/film/FilmList;->parseSingleItem(Lorg/json/JSONObject;I)Lcom/android/camera/fragment/film/FilmItem;
@@ -135,16 +106,7 @@
 
 .method public setLocalVersion(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "listVersionTag",
-            "newVersion"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method

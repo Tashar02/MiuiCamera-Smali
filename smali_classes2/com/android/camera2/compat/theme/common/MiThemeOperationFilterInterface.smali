@@ -8,12 +8,4 @@
 .end method
 
 .method public abstract setCvStyleEffect(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "asScene"
-        }
-    .end annotation
 .end method

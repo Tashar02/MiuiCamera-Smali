@@ -1,4 +1,4 @@
-.class public Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi23;
+.class Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi23;
 .super Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;
 .source "MediaBrowserCompat.java"
 
@@ -21,10 +21,27 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "serviceComponent",
+            "callback",
+            "rootHints"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/support/v4/media/MediaBrowserCompat$ConnectionCallback;Landroid/os/Bundle;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -40,25 +57,48 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "mediaId",
+            "cb"
+        }
+    .end annotation
 
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;->mServiceBinderWrapper:Landroid/support/v4/media/MediaBrowserCompat$ServiceBinderWrapper;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
-    iget-object p0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;->mBrowserObj:Ljava/lang/Object;
+    .line 4
+    .line 5
+    iget-object p0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;->mBrowserFwk:Landroid/media/browse/MediaBrowser;
 
-    iget-object p2, p2, Landroid/support/v4/media/MediaBrowserCompat$ItemCallback;->mItemCallbackObj:Ljava/lang/Object;
+    .line 6
+    .line 7
+    iget-object p2, p2, Landroid/support/v4/media/MediaBrowserCompat$ItemCallback;->mItemCallbackFwk:Landroid/media/browse/MediaBrowser$ItemCallback;
 
-    invoke-static {p0, p1, p2}, Landroid/support/v4/media/MediaBrowserCompatApi23;->getItem(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+    .line 8
+    .line 9
+    invoke-virtual {p0, p1, p2}, Landroid/media/browse/MediaBrowser;->getItem(Ljava/lang/String;Landroid/media/browse/MediaBrowser$ItemCallback;)V
 
+    .line 10
+    .line 11
+    .line 12
     goto :goto_0
 
-    .line 3
+    .line 13
     :cond_0
     invoke-super {p0, p1, p2}, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;->getItem(Ljava/lang/String;Landroid/support/v4/media/MediaBrowserCompat$ItemCallback;)V
 
+    .line 14
+    .line 15
+    .line 16
     :goto_0
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public final Landroidx/tracing/TraceApi18Impl;
+.class final Landroidx/tracing/TraceApi18Impl;
 .super Ljava/lang/Object;
 .source "TraceApi18Impl.java"
 
@@ -16,6 +16,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,6 +32,9 @@
     .line 1
     invoke-static {p0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -38,5 +44,8 @@
     .line 1
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

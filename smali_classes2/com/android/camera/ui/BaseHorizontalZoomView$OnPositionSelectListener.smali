@@ -16,29 +16,7 @@
 
 # virtual methods
 .method public abstract onChangeValue(Ljava/lang/String;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "value",
-            "action"
-        }
-    .end annotation
 .end method
 
 .method public abstract onPositionSelect(Landroid/view/View;FI)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "index",
-            "action"
-        }
-    .end annotation
 .end method

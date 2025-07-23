@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentLayoutInflaterFactory;
+.class Landroidx/fragment/app/FragmentLayoutInflaterFactory;
 .super Ljava/lang/Object;
 .source "FragmentLayoutInflaterFactory.java"
 
@@ -22,8 +22,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/fragment/app/FragmentLayoutInflaterFactory;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
+    .line 5
+    .line 6
     return-void
 .end method
 

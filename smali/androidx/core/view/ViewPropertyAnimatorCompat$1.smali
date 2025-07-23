@@ -1,4 +1,4 @@
-.class public Landroidx/core/view/ViewPropertyAnimatorCompat$1;
+.class Landroidx/core/view/ViewPropertyAnimatorCompat$1;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "ViewPropertyAnimatorCompat.java"
 
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/core/view/ViewPropertyAnimatorCompat;
+.field final synthetic this$0:Landroidx/core/view/ViewPropertyAnimatorCompat;
 
-.field public final synthetic val$listener:Landroidx/core/view/ViewPropertyAnimatorListener;
+.field final synthetic val$listener:Landroidx/core/view/ViewPropertyAnimatorListener;
 
-.field public final synthetic val$view:Landroid/view/View;
+.field final synthetic val$view:Landroid/view/View;
 
 
 # direct methods
@@ -29,12 +29,21 @@
     .line 1
     iput-object p1, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->this$0:Landroidx/core/view/ViewPropertyAnimatorCompat;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$listener:Landroidx/core/view/ViewPropertyAnimatorListener;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$view:Landroid/view/View;
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -46,10 +55,17 @@
     .line 1
     iget-object p1, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$listener:Landroidx/core/view/ViewPropertyAnimatorListener;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$view:Landroid/view/View;
 
+    .line 4
+    .line 5
     invoke-interface {p1, p0}, Landroidx/core/view/ViewPropertyAnimatorListener;->onAnimationCancel(Landroid/view/View;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -59,10 +75,17 @@
     .line 1
     iget-object p1, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$listener:Landroidx/core/view/ViewPropertyAnimatorListener;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$view:Landroid/view/View;
 
+    .line 4
+    .line 5
     invoke-interface {p1, p0}, Landroidx/core/view/ViewPropertyAnimatorListener;->onAnimationEnd(Landroid/view/View;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -72,9 +95,16 @@
     .line 1
     iget-object p1, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$listener:Landroidx/core/view/ViewPropertyAnimatorListener;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/core/view/ViewPropertyAnimatorCompat$1;->val$view:Landroid/view/View;
 
+    .line 4
+    .line 5
     invoke-interface {p1, p0}, Landroidx/core/view/ViewPropertyAnimatorListener;->onAnimationStart(Landroid/view/View;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

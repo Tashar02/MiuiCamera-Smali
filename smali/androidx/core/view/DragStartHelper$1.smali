@@ -1,4 +1,4 @@
-.class public Landroidx/core/view/DragStartHelper$1;
+.class Landroidx/core/view/DragStartHelper$1;
 .super Ljava/lang/Object;
 .source "DragStartHelper.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/core/view/DragStartHelper;
+.field final synthetic this$0:Landroidx/core/view/DragStartHelper;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/core/view/DragStartHelper$1;->this$0:Landroidx/core/view/DragStartHelper;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,9 +46,15 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/DragStartHelper$1;->this$0:Landroidx/core/view/DragStartHelper;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/core/view/DragStartHelper;->onLongClick(Landroid/view/View;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method

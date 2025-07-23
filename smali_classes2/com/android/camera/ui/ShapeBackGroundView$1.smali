@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ui/ShapeBackGroundView$1;
+.class Lcom/android/camera/ui/ShapeBackGroundView$1;
 .super Ljava/lang/Object;
 .source "ShapeBackGroundView.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/ui/ShapeBackGroundView;
+.field final synthetic this$0:Lcom/android/camera/ui/ShapeBackGroundView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ui/ShapeBackGroundView;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/ShapeBackGroundView$1;->this$0:Lcom/android/camera/ui/ShapeBackGroundView;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,46 +42,66 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animation"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p1
 
+    .line 5
     check-cast p1, Ljava/lang/Integer;
 
+    .line 6
+    .line 7
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
+    .line 8
+    .line 9
+    .line 10
     move-result p1
 
-    .line 2
+    .line 11
     iget-object v0, p0, Lcom/android/camera/ui/ShapeBackGroundView$1;->this$0:Lcom/android/camera/ui/ShapeBackGroundView;
 
+    .line 12
+    .line 13
     iget-object v0, v0, Lcom/android/camera/ui/ShapeBackGroundView;->mPaint:Landroid/graphics/Paint;
 
+    .line 14
+    .line 15
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 3
+    .line 16
+    .line 17
+    .line 18
     iget-object v0, p0, Lcom/android/camera/ui/ShapeBackGroundView$1;->this$0:Lcom/android/camera/ui/ShapeBackGroundView;
 
+    .line 19
+    .line 20
     invoke-static {v0}, Lcom/android/camera/ui/ShapeBackGroundView;->access$000(Lcom/android/camera/ui/ShapeBackGroundView;)Landroid/graphics/Paint;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v0
 
+    .line 24
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 4
+    .line 25
+    .line 26
+    .line 27
     iget-object p0, p0, Lcom/android/camera/ui/ShapeBackGroundView$1;->this$0:Lcom/android/camera/ui/ShapeBackGroundView;
 
-    invoke-virtual {p0}, Landroid/widget/FrameLayout;->invalidate()V
+    .line 28
+    .line 29
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 30
+    .line 31
+    .line 32
     return-void
 .end method

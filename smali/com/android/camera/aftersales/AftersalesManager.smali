@@ -95,6 +95,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/aftersales/AftersalesManager;->mCounters:Lcom/android/camera/aftersales/counters/BaseCounter;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -104,10 +106,16 @@
     .line 1
     invoke-static {}, Lcom/android/camera/Util;->afterSalesEnabled()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     sput-boolean v0, Lcom/android/camera/aftersales/AftersalesManager;->mEnabled:Z
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -117,8 +125,12 @@
     .line 1
     invoke-static {}, Lcom/android/camera/aftersales/AftersalesManager$Holder;->access$000()Lcom/android/camera/aftersales/AftersalesManager;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     return-object v0
 .end method
 
@@ -126,16 +138,6 @@
 # virtual methods
 .method public final count(JI)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "time",
-            "id"
-        }
-    .end annotation
 
     const/4 v0, -0x1
 
@@ -147,18 +149,6 @@
 
 .method public final count(JII)V
     .locals 8
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "time",
-            "id",
-            "cameraId"
-        }
-    .end annotation
 
     .line 2
     iget-boolean v0, p0, Lcom/android/camera/aftersales/AftersalesManager;->isInit:Z
@@ -189,7 +179,7 @@
 
     invoke-direct/range {v1 .. v6}, Lcom/android/camera/aftersales/AftersalesManager$AftersalesRunnable;-><init>(Lcom/android/camera/aftersales/AftersalesManager;JII)V
 
-    invoke-interface {v0, v7}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v7}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     return-void
 

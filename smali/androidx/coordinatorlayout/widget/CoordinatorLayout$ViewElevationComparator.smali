@@ -1,4 +1,4 @@
-.class public Landroidx/coordinatorlayout/widget/CoordinatorLayout$ViewElevationComparator;
+.class Landroidx/coordinatorlayout/widget/CoordinatorLayout$ViewElevationComparator;
 .super Ljava/lang/Object;
 .source "CoordinatorLayout.java"
 
@@ -33,6 +33,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

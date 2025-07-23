@@ -8,12 +8,4 @@
 .end method
 
 .method public abstract onResourceSelected(Lcom/android/camera/fragment/film/FilmItem;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "filmItem"
-        }
-    .end annotation
 .end method

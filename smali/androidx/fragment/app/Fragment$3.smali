@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/Fragment$3;
+.class Landroidx/fragment/app/Fragment$3;
 .super Ljava/lang/Object;
 .source "Fragment.java"
 
@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/Fragment;
+.field final synthetic this$0:Landroidx/fragment/app/Fragment;
 
-.field public final synthetic val$controller:Landroidx/fragment/app/SpecialEffectsController;
+.field final synthetic val$controller:Landroidx/fragment/app/SpecialEffectsController;
 
 
 # direct methods
@@ -30,10 +30,17 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/Fragment$3;->this$0:Landroidx/fragment/app/Fragment;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/fragment/app/Fragment$3;->val$controller:Landroidx/fragment/app/SpecialEffectsController;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -45,7 +52,12 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/Fragment$3;->val$controller:Landroidx/fragment/app/SpecialEffectsController;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/SpecialEffectsController;->executePendingOperations()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public abstract Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;
+.class abstract Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;
 .super Ljava/lang/Object;
 .source "TextDirectionHeuristicsCompat.java"
 
@@ -29,8 +29,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;->mAlgorithm:Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -40,28 +44,45 @@
     .line 1
     iget-object v0, p0, Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;->mAlgorithm:Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
 
+    .line 2
+    .line 3
     invoke-interface {v0, p1, p2, p3}, Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;->checkRtl(Ljava/lang/CharSequence;II)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p1
 
+    .line 7
     const/4 p2, 0x1
 
+    .line 8
     if-eqz p1, :cond_1
 
+    .line 9
+    .line 10
     if-eq p1, p2, :cond_0
 
-    .line 2
+    .line 11
+    .line 12
     invoke-virtual {p0}, Landroidx/core/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;->defaultIsRtl()Z
 
+    .line 13
+    .line 14
+    .line 15
     move-result p0
 
+    .line 16
     return p0
 
+    .line 17
     :cond_0
     const/4 p0, 0x0
 
+    .line 18
     return p0
 
+    .line 19
     :cond_1
     return p2
 .end method

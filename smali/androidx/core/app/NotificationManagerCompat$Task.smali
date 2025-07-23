@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/core/app/NotificationManagerCompat$Task;
+.class interface abstract Landroidx/core/app/NotificationManagerCompat$Task;
 .super Ljava/lang/Object;
 .source "NotificationManagerCompat.java"
 

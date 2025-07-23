@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;
+.class final Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;
 .super Ljava/lang/Object;
 .source "DiskLruCache.java"
 
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public cleanFiles:[Ljava/io/File;
+.field cleanFiles:[Ljava/io/File;
 
 .field private currentEditor:Lcom/bumptech/glide/disklrucache/DiskLruCache$Editor;
 
-.field public dirtyFiles:[Ljava/io/File;
+.field dirtyFiles:[Ljava/io/File;
 
 .field private final key:Ljava/lang/String;
 
@@ -29,7 +29,7 @@
 
 .field private sequenceNumber:J
 
-.field public final synthetic this$0:Lcom/bumptech/glide/disklrucache/DiskLruCache;
+.field final synthetic this$0:Lcom/bumptech/glide/disklrucache/DiskLruCache;
 
 
 # direct methods
@@ -163,6 +163,8 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->lengths:[J
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -172,6 +174,8 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->key:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -181,6 +185,8 @@
     .line 1
     iget-wide v0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->sequenceNumber:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -190,6 +196,8 @@
     .line 1
     iput-wide p1, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->sequenceNumber:J
 
+    .line 2
+    .line 3
     return-wide p1
 .end method
 
@@ -199,6 +207,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->readable:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -208,6 +218,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->readable:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -217,6 +229,8 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->currentEditor:Lcom/bumptech/glide/disklrucache/DiskLruCache$Editor;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -226,6 +240,8 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->currentEditor:Lcom/bumptech/glide/disklrucache/DiskLruCache$Editor;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -240,6 +256,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->setLengths([Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -254,26 +273,53 @@
     .line 1
     new-instance p0, Ljava/io/IOException;
 
+    .line 2
+    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 4
+    .line 5
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "unexpected journal line: "
+    .line 6
+    .line 7
+    .line 8
+    const-string/jumbo v1, "unexpected journal line: "
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-static {p1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p1
 
+    .line 18
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 22
+    .line 23
+    .line 24
     move-result-object p1
 
+    .line 25
     invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
+    .line 26
+    .line 27
+    .line 28
     throw p0
 .end method
 
@@ -288,57 +334,89 @@
     .line 1
     array-length v0, p1
 
+    .line 2
     iget-object v1, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->this$0:Lcom/bumptech/glide/disklrucache/DiskLruCache;
 
+    .line 3
+    .line 4
     invoke-static {v1}, Lcom/bumptech/glide/disklrucache/DiskLruCache;->access$1900(Lcom/bumptech/glide/disklrucache/DiskLruCache;)I
 
+    .line 5
+    .line 6
+    .line 7
     move-result v1
 
+    .line 8
     if-ne v0, v1, :cond_1
 
+    .line 9
+    .line 10
     const/4 v0, 0x0
 
-    .line 2
+    .line 11
     :goto_0
     :try_start_0
     array-length v1, p1
 
+    .line 12
     if-ge v0, v1, :cond_0
 
-    .line 3
+    .line 13
+    .line 14
     iget-object v1, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->lengths:[J
 
+    .line 15
+    .line 16
     aget-object v2, p1, v0
 
+    .line 17
+    .line 18
     invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
+    .line 19
+    .line 20
+    .line 21
     move-result-wide v2
 
+    .line 22
     aput-wide v2, v1, v0
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 23
+    .line 24
     add-int/lit8 v0, v0, 0x1
 
+    .line 25
+    .line 26
     goto :goto_0
 
+    .line 27
     :cond_0
     return-void
 
-    .line 4
+    .line 28
     :catch_0
     invoke-direct {p0, p1}, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->invalidLengths([Ljava/lang/String;)Ljava/io/IOException;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p0
 
+    .line 32
     throw p0
 
-    .line 5
+    .line 33
     :cond_1
     invoke-direct {p0, p1}, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->invalidLengths([Ljava/lang/String;)Ljava/io/IOException;
 
+    .line 34
+    .line 35
+    .line 36
     move-result-object p0
 
+    .line 37
     throw p0
 .end method
 
@@ -350,8 +428,12 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->cleanFiles:[Ljava/io/File;
 
+    .line 2
+    .line 3
     aget-object p0, p0, p1
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -361,8 +443,12 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->dirtyFiles:[Ljava/io/File;
 
+    .line 2
+    .line 3
     aget-object p0, p0, p1
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -377,36 +463,61 @@
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget-object p0, p0, Lcom/bumptech/glide/disklrucache/DiskLruCache$Entry;->lengths:[J
 
+    .line 7
+    .line 8
     array-length v1, p0
 
+    .line 9
     const/4 v2, 0x0
 
+    .line 10
     :goto_0
     if-ge v2, v1, :cond_0
 
+    .line 11
+    .line 12
     aget-wide v3, p0, v2
 
+    .line 13
+    .line 14
     const/16 v5, 0x20
 
-    .line 3
+    .line 15
+    .line 16
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
+    .line 17
+    .line 18
+    .line 19
     invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    .line 20
+    .line 21
+    .line 22
     add-int/lit8 v2, v2, 0x1
 
+    .line 23
+    .line 24
     goto :goto_0
 
-    .line 4
+    .line 25
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 26
+    .line 27
+    .line 28
     move-result-object p0
 
+    .line 29
     return-object p0
 .end method

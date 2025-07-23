@@ -22,23 +22,7 @@
 .end method
 
 .method public abstract onZoomValueChanged(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "value"
-        }
-    .end annotation
 .end method
 
 .method public abstract setGestureDetectorEnable(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 .end method

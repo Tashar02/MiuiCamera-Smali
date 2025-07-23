@@ -177,12 +177,12 @@
     invoke-virtual {v1, p1}, Ljava/util/GregorianCalendar;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 23
-    invoke-virtual {v1, v0}, Ljava/util/GregorianCalendar;->setTime(Ljava/util/Date;)V
+    invoke-virtual {v1, v0}, Ljava/util/Calendar;->setTime(Ljava/util/Date;)V
 
     const/4 p1, 0x1
 
     .line 24
-    invoke-virtual {v1, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v1, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result v0
 
@@ -191,7 +191,7 @@
     const/4 v0, 0x2
 
     .line 25
-    invoke-virtual {v1, v0}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v1, v0}, Ljava/util/Calendar;->get(I)I
 
     move-result v0
 
@@ -202,7 +202,7 @@
     const/4 p1, 0x5
 
     .line 26
-    invoke-virtual {v1, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v1, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -211,7 +211,7 @@
     const/16 p1, 0xb
 
     .line 27
-    invoke-virtual {v1, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v1, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -220,7 +220,7 @@
     const/16 p1, 0xc
 
     .line 28
-    invoke-virtual {v1, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v1, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -229,7 +229,7 @@
     const/16 p1, 0xd
 
     .line 29
-    invoke-virtual {v1, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v1, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -238,7 +238,7 @@
     const/16 p1, 0xe
 
     .line 30
-    invoke-virtual {v1, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v1, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -299,12 +299,12 @@
     invoke-direct {v0, p2}, Ljava/util/GregorianCalendar;-><init>(Ljava/util/TimeZone;)V
 
     .line 41
-    invoke-virtual {v0, p1}, Ljava/util/GregorianCalendar;->setTime(Ljava/util/Date;)V
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->setTime(Ljava/util/Date;)V
 
     const/4 p1, 0x1
 
     .line 42
-    invoke-virtual {v0, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result v1
 
@@ -313,7 +313,7 @@
     const/4 v1, 0x2
 
     .line 43
-    invoke-virtual {v0, v1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v0, v1}, Ljava/util/Calendar;->get(I)I
 
     move-result v1
 
@@ -324,7 +324,7 @@
     const/4 p1, 0x5
 
     .line 44
-    invoke-virtual {v0, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -333,7 +333,7 @@
     const/16 p1, 0xb
 
     .line 45
-    invoke-virtual {v0, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -342,7 +342,7 @@
     const/16 p1, 0xc
 
     .line 46
-    invoke-virtual {v0, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -351,7 +351,7 @@
     const/16 p1, 0xd
 
     .line 47
-    invoke-virtual {v0, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -360,7 +360,7 @@
     const/16 p1, 0xe
 
     .line 48
-    invoke-virtual {v0, p1}, Ljava/util/GregorianCalendar;->get(I)I
+    invoke-virtual {v0, p1}, Ljava/util/Calendar;->get(I)I
 
     move-result p1
 
@@ -384,57 +384,93 @@
     .line 1
     invoke-virtual {p0}, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->getCalendar()Ljava/util/Calendar;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
 
+    .line 6
+    .line 7
+    .line 8
     move-result-wide v0
 
+    .line 9
     check-cast p1, Lcom/adobe/xmp/XMPDateTime;
 
-    .line 2
+    .line 10
+    .line 11
     invoke-interface {p1}, Lcom/adobe/xmp/XMPDateTime;->getCalendar()Ljava/util/Calendar;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object v2
 
+    .line 15
     invoke-virtual {v2}, Ljava/util/Calendar;->getTimeInMillis()J
 
+    .line 16
+    .line 17
+    .line 18
     move-result-wide v2
 
+    .line 19
     sub-long/2addr v0, v2
 
+    .line 20
     const-wide/16 v2, 0x0
 
+    .line 21
+    .line 22
     cmp-long v2, v0, v2
 
+    .line 23
+    .line 24
     const-wide/16 v3, 0x2
 
+    .line 25
+    .line 26
     if-eqz v2, :cond_0
 
-    .line 3
+    .line 27
+    .line 28
     rem-long/2addr v0, v3
 
+    .line 29
     long-to-int p0, v0
 
+    .line 30
     return p0
 
-    .line 4
+    .line 31
     :cond_0
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->nanoSeconds:I
 
+    .line 32
+    .line 33
     invoke-interface {p1}, Lcom/adobe/xmp/XMPDateTime;->getNanoSecond()I
 
+    .line 34
+    .line 35
+    .line 36
     move-result p1
 
+    .line 37
     sub-int/2addr p0, p1
 
+    .line 38
     int-to-long p0, p0
 
-    .line 5
+    .line 39
     rem-long/2addr p0, v3
 
+    .line 40
     long-to-int p0, p0
 
+    .line 41
     return p0
 .end method
 
@@ -444,81 +480,146 @@
     .line 1
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/util/Calendar;->getInstance(Ljava/util/Locale;)Ljava/util/Calendar;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     check-cast v0, Ljava/util/GregorianCalendar;
 
-    .line 2
+    .line 8
+    .line 9
     new-instance v1, Ljava/util/Date;
 
+    .line 10
+    .line 11
     const-wide/high16 v2, -0x8000000000000000L
 
+    .line 12
+    .line 13
     invoke-direct {v1, v2, v3}, Ljava/util/Date;-><init>(J)V
 
+    .line 14
+    .line 15
+    .line 16
     invoke-virtual {v0, v1}, Ljava/util/GregorianCalendar;->setGregorianChange(Ljava/util/Date;)V
 
-    .line 3
+    .line 17
+    .line 18
+    .line 19
     iget-object v1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->timeZone:Ljava/util/TimeZone;
 
+    .line 20
+    .line 21
     invoke-virtual {v0, v1}, Ljava/util/GregorianCalendar;->setTimeZone(Ljava/util/TimeZone;)V
 
-    .line 4
+    .line 22
+    .line 23
+    .line 24
     iget v1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->year:I
 
+    .line 25
+    .line 26
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/GregorianCalendar;->set(II)V
+    .line 27
+    invoke-virtual {v0, v2, v1}, Ljava/util/Calendar;->set(II)V
 
-    .line 5
+    .line 28
+    .line 29
+    .line 30
     iget v1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->month:I
 
+    .line 31
+    .line 32
     sub-int/2addr v1, v2
 
+    .line 33
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/GregorianCalendar;->set(II)V
+    .line 34
+    invoke-virtual {v0, v2, v1}, Ljava/util/Calendar;->set(II)V
 
-    .line 6
-    iget v1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->day:I
+    .line 35
+    .line 36
+    .line 37
+    const/4 v1, 0x5
 
-    const/4 v2, 0x5
+    .line 38
+    iget v2, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->day:I
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/GregorianCalendar;->set(II)V
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->set(II)V
 
-    .line 7
-    iget v1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->hour:I
+    .line 41
+    .line 42
+    .line 43
+    const/16 v1, 0xb
 
-    const/16 v2, 0xb
+    .line 44
+    .line 45
+    iget v2, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->hour:I
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/GregorianCalendar;->set(II)V
+    .line 46
+    .line 47
+    invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->set(II)V
 
-    .line 8
-    iget v1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->minute:I
+    .line 48
+    .line 49
+    .line 50
+    const/16 v1, 0xc
 
-    const/16 v2, 0xc
+    .line 51
+    .line 52
+    iget v2, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->minute:I
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/GregorianCalendar;->set(II)V
+    .line 53
+    .line 54
+    invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->set(II)V
 
-    .line 9
-    iget v1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->second:I
+    .line 55
+    .line 56
+    .line 57
+    const/16 v1, 0xd
 
-    const/16 v2, 0xd
+    .line 58
+    .line 59
+    iget v2, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->second:I
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/GregorianCalendar;->set(II)V
+    .line 60
+    .line 61
+    invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->set(II)V
 
-    .line 10
+    .line 62
+    .line 63
+    .line 64
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->nanoSeconds:I
 
+    .line 65
+    .line 66
     const v1, 0xf4240
 
+    .line 67
+    .line 68
+    .line 69
     div-int/2addr p0, v1
 
+    .line 70
     const/16 v1, 0xe
 
-    invoke-virtual {v0, v1, p0}, Ljava/util/GregorianCalendar;->set(II)V
+    .line 71
+    .line 72
+    invoke-virtual {v0, v1, p0}, Ljava/util/Calendar;->set(II)V
 
+    .line 73
+    .line 74
+    .line 75
     return-object v0
 .end method
 
@@ -528,6 +629,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->day:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -537,6 +640,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->hour:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -546,8 +651,12 @@
     .line 1
     invoke-static {p0}, Lcom/adobe/xmp/impl/ISO8601Converter;->render(Lcom/adobe/xmp/XMPDateTime;)Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -557,6 +666,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->minute:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -566,6 +677,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->month:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -575,6 +688,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->nanoSeconds:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -584,6 +699,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->second:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -593,6 +710,8 @@
     .line 1
     iget-object p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->timeZone:Ljava/util/TimeZone;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -602,35 +721,50 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->year:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setDay(I)V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     if-ge p1, v0, :cond_0
 
-    .line 1
+    .line 3
+    .line 4
     iput v0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->day:I
 
+    .line 5
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/16 v0, 0x1f
 
+    .line 8
+    .line 9
     if-le p1, v0, :cond_1
 
-    .line 2
+    .line 10
+    .line 11
     iput v0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->day:I
 
+    .line 12
+    .line 13
     goto :goto_0
 
-    .line 3
+    .line 14
     :cond_1
     iput p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->day:I
 
+    .line 15
+    .line 16
     :goto_0
     return-void
 .end method
@@ -641,16 +775,28 @@
     .line 1
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
+    .line 5
     const/16 v0, 0x17
 
+    .line 6
+    .line 7
     invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
 
+    .line 8
+    .line 9
+    .line 10
     move-result p1
 
+    .line 11
     iput p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->hour:I
 
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -660,45 +806,70 @@
     .line 1
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
+    .line 5
     const/16 v0, 0x3b
 
+    .line 6
+    .line 7
     invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
 
+    .line 8
+    .line 9
+    .line 10
     move-result p1
 
+    .line 11
     iput p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->minute:I
 
+    .line 12
+    .line 13
     return-void
 .end method
 
 .method public setMonth(I)V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
+    .line 2
     if-ge p1, v0, :cond_0
 
-    .line 1
+    .line 3
+    .line 4
     iput v0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->month:I
 
+    .line 5
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/16 v0, 0xc
 
+    .line 8
+    .line 9
     if-le p1, v0, :cond_1
 
-    .line 2
+    .line 10
+    .line 11
     iput v0, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->month:I
 
+    .line 12
+    .line 13
     goto :goto_0
 
-    .line 3
+    .line 14
     :cond_1
     iput p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->month:I
 
+    .line 15
+    .line 16
     :goto_0
     return-void
 .end method
@@ -709,6 +880,8 @@
     .line 1
     iput p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->nanoSeconds:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -718,16 +891,28 @@
     .line 1
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
+    .line 5
     const/16 v0, 0x3b
 
+    .line 6
+    .line 7
     invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
 
+    .line 8
+    .line 9
+    .line 10
     move-result p1
 
+    .line 11
     iput p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->second:I
 
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -737,6 +922,8 @@
     .line 1
     iput-object p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->timeZone:Ljava/util/TimeZone;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -746,16 +933,28 @@
     .line 1
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
+    .line 5
     const/16 v0, 0x270f
 
+    .line 6
+    .line 7
     invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
 
+    .line 8
+    .line 9
+    .line 10
     move-result p1
 
+    .line 11
     iput p1, p0, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->year:I
 
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -765,7 +964,11 @@
     .line 1
     invoke-virtual {p0}, Lcom/adobe/xmp/impl/XMPDateTimeImpl;->getISO8601String()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;
+.class Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "MiThemeOperationZoomCV.java"
 
@@ -15,38 +15,35 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV;
+.field final synthetic this$0:Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV;
 
-.field public final synthetic val$zoomRatioToggleView:Lcom/android/camera/ui/zoom/ZoomRatioToggleView;
+.field final synthetic val$zoomRatioToggleView:Lcom/android/camera/ui/zoom/ZoomRatioToggleView;
 
-.field public final synthetic val$zoomSelectedViewCurrentPosition:F
+.field final synthetic val$zoomSelectedViewCurrentPosition:F
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV;Lcom/android/camera/ui/zoom/ZoomRatioToggleView;F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$zoomRatioToggleView",
-            "val$zoomSelectedViewCurrentPosition"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;->this$0:Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;->val$zoomRatioToggleView:Lcom/android/camera/ui/zoom/ZoomRatioToggleView;
 
+    .line 4
+    .line 5
     iput p3, p0, Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;->val$zoomSelectedViewCurrentPosition:F
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -54,28 +51,32 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animation"
-        }
-    .end annotation
 
     .line 1
     iget-object p1, p0, Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;->val$zoomRatioToggleView:Lcom/android/camera/ui/zoom/ZoomRatioToggleView;
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     invoke-virtual {p1, v0}, Lcom/android/camera/ui/zoom/ZoomRatioToggleView;->setZoomViewBgDelta(F)V
 
-    .line 2
+    .line 5
+    .line 6
+    .line 7
     iget-object p1, p0, Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;->val$zoomRatioToggleView:Lcom/android/camera/ui/zoom/ZoomRatioToggleView;
 
+    .line 8
+    .line 9
     iget p0, p0, Lcom/android/camera2/compat/theme/custom/cv/MiThemeOperationZoomCV$3;->val$zoomSelectedViewCurrentPosition:F
 
+    .line 10
+    .line 11
     invoke-virtual {p1, p0}, Lcom/android/camera/ui/zoom/ZoomRatioToggleView;->setZoomSelectedViewPosition(F)V
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method

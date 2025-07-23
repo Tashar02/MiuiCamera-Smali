@@ -35,7 +35,7 @@
 
 .field private mText:Ljava/lang/CharSequence;
 
-.field public final synthetic this$0:Landroidx/appcompat/app/WindowDecorActionBar;
+.field final synthetic this$0:Landroidx/appcompat/app/WindowDecorActionBar;
 
 
 # direct methods
@@ -45,13 +45,20 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->this$0:Landroidx/appcompat/app/WindowDecorActionBar;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroidx/appcompat/app/ActionBar$Tab;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const/4 p1, -0x1
 
-    .line 2
+    .line 7
     iput p1, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mPosition:I
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -63,6 +70,8 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mCallback:Landroidx/appcompat/app/ActionBar$TabListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -72,6 +81,8 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mContentDesc:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -81,6 +92,8 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mCustomView:Landroid/view/View;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -90,6 +103,8 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mIcon:Landroid/graphics/drawable/Drawable;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -99,6 +114,8 @@
     .line 1
     iget p0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mPosition:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -108,6 +125,8 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mTag:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -117,6 +136,8 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mText:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -126,8 +147,13 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->this$0:Landroidx/appcompat/app/WindowDecorActionBar;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0}, Landroidx/appcompat/app/WindowDecorActionBar;->selectTab(Landroidx/appcompat/app/ActionBar$Tab;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -274,6 +300,8 @@
     .line 1
     iput p1, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mPosition:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -283,6 +311,8 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mCallback:Landroidx/appcompat/app/ActionBar$TabListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -292,6 +322,8 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/app/WindowDecorActionBar$TabImpl;->mTag:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 

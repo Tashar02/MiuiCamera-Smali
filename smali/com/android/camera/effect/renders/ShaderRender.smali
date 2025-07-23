@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final OPAQUE_ALPHA:F = 0.95f
+.field protected static final OPAQUE_ALPHA:F = 0.95f
 
 .field private static final VERTEX:Ljava/lang/String;
 
 
 # instance fields
-.field public mAttriSupportedList:Ljava/util/ArrayList;
+.field protected mAttriSupportedList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -20,61 +20,62 @@
     .end annotation
 .end field
 
-.field public mAttributePositionH:I
+.field protected mAttributePositionH:I
 
-.field public mAttributeTexCoorH:I
+.field protected mAttributeTexCoorH:I
 
-.field public mBlendEnabled:Z
+.field protected mBlendEnabled:Z
 
-.field public mPreviewEffectRect:[F
+.field protected mPreviewEffectRect:[F
 
-.field public mProgram:I
+.field protected mProgram:I
 
-.field public mSnapshotEffectRect:[F
+.field protected mSnapshotEffectRect:[F
 
-.field public mTexCoorBuffer:Ljava/nio/FloatBuffer;
+.field protected mTexCoorBuffer:Ljava/nio/FloatBuffer;
 
-.field public mUniformAlphaH:I
+.field protected mUniformAlphaH:I
 
-.field public mUniformBlendAlphaH:I
+.field protected mUniformBlendAlphaH:I
 
-.field public mUniformMVPMatrixH:I
+.field protected mUniformMVPMatrixH:I
 
-.field public mUniformPointSize:I
+.field protected mUniformPointSize:I
 
-.field public mUniformSTMatrixH:I
+.field protected mUniformSTMatrixH:I
 
-.field public mUniformTextureH:I
+.field protected mUniformTextureH:I
 
-.field public mVertexBuffer:Ljava/nio/FloatBuffer;
+.field protected mVertexBuffer:Ljava/nio/FloatBuffer;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "vertex_normal.txt"
 
-    .line 1
+    .line 2
+    .line 3
+    .line 4
     invoke-static {v0}, Lcom/android/camera/effect/ShaderUtil;->loadFromAssetsFile(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object v0
 
+    .line 8
     sput-object v0, Lcom/android/camera/effect/renders/ShaderRender;->VERTEX:Ljava/lang/String;
 
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public constructor <init>(Lcom/android/gallery3d/ui/GLCanvas;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "canvas"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/effect/renders/Render;-><init>(Lcom/android/gallery3d/ui/GLCanvas;)V
@@ -144,16 +145,6 @@
 
 .method public constructor <init>(Lcom/android/gallery3d/ui/GLCanvas;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "canvas",
-            "id"
-        }
-    .end annotation
 
     .line 10
     invoke-direct {p0, p1, p2}, Lcom/android/camera/effect/renders/Render;-><init>(Lcom/android/gallery3d/ui/GLCanvas;I)V
@@ -223,55 +214,61 @@
 
 .method public static allocateByteBuffer(I)Ljava/nio/ByteBuffer;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "size"
-        }
-    .end annotation
 
     .line 1
     invoke-static {p0}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
+    .line 9
     invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object p0
 
+    .line 13
     return-object p0
 .end method
 
 .method public static isOpaque(I)Z
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "color"
-        }
-    .end annotation
 
+    .line 1
     ushr-int/lit8 p0, p0, 0x18
 
+    .line 2
+    .line 3
     const/16 v0, 0xff
 
+    .line 4
+    .line 5
     if-ne p0, v0, :cond_0
 
+    .line 6
+    .line 7
     const/4 p0, 0x1
 
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 p0, 0x0
 
+    .line 10
     :goto_0
     return p0
 .end method
@@ -280,16 +277,6 @@
 # virtual methods
 .method public bindTexture(II)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "textureId",
-            "texure"
-        }
-    .end annotation
 
     .line 4
     invoke-static {p2}, Landroid/opengl/GLES20;->glActiveTexture(I)V
@@ -306,16 +293,6 @@
 
 .method public bindTexture(Lcom/android/gallery3d/ui/BasicTexture;I)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "texture",
-            "texure"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/renders/Render;->mGLCanvas:Lcom/android/gallery3d/ui/GLCanvas;
@@ -358,66 +335,105 @@
     .line 1
     iget v0, p0, Lcom/android/camera/effect/renders/ShaderRender;->mProgram:I
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/camera/effect/renders/Render;->mGLCanvas:Lcom/android/gallery3d/ui/GLCanvas;
-
-    if-eqz v0, :cond_0
-
     .line 2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "delete program "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/android/camera/effect/renders/ShaderRender;->mProgram:I
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    new-array v3, v2, [Ljava/lang/Object;
-
-    invoke-static {v0, v1, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
-
     .line 3
-    iget-object v0, p0, Lcom/android/camera/effect/renders/Render;->mGLCanvas:Lcom/android/gallery3d/ui/GLCanvas;
-
-    iget v1, p0, Lcom/android/camera/effect/renders/ShaderRender;->mProgram:I
-
-    invoke-interface {v0, v1}, Lcom/android/gallery3d/ui/GLCanvas;->deleteProgram(I)V
+    if-eqz v0, :cond_0
 
     .line 4
+    .line 5
+    iget-object v0, p0, Lcom/android/camera/effect/renders/Render;->mGLCanvas:Lcom/android/gallery3d/ui/GLCanvas;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    const-string v2, "delete program "
+
+    .line 23
+    .line 24
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    iget v2, p0, Lcom/android/camera/effect/renders/ShaderRender;->mProgram:I
+
+    .line 28
+    .line 29
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v1
+
+    .line 36
+    const/4 v2, 0x0
+
+    .line 37
+    new-array v3, v2, [Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    invoke-static {v0, v1, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    iget-object v0, p0, Lcom/android/camera/effect/renders/Render;->mGLCanvas:Lcom/android/gallery3d/ui/GLCanvas;
+
+    .line 43
+    .line 44
+    iget v1, p0, Lcom/android/camera/effect/renders/ShaderRender;->mProgram:I
+
+    .line 45
+    .line 46
+    invoke-interface {v0, v1}, Lcom/android/gallery3d/ui/GLCanvas;->deleteProgram(I)V
+
+    .line 47
+    .line 48
+    .line 49
     iput v2, p0, Lcom/android/camera/effect/renders/ShaderRender;->mProgram:I
 
+    .line 50
+    .line 51
     :cond_0
     return-void
 .end method
 
 .method public abstract draw(Lcom/android/camera/effect/draw_mode/DrawAttribute;)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "attri"
-        }
-    .end annotation
 .end method
 
 .method public finalize()V
@@ -432,8 +448,13 @@
     invoke-virtual {p0}, Lcom/android/camera/effect/renders/ShaderRender;->destroy()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -446,6 +467,8 @@
     .line 1
     sget-object p0, Lcom/android/camera/effect/renders/ShaderRender;->VERTEX:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -460,39 +483,33 @@
 
 .method public isAttriSupported(I)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "attri"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/renders/ShaderRender;->mAttriSupportedList:Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
+    .line 7
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result p0
 
+    .line 11
     return p0
 .end method
 
 .method public setBlendEnabled(Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
@@ -504,16 +521,6 @@
 
 .method public setBlendEnabled(ZZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "enabled",
-            "premultiplied"
-        }
-    .end annotation
 
     const/16 p0, 0xbe2
 

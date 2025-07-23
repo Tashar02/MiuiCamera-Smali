@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/widget/MotionLayout$2;
+.class Landroidx/constraintlayout/motion/widget/MotionLayout$2;
 .super Ljava/lang/Object;
 .source "MotionLayout.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/constraintlayout/motion/widget/MotionLayout;
+.field final synthetic this$0:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
 
 # direct methods
@@ -36,8 +36,13 @@
     .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$2;->this$0:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,9 +54,15 @@
     .line 1
     iget-object p0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$2;->this$0:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     invoke-static {p0, v0}, Landroidx/constraintlayout/motion/widget/MotionLayout;->access$302(Landroidx/constraintlayout/motion/widget/MotionLayout;Z)Z
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method

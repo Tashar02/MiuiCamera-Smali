@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/camera/FileCompat$FileCompatCommonImpl;
+.class interface abstract Lcom/android/camera/FileCompat$FileCompatCommonImpl;
 .super Ljava/lang/Object;
 .source "FileCompat.java"
 
@@ -16,36 +16,12 @@
 
 # virtual methods
 .method public abstract getSDPath(Ljava/lang/String;)Ljava/lang/String;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "filePath"
-        }
-    .end annotation
 .end method
 
 .method public abstract getTreeUri(Ljava/lang/String;)Landroid/net/Uri;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "path"
-        }
-    .end annotation
 .end method
 
 .method public abstract isExternalSDFile(Ljava/lang/String;)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "path"
-        }
-    .end annotation
 .end method
 
 .method public abstract updateSDPath()V

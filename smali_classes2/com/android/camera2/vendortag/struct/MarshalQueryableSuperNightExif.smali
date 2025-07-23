@@ -24,6 +24,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -35,6 +36,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -44,21 +48,13 @@
     .line 1
     sget v0, Lcom/android/camera2/vendortag/struct/MarshalQueryableSuperNightExif;->BUFFER_SIZE_CONTAIN_LUXTHRESHOLD:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
 .method public static getSuperNightExif(Landroid/hardware/camera2/CaptureResult;Z)Lcom/android/camera2/vendortag/struct/MarshalQueryableSuperNightExif$SuperNightExif;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "result",
-            "isSupportSuperNightExif"
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
@@ -138,14 +134,6 @@
 
 .method public static getSuperNightExif([B)Lcom/android/camera2/vendortag/struct/MarshalQueryableSuperNightExif$SuperNightExif;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "value"
-        }
-    .end annotation
 
     if-eqz p0, :cond_1
 

@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -28,18 +31,57 @@
 # virtual methods
 .method public onError(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "action",
+            "extras",
+            "data"
+        }
+    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onProgressUpdate(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "action",
+            "extras",
+            "data"
+        }
+    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onResult(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "action",
+            "extras",
+            "resultData"
+        }
+    .end annotation
 
+    .line 1
     return-void
 .end method

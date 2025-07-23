@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;
+.class Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;
 .super Lcom/bumptech/glide/load/engine/bitmap_recycle/BaseKeyPool;
 .source "SizeStrategy.java"
 
@@ -32,6 +32,9 @@
     .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BaseKeyPool;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -65,12 +68,20 @@
     .line 1
     invoke-super {p0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BaseKeyPool;->get()Lcom/bumptech/glide/load/engine/bitmap_recycle/Poolable;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     check-cast p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
 
-    .line 2
+    .line 6
+    .line 7
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->init(I)V
 
+    .line 8
+    .line 9
+    .line 10
     return-object p0
 .end method

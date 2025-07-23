@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentAnim$1;
+.class Landroidx/fragment/app/FragmentAnim$1;
 .super Ljava/lang/Object;
 .source "FragmentAnim.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic val$fragment:Landroidx/fragment/app/Fragment;
+.field final synthetic val$fragment:Landroidx/fragment/app/Fragment;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentAnim$1;->val$fragment:Landroidx/fragment/app/Fragment;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,34 +46,58 @@
     .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentAnim$1;->val$fragment:Landroidx/fragment/app/Fragment;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getAnimatingAway()Landroid/view/View;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/FragmentAnim$1;->val$fragment:Landroidx/fragment/app/Fragment;
-
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getAnimatingAway()Landroid/view/View;
-
-    move-result-object v0
-
     .line 3
-    iget-object v2, p0, Landroidx/fragment/app/FragmentAnim$1;->val$fragment:Landroidx/fragment/app/Fragment;
-
-    invoke-virtual {v2, v1}, Landroidx/fragment/app/Fragment;->setAnimatingAway(Landroid/view/View;)V
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getAnimatingAway()Landroid/view/View;
 
     .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Landroidx/fragment/app/FragmentAnim$1;->val$fragment:Landroidx/fragment/app/Fragment;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getAnimatingAway()Landroid/view/View;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    iget-object v2, p0, Landroidx/fragment/app/FragmentAnim$1;->val$fragment:Landroidx/fragment/app/Fragment;
+
+    .line 17
+    .line 18
+    invoke-virtual {v2, v1}, Landroidx/fragment/app/Fragment;->setAnimatingAway(Landroid/view/View;)V
+
+    .line 19
+    .line 20
+    .line 21
     invoke-virtual {v0}, Landroid/view/View;->clearAnimation()V
 
-    .line 5
+    .line 22
+    .line 23
+    .line 24
     :cond_0
     iget-object p0, p0, Landroidx/fragment/app/FragmentAnim$1;->val$fragment:Landroidx/fragment/app/Fragment;
 
+    .line 25
+    .line 26
     invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->setAnimator(Landroid/animation/Animator;)V
 
+    .line 27
+    .line 28
+    .line 29
     return-void
 .end method

@@ -25,16 +25,45 @@
 
 .field private final mStrategy:I
 
+.field private final mSystemFontFamilyName:Ljava/lang/String;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
 .field private final mTimeoutMs:I
 
 
 # direct methods
 .method public constructor <init>(Landroidx/core/provider/FontRequest;II)V
+    .locals 1
+    .param p1    # Landroidx/core/provider/FontRequest;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x0
+
+    .line 6
+    invoke-direct {p0, p1, p2, p3, v0}, Landroidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry;-><init>(Landroidx/core/provider/FontRequest;IILjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/core/provider/FontRequest;IILjava/lang/String;)V
     .locals 0
     .param p1    # Landroidx/core/provider/FontRequest;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .param p4    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,6 +77,9 @@
     .line 4
     iput p3, p0, Landroidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry;->mTimeoutMs:I
 
+    .line 5
+    iput-object p4, p0, Landroidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry;->mSystemFontFamilyName:Ljava/lang/String;
+
     return-void
 .end method
 
@@ -59,6 +91,8 @@
     .line 1
     iget p0, p0, Landroidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry;->mStrategy:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -70,6 +104,27 @@
     .line 1
     iget-object p0, p0, Landroidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry;->mRequest:Landroidx/core/provider/FontRequest;
 
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public getSystemFontFamilyName()Ljava/lang/String;
+    .locals 0
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Landroidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry;->mSystemFontFamilyName:Ljava/lang/String;
+
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -79,5 +134,7 @@
     .line 1
     iget p0, p0, Landroidx/core/content/res/FontResourcesParserCompat$ProviderResourceEntry;->mTimeoutMs:I
 
+    .line 2
+    .line 3
     return p0
 .end method

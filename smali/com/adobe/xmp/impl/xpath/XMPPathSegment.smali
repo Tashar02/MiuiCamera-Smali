@@ -49,6 +49,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->aliasForm:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -58,6 +60,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->kind:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -67,6 +71,8 @@
     .line 1
     iget-object p0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->name:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -76,6 +82,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->alias:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -85,6 +93,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->alias:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -94,6 +104,8 @@
     .line 1
     iput p1, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->aliasForm:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -103,6 +115,8 @@
     .line 1
     iput p1, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->kind:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -112,6 +126,8 @@
     .line 1
     iput-object p1, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->name:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -121,25 +137,36 @@
     .line 1
     iget v0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->kind:I
 
+    .line 2
+    .line 3
     packed-switch v0, :pswitch_data_0
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget-object p0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->name:Ljava/lang/String;
 
+    .line 7
+    .line 8
     return-object p0
 
-    .line 3
+    .line 9
     :pswitch_0
     iget-object p0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->name:Ljava/lang/String;
 
+    .line 10
+    .line 11
     return-object p0
 
-    .line 4
+    .line 12
     :pswitch_1
     iget-object p0, p0, Lcom/adobe/xmp/impl/xpath/XMPPathSegment;->name:Ljava/lang/String;
 
+    .line 13
+    .line 14
     return-object p0
 
+    .line 15
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1

@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>A versão da Câmara que está a utilizar não é compatível com o modelo do seu dispositivo.&lt;br>A aplicação fechará em &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Desinstale as atualizações da Câmara e tente novamente.&lt;/Data></item>
         <item quantity="one">&lt;Data>A versão da Câmara que está a utilizar não é compatível com o modelo do seu dispositivo.&lt;br>A aplicação fechará em &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Desinstale as atualizações da Câmara e tente novamente.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avançar %d segundos</item>
+        <item quantity="one">Avançar %d segundo</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Retroceder %d segundos</item>
+        <item quantity="one">Retroceder %d segundo</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min</item>
         <item quantity="one">%1$d min</item>

@@ -4,61 +4,65 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/faceunity/core/media/photo/FUPhotoRecordHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "RecordData"
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
     bv = {
         0x1,
         0x0,
         0x3
     }
     d1 = {
-        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u0014\n\u0002\u0008\t\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0010\u000e\n\u0002\u0008\u000c\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008*\u0010+B1\u0008\u0016\u0012\u0006\u0010\u0013\u001a\u00020\u000c\u0012\u0006\u0010\t\u001a\u00020\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\r\u001a\u00020\u000c\u0012\u0006\u0010\u001e\u001a\u00020\u000c\u00a2\u0006\u0004\u0008*\u0010,R$\u0010\u0003\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R$\u0010\t\u001a\u0004\u0018\u00010\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\t\u0010\u0004\u001a\u0004\u0008\n\u0010\u0006\"\u0004\u0008\u000b\u0010\u0008R\"\u0010\r\u001a\u00020\u000c8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\r\u0010\u000e\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\"\u0010\u0013\u001a\u00020\u000c8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0013\u0010\u000e\u001a\u0004\u0008\u0014\u0010\u0010\"\u0004\u0008\u0015\u0010\u0012R\"\u0010\u0017\u001a\u00020\u00168\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0017\u0010\u0018\u001a\u0004\u0008\u0017\u0010\u0019\"\u0004\u0008\u001a\u0010\u001bR\"\u0010\u001c\u001a\u00020\u00168\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001c\u0010\u0018\u001a\u0004\u0008\u001c\u0010\u0019\"\u0004\u0008\u001d\u0010\u001bR\"\u0010\u001e\u001a\u00020\u000c8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001e\u0010\u000e\u001a\u0004\u0008\u001f\u0010\u0010\"\u0004\u0008 \u0010\u0012R\"\u0010\"\u001a\u00020!8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\"\u0010#\u001a\u0004\u0008$\u0010%\"\u0004\u0008&\u0010\'R\"\u0010(\u001a\u00020\u00168\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008(\u0010\u0018\u001a\u0004\u0008(\u0010\u0019\"\u0004\u0008)\u0010\u001b\u00a8\u0006-"
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0014\n\u0002\u0008\u0006\n\u0002\u0010\u000b\n\u0002\u0008\u000c\n\u0002\u0010\u000e\n\u0002\u0008\u000f\u0018\u00002\u00020\u0001B/\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\u0008\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\tB\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\nR\u001a\u0010\u000b\u001a\u00020\u000cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\r\"\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u000cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0010\u0010\r\"\u0004\u0008\u0011\u0010\u000fR\u001a\u0010\u0012\u001a\u00020\u000cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0012\u0010\r\"\u0004\u0008\u0013\u0010\u000fR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u001a\u0010\u0018\u001a\u00020\u0019X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\"\u0004\u0008\u001c\u0010\u001dR\u001a\u0010\u0008\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001e\u0010\u001f\"\u0004\u0008 \u0010!R\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\"\u0010\u001f\"\u0004\u0008#\u0010!R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008$\u0010\u0015\"\u0004\u0008%\u0010\u0017R\u001a\u0010\u0007\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008&\u0010\u001f\"\u0004\u0008\'\u0010!\u00a8\u0006("
     }
     d2 = {
         "Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;",
         "",
+        "texId",
+        "",
+        "texMatrix",
         "",
         "mvpMatrix",
-        "[F",
+        "texWidth",
+        "texHeight",
+        "(I[F[FII)V",
+        "()V",
+        "isAlpha",
+        "",
+        "()Z",
+        "setAlpha",
+        "(Z)V",
+        "isOES",
+        "setOES",
+        "isSynchronize",
+        "setSynchronize",
         "getMvpMatrix",
         "()[F",
         "setMvpMatrix",
         "([F)V",
-        "texMatrix",
-        "getTexMatrix",
-        "setTexMatrix",
-        "",
-        "texWidth",
-        "I",
-        "getTexWidth",
-        "()I",
-        "setTexWidth",
-        "(I)V",
-        "texId",
-        "getTexId",
-        "setTexId",
-        "",
-        "isAlpha",
-        "Z",
-        "()Z",
-        "setAlpha",
-        "(Z)V",
-        "isSynchronize",
-        "setSynchronize",
-        "texHeight",
-        "getTexHeight",
-        "setTexHeight",
-        "",
         "tag",
-        "Ljava/lang/String;",
+        "",
         "getTag",
         "()Ljava/lang/String;",
         "setTag",
         "(Ljava/lang/String;)V",
-        "isOES",
-        "setOES",
-        "<init>",
-        "()V",
-        "(I[F[FII)V",
+        "getTexHeight",
+        "()I",
+        "setTexHeight",
+        "(I)V",
+        "getTexId",
+        "setTexId",
+        "getTexMatrix",
+        "setTexMatrix",
+        "getTexWidth",
+        "setTexWidth",
         "lib_core_release"
     }
     k = 0x1
@@ -67,15 +71,6 @@
         0x4,
         0x2
     }
-.end annotation
-
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/faceunity/core/media/photo/FUPhotoRecordHelper;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = "RecordData"
 .end annotation
 
 
@@ -87,12 +82,12 @@
 .field private isSynchronize:Z
 
 .field private mvpMatrix:[F
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 .end field
 
 .field private tag:Ljava/lang/String;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
@@ -101,7 +96,7 @@
 .field private texId:I
 
 .field private texMatrix:[F
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 .end field
 
@@ -132,21 +127,21 @@
 .method public constructor <init>(I[F[FII)V
     .locals 1
     .param p2    # [F
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # [F
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
-    const-string v0, "texMatrix"
+    const-string/jumbo v0, "texMatrix"
 
-    invoke-static {p2, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "mvpMatrix"
 
-    invoke-static {p3, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-direct {p0}, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;-><init>()V
@@ -173,23 +168,27 @@
 # virtual methods
 .method public final getMvpMatrix()[F
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->mvpMatrix:[F
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public final getTag()Ljava/lang/String;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->tag:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -199,6 +198,8 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texHeight:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -208,17 +209,21 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public final getTexMatrix()[F
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texMatrix:[F
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -228,6 +233,8 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texWidth:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -237,6 +244,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->isAlpha:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -246,6 +255,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->isOES:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -255,6 +266,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->isSynchronize:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -264,19 +277,23 @@
     .line 1
     iput-boolean p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->isAlpha:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setMvpMatrix([F)V
     .locals 0
     .param p1    # [F
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
 
     .line 1
     iput-object p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->mvpMatrix:[F
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -286,6 +303,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->isOES:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -295,23 +314,32 @@
     .line 1
     iput-boolean p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->isSynchronize:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setTag(Ljava/lang/String;)V
     .locals 1
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 4
+    .line 5
+    .line 6
     iput-object p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->tag:Ljava/lang/String;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -321,6 +349,8 @@
     .line 1
     iput p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texHeight:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -330,19 +360,23 @@
     .line 1
     iput p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texId:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setTexMatrix([F)V
     .locals 0
     .param p1    # [F
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
 
     .line 1
     iput-object p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texMatrix:[F
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -352,5 +386,7 @@
     .line 1
     iput p1, p0, Lcom/faceunity/core/media/photo/FUPhotoRecordHelper$RecordData;->texWidth:I
 
+    .line 2
+    .line 3
     return-void
 .end method

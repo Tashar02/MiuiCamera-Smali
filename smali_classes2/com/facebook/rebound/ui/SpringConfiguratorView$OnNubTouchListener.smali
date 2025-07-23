@@ -1,4 +1,4 @@
-.class public Lcom/facebook/rebound/ui/SpringConfiguratorView$OnNubTouchListener;
+.class Lcom/facebook/rebound/ui/SpringConfiguratorView$OnNubTouchListener;
 .super Ljava/lang/Object;
 .source "SpringConfiguratorView.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
+.field final synthetic this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
 
 
 # direct methods
@@ -50,17 +50,28 @@
     .line 1
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
+    .line 5
     if-nez p1, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     iget-object p0, p0, Lcom/facebook/rebound/ui/SpringConfiguratorView$OnNubTouchListener;->this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
 
+    .line 8
+    .line 9
     invoke-static {p0}, Lcom/facebook/rebound/ui/SpringConfiguratorView;->access$1200(Lcom/facebook/rebound/ui/SpringConfiguratorView;)V
 
+    .line 10
+    .line 11
+    .line 12
     :cond_0
     const/4 p0, 0x1
 
+    .line 13
     return p0
 .end method

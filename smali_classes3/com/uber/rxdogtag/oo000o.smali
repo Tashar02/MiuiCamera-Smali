@@ -1,27 +1,35 @@
 .class public final synthetic Lcom/uber/rxdogtag/oo000o;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic o0000o:Ljava/lang/Object;
+.field public final synthetic o0000o:Lcom/uber/rxdogtag/DogTagObserver;
 
-.field public final synthetic o0000o0o:Lcom/uber/rxdogtag/DogTagObserver;
+.field public final synthetic o0000oO0:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagObserver;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagObserver;Ljava/lang/Throwable;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/oo000o;->o0000o0o:Lcom/uber/rxdogtag/DogTagObserver;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/oo000o;->o0000o:Lcom/uber/rxdogtag/DogTagObserver;
 
-    iput-object p2, p0, Lcom/uber/rxdogtag/oo000o;->o0000o:Ljava/lang/Object;
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/uber/rxdogtag/oo000o;->o0000oO0:Ljava/lang/Throwable;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -30,11 +38,19 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/uber/rxdogtag/oo000o;->o0000o0o:Lcom/uber/rxdogtag/DogTagObserver;
+    .line 1
+    iget-object v0, p0, Lcom/uber/rxdogtag/oo000o;->o0000o:Lcom/uber/rxdogtag/DogTagObserver;
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/oo000o;->o0000o:Ljava/lang/Object;
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/uber/rxdogtag/oo000o;->o0000oO0:Ljava/lang/Throwable;
 
-    invoke-virtual {v0, p0}, Lcom/uber/rxdogtag/DogTagObserver;->OooO0o0(Ljava/lang/Object;)V
+    .line 4
+    .line 5
+    invoke-static {v0, p0}, Lcom/uber/rxdogtag/DogTagObserver;->OooO0o0(Lcom/uber/rxdogtag/DogTagObserver;Ljava/lang/Throwable;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

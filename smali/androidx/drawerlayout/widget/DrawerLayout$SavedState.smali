@@ -27,15 +27,15 @@
 
 
 # instance fields
-.field public lockModeEnd:I
+.field lockModeEnd:I
 
-.field public lockModeLeft:I
+.field lockModeLeft:I
 
-.field public lockModeRight:I
+.field lockModeRight:I
 
-.field public lockModeStart:I
+.field lockModeStart:I
 
-.field public openDrawerGravity:I
+.field openDrawerGravity:I
 
 
 # direct methods
@@ -45,10 +45,17 @@
     .line 1
     new-instance v0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/drawerlayout/widget/DrawerLayout$SavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -136,29 +143,52 @@
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
+    .line 3
+    .line 4
     iget p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState;->openDrawerGravity:I
 
+    .line 5
+    .line 6
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 3
+    .line 7
+    .line 8
+    .line 9
     iget p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState;->lockModeLeft:I
 
+    .line 10
+    .line 11
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 4
+    .line 12
+    .line 13
+    .line 14
     iget p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState;->lockModeRight:I
 
+    .line 15
+    .line 16
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 5
+    .line 17
+    .line 18
+    .line 19
     iget p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState;->lockModeStart:I
 
+    .line 20
+    .line 21
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 6
+    .line 22
+    .line 23
+    .line 24
     iget p0, p0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState;->lockModeEnd:I
 
+    .line 25
+    .line 26
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
+    .line 27
+    .line 28
+    .line 29
     return-void
 .end method

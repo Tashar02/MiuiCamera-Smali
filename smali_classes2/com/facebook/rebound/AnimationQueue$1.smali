@@ -1,4 +1,4 @@
-.class public Lcom/facebook/rebound/AnimationQueue$1;
+.class Lcom/facebook/rebound/AnimationQueue$1;
 .super Lcom/facebook/rebound/ChoreographerCompat$FrameCallback;
 .source "AnimationQueue.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/facebook/rebound/AnimationQueue;
+.field final synthetic this$0:Lcom/facebook/rebound/AnimationQueue;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Lcom/facebook/rebound/AnimationQueue$1;->this$0:Lcom/facebook/rebound/AnimationQueue;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Lcom/facebook/rebound/ChoreographerCompat$FrameCallback;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -38,7 +43,12 @@
     .line 1
     iget-object p0, p0, Lcom/facebook/rebound/AnimationQueue$1;->this$0:Lcom/facebook/rebound/AnimationQueue;
 
+    .line 2
+    .line 3
     invoke-static {p0, p1, p2}, Lcom/facebook/rebound/AnimationQueue;->access$000(Lcom/facebook/rebound/AnimationQueue;J)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

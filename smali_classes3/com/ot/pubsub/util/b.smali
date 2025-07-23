@@ -22,6 +22,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -31,6 +32,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -124,7 +128,7 @@
     move-exception p0
 
     .line 21
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
 
@@ -219,7 +223,7 @@
 
     .line 14
     :try_start_2
-    invoke-virtual {p0}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
     const/4 p0, 0x1
@@ -347,7 +351,7 @@
     move-result-object p1
 
     .line 3
-    invoke-virtual {p1, p0}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {p1, p0}, Landroid/content/pm/PackageItemInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object p0
 
@@ -363,7 +367,7 @@
     move-exception p0
 
     .line 4
-    invoke-virtual {p0}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const-string p0, ""
 
@@ -376,6 +380,8 @@
     .line 1
     sget v0, Lcom/ot/pubsub/util/b;->c:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -385,6 +391,8 @@
     .line 1
     sget-object v0, Lcom/ot/pubsub/util/b;->e:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -394,5 +402,7 @@
     .line 1
     sget-wide v0, Lcom/ot/pubsub/util/b;->f:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/TooltipCompatHandler$2;
+.class Landroidx/appcompat/widget/TooltipCompatHandler$2;
 .super Ljava/lang/Object;
 .source "TooltipCompatHandler.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/widget/TooltipCompatHandler;
+.field final synthetic this$0:Landroidx/appcompat/widget/TooltipCompatHandler;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/TooltipCompatHandler$2;->this$0:Landroidx/appcompat/widget/TooltipCompatHandler;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,7 +46,12 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/widget/TooltipCompatHandler$2;->this$0:Landroidx/appcompat/widget/TooltipCompatHandler;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/appcompat/widget/TooltipCompatHandler;->hide()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

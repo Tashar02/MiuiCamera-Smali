@@ -27,6 +27,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -34,130 +37,62 @@
 # virtual methods
 .method public onBufferingUpdate(Landroid/media/MediaPlayer;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "percent"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mp"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "what",
-            "extra"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public onInfo(Landroid/media/MediaPlayer;II)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "what",
-            "extra"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mp"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onSurfaceReady(Landroid/view/Surface;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "surface"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onSurfaceTextureDestroyed(Landroid/graphics/SurfaceTexture;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "surface"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onVideoSizeChanged(Landroid/media/MediaPlayer;II)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "width",
-            "height"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method

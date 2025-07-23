@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout$1;
+.class Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout$1;
 .super Lmiuix/animation/property/ViewProperty;
 .source "VideoPrompterAdjustLayout.java"
 
@@ -15,28 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout;
+.field final synthetic this$0:Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0
-        }
-        names = {
-            "this$0",
-            "name"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout$1;->this$0:Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2}, Lmiuix/animation/property/ViewProperty;-><init>(Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -44,14 +39,6 @@
 # virtual methods
 .method public getValue(Landroid/view/View;)F
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "view"
-        }
-    .end annotation
 
     .line 2
     iget-object p0, p0, Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout$1;->this$0:Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout;
@@ -65,14 +52,6 @@
 
 .method public bridge synthetic getValue(Ljava/lang/Object;)F
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "view"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Landroid/view/View;
@@ -86,16 +65,6 @@
 
 .method public setValue(Landroid/view/View;F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "v"
-        }
-    .end annotation
 
     .line 2
     iget-object p1, p0, Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout$1;->this$0:Lcom/android/camera/fragment/videoprompter/VideoPrompterAdjustLayout;
@@ -112,16 +81,6 @@
 
 .method public bridge synthetic setValue(Ljava/lang/Object;F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "view",
-            "v"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Landroid/view/View;

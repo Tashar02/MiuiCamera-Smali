@@ -16,27 +16,7 @@
 
 # virtual methods
 .method public abstract onNegativeClick(Landroid/content/DialogInterface;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "dialog",
-            "which"
-        }
-    .end annotation
 .end method
 
 .method public abstract onPositiveClick(Landroid/content/DialogInterface;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "dialog",
-            "which"
-        }
-    .end annotation
 .end method

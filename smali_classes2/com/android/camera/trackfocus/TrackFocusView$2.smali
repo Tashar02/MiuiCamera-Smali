@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/trackfocus/TrackFocusView$2;
+.class Lcom/android/camera/trackfocus/TrackFocusView$2;
 .super Lmiuix/animation/property/ViewProperty;
 .source "TrackFocusView.java"
 
@@ -15,28 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/trackfocus/TrackFocusView;
+.field final synthetic this$0:Lcom/android/camera/trackfocus/TrackFocusView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/trackfocus/TrackFocusView;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0
-        }
-        names = {
-            "this$0",
-            "name"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/trackfocus/TrackFocusView$2;->this$0:Lcom/android/camera/trackfocus/TrackFocusView;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2}, Lmiuix/animation/property/ViewProperty;-><init>(Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,15 +40,6 @@
 .method public getValue(Landroid/view/View;)F
     .locals 0
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "view"
-        }
     .end annotation
 
     .line 2
@@ -77,15 +63,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "view"
-        }
-    .end annotation
-
     .line 1
     check-cast p1, Landroid/view/View;
 
@@ -99,17 +76,6 @@
 .method public setValue(Landroid/view/View;F)V
     .locals 0
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "v"
-        }
     .end annotation
 
     .line 2
@@ -129,17 +95,6 @@
 .method public bridge synthetic setValue(Ljava/lang/Object;F)V
     .locals 0
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "view",
-            "v"
-        }
     .end annotation
 
     .line 1

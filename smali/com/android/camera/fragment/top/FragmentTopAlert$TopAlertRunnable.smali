@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/top/FragmentTopAlert;
+.field final synthetic this$0:Lcom/android/camera/fragment/top/FragmentTopAlert;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/top/FragmentTopAlert;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/top/FragmentTopAlert$TopAlertRunnable;->this$0:Lcom/android/camera/fragment/top/FragmentTopAlert;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,15 +46,25 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/top/FragmentTopAlert$TopAlertRunnable;->this$0:Lcom/android/camera/fragment/top/FragmentTopAlert;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 8
+    .line 9
     invoke-virtual {p0}, Lcom/android/camera/fragment/top/FragmentTopAlert$TopAlertRunnable;->runToSafe()V
 
+    .line 10
+    .line 11
+    .line 12
     :cond_0
     return-void
 .end method

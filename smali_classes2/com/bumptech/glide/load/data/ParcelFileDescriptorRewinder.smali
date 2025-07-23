@@ -39,33 +39,31 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Lcom/bumptech/glide/load/data/ParcelFileDescriptorRewinder$InternalRewinder;
 
+    .line 5
+    .line 6
     invoke-direct {v0, p1}, Lcom/bumptech/glide/load/data/ParcelFileDescriptorRewinder$InternalRewinder;-><init>(Landroid/os/ParcelFileDescriptor;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Lcom/bumptech/glide/load/data/ParcelFileDescriptorRewinder;->rewinder:Lcom/bumptech/glide/load/data/ParcelFileDescriptorRewinder$InternalRewinder;
 
+    .line 10
+    .line 11
     return-void
 .end method
 
 .method public static isSupported()Z
-    .locals 2
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
     const/4 v0, 0x1
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
+    .line 2
     return v0
 .end method
 
@@ -74,6 +72,7 @@
 .method public cleanup()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 

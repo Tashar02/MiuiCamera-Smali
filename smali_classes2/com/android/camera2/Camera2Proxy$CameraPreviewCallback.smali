@@ -16,47 +16,13 @@
 
 # virtual methods
 .method public abstract onPreviewRelease(II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cameraId",
-            "reason"
-        }
-    .end annotation
 .end method
 
 .method public abstract onPreviewSessionClosed(Landroid/hardware/camera2/CameraCaptureSession;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "session"
-        }
-    .end annotation
 .end method
 
 .method public abstract onPreviewSessionFailed(Landroid/hardware/camera2/CameraCaptureSession;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "session"
-        }
-    .end annotation
 .end method
 
 .method public abstract onPreviewSessionSuccess(Landroid/hardware/camera2/CameraCaptureSession;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "session"
-        }
-    .end annotation
 .end method

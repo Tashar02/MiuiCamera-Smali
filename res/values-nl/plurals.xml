@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>De Cameraversie die u gebruikt, is niet compatibel met uw apparaatmodel.&lt;br>De app sluit over &lt;font color=#FFCE16>&lt;b>%1$d sec&lt;/b>&lt;/font>. Verwijder Camera-updates en probeer het opnieuw.&lt;/Data></item>
         <item quantity="one">&lt;Data>De Cameraversie die u gebruikt, is niet compatibel met uw apparaatmodel.&lt;br>De app sluit over &lt;font color=#FFCE16>&lt;b>%1$d sec&lt;/b>&lt;/font>. Verwijder Camera-updates en probeer het opnieuw.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d seconden vooruitspoelen</item>
+        <item quantity="one">%d seconde vooruitspoelen</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d seconden terugspoelen</item>
+        <item quantity="one">%d seconde terugspoelen</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min.</item>
         <item quantity="one">%1$d min.</item>

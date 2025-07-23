@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>Az Ön által használt Kamera verziója nem kompatibilis az Ön készülékének a típusával.&lt;br>Az alkalmazás &lt;font color=#FFCE16>&lt;b>%1$d másodperc&lt;/b>&lt;/font> múlva bezáródik. Távolítsa el a Kamera frissítéseit, és próbálja újra.&lt;/Data></item>
         <item quantity="one">&lt;Data>Az Ön által használt Kamera verziója nem kompatibilis az Ön készülékének a típusával.&lt;br>Az alkalmazás &lt;font color=#FFCE16>&lt;b>%1$d másodperc&lt;/b>&lt;/font> múlva bezáródik. Távolítsa el a Kamera frissítéseit, és próbálja újra.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Előretekerés %d másodperccel</item>
+        <item quantity="one">Előretekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Visszatekerés %d másodperccel</item>
+        <item quantity="one">Visszatekerés %d másodperccel</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d perc</item>
         <item quantity="one">%1$d perc</item>

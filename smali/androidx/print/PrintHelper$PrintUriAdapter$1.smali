@@ -1,4 +1,4 @@
-.class public Landroidx/print/PrintHelper$PrintUriAdapter$1;
+.class Landroidx/print/PrintHelper$PrintUriAdapter$1;
 .super Landroid/os/AsyncTask;
 .source "PrintHelper.java"
 
@@ -25,15 +25,15 @@
 
 
 # instance fields
-.field public final synthetic this$1:Landroidx/print/PrintHelper$PrintUriAdapter;
+.field final synthetic this$1:Landroidx/print/PrintHelper$PrintUriAdapter;
 
-.field public final synthetic val$cancellationSignal:Landroid/os/CancellationSignal;
+.field final synthetic val$cancellationSignal:Landroid/os/CancellationSignal;
 
-.field public final synthetic val$layoutResultCallback:Landroid/print/PrintDocumentAdapter$LayoutResultCallback;
+.field final synthetic val$layoutResultCallback:Landroid/print/PrintDocumentAdapter$LayoutResultCallback;
 
-.field public final synthetic val$newPrintAttributes:Landroid/print/PrintAttributes;
+.field final synthetic val$newPrintAttributes:Landroid/print/PrintAttributes;
 
-.field public final synthetic val$oldPrintAttributes:Landroid/print/PrintAttributes;
+.field final synthetic val$oldPrintAttributes:Landroid/print/PrintAttributes;
 
 
 # direct methods
@@ -43,16 +43,29 @@
     .line 1
     iput-object p1, p0, Landroidx/print/PrintHelper$PrintUriAdapter$1;->this$1:Landroidx/print/PrintHelper$PrintUriAdapter;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/print/PrintHelper$PrintUriAdapter$1;->val$cancellationSignal:Landroid/os/CancellationSignal;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/print/PrintHelper$PrintUriAdapter$1;->val$newPrintAttributes:Landroid/print/PrintAttributes;
 
+    .line 6
+    .line 7
     iput-object p4, p0, Landroidx/print/PrintHelper$PrintUriAdapter$1;->val$oldPrintAttributes:Landroid/print/PrintAttributes;
 
+    .line 8
+    .line 9
     iput-object p5, p0, Landroidx/print/PrintHelper$PrintUriAdapter$1;->val$layoutResultCallback:Landroid/print/PrintDocumentAdapter$LayoutResultCallback;
 
+    .line 10
+    .line 11
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method
 
@@ -310,11 +323,21 @@
     .line 1
     iget-object v0, p0, Landroidx/print/PrintHelper$PrintUriAdapter$1;->val$cancellationSignal:Landroid/os/CancellationSignal;
 
+    .line 2
+    .line 3
     new-instance v1, Landroidx/print/PrintHelper$PrintUriAdapter$1$1;
 
+    .line 4
+    .line 5
     invoke-direct {v1, p0}, Landroidx/print/PrintHelper$PrintUriAdapter$1$1;-><init>(Landroidx/print/PrintHelper$PrintUriAdapter$1;)V
 
+    .line 6
+    .line 7
+    .line 8
     invoke-virtual {v0, v1}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

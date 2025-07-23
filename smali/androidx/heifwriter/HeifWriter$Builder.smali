@@ -179,32 +179,60 @@
     .line 1
     new-instance v12, Landroidx/heifwriter/HeifWriter;
 
+    .line 2
+    .line 3
     iget-object v1, p0, Landroidx/heifwriter/HeifWriter$Builder;->mPath:Ljava/lang/String;
 
+    .line 4
+    .line 5
     iget-object v2, p0, Landroidx/heifwriter/HeifWriter$Builder;->mFd:Ljava/io/FileDescriptor;
 
+    .line 6
+    .line 7
     iget v3, p0, Landroidx/heifwriter/HeifWriter$Builder;->mWidth:I
 
+    .line 8
+    .line 9
     iget v4, p0, Landroidx/heifwriter/HeifWriter$Builder;->mHeight:I
 
+    .line 10
+    .line 11
     iget v5, p0, Landroidx/heifwriter/HeifWriter$Builder;->mRotation:I
 
+    .line 12
+    .line 13
     iget-boolean v6, p0, Landroidx/heifwriter/HeifWriter$Builder;->mGridEnabled:Z
 
+    .line 14
+    .line 15
     iget v7, p0, Landroidx/heifwriter/HeifWriter$Builder;->mQuality:I
 
+    .line 16
+    .line 17
     iget v8, p0, Landroidx/heifwriter/HeifWriter$Builder;->mMaxImages:I
 
+    .line 18
+    .line 19
     iget v9, p0, Landroidx/heifwriter/HeifWriter$Builder;->mPrimaryIndex:I
 
+    .line 20
+    .line 21
     iget v10, p0, Landroidx/heifwriter/HeifWriter$Builder;->mInputMode:I
 
+    .line 22
+    .line 23
     iget-object v11, p0, Landroidx/heifwriter/HeifWriter$Builder;->mHandler:Landroid/os/Handler;
 
+    .line 24
+    .line 25
     move-object v0, v12
 
+    .line 26
     invoke-direct/range {v0 .. v11}, Landroidx/heifwriter/HeifWriter;-><init>(Ljava/lang/String;Ljava/io/FileDescriptor;IIIZIIIILandroid/os/Handler;)V
 
+    .line 27
+    .line 28
+    .line 29
     return-object v12
 .end method
 
@@ -214,6 +242,8 @@
     .line 1
     iput-boolean p1, p0, Landroidx/heifwriter/HeifWriter$Builder;->mGridEnabled:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -227,157 +257,280 @@
     .line 1
     iput-object p1, p0, Landroidx/heifwriter/HeifWriter$Builder;->mHandler:Landroid/os/Handler;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setMaxImages(I)Landroidx/heifwriter/HeifWriter$Builder;
     .locals 2
 
+    .line 1
     if-lez p1, :cond_0
 
-    .line 1
+    .line 2
+    .line 3
     iput p1, p0, Landroidx/heifwriter/HeifWriter$Builder;->mMaxImages:I
 
+    .line 4
+    .line 5
     return-object p0
 
-    .line 2
+    .line 6
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 7
+    .line 8
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 11
+    .line 12
+    .line 13
     const-string v1, "Invalid maxImage: "
 
+    .line 14
+    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 16
+    .line 17
+    .line 18
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 22
+    .line 23
+    .line 24
     move-result-object p1
 
+    .line 25
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 26
+    .line 27
+    .line 28
     throw p0
 .end method
 
 .method public setPrimaryIndex(I)Landroidx/heifwriter/HeifWriter$Builder;
     .locals 2
 
+    .line 1
     if-ltz p1, :cond_0
 
-    .line 1
+    .line 2
+    .line 3
     iput p1, p0, Landroidx/heifwriter/HeifWriter$Builder;->mPrimaryIndex:I
 
+    .line 4
+    .line 5
     return-object p0
 
-    .line 2
+    .line 6
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 7
+    .line 8
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 11
+    .line 12
+    .line 13
     const-string v1, "Invalid primaryIndex: "
 
+    .line 14
+    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 16
+    .line 17
+    .line 18
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 22
+    .line 23
+    .line 24
     move-result-object p1
 
+    .line 25
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 26
+    .line 27
+    .line 28
     throw p0
 .end method
 
 .method public setQuality(I)Landroidx/heifwriter/HeifWriter$Builder;
     .locals 2
 
+    .line 1
     if-ltz p1, :cond_0
 
+    .line 2
+    .line 3
     const/16 v0, 0x64
 
+    .line 4
+    .line 5
     if-gt p1, v0, :cond_0
 
-    .line 1
+    .line 6
+    .line 7
     iput p1, p0, Landroidx/heifwriter/HeifWriter$Builder;->mQuality:I
 
+    .line 8
+    .line 9
     return-object p0
 
-    .line 2
+    .line 10
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 11
+    .line 12
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 13
+    .line 14
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 15
+    .line 16
+    .line 17
     const-string v1, "Invalid quality: "
 
+    .line 18
+    .line 19
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 20
+    .line 21
+    .line 22
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 23
+    .line 24
+    .line 25
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 26
+    .line 27
+    .line 28
     move-result-object p1
 
+    .line 29
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 30
+    .line 31
+    .line 32
     throw p0
 .end method
 
 .method public setRotation(I)Landroidx/heifwriter/HeifWriter$Builder;
     .locals 2
 
+    .line 1
     if-eqz p1, :cond_1
 
+    .line 2
+    .line 3
     const/16 v0, 0x5a
 
+    .line 4
+    .line 5
     if-eq p1, v0, :cond_1
 
+    .line 6
+    .line 7
     const/16 v0, 0xb4
 
+    .line 8
+    .line 9
     if-eq p1, v0, :cond_1
 
+    .line 10
+    .line 11
     const/16 v0, 0x10e
 
+    .line 12
+    .line 13
     if-ne p1, v0, :cond_0
 
+    .line 14
+    .line 15
     goto :goto_0
 
-    .line 1
+    .line 16
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 17
+    .line 18
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 21
+    .line 22
+    .line 23
     const-string v1, "Invalid rotation angle: "
 
+    .line 24
+    .line 25
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 26
+    .line 27
+    .line 28
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 29
+    .line 30
+    .line 31
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 32
+    .line 33
+    .line 34
     move-result-object p1
 
+    .line 35
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 36
+    .line 37
+    .line 38
     throw p0
 
-    .line 2
+    .line 39
     :cond_1
     :goto_0
     iput p1, p0, Landroidx/heifwriter/HeifWriter$Builder;->mRotation:I
 
+    .line 40
+    .line 41
     return-object p0
 .end method

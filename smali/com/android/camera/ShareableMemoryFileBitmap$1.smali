@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ShareableMemoryFileBitmap$1;
+.class Lcom/android/camera/ShareableMemoryFileBitmap$1;
 .super Lcom/xiaomi/camera/util/Singleton;
 .source "ShareableMemoryFileBitmap.java"
 
@@ -29,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/camera/util/Singleton;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

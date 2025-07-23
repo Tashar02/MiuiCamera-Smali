@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ui/VideoTagView$VideoTagCapsuleEvaluator;
+.class Lcom/android/camera/ui/VideoTagView$VideoTagCapsuleEvaluator;
 .super Ljava/lang/Object;
 .source "VideoTagView.java"
 
@@ -31,20 +31,12 @@
 
 .field private pointB:Landroid/graphics/PointF;
 
-.field public final synthetic this$0:Lcom/android/camera/ui/VideoTagView;
+.field final synthetic this$0:Lcom/android/camera/ui/VideoTagView;
 
 
 # direct methods
 .method private constructor <init>(Lcom/android/camera/ui/VideoTagView;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/VideoTagView$VideoTagCapsuleEvaluator;->this$0:Lcom/android/camera/ui/VideoTagView;
@@ -54,20 +46,20 @@
     .line 2
     new-instance p1, Landroid/graphics/PointF;
 
-    const v0, 0x3e4ccccd    # 0.2f
+    const v0, 0x3fcccccd    # 1.6f
 
-    const v1, 0x3fcccccd    # 1.6f
+    const v1, 0x3e4ccccd    # 0.2f
 
-    invoke-direct {p1, v0, v1}, Landroid/graphics/PointF;-><init>(FF)V
+    invoke-direct {p1, v1, v0}, Landroid/graphics/PointF;-><init>(FF)V
 
     iput-object p1, p0, Lcom/android/camera/ui/VideoTagView$VideoTagCapsuleEvaluator;->pointA:Landroid/graphics/PointF;
 
     .line 3
     new-instance p1, Landroid/graphics/PointF;
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v0, 0x3f800000    # 1.0f
 
-    invoke-direct {p1, v0, v1}, Landroid/graphics/PointF;-><init>(FF)V
+    invoke-direct {p1, v1, v0}, Landroid/graphics/PointF;-><init>(FF)V
 
     iput-object p1, p0, Lcom/android/camera/ui/VideoTagView$VideoTagCapsuleEvaluator;->pointB:Landroid/graphics/PointF;
 
@@ -87,18 +79,6 @@
 # virtual methods
 .method public evaluate(FLandroid/graphics/PointF;Landroid/graphics/PointF;)Landroid/graphics/PointF;
     .locals 5
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "fraction",
-            "startValue",
-            "endValue"
-        }
-    .end annotation
 
     .line 2
     iget v0, p2, Landroid/graphics/PointF;->x:F
@@ -206,18 +186,6 @@
 
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000,
-            0x1000
-        }
-        names = {
-            "fraction",
-            "startValue",
-            "endValue"
-        }
-    .end annotation
 
     .line 1
     check-cast p2, Landroid/graphics/PointF;

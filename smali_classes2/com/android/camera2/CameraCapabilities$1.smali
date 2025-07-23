@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/CameraCapabilities$1;
+.class Lcom/android/camera2/CameraCapabilities$1;
 .super Ljava/util/ArrayList;
 .source "CameraCapabilities.java"
 
@@ -28,32 +28,39 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "initialCapacity"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 2
+    .line 3
+    .line 4
     sget-object p1, Lcom/android/camera2/vendortag/CameraCharacteristicsVendorTags;->QCFA_STREAM_CONFIGURATIONS:Lcom/android/camera2/vendortag/VendorTag;
 
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    .line 3
+    .line 7
+    .line 8
+    .line 9
     sget-object p1, Lcom/android/camera2/vendortag/CameraCharacteristicsVendorTags;->SCALER_AVAILABLE_LIMIT_STREAM_CONFIGURATIONS:Lcom/android/camera2/vendortag/VendorTag;
 
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
-    .line 4
+    .line 12
+    .line 13
+    .line 14
     sget-object p1, Lcom/android/camera2/vendortag/CameraCharacteristicsVendorTags;->SCALER_AVAILABLE_SR_STREAM_CONFIGURATIONS:Lcom/android/camera2/vendortag/VendorTag;
 
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 15
+    .line 16
+    invoke-virtual {p0, p1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
+    .line 17
+    .line 18
+    .line 19
     return-void
 .end method

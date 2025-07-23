@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/provider/ResourceEncoderRegistry$Entry;
+.class final Lcom/bumptech/glide/provider/ResourceEncoderRegistry$Entry;
 .super Ljava/lang/Object;
 .source "ResourceEncoderRegistry.java"
 
@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field public final encoder:Lcom/bumptech/glide/load/ResourceEncoder;
+.field final encoder:Lcom/bumptech/glide/load/ResourceEncoder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/bumptech/glide/load/ResourceEncoder<",
@@ -68,11 +68,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/provider/ResourceEncoderRegistry$Entry;->resourceClass:Ljava/lang/Class;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Lcom/bumptech/glide/provider/ResourceEncoderRegistry$Entry;->encoder:Lcom/bumptech/glide/load/ResourceEncoder;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -95,9 +100,15 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/provider/ResourceEncoderRegistry$Entry;->resourceClass:Ljava/lang/Class;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method

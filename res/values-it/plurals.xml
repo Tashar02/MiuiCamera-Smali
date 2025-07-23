@@ -72,6 +72,14 @@
         <item quantity="other">"&lt;Data>La versione della Fotocamera che stai utilizzando non è compatibile con il modello del tuo dispositivo.&lt;br>L'app si chiuderà fra &lt;font color=#FFCE16>&lt;b>%1$d sec&lt;/b>&lt;/font>. Disinstalla gli aggiornamenti della Fotocamera e riprova.&lt;/Data>"</item>
         <item quantity="one">"&lt;Data>La versione della Fotocamera che stai utilizzando non è compatibile con il modello del tuo dispositivo.&lt;br>L'app si chiuderà fra &lt;font color=#FFCE16>&lt;b>%1$d sec&lt;/b>&lt;/font>. Disinstalla gli aggiornamenti della Fotocamera e riprova.&lt;/Data>"</item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avanti di %d secondi</item>
+        <item quantity="one">Avanti di %d secondo</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Indietro di %d secondi</item>
+        <item quantity="one">Indietro di %d secondo</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min</item>
         <item quantity="one">%1$d min</item>

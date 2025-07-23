@@ -15,24 +15,16 @@
 
 
 # instance fields
-.field public mIsRTL:Z
+.field protected mIsRTL:Z
 
-.field public marginStart:I
+.field protected marginStart:I
 
-.field public padding:I
+.field protected padding:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
@@ -44,16 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "marginStart"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;-><init>()V
@@ -94,55 +76,67 @@
 # virtual methods
 .method public getItemOffsets(Landroid/graphics/Rect;Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 8
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "outRect",
-            "view",
-            "parent",
-            "state"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p3, p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildAdapterPosition(Landroid/view/View;)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v3
 
-    .line 2
+    .line 5
     invoke-virtual {p3}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p3
 
+    .line 9
     invoke-virtual {p3}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->getItemCount()I
 
+    .line 10
+    .line 11
+    .line 12
     move-result v7
 
-    .line 3
+    .line 13
     invoke-static {}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOperationPanel()Lcom/android/camera2/compat/theme/common/MiThemeOperationPanelInterface;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object v0
 
-    .line 4
+    .line 17
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object v1
 
+    .line 21
     iget v4, p0, Lcom/android/camera/fragment/EffectItemAdapter$EffectItemPadding;->padding:I
 
+    .line 22
+    .line 23
     iget v5, p0, Lcom/android/camera/fragment/EffectItemAdapter$EffectItemPadding;->marginStart:I
 
+    .line 24
+    .line 25
     iget-boolean v6, p0, Lcom/android/camera/fragment/EffectItemAdapter$EffectItemPadding;->mIsRTL:Z
 
+    .line 26
+    .line 27
     move-object v2, p1
 
-    .line 5
+    .line 28
     invoke-interface/range {v0 .. v7}, Lcom/android/camera2/compat/theme/common/MiThemeOperationPanelInterface;->MimojiOutRectPosition(Landroid/content/Context;Landroid/graphics/Rect;IIIZI)V
 
+    .line 29
+    .line 30
+    .line 31
     return-void
 .end method

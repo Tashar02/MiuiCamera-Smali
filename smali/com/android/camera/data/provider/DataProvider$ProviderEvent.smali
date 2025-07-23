@@ -22,82 +22,24 @@
 .end method
 
 .method public abstract contains(Ljava/lang/String;)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
 .end method
 
 .method public abstract editor()Lcom/android/camera/data/provider/DataProvider$ProviderEditor;
 .end method
 
 .method public abstract getBoolean(Ljava/lang/String;Z)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "defaultValue"
-        }
-    .end annotation
 .end method
 
 .method public abstract getFloat(Ljava/lang/String;F)F
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "defaultValue"
-        }
-    .end annotation
 .end method
 
 .method public abstract getInt(Ljava/lang/String;I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "defaultValue"
-        }
-    .end annotation
 .end method
 
 .method public abstract getLong(Ljava/lang/String;J)J
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "defaultValue"
-        }
-    .end annotation
 .end method
 
 .method public abstract getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "defaultValue"
-        }
-    .end annotation
 .end method
 
 .method public abstract isTransient()Z

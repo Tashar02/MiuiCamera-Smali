@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/timerburst/TimerBurstManager$3;
+.class Lcom/android/camera/timerburst/TimerBurstManager$3;
 .super Ljava/lang/Object;
 .source "TimerBurstManager.java"
 
@@ -27,26 +27,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/timerburst/TimerBurstManager;
+.field final synthetic this$0:Lcom/android/camera/timerburst/TimerBurstManager;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/timerburst/TimerBurstManager;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/timerburst/TimerBurstManager$3;->this$0:Lcom/android/camera/timerburst/TimerBurstManager;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -58,15 +55,6 @@
         ignore = false
         key = "isSupportPresentationDisplay"
         type = 0x0
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "it"
-        }
     .end annotation
 
     const/4 p0, 0x1
@@ -83,15 +71,6 @@
         ignore = false
         key = "isSupportPresentationDisplay"
         type = 0x0
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "it"
-        }
     .end annotation
 
     .line 1

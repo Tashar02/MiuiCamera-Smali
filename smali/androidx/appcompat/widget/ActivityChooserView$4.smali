@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActivityChooserView$4;
+.class Landroidx/appcompat/widget/ActivityChooserView$4;
 .super Landroidx/appcompat/widget/ForwardingListener;
 .source "ActivityChooserView.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/widget/ActivityChooserView;
+.field final synthetic this$0:Landroidx/appcompat/widget/ActivityChooserView;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$4;->this$0:Landroidx/appcompat/widget/ActivityChooserView;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2}, Landroidx/appcompat/widget/ForwardingListener;-><init>(Landroid/view/View;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -38,10 +43,16 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/widget/ActivityChooserView$4;->this$0:Landroidx/appcompat/widget/ActivityChooserView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/appcompat/widget/ActivityChooserView;->getListPopupWindow()Landroidx/appcompat/widget/ListPopupWindow;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -51,10 +62,16 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/widget/ActivityChooserView$4;->this$0:Landroidx/appcompat/widget/ActivityChooserView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/appcompat/widget/ActivityChooserView;->showPopup()Z
 
+    .line 4
+    .line 5
+    .line 6
     const/4 p0, 0x1
 
+    .line 7
     return p0
 .end method
 
@@ -64,9 +81,15 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/widget/ActivityChooserView$4;->this$0:Landroidx/appcompat/widget/ActivityChooserView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/appcompat/widget/ActivityChooserView;->dismissPopup()Z
 
+    .line 4
+    .line 5
+    .line 6
     const/4 p0, 0x1
 
+    .line 7
     return p0
 .end method

@@ -24,20 +24,13 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "miCamera",
-            "previewCaptureResult"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera2/MiCamera2ShotParallel;-><init>(Lcom/android/camera2/MiCamera2;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -46,8 +39,10 @@
 .method public generateCaptureCallback()Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
@@ -60,27 +55,33 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
 .method public getTag()Ljava/lang/String;
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
 .method public prepare()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public startSessionCapture()V
     .locals 0
 
+    .line 1
     return-void
 .end method

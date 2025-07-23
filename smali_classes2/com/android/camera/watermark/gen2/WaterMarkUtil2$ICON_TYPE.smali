@@ -1,4 +1,4 @@
-.class public interface abstract annotation Lcom/android/camera/watermark/gen2/WaterMarkUtil2$ICON_TYPE;
+.class interface abstract annotation Lcom/android/camera/watermark/gen2/WaterMarkUtil2$ICON_TYPE;
 .super Ljava/lang/Object;
 .source "WaterMarkUtil2.java"
 

@@ -19,12 +19,4 @@
 .end method
 
 .method public abstract onBeautyBodySlimCountChange(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isNeedTip"
-        }
-    .end annotation
 .end method

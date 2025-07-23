@@ -1,4 +1,4 @@
-.class public final Landroidx/core/content/res/GrowingArrayUtils;
+.class final Landroidx/core/content/res/GrowingArrayUtils;
 .super Ljava/lang/Object;
 .source "GrowingArrayUtils.java"
 
@@ -10,6 +10,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -161,17 +164,26 @@
 .method public static growSize(I)I
     .locals 1
 
+    .line 1
     const/4 v0, 0x4
 
+    .line 2
     if-gt p0, v0, :cond_0
 
+    .line 3
+    .line 4
     const/16 p0, 0x8
 
+    .line 5
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     mul-int/lit8 p0, p0, 0x2
 
+    .line 8
+    .line 9
     :goto_0
     return p0
 .end method

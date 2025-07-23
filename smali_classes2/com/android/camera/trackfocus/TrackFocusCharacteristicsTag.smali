@@ -41,27 +41,56 @@
     .locals 2
 
     .line 1
-    sget-object v0, LOooO0OO/OooO0O0/OooO00o/o00OO0/OooO00o;->OooO00o:LOooO0OO/OooO0O0/OooO00o/o00OO0/OooO00o;
-
-    const-class v1, Ljava/lang/Integer;
-
-    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CameraCharacteristicsVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/camera/trackfocus/TrackFocusCharacteristicsTag;->SUPPORT_TRACK_FOCUS:Lcom/android/camera2/vendortag/VendorTag;
+    new-instance v0, Lcom/android/camera/trackfocus/OooO00o;
 
     .line 2
-    sget-object v0, LOooO0OO/OooO0O0/OooO00o/o00OO0/OooO0O0;->OooO00o:LOooO0OO/OooO0O0/OooO00o/o00OO0/OooO0O0;
+    .line 3
+    invoke-direct {v0}, Lcom/android/camera/trackfocus/OooO00o;-><init>()V
 
-    const-class v1, [Ljava/lang/Integer;
+    .line 4
+    .line 5
+    .line 6
+    const-class v1, Ljava/lang/Integer;
 
+    .line 7
+    .line 8
     invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CameraCharacteristicsVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object v0
 
+    .line 12
+    sput-object v0, Lcom/android/camera/trackfocus/TrackFocusCharacteristicsTag;->SUPPORT_TRACK_FOCUS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 13
+    .line 14
+    new-instance v0, Lcom/android/camera/trackfocus/OooO0O0;
+
+    .line 15
+    .line 16
+    invoke-direct {v0}, Lcom/android/camera/trackfocus/OooO0O0;-><init>()V
+
+    .line 17
+    .line 18
+    .line 19
+    const-class v1, [Ljava/lang/Integer;
+
+    .line 20
+    .line 21
+    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CameraCharacteristicsVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
     sput-object v0, Lcom/android/camera/trackfocus/TrackFocusCharacteristicsTag;->QUALITY_SUPPORTED:Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 26
+    .line 27
     return-void
 .end method
 
@@ -73,21 +102,61 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-.method public static synthetic lambda$static$0()Ljava/lang/String;
+.method public static synthetic OooO00o()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "com.xiaomi.camera.supportedfeatures.TrackAFSupported"
+    .line 1
+    invoke-static {}, Lcom/android/camera/trackfocus/TrackFocusCharacteristicsTag;->lambda$static$0()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$1()Ljava/lang/String;
+.method public static synthetic OooO0O0()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.capabilities.videoMiTrackAF.quality"
+    .line 1
+    invoke-static {}, Lcom/android/camera/trackfocus/TrackFocusCharacteristicsTag;->lambda$static$1()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.camera.supportedfeatures.TrackAFSupported"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$1()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.capabilities.videoMiTrackAF.quality"
+
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method

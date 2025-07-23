@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onViewTapped(Landroid/graphics/RectF;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "area"
-        }
-    .end annotation
 .end method

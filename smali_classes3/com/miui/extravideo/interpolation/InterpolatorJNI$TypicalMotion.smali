@@ -1,4 +1,4 @@
-.class public Lcom/miui/extravideo/interpolation/InterpolatorJNI$TypicalMotion;
+.class Lcom/miui/extravideo/interpolation/InterpolatorJNI$TypicalMotion;
 .super Ljava/lang/Object;
 .source "InterpolatorJNI.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/miui/extravideo/interpolation/InterpolatorJNI;
+.field final synthetic this$0:Lcom/miui/extravideo/interpolation/InterpolatorJNI;
 
 .field public x:D
 

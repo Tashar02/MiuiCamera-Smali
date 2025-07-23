@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper$4;
+.class Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper$4;
 .super Ljava/lang/Object;
 .source "MediaPlayerWrapper.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper;
+.field final synthetic this$0:Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper$4;->this$0:Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,7 +46,12 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper$4;->this$0:Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper;
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper;->access$300(Lcom/android/camera/videoplayer/ui/MediaPlayerWrapper;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

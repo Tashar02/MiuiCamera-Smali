@@ -1,4 +1,4 @@
-.class public Lcom/ot/pubsub/util/g$a;
+.class Lcom/ot/pubsub/util/g$a;
 .super Ljava/lang/Object;
 
 
@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field a:Ljava/lang/String;
 
 
 # direct methods

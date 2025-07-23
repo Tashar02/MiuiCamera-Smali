@@ -54,6 +54,8 @@
     .line 1
     iget-object p0, p0, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->mTexCoordArray:Ljava/nio/FloatBuffer;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -63,10 +65,16 @@
     .line 1
     invoke-static {p1}, Lcom/faceunity/pta_helper/gles/core/GlUtil;->createFloatBuffer([F)Ljava/nio/FloatBuffer;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p1
 
+    .line 5
     iput-object p1, p0, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->mTexCoordArray:Ljava/nio/FloatBuffer;
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -76,17 +84,27 @@
     .line 1
     invoke-static {p1}, Lcom/faceunity/pta_helper/gles/core/GlUtil;->createFloatBuffer([F)Ljava/nio/FloatBuffer;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     iput-object v0, p0, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->mVertexArray:Ljava/nio/FloatBuffer;
 
-    .line 2
+    .line 6
+    .line 7
     array-length p1, p1
 
+    .line 8
     div-int/lit8 p1, p1, 0x2
 
+    .line 9
+    .line 10
     iput p1, p0, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->mVertexCount:I
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -96,6 +114,8 @@
     .line 1
     iget-object p0, p0, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->mVertexArray:Ljava/nio/FloatBuffer;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -105,5 +125,7 @@
     .line 1
     iget p0, p0, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->mVertexCount:I
 
+    .line 2
+    .line 3
     return p0
 .end method

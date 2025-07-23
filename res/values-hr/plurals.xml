@@ -90,6 +90,16 @@
         <item quantity="one">&lt;Data>Verzija fotoaparata koju koristite nije kompatibilna s modelom vašeg uređaja.&lt;br>Aplikacija će se zatvoriti za &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Deinstalirajte ažuriranja fotoaparata i pokušajte ponovno.&lt;/Data></item>
         <item quantity="few">&lt;Data>Verzija fotoaparata koju koristite nije kompatibilna s modelom vašeg uređaja.&lt;br>Aplikacija će se zatvoriti za &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Deinstalirajte ažuriranja fotoaparata i pokušajte ponovno.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Premotavanje unaprijed za %d sekundi</item>
+        <item quantity="one">Premotavanje unaprijed za %d sekundu</item>
+        <item quantity="few">Premotavanje unaprijed za %d sekunde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Premotavanje unatrag za %d sekundi</item>
+        <item quantity="one">Premotavanje unatrag za %d sekundu</item>
+        <item quantity="few">Premotavanje unatrag za %d sekunde</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min</item>
         <item quantity="one">%1$d min</item>

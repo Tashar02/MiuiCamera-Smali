@@ -16,27 +16,7 @@
 
 # virtual methods
 .method public abstract onSelectedItem(IZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "index",
-            "fromUser"
-        }
-    .end annotation
 .end method
 
 .method public abstract onShowResetRecordBubble(ZI)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "show",
-            "targetLeftCoordinate"
-        }
-    .end annotation
 .end method

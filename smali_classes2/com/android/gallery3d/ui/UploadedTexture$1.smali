@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/gallery3d/ui/UploadedTexture$1;
+.class synthetic Lcom/android/gallery3d/ui/UploadedTexture$1;
 .super Ljava/lang/Object;
 .source "UploadedTexture.java"
 

@@ -21,45 +21,38 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "x1",
-            "y1",
-            "x2",
-            "y2",
-            "paint"
-        }
-    .end annotation
-
     .line 1
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawAttribute;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera/effect/draw_mode/DrawLineAttribute;->mX1:F
 
-    .line 3
+    .line 5
+    .line 6
     iput p2, p0, Lcom/android/camera/effect/draw_mode/DrawLineAttribute;->mY1:F
 
-    .line 4
+    .line 7
+    .line 8
     iput p3, p0, Lcom/android/camera/effect/draw_mode/DrawLineAttribute;->mX2:F
 
-    .line 5
+    .line 9
+    .line 10
     iput p4, p0, Lcom/android/camera/effect/draw_mode/DrawLineAttribute;->mY2:F
 
-    .line 6
+    .line 11
+    .line 12
     iput-object p5, p0, Lcom/android/camera/effect/draw_mode/DrawLineAttribute;->mGLPaint:Lcom/android/gallery3d/ui/GLPaint;
 
+    .line 13
+    .line 14
     const/4 p1, 0x0
 
-    .line 7
+    .line 15
     iput p1, p0, Lcom/android/camera/effect/draw_mode/DrawAttribute;->mTarget:I
 
+    .line 16
+    .line 17
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public abstract Landroidx/fragment/app/Fragment$OnPreAttachedListener;
+.class abstract Landroidx/fragment/app/Fragment$OnPreAttachedListener;
 .super Ljava/lang/Object;
 .source "Fragment.java"
 

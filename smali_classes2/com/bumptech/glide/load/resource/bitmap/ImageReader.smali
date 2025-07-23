@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/bumptech/glide/load/resource/bitmap/ImageReader;
+.class interface abstract Lcom/bumptech/glide/load/resource/bitmap/ImageReader;
 .super Ljava/lang/Object;
 .source "ImageReader.java"
 

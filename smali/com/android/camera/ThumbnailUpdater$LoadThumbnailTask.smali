@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ThumbnailUpdater$LoadThumbnailTask;
+.class Lcom/android/camera/ThumbnailUpdater$LoadThumbnailTask;
 .super Lcom/xiaomi/camera/common/LifecycleAsyncTask;
 .source "ThumbnailUpdater.java"
 
@@ -67,21 +67,6 @@
 # direct methods
 .method public constructor <init>(ZLjava/lang/ref/Reference;Lcom/android/camera/ThumbnailUpdater;Lcom/android/camera/Thumbnail;)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "lookAtCache",
-            "activityBase",
-            "thumbnailUpdater",
-            "thumbnail"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -114,23 +99,6 @@
 
 .method public constructor <init>(ZZLjava/lang/ref/Reference;Lcom/android/camera/ThumbnailUpdater;Lcom/android/camera/Thumbnail;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "lookAtCache",
-            "updateViewIfThumbnailIsNull",
-            "activityBaseRef",
-            "thumbnailUpdater",
-            "thumbnail"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZZ",
@@ -202,14 +170,6 @@
 # virtual methods
 .method public varargs doInBackground([Ljava/lang/Void;)Lcom/android/camera/Thumbnail;
     .locals 17
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "params"
-        }
-    .end annotation
 
     move-object/from16 v1, p0
 
@@ -259,12 +219,12 @@
 
     if-nez v3, :cond_0
 
-    new-array v0, v2, [Ljava/lang/Object;
+    const-string v0, "LoadThumbnailTask#doInBackground -> mActivityBaseRef \u5df2\u88ab\u91ca\u653e"
 
-    const-string v1, "LoadThumbnailTask#doInBackground -> mActivityBaseRef \u5df2\u88ab\u91ca\u653e"
+    new-array v1, v2, [Ljava/lang/Object;
 
     .line 4
-    invoke-static {v4, v1, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-object v5
 
@@ -280,7 +240,7 @@
 
     .line 6
     :cond_1
-    invoke-virtual {v3}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -596,12 +556,12 @@
     :cond_d
     iput-boolean v10, v1, Lcom/android/camera/ThumbnailUpdater$LoadThumbnailTask;->needUpdateViewIfNull:Z
 
-    new-array v0, v2, [Ljava/lang/Object;
+    const-string v0, "LoadThumbnailTask: no image/video was found"
 
-    const-string v6, "LoadThumbnailTask: no image/video was found"
+    new-array v6, v2, [Ljava/lang/Object;
 
     .line 39
-    invoke-static {v4, v6, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v0, v6}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_e
     move-object v0, v5
@@ -667,10 +627,10 @@
 
     goto :goto_5
 
-    .line 45
     :cond_10
     aget-object v12, v8, v2
 
+    .line 45
     :goto_5
     invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -721,10 +681,10 @@
 
     goto :goto_6
 
-    .line 52
     :cond_12
     aget-object v9, v8, v2
 
+    .line 52
     :goto_6
     invoke-virtual {v6, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -791,7 +751,6 @@
     :cond_17
     return-object v0
 
-    .line 58
     :cond_18
     aget-object v0, v8, v2
 
@@ -799,13 +758,13 @@
 
     goto :goto_a
 
+    .line 58
     :cond_19
     iget-wide v12, v7, Lcom/android/camera/Thumbnail$Media;->dateTaken:J
 
     :goto_a
     invoke-virtual {v0, v12, v13}, Lcom/android/camera/Thumbnail;->setTakenDate(J)V
 
-    .line 59
     aget-object v0, v8, v2
 
     if-nez v7, :cond_1a
@@ -814,13 +773,13 @@
 
     goto :goto_b
 
+    .line 59
     :cond_1a
     iget-boolean v1, v7, Lcom/android/camera/Thumbnail$Media;->isVideo:Z
 
     :goto_b
     invoke-virtual {v0, v1}, Lcom/android/camera/Thumbnail;->setIsVideo(Z)V
 
-    .line 60
     aget-object v0, v8, v2
 
     return-object v0
@@ -828,14 +787,6 @@
 
 .method public bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "params"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, [Ljava/lang/Void;
@@ -849,14 +800,6 @@
 
 .method public onPostExecute(Lcom/android/camera/Thumbnail;)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "thumbnail"
-        }
-    .end annotation
 
     .line 2
     new-instance v0, Ljava/lang/StringBuilder;
@@ -970,14 +913,6 @@
 
 .method public bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "thumbnail"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/Thumbnail;
@@ -989,49 +924,76 @@
 
 .method public onStop(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "lifecycleOwner"
-        }
-    .end annotation
-
-    const/4 p1, 0x0
-
-    new-array v0, p1, [Ljava/lang/Object;
-
-    const-string v1, "ThumbnailUpdater"
-
-    const-string v2, "LoadThumbnailTask#onStop -> activityBase invoked onStop(), now cancel task."
 
     .line 1
-    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    const/4 p1, 0x0
 
     .line 2
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "LoadThumbnailTask#onStop -> taskStatus %d"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/android/camera/ThumbnailUpdater$LoadThumbnailTask;->mTaskStatus:I
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-array v2, p1, [Ljava/lang/Object;
-
-    invoke-static {v1, v0, v2}, Lcom/android/camera/log/Log;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    new-array v0, p1, [Ljava/lang/Object;
 
     .line 3
+    .line 4
+    const-string v1, "ThumbnailUpdater"
+
+    .line 5
+    .line 6
+    const-string v2, "LoadThumbnailTask#onStop -> activityBase invoked onStop(), now cancel task."
+
+    .line 7
+    .line 8
+    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v2, "LoadThumbnailTask#onStop -> taskStatus %d"
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    iget v2, p0, Lcom/android/camera/ThumbnailUpdater$LoadThumbnailTask;->mTaskStatus:I
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    new-array v2, p1, [Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    invoke-static {v1, v0, v2}, Lcom/android/camera/log/Log;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {p0, p1}, Lcom/xiaomi/camera/common/LifecycleAsyncTask;->cancel(Z)V
 
+    .line 36
+    .line 37
+    .line 38
     return-void
 .end method

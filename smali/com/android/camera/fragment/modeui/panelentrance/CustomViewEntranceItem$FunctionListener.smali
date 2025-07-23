@@ -19,12 +19,4 @@
 .end method
 
 .method public abstract showGuideWindow(Landroid/view/View;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "view"
-        }
-    .end annotation
 .end method

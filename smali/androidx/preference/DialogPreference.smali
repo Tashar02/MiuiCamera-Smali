@@ -170,6 +170,8 @@
     .line 1
     iget-object p0, p0, Landroidx/preference/DialogPreference;->mDialogIcon:Landroid/graphics/drawable/Drawable;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -179,6 +181,8 @@
     .line 1
     iget p0, p0, Landroidx/preference/DialogPreference;->mDialogLayoutResId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -188,6 +192,8 @@
     .line 1
     iget-object p0, p0, Landroidx/preference/DialogPreference;->mDialogMessage:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -197,6 +203,8 @@
     .line 1
     iget-object p0, p0, Landroidx/preference/DialogPreference;->mDialogTitle:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -206,6 +214,8 @@
     .line 1
     iget-object p0, p0, Landroidx/preference/DialogPreference;->mNegativeButtonText:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -215,6 +225,8 @@
     .line 1
     iget-object p0, p0, Landroidx/preference/DialogPreference;->mPositiveButtonText:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -224,10 +236,17 @@
     .line 1
     invoke-virtual {p0}, Landroidx/preference/Preference;->getPreferenceManager()Landroidx/preference/PreferenceManager;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-virtual {v0, p0}, Landroidx/preference/PreferenceManager;->showDialog(Landroidx/preference/Preference;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -263,6 +282,8 @@
     .line 1
     iput p1, p0, Landroidx/preference/DialogPreference;->mDialogLayoutResId:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 

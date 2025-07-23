@@ -12,46 +12,77 @@
     .locals 1
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOo0()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOo0()Z
 
     .line 2
-    new-instance v0, Lcom/android/camera2/compat/MiCameraCompatQcomImpl;
-
-    invoke-direct {v0}, Lcom/android/camera2/compat/MiCameraCompatQcomImpl;-><init>()V
-
-    sput-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
-
-    goto :goto_0
-
     .line 3
-    :cond_0
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
-
+    .line 4
     move-result v0
 
-    if-eqz v0, :cond_1
+    .line 5
+    if-eqz v0, :cond_0
 
-    .line 4
-    new-instance v0, Lcom/android/camera2/compat/MiCameraCompatMtkImpl;
+    .line 6
+    .line 7
+    new-instance v0, Lcom/android/camera2/compat/MiCameraCompatQcomImpl;
 
-    invoke-direct {v0}, Lcom/android/camera2/compat/MiCameraCompatMtkImpl;-><init>()V
+    .line 8
+    .line 9
+    invoke-direct {v0}, Lcom/android/camera2/compat/MiCameraCompatQcomImpl;-><init>()V
 
+    .line 10
+    .line 11
+    .line 12
     sput-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 13
+    .line 14
     goto :goto_0
 
-    .line 5
+    .line 15
+    :cond_0
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-eqz v0, :cond_1
+
+    .line 20
+    .line 21
+    new-instance v0, Lcom/android/camera2/compat/MiCameraCompatMtkImpl;
+
+    .line 22
+    .line 23
+    invoke-direct {v0}, Lcom/android/camera2/compat/MiCameraCompatMtkImpl;-><init>()V
+
+    .line 24
+    .line 25
+    .line 26
+    sput-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
+
+    .line 27
+    .line 28
+    goto :goto_0
+
+    .line 29
     :cond_1
     new-instance v0, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 30
+    .line 31
     invoke-direct {v0}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;-><init>()V
 
+    .line 32
+    .line 33
+    .line 34
     sput-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 35
+    .line 36
     :goto_0
     return-void
 .end method
@@ -64,6 +95,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -75,22 +109,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyASDEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -102,22 +130,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "scene"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyASDScene(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -129,43 +151,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAiAIIEPreviewEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyAiASDEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAiASDEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -177,22 +188,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAiMoonEffectEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -204,43 +209,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAiPortraitDeblur(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyAiScenePeriod(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "period"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAiScenePeriod(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -252,45 +246,35 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAiShutterEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)B
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
 .method public static applyAiShutterExistMotion(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "exist"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAiShutterExistMotion(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -302,22 +286,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "aeTarget"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAmbilightAeTarget(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -329,64 +307,48 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAmbilightMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyAnchorTimeStamp(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Long;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "timeStamp"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAnchorTimestamp(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Long;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyAppModule(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "index"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAppModule(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -398,22 +360,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAsdAlgorithmEnable(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -425,22 +381,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAsdDirtyEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -452,22 +402,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "autoZoomMode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAutoZoomMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -479,22 +423,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "offset"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyAutoZoomScaleOffset(Landroid/hardware/camera2/CaptureRequest$Builder;F)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -506,22 +444,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "flag"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyBackSoftLight(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -533,22 +465,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "flag"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyBackwardCaptureHint(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -560,40 +486,21 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyBeautyLens(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyBeautyParameter(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/util/HashSet;Lcom/android/camera/fragment/beauty/BeautyValues;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "supportedVendorKeys",
-            "beautyValues"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -609,8 +516,13 @@
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1, p2}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyBeautyParameter(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/util/HashSet;Lcom/android/camera/fragment/beauty/BeautyValues;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -622,22 +534,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyBokehFallBackEnable(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -649,22 +555,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "bokehRole"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyBokehRole(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -676,22 +576,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "hint"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyBurstHint(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -703,22 +597,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCShotFeatureCapture(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -730,22 +618,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCameraAi30Enable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -757,22 +639,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCinematicPhoto(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -784,22 +660,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCinematicVideo(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -811,22 +681,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyColorEnhanceEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -838,22 +702,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyContrast(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -865,43 +723,32 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "cropRegion"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCropFeature(Landroid/hardware/camera2/CaptureRequest$Builder;[I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyCustomAWB(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "awbValue"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCustomWB(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -913,22 +760,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "applied"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCustomWaterMark(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -940,22 +781,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCvLens(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Byte;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -967,22 +802,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCvLensSessionMode(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Byte;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -994,22 +823,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyCvType(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1021,22 +844,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyDepurpleEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1048,22 +865,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "orientation"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyDeviceOrientation(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1075,22 +886,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyDoZipWithBss(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1102,64 +907,48 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyDualBokeh(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyExposureMeteringMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyExposureMeteringMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyExposureTime(Landroid/hardware/camera2/CaptureRequest$Builder;J)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "exposureTime"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1, p2}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyExposureTime(Landroid/hardware/camera2/CaptureRequest$Builder;J)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1171,22 +960,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyExtendedMaxZoom(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1198,22 +981,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "fNumber"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFNumber(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1225,43 +1002,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFaceAnalyzeAge(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyFaceDetection(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFaceDetection(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1273,22 +1039,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFacePoseEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1300,22 +1060,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "face"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFaceRectangles(Landroid/hardware/camera2/CaptureRequest$Builder;[Landroid/graphics/Rect;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1327,22 +1081,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFakeSatEnable(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1354,22 +1102,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFeatureMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1381,22 +1123,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFlashCurrent(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1408,22 +1144,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFlashMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1435,22 +1165,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFlawDetectEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1462,22 +1186,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyForceDisableLLS(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1489,22 +1207,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFrameRatio(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1516,22 +1228,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFrontMirror(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1541,19 +1247,6 @@
         ignore = false
         key = "isSupportFrontSoftLightAdjust"
         type = 0x2
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "supportedVendorKeys",
-            "mode"
-        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -1569,8 +1262,13 @@
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1, p2}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyFrontSoftLightParameter(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/util/Set;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1582,22 +1280,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHDR(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1609,22 +1301,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "hdr10Mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHDRVideoMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1636,22 +1322,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHDRCheckerEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1663,22 +1343,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "status"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHDRCheckerStatus(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1690,22 +1364,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "hdrMode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHDRMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1717,22 +1385,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHHT(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1744,43 +1406,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHdrBokeh(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyHdrBracketMode(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHdrBracketMode(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1792,24 +1443,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "sceneType",
-            "adrc"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1, p2}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHdrParameter(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Integer;Ljava/lang/Integer;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1821,22 +1464,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHighFpsVideoRecordingMode(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1848,43 +1485,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHighQualityPreferred(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyHighQualityQuickShot(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHighQualityQuickShot(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1896,22 +1522,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHighQualityReprocess(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1923,43 +1543,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyHistogramStats(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyISO(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "iso"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyISO(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1971,43 +1580,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyInsensorZoomEnable(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyIsHfrPreview(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "isPreview"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIsHfrPreview(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2019,22 +1617,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "frameCount"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspFrameCount(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2046,22 +1638,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "frameIndex"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspFrameIndex(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2073,22 +1659,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspMetaEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2100,22 +1680,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "type"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspMetaType(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2127,22 +1701,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspPackedRawEnable(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2154,22 +1722,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspPackedRawSupport(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2181,22 +1743,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "ispTuningHint"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspTuningHint(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2208,22 +1764,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "tuningIndex"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1, p2}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyIspTuningIndex(Landroid/hardware/camera2/CaptureRequest$Builder;J)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2235,22 +1785,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyLLS(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2262,64 +1806,48 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyLensDirtyDetect(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyLimitMfnrNumFrames(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyLimitMfnrNumFrames(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyLiveShot(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyLiveShot(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2331,22 +1859,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMacroMode(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2358,22 +1880,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMfnr(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2385,43 +1901,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "frameNum"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMfnrFrameNum(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyMiHDRSR(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMiHDRSR(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2433,22 +1938,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMiviNightIconDisabled(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2460,22 +1959,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMiviNightMotionMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2487,22 +1980,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMiviSuperNightMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2514,22 +2001,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMixQuickShot(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2541,22 +2022,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "rect"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMotionDetectionArea(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/graphics/Rect;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2568,22 +2043,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMotionDetectionEnable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2595,85 +2064,64 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMtkProcessRaw(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyMultiFrameCount(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "num"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMultiFrameCount(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyMultiFrameIndex(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "num"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMultiFrameIndex(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyMultiFrameInputNum(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "num"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyMultiFrameInputNum(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2685,22 +2133,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyNoiseReduction(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2712,22 +2154,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyNormalWideLDC(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2739,22 +2175,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyNotificationTrigger(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2763,43 +2193,32 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyOfflineFlushEnable(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyOnTripodModeStatus(Landroid/hardware/camera2/CaptureRequest$Builder;[Lcom/android/camera2/vendortag/struct/MarshalQueryableASDScene$ASDScene;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "onTripodScene"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyOnTripodModeStatus(Landroid/hardware/camera2/CaptureRequest$Builder;[Lcom/android/camera2/vendortag/struct/MarshalQueryableASDScene$ASDScene;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2811,22 +2230,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPanoramaP2SEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2838,22 +2251,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "name"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyParallelImageName(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2865,22 +2272,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyParallelMasterCameraId(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2892,22 +2293,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyParallelSnapshot(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2919,22 +2314,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "pattern"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPortraitLighting(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2946,22 +2335,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPortraitRepair(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -2973,22 +2356,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "cropRegion"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPostProcessCropRegion(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/graphics/Rect;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3000,22 +2377,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPqFeature(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3027,22 +2398,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPreviewFullSize(Landroid/hardware/camera2/CaptureRequest$Builder;[I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3054,43 +2419,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPreviewMirror(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyProcessId(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "processId"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyProcessId(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3102,22 +2456,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyPureViewEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3129,64 +2477,48 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyQuickPreview(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyRawHDR(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyRawHDR(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyRemosaicEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyRemosaicEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3198,22 +2530,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyRemosaicHint(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3225,22 +2551,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySATUltraWideLDC(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3252,22 +2572,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySatFallback(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3279,22 +2593,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySatFallbackDisable(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3306,22 +2614,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySatFusionEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3333,64 +2635,48 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "type"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySatFusionType(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applySatIsZooming(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySatIsZooming(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applySaturation(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySaturation(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3402,22 +2688,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "flag"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyScreenLightHint(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3429,43 +2709,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyScreenLightLevel(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applySharpness(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySharpness(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3477,22 +2746,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "shutterTimestamp"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1, p2}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyShutterTimestamp(Landroid/hardware/camera2/CaptureRequest$Builder;J)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3504,22 +2767,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySingleBokeh(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3531,24 +2788,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "type",
-            "strength"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1, p2}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySkinColor(Landroid/hardware/camera2/CaptureRequest$Builder;II)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3560,22 +2809,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySlowMotionVideoRecordingMode(Landroid/hardware/camera2/CaptureRequest$Builder;[I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3587,22 +2830,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySmoothTransition(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3614,22 +2851,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "value"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySnapshotReqInfo(Landroid/hardware/camera2/CaptureRequest$Builder;[B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3641,22 +2872,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySnapshotTorch(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3668,22 +2893,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySpecshotMode(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3695,43 +2914,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySuperNightBokeh(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applySuperNightMfnr(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySuperNightMfnr(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3743,22 +2951,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySuperNightRawEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3770,22 +2972,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySuperNightScene(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3797,43 +2993,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySuperResolution(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applySuperResolutionHdsrEvArray(Landroid/hardware/camera2/CaptureRequest$Builder;[I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "evArray"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySuperResolutionHdsrEvArray(Landroid/hardware/camera2/CaptureRequest$Builder;[I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3845,22 +3030,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applySwMfnr(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3872,22 +3051,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "targetZoom"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyTargetZoom(Landroid/hardware/camera2/CaptureRequest$Builder;F)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3899,47 +3072,40 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "level"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p1
 
+    .line 7
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyThermalLevel(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public static applyTimeLapseValue(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "timeLapseValue"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyTimeLapseValue(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3951,22 +3117,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "applied"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyTimeWaterMark(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3978,22 +3138,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyTuningMode(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4005,22 +3159,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyUltraWideLDC(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4032,22 +3180,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "bokehLevel"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoBokehBackLevel(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4059,22 +3201,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoBokehColorRetentionBack(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4086,22 +3222,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoBokehColorRetentionFront(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4113,22 +3243,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "bokehLevel"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoBokehFrontLevel(Landroid/hardware/camera2/CaptureRequest$Builder;F)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4140,22 +3264,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoFilterColorRetentionBack(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4167,22 +3285,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoFilterColorRetentionFront(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4194,22 +3306,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "videoFilterId"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoFilterId(Landroid/hardware/camera2/CaptureRequest$Builder;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4219,17 +3325,6 @@
         ignore = false
         key = "isVideoHdrEnabled"
         type = 0x2
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
     .end annotation
 
     .line 2
@@ -4248,17 +3343,6 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "mode"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
@@ -4275,22 +3359,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoLogEnable(Landroid/hardware/camera2/CaptureRequest$Builder;B)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4302,43 +3380,32 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enable"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoMFHdrMode(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyVideoStreamState(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "start"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyVideoStreamState(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4350,22 +3417,16 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "applied"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyWaterMarkAppliedList(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4377,64 +3438,48 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyZsd(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyZsl(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyZsl(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static applyZslHdrEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "request",
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->applyZslHdrEnabled(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4446,22 +3491,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "result",
-            "request"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->copyAiSceneFromCaptureResultToRequest(Landroid/hardware/camera2/CaptureResult;Landroid/hardware/camera2/CaptureRequest$Builder;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4473,22 +3512,16 @@
         type = 0x1
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "result",
-            "request"
-        }
-    .end annotation
-
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->copyFpcDataFromCaptureResultToRequest(Landroid/hardware/camera2/CaptureResult;Landroid/hardware/camera2/CaptureRequest$Builder;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4511,9 +3544,15 @@
     .line 1
     sget-object v0, Lcom/android/camera2/compat/MiCameraCompat;->IMPL:Lcom/android/camera2/compat/MiCameraCompatBaseImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera2/compat/MiCameraCompatBaseImpl;->getDefaultSteamConfigurationsTag()Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     return-object v0
 .end method

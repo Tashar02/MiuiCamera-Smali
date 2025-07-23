@@ -64,6 +64,8 @@
 
 .field public static final DATA_SEARCH_QUERY:Ljava/lang/String; = "data_search_query"
 
+.field public static final EXTRA_CALLING_PID:Ljava/lang/String; = "extra_calling_pid"
+
 .field public static final EXTRA_CLIENT_VERSION:Ljava/lang/String; = "extra_client_version"
 
 .field public static final EXTRA_MESSENGER_BINDER:Ljava/lang/String; = "extra_messenger"
@@ -92,5 +94,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

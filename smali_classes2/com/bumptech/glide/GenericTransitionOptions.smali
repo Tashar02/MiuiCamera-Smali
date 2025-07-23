@@ -23,6 +23,9 @@
     .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/TransitionOptions;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -143,13 +146,24 @@
     .line 1
     new-instance v0, Lcom/bumptech/glide/GenericTransitionOptions;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lcom/bumptech/glide/GenericTransitionOptions;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {v0}, Lcom/bumptech/glide/TransitionOptions;->dontTransition()Lcom/bumptech/glide/TransitionOptions;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object v0
 
+    .line 10
     check-cast v0, Lcom/bumptech/glide/GenericTransitionOptions;
 
+    .line 11
+    .line 12
     return-object v0
 .end method

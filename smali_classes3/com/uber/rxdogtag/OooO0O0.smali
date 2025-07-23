@@ -1,34 +1,56 @@
 .class public final synthetic Lcom/uber/rxdogtag/OooO0O0;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
 .implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic o0000o0o:Lio/reactivex/Observer;
+.field public final synthetic o0000o:Lcom/uber/rxdogtag/DogTagCompletableObserver;
+
+.field public final synthetic o0000oO0:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/Observer;)V
+.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagCompletableObserver;Ljava/lang/Throwable;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/OooO0O0;->o0000o0o:Lio/reactivex/Observer;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/OooO0O0;->o0000o:Lcom/uber/rxdogtag/DogTagCompletableObserver;
 
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/uber/rxdogtag/OooO0O0;->o0000oO0:Ljava/lang/Throwable;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 0
+    .locals 1
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/OooO0O0;->o0000o0o:Lio/reactivex/Observer;
+    .line 1
+    iget-object v0, p0, Lcom/uber/rxdogtag/OooO0O0;->o0000o:Lcom/uber/rxdogtag/DogTagCompletableObserver;
 
-    invoke-interface {p0}, Lio/reactivex/Observer;->onComplete()V
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/uber/rxdogtag/OooO0O0;->o0000oO0:Ljava/lang/Throwable;
 
+    .line 4
+    .line 5
+    invoke-static {v0, p0}, Lcom/uber/rxdogtag/DogTagCompletableObserver;->OooO0o0(Lcom/uber/rxdogtag/DogTagCompletableObserver;Ljava/lang/Throwable;)V
+
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/data/cloud/DataCloudMgr$1;
+.class Lcom/android/camera/data/cloud/DataCloudMgr$1;
 .super Ljava/lang/Object;
 .source "DataCloudMgr.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/data/cloud/DataCloudMgr;
+.field final synthetic this$0:Lcom/android/camera/data/cloud/DataCloudMgr;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/data/cloud/DataCloudMgr;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/cloud/DataCloudMgr$1;->this$0:Lcom/android/camera/data/cloud/DataCloudMgr;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,15 +46,6 @@
         .annotation build Lio/reactivex/annotations/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "e"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -67,7 +55,12 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/cloud/DataCloudMgr$1;->this$0:Lcom/android/camera/data/cloud/DataCloudMgr;
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/android/camera/data/cloud/DataCloudMgr;->access$000(Lcom/android/camera/data/cloud/DataCloudMgr;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

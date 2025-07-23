@@ -16,28 +16,10 @@
 
 # virtual methods
 .method public abstract expandSnapButton(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "animationConfig",
-            "time"
-        }
-    .end annotation
 .end method
 
 .method public abstract isSnapViewVisible()Z
 .end method
 
 .method public abstract resetSnapButton(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "time"
-        }
-    .end annotation
 .end method

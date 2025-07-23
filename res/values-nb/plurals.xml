@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>Kameraversjonen du bruker, er ikke kompatibel med enhetsmodellen.&lt;br>Appen lukkes om &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Avinstaller kameraoppdateringer og prøv igjen.&lt;/Data></item>
         <item quantity="one">&lt;Data>Kameraversjonen du bruker, er ikke kompatibel med enhetsmodellen.&lt;br>Appen lukkes om &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Avinstaller kameraoppdateringer og prøv igjen.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Spol %d sekunder fremover</item>
+        <item quantity="one">Spol %d sekund fremover</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Spol %d sekunder bakover</item>
+        <item quantity="one">Spol %d sekund bakover</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min</item>
         <item quantity="one">%1$d min</item>

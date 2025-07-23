@@ -1,4 +1,4 @@
-.class public interface abstract Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImpl;
+.class interface abstract Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImpl;
 .super Ljava/lang/Object;
 .source "MediaBrowserCompat.java"
 
@@ -35,6 +35,16 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mediaId",
+            "cb"
+        }
+    .end annotation
 .end method
 
 .method public abstract getNotifyChildrenChangedOptions()Landroid/os/Bundle;
@@ -67,6 +77,18 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "query",
+            "extras",
+            "callback"
+        }
+    .end annotation
 .end method
 
 .method public abstract sendCustomAction(Ljava/lang/String;Landroid/os/Bundle;Landroid/support/v4/media/MediaBrowserCompat$CustomActionCallback;)V
@@ -78,6 +100,18 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "action",
+            "extras",
+            "callback"
+        }
+    .end annotation
 .end method
 
 .method public abstract subscribe(Ljava/lang/String;Landroid/os/Bundle;Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)V
@@ -93,6 +127,18 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "parentId",
+            "options",
+            "callback"
+        }
+    .end annotation
 .end method
 
 .method public abstract unsubscribe(Ljava/lang/String;Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)V
@@ -100,4 +146,14 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parentId",
+            "callback"
+        }
+    .end annotation
 .end method

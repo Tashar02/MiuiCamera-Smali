@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
+.class final Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
 .super Ljava/lang/Object;
 .source "SizeStrategy.java"
 
@@ -23,7 +23,7 @@
 # instance fields
 .field private final pool:Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;
 
-.field public size:I
+.field size:I
 
 
 # direct methods
@@ -34,8 +34,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->pool:Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -47,22 +51,34 @@
     .line 1
     instance-of v0, p1, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 5
+    .line 6
     check-cast p1, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
 
-    .line 3
+    .line 7
+    .line 8
     iget p0, p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->size:I
 
+    .line 9
+    .line 10
     iget p1, p1, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->size:I
 
+    .line 11
+    .line 12
     if-ne p0, p1, :cond_0
 
+    .line 13
+    .line 14
     const/4 v1, 0x1
 
+    .line 15
     :cond_0
     return v1
 .end method
@@ -73,6 +89,8 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->size:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -82,6 +100,8 @@
     .line 1
     iput p1, p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->size:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -91,8 +111,13 @@
     .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->pool:Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BaseKeyPool;->offer(Lcom/bumptech/glide/load/engine/bitmap_recycle/Poolable;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -102,9 +127,15 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->size:I
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/SizeStrategy;->getBitmapString(I)Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method

@@ -664,6 +664,7 @@ avtomatik tərtib edin və artırın"</string>
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">Deyəsən, cihazınız Wi-Fi şəbəkəsinə qoşulmayıb. Elementləri indi endirmək üçün %1$s MB mobil trafik istifadə edilsin?</string>
     <string name="download_in_progress">Endirilir…</string>
+    <string name="download_network_error">Endirmək mümkün olmadı. Şəbəkə parametrlərinizi yoxlayın.</string>
     <string name="download_title">Trafik istifadəsi xəbərdarlığı</string>
     <string name="download_waiting">Gözlənilir…</string>
     <string name="dual_camera_lens_covered_toast">Linza örtülüdür.</string>
@@ -1478,6 +1479,7 @@ və insanları önə çıxarır."</string>
     <string name="pref_camera_peak_entry_off">Bağlı</string>
     <string name="pref_camera_peak_entry_on">Açıq</string>
     <string name="pref_camera_peak_title">Yüksək fokus</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Dolu</string>
     <string name="pref_camera_picturesize_title_simple_mode">Kamera çərçivəsi</string>
     <string name="pref_camera_portrait_mode_entry_off">Portret rejimi bağlıdır</string>
     <string name="pref_camera_portrait_mode_entry_on">Portret rejimi açıqdır</string>

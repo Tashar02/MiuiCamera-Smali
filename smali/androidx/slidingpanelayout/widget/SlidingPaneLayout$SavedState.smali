@@ -1,4 +1,4 @@
-.class public Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;
+.class Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;
 .super Landroidx/customview/view/AbsSavedState;
 .source "SlidingPaneLayout.java"
 
@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public isOpen:Z
+.field isOpen:Z
 
 
 # direct methods
@@ -37,10 +37,17 @@
     .line 1
     new-instance v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -88,9 +95,16 @@
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
+    .line 3
+    .line 4
     iget-boolean p0, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->isOpen:Z
 
+    .line 5
+    .line 6
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method

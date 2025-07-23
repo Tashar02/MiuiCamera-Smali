@@ -1,4 +1,4 @@
-.class public Lcom/ot/pubsub/h/a$b;
+.class Lcom/ot/pubsub/h/a$b;
 .super Ljava/lang/Object;
 
 
@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final a:Ljava/lang/String; = "protocol_ver"
+.field static final a:Ljava/lang/String; = "protocol_ver"
 
 
 # direct methods
@@ -24,5 +24,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

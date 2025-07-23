@@ -21,28 +21,42 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera2/CameraCapabilities;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "capabilities"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera2/SessionConfig;->mCapabilities:Lcom/android/camera2/CameraCapabilities;
 
-    .line 3
+    .line 5
+    .line 6
     new-instance p1, Ljava/util/HashMap;
 
+    .line 7
+    .line 8
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
+    .line 9
+    .line 10
+    .line 11
     iput-object p1, p0, Lcom/android/camera2/SessionConfig;->mSessionParameters:Ljava/util/Map;
 
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public static synthetic OooO00o(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/android/camera2/SessionConfig;->lambda$apply$0(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -51,75 +65,98 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "value"
-        }
-    .end annotation
-
+    .line 1
     if-eqz p1, :cond_0
 
+    .line 2
+    .line 3
     if-eqz p2, :cond_0
 
+    .line 4
+    .line 5
     return-void
 
-    .line 1
+    .line 6
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 7
+    .line 8
     const-string p1, "Both key and value are must not be null"
 
+    .line 9
+    .line 10
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 11
+    .line 12
+    .line 13
     throw p0
 .end method
 
-.method public static synthetic lambda$apply$0(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Object;Ljava/lang/Object;)V
+.method private static synthetic lambda$apply$0(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 1
 
     .line 1
     instance-of v0, p1, Lcom/android/camera2/vendortag/VendorTag;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     check-cast p1, Lcom/android/camera2/vendortag/VendorTag;
 
-    .line 3
+    .line 6
+    .line 7
     invoke-static {p0, p1, p2}, Lcom/android/camera2/vendortag/VendorTagHelper;->setValueSafely(Landroid/hardware/camera2/CaptureRequest$Builder;Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     goto :goto_0
 
-    .line 4
+    .line 11
     :cond_0
     instance-of v0, p1, Landroid/hardware/camera2/CaptureRequest$Key;
 
+    .line 12
+    .line 13
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 14
+    .line 15
     check-cast p1, Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 6
+    .line 16
+    .line 17
     invoke-virtual {p0, p1, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
+    .line 18
+    .line 19
+    .line 20
     goto :goto_0
 
-    .line 7
+    .line 21
     :cond_1
     instance-of v0, p1, Ljava/lang/String;
 
+    .line 22
+    .line 23
     if-eqz v0, :cond_2
 
-    .line 8
+    .line 24
+    .line 25
     check-cast p1, Ljava/lang/String;
 
+    .line 26
+    .line 27
     invoke-static {p0, p1, p2}, Lcom/android/camera/lib/compatibility/related/v30/V30Utils;->applySessionKey(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 28
+    .line 29
+    .line 30
     :cond_2
     :goto_0
     return-void
@@ -129,54 +166,51 @@
 # virtual methods
 .method public declared-synchronized apply(Landroid/hardware/camera2/CaptureRequest$Builder;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "builder"
-        }
-    .end annotation
-
-    monitor-enter p0
 
     .line 1
+    monitor-enter p0
+
+    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/android/camera2/SessionConfig;->mSessionParameters:Ljava/util/Map;
 
-    new-instance v1, LOooO0OO/OooO0O0/OooO0O0/o00O0000;
+    .line 3
+    .line 4
+    new-instance v1, Lcom/android/camera2/o0O0ooO;
 
-    invoke-direct {v1, p1}, LOooO0OO/OooO0O0/OooO0O0/o00O0000;-><init>(Landroid/hardware/camera2/CaptureRequest$Builder;)V
+    .line 5
+    .line 6
+    invoke-direct {v1, p1}, Lcom/android/camera2/o0O0ooO;-><init>(Landroid/hardware/camera2/CaptureRequest$Builder;)V
 
+    .line 7
+    .line 8
+    .line 9
     invoke-interface {v0, v1}, Ljava/util/Map;->forEach(Ljava/util/function/BiConsumer;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
+    .line 10
+    .line 11
+    .line 12
     monitor-exit p0
 
+    .line 13
     return-void
 
+    .line 14
     :catchall_0
     move-exception p1
 
+    .line 15
     monitor-exit p0
 
+    .line 16
     throw p1
 .end method
 
 .method public declared-synchronized get(Landroid/hardware/camera2/CaptureRequest$Key;)Ljava/lang/Object;
     .locals 1
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -215,15 +249,6 @@
 
 .method public declared-synchronized get(Lcom/android/camera2/vendortag/VendorTag;)Ljava/lang/Object;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -264,15 +289,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -310,43 +326,41 @@
 .method public declared-synchronized reset()V
     .locals 1
 
+    .line 1
     monitor-enter p0
 
-    .line 1
+    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/android/camera2/SessionConfig;->mSessionParameters:Ljava/util/Map;
 
+    .line 3
+    .line 4
     invoke-interface {v0}, Ljava/util/Map;->clear()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
+    .line 5
+    .line 6
+    .line 7
     monitor-exit p0
 
+    .line 8
     return-void
 
+    .line 9
     :catchall_0
     move-exception v0
 
+    .line 10
     monitor-exit p0
 
+    .line 11
     throw v0
 .end method
 
 .method public declared-synchronized set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
     .locals 2
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "value"
-        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -401,17 +415,6 @@
 
 .method public declared-synchronized set(Lcom/android/camera2/vendortag/VendorTag;Ljava/lang/Object;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "value"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -465,17 +468,6 @@
 
 .method public declared-synchronized set(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "value"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

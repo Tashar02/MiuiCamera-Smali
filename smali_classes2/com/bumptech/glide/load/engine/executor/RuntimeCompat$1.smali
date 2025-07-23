@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/engine/executor/RuntimeCompat$1;
+.class final Lcom/bumptech/glide/load/engine/executor/RuntimeCompat$1;
 .super Ljava/lang/Object;
 .source "RuntimeCompat.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic val$cpuNamePattern:Ljava/util/regex/Pattern;
+.field final synthetic val$cpuNamePattern:Ljava/util/regex/Pattern;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/executor/RuntimeCompat$1;->val$cpuNamePattern:Ljava/util/regex/Pattern;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,13 +46,23 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/engine/executor/RuntimeCompat$1;->val$cpuNamePattern:Ljava/util/regex/Pattern;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->matches()Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result p0
 
+    .line 11
     return p0
 .end method

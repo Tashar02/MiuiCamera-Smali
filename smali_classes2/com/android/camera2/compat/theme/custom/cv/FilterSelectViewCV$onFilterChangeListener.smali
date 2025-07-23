@@ -19,16 +19,6 @@
 .end method
 
 .method public abstract onFilterItemChange(IZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "newIndex",
-            "fromUserClick"
-        }
-    .end annotation
 .end method
 
 .method public abstract setAccessibleWhenStateIdle()V

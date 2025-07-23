@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/resource/bitmap/TransformationUtils$1;
+.class final Lcom/bumptech/glide/load/resource/bitmap/TransformationUtils$1;
 .super Ljava/lang/Object;
 .source "TransformationUtils.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic val$roundingRadius:I
+.field final synthetic val$roundingRadius:I
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput p1, p0, Lcom/bumptech/glide/load/resource/bitmap/TransformationUtils$1;->val$roundingRadius:I
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,11 +46,18 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/load/resource/bitmap/TransformationUtils$1;->val$roundingRadius:I
 
+    .line 2
+    .line 3
     int-to-float v0, p0
 
+    .line 4
     int-to-float p0, p0
 
+    .line 5
     invoke-virtual {p1, p3, v0, p0, p2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

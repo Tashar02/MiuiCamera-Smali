@@ -16,16 +16,6 @@
 
 # virtual methods
 .method public abstract startScreenLight(II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "color",
-            "brightness"
-        }
-    .end annotation
 .end method
 
 .method public abstract stopScreenLight()V

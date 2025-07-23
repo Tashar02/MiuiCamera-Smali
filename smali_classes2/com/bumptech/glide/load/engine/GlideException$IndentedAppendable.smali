@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/engine/GlideException$IndentedAppendable;
+.class final Lcom/bumptech/glide/load/engine/GlideException$IndentedAppendable;
 .super Ljava/lang/Object;
 .source "GlideException.java"
 
@@ -36,14 +36,20 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x1
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/bumptech/glide/load/engine/GlideException$IndentedAppendable;->printedNewLine:Z
 
-    .line 3
+    .line 6
+    .line 7
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/GlideException$IndentedAppendable;->appendable:Ljava/lang/Appendable;
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -56,12 +62,18 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
+    .line 1
     if-nez p1, :cond_0
 
+    .line 2
+    .line 3
     const-string p0, ""
 
+    .line 4
+    .line 5
     return-object p0
 
+    .line 6
     :cond_0
     return-object p1
 .end method

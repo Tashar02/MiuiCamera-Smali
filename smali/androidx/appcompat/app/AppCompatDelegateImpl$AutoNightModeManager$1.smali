@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager$1;
+.class Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager$1;
 .super Landroid/content/BroadcastReceiver;
 .source "AppCompatDelegateImpl.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$1:Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager;
+.field final synthetic this$1:Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager$1;->this$1:Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -38,7 +43,12 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager$1;->this$1:Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatDelegateImpl$AutoNightModeManager;->onChange()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

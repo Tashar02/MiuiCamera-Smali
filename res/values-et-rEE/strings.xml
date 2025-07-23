@@ -664,6 +664,7 @@ skannitud dokumente automaatselt"</string>
     <string name="download_hint_cn">Näib, et teie seade pole WLAN-iga ühendatud. Kas kasutada üksuste allalaadimiseks kohe %1$s MB mobiilandmeid?</string>
     <string name="download_hint_wifi">Näib, et teie seade pole Wi-Fi-iga ühendatud. Kas kasutada üksuste allalaadimiseks kohe %1$s MB mobiilandmeid?</string>
     <string name="download_in_progress">Allalaadimine…</string>
+    <string name="download_network_error">Ei saanud alla laadida. Kontrollige oma võrguseadeid.</string>
     <string name="download_title">Andmekasutus hoiatus</string>
     <string name="download_waiting">Ootel…</string>
     <string name="dual_camera_lens_covered_toast">Objektiiv on kaetud.</string>
@@ -1478,6 +1479,7 @@ Hoia pildistatav teravana, samal ajal hägustades tausta."</string>
     <string name="pref_camera_peak_entry_off">Väljas</string>
     <string name="pref_camera_peak_entry_on">Sees</string>
     <string name="pref_camera_peak_title">Fokusseerimis rõhutus</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Täis</string>
     <string name="pref_camera_picturesize_title_simple_mode">Kaamera raam</string>
     <string name="pref_camera_portrait_mode_entry_off">Portreerežiim on väljas</string>
     <string name="pref_camera_portrait_mode_entry_on">Portreerežiim on sees</string>

@@ -35,35 +35,28 @@
 # direct methods
 .method public constructor <init>(IZZI)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "visibility",
-            "suppress",
-            "immersive",
-            "useSliderType"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera/ui/zoom/ZoomRatioToggleView$ViewSpec;->visibility:I
 
-    .line 3
+    .line 5
+    .line 6
     iput-boolean p2, p0, Lcom/android/camera/ui/zoom/ZoomRatioToggleView$ViewSpec;->suppress:Z
 
-    .line 4
+    .line 7
+    .line 8
     iput-boolean p3, p0, Lcom/android/camera/ui/zoom/ZoomRatioToggleView$ViewSpec;->immersive:Z
 
-    .line 5
+    .line 9
+    .line 10
     iput p4, p0, Lcom/android/camera/ui/zoom/ZoomRatioToggleView$ViewSpec;->useSliderType:I
 
+    .line 11
+    .line 12
     return-void
 .end method

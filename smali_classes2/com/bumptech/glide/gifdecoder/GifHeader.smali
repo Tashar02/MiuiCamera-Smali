@@ -10,18 +10,18 @@
 
 
 # instance fields
-.field public bgColor:I
+.field bgColor:I
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 .end field
 
-.field public bgIndex:I
+.field bgIndex:I
 
-.field public currentFrame:Lcom/bumptech/glide/gifdecoder/GifFrame;
+.field currentFrame:Lcom/bumptech/glide/gifdecoder/GifFrame;
 
-.field public frameCount:I
+.field frameCount:I
 
-.field public final frames:Ljava/util/List;
+.field final frames:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -31,24 +31,24 @@
     .end annotation
 .end field
 
-.field public gct:[I
+.field gct:[I
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 .end field
 
-.field public gctFlag:Z
+.field gctFlag:Z
 
-.field public gctSize:I
+.field gctSize:I
 
-.field public height:I
+.field height:I
 
-.field public loopCount:I
+.field loopCount:I
 
-.field public pixelAspect:I
+.field pixelAspect:I
 
-.field public status:I
+.field status:I
 
-.field public width:I
+.field width:I
 
 
 # direct methods
@@ -58,31 +58,47 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput-object v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->gct:[I
-
-    const/4 v0, 0x0
-
     .line 3
-    iput v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->status:I
-
     .line 4
-    iput v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->frameCount:I
+    const/4 v0, 0x0
 
     .line 5
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->frames:Ljava/util/List;
-
-    const/4 v0, -0x1
+    iput-object v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->gct:[I
 
     .line 6
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    iput v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->status:I
+
+    .line 9
+    .line 10
+    iput v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->frameCount:I
+
+    .line 11
+    .line 12
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 13
+    .line 14
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->frames:Ljava/util/List;
+
+    .line 18
+    .line 19
+    const/4 v0, -0x1
+
+    .line 20
     iput v0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->loopCount:I
 
+    .line 21
+    .line 22
     return-void
 .end method
 
@@ -94,6 +110,8 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->height:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -103,6 +121,8 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->frameCount:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -112,6 +132,8 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->status:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -121,5 +143,7 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/gifdecoder/GifHeader;->width:I
 
+    .line 2
+    .line 3
     return p0
 .end method

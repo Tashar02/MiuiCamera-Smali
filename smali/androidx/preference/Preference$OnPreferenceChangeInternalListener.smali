@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/preference/Preference$OnPreferenceChangeInternalListener;
+.class interface abstract Landroidx/preference/Preference$OnPreferenceChangeInternalListener;
 .super Ljava/lang/Object;
 .source "Preference.java"
 

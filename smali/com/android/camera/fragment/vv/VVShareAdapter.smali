@@ -38,23 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/PackageManager;Ljava/util/List;Landroid/view/View$OnClickListener;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "packageManager",
-            "infoList",
-            "onClickListener",
-            "itemWidth"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,165 +55,258 @@
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p2, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mPackageManager:Landroid/content/pm/PackageManager;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p3, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mShareInfoList:Ljava/util/List;
 
-    .line 4
+    .line 7
+    .line 8
     iput-object p4, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    .line 5
+    .line 9
+    .line 10
     iput p5, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mItemWidth:I
 
-    .line 6
+    .line 11
+    .line 12
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 13
+    .line 14
+    .line 15
     move-result-object p2
 
+    .line 16
     invoke-virtual {p2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object p2
 
+    .line 20
     iget p2, p2, Landroid/content/res/Configuration;->fontScale:F
 
+    .line 21
+    .line 22
     const/high16 p3, 0x3f800000    # 1.0f
 
+    .line 23
+    .line 24
     cmpl-float p2, p2, p3
 
+    .line 25
+    .line 26
     if-lez p2, :cond_0
 
+    .line 27
+    .line 28
     const/4 p2, 0x1
 
+    .line 29
     goto :goto_0
 
+    .line 30
     :cond_0
     const/4 p2, 0x0
 
-    .line 7
+    .line 31
     :goto_0
     iput-boolean p2, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mNeedMarquee:Z
 
-    .line 8
+    .line 32
+    .line 33
     invoke-static {p1}, Lcom/android/camera/fragment/vv/VVShareAdapter;->getItemTextHeight(Landroid/content/Context;)I
 
+    .line 34
+    .line 35
+    .line 36
     move-result p1
 
+    .line 37
     iput p1, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mItemTextHeight:I
 
+    .line 38
+    .line 39
+    return-void
+.end method
+
+.method public static synthetic OooO00o(Landroid/widget/TextView;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/android/camera/fragment/vv/VVShareAdapter;->lambda$onBindViewHolder$0(Landroid/widget/TextView;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public static getItemTextHeight(Landroid/content/Context;)I
     .locals 5
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Landroid/graphics/Paint;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object v1
 
-    const v2, 0x7f070a82
+    .line 10
+    const v2, 0x7f070aa3
 
+    .line 11
+    .line 12
+    .line 13
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
+    .line 14
+    .line 15
+    .line 16
     move-result v1
 
-    .line 3
+    .line 17
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    const v1, 0x7f1204d0
+    .line 18
+    .line 19
+    .line 20
+    const v1, 0x7f13050b
 
-    .line 4
+    .line 21
+    .line 22
+    .line 23
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 24
+    .line 25
+    .line 26
     move-result-object v1
 
-    .line 5
+    .line 27
     new-instance v2, Landroid/graphics/Rect;
 
+    .line 28
+    .line 29
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 6
+    .line 30
+    .line 31
+    .line 32
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
+    .line 33
+    .line 34
+    .line 35
     move-result v3
 
+    .line 36
     const/4 v4, 0x0
 
+    .line 37
     invoke-virtual {v0, v1, v4, v3, v2}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 7
+    .line 38
+    .line 39
+    .line 40
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
+    .line 41
+    .line 42
+    .line 43
     move-result v0
 
+    .line 44
     int-to-double v0, v0
 
+    .line 45
     const-wide v2, 0x400999999999999aL    # 3.2
 
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
     mul-double/2addr v0, v2
 
+    .line 51
     double-to-int v0, v0
 
-    .line 8
+    .line 52
     invoke-static {p0}, Lcom/android/camera/fragment/vv/VVShareAdapter;->getItemTextMinHeight(Landroid/content/Context;)I
 
+    .line 53
+    .line 54
+    .line 55
     move-result p0
 
-    .line 9
+    .line 56
     invoke-static {v0, p0}, Ljava/lang/Math;->max(II)I
 
+    .line 57
+    .line 58
+    .line 59
     move-result p0
 
+    .line 60
     return p0
 .end method
 
 .method public static getItemTextMinHeight(Landroid/content/Context;)I
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
-    const v0, 0x7f070a7f
+    .line 5
+    const v0, 0x7f070aa0
 
+    .line 6
+    .line 7
+    .line 8
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     return p0
 .end method
 
-.method public static synthetic lambda$onBindViewHolder$0(Landroid/widget/TextView;)V
+.method private static synthetic lambda$onBindViewHolder$0(Landroid/widget/TextView;)V
     .locals 1
 
+    .line 1
     const/4 v0, 0x1
 
-    .line 1
+    .line 2
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setSelected(Z)V
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -242,25 +318,21 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mShareInfoList:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -272,16 +344,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     iget-object v0, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mShareInfoList:Ljava/util/List;
@@ -304,7 +366,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a02e9
+    const v0, 0x7f0b0321
 
     .line 5
     invoke-virtual {p1, v0}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -313,7 +375,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    const v1, 0x7f0a02ed
+    const v1, 0x7f0b0325
 
     .line 6
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -323,7 +385,7 @@
     check-cast p1, Landroid/widget/TextView;
 
     .line 7
-    invoke-virtual {p1}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
@@ -365,11 +427,11 @@
     invoke-virtual {p1, p0}, Landroid/widget/TextView;->setSingleLine(Z)V
 
     .line 13
-    new-instance p0, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO00oO00/o00oO0o;
+    new-instance p0, Lcom/android/camera/fragment/vv/o00oO0o;
 
-    invoke-direct {p0, p1}, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO00oO00/o00oO0o;-><init>(Landroid/widget/TextView;)V
+    invoke-direct {p0, p1}, Lcom/android/camera/fragment/vv/o00oO0o;-><init>(Landroid/widget/TextView;)V
 
-    invoke-virtual {p1, p0}, Landroid/widget/TextView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p1, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
@@ -393,16 +455,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/vv/VVShareAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -414,19 +466,9 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -434,7 +476,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0d0107
+    const v0, 0x7f0e0111
 
     const/4 v1, 0x0
 
@@ -471,15 +513,6 @@
 
 .method public setShareInfoList(Ljava/util/List;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "shareInfoList"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -492,5 +525,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vv/VVShareAdapter;->mShareInfoList:Ljava/util/List;
 
+    .line 2
+    .line 3
     return-void
 .end method

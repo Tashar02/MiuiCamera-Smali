@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/arch/core/internal/SafeIterableMap$SupportRemove;
+.class interface abstract Landroidx/arch/core/internal/SafeIterableMap$SupportRemove;
 .super Ljava/lang/Object;
 .source "SafeIterableMap.java"
 

@@ -83,5 +83,7 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/load/HttpException;->statusCode:I
 
+    .line 2
+    .line 3
     return p0
 .end method

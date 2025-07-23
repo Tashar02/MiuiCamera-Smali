@@ -1,4 +1,4 @@
-.class public Landroidx/lifecycle/SavedStateHandleController$1;
+.class Landroidx/lifecycle/SavedStateHandleController$1;
 .super Ljava/lang/Object;
 .source "SavedStateHandleController.java"
 
@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic val$lifecycle:Landroidx/lifecycle/Lifecycle;
+.field final synthetic val$lifecycle:Landroidx/lifecycle/Lifecycle;
 
-.field public final synthetic val$registry:Landroidx/savedstate/SavedStateRegistry;
+.field final synthetic val$registry:Landroidx/savedstate/SavedStateRegistry;
 
 
 # direct methods
@@ -40,10 +40,17 @@
     .line 1
     iput-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->val$lifecycle:Landroidx/lifecycle/Lifecycle;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/lifecycle/SavedStateHandleController$1;->val$registry:Landroidx/savedstate/SavedStateRegistry;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -73,20 +80,34 @@
     .line 1
     sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
 
+    .line 2
+    .line 3
     if-ne p2, p1, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     iget-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->val$lifecycle:Landroidx/lifecycle/Lifecycle;
 
+    .line 6
+    .line 7
     invoke-virtual {p1, p0}, Landroidx/lifecycle/Lifecycle;->removeObserver(Landroidx/lifecycle/LifecycleObserver;)V
 
-    .line 3
+    .line 8
+    .line 9
+    .line 10
     iget-object p0, p0, Landroidx/lifecycle/SavedStateHandleController$1;->val$registry:Landroidx/savedstate/SavedStateRegistry;
 
+    .line 11
+    .line 12
     const-class p1, Landroidx/lifecycle/SavedStateHandleController$OnRecreation;
 
+    .line 13
+    .line 14
     invoke-virtual {p0, p1}, Landroidx/savedstate/SavedStateRegistry;->runOnNextRecreation(Ljava/lang/Class;)V
 
+    .line 15
+    .line 16
+    .line 17
     :cond_0
     return-void
 .end method

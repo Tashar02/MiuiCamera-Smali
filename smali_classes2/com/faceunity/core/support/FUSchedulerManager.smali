@@ -4,43 +4,45 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/faceunity/core/support/FUSchedulerManager$OrdinaryTaskCallback;,
+        Lcom/faceunity/core/support/FUSchedulerManager$OrdinaryTask;,
+        Lcom/faceunity/core/support/FUSchedulerManager$Companion;
     }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000?\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0008\u0007*\u0001\n\u0018\u0000 \u001b2\u00020\u0001:\u0003\u001b\u001c\u001dB\t\u0008\u0002\u00a2\u0006\u0004\u0008\u001a\u0010\u0004J\u000f\u0010\u0003\u001a\u00020\u0002H\u0002\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u001b\u0010\u0007\u001a\u00020\u00022\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0005\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u001b\u0010\t\u001a\u00020\u00022\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0005\u00a2\u0006\u0004\u0008\t\u0010\u0008R\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u000b\u0010\u000cR\u0016\u0010\u000e\u001a\u00020\r8\u0002@\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u000e\u0010\u000fR\u0016\u0010\u0011\u001a\u00020\u00108\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0011\u0010\u0012R\u0016\u0010\u0013\u001a\u00020\r8\u0002@\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0013\u0010\u000fR\u0016\u0010\u0015\u001a\u00020\u00148\u0002@\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0015\u0010\u0016R\"\u0010\u0018\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00020\u00050\u00178\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0018\u0010\u0019\u00a8\u0006\u001e"
+        "\u0000=\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0008\t*\u0001\u0015\u0018\u0000 \u001a2\u00020\u0001:\u0003\u001a\u001b\u001cB\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0018\u0010\u0019J\u0008\u0010\u0003\u001a\u00020\u0002H\u0002J\u0014\u0010\u0006\u001a\u00020\u00022\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0004J\u0014\u0010\u0007\u001a\u00020\u00022\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0004R\u0014\u0010\t\u001a\u00020\u00088\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\t\u0010\nR\"\u0010\u000c\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00020\u00040\u000b8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u000c\u0010\rR\u0016\u0010\u000f\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u000f\u0010\u0010R\u0014\u0010\u0012\u001a\u00020\u00118\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0012\u0010\u0013R\u0014\u0010\u0014\u001a\u00020\u00118\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0014\u0010\u0013R\u0014\u0010\u0016\u001a\u00020\u00158\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0016\u0010\u0017\u00a8\u0006\u001d"
     }
     d2 = {
         "Lcom/faceunity/core/support/FUSchedulerManager;",
         "",
-        "LOooO0o/o00OOOOo;",
+        "Lo000Oo0O/oo00oO;",
         "scheduleNext",
-        "()V",
         "Lkotlin/Function0;",
         "unit",
         "executeGLEvent",
-        "(LOooO0o/o00ooOoO/o000O00/OooO00o;)V",
         "addOrdinaryEvent",
-        "com/faceunity/core/support/FUSchedulerManager$mOrdinaryTaskCallback$1",
-        "mOrdinaryTaskCallback",
-        "Lcom/faceunity/core/support/FUSchedulerManager$mOrdinaryTaskCallback$1;",
-        "Ljava/lang/Object;",
-        "mTaskLock",
-        "Ljava/lang/Object;",
-        "",
-        "mOrdinaryTaskStatus",
-        "Z",
-        "mAddOrdinaryLock",
         "Lcom/faceunity/toolbox/async/FUSerialScheduler;",
         "mSerialScheduler",
         "Lcom/faceunity/toolbox/async/FUSerialScheduler;",
         "",
         "mOrdinaryEventQueue",
         "Ljava/util/List;",
+        "",
+        "mOrdinaryTaskStatus",
+        "Z",
+        "Ljava/lang/Object;",
+        "mTaskLock",
+        "Ljava/lang/Object;",
+        "mAddOrdinaryLock",
+        "com/faceunity/core/support/FUSchedulerManager$mOrdinaryTaskCallback$1",
+        "mOrdinaryTaskCallback",
+        "Lcom/faceunity/core/support/FUSchedulerManager$mOrdinaryTaskCallback$1;",
         "<init>",
+        "()V",
         "Companion",
         "OrdinaryTask",
         "OrdinaryTaskCallback",
@@ -54,25 +56,17 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/faceunity/core/support/FUSchedulerManager$OrdinaryTaskCallback;,
-        Lcom/faceunity/core/support/FUSchedulerManager$OrdinaryTask;,
-        Lcom/faceunity/core/support/FUSchedulerManager$Companion;
-    }
-.end annotation
-
 
 # static fields
 .field public static final Companion:Lcom/faceunity/core/support/FUSchedulerManager$Companion;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
 .field private static volatile INSTANCE:Lcom/faceunity/core/support/FUSchedulerManager; = null
 
 .field public static final TAG:Ljava/lang/String; = "KIT_FURenderBridge"
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
@@ -84,8 +78,8 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LOooO0o/o00ooOoO/o000O00/OooO00o<",
-            "LOooO0o/o00OOOOo;",
+            "Lo000oo00/OooOo00<",
+            "Lo000Oo0O/oo00oO;",
             ">;>;"
         }
     .end annotation
@@ -104,14 +98,23 @@
 .method public static constructor <clinit>()V
     .locals 2
 
+    .line 1
     new-instance v0, Lcom/faceunity/core/support/FUSchedulerManager$Companion;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/faceunity/core/support/FUSchedulerManager$Companion;-><init>(LOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    .line 4
+    invoke-direct {v0, v1}, Lcom/faceunity/core/support/FUSchedulerManager$Companion;-><init>(Lo000oo0/o0O0O00;)V
 
+    .line 5
+    .line 6
+    .line 7
     sput-object v0, Lcom/faceunity/core/support/FUSchedulerManager;->Companion:Lcom/faceunity/core/support/FUSchedulerManager$Companion;
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -141,7 +144,7 @@
 
     const-string v1, "Collections.synchronized\u2026rrayList<() -> Unit>(16))"
 
-    invoke-static {v0, v1}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOO(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lo000oo0/o0000O;->OooOOOO(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object v0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryEventQueue:Ljava/util/List;
 
@@ -169,7 +172,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(LOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+.method public synthetic constructor <init>(Lo000oo0/o0O0O00;)V
     .locals 0
 
     .line 7
@@ -184,6 +187,8 @@
     .line 1
     sget-object v0, Lcom/faceunity/core/support/FUSchedulerManager;->INSTANCE:Lcom/faceunity/core/support/FUSchedulerManager;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -193,6 +198,8 @@
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mAddOrdinaryLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -202,6 +209,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryTaskStatus:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -211,6 +220,9 @@
     .line 1
     invoke-direct {p0}, Lcom/faceunity/core/support/FUSchedulerManager;->scheduleNext()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -220,6 +232,8 @@
     .line 1
     sput-object p0, Lcom/faceunity/core/support/FUSchedulerManager;->INSTANCE:Lcom/faceunity/core/support/FUSchedulerManager;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -229,23 +243,32 @@
     .line 1
     iput-boolean p1, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryTaskStatus:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public static final getInstance$lib_core_release()Lcom/faceunity/core/support/FUSchedulerManager;
     .locals 1
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation runtime Lo000oOoo/o000OO00;
     .end annotation
 
-    .annotation runtime LOooO0o/o00ooOoO/o0000O00;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
+    .line 1
     sget-object v0, Lcom/faceunity/core/support/FUSchedulerManager;->Companion:Lcom/faceunity/core/support/FUSchedulerManager$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/faceunity/core/support/FUSchedulerManager$Companion;->getInstance$lib_core_release()Lcom/faceunity/core/support/FUSchedulerManager;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     return-object v0
 .end method
 
@@ -255,64 +278,102 @@
     .line 1
     iget-boolean v0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryTaskStatus:Z
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
+    .line 4
+    .line 5
     iget-object v0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryEventQueue:Ljava/util/List;
 
+    .line 6
+    .line 7
     invoke-interface {v0}, Ljava/util/List;->size()I
 
+    .line 8
+    .line 9
+    .line 10
     move-result v0
 
+    .line 11
     if-lez v0, :cond_0
 
+    .line 12
+    .line 13
     const/4 v0, 0x1
 
-    .line 2
+    .line 14
     iput-boolean v0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryTaskStatus:Z
 
-    .line 3
+    .line 15
+    .line 16
     iget-object v0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryEventQueue:Ljava/util/List;
 
+    .line 17
+    .line 18
     const/4 v1, 0x0
 
+    .line 19
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object v0
 
-    check-cast v0, LOooO0o/o00ooOoO/o000O00/OooO00o;
+    .line 23
+    check-cast v0, Lo000oo00/OooOo00;
 
-    .line 4
+    .line 24
+    .line 25
     iget-object v1, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mTaskLock:Ljava/lang/Object;
 
+    .line 26
+    .line 27
     monitor-enter v1
 
-    .line 5
+    .line 28
     :try_start_0
     iget-object v2, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mSerialScheduler:Lcom/faceunity/toolbox/async/FUSerialScheduler;
 
+    .line 29
+    .line 30
     new-instance v3, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;
 
-    invoke-direct {v3, p0, v0}, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;-><init>(Lcom/faceunity/core/support/FUSchedulerManager;LOooO0o/o00ooOoO/o000O00/OooO00o;)V
+    .line 31
+    .line 32
+    invoke-direct {v3, p0, v0}, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;-><init>(Lcom/faceunity/core/support/FUSchedulerManager;Lo000oo00/OooOo00;)V
 
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {v2, v3}, Lcom/faceunity/toolbox/async/FUSerialScheduler;->execute(Ljava/lang/Runnable;)V
 
-    .line 6
-    sget-object p0, LOooO0o/o00OOOOo;->OooO00o:LOooO0o/o00OOOOo;
+    .line 36
+    .line 37
+    .line 38
+    sget-object p0, Lo000Oo0O/oo00oO;->OooO00o:Lo000Oo0O/oo00oO;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
+    .line 39
+    .line 40
     monitor-exit v1
 
+    .line 41
     goto :goto_0
 
+    .line 42
     :catchall_0
     move-exception p0
 
+    .line 43
     monitor-exit v1
 
+    .line 44
     throw p0
 
+    .line 45
     :cond_0
     :goto_0
     return-void
@@ -320,99 +381,133 @@
 
 
 # virtual methods
-.method public final addOrdinaryEvent(LOooO0o/o00ooOoO/o000O00/OooO00o;)V
+.method public final addOrdinaryEvent(Lo000oo00/OooOo00;)V
     .locals 2
-    .param p1    # LOooO0o/o00ooOoO/o000O00/OooO00o;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .param p1    # Lo000oo00/OooOo00;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LOooO0o/o00ooOoO/o000O00/OooO00o<",
-            "LOooO0o/o00OOOOo;",
+            "Lo000oo00/OooOo00<",
+            "Lo000Oo0O/oo00oO;",
             ">;)V"
         }
     .end annotation
 
-    const-string v0, "unit"
-
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    iget-object v0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mAddOrdinaryLock:Ljava/lang/Object;
-
-    monitor-enter v0
+    const-string/jumbo v0, "unit"
 
     .line 2
+    .line 3
+    .line 4
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mAddOrdinaryLock:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    monitor-enter v0
+
+    .line 10
     :try_start_0
     iget-object v1, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mOrdinaryEventQueue:Ljava/util/List;
 
+    .line 11
+    .line 12
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 3
+    .line 13
+    .line 14
+    .line 15
     invoke-direct {p0}, Lcom/faceunity/core/support/FUSchedulerManager;->scheduleNext()V
 
-    .line 4
-    sget-object p0, LOooO0o/o00OOOOo;->OooO00o:LOooO0o/o00OOOOo;
+    .line 16
+    .line 17
+    .line 18
+    sget-object p0, Lo000Oo0O/oo00oO;->OooO00o:Lo000Oo0O/oo00oO;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
+    .line 19
+    .line 20
     monitor-exit v0
 
+    .line 21
     return-void
 
+    .line 22
     :catchall_0
     move-exception p0
 
+    .line 23
     monitor-exit v0
 
+    .line 24
     throw p0
 .end method
 
-.method public final executeGLEvent(LOooO0o/o00ooOoO/o000O00/OooO00o;)V
+.method public final executeGLEvent(Lo000oo00/OooOo00;)V
     .locals 1
-    .param p1    # LOooO0o/o00ooOoO/o000O00/OooO00o;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .param p1    # Lo000oo00/OooOo00;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LOooO0o/o00ooOoO/o000O00/OooO00o<",
-            "LOooO0o/o00OOOOo;",
+            "Lo000oo00/OooOo00<",
+            "Lo000Oo0O/oo00oO;",
             ">;)V"
         }
     .end annotation
 
-    const-string v0, "unit"
-
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    iget-object p0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mTaskLock:Ljava/lang/Object;
-
-    monitor-enter p0
+    const-string/jumbo v0, "unit"
 
     .line 2
-    :try_start_0
-    invoke-interface {p1}, LOooO0o/o00ooOoO/o000O00/OooO00o;->invoke()Ljava/lang/Object;
-
     .line 3
-    sget-object p1, LOooO0o/o00OOOOo;->OooO00o:LOooO0o/o00OOOOo;
+    .line 4
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p0, p0, Lcom/faceunity/core/support/FUSchedulerManager;->mTaskLock:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    monitor-enter p0
+
+    .line 10
+    :try_start_0
+    invoke-interface {p1}, Lo000oo00/OooOo00;->invoke()Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    sget-object p1, Lo000Oo0O/oo00oO;->OooO00o:Lo000Oo0O/oo00oO;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
+    .line 14
+    .line 15
     monitor-exit p0
 
+    .line 16
     return-void
 
+    .line 17
     :catchall_0
     move-exception p1
 
+    .line 18
     monitor-exit p0
 
+    .line 19
     throw p1
 .end method

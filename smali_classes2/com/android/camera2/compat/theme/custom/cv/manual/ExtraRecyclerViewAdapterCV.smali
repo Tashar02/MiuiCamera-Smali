@@ -9,23 +9,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "componentData",
-            "currentMode",
-            "manuallyListener",
-            "itemWidth",
-            "degree"
-        }
-    .end annotation
-
     .line 1
     invoke-direct/range {p0 .. p5}, Lcom/android/camera/fragment/manually/adapter/ExtraRecyclerViewAdapter;-><init>(Lcom/android/camera/data/data/ComponentData;ILcom/android/camera/fragment/manually/ManuallyListener;II)V
 
@@ -34,24 +17,6 @@
 
 .method public constructor <init>(Lcom/android/camera/fragment/BaseFragment;Lcom/android/camera/data/data/ComponentData;ILcom/android/camera/fragment/manually/ManuallyListener;II)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "baseFragment",
-            "componentData",
-            "currentMode",
-            "manuallyListener",
-            "itemWidth",
-            "degree"
-        }
-    .end annotation
 
     .line 2
     invoke-direct/range {p0 .. p6}, Lcom/android/camera/fragment/manually/adapter/ExtraRecyclerViewAdapter;-><init>(Lcom/android/camera/fragment/BaseFragment;Lcom/android/camera/data/data/ComponentData;ILcom/android/camera/fragment/manually/ManuallyListener;II)V
@@ -63,16 +28,6 @@
 # virtual methods
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -84,16 +39,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     iget-object v0, p0, Lcom/android/camera/fragment/manually/adapter/ExtraRecyclerViewAdapter;->mComponentData:Lcom/android/camera/data/data/ComponentData;
@@ -161,7 +106,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setRotation(F)V
 
-    const v1, 0x7f0a01ec
+    const v1, 0x7f0b021d
 
     .line 10
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -170,7 +115,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a01eb
+    const v2, 0x7f0b021c
 
     .line 11
     invoke-virtual {p1, v2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -199,7 +144,7 @@
     .line 15
     iget v4, p2, Lcom/android/camera/data/data/ComponentDataItem;->mIconShadowRes:I
 
-    invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+    invoke-virtual {v2, v4}, Landroid/view/View;->setBackgroundResource(I)V
 
     goto :goto_0
 
@@ -214,7 +159,7 @@
     if-eq v2, v6, :cond_1
 
     .line 18
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 19
     iget v2, p2, Lcom/android/camera/data/data/ComponentDataItem;->mDisplayNameRes:I
@@ -225,7 +170,7 @@
 
     .line 20
     :cond_1
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 21
     :goto_1
@@ -274,16 +219,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera2/compat/theme/custom/cv/manual/ExtraRecyclerViewAdapterCV;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -295,19 +230,9 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -315,7 +240,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0d00ba
+    const v0, 0x7f0e00c4
 
     const/4 v1, 0x0
 
@@ -343,32 +268,38 @@
 
 .method public updateItemSelectState(Lcom/android/camera/fragment/CommonRecyclerViewHolder;Ljava/lang/Boolean;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "isSelect"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v0, 0x7f0802fa
+    .line 2
+    .line 3
+    const v0, 0x7f08034a
 
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0, v0}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 2
+    .line 7
+    .line 8
+    .line 9
     iget-object p0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
+    .line 10
+    .line 11
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 12
+    .line 13
+    .line 14
     move-result p1
 
+    .line 15
     invoke-virtual {p0, p1}, Landroid/view/View;->setActivated(Z)V
 
+    .line 16
+    .line 17
+    .line 18
     return-void
 .end method

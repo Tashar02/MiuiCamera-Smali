@@ -51,6 +51,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -87,8 +90,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -100,8 +105,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -113,6 +120,7 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -125,8 +133,10 @@
 .method public getElevation()F
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -136,8 +146,10 @@
 .method public getHideOffset()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -182,8 +194,10 @@
 .method public getThemedContext()Landroid/content/Context;
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
@@ -203,16 +217,20 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public isHideOnContentScrollEnabled()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -227,8 +245,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -245,12 +265,14 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onDestroy()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -262,8 +284,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -275,8 +299,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -288,8 +314,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -319,8 +347,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -353,6 +383,7 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -380,58 +411,91 @@
 .method public setElevation(F)V
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     cmpl-float p0, p1, p0
 
+    .line 3
+    .line 4
     if-nez p0, :cond_0
 
+    .line 5
+    .line 6
     return-void
 
-    .line 1
+    .line 7
     :cond_0
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 8
+    .line 9
     const-string p1, "Setting a non-zero elevation is not supported in this action bar configuration."
 
+    .line 10
+    .line 11
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 12
+    .line 13
+    .line 14
     throw p0
 .end method
 
 .method public setHideOffset(I)V
     .locals 0
 
+    .line 1
     if-nez p1, :cond_0
 
+    .line 2
+    .line 3
     return-void
 
-    .line 1
+    .line 4
     :cond_0
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 5
+    .line 6
     const-string p1, "Setting an explicit action bar hide offset is not supported in this action bar configuration."
 
+    .line 7
+    .line 8
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 9
+    .line 10
+    .line 11
     throw p0
 .end method
 
 .method public setHideOnContentScrollEnabled(Z)V
     .locals 0
 
+    .line 1
     if-nez p1, :cond_0
 
+    .line 2
+    .line 3
     return-void
 
-    .line 1
+    .line 4
     :cond_0
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 5
+    .line 6
     const-string p1, "Hide on content scroll is not supported in this action bar configuration."
 
+    .line 7
+    .line 8
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 9
+    .line 10
+    .line 11
     throw p0
 .end method
 
@@ -442,6 +506,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
@@ -452,6 +517,7 @@
         .end annotation
     .end param
 
+    .line 2
     return-void
 .end method
 
@@ -462,6 +528,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
@@ -472,12 +539,14 @@
         .end annotation
     .end param
 
+    .line 2
     return-void
 .end method
 
 .method public setHomeButtonEnabled(Z)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -524,18 +593,21 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public setSplitBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public setStackedBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -563,6 +635,7 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -577,7 +650,9 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method

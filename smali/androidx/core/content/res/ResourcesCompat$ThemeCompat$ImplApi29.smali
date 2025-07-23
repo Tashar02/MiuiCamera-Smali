@@ -1,4 +1,4 @@
-.class public Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi29;
+.class Landroidx/core/content/res/ResourcesCompat$ThemeCompat$ImplApi29;
 .super Ljava/lang/Object;
 .source "ResourcesCompat.java"
 
@@ -25,6 +25,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -38,5 +41,8 @@
     .line 1
     invoke-virtual {p0}, Landroid/content/res/Resources$Theme;->rebase()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

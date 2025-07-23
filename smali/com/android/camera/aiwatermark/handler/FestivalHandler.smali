@@ -6,18 +6,13 @@
 # direct methods
 .method public constructor <init>(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isConsume"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/aiwatermark/handler/AbstractHandler;-><init>(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -26,7 +21,9 @@
 .method public findWatermark()Lcom/android/camera/aiwatermark/data/WatermarkItem;
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method

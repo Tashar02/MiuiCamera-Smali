@@ -1,36 +1,46 @@
 .class public final synthetic Lcom/uber/rxdogtag/o00000O0;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
-.implements Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic OooO00o:Lcom/uber/rxdogtag/DogTagSubscriber;
+.field public final synthetic o0000o:Lorg/reactivestreams/Subscriber;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagSubscriber;)V
+.method public synthetic constructor <init>(Lorg/reactivestreams/Subscriber;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/o00000O0;->OooO00o:Lcom/uber/rxdogtag/DogTagSubscriber;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/o00000O0;->o0000o:Lorg/reactivestreams/Subscriber;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public final run()V
     .locals 0
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/o00000O0;->OooO00o:Lcom/uber/rxdogtag/DogTagSubscriber;
+    .line 1
+    iget-object p0, p0, Lcom/uber/rxdogtag/o00000O0;->o0000o:Lorg/reactivestreams/Subscriber;
 
-    check-cast p1, Ljava/lang/Throwable;
+    .line 2
+    .line 3
+    invoke-interface {p0}, Lorg/reactivestreams/Subscriber;->onComplete()V
 
-    invoke-virtual {p0, p1}, Lcom/uber/rxdogtag/DogTagSubscriber;->OooO00o(Ljava/lang/Throwable;)V
-
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

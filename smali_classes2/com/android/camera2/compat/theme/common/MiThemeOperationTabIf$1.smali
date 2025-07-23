@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf$1;
+.class Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf$1;
 .super Lcom/android/camera/animation/FolmeUtils$CustomTransitionListener;
 .source "MiThemeOperationTabIf.java"
 
@@ -15,34 +15,29 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf;
+.field final synthetic this$0:Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf;
 
-.field public final synthetic val$listener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
+.field final synthetic val$listener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf;Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "listener",
-            "val$listener"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf$1;->this$0:Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf;
 
+    .line 2
+    .line 3
     iput-object p3, p0, Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf$1;->val$listener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
 
+    .line 4
+    .line 5
     invoke-direct {p0, p2}, Lcom/android/camera/animation/FolmeUtils$CustomTransitionListener;-><init>(Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -50,35 +45,28 @@
 # virtual methods
 .method public onUpdate(Ljava/lang/Object;Lmiuix/animation/property/FloatProperty;FFZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "toTag",
-            "property",
-            "value",
-            "velocity",
-            "isCompleted"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera2/compat/theme/common/MiThemeOperationTabIf$1;->val$listener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
+    .line 4
+    .line 5
     const/high16 p1, 0x42c80000    # 100.0f
 
+    .line 6
+    .line 7
     mul-float/2addr p3, p1
 
-    .line 2
+    .line 8
     invoke-interface {p0, p3}, Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;->onUpdate(F)V
 
+    .line 9
+    .line 10
+    .line 11
     :cond_0
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/timerburst/TimerBurstSeekBar$Result;
+.class Lcom/android/camera/timerburst/TimerBurstSeekBar$Result;
 .super Ljava/lang/Object;
 .source "TimerBurstSeekBar.java"
 
@@ -15,29 +15,25 @@
 
 
 # instance fields
-.field public mResultHideType:I
+.field mResultHideType:I
 
-.field public final synthetic this$0:Lcom/android/camera/timerburst/TimerBurstSeekBar;
+.field final synthetic this$0:Lcom/android/camera/timerburst/TimerBurstSeekBar;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/timerburst/TimerBurstSeekBar;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/timerburst/TimerBurstSeekBar$Result;->this$0:Lcom/android/camera/timerburst/TimerBurstSeekBar;
 
     .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,22 +45,18 @@
     .line 1
     iget p0, p0, Lcom/android/camera/timerburst/TimerBurstSeekBar$Result;->mResultHideType:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setHideType(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "hideType"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/timerburst/TimerBurstSeekBar$Result;->mResultHideType:I
 
+    .line 2
+    .line 3
     return-void
 .end method

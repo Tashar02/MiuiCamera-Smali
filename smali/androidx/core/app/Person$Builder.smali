@@ -15,26 +15,26 @@
 
 
 # instance fields
-.field public mIcon:Landroidx/core/graphics/drawable/IconCompat;
+.field mIcon:Landroidx/core/graphics/drawable/IconCompat;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 .end field
 
-.field public mIsBot:Z
+.field mIsBot:Z
 
-.field public mIsImportant:Z
+.field mIsImportant:Z
 
-.field public mKey:Ljava/lang/String;
+.field mKey:Ljava/lang/String;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 .end field
 
-.field public mName:Ljava/lang/CharSequence;
+.field mName:Ljava/lang/CharSequence;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 .end field
 
-.field public mUri:Ljava/lang/String;
+.field mUri:Ljava/lang/String;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 .end field
@@ -99,8 +99,13 @@
     .line 1
     new-instance v0, Landroidx/core/app/Person;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p0}, Landroidx/core/app/Person;-><init>(Landroidx/core/app/Person$Builder;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object v0
 .end method
 
@@ -112,6 +117,8 @@
     .line 1
     iput-boolean p1, p0, Landroidx/core/app/Person$Builder;->mIsBot:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -127,6 +134,8 @@
     .line 1
     iput-object p1, p0, Landroidx/core/app/Person$Builder;->mIcon:Landroidx/core/graphics/drawable/IconCompat;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -138,6 +147,8 @@
     .line 1
     iput-boolean p1, p0, Landroidx/core/app/Person$Builder;->mIsImportant:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -153,6 +164,8 @@
     .line 1
     iput-object p1, p0, Landroidx/core/app/Person$Builder;->mKey:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -168,6 +181,8 @@
     .line 1
     iput-object p1, p0, Landroidx/core/app/Person$Builder;->mName:Ljava/lang/CharSequence;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -183,5 +198,7 @@
     .line 1
     iput-object p1, p0, Landroidx/core/app/Person$Builder;->mUri:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

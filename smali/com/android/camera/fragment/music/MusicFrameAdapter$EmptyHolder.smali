@@ -15,28 +15,22 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/music/MusicFrameAdapter;
+.field final synthetic this$0:Lcom/android/camera/fragment/music/MusicFrameAdapter;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/music/MusicFrameAdapter;Landroid/view/View;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0
-        }
-        names = {
-            "this$0",
-            "itemView"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/music/MusicFrameAdapter$EmptyHolder;->this$0:Lcom/android/camera/fragment/music/MusicFrameAdapter;
 
     .line 2
+    .line 3
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

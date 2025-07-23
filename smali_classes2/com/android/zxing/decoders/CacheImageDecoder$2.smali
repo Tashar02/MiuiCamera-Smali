@@ -1,4 +1,4 @@
-.class public Lcom/android/zxing/decoders/CacheImageDecoder$2;
+.class Lcom/android/zxing/decoders/CacheImageDecoder$2;
 .super Ljava/lang/Object;
 .source "CacheImageDecoder.java"
 
@@ -27,26 +27,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
+.field final synthetic this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/zxing/decoders/CacheImageDecoder;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/zxing/decoders/CacheImageDecoder$2;->this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -54,15 +51,6 @@
 # virtual methods
 .method public accept(Ljava/lang/Long;)V
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "aLong"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -76,7 +64,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -108,15 +96,6 @@
 
 .method public bridge synthetic accept(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "aLong"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

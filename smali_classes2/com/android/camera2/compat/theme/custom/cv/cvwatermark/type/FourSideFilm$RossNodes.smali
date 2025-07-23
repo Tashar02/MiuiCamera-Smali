@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/FourSideFilm$RossNodes;
+.class Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/FourSideFilm$RossNodes;
 .super Ljava/lang/Object;
 .source "FourSideFilm.java"
 
@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public btmCenterText:Ljava/lang/String;
+.field btmCenterText:Ljava/lang/String;
 
-.field public btmLeftText:Ljava/lang/String;
+.field btmLeftText:Ljava/lang/String;
 
-.field public btmRightText:Ljava/lang/String;
+.field btmRightText:Ljava/lang/String;
 
-.field public ratio:F
+.field ratio:F
 
-.field public topRightText:Ljava/lang/String;
+.field topRightText:Ljava/lang/String;
 
 
 # direct methods

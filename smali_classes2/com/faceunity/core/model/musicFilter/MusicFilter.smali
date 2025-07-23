@@ -4,43 +4,38 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
+.annotation runtime Lo000Oo0O/o0000O0;
     bv = {
         0x1,
         0x0,
         0x3
     }
     d1 = {
-        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0006\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0004\u0008\u0019\u0010\u001aJ\u000f\u0010\u0005\u001a\u00020\u0002H\u0010\u00a2\u0006\u0004\u0008\u0003\u0010\u0004R\u0019\u0010\u0007\u001a\u00020\u00068\u0006@\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0007\u0010\u0008\u001a\u0004\u0008\t\u0010\nR$\u0010\u0011\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u000b8F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0010R\u0016\u0010\u0012\u001a\u00020\u000b8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\u0012\u0010\u0013R\u001c\u0010\u0015\u001a\u00020\u00148\u0010@\u0010X\u0090\u0004\u00a2\u0006\u000c\n\u0004\u0008\u0015\u0010\u0016\u001a\u0004\u0008\u0017\u0010\u0018\u00a8\u0006\u001b"
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0006\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\r\u0010\u0013\u001a\u00020\u0014H\u0010\u00a2\u0006\u0002\u0008\u0015R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0008X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R$\u0010\u000e\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000c8F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012\u00a8\u0006\u0016"
     }
     d2 = {
         "Lcom/faceunity/core/model/musicFilter/MusicFilter;",
         "Lcom/faceunity/core/model/BaseSingleModel;",
-        "Lcom/faceunity/core/entity/FUFeaturesData;",
-        "buildFUFeaturesData$lib_core_release",
-        "()Lcom/faceunity/core/entity/FUFeaturesData;",
-        "buildFUFeaturesData",
-        "Lcom/faceunity/core/entity/FUBundleData;",
         "controlBundle",
         "Lcom/faceunity/core/entity/FUBundleData;",
+        "(Lcom/faceunity/core/entity/FUBundleData;)V",
         "getControlBundle",
         "()Lcom/faceunity/core/entity/FUBundleData;",
-        "",
-        "value",
-        "getMusicTime",
-        "()D",
-        "setMusicTime",
-        "(D)V",
-        "musicTime",
-        "mMusicTime",
-        "D",
-        "Lcom/faceunity/core/controller/BaseSingleController;",
         "mModelController",
         "Lcom/faceunity/core/controller/BaseSingleController;",
         "getMModelController$lib_core_release",
         "()Lcom/faceunity/core/controller/BaseSingleController;",
-        "<init>",
-        "(Lcom/faceunity/core/entity/FUBundleData;)V",
+        "mMusicTime",
+        "",
+        "value",
+        "musicTime",
+        "getMusicTime",
+        "()D",
+        "setMusicTime",
+        "(D)V",
+        "buildFUFeaturesData",
+        "Lcom/faceunity/core/entity/FUFeaturesData;",
+        "buildFUFeaturesData$lib_core_release",
         "lib_core_release"
     }
     k = 0x1
@@ -54,12 +49,12 @@
 
 # instance fields
 .field private final controlBundle:Lcom/faceunity/core/entity/FUBundleData;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
 .field private final mModelController:Lcom/faceunity/core/controller/BaseSingleController;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
@@ -70,32 +65,53 @@
 .method public constructor <init>(Lcom/faceunity/core/entity/FUBundleData;)V
     .locals 1
     .param p1    # Lcom/faceunity/core/entity/FUBundleData;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string v0, "controlBundle"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 4
+    .line 5
+    .line 6
     invoke-direct {p0}, Lcom/faceunity/core/model/BaseSingleModel;-><init>()V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object p1, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->controlBundle:Lcom/faceunity/core/entity/FUBundleData;
 
-    .line 2
+    .line 10
+    .line 11
     sget-object p1, Lcom/faceunity/core/support/FURenderBridge;->Companion:Lcom/faceunity/core/support/FURenderBridge$Companion;
 
+    .line 12
+    .line 13
     invoke-virtual {p1}, Lcom/faceunity/core/support/FURenderBridge$Companion;->getInstance$lib_core_release()Lcom/faceunity/core/support/FURenderBridge;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object p1
 
+    .line 17
     invoke-virtual {p1}, Lcom/faceunity/core/support/FURenderBridge;->getMMusicFilterController$lib_core_release()Lcom/faceunity/core/controller/BaseSingleController;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object p1
 
+    .line 21
     iput-object p1, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->mModelController:Lcom/faceunity/core/controller/BaseSingleController;
 
+    .line 22
+    .line 23
     return-void
 .end method
 
@@ -103,77 +119,119 @@
 # virtual methods
 .method public buildFUFeaturesData$lib_core_release()Lcom/faceunity/core/entity/FUFeaturesData;
     .locals 11
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     new-instance v4, Ljava/util/LinkedHashMap;
 
+    .line 2
+    .line 3
     invoke-direct {v4}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget-wide v0, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->mMusicTime:D
 
+    .line 7
+    .line 8
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object v0
 
+    .line 12
     const-string v1, "music_time"
 
+    .line 13
+    .line 14
     invoke-interface {v4, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 15
+    .line 16
+    .line 17
     const/4 v0, 0x1
 
-    .line 3
+    .line 18
     invoke-virtual {p0, v0}, Lcom/faceunity/core/model/BaseSingleModel;->setHasLoaded$lib_core_release(Z)V
 
-    .line 4
+    .line 19
+    .line 20
+    .line 21
     new-instance v10, Lcom/faceunity/core/entity/FUFeaturesData;
 
+    .line 22
+    .line 23
     invoke-virtual {p0}, Lcom/faceunity/core/model/BaseSingleModel;->getMModelId$lib_core_release()J
 
+    .line 24
+    .line 25
+    .line 26
     move-result-wide v1
 
+    .line 27
     iget-object v3, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->controlBundle:Lcom/faceunity/core/entity/FUBundleData;
 
-    invoke-virtual {p0}, Lcom/faceunity/core/model/BaseSingleModel;->getMIsEnable$lib_core_release()Z
-
-    move-result v7
-
+    .line 28
+    .line 29
     const/4 v5, 0x0
 
+    .line 30
     const/4 v6, 0x0
 
+    .line 31
+    invoke-virtual {p0}, Lcom/faceunity/core/model/BaseSingleModel;->getMIsEnable$lib_core_release()Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v7
+
+    .line 35
     const/16 v8, 0x18
 
+    .line 36
+    .line 37
     const/4 v9, 0x0
 
+    .line 38
     move-object v0, v10
 
-    invoke-direct/range {v0 .. v9}, Lcom/faceunity/core/entity/FUFeaturesData;-><init>(JLcom/faceunity/core/entity/FUBundleData;Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;Ljava/util/ArrayList;ZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    .line 39
+    invoke-direct/range {v0 .. v9}, Lcom/faceunity/core/entity/FUFeaturesData;-><init>(JLcom/faceunity/core/entity/FUBundleData;Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;Ljava/util/ArrayList;ZILo000oo0/o0O0O00;)V
 
+    .line 40
+    .line 41
+    .line 42
     return-object v10
 .end method
 
 .method public final getControlBundle()Lcom/faceunity/core/entity/FUBundleData;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->controlBundle:Lcom/faceunity/core/entity/FUBundleData;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public getMModelController$lib_core_release()Lcom/faceunity/core/controller/BaseSingleController;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->mModelController:Lcom/faceunity/core/controller/BaseSingleController;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -183,23 +241,35 @@
     .line 1
     iget-wide v0, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->mMusicTime:D
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public final setMusicTime(D)V
-    .locals 0
+    .locals 1
 
     .line 1
     iput-wide p1, p0, Lcom/faceunity/core/model/musicFilter/MusicFilter;->mMusicTime:D
 
     .line 2
+    .line 3
+    const-string v0, "music_time"
+
+    .line 4
+    .line 5
     invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p1
 
-    const-string p2, "music_time"
+    .line 9
+    invoke-virtual {p0, v0, p1}, Lcom/faceunity/core/model/BaseSingleModel;->setItemParam(Ljava/lang/String;Ljava/lang/Object;)V
 
-    invoke-virtual {p0, p2, p1}, Lcom/faceunity/core/model/BaseSingleModel;->setItemParam(Ljava/lang/String;Ljava/lang/Object;)V
-
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method

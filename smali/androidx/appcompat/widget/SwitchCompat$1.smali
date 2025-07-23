@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SwitchCompat$1;
+.class Landroidx/appcompat/widget/SwitchCompat$1;
 .super Landroid/util/Property;
 .source "SwitchCompat.java"
 
@@ -30,6 +30,9 @@
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

@@ -18,16 +18,6 @@
 
 
 # static fields
-.field public static final AUDIO_ATTRIBUTES_CONTENT_TYPE:Ljava/lang/String; = "androidx.media.audio_attrs.CONTENT_TYPE"
-
-.field public static final AUDIO_ATTRIBUTES_FLAGS:Ljava/lang/String; = "androidx.media.audio_attrs.FLAGS"
-
-.field public static final AUDIO_ATTRIBUTES_FRAMEWORKS:Ljava/lang/String; = "androidx.media.audio_attrs.FRAMEWORKS"
-
-.field public static final AUDIO_ATTRIBUTES_LEGACY_STREAM_TYPE:Ljava/lang/String; = "androidx.media.audio_attrs.LEGACY_STREAM_TYPE"
-
-.field public static final AUDIO_ATTRIBUTES_USAGE:Ljava/lang/String; = "androidx.media.audio_attrs.USAGE"
-
 .field public static final CONTENT_TYPE_MOVIE:I = 0x3
 
 .field public static final CONTENT_TYPE_MUSIC:I = 0x2
@@ -38,31 +28,31 @@
 
 .field public static final CONTENT_TYPE_UNKNOWN:I = 0x0
 
-.field public static final FLAG_ALL:I = 0x3ff
+.field static final FLAG_ALL:I = 0x3ff
 
-.field public static final FLAG_ALL_PUBLIC:I = 0x111
+.field static final FLAG_ALL_PUBLIC:I = 0x111
 
 .field public static final FLAG_AUDIBILITY_ENFORCED:I = 0x1
 
-.field public static final FLAG_BEACON:I = 0x8
+.field static final FLAG_BEACON:I = 0x8
 
-.field public static final FLAG_BYPASS_INTERRUPTION_POLICY:I = 0x40
+.field static final FLAG_BYPASS_INTERRUPTION_POLICY:I = 0x40
 
-.field public static final FLAG_BYPASS_MUTE:I = 0x80
+.field static final FLAG_BYPASS_MUTE:I = 0x80
 
-.field public static final FLAG_DEEP_BUFFER:I = 0x200
+.field static final FLAG_DEEP_BUFFER:I = 0x200
 
 .field public static final FLAG_HW_AV_SYNC:I = 0x10
 
-.field public static final FLAG_HW_HOTWORD:I = 0x20
+.field static final FLAG_HW_HOTWORD:I = 0x20
 
-.field public static final FLAG_LOW_LATENCY:I = 0x100
+.field static final FLAG_LOW_LATENCY:I = 0x100
 
-.field public static final FLAG_SCO:I = 0x4
+.field static final FLAG_SCO:I = 0x4
 
-.field public static final FLAG_SECURE:I = 0x2
+.field static final FLAG_SECURE:I = 0x2
 
-.field public static final INVALID_STREAM_TYPE:I = -0x1
+.field static final INVALID_STREAM_TYPE:I = -0x1
 
 .field private static final SDK_USAGES:[I
 
@@ -72,7 +62,7 @@
 
 .field private static final SUPPRESSIBLE_USAGES:Landroid/util/SparseIntArray;
 
-.field private static final TAG:Ljava/lang/String; = "AudioAttributesCompat"
+.field static final TAG:Ljava/lang/String; = "AudioAttributesCompat"
 
 .field public static final USAGE_ALARM:I = 0x4
 
@@ -102,17 +92,23 @@
 
 .field public static final USAGE_UNKNOWN:I = 0x0
 
-.field private static final USAGE_VIRTUAL_SOURCE:I = 0xf
+.field static final USAGE_VIRTUAL_SOURCE:I = 0xf
 
 .field public static final USAGE_VOICE_COMMUNICATION:I = 0x2
 
 .field public static final USAGE_VOICE_COMMUNICATION_SIGNALLING:I = 0x3
 
-.field public static sForceLegacyBehavior:Z
+.field static sForceLegacyBehavior:Z
 
 
 # instance fields
 .field public mImpl:Landroidx/media/AudioAttributesImpl;
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -122,55 +118,94 @@
     .line 1
     new-instance v0, Landroid/util/SparseIntArray;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/media/AudioAttributesCompat;->SUPPRESSIBLE_USAGES:Landroid/util/SparseIntArray;
 
+    .line 7
+    .line 8
     const/4 v1, 0x5
 
+    .line 9
     const/4 v2, 0x1
 
-    .line 2
+    .line 10
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
+    .line 11
+    .line 12
+    .line 13
     const/4 v1, 0x6
 
+    .line 14
     const/4 v3, 0x2
 
-    .line 3
+    .line 15
     invoke-virtual {v0, v1, v3}, Landroid/util/SparseIntArray;->put(II)V
 
+    .line 16
+    .line 17
+    .line 18
     const/4 v1, 0x7
 
-    .line 4
+    .line 19
     invoke-virtual {v0, v1, v3}, Landroid/util/SparseIntArray;->put(II)V
 
+    .line 20
+    .line 21
+    .line 22
     const/16 v1, 0x8
 
-    .line 5
+    .line 23
+    .line 24
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
+    .line 25
+    .line 26
+    .line 27
     const/16 v1, 0x9
 
-    .line 6
+    .line 28
+    .line 29
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
+    .line 30
+    .line 31
+    .line 32
     const/16 v1, 0xa
 
-    .line 7
+    .line 33
+    .line 34
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
+    .line 35
+    .line 36
+    .line 37
     const/16 v0, 0x10
 
+    .line 38
+    .line 39
     new-array v0, v0, [I
 
-    .line 8
+    .line 40
+    .line 41
     fill-array-data v0, :array_0
 
+    .line 42
+    .line 43
+    .line 44
     sput-object v0, Landroidx/media/AudioAttributesCompat;->SDK_USAGES:[I
 
+    .line 45
+    .line 46
     return-void
 
+    .line 47
     :array_0
     .array-data 4
         0x0
@@ -194,6 +229,11 @@
 
 .method public constructor <init>()V
     .locals 0
+    .annotation build Landroidx/annotation/RestrictTo;
+        value = {
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -203,6 +243,14 @@
 
 .method public constructor <init>(Landroidx/media/AudioAttributesImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "impl"
+        }
+    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -213,188 +261,230 @@
     return-void
 .end method
 
-.method public static fromBundle(Landroid/os/Bundle;)Landroidx/media/AudioAttributesCompat;
-    .locals 2
-    .annotation build Landroidx/annotation/RestrictTo;
-        value = {
-            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP:Landroidx/annotation/RestrictTo$Scope;
-        }
-    .end annotation
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    invoke-static {p0}, Landroidx/media/AudioAttributesImplApi21;->fromBundle(Landroid/os/Bundle;)Landroidx/media/AudioAttributesImpl;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    invoke-static {p0}, Landroidx/media/AudioAttributesImplBase;->fromBundle(Landroid/os/Bundle;)Landroidx/media/AudioAttributesImpl;
-
-    move-result-object p0
-
-    :goto_0
-    if-nez p0, :cond_1
-
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    .line 4
-    :cond_1
-    new-instance v0, Landroidx/media/AudioAttributesCompat;
-
-    invoke-direct {v0, p0}, Landroidx/media/AudioAttributesCompat;-><init>(Landroidx/media/AudioAttributesImpl;)V
-
-    move-object p0, v0
-
-    :goto_1
-    return-object p0
-.end method
-
 .method public static setForceLegacyBehavior(Z)V
     .locals 0
     .annotation build Landroidx/annotation/RestrictTo;
         value = {
-            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP:Landroidx/annotation/RestrictTo$Scope;
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "force"
         }
     .end annotation
 
     .line 1
     sput-boolean p0, Landroidx/media/AudioAttributesCompat;->sForceLegacyBehavior:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public static toVolumeStreamType(ZII)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromGetVolumeControlStream",
+            "flags",
+            "usage"
+        }
+    .end annotation
 
+    .line 1
     and-int/lit8 v0, p1, 0x1
 
+    .line 2
+    .line 3
     const/4 v1, 0x1
 
+    .line 4
     if-ne v0, v1, :cond_1
 
+    .line 5
+    .line 6
     if-eqz p0, :cond_0
 
+    .line 7
+    .line 8
     goto :goto_0
 
+    .line 9
     :cond_0
     const/4 v1, 0x7
 
+    .line 10
     :goto_0
     return v1
 
+    .line 11
     :cond_1
     const/4 v0, 0x4
 
+    .line 12
     and-int/2addr p1, v0
 
+    .line 13
     const/4 v2, 0x0
 
+    .line 14
     if-ne p1, v0, :cond_3
 
+    .line 15
+    .line 16
     if-eqz p0, :cond_2
 
+    .line 17
+    .line 18
     goto :goto_1
 
+    .line 19
     :cond_2
     const/4 v2, 0x6
 
+    .line 20
     :goto_1
     return v2
 
+    .line 21
     :cond_3
     const/4 p1, 0x3
 
+    .line 22
     packed-switch p2, :pswitch_data_0
 
+    .line 23
+    .line 24
+    .line 25
     :pswitch_0
-    if-nez p0, :cond_6
+    if-nez p0, :cond_5
 
+    .line 26
+    .line 27
     return p1
 
+    .line 28
     :pswitch_1
     return v1
 
+    .line 29
     :pswitch_2
     const/16 p0, 0xa
 
+    .line 30
+    .line 31
     return p0
 
+    .line 32
     :pswitch_3
     const/4 p0, 0x2
 
+    .line 33
     return p0
 
+    .line 34
     :pswitch_4
     const/4 p0, 0x5
 
+    .line 35
     return p0
 
+    .line 36
     :pswitch_5
     return v0
 
+    .line 37
     :pswitch_6
     if-eqz p0, :cond_4
 
+    .line 38
+    .line 39
     goto :goto_2
 
+    .line 40
     :cond_4
     const/16 v2, 0x8
 
+    .line 41
+    .line 42
     :goto_2
     :pswitch_7
     return v2
 
+    .line 43
     :pswitch_8
     return p1
 
-    :pswitch_9
-    if-eqz p0, :cond_5
-
-    const/high16 p1, -0x80000000
-
+    .line 44
     :cond_5
-    return p1
-
-    .line 2
-    :cond_6
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 45
+    .line 46
     new-instance p1, Ljava/lang/StringBuilder;
 
+    .line 47
+    .line 48
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 49
+    .line 50
+    .line 51
     const-string v0, "Unknown usage value "
 
+    .line 52
+    .line 53
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 54
+    .line 55
+    .line 56
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 57
+    .line 58
+    .line 59
     const-string p2, " in audio attributes"
 
+    .line 60
+    .line 61
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 62
+    .line 63
+    .line 64
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 65
+    .line 66
+    .line 67
     move-result-object p1
 
+    .line 68
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 69
+    .line 70
+    .line 71
     throw p0
 
+    .line 72
+    nop
+
+    .line 73
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_9
+        :pswitch_8
         :pswitch_8
         :pswitch_7
         :pswitch_6
@@ -411,200 +501,190 @@
         :pswitch_8
         :pswitch_0
         :pswitch_8
-    .end packed-switch
-.end method
-
-.method public static toVolumeStreamType(ZLandroidx/media/AudioAttributesCompat;)I
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Landroidx/media/AudioAttributesCompat;->getFlags()I
-
-    move-result v0
-
-    invoke-virtual {p1}, Landroidx/media/AudioAttributesCompat;->getUsage()I
-
-    move-result p1
-
-    invoke-static {p0, v0, p1}, Landroidx/media/AudioAttributesCompat;->toVolumeStreamType(ZII)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static usageForStreamType(I)I
-    .locals 1
-
-    const/4 v0, 0x2
-
-    packed-switch p0, :pswitch_data_0
-
-    :pswitch_0
-    const/4 p0, 0x0
-
-    return p0
-
-    :pswitch_1
-    const/16 p0, 0xb
-
-    return p0
-
-    :pswitch_2
-    const/4 p0, 0x3
-
-    return p0
-
-    :pswitch_3
-    return v0
-
-    :pswitch_4
-    const/4 p0, 0x5
-
-    return p0
-
-    :pswitch_5
-    const/4 p0, 0x4
-
-    return p0
-
-    :pswitch_6
-    const/4 p0, 0x1
-
-    return p0
-
-    :pswitch_7
-    const/4 p0, 0x6
-
-    return p0
-
-    :pswitch_8
-    const/16 p0, 0xd
-
-    return p0
-
-    :pswitch_9
-    return v0
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_8
-        :pswitch_2
-        :pswitch_0
-        :pswitch_1
     .end packed-switch
 .end method
 
 .method public static usageToString(I)Ljava/lang/String;
     .locals 2
-
-    packed-switch p0, :pswitch_data_0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "usage"
+        }
+    .end annotation
 
     .line 1
+    packed-switch p0, :pswitch_data_0
+
+    .line 2
+    .line 3
+    .line 4
     :pswitch_0
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 5
+    .line 6
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 7
+    .line 8
+    .line 9
     const-string/jumbo v1, "unknown usage "
 
+    .line 10
+    .line 11
+    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 13
+    .line 14
+    .line 15
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 16
+    .line 17
+    .line 18
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 19
+    .line 20
+    .line 21
     move-result-object p0
 
+    .line 22
     return-object p0
 
+    .line 23
     :pswitch_1
     const-string p0, "USAGE_ASSISTANT"
 
+    .line 24
+    .line 25
     return-object p0
 
+    .line 26
     :pswitch_2
     const-string p0, "USAGE_GAME"
 
+    .line 27
+    .line 28
     return-object p0
 
+    .line 29
     :pswitch_3
     const-string p0, "USAGE_ASSISTANCE_SONIFICATION"
 
+    .line 30
+    .line 31
     return-object p0
 
+    .line 32
     :pswitch_4
     const-string p0, "USAGE_ASSISTANCE_NAVIGATION_GUIDANCE"
 
+    .line 33
+    .line 34
     return-object p0
 
+    .line 35
     :pswitch_5
     const-string p0, "USAGE_ASSISTANCE_ACCESSIBILITY"
 
+    .line 36
+    .line 37
     return-object p0
 
+    .line 38
     :pswitch_6
     const-string p0, "USAGE_NOTIFICATION_EVENT"
 
+    .line 39
+    .line 40
     return-object p0
 
+    .line 41
     :pswitch_7
     const-string p0, "USAGE_NOTIFICATION_COMMUNICATION_DELAYED"
 
+    .line 42
+    .line 43
     return-object p0
 
+    .line 44
     :pswitch_8
     const-string p0, "USAGE_NOTIFICATION_COMMUNICATION_INSTANT"
 
+    .line 45
+    .line 46
     return-object p0
 
+    .line 47
     :pswitch_9
     const-string p0, "USAGE_NOTIFICATION_COMMUNICATION_REQUEST"
 
+    .line 48
+    .line 49
     return-object p0
 
+    .line 50
     :pswitch_a
     const-string p0, "USAGE_NOTIFICATION_RINGTONE"
 
+    .line 51
+    .line 52
     return-object p0
 
+    .line 53
     :pswitch_b
     const-string p0, "USAGE_NOTIFICATION"
 
+    .line 54
+    .line 55
     return-object p0
 
+    .line 56
     :pswitch_c
     const-string p0, "USAGE_ALARM"
 
+    .line 57
+    .line 58
     return-object p0
 
+    .line 59
     :pswitch_d
     const-string p0, "USAGE_VOICE_COMMUNICATION_SIGNALLING"
 
+    .line 60
+    .line 61
     return-object p0
 
+    .line 62
     :pswitch_e
     const-string p0, "USAGE_VOICE_COMMUNICATION"
 
+    .line 63
+    .line 64
     return-object p0
 
+    .line 65
     :pswitch_f
     const-string p0, "USAGE_MEDIA"
 
+    .line 66
+    .line 67
     return-object p0
 
+    .line 68
     :pswitch_10
     const-string p0, "USAGE_UNKNOWN"
 
+    .line 69
+    .line 70
     return-object p0
 
+    .line 71
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_10
@@ -636,81 +716,125 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "aa"
+        }
+    .end annotation
+
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
     sget-boolean v0, Landroidx/media/AudioAttributesCompat;->sForceLegacyBehavior:Z
 
-    if-nez v0, :cond_0
-
     .line 2
-    new-instance v0, Landroidx/media/AudioAttributesImplApi21;
-
-    check-cast p0, Landroid/media/AudioAttributes;
-
-    invoke-direct {v0, p0}, Landroidx/media/AudioAttributesImplApi21;-><init>(Landroid/media/AudioAttributes;)V
-
     .line 3
-    new-instance p0, Landroidx/media/AudioAttributesCompat;
-
-    invoke-direct {p0}, Landroidx/media/AudioAttributesCompat;-><init>()V
+    if-eqz v0, :cond_0
 
     .line 4
-    iput-object v0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
-
-    return-object p0
-
-    :cond_0
+    .line 5
     const/4 p0, 0x0
 
+    .line 6
     return-object p0
+
+    .line 7
+    :cond_0
+    new-instance v0, Landroidx/media/AudioAttributesCompat;
+
+    .line 8
+    .line 9
+    new-instance v1, Landroidx/media/AudioAttributesImplApi26;
+
+    .line 10
+    .line 11
+    check-cast p0, Landroid/media/AudioAttributes;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, p0}, Landroidx/media/AudioAttributesImplApi26;-><init>(Landroid/media/AudioAttributes;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v0, v1}, Landroidx/media/AudioAttributesCompat;-><init>(Landroidx/media/AudioAttributesImpl;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-object v0
 .end method
 
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     .line 1
     instance-of v0, p1, Landroidx/media/AudioAttributesCompat;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     if-nez v0, :cond_0
 
+    .line 5
+    .line 6
     return v1
 
-    .line 2
+    .line 7
     :cond_0
     check-cast p1, Landroidx/media/AudioAttributesCompat;
 
-    .line 3
+    .line 8
+    .line 9
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 10
+    .line 11
     if-nez p0, :cond_2
 
-    .line 4
+    .line 12
+    .line 13
     iget-object p0, p1, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 14
+    .line 15
     if-nez p0, :cond_1
 
+    .line 16
+    .line 17
     const/4 v1, 0x1
 
+    .line 18
     :cond_1
     return v1
 
-    .line 5
+    .line 19
     :cond_2
     iget-object p1, p1, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 20
+    .line 21
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 22
+    .line 23
+    .line 24
     move-result p0
 
+    .line 25
     return p0
 .end method
 
@@ -720,10 +844,16 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->getContentType()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -733,10 +863,16 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->getFlags()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -746,10 +882,16 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->getLegacyStreamType()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -759,10 +901,16 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->getRawLegacyStreamType()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -772,10 +920,16 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->getUsage()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -785,10 +939,16 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->getVolumeControlStream()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -798,32 +958,17 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
-.end method
-
-.method public toBundle()Landroid/os/Bundle;
-    .locals 0
-    .annotation build Landroidx/annotation/NonNull;
-    .end annotation
-
-    .annotation build Landroidx/annotation/RestrictTo;
-        value = {
-            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP:Landroidx/annotation/RestrictTo$Scope;
-        }
-    .end annotation
-
-    .line 1
-    iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
-
-    invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->toBundle()Landroid/os/Bundle;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -832,10 +977,16 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -847,9 +998,15 @@
     .line 1
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->mImpl:Landroidx/media/AudioAttributesImpl;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Landroidx/media/AudioAttributesImpl;->getAudioAttributes()Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method

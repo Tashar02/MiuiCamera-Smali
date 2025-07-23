@@ -37,6 +37,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -78,8 +81,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
@@ -92,5 +97,8 @@
     .line 1
     invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/SortedList$Callback;->onChanged(II)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

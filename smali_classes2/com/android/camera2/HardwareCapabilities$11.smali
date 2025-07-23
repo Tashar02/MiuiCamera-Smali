@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/HardwareCapabilities$11;
+.class Lcom/android/camera2/HardwareCapabilities$11;
 .super Lcom/xiaomi/camera/util/TypedValue;
 .source "HardwareCapabilities.java"
 
@@ -29,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/camera/util/TypedValue;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -60,11 +63,11 @@
     move-result-object p0
 
     .line 4
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0000OOO()Landroid/util/Size;
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o0000OOO()Landroid/util/Size;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/RequestManager$ClearTarget;
+.class Lcom/bumptech/glide/RequestManager$ClearTarget;
 .super Lcom/bumptech/glide/request/target/CustomViewTarget;
 .source "RequestManager.java"
 
@@ -34,6 +34,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/bumptech/glide/request/target/CustomViewTarget;-><init>(Landroid/view/View;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -46,6 +49,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
@@ -56,6 +60,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
@@ -80,5 +85,6 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method

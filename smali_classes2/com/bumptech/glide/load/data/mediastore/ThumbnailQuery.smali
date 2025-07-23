@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/bumptech/glide/load/data/mediastore/ThumbnailQuery;
+.class interface abstract Lcom/bumptech/glide/load/data/mediastore/ThumbnailQuery;
 .super Ljava/lang/Object;
 .source "ThumbnailQuery.java"
 

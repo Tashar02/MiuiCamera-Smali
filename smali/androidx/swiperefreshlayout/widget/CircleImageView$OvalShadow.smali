@@ -1,4 +1,4 @@
-.class public Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;
+.class Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;
 .super Landroid/graphics/drawable/shapes/OvalShape;
 .source "CircleImageView.java"
 
@@ -19,7 +19,7 @@
 
 .field private mShadowPaint:Landroid/graphics/Paint;
 
-.field public final synthetic this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
+.field final synthetic this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
 
 
 # direct methods
@@ -30,31 +30,53 @@
     iput-object p1, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
 
     .line 2
+    .line 3
     invoke-direct {p0}, Landroid/graphics/drawable/shapes/OvalShape;-><init>()V
 
-    .line 3
+    .line 4
+    .line 5
+    .line 6
     new-instance v0, Landroid/graphics/Paint;
 
+    .line 7
+    .line 8
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
+    .line 9
+    .line 10
+    .line 11
     iput-object v0, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->mShadowPaint:Landroid/graphics/Paint;
 
-    .line 4
+    .line 12
+    .line 13
     iput p2, p1, Landroidx/swiperefreshlayout/widget/CircleImageView;->mShadowRadius:I
 
-    .line 5
-    invoke-virtual {p0}, Landroid/graphics/drawable/shapes/OvalShape;->rect()Landroid/graphics/RectF;
+    .line 14
+    .line 15
+    invoke-virtual {p0}, Landroid/graphics/drawable/shapes/RectShape;->rect()Landroid/graphics/RectF;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p1
 
+    .line 19
     invoke-virtual {p1}, Landroid/graphics/RectF;->width()F
 
+    .line 20
+    .line 21
+    .line 22
     move-result p1
 
+    .line 23
     float-to-int p1, p1
 
+    .line 24
     invoke-direct {p0, p1}, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->updateRadialGradient(I)V
 
+    .line 25
+    .line 26
+    .line 27
     return-void
 .end method
 
@@ -64,43 +86,74 @@
     .line 1
     new-instance v7, Landroid/graphics/RadialGradient;
 
+    .line 2
+    .line 3
     const/4 v0, 0x2
 
+    .line 4
     div-int/2addr p1, v0
 
+    .line 5
     int-to-float v2, p1
 
+    .line 6
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
 
+    .line 7
+    .line 8
     iget p1, p1, Landroidx/swiperefreshlayout/widget/CircleImageView;->mShadowRadius:I
 
+    .line 9
+    .line 10
     int-to-float v3, p1
 
+    .line 11
     new-array v4, v0, [I
 
+    .line 12
+    .line 13
     fill-array-data v4, :array_0
 
-    sget-object v6, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
-
+    .line 14
+    .line 15
+    .line 16
     const/4 v5, 0x0
 
+    .line 17
+    sget-object v6, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+
+    .line 18
+    .line 19
     move-object v0, v7
 
+    .line 20
     move v1, v2
 
+    .line 21
     invoke-direct/range {v0 .. v6}, Landroid/graphics/RadialGradient;-><init>(FFF[I[FLandroid/graphics/Shader$TileMode;)V
 
+    .line 22
+    .line 23
+    .line 24
     iput-object v7, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->mRadialGradient:Landroid/graphics/RadialGradient;
 
-    .line 2
+    .line 25
+    .line 26
     iget-object p0, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->mShadowPaint:Landroid/graphics/Paint;
 
+    .line 27
+    .line 28
     invoke-virtual {p0, v7}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
+    .line 29
+    .line 30
+    .line 31
     return-void
 
+    .line 32
     nop
 
+    .line 33
     :array_0
     .array-data 4
         0x3d000000    # 0.03125f
@@ -116,41 +169,70 @@
     .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->getWidth()I
-
-    move-result v0
-
     .line 2
-    iget-object v1, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
-
-    invoke-virtual {v1}, Landroid/widget/ImageView;->getHeight()I
-
-    move-result v1
-
     .line 3
-    div-int/lit8 v0, v0, 0x2
-
-    int-to-float v2, v0
-
-    div-int/lit8 v1, v1, 0x2
-
-    int-to-float v1, v1
-
-    iget-object v3, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->mShadowPaint:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v2, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+    invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    iget-object v1, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
+
+    .line 8
+    .line 9
+    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    div-int/lit8 v0, v0, 0x2
+
+    .line 14
+    .line 15
+    int-to-float v2, v0
+
+    .line 16
+    div-int/lit8 v1, v1, 0x2
+
+    .line 17
+    .line 18
+    int-to-float v1, v1
+
+    .line 19
+    iget-object v3, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->mShadowPaint:Landroid/graphics/Paint;
+
+    .line 20
+    .line 21
+    invoke-virtual {p1, v2, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+
+    .line 22
+    .line 23
+    .line 24
     iget-object p0, p0, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->this$0:Landroidx/swiperefreshlayout/widget/CircleImageView;
 
+    .line 25
+    .line 26
     iget p0, p0, Landroidx/swiperefreshlayout/widget/CircleImageView;->mShadowRadius:I
 
+    .line 27
+    .line 28
     sub-int/2addr v0, p0
 
+    .line 29
     int-to-float p0, v0
 
+    .line 30
     invoke-virtual {p1, v2, v1, p0, p2}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method
 
@@ -158,12 +240,18 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/graphics/drawable/shapes/OvalShape;->onResize(FF)V
-
-    float-to-int p1, p1
+    invoke-super {p0, p1, p2}, Landroid/graphics/drawable/shapes/Shape;->onResize(FF)V
 
     .line 2
+    .line 3
+    .line 4
+    float-to-int p1, p1
+
+    .line 5
     invoke-direct {p0, p1}, Landroidx/swiperefreshlayout/widget/CircleImageView$OvalShadow;->updateRadialGradient(I)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/clone/FragmentCloneProcess$6;
+.class Lcom/android/camera/fragment/clone/FragmentCloneProcess$6;
 .super Ljava/lang/Object;
 .source "FragmentCloneProcess.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/clone/FragmentCloneProcess;
+.field final synthetic this$0:Lcom/android/camera/fragment/clone/FragmentCloneProcess;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/clone/FragmentCloneProcess;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/clone/FragmentCloneProcess$6;->this$0:Lcom/android/camera/fragment/clone/FragmentCloneProcess;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,19 +42,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "v"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/clone/FragmentCloneProcess$6;->this$0:Lcom/android/camera/fragment/clone/FragmentCloneProcess;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/fragment/clone/FragmentCloneProcess;->hideShareSheet()Z
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

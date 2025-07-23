@@ -46,7 +46,7 @@
 
     check-cast p0, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Landroid/widget/ImageView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 

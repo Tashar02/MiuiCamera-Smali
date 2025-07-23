@@ -22,36 +22,10 @@
 .end method
 
 .method public abstract onSuperNightChanged(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isSuperNight"
-        }
-    .end annotation
 .end method
 
 .method public abstract onSuperNightExif(Lcom/android/camera2/vendortag/struct/MarshalQueryableSuperNightExif$SuperNightExif;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "superNightExif"
-        }
-    .end annotation
 .end method
 
 .method public abstract updateSuperNightTip(ZI)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "isSuperNight",
-            "captureExpTime"
-        }
-    .end annotation
 .end method

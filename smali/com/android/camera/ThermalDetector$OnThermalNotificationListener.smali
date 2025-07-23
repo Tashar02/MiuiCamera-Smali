@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onThermalNotification(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "tempStage"
-        }
-    .end annotation
 .end method

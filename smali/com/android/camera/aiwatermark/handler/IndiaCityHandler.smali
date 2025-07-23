@@ -6,18 +6,13 @@
 # direct methods
 .method public constructor <init>(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isConsume"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/aiwatermark/handler/CityHandler;-><init>(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,26 +24,22 @@
     .line 1
     invoke-super {p0}, Lcom/android/camera/aiwatermark/handler/CityHandler;->findWatermark()Lcom/android/camera/aiwatermark/data/WatermarkItem;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
 .method public getAddress(DD)Ljava/lang/String;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "latitude",
-            "longitude"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
@@ -66,7 +57,12 @@
     .line 1
     new-instance p0, Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method

@@ -32,10 +32,17 @@
     .line 1
     new-instance v0, Lcom/android/camera/customization/FlashHalo;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lcom/android/camera/customization/FlashHalo;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/android/camera/customization/FlashHalo;->INSTANCE:Lcom/android/camera/customization/FlashHalo;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -45,70 +52,107 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/android/camera/customization/FlashHalo;->mShowHalo:Z
 
-    .line 3
+    .line 6
+    .line 7
     iput-boolean v0, p0, Lcom/android/camera/customization/FlashHalo;->mHaloEnabled:Z
 
+    .line 8
+    .line 9
     return-void
 .end method
 
 .method private getHaloBrightnessScale(I)F
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "targetMode"
-        }
-    .end annotation
 
     .line 1
     invoke-static {}, Lcom/android/camera/CameraSettings;->getScreenLightBrightness()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     int-to-float v0, v0
 
+    .line 6
     const/high16 v1, 0x437f0000    # 255.0f
 
+    .line 7
+    .line 8
     div-float/2addr v0, v1
 
-    .line 2
+    .line 9
     iget-boolean p0, p0, Lcom/android/camera/customization/FlashHalo;->mHaloEnabled:Z
 
+    .line 10
+    .line 11
     if-eqz p0, :cond_0
 
+    .line 12
+    .line 13
     const/16 p0, 0xa2
 
+    .line 14
+    .line 15
     if-ne p1, p0, :cond_0
 
+    .line 16
+    .line 17
     const v0, 0x3f48c8c9
 
-    .line 3
+    .line 18
+    .line 19
+    .line 20
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 21
+    .line 22
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 23
+    .line 24
+    .line 25
     const-string p1, "getHaloBrightness: "
 
+    .line 26
+    .line 27
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 28
+    .line 29
+    .line 30
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
+    .line 31
+    .line 32
+    .line 33
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 34
+    .line 35
+    .line 36
     move-result-object p0
 
+    .line 37
     const-string p1, "FlashHalo"
 
+    .line 38
+    .line 39
     invoke-static {p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 40
+    .line 41
+    .line 42
     return v0
 .end method
 
@@ -118,60 +162,81 @@
     .line 1
     sget-object v0, Lcom/android/camera/customization/FlashHalo;->INSTANCE:Lcom/android/camera/customization/FlashHalo;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
 .method private isNeedLockTheme(I)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "targetMode"
-        }
-    .end annotation
 
     .line 1
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemLive()Lcom/android/camera/data/data/extra/DataItemLive;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     invoke-virtual {p0}, Lcom/android/camera/data/data/extra/DataItemLive;->getTimerBurstController()Lcom/android/camera/timerburst/TimerBurstController;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
-    .line 2
+    .line 9
     invoke-virtual {p0}, Lcom/android/camera/timerburst/TimerBurstController;->isInTimerBurstShotting()Z
 
+    .line 10
+    .line 11
+    .line 12
     move-result p0
 
+    .line 13
     const/4 p1, 0x1
 
+    .line 14
     if-eqz p0, :cond_0
 
+    .line 15
+    .line 16
     return p1
 
-    .line 3
+    .line 17
     :cond_0
     invoke-static {}, Lcom/android/camera/protocol/protocols/TopAlert;->impl2()Lcom/android/camera/protocol/protocols/TopAlert;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object p0
 
+    .line 21
     if-eqz p0, :cond_1
 
-    .line 4
+    .line 22
+    .line 23
     invoke-interface {p0}, Lcom/android/camera/protocol/protocols/TopAlert;->isExtraMenuShowing()Z
 
+    .line 24
+    .line 25
+    .line 26
     move-result p0
 
+    .line 27
     if-eqz p0, :cond_1
 
+    .line 28
+    .line 29
     return p1
 
+    .line 30
     :cond_1
     const/4 p0, 0x0
 
+    .line 31
     return p0
 .end method
 
@@ -183,6 +248,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/FlashHalo;->mBrightness:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -192,6 +259,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/customization/FlashHalo;->mHaloEnabled:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -201,25 +270,13 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/customization/FlashHalo;->mShowHalo:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public reConfigScreenHaloRequest(IZZZ)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mode",
-            "fromConfig",
-            "forceOn",
-            "reInit"
-        }
-    .end annotation
 
     const/4 v5, 0x0
 
@@ -241,29 +298,13 @@
 
 .method public reConfigScreenHaloRequest(IZZZZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mode",
-            "fromConfig",
-            "forceOn",
-            "reInit",
-            "forceOff"
-        }
-    .end annotation
 
     .line 2
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object p0
 
-    invoke-virtual {p0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00oOo00()Z
+    invoke-virtual {p0}, Lo000Oo0/OooO00o;->o00oOo00()Z
 
     move-result p0
 
@@ -302,14 +343,6 @@
 
 .method public reConfigScreenHaloRequest(Lcom/android/camera/customization/FlashHalo$ThemeConfiguration;)Z
     .locals 9
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "configuration"
-        }
-    .end annotation
 
     .line 10
     invoke-static {}, Lcom/android/camera/customization/ThemeModeManager;->getInstance()Lcom/android/camera/customization/ThemeModeManager;
@@ -449,11 +482,11 @@
     if-nez v1, :cond_3
 
     .line 21
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v1
 
-    invoke-virtual {v1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00oOooO()Z
+    invoke-virtual {v1}, Lo000Oo0/OooO00o;->o00oOooO()Z
 
     move-result v1
 

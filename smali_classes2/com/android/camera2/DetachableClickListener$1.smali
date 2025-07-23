@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/DetachableClickListener$1;
+.class Lcom/android/camera2/DetachableClickListener$1;
 .super Ljava/lang/Object;
 .source "DetachableClickListener.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera2/DetachableClickListener;
+.field final synthetic this$0:Lcom/android/camera2/DetachableClickListener;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera2/DetachableClickListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/DetachableClickListener$1;->this$0:Lcom/android/camera2/DetachableClickListener;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -46,13 +43,20 @@
 .method public onWindowAttached()V
     .locals 1
 
+    .line 1
     const-string p0, "DetachableClickListener"
 
+    .line 2
+    .line 3
     const-string v0, "dialog attach to window"
 
-    .line 1
+    .line 4
+    .line 5
     invoke-static {p0, v0}, Lcom/android/camera/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -62,14 +66,24 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/DetachableClickListener$1;->this$0:Lcom/android/camera2/DetachableClickListener;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     invoke-static {v0, v1}, Lcom/android/camera2/DetachableClickListener;->access$002(Lcom/android/camera2/DetachableClickListener;Landroid/content/DialogInterface$OnClickListener;)Landroid/content/DialogInterface$OnClickListener;
 
-    .line 2
+    .line 5
+    .line 6
+    .line 7
     iget-object p0, p0, Lcom/android/camera2/DetachableClickListener$1;->this$0:Lcom/android/camera2/DetachableClickListener;
 
+    .line 8
+    .line 9
     invoke-static {p0, v1}, Lcom/android/camera2/DetachableClickListener;->access$102(Lcom/android/camera2/DetachableClickListener;Landroid/content/DialogInterface$OnCancelListener;)Landroid/content/DialogInterface$OnCancelListener;
 
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method

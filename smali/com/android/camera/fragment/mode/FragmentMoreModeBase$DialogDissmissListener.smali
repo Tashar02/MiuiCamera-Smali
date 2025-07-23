@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/mode/FragmentMoreModeBase$DialogDissmissListener;
+.class Lcom/android/camera/fragment/mode/FragmentMoreModeBase$DialogDissmissListener;
 .super Ljava/lang/Object;
 .source "FragmentMoreModeBase.java"
 
@@ -36,14 +36,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/camera/fragment/mode/FragmentMoreModeBase;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "fragment"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -71,38 +63,50 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dialog"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/mode/FragmentMoreModeBase$DialogDissmissListener;->weakReference:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     check-cast p0, Lcom/android/camera/fragment/mode/FragmentMoreModeBase;
 
+    .line 8
+    .line 9
     if-eqz p0, :cond_0
 
+    .line 10
+    .line 11
     const-string p1, "DialogDissmissListener"
 
+    .line 12
+    .line 13
     const-string/jumbo v0, "onClick showDownloadCancelDialog cancel"
 
-    .line 2
+    .line 14
+    .line 15
+    .line 16
     invoke-static {p1, v0}, Lcom/android/camera/log/LogU;->i(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 17
+    .line 18
+    .line 19
     const/4 p1, 0x0
 
-    .line 3
+    .line 20
     invoke-static {p0, p1}, Lcom/android/camera/fragment/mode/FragmentMoreModeBase;->access$402(Lcom/android/camera/fragment/mode/FragmentMoreModeBase;Lmiuix/appcompat/app/AlertDialog;)Lmiuix/appcompat/app/AlertDialog;
 
+    .line 21
+    .line 22
+    .line 23
     :cond_0
     return-void
 .end method

@@ -33,15 +33,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "texture"
-        }
-    .end annotation
-
     .line 3
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawRectShapeAttributeBase;-><init>()V
 
@@ -58,23 +49,6 @@
 
 .method public constructor <init>(Lcom/android/gallery3d/ui/BasicTexture;IIII)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texture",
-            "x",
-            "y",
-            "w",
-            "h"
-        }
-    .end annotation
-
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -94,16 +68,6 @@
 
 .method public constructor <init>(Lcom/android/gallery3d/ui/BasicTexture;Landroid/graphics/Rect;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "texture",
-            "rect"
-        }
-    .end annotation
 
     .line 8
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawRectShapeAttributeBase;-><init>()V
@@ -131,18 +95,6 @@
 
 .method public constructor <init>(Lcom/android/gallery3d/ui/BasicTexture;Landroid/graphics/Rect;[F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texture",
-            "rect",
-            "transMatrix"
-        }
-    .end annotation
 
     .line 6
     invoke-direct {p0, p1, p2}, Lcom/android/camera/effect/draw_mode/DrawBasicTexAttribute;-><init>(Lcom/android/gallery3d/ui/BasicTexture;Landroid/graphics/Rect;)V
@@ -158,15 +110,6 @@
 .method public init(Lcom/android/gallery3d/ui/BasicTexture;)Lcom/android/camera/effect/draw_mode/DrawBasicTexAttribute;
     .locals 4
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "texture"
-        }
     .end annotation
 
     .line 1
@@ -195,16 +138,6 @@
 
 .method public init(Lcom/android/gallery3d/ui/BasicTexture;Landroid/graphics/Rect;)Lcom/android/camera/effect/draw_mode/DrawBasicTexAttribute;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "texture",
-            "r"
-        }
-    .end annotation
 
     .line 4
     iget-object v0, p0, Lcom/android/camera/effect/draw_mode/DrawRectShapeAttributeBase;->mDrawRect:Landroid/graphics/Rect;
@@ -224,18 +157,6 @@
 
 .method public init(Lcom/android/gallery3d/ui/BasicTexture;Landroid/graphics/Rect;I)Lcom/android/camera/effect/draw_mode/DrawBasicTexAttribute;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texture",
-            "r",
-            "rotation"
-        }
-    .end annotation
 
     .line 10
     iget-object v0, p0, Lcom/android/camera/effect/draw_mode/DrawRectShapeAttributeBase;->mDrawRect:Landroid/graphics/Rect;
@@ -253,18 +174,6 @@
 
 .method public init(Lcom/android/gallery3d/ui/BasicTexture;Landroid/graphics/Rect;Z)Lcom/android/camera/effect/draw_mode/DrawBasicTexAttribute;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texture",
-            "r",
-            "isSnapshot"
-        }
-    .end annotation
 
     .line 7
     iget-object v0, p0, Lcom/android/camera/effect/draw_mode/DrawRectShapeAttributeBase;->mDrawRect:Landroid/graphics/Rect;

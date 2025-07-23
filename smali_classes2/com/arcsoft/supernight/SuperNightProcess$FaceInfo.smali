@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lcom/arcsoft/supernight/SuperNightProcess;
+.field final synthetic a:Lcom/arcsoft/supernight/SuperNightProcess;
 
 .field public faceNum:I
 
@@ -31,7 +31,12 @@
     .line 1
     iput-object p1, p0, Lcom/arcsoft/supernight/SuperNightProcess$FaceInfo;->a:Lcom/arcsoft/supernight/SuperNightProcess;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

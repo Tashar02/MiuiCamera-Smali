@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field public mDrawable2d:Lcom/faceunity/pta_helper/gles/core/Drawable2d;
+.field protected mDrawable2d:Lcom/faceunity/pta_helper/gles/core/Drawable2d;
 
-.field public mProgramHandle:I
+.field protected mProgramHandle:I
 
 
 # direct methods
@@ -20,8 +20,12 @@
     .line 1
     sget-object v0, Lcom/faceunity/pta_helper/gles/core/GlUtil;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     sput-object v0, Lcom/faceunity/pta_helper/gles/core/Program;->TAG:Ljava/lang/String;
 
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -104,7 +108,6 @@
     .line 4
     invoke-virtual {p0, p1, p2, p3}, Lcom/faceunity/pta_helper/gles/core/Program;->drawFrame(I[F[F)V
 
-    .line 5
     aget p0, v0, v2
 
     const/4 p1, 0x1
@@ -119,6 +122,7 @@
 
     aget p3, v0, p3
 
+    .line 5
     invoke-static {p0, p1, p2, p3}, Landroid/opengl/GLES20;->glViewport(IIII)V
 
     return-void
@@ -136,13 +140,20 @@
     .line 1
     iget v0, p0, Lcom/faceunity/pta_helper/gles/core/Program;->mProgramHandle:I
 
+    .line 2
+    .line 3
     invoke-static {v0}, Landroid/opengl/GLES20;->glDeleteProgram(I)V
 
+    .line 4
+    .line 5
+    .line 6
     const/4 v0, -0x1
 
-    .line 2
+    .line 7
     iput v0, p0, Lcom/faceunity/pta_helper/gles/core/Program;->mProgramHandle:I
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -152,8 +163,13 @@
     .line 1
     iget-object p0, p0, Lcom/faceunity/pta_helper/gles/core/Program;->mDrawable2d:Lcom/faceunity/pta_helper/gles/core/Drawable2d;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->updateTexCoordArray([F)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -163,7 +179,12 @@
     .line 1
     iget-object p0, p0, Lcom/faceunity/pta_helper/gles/core/Program;->mDrawable2d:Lcom/faceunity/pta_helper/gles/core/Drawable2d;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/faceunity/pta_helper/gles/core/Drawable2d;->updateVertexArray([F)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

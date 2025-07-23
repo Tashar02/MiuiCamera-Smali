@@ -87,14 +87,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mFragments:Ljava/util/Collection;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mChildNonConfigs:Ljava/util/Map;
 
-    .line 4
+    .line 7
+    .line 8
     iput-object p3, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mViewModelStores:Ljava/util/Map;
 
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -118,6 +124,8 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mChildNonConfigs:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -138,6 +146,8 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mFragments:Ljava/util/Collection;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -159,6 +169,8 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mViewModelStores:Ljava/util/Map;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -168,17 +180,26 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/FragmentManagerNonConfig;->mFragments:Ljava/util/Collection;
 
+    .line 2
+    .line 3
     if-nez p0, :cond_0
 
+    .line 4
+    .line 5
     const/4 p0, 0x0
 
+    .line 6
     return p0
 
-    .line 2
+    .line 7
     :cond_0
     invoke-interface {p0, p1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result p0
 
+    .line 11
     return p0
 .end method

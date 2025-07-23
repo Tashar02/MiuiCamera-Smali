@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field public mDegree:I
+.field protected mDegree:I
 
 .field private mFunctionListener:Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$FunctionListener;
 
@@ -39,39 +39,49 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$Builder;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "builder"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;-><init>(Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;)V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {p1}, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$Builder;->access$000(Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$Builder;)I
 
+    .line 5
+    .line 6
+    .line 7
     move-result v0
 
+    .line 8
     iput v0, p0, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem;->mCustomView:I
 
-    .line 3
+    .line 9
+    .line 10
     invoke-static {p1}, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$Builder;->access$100(Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$Builder;)Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$UpdateListener;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object v0
 
+    .line 14
     iput-object v0, p0, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem;->mUpdateListener:Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$UpdateListener;
 
-    .line 4
+    .line 15
+    .line 16
     invoke-static {p1}, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$Builder;->access$200(Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$Builder;)Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$FunctionListener;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object p1
 
+    .line 20
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem;->mFunctionListener:Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$FunctionListener;
 
+    .line 21
+    .line 22
     return-void
 .end method
 
@@ -85,6 +95,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem;->mCustomView:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -94,6 +106,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem;->mFunctionListener:Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$FunctionListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -103,56 +117,40 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem;->mUpdateListener:Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem$UpdateListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setActivated(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "activated"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;->mIsActivated:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setDegree(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/CustomViewEntranceItem;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSupportRotation(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isSupportRotation"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;->mSupportRotation:Z
 
+    .line 2
+    .line 3
     return-void
 .end method

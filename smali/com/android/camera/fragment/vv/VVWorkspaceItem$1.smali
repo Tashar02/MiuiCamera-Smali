@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/vv/VVWorkspaceItem$1;
+.class Lcom/android/camera/fragment/vv/VVWorkspaceItem$1;
 .super Ljava/lang/Object;
 .source "VVWorkspaceItem.java"
 
@@ -27,26 +27,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/vv/VVWorkspaceItem;
+.field final synthetic this$0:Lcom/android/camera/fragment/vv/VVWorkspaceItem;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/vv/VVWorkspaceItem;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vv/VVWorkspaceItem$1;->this$0:Lcom/android/camera/fragment/vv/VVWorkspaceItem;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -54,16 +51,6 @@
 # virtual methods
 .method public compare(Ljava/io/File;Ljava/io/File;)I
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "o1",
-            "o2"
-        }
-    .end annotation
 
     .line 2
     invoke-virtual {p1}, Ljava/io/File;->lastModified()J
@@ -109,16 +96,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "o1",
-            "o2"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Ljava/io/File;

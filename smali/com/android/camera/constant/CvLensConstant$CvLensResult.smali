@@ -1,4 +1,4 @@
-.class public interface abstract annotation Lcom/android/camera/constant/CvLensConstant$CvLensResult;
+.class interface abstract annotation Lcom/android/camera/constant/CvLensConstant$CvLensResult;
 .super Ljava/lang/Object;
 .source "CvLensConstant.java"
 

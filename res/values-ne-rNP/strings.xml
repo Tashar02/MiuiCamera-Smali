@@ -664,6 +664,7 @@
     <string name="download_hint_cn">तपाईंको डिभाइस WLAN मा जडान भएको छैन जस्तो देखिन्छ। अहिले वस्तुहरू डाउनलोड गर्न %1$s MB मोबाइल डाटा प्रयोग गर्नुहुन्छ?</string>
     <string name="download_hint_wifi">तपाईंको डिभाइस वाइ-फाइ मा जडान भएको छैन जस्तो देखिन्छ। अहिले वस्तुहरू डाउनलोड गर्न %1$s MB मोबाइल डाटा प्रयोग गर्नुहुन्छ?</string>
     <string name="download_in_progress">डाउनलोड हुदैँछ…</string>
+    <string name="download_network_error">डाउनलोड गर्न सकिएन । तपाईंको नेटवर्क सेटिंग्स जाँच गर्नुहोस्।</string>
     <string name="download_title">डाटा प्रयोग चेतावनी</string>
     <string name="download_waiting">बाँकी छ…</string>
     <string name="dual_camera_lens_covered_toast">लेन्स ढाकिएको छ।</string>
@@ -1478,6 +1479,7 @@
     <string name="pref_camera_peak_entry_off">अफ</string>
     <string name="pref_camera_peak_entry_on">अन</string>
     <string name="pref_camera_peak_title">फोकस पिकिंग</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">पूर्ण</string>
     <string name="pref_camera_picturesize_title_simple_mode">क्यामेरा फ्रेम</string>
     <string name="pref_camera_portrait_mode_entry_off">पोर्ट्रेट मोड अफ छ</string>
     <string name="pref_camera_portrait_mode_entry_on">पोर्ट्रेट मोड अन छ</string>

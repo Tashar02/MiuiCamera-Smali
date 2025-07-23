@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/data/DataRewinderRegistry$DefaultRewinder;
+.class final Lcom/bumptech/glide/load/data/DataRewinderRegistry$DefaultRewinder;
 .super Ljava/lang/Object;
 .source "DataRewinderRegistry.java"
 
@@ -42,8 +42,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/data/DataRewinderRegistry$DefaultRewinder;->data:Ljava/lang/Object;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -52,6 +56,7 @@
 .method public cleanup()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -63,5 +68,7 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/data/DataRewinderRegistry$DefaultRewinder;->data:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

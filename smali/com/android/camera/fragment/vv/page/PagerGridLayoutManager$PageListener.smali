@@ -16,23 +16,7 @@
 
 # virtual methods
 .method public abstract onPageSelect(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "pageIndex"
-        }
-    .end annotation
 .end method
 
 .method public abstract onPageSizeChanged(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "pageSize"
-        }
-    .end annotation
 .end method

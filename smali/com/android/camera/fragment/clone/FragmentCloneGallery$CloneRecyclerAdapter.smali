@@ -44,110 +44,186 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    const v0, 0x7f0a0127
-
     .line 1
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->VIDEO_VIEW_STATE:Ljava/lang/Integer;
-
-    const/4 v0, 0x2
+    const v0, 0x7f0b0127
 
     .line 2
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->STATE_STOPPED:Ljava/lang/Integer;
-
-    const/4 v0, 0x1
-
     .line 3
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->STATE_STARTING:Ljava/lang/Integer;
-
-    const/4 v0, 0x0
-
     .line 4
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object v0
 
+    .line 8
+    sput-object v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->VIDEO_VIEW_STATE:Ljava/lang/Integer;
+
+    .line 9
+    .line 10
+    const/4 v0, 0x2
+
+    .line 11
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    sput-object v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->STATE_STOPPED:Ljava/lang/Integer;
+
+    .line 16
+    .line 17
+    const/4 v0, 0x1
+
+    .line 18
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    sput-object v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->STATE_STARTING:Ljava/lang/Integer;
+
+    .line 23
+    .line 24
+    const/4 v0, 0x0
+
+    .line 25
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
     sput-object v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->STATE_STARTED:Ljava/lang/Integer;
 
+    .line 30
+    .line 31
     return-void
 .end method
 
 .method public constructor <init>(Landroid/view/View$OnClickListener;Landroidx/fragment/app/Fragment;)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "l",
-            "frag"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x3
 
+    .line 5
     new-array v0, v0, [Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;
 
-    .line 2
+    .line 6
+    .line 7
     new-instance v1, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;
 
-    const v2, 0x7f080177
+    .line 8
+    .line 9
+    const v2, 0x7f080178
 
+    .line 10
+    .line 11
+    .line 12
     const/4 v3, 0x0
 
+    .line 13
     const/4 v4, 0x1
 
+    .line 14
     invoke-direct {v1, v2, v3, v4}, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;-><init>(ILjava/lang/String;I)V
 
+    .line 15
+    .line 16
+    .line 17
     const/4 v2, 0x0
 
+    .line 18
     aput-object v1, v0, v2
 
+    .line 19
+    .line 20
     new-instance v1, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;
 
-    const v2, 0x7f08017a
+    .line 21
+    .line 22
+    const v2, 0x7f08017b
 
+    .line 23
+    .line 24
+    .line 25
     const-string v3, "clone_video_mode.mp4"
 
+    .line 26
+    .line 27
     const/4 v5, 0x2
 
+    .line 28
     invoke-direct {v1, v2, v3, v5}, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;-><init>(ILjava/lang/String;I)V
 
+    .line 29
+    .line 30
+    .line 31
     aput-object v1, v0, v4
 
+    .line 32
+    .line 33
     new-instance v1, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;
 
-    const v2, 0x7f08016e
+    .line 34
+    .line 35
+    const v2, 0x7f08016f
 
+    .line 36
+    .line 37
+    .line 38
     const-string v3, "clone_freeze_frame_mode.mp4"
 
+    .line 39
+    .line 40
     invoke-direct {v1, v2, v3, v5}, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;-><init>(ILjava/lang/String;I)V
 
+    .line 41
+    .line 42
+    .line 43
     aput-object v1, v0, v5
 
+    .line 44
+    .line 45
     iput-object v0, p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->dataArray:[Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;
 
-    .line 3
+    .line 46
+    .line 47
     iput-object p1, p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->mListener:Landroid/view/View$OnClickListener;
 
-    .line 4
+    .line 48
+    .line 49
     iput-object p2, p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->parentFragment:Landroidx/fragment/app/Fragment;
 
+    .line 50
+    .line 51
+    return-void
+.end method
+
+.method public static synthetic OooO00o(Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->lambda$onBindViewHolder$0(Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -157,211 +233,308 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->parentFragment:Landroidx/fragment/app/Fragment;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     if-eqz p0, :cond_0
 
+    .line 8
+    .line 9
     const/16 p0, 0x80
 
-    .line 2
+    .line 10
+    .line 11
     invoke-virtual {p1, p0}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
+    .line 12
+    .line 13
+    .line 14
     :cond_0
     return-void
 .end method
 
 .method private startPlay(Lcom/android/camera/ui/TextureVideoView;Ljava/lang/String;Landroid/widget/ImageView;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x10
-        }
-        names = {
-            "textureVideoView",
-            "assetFile",
-            "bgHolder"
-        }
-    .end annotation
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/TextureView;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
     :try_start_0
     invoke-virtual {v0, p2}, Landroid/content/res/AssetManager;->openFd(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p2
 
-    .line 3
+    .line 18
     invoke-virtual {p1, p2}, Lcom/android/camera/ui/TextureVideoView;->setVideoFileDescriptor(Landroid/content/res/AssetFileDescriptor;)V
 
-    .line 4
-    invoke-virtual {p1, v1}, Landroid/view/TextureView;->setVisibility(I)V
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 5
+    .line 22
+    .line 23
+    .line 24
     invoke-virtual {p1, v1}, Lcom/android/camera/ui/TextureVideoView;->setIsNeedAudio(Z)V
 
+    .line 25
+    .line 26
+    .line 27
     const/4 v0, 0x1
 
-    .line 6
+    .line 28
     invoke-virtual {p1, v0}, Lcom/android/camera/ui/TextureVideoView;->setLoop(Z)V
 
-    .line 7
+    .line 29
+    .line 30
+    .line 31
     new-instance v0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter$1;
 
+    .line 32
+    .line 33
     invoke-direct {v0, p0, p2, p1, p3}, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter$1;-><init>(Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;Landroid/content/res/AssetFileDescriptor;Lcom/android/camera/ui/TextureVideoView;Landroid/widget/ImageView;)V
 
+    .line 34
+    .line 35
+    .line 36
     invoke-virtual {p1, v0}, Lcom/android/camera/ui/TextureVideoView;->setMediaPlayerCallback(Lcom/android/camera/ui/TextureVideoView$MediaPlayerCallback;)V
 
-    .line 8
+    .line 37
+    .line 38
+    .line 39
     sget-object p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->VIDEO_VIEW_STATE:Ljava/lang/Integer;
 
+    .line 40
+    .line 41
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
+    .line 42
+    .line 43
+    .line 44
     move-result p0
 
+    .line 45
     sget-object p2, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->STATE_STARTING:Ljava/lang/Integer;
 
-    invoke-virtual {p1, p0, p2}, Landroid/view/TextureView;->setTag(ILjava/lang/Object;)V
+    .line 46
+    .line 47
+    invoke-virtual {p1, p0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
+    .line 48
+    .line 49
+    .line 50
     const-wide/16 p2, 0x0
 
-    .line 9
+    .line 51
+    .line 52
     invoke-virtual {p1, p2, p3}, Lcom/android/camera/ui/TextureVideoView;->start(J)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 53
+    .line 54
+    .line 55
     goto :goto_0
 
+    .line 56
     :catch_0
-    new-array p0, v1, [Ljava/lang/Object;
+    const-string/jumbo p0, "open failed"
 
-    const-string p1, "FragmentCloneGallery"
+    .line 57
+    .line 58
+    .line 59
+    new-array p1, v1, [Ljava/lang/Object;
 
-    const-string/jumbo p2, "open failed"
+    .line 60
+    .line 61
+    const-string p2, "FragmentCloneGallery"
 
-    .line 10
-    invoke-static {p1, p2, p0}, Lcom/android/camera/log/Log;->w(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 62
+    .line 63
+    invoke-static {p2, p0, p1}, Lcom/android/camera/log/Log;->w(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 64
+    .line 65
+    .line 66
     :goto_0
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic OooO00o(Landroid/view/View;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->lambda$onBindViewHolder$0(Landroid/view/View;)V
-
-    return-void
-.end method
-
 .method public animateViews(IZLandroid/view/View;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "newState",
-            "animation",
-            "targetView"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     if-eqz p0, :cond_0
 
+    .line 6
+    .line 7
     invoke-virtual {p3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
     check-cast p0, Ljava/lang/Integer;
 
+    .line 12
+    .line 13
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
+    .line 14
+    .line 15
+    .line 16
     move-result p0
 
+    .line 17
     if-ne p0, p1, :cond_0
 
+    .line 18
+    .line 19
     return-void
 
-    .line 2
+    .line 20
     :cond_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object p0
 
+    .line 24
     invoke-virtual {p3, p0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
+    .line 25
+    .line 26
+    .line 27
     const/4 p0, 0x1
 
+    .line 28
     if-ne p1, p0, :cond_2
 
+    .line 29
+    .line 30
     if-nez p2, :cond_1
 
-    .line 3
+    .line 31
+    .line 32
     invoke-static {p3}, Lcom/android/camera/animation/type/AlphaInOnSubscribe;->directSetResult(Landroid/view/View;)V
 
+    .line 33
+    .line 34
+    .line 35
     goto :goto_0
 
-    .line 4
+    .line 36
     :cond_1
     new-instance p0, Lcom/android/camera/animation/type/AlphaInOnSubscribe;
 
+    .line 37
+    .line 38
     invoke-direct {p0, p3}, Lcom/android/camera/animation/type/AlphaInOnSubscribe;-><init>(Landroid/view/View;)V
 
+    .line 39
+    .line 40
+    .line 41
     invoke-static {p0}, Lio/reactivex/Completable;->create(Lio/reactivex/CompletableOnSubscribe;)Lio/reactivex/Completable;
 
+    .line 42
+    .line 43
+    .line 44
     move-result-object p0
 
+    .line 45
     invoke-virtual {p0}, Lio/reactivex/Completable;->subscribe()Lio/reactivex/disposables/Disposable;
 
+    .line 46
+    .line 47
+    .line 48
     goto :goto_0
 
+    .line 49
     :cond_2
     if-nez p2, :cond_3
 
-    .line 5
+    .line 50
+    .line 51
     invoke-static {p3}, Lcom/android/camera/animation/type/AlphaOutOnSubscribe;->directSetResult(Landroid/view/View;)V
 
+    .line 52
+    .line 53
+    .line 54
     goto :goto_0
 
-    .line 6
+    .line 55
     :cond_3
     new-instance p0, Lcom/android/camera/animation/type/AlphaOutOnSubscribe;
 
+    .line 56
+    .line 57
     invoke-direct {p0, p3}, Lcom/android/camera/animation/type/AlphaOutOnSubscribe;-><init>(Landroid/view/View;)V
 
+    .line 58
+    .line 59
+    .line 60
     invoke-static {p0}, Lio/reactivex/Completable;->create(Lio/reactivex/CompletableOnSubscribe;)Lio/reactivex/Completable;
 
+    .line 61
+    .line 62
+    .line 63
     move-result-object p0
 
+    .line 64
     invoke-virtual {p0}, Lio/reactivex/Completable;->subscribe()Lio/reactivex/disposables/Disposable;
 
+    .line 65
+    .line 66
+    .line 67
     :goto_0
     return-void
 .end method
@@ -369,33 +542,35 @@
 .method public getItemCount()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x3
 
+    .line 2
     return p0
 .end method
 
 .method public getItemViewType(I)I
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "position"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;->dataArray:[Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;
 
+    .line 2
+    .line 3
     array-length v0, p0
 
+    .line 4
     rem-int/2addr p1, v0
 
+    .line 5
     aget-object p0, p0, p1
 
+    .line 6
+    .line 7
     iget p0, p0, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneViewItem;->type:I
 
+    .line 8
+    .line 9
     return p0
 .end method
 
@@ -409,17 +584,6 @@
         ignore = false
         key = "!isSupportThemeCV"
         type = 0x0
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "pos"
-        }
     .end annotation
 
     .line 1
@@ -440,18 +604,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position",
-            "payloads"
-        }
-    .end annotation
 
     .line 2
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -471,17 +623,6 @@
         ignore = false
         key = "!isSupportThemeCV"
         type = 0x0
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "pos"
-        }
     .end annotation
 
     .line 3
@@ -520,9 +661,9 @@
 
     if-eqz p2, :cond_2
 
-    const v2, 0x7f0a0126
+    const v2, 0x7f0b0126
 
-    const v3, 0x7f0a0123
+    const v3, 0x7f0b0123
 
     if-eq p2, v1, :cond_1
 
@@ -540,7 +681,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0a0124
+    const v3, 0x7f0b0124
 
     .line 6
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -556,12 +697,12 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f1202bb
+    const v4, 0x7f1302ba
 
     .line 8
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
 
-    const v2, 0x7f08016e
+    const v2, 0x7f08016f
 
     .line 9
     invoke-virtual {v3, v2}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -581,7 +722,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f1202d8
+    const v3, 0x7f1302d7
 
     .line 12
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
@@ -589,7 +730,7 @@
     goto :goto_0
 
     :cond_2
-    const v2, 0x7f0a0114
+    const v2, 0x7f0b0114
 
     .line 13
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -622,12 +763,12 @@
 
     if-ne p2, v1, :cond_4
 
-    const p2, 0x7f0a0116
+    const p2, 0x7f0b0116
 
     goto :goto_1
 
     :cond_4
-    const p2, 0x7f0a0125
+    const p2, 0x7f0b0125
 
     :goto_1
     invoke-virtual {p1, p2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -656,19 +797,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position",
-            "payloads"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -773,7 +901,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f1200bb
+    const v4, 0x7f1300bb
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -796,7 +924,7 @@
     return-void
 
     :cond_2
-    const v1, 0x7f0a0125
+    const v1, 0x7f0b0125
 
     .line 26
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -805,7 +933,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    const v4, 0x7f0a0128
+    const v4, 0x7f0b0128
 
     .line 27
     invoke-virtual {p1, v4}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -814,14 +942,14 @@
 
     check-cast v4, Lcom/android/camera/ui/TextureVideoView;
 
-    const v5, 0x7f0a0123
+    const v5, 0x7f0b0123
 
     .line 28
     invoke-virtual {p1, v5}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
 
     move-result-object v5
 
-    const v6, 0x7f0a0124
+    const v6, 0x7f0b0124
 
     .line 29
     invoke-virtual {p1, v6}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -853,7 +981,7 @@
     goto :goto_0
 
     :cond_4
-    const v1, 0x7f0a0116
+    const v1, 0x7f0b0116
 
     .line 33
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -862,7 +990,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    const v4, 0x7f0a0114
+    const v4, 0x7f0b0114
 
     .line 34
     invoke-virtual {p1, v4}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -926,9 +1054,9 @@
     if-eqz p3, :cond_6
 
     .line 40
-    new-instance p1, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO0OOoOO/OooOOOO;
+    new-instance p1, Lcom/android/camera/fragment/clone/OooO0OO;
 
-    invoke-direct {p1, p0, v5}, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO0OOoOO/OooOOOO;-><init>(Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;Landroid/view/View;)V
+    invoke-direct {p1, p0, v5}, Lcom/android/camera/fragment/clone/OooO0OO;-><init>(Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;Landroid/view/View;)V
 
     const-wide/16 v6, 0x64
 
@@ -952,9 +1080,9 @@
 
     :array_0
     .array-data 4
-        0x7f1202d3
-        0x7f1202d8
-        0x7f1202bb
+        0x7f1302d2
+        0x7f1302d7
+        0x7f1302ba
     .end array-data
 .end method
 
@@ -971,17 +1099,6 @@
         ignore = false
         key = "!isSupportThemeCV"
         type = 0x0
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
     .end annotation
 
     .line 1
@@ -1007,19 +1124,8 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
-
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
@@ -1027,14 +1133,14 @@
 
     move-result-object p0
 
-    const v0, 0x7f0701d5
+    const v0, 0x7f0701d7
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result p0
 
     .line 3
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1042,7 +1148,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0701d1
+    const v1, 0x7f0701d3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -1060,13 +1166,13 @@
 
     if-eq p2, v1, :cond_0
 
-    move-object p1, v2
+    move-object p1, v3
 
     goto :goto_0
 
     .line 4
     :cond_0
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -1074,16 +1180,16 @@
 
     move-result-object p2
 
-    const v1, 0x7f0d0070
+    const v1, 0x7f0e007a
 
     .line 5
-    invoke-virtual {p2, v1, p1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p2, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/view/ViewGroup;
 
-    const p2, 0x7f0a0123
+    const p2, 0x7f0b0123
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1102,7 +1208,7 @@
 
     .line 7
     :cond_1
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -1110,16 +1216,16 @@
 
     move-result-object p2
 
-    const v1, 0x7f0d006e
+    const v1, 0x7f0e0078
 
     .line 8
-    invoke-virtual {p2, v1, p1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p2, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/view/ViewGroup;
 
-    const p2, 0x7f0a0114
+    const p2, 0x7f0b0114
 
     .line 9
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1137,19 +1243,19 @@
     :goto_0
     if-nez p1, :cond_2
 
-    new-array p0, v3, [Ljava/lang/Object;
+    const-string/jumbo p0, "onCreateViewHolder: Fail to create rv item view"
 
-    const-string p1, "FragmentCloneGallery"
+    new-array p1, v2, [Ljava/lang/Object;
 
-    const-string/jumbo p2, "onCreateViewHolder: Fail to create rv item view"
+    const-string p2, "FragmentCloneGallery"
 
     .line 10
-    invoke-static {p1, p2, p0}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p2, p0, p1}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 11
     new-instance p0, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
 
-    invoke-direct {p0, v2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;-><init>(Landroid/view/View;)V
+    invoke-direct {p0, v3}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;-><init>(Landroid/view/View;)V
 
     return-object p0
 

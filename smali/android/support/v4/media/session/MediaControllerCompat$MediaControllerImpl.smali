@@ -1,4 +1,4 @@
-.class public interface abstract Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImpl;
+.class interface abstract Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImpl;
 .super Ljava/lang/Object;
 .source "MediaControllerCompat.java"
 
@@ -16,15 +16,51 @@
 
 # virtual methods
 .method public abstract addQueueItem(Landroid/support/v4/media/MediaDescriptionCompat;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "description"
+        }
+    .end annotation
 .end method
 
 .method public abstract addQueueItem(Landroid/support/v4/media/MediaDescriptionCompat;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "description",
+            "index"
+        }
+    .end annotation
 .end method
 
 .method public abstract adjustVolume(II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "direction",
+            "flags"
+        }
+    .end annotation
 .end method
 
 .method public abstract dispatchMediaButtonEvent(Landroid/view/KeyEvent;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyEvent"
+        }
+    .end annotation
 .end method
 
 .method public abstract getExtras()Landroid/os/Bundle;
@@ -71,6 +107,9 @@
 .method public abstract getSessionActivity()Landroid/app/PendingIntent;
 .end method
 
+.method public abstract getSessionInfo()Landroid/os/Bundle;
+.end method
+
 .method public abstract getShuffleMode()I
 .end method
 
@@ -84,16 +123,64 @@
 .end method
 
 .method public abstract registerCallback(Landroid/support/v4/media/session/MediaControllerCompat$Callback;Landroid/os/Handler;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "callback",
+            "handler"
+        }
+    .end annotation
 .end method
 
 .method public abstract removeQueueItem(Landroid/support/v4/media/MediaDescriptionCompat;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "description"
+        }
+    .end annotation
 .end method
 
 .method public abstract sendCommand(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/ResultReceiver;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "command",
+            "params",
+            "cb"
+        }
+    .end annotation
 .end method
 
 .method public abstract setVolumeTo(II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "flags"
+        }
+    .end annotation
 .end method
 
 .method public abstract unregisterCallback(Landroid/support/v4/media/session/MediaControllerCompat$Callback;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 .end method

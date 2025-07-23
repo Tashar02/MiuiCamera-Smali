@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/core/app/JobIntentService$CompatJobEngine;
+.class interface abstract Landroidx/core/app/JobIntentService$CompatJobEngine;
 .super Ljava/lang/Object;
 .source "JobIntentService.java"
 

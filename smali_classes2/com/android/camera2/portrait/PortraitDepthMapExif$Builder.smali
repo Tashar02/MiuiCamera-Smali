@@ -85,6 +85,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -94,6 +97,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->jpeg:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -103,6 +108,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->dulWaterMark:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -112,6 +119,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isBokehFrontCamera:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -121,6 +130,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isCinematicAspectRatio:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -130,6 +141,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->pictureInfo:Lcom/xiaomi/camera/core/PictureInfo;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -139,6 +152,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->rawLength:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -148,6 +163,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->depthLength:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -157,6 +174,8 @@
     .line 1
     iget-wide v0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->timeStamp:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -166,6 +185,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->portraitLightingVersioin:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -175,6 +196,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isSupportZeroDegreeOrientationImage:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -184,6 +207,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->cameraPreferredMode:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -193,6 +218,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isLTR:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -202,6 +229,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->dulCameraWaterMarkLocation:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -211,6 +240,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->algorithmName:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -220,6 +251,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->cvWatermarkJpeg:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -229,6 +262,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->timeWaterMark:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -238,6 +273,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->timeWaterMarkLocation:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -247,6 +284,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->jpegDataOfTheRegionUnderWatermarks:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -256,6 +295,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->coordinatesOfOfTheRegionUnderWatermarks:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -265,6 +306,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->rotation:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -274,6 +317,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->lightingPattern:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -283,6 +328,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isFrontMirror:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -290,18 +337,12 @@
 # virtual methods
 .method public algorithmName(Ljava/lang/String;)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "algorithmName"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->algorithmName:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -311,27 +352,27 @@
     .line 1
     new-instance v0, Lcom/android/camera2/portrait/PortraitDepthMapExif;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     invoke-direct {v0, p0, v1}, Lcom/android/camera2/portrait/PortraitDepthMapExif;-><init>(Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;Lcom/android/camera2/portrait/PortraitDepthMapExif$1;)V
 
+    .line 5
+    .line 6
+    .line 7
     return-object v0
 .end method
 
 .method public cameraPreferredMode(I)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cameraPreferredMode"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->cameraPreferredMode:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -341,35 +382,23 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "coordinatesOfOfTheRegionUnderWatermarks"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->coordinatesOfOfTheRegionUnderWatermarks:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public depthLength(I)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "depthLength"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->depthLength:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -379,18 +408,12 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dulCameraWaterMarkLocation"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->dulCameraWaterMarkLocation:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -400,86 +423,56 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dulWaterMark"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->dulWaterMark:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public isBokehFrontCamera(Z)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isBokehFrontCamera"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isBokehFrontCamera:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public isCinematicAspectRatio(Z)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isCinematicAspectRatio"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isCinematicAspectRatio:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public isFrontMirror(Z)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isFrontMirror"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isFrontMirror:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public isLTR(Z)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isLTR"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isLTR:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -491,35 +484,22 @@
         type = 0x2
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isSupportZeroDegreeOrientationImage"
-        }
-    .end annotation
-
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->isSupportZeroDegreeOrientationImage:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public jpeg([B)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "jpeg"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->jpeg:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -529,137 +509,89 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "jpegDataOfTheRegionUnderWatermarks"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->jpegDataOfTheRegionUnderWatermarks:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public lightingPattern(I)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "lightingPattern"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->lightingPattern:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public pictureInfo(Lcom/xiaomi/camera/core/PictureInfo;)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "pictureInfo"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->pictureInfo:Lcom/xiaomi/camera/core/PictureInfo;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public portraitLightingVersioin(I)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "version"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->portraitLightingVersioin:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public rawLength(I)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "rawLength"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->rawLength:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public rotation(I)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "rotation"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->rotation:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setCvWatermarkJpeg([B)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "waterMarkJpeg"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->cvWatermarkJpeg:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public timeStamp(J)Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timeStamp"
-        }
-    .end annotation
 
     .line 1
     iput-wide p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->timeStamp:J
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -669,18 +601,12 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timeWaterMark"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->timeWaterMark:[B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -690,17 +616,11 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timeWaterMarkLocation"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/portrait/PortraitDepthMapExif$Builder;->timeWaterMarkLocation:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method

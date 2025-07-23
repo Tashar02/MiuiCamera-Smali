@@ -56,21 +56,35 @@
 .method public static constructor <clinit>()V
     .locals 2
 
+    .line 1
     const/16 v0, 0x9c4
 
-    .line 1
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     const-string v1, "com.bumptech.glide.load.model.stream.HttpGlideUrlLoader.Timeout"
 
+    .line 8
+    .line 9
     invoke-static {v1, v0}, Lcom/bumptech/glide/load/Option;->memory(Ljava/lang/String;Ljava/lang/Object;)Lcom/bumptech/glide/load/Option;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v0
 
+    .line 13
     sput-object v0, Lcom/bumptech/glide/load/model/stream/HttpGlideUrlLoader;->TIMEOUT:Lcom/bumptech/glide/load/Option;
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -216,6 +230,7 @@
         .end annotation
     .end param
 
+    .line 1
     const/4 p0, 0x1
 
     return p0
@@ -228,7 +243,7 @@
         .end annotation
     .end param
 
-    .line 1
+    .line 2
     check-cast p1, Lcom/bumptech/glide/load/model/GlideUrl;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/model/stream/HttpGlideUrlLoader;->handles(Lcom/bumptech/glide/load/model/GlideUrl;)Z

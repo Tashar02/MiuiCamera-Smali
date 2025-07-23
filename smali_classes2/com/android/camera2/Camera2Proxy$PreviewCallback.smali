@@ -16,16 +16,4 @@
 
 # virtual methods
 .method public abstract onPreviewFrame(Landroid/media/Image;Lcom/android/camera2/Camera2Proxy;I)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "previewImage",
-            "camera",
-            "deviceOrientation"
-        }
-    .end annotation
 .end method

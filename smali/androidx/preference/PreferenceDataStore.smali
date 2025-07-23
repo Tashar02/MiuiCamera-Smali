@@ -10,6 +10,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -18,24 +21,28 @@
 .method public getBoolean(Ljava/lang/String;Z)Z
     .locals 0
 
+    .line 1
     return p2
 .end method
 
 .method public getFloat(Ljava/lang/String;F)F
     .locals 0
 
+    .line 1
     return p2
 .end method
 
 .method public getInt(Ljava/lang/String;I)I
     .locals 0
 
+    .line 1
     return p2
 .end method
 
 .method public getLong(Ljava/lang/String;J)J
     .locals 0
 
+    .line 1
     return-wide p2
 .end method
 
@@ -48,6 +55,7 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
+    .line 1
     return-object p2
 .end method
 
@@ -73,6 +81,7 @@
         }
     .end annotation
 
+    .line 1
     return-object p2
 .end method
 
@@ -82,10 +91,17 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string p1, "Not implemented on this data store"
 
+    .line 4
+    .line 5
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     throw p0
 .end method
 
@@ -95,10 +111,17 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string p1, "Not implemented on this data store"
 
+    .line 4
+    .line 5
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     throw p0
 .end method
 
@@ -108,10 +131,17 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string p1, "Not implemented on this data store"
 
+    .line 4
+    .line 5
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     throw p0
 .end method
 
@@ -121,10 +151,17 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string p1, "Not implemented on this data store"
 
+    .line 4
+    .line 5
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     throw p0
 .end method
 
@@ -138,10 +175,17 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string p1, "Not implemented on this data store"
 
+    .line 4
+    .line 5
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     throw p0
 .end method
 
@@ -164,9 +208,16 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string p1, "Not implemented on this data store"
 
+    .line 4
+    .line 5
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     throw p0
 .end method

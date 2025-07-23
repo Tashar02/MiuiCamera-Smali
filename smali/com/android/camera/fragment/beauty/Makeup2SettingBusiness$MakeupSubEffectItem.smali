@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness$MakeupSubEffectItem;
+.class Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness$MakeupSubEffectItem;
 .super Ljava/lang/Object;
 .source "Makeup2SettingBusiness.java"
 
@@ -15,24 +15,16 @@
 
 
 # instance fields
-.field public filterValue:I
+.field filterValue:I
 
-.field public makeValue:I
+.field makeValue:I
 
-.field public final synthetic this$0:Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness;
+.field final synthetic this$0:Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness;
 
 
 # direct methods
 .method private constructor <init>(Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness$MakeupSubEffectItem;->this$0:Lcom/android/camera/fragment/beauty/Makeup2SettingBusiness;

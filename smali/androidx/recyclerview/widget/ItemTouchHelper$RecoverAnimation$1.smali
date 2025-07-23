@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation$1;
+.class Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation$1;
 .super Ljava/lang/Object;
 .source "ItemTouchHelper.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation;
+.field final synthetic this$0:Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation$1;->this$0:Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,11 +46,20 @@
     .line 1
     iget-object p0, p0, Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation$1;->this$0:Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
 
+    .line 4
+    .line 5
+    .line 6
     move-result p1
 
+    .line 7
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/ItemTouchHelper$RecoverAnimation;->setFraction(F)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

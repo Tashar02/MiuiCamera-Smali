@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public mDegree:I
+.field protected mDegree:I
 
 
 # direct methods
@@ -14,6 +14,9 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/fragment/BaseViewPagerFragment;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -27,6 +30,9 @@
     .line 1
     invoke-super {p0}, Lcom/android/camera/fragment/BaseViewPagerFragment;->onViewCreatedAndJumpOut()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -35,34 +41,17 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "onCreate"
-        }
-    .end annotation
-
     .line 1
     invoke-super {p0, p1}, Lcom/android/camera/fragment/BaseViewPagerFragment;->onViewCreatedAndVisibleToUser(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public provideRotateItem(Ljava/util/List;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "pendingRotateItems",
-            "newDegree"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,22 +64,18 @@
     .line 1
     iput p2, p0, Lcom/android/camera/fragment/beauty/BaseBeautyFragment;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setDegree(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/beauty/BaseBeautyFragment;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method

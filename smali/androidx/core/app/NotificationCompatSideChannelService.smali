@@ -18,6 +18,9 @@
     .line 1
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -33,63 +36,115 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     invoke-virtual {p0, p1}, Landroid/content/pm/PackageManager;->getPackagesForUid(I)[Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
+    .line 9
     array-length v0, p0
 
+    .line 10
     const/4 v1, 0x0
 
+    .line 11
     :goto_0
     if-ge v1, v0, :cond_1
 
+    .line 12
+    .line 13
     aget-object v2, p0, v1
 
-    .line 2
+    .line 14
+    .line 15
     invoke-virtual {v2, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 16
+    .line 17
+    .line 18
     move-result v2
 
+    .line 19
     if-eqz v2, :cond_0
 
+    .line 20
+    .line 21
     return-void
 
+    .line 22
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
+    .line 23
+    .line 24
     goto :goto_0
 
-    .line 3
+    .line 25
     :cond_1
     new-instance p0, Ljava/lang/SecurityException;
 
+    .line 26
+    .line 27
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 28
+    .line 29
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 30
+    .line 31
+    .line 32
     const-string v1, "NotificationSideChannelService: Uid "
 
+    .line 33
+    .line 34
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 35
+    .line 36
+    .line 37
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 38
+    .line 39
+    .line 40
     const-string p1, " is not authorized for package "
 
+    .line 41
+    .line 42
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 43
+    .line 44
+    .line 45
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 46
+    .line 47
+    .line 48
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 49
+    .line 50
+    .line 51
     move-result-object p1
 
+    .line 52
     invoke-direct {p0, p1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
+    .line 53
+    .line 54
+    .line 55
     throw p0
 .end method
 
@@ -97,40 +152,28 @@
 .end method
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
-    .locals 2
+    .locals 0
 
     .line 1
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object p1
-
-    const-string v0, "android.support.BIND_NOTIFICATION_SIDE_CHANNEL"
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
     .line 2
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-le p1, v1, :cond_0
-
-    return-object v0
-
     .line 3
-    :cond_0
-    new-instance p1, Landroidx/core/app/NotificationCompatSideChannelService$NotificationSideChannelStub;
+    .line 4
+    move-result-object p0
 
-    invoke-direct {p1, p0}, Landroidx/core/app/NotificationCompatSideChannelService$NotificationSideChannelStub;-><init>(Landroidx/core/app/NotificationCompatSideChannelService;)V
+    .line 5
+    const-string p1, "android.support.BIND_NOTIFICATION_SIDE_CHANNEL"
 
-    return-object p1
+    .line 6
+    .line 7
+    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    :cond_1
-    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    const/4 p0, 0x0
+
+    .line 11
+    return-object p0
 .end method

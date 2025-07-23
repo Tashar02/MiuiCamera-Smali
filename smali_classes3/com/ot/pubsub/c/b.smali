@@ -21,10 +21,16 @@
     .line 1
     invoke-static {}, Lcom/ot/pubsub/c/b;->b()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     sput-object v0, Lcom/ot/pubsub/c/b;->a:Ljava/lang/String;
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -34,6 +40,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -146,108 +155,108 @@
         }
     .end annotation
 
-    .line 29
-    const-class v0, [Ljava/lang/String;
+    const-string v0, "android.security.keystore.KeyGenParameterSpec$Builder"
 
-    const-class v1, Ljava/lang/String;
+    .line 27
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    const-string v2, "android.security.keystore.KeyGenParameterSpec$Builder"
+    move-result-object v0
 
-    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    const/4 v1, 0x2
+
+    new-array v2, v1, [Ljava/lang/Class;
+
+    const/4 v3, 0x0
+
+    .line 28
+    const-class v4, Ljava/lang/String;
+
+    aput-object v4, v2, v3
+
+    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v6, 0x1
+
+    aput-object v5, v2, v6
+
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v2
 
-    const/4 v3, 0x2
+    const-string v5, "android.security.keystore.KeyProperties"
 
-    new-array v4, v3, [Ljava/lang/Class;
+    .line 29
+    invoke-static {v5}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    const/4 v5, 0x0
+    move-result-object v5
 
-    aput-object v1, v4, v5
+    const-string v7, "PURPOSE_ENCRYPT"
 
     .line 30
-    sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    invoke-virtual {v5, v7}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    const/4 v7, 0x1
+    move-result-object v7
 
-    aput-object v6, v4, v7
-
-    invoke-virtual {v2, v4}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v4
-
-    const-string v6, "android.security.keystore.KeyProperties"
+    const/4 v8, 0x0
 
     .line 31
-    invoke-static {v6}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-virtual {v7, v8}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
 
-    move-result-object v6
+    move-result v7
 
-    const-string v8, "PURPOSE_ENCRYPT"
+    const-string v9, "PURPOSE_DECRYPT"
 
     .line 32
-    invoke-virtual {v6, v8}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-virtual {v5, v9}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v8
-
-    const/4 v9, 0x0
+    move-result-object v9
 
     .line 33
-    invoke-virtual {v8, v9}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
+    invoke-virtual {v9, v8}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
 
-    move-result v8
+    move-result v9
 
-    const-string v10, "PURPOSE_DECRYPT"
+    new-array v10, v1, [Ljava/lang/Object;
+
+    const-string v11, "RSA_KEY"
+
+    aput-object v11, v10, v3
+
+    or-int/2addr v7, v9
 
     .line 34
-    invoke-virtual {v6, v10}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v10
+    move-result-object v7
+
+    aput-object v7, v10, v6
+
+    invoke-virtual {v2, v10}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    new-array v7, v6, [Ljava/lang/Class;
 
     .line 35
-    invoke-virtual {v10, v9}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
+    const-class v9, [Ljava/lang/String;
 
-    move-result v10
-
-    new-array v11, v3, [Ljava/lang/Object;
-
-    const-string v12, "RSA_KEY"
-
-    aput-object v12, v11, v5
-
-    or-int/2addr v8, v10
-
-    .line 36
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    aput-object v8, v11, v7
-
-    invoke-virtual {v4, v11}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    new-array v8, v7, [Ljava/lang/Class;
-
-    aput-object v0, v8, v5
+    aput-object v9, v7, v3
 
     const-string v10, "setDigests"
 
-    .line 37
-    invoke-virtual {v2, v10, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v0, v10, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    move-result-object v8
+    move-result-object v7
 
     const-string v10, "DIGEST_SHA256"
 
-    .line 38
-    invoke-virtual {v6, v10}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    .line 36
+    invoke-virtual {v5, v10}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v10
 
-    .line 39
-    invoke-virtual {v10, v9}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 37
+    invoke-virtual {v10, v8}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v10
 
@@ -255,141 +264,141 @@
 
     const-string v11, "DIGEST_SHA512"
 
-    .line 40
-    invoke-virtual {v6, v11}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    .line 38
+    invoke-virtual {v5, v11}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v11
 
-    .line 41
-    invoke-virtual {v11, v9}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 39
+    invoke-virtual {v11, v8}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v11
 
     check-cast v11, Ljava/lang/String;
 
-    new-array v12, v7, [Ljava/lang/Object;
+    new-array v12, v6, [Ljava/lang/Object;
 
-    new-array v13, v3, [Ljava/lang/String;
+    new-array v13, v1, [Ljava/lang/String;
 
-    aput-object v10, v13, v5
+    aput-object v10, v13, v3
 
-    aput-object v11, v13, v7
+    aput-object v11, v13, v6
 
-    aput-object v13, v12, v5
+    aput-object v13, v12, v3
+
+    .line 40
+    invoke-virtual {v7, v2, v12}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-array v7, v6, [Ljava/lang/Class;
+
+    aput-object v9, v7, v3
+
+    const-string v9, "setEncryptionPaddings"
+
+    .line 41
+    invoke-virtual {v0, v9, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v7
+
+    const-string v9, "ENCRYPTION_PADDING_RSA_PKCS1"
 
     .line 42
-    invoke-virtual {v8, v4, v12}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v9}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    new-array v8, v7, [Ljava/lang/Class;
-
-    aput-object v0, v8, v5
-
-    const-string v0, "setEncryptionPaddings"
+    move-result-object v5
 
     .line 43
-    invoke-virtual {v2, v0, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v5, v8}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v5
 
-    const-string v8, "ENCRYPTION_PADDING_RSA_PKCS1"
+    check-cast v5, Ljava/lang/String;
+
+    new-array v9, v6, [Ljava/lang/Object;
+
+    new-array v10, v6, [Ljava/lang/String;
+
+    aput-object v5, v10, v3
+
+    aput-object v10, v9, v3
 
     .line 44
-    invoke-virtual {v6, v8}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-virtual {v7, v2, v9}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    const-string v5, "build"
+
+    new-array v7, v3, [Ljava/lang/Class;
 
     .line 45
-    invoke-virtual {v6, v9}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/String;
-
-    new-array v8, v7, [Ljava/lang/Object;
-
-    new-array v10, v7, [Ljava/lang/String;
-
-    aput-object v6, v10, v5
-
-    aput-object v10, v8, v5
-
-    .line 46
-    invoke-virtual {v0, v4, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    new-array v0, v5, [Ljava/lang/Class;
-
-    const-string v6, "build"
-
-    .line 47
-    invoke-virtual {v2, v6, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v0, v5, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    new-array v2, v5, [Ljava/lang/Object;
+    new-array v5, v3, [Ljava/lang/Object;
 
-    .line 48
-    invoke-virtual {v0, v4, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .line 46
+    invoke-virtual {v0, v2, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     const-string v2, "java.security.KeyPairGenerator"
 
-    .line 49
+    .line 47
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v2
 
-    new-array v4, v3, [Ljava/lang/Class;
+    new-array v5, v1, [Ljava/lang/Class;
 
-    aput-object v1, v4, v5
+    aput-object v4, v5, v3
 
-    aput-object v1, v4, v7
+    aput-object v4, v5, v6
 
-    const-string v1, "getInstance"
+    const-string v4, "getInstance"
 
-    .line 50
-    invoke-virtual {v2, v1, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    .line 48
+    invoke-virtual {v2, v4, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    move-result-object v1
+    move-result-object v4
 
-    new-array v3, v3, [Ljava/lang/Object;
+    new-array v1, v1, [Ljava/lang/Object;
 
-    const-string v4, "RSA"
+    const-string v5, "RSA"
 
-    aput-object v4, v3, v5
+    aput-object v5, v1, v3
 
-    const-string v4, "AndroidKeyStore"
+    const-string v5, "AndroidKeyStore"
 
-    aput-object v4, v3, v7
+    aput-object v5, v1, v6
 
-    .line 51
-    invoke-virtual {v1, v9, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .line 49
+    invoke-virtual {v4, v8, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/security/KeyPairGenerator;
 
-    new-array v3, v7, [Ljava/lang/Class;
+    new-array v4, v6, [Ljava/lang/Class;
 
-    .line 52
-    const-class v4, Ljava/security/spec/AlgorithmParameterSpec;
+    .line 50
+    const-class v5, Ljava/security/spec/AlgorithmParameterSpec;
 
-    aput-object v4, v3, v5
+    aput-object v5, v4, v3
 
-    const-string v4, "initialize"
+    const-string v5, "initialize"
 
-    invoke-virtual {v2, v4, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v2, v5, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
 
-    new-array v3, v7, [Ljava/lang/Object;
+    new-array v4, v6, [Ljava/lang/Object;
 
-    aput-object v0, v3, v5
+    aput-object v0, v4, v3
 
-    .line 53
-    invoke-virtual {v2, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .line 51
+    invoke-virtual {v2, v1, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 54
+    .line 52
     invoke-virtual {v1}, Ljava/security/KeyPairGenerator;->generateKeyPair()Ljava/security/KeyPair;
 
     return-void
@@ -410,29 +419,29 @@
         }
     .end annotation
 
-    .line 16
+    .line 14
     new-instance v0, Ljava/util/GregorianCalendar;
 
     invoke-direct {v0}, Ljava/util/GregorianCalendar;-><init>()V
 
-    .line 17
+    .line 15
     new-instance v1, Ljava/util/GregorianCalendar;
 
     invoke-direct {v1}, Ljava/util/GregorianCalendar;-><init>()V
 
     const/4 v2, 0x1
 
-    .line 18
+    .line 16
     invoke-virtual {v1, v2, v2}, Ljava/util/Calendar;->add(II)V
 
-    .line 19
+    .line 17
     new-instance v2, Landroid/security/KeyPairGeneratorSpec$Builder;
 
     invoke-direct {v2, p0}, Landroid/security/KeyPairGeneratorSpec$Builder;-><init>(Landroid/content/Context;)V
 
     const-string p0, "RSA_KEY"
 
-    .line 20
+    .line 18
     invoke-virtual {v2, p0}, Landroid/security/KeyPairGeneratorSpec$Builder;->setAlias(Ljava/lang/String;)Landroid/security/KeyPairGeneratorSpec$Builder;
 
     move-result-object p0
@@ -443,14 +452,14 @@
 
     invoke-direct {v2, v3}, Ljavax/security/auth/x500/X500Principal;-><init>(Ljava/lang/String;)V
 
-    .line 21
+    .line 19
     invoke-virtual {p0, v2}, Landroid/security/KeyPairGeneratorSpec$Builder;->setSubject(Ljavax/security/auth/x500/X500Principal;)Landroid/security/KeyPairGeneratorSpec$Builder;
 
     move-result-object p0
 
     const-wide/16 v2, 0x539
 
-    .line 22
+    .line 20
     invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v2
@@ -459,7 +468,7 @@
 
     move-result-object p0
 
-    .line 23
+    .line 21
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
@@ -468,7 +477,7 @@
 
     move-result-object p0
 
-    .line 24
+    .line 22
     invoke-virtual {v1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
@@ -477,7 +486,7 @@
 
     move-result-object p0
 
-    .line 25
+    .line 23
     invoke-virtual {p0}, Landroid/security/KeyPairGeneratorSpec$Builder;->build()Landroid/security/KeyPairGeneratorSpec;
 
     move-result-object p0
@@ -486,15 +495,15 @@
 
     const-string v1, "AndroidKeyStore"
 
-    .line 26
+    .line 24
     invoke-static {v0, v1}, Ljava/security/KeyPairGenerator;->getInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyPairGenerator;
 
     move-result-object v0
 
-    .line 27
+    .line 25
     invoke-virtual {v0, p0}, Ljava/security/KeyPairGenerator;->initialize(Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 28
+    .line 26
     invoke-virtual {v0}, Ljava/security/KeyPairGenerator;->generateKeyPair()Ljava/security/KeyPair;
 
     return-void
@@ -504,36 +513,16 @@
     .locals 1
 
     :try_start_0
-    const-string v0, "RSA_KEY"
+    const-string p0, "RSA_KEY"
 
     .line 11
-    invoke-virtual {p1, v0}, Ljava/security/KeyStore;->containsAlias(Ljava/lang/String;)Z
+    invoke-virtual {p1, p0}, Ljava/security/KeyStore;->containsAlias(Ljava/lang/String;)Z
 
-    move-result p1
+    move-result p0
 
-    if-nez p1, :cond_2
+    if-nez p0, :cond_0
 
     .line 12
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v0, 0x12
-
-    if-ge p1, v0, :cond_0
-
-    return-void
-
-    :cond_0
-    const/16 v0, 0x17
-
-    if-ge p1, v0, :cond_1
-
-    .line 13
-    invoke-static {p0}, Lcom/ot/pubsub/c/b;->a(Landroid/content/Context;)V
-
-    goto :goto_0
-
-    .line 14
-    :cond_1
     invoke-static {}, Lcom/ot/pubsub/c/b;->a()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -547,10 +536,10 @@
 
     const-string v0, "createKey e"
 
-    .line 15
+    .line 13
     invoke-static {p1, v0, p0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    :cond_2
+    :cond_0
     :goto_0
     return-void
 .end method
@@ -580,12 +569,12 @@
     :catch_0
     move-exception v0
 
+    const-string v1, "AndroidKeyStore"
+
     .line 11
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
-
-    const-string v1, "AndroidKeyStore"
 
     invoke-static {v1, v0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 

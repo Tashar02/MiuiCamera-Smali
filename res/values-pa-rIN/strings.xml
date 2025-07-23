@@ -366,14 +366,14 @@
     <string name="beauty_makeups_yuanqi">ਤਾਜ਼ਾ</string>
     <string name="beauty_mo_fe">ਕੁਦਰਤੀ</string>
     <string name="beauty_mo_ma">ਕਲਾਸਿਕ</string>
-    <string name="beauty_mo_or">ਅਸਲੀ</string>
+    <string name="beauty_mo_or">ਅਸਲ</string>
     <string name="beauty_mo_pr">ਬਣਤਰ</string>
     <string name="beauty_mo_pr_cv">ਬਣਤਰ</string>
     <string name="beauty_mode_reset_toast">ਰੀਮੋਲਡਿੰਗ ਪ੍ਰਭਾਵ ਸਫ਼ਲਤਾਪੂਰਵਕ ਸਾਫ਼ ਕੀਤੇ ਗਏ</string>
     <string name="beauty_mutex_toast_tip">ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਸ਼ਿੰਗਾਰ ਪ੍ਰਭਾਵ &lt;a href=>ਬੰਦ ਕਰੋ&lt;/a></string>
-    <string name="beauty_ne">ਅਸਲੀ</string>
+    <string name="beauty_ne">ਅਸਲ</string>
     <string name="beauty_no_t">ਸਜਾਉਣਾ ਬੰਦ ਹੈ</string>
-    <string name="beauty_origin_skincolor">ਮੂਲ</string>
+    <string name="beauty_origin_skincolor">ਅਸਲ</string>
     <string name="beauty_reset">ਰੀਸੈੱਟ ਕਰੋ</string>
     <string name="beauty_reset_toast">ਸਜਾਉਣ ਦੇ ਪ੍ਰਭਾਵ ਸਫ਼ਲਤਾਪੂਰਵਕ ਰੀਸੈੱਟ ਕਰੋ</string>
     <string name="beauty_s_cl">ਚਮੜੀ</string>
@@ -626,7 +626,7 @@
     <string name="document_mode_use_hint_text_body">"ਸਕੈਨ ਕੀਤੇ ਗਏ ਦਸਤਾਵੇਜ਼ਾਂ ਨੂੰ ਸਵੈਚਲਿਤ ਤੌਰ 'ਤੇ
 ਲਾਈਨ-ਅੱਪ ਅਤੇ ਐਨਹਾਂਸ ਕਰੋ"</string>
     <string name="document_mode_use_hint_text_title">ਦਸਤਾਵੇਜ਼ ਸਕੈਨ ਕਰੋ</string>
-    <string name="document_origin">ਮੂਲ</string>
+    <string name="document_origin">ਅਸਲ</string>
     <string name="document_strengthen">ਵਧਾਇਆ ਗਿਆ</string>
     <string name="dolly_zoom_capture_tip1">ਆਪਣੇ ਵਿਸ਼ੇ ਨੂੰ ਫ਼੍ਰੇਮ ਦੇ ਵਿਚਕਾਰ ਰੱਖੋ</string>
     <string name="dolly_zoom_capture_tip2">ਵਿਸ਼ੇ ਨੂੰ ਕੇਂਦਰ ਵਿੱਚ ਰੱਖੋ ਅਤੇ ਡੀਵਾਈਸ ਨੂੰ ਲਗਾਤਾਰ ਦੂਰ ਕਰੋ</string>
@@ -664,6 +664,7 @@
     <string name="download_hint_cn">ਇੰਝ ਲੱਗਦਾ ਹੈ ਤੁਹਾਡਾ ਡੀਵਾਈਸ WLAN ਨਾਲ ਕਨੈਕਟ ਕੀਤਾ ਹੋਇਆ ਹੈ। ਕੀ ਹੁਣੇ ਆਈਟਮਾਂ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਮੋਬਾਈਲ ਡਾਟਾ ਦੇ %1$s MB ਦੀ ਵਰਤੋਂ ਕਰਨੀ ਹੈ?</string>
     <string name="download_hint_wifi">ਇੰਝ ਲੱਗਦਾ ਹੈ ਤੁਹਾਡਾ ਡੀਵਾਈਸ ਵਾਈ-ਫ਼ਾਈ ਨਾਲ ਕਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਹੋਇਆ। ਹੁਣੇ ਆਈਟਮਾਂ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਮੋਬਾਈਲ ਡਾਟਾ ਦੇ %1$s MB ਦੀ ਵਰਤੋਂ ਕਰਨੀ ਹੈ?</string>
     <string name="download_in_progress">ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…</string>
+    <string name="download_network_error">ਡਾਊਨਲੋਡ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ। ਆਪਣੀਆਂ ਨੈੱਟਵਰਕ ਸੈਟਿੰਗਾਂ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
     <string name="download_title">ਡਾਟਾ ਵਰਤੋਂ ਚਿਤਾਵਨੀ</string>
     <string name="download_waiting">ਬਾਕੀ ਹੈ…</string>
     <string name="dual_camera_lens_covered_toast">ਲੈਂਸ ਕਵਰ ਕੀਤਾ ਹੋਇਆ ਹੈ।</string>
@@ -1283,7 +1284,7 @@
     <string name="portait_effect_entry_mood">ਭਾਵਨਾਵਾਂ</string>
     <string name="portait_effect_entry_movie">ਫ਼ਿਲਮ</string>
     <string name="portait_effect_entry_nature">ਕੁਦਰਤ</string>
-    <string name="portait_effect_entry_original">ਮੂਲ</string>
+    <string name="portait_effect_entry_original">ਅਸਲ</string>
     <string name="portait_effect_entry_oxygen">ਆਕਸੀਜਨ</string>
     <string name="portait_effect_entry_pink">ਬਲੱਸ਼</string>
     <string name="portait_effect_entry_pink_orange">ਸਿਟਰਸ</string>
@@ -1478,6 +1479,7 @@
     <string name="pref_camera_peak_entry_off">ਬੰਦ</string>
     <string name="pref_camera_peak_entry_on">ਚਾਲੂ</string>
     <string name="pref_camera_peak_title">ਫ਼ੋਕਸ ਪੀਕਿੰਗ</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">ਪੂਰੀ</string>
     <string name="pref_camera_picturesize_title_simple_mode">ਕੈਮਰਾ ਫ਼੍ਰੇਮ</string>
     <string name="pref_camera_portrait_mode_entry_off">ਪੋਰਟ੍ਰੇਟ ਮੋਡ ਬੰਦ ਹੈ</string>
     <string name="pref_camera_portrait_mode_entry_on">ਪੋਰਟ੍ਰੇਟ ਮੋਡ ਚਾਲੂ ਹੈ</string>
@@ -1689,7 +1691,7 @@
     <string name="pref_video_ai_audio_effect_comparation_3d">3D</string>
     <string name="pref_video_ai_audio_effect_comparation_3d_i">3D ਧੁਨੀ</string>
     <string name="pref_video_ai_audio_effect_comparation_3d_ii">ਡੇਮੋ</string>
-    <string name="pref_video_ai_audio_effect_comparation_3d_original">ਅਸਲੀ</string>
+    <string name="pref_video_ai_audio_effect_comparation_3d_original">ਅਸਲ</string>
     <string name="pref_video_ai_audio_single">ਸਾਹਮਣੀ ਧੁਨੀ</string>
     <string name="pref_video_captrue_ability_title">ਰਿਕਾਰਡਿੰਗ ਦੌਰਾਨ ਚਿੱਤਰ ਕੈਪਚਰ ਕਰਨਾ</string>
     <string name="pref_video_cast_setting_summary">ਇੱਕ ਤੋਂ ਵਧੇਰੇ ਡੀਵਾਈਸਾਂ ਨਾਲ ਇੱਕ ਵੀਡੀਓ ਸ਼ੂਟ ਕਰ ਸਕਣ ਲਈ ਚਾਲੂ ਕਰੋ</string>
@@ -1916,7 +1918,7 @@
     <string name="timbre_gentlemen">ਆਦਮੀ</string>
     <string name="timbre_girl">ਲੜਕੀ</string>
     <string name="timbre_lady">ਔਰਤ</string>
-    <string name="timbre_normal">ਮੂਲ</string>
+    <string name="timbre_normal">ਅਸਲ</string>
     <string name="timbre_robot">ਰੋਬੋਟ</string>
     <string name="time_freeze_action_end_tip">ਬੈਕਗ੍ਰਾਊਂਡ ਅਨਫ਼੍ਰੀਜ਼ ਕਰਨ ਲਈ ਬਟਨ ਉੱਤੇ ਟੈਪ ਕਰੋ</string>
     <string name="time_freeze_action_start_tip">ਬੈਕਗ੍ਰਾਊਂਡ ਫ਼੍ਰੀਜ਼ ਕਰਨ ਲਈ ਬਟਨ ਉੱਤੇ ਟੈਪ ਕਰੋ</string>

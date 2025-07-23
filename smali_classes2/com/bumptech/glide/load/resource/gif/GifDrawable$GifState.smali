@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/resource/gif/GifDrawable$GifState;
+.class final Lcom/bumptech/glide/load/resource/gif/GifDrawable$GifState;
 .super Landroid/graphics/drawable/Drawable$ConstantState;
 .source "GifDrawable.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final frameLoader:Lcom/bumptech/glide/load/resource/gif/GifFrameLoader;
+.field final frameLoader:Lcom/bumptech/glide/load/resource/gif/GifFrameLoader;
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 .end field
@@ -29,8 +29,12 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/gif/GifDrawable$GifState;->frameLoader:Lcom/bumptech/glide/load/resource/gif/GifFrameLoader;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -39,8 +43,10 @@
 .method public getChangingConfigurations()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 

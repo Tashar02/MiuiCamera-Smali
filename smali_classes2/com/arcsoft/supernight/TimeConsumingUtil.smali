@@ -27,15 +27,24 @@
     .line 1
     new-instance v0, Ljava/util/HashMap;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/arcsoft/supernight/TimeConsumingUtil;->a:Ljava/util/HashMap;
 
+    .line 7
+    .line 8
     const/4 v0, 0x0
 
-    .line 2
+    .line 9
     sput-boolean v0, Lcom/arcsoft/supernight/TimeConsumingUtil;->DEBUG:Z
 
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -45,6 +54,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -54,27 +66,45 @@
     .line 1
     sget-boolean v0, Lcom/arcsoft/supernight/TimeConsumingUtil;->DEBUG:Z
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
+    .line 4
+    .line 5
     return-void
 
-    .line 2
+    .line 6
     :cond_0
     sget-object v0, Lcom/arcsoft/supernight/TimeConsumingUtil;->a:Ljava/util/HashMap;
 
+    .line 7
+    .line 8
     if-eqz v0, :cond_1
 
-    .line 3
+    .line 9
+    .line 10
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 11
+    .line 12
+    .line 13
     move-result-wide v1
 
+    .line 14
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v1
 
+    .line 18
     invoke-virtual {v0, p0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 19
+    .line 20
+    .line 21
     :cond_1
     return-void
 .end method

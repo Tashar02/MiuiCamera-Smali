@@ -66,69 +66,133 @@
 .method public static constructor <clinit>()V
     .locals 8
 
+    .line 1
     const-string v0, "autoComplete"
 
+    .line 2
+    .line 3
     const-string v1, "autoCompleteToStart"
 
+    .line 4
+    .line 5
     const-string v2, "autoCompleteToEnd"
 
+    .line 6
+    .line 7
     const-string/jumbo v3, "stop"
 
+    .line 8
+    .line 9
+    .line 10
     const-string v4, "decelerate"
 
+    .line 11
+    .line 12
     const-string v5, "decelerateAndComplete"
 
+    .line 13
+    .line 14
     const-string/jumbo v6, "neverCompleteToStart"
 
+    .line 15
+    .line 16
+    .line 17
     const-string/jumbo v7, "neverCompleteToEnd"
 
-    .line 1
+    .line 18
+    .line 19
+    .line 20
     filled-new-array/range {v0 .. v7}, [Ljava/lang/String;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v0
 
+    .line 24
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->ON_TOUCH_UP_ENUM:[Ljava/lang/String;
 
-    const-string/jumbo v0, "overshoot"
+    .line 25
+    .line 26
+    const-string v0, "bounceEnd"
 
-    const-string v1, "bounceStart"
+    .line 27
+    .line 28
+    const-string v1, "bounceBoth"
 
-    const-string v2, "bounceEnd"
+    .line 29
+    .line 30
+    const-string/jumbo v2, "overshoot"
 
-    const-string v3, "bounceBoth"
+    .line 31
+    .line 32
+    .line 33
+    const-string v3, "bounceStart"
 
-    .line 2
-    filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
+    .line 34
+    .line 35
+    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
 
+    .line 36
+    .line 37
+    .line 38
     move-result-object v0
 
+    .line 39
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->SPRING_BOUNDARY_ENUM:[Ljava/lang/String;
 
+    .line 40
+    .line 41
     const-string v0, "continuousVelocity"
 
+    .line 42
+    .line 43
     const-string/jumbo v1, "spring"
 
-    .line 3
+    .line 44
+    .line 45
+    .line 46
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
+    .line 47
+    .line 48
+    .line 49
     move-result-object v0
 
+    .line 50
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->AUTOCOMPLETE_MODE_ENUM:[Ljava/lang/String;
 
-    const-string/jumbo v0, "none"
+    .line 51
+    .line 52
+    const-string v0, "disableScroll"
 
-    const-string v1, "disablePostScroll"
+    .line 53
+    .line 54
+    const-string/jumbo v1, "supportScrollUp"
 
-    const-string v2, "disableScroll"
+    .line 55
+    .line 56
+    .line 57
+    const-string/jumbo v2, "none"
 
-    const-string/jumbo v3, "supportScrollUp"
+    .line 58
+    .line 59
+    .line 60
+    const-string v3, "disablePostScroll"
 
-    .line 4
-    filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
+    .line 61
+    .line 62
+    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
 
+    .line 63
+    .line 64
+    .line 65
     move-result-object v0
 
+    .line 66
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->NESTED_SCROLL_FLAGS_ENUM:[Ljava/lang/String;
 
+    .line 67
+    .line 68
     return-void
 .end method

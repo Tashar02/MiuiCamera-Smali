@@ -1,4 +1,4 @@
-.class public final Lcom/arcsoft/camera/wideselfie/WideSelfieEngine$a;
+.class final Lcom/arcsoft/camera/wideselfie/WideSelfieEngine$a;
 .super Ljava/lang/Object;
 .source "WideSelfieEngine.java"
 
@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field public a:I
+.field a:I
 
-.field public b:I
+.field b:I
 
-.field public c:I
+.field c:I
 
-.field public d:I
+.field d:I
 
-.field public e:Ljava/lang/String;
+.field e:Ljava/lang/String;
 
-.field public f:Ljava/lang/String;
+.field f:Ljava/lang/String;
 
-.field public g:Ljava/lang/String;
+.field g:Ljava/lang/String;
 
 
 # direct methods
@@ -37,5 +37,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

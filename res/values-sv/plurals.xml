@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>Kameraversionen dom du använder är inte kompatibel med din enhetsmodell.&lt;br>Appen kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Avinstallera kamerauppdateringar och försök igen.&lt;/Data></item>
         <item quantity="one">&lt;Data>Kameraversionen dom du använder är inte kompatibel med din enhetsmodell.&lt;br>Appen kommer att stängas om &lt;font color=#FFCE16>&lt;b>%1$d sek&lt;/b>&lt;/font>. Avinstallera kamerauppdateringar och försök igen.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Spola framåt %d sekunder</item>
+        <item quantity="one">Spola framåt %d sekund</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Spola tillbaka %d sekunder</item>
+        <item quantity="one">Spola tillbaka %d sekund</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min</item>
         <item quantity="one">%1$d min</item>

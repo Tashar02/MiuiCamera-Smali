@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/camera/fragment/modeui/IModeId;
+.class interface abstract Lcom/android/camera/fragment/modeui/IModeId;
 .super Ljava/lang/Object;
 .source "IModeId.java"
 

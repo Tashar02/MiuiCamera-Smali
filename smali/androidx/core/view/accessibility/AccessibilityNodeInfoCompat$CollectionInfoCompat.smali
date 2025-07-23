@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field public final mInfo:Ljava/lang/Object;
+.field final mInfo:Ljava/lang/Object;
 
 
 # direct methods
@@ -34,22 +34,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;->mInfo:Ljava/lang/Object;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static obtain(IIZ)Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;
-    .locals 2
+    .locals 1
 
-    .line 5
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
-
-    .line 6
+    .line 2
     new-instance v0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;
 
     invoke-static {p0, p1, p2}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->obtain(IIZ)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
@@ -59,29 +56,12 @@
     invoke-direct {v0, p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;-><init>(Ljava/lang/Object;)V
 
     return-object v0
-
-    .line 7
-    :cond_0
-    new-instance p0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;-><init>(Ljava/lang/Object;)V
-
-    return-object p0
 .end method
 
 .method public static obtain(IIZI)Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;
-    .locals 2
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     new-instance v0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;
 
     invoke-static {p0, p1, p2, p3}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->obtain(IIZI)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
@@ -91,140 +71,98 @@
     invoke-direct {v0, p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;-><init>(Ljava/lang/Object;)V
 
     return-object v0
-
-    :cond_0
-    const/16 p3, 0x13
-
-    if-lt v0, p3, :cond_1
-
-    .line 3
-    new-instance p3, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;
-
-    invoke-static {p0, p1, p2}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->obtain(IIZ)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
-
-    move-result-object p0
-
-    invoke-direct {p3, p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;-><init>(Ljava/lang/Object;)V
-
-    return-object p3
-
-    .line 4
-    :cond_1
-    new-instance p0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;-><init>(Ljava/lang/Object;)V
-
-    return-object p0
 .end method
 
 
 # virtual methods
 .method public getColumnCount()I
-    .locals 2
+    .locals 0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     iget-object p0, p0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;->mInfo:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
 
+    .line 4
+    .line 5
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->getColumnCount()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
-    return p0
-
-    :cond_0
-    const/4 p0, -0x1
-
+    .line 9
     return p0
 .end method
 
 .method public getRowCount()I
-    .locals 2
+    .locals 0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     iget-object p0, p0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;->mInfo:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
 
+    .line 4
+    .line 5
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->getRowCount()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
-    return p0
-
-    :cond_0
-    const/4 p0, -0x1
-
+    .line 9
     return p0
 .end method
 
 .method public getSelectionMode()I
-    .locals 2
+    .locals 0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     iget-object p0, p0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;->mInfo:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
 
+    .line 4
+    .line 5
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->getSelectionMode()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
-
+    .line 9
     return p0
 .end method
 
 .method public isHierarchical()Z
-    .locals 2
+    .locals 0
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     iget-object p0, p0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$CollectionInfoCompat;->mInfo:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
 
+    .line 4
+    .line 5
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->isHierarchical()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
-
+    .line 9
     return p0
 .end method

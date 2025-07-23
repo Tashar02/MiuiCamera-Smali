@@ -1,4 +1,4 @@
-.class public final Lorg/greenrobot/greendao/query/CountQuery$QueryData;
+.class final Lorg/greenrobot/greendao/query/CountQuery$QueryData;
 .super Lorg/greenrobot/greendao/query/AbstractQueryData;
 .source "CountQuery.java"
 
@@ -29,19 +29,6 @@
 # direct methods
 .method private constructor <init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "dao",
-            "sql",
-            "initialValues"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

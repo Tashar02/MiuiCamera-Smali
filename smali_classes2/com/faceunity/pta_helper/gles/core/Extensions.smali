@@ -10,6 +10,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -34,7 +37,7 @@
     move-exception p0
 
     .line 6
-    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
 
@@ -68,7 +71,7 @@
     move-exception p0
 
     .line 4
-    invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
 
@@ -83,19 +86,36 @@
     .line 1
     new-instance v0, Ljava/lang/String;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
     invoke-static {p0}, Lcom/faceunity/pta_helper/gles/core/Extensions;->getBytes(Ljava/io/InputStream;)[B
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
+    .line 15
     invoke-direct {v0, p0}, Ljava/lang/String;-><init>([B)V
 
+    .line 16
+    .line 17
+    .line 18
     return-object v0
 .end method

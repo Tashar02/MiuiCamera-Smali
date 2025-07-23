@@ -33,20 +33,4 @@
 
 # virtual methods
 .method public abstract dispatchMessage(IIILjava/lang/Object;Ljava/lang/Object;)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "what",
-            "sender",
-            "receiver",
-            "extra1",
-            "extra2"
-        }
-    .end annotation
 .end method

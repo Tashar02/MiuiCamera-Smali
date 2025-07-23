@@ -4,65 +4,68 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/faceunity/core/entity/FURenderInputData;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "FURenderConfig"
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
     bv = {
         0x1,
         0x0,
         0x3
     }
     d1 = {
-        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0010\u000b\n\u0002\u0008\u0010\n\u0002\u0018\u0002\n\u0002\u0008\t\u0018\u00002\u00020\u0001Be\u0008\u0007\u0012\u0008\u0008\u0002\u0010)\u001a\u00020(\u0012\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u0010\u0012\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u0010\u0012\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0002\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010 \u001a\u00020\t\u0012\n\u0008\u0002\u0010%\u001a\u0004\u0018\u00010\t\u0012\u0008\u0008\u0002\u0010#\u001a\u00020\u0017\u0012\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u0017\u00a2\u0006\u0004\u0008/\u00100R\"\u0010\u0003\u001a\u00020\u00028\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R\"\u0010\n\u001a\u00020\t8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\n\u0010\u000b\u001a\u0004\u0008\u000c\u0010\r\"\u0004\u0008\u000e\u0010\u000fR\"\u0010\u0011\u001a\u00020\u00108\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0011\u0010\u0012\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R\"\u0010\u0018\u001a\u00020\u00178\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u0018\u0010\u0019\u001a\u0004\u0008\u0018\u0010\u001a\"\u0004\u0008\u001b\u0010\u001cR\"\u0010\u001d\u001a\u00020\u00108\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008\u001d\u0010\u0012\u001a\u0004\u0008\u001e\u0010\u0014\"\u0004\u0008\u001f\u0010\u0016R\"\u0010 \u001a\u00020\t8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008 \u0010\u000b\u001a\u0004\u0008!\u0010\r\"\u0004\u0008\"\u0010\u000fR\"\u0010#\u001a\u00020\u00178\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008#\u0010\u0019\u001a\u0004\u0008#\u0010\u001a\"\u0004\u0008$\u0010\u001cR$\u0010%\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008%\u0010\u000b\u001a\u0004\u0008&\u0010\r\"\u0004\u0008\'\u0010\u000fR\"\u0010)\u001a\u00020(8\u0006@\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0004\u0008)\u0010*\u001a\u0004\u0008+\u0010,\"\u0004\u0008-\u0010.\u00a8\u00061"
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u001d\u0018\u00002\u00020\u0001Bc\u0008\u0007\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008\u0012\u0008\u0008\u0002\u0010\t\u001a\u00020\n\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\n\u0012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\n\u0012\u0008\u0008\u0002\u0010\r\u001a\u00020\u000e\u0012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u000e\u00a2\u0006\u0002\u0010\u0010R\u001a\u0010\u0007\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R\u001a\u0010\u0006\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0019\u0010\u001a\"\u0004\u0008\u001b\u0010\u001cR\u001a\u0010\u000b\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010 R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\u0016\"\u0004\u0008\"\u0010\u0018R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008#\u0010\u001e\"\u0004\u0008$\u0010 R\u001a\u0010\u000f\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000f\u0010%\"\u0004\u0008&\u0010\'R\u001a\u0010\r\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010%\"\u0004\u0008(\u0010\'R\u001c\u0010\u000c\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008)\u0010\u001e\"\u0004\u0008*\u0010 \u00a8\u0006+"
     }
     d2 = {
         "Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;",
         "",
-        "Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;",
+        "externalInputType",
+        "Lcom/faceunity/core/enumeration/FUExternalInputEnum;",
+        "inputOrientation",
+        "",
+        "deviceOrientation",
         "cameraFacing",
         "Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;",
+        "inputTextureMatrix",
+        "Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;",
+        "inputBufferMatrix",
+        "outputMatrix",
+        "isRenderFaceBeautyOnly",
+        "",
+        "isNeedBufferReturn",
+        "(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZ)V",
         "getCameraFacing",
         "()Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;",
         "setCameraFacing",
         "(Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;)V",
-        "Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;",
-        "inputTextureMatrix",
-        "Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;",
-        "getInputTextureMatrix",
-        "()Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;",
-        "setInputTextureMatrix",
-        "(Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V",
-        "",
-        "inputOrientation",
-        "I",
-        "getInputOrientation",
-        "()I",
-        "setInputOrientation",
-        "(I)V",
-        "",
-        "isNeedBufferReturn",
-        "Z",
-        "()Z",
-        "setNeedBufferReturn",
-        "(Z)V",
-        "deviceOrientation",
         "getDeviceOrientation",
+        "()I",
         "setDeviceOrientation",
-        "inputBufferMatrix",
-        "getInputBufferMatrix",
-        "setInputBufferMatrix",
-        "isRenderFaceBeautyOnly",
-        "setRenderFaceBeautyOnly",
-        "outputMatrix",
-        "getOutputMatrix",
-        "setOutputMatrix",
-        "Lcom/faceunity/core/enumeration/FUExternalInputEnum;",
-        "externalInputType",
-        "Lcom/faceunity/core/enumeration/FUExternalInputEnum;",
+        "(I)V",
         "getExternalInputType",
         "()Lcom/faceunity/core/enumeration/FUExternalInputEnum;",
         "setExternalInputType",
         "(Lcom/faceunity/core/enumeration/FUExternalInputEnum;)V",
-        "<init>",
-        "(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZ)V",
+        "getInputBufferMatrix",
+        "()Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;",
+        "setInputBufferMatrix",
+        "(Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V",
+        "getInputOrientation",
+        "setInputOrientation",
+        "getInputTextureMatrix",
+        "setInputTextureMatrix",
+        "()Z",
+        "setNeedBufferReturn",
+        "(Z)V",
+        "setRenderFaceBeautyOnly",
+        "getOutputMatrix",
+        "setOutputMatrix",
         "lib_core_release"
     }
     k = 0x1
@@ -73,38 +76,29 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/faceunity/core/entity/FURenderInputData;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = "FURenderConfig"
-.end annotation
-
 
 # instance fields
 .field private cameraFacing:Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
 .field private deviceOrientation:I
 
 .field private externalInputType:Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
 .field private inputBufferMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
 .field private inputOrientation:I
 
 .field private inputTextureMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
@@ -113,7 +107,7 @@
 .field private isRenderFaceBeautyOnly:Z
 
 .field private outputMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 .end field
 
@@ -121,9 +115,10 @@
 # direct methods
 .method public constructor <init>()V
     .locals 12
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 1
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -148,7 +143,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -156,12 +151,13 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 2
     const/4 v2, 0x0
 
     const/4 v3, 0x0
@@ -186,7 +182,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -194,12 +190,13 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;I)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 3
     const/4 v3, 0x0
 
     const/4 v4, 0x0
@@ -224,7 +221,7 @@
 
     move v2, p2
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -232,12 +229,13 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;II)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 4
     const/4 v4, 0x0
 
     const/4 v5, 0x0
@@ -262,7 +260,7 @@
 
     move v3, p3
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -270,16 +268,17 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p4    # Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 5
     const/4 v5, 0x0
 
     const/4 v6, 0x0
@@ -304,7 +303,7 @@
 
     move-object/from16 v4, p4
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -312,20 +311,21 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p4    # Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 6
     const/4 v6, 0x0
 
     const/4 v7, 0x0
@@ -350,7 +350,7 @@
 
     move-object/from16 v5, p5
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -358,24 +358,25 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p4    # Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p6    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 7
     const/4 v7, 0x0
 
     const/4 v8, 0x0
@@ -400,7 +401,7 @@
 
     move-object/from16 v6, p6
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -408,28 +409,29 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p4    # Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p6    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p7    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 8
     const/4 v8, 0x0
 
     const/4 v9, 0x0
@@ -454,7 +456,7 @@
 
     move-object/from16 v7, p7
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -462,28 +464,29 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Z)V
     .locals 12
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p4    # Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p6    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p7    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 9
     const/4 v9, 0x0
 
     const/16 v10, 0x100
@@ -508,7 +511,7 @@
 
     move/from16 v8, p8
 
-    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v11}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -516,45 +519,45 @@
 .method public constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZ)V
     .locals 1
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p4    # Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p6    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p7    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
     const-string v0, "externalInputType"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "cameraFacing"
 
-    invoke-static {p4, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "inputTextureMatrix"
 
-    invoke-static {p5, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "inputBufferMatrix"
 
-    invoke-static {p6, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p6, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->externalInputType:Lcom/faceunity/core/enumeration/FUExternalInputEnum;
@@ -578,7 +581,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+.method public synthetic constructor <init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZILo000oo0/o0O0O00;)V
     .locals 10
 
     move/from16 v0, p10
@@ -587,7 +590,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
+    .line 11
     sget-object v1, Lcom/faceunity/core/enumeration/FUExternalInputEnum;->EXTERNAL_INPUT_TYPE_CAMERA:Lcom/faceunity/core/enumeration/FUExternalInputEnum;
 
     goto :goto_0
@@ -626,7 +629,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 3
+    .line 12
     sget-object v5, Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;->CAMERA_FRONT:Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
 
     goto :goto_3
@@ -639,7 +642,7 @@
 
     if-eqz v6, :cond_4
 
-    .line 4
+    .line 13
     sget-object v6, Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;->CCROT0:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
     goto :goto_4
@@ -652,7 +655,7 @@
 
     if-eqz v7, :cond_5
 
-    .line 5
+    .line 14
     sget-object v7, Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;->CCROT0:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
     goto :goto_5
@@ -713,7 +716,7 @@
 
     move/from16 p9, v3
 
-    .line 6
+    .line 15
     invoke-direct/range {p0 .. p9}, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;-><init>(Lcom/faceunity/core/enumeration/FUExternalInputEnum;IILcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;ZZ)V
 
     return-void
@@ -723,12 +726,14 @@
 # virtual methods
 .method public final getCameraFacing()Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->cameraFacing:Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -738,28 +743,34 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->deviceOrientation:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public final getExternalInputType()Lcom/faceunity/core/enumeration/FUExternalInputEnum;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->externalInputType:Lcom/faceunity/core/enumeration/FUExternalInputEnum;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public final getInputBufferMatrix()Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->inputBufferMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -769,28 +780,34 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->inputOrientation:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public final getInputTextureMatrix()Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->inputTextureMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public final getOutputMatrix()Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->outputMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -800,6 +817,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->isNeedBufferReturn:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -809,23 +828,32 @@
     .line 1
     iget-boolean p0, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->isRenderFaceBeautyOnly:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public final setCameraFacing(Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;)V
     .locals 1
     .param p1    # Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 4
+    .line 5
+    .line 6
     iput-object p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->cameraFacing:Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -835,40 +863,56 @@
     .line 1
     iput p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->deviceOrientation:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setExternalInputType(Lcom/faceunity/core/enumeration/FUExternalInputEnum;)V
     .locals 1
     .param p1    # Lcom/faceunity/core/enumeration/FUExternalInputEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 4
+    .line 5
+    .line 6
     iput-object p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->externalInputType:Lcom/faceunity/core/enumeration/FUExternalInputEnum;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
 .method public final setInputBufferMatrix(Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V
     .locals 1
     .param p1    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 4
+    .line 5
+    .line 6
     iput-object p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->inputBufferMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -878,23 +922,32 @@
     .line 1
     iput p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->inputOrientation:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setInputTextureMatrix(Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V
     .locals 1
     .param p1    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 4
+    .line 5
+    .line 6
     iput-object p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->inputTextureMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -904,19 +957,23 @@
     .line 1
     iput-boolean p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->isNeedBufferReturn:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public final setOutputMatrix(Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;)V
     .locals 0
     .param p1    # Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
 
     .line 1
     iput-object p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->outputMatrix:Lcom/faceunity/core/enumeration/FUTransformMatrixEnum;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -926,5 +983,7 @@
     .line 1
     iput-boolean p1, p0, Lcom/faceunity/core/entity/FURenderInputData$FURenderConfig;->isRenderFaceBeautyOnly:Z
 
+    .line 2
+    .line 3
     return-void
 .end method

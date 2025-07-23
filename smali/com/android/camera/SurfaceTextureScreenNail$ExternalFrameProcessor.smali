@@ -18,16 +18,20 @@
 .method public getProcessorType()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public isNeedCopyPreviewFromExternal()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -36,21 +40,8 @@
 
 .method public onDrawFrame(Landroid/graphics/Rect;IIZ)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "renderRect",
-            "width",
-            "height",
-            "copyTexture"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x1
 
     return p0
@@ -58,21 +49,8 @@
 
 .method public onDrawFrame(Lcom/android/gallery3d/ui/GLCanvas;[FLandroid/graphics/Rect;Lcom/android/gallery3d/ui/ExtTexture;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "canvas",
-            "transMat",
-            "displayRect",
-            "tex"
-        }
-    .end annotation
 
+    .line 2
     const/4 p0, 0x0
 
     return p0
@@ -81,23 +59,27 @@
 .method public onSurfaceViewPause()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onSurfaceViewResume()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public prepareGL()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public releaseRender()V
     .locals 0
 
+    .line 1
     return-void
 .end method

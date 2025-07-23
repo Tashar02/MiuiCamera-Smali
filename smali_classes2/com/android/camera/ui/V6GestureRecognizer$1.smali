@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/ui/V6GestureRecognizer$1;
+.class synthetic Lcom/android/camera/ui/V6GestureRecognizer$1;
 .super Ljava/lang/Object;
 .source "V6GestureRecognizer.java"
 

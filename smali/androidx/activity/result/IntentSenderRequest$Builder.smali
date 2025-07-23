@@ -68,16 +68,29 @@
     .line 1
     new-instance v0, Landroidx/activity/result/IntentSenderRequest;
 
+    .line 2
+    .line 3
     iget-object v1, p0, Landroidx/activity/result/IntentSenderRequest$Builder;->mIntentSender:Landroid/content/IntentSender;
 
+    .line 4
+    .line 5
     iget-object v2, p0, Landroidx/activity/result/IntentSenderRequest$Builder;->mFillInIntent:Landroid/content/Intent;
 
+    .line 6
+    .line 7
     iget v3, p0, Landroidx/activity/result/IntentSenderRequest$Builder;->mFlagsMask:I
 
+    .line 8
+    .line 9
     iget p0, p0, Landroidx/activity/result/IntentSenderRequest$Builder;->mFlagsValues:I
 
+    .line 10
+    .line 11
     invoke-direct {v0, v1, v2, v3, p0}, Landroidx/activity/result/IntentSenderRequest;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
 
+    .line 12
+    .line 13
+    .line 14
     return-object v0
 .end method
 
@@ -93,6 +106,8 @@
     .line 1
     iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest$Builder;->mFillInIntent:Landroid/content/Intent;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -105,7 +120,10 @@
     iput p1, p0, Landroidx/activity/result/IntentSenderRequest$Builder;->mFlagsValues:I
 
     .line 2
+    .line 3
     iput p2, p0, Landroidx/activity/result/IntentSenderRequest$Builder;->mFlagsMask:I
 
+    .line 4
+    .line 5
     return-object p0
 .end method

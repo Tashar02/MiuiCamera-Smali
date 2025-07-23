@@ -1,4 +1,4 @@
-.class public interface abstract annotation Lcom/android/camera/ui/FaceView$FaceViewRectState;
+.class interface abstract annotation Lcom/android/camera/ui/FaceView$FaceViewRectState;
 .super Ljava/lang/Object;
 .source "FaceView.java"
 

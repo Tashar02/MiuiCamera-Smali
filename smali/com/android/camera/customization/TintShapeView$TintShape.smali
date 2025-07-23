@@ -39,6 +39,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -48,6 +51,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->innerColor:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -57,6 +62,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->outerColor:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -66,6 +73,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->innerRadius:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -75,6 +84,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->outerRadius:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -84,6 +95,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->stroke:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -93,6 +106,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->type:Lcom/android/camera/customization/TintShapeView$ShapeType;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -102,6 +117,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->extraPadding:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -111,6 +128,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->cornerRadius:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -118,136 +137,88 @@
 # virtual methods
 .method public cornerRadius(I)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "radius"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->cornerRadius:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public extraPadding(I)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "extraPadding"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->extraPadding:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public innerColor(I)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "color"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->innerColor:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public innerRadius(I)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "radius"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->innerRadius:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public outerColor(I)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "color"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->outerColor:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public outerRadius(I)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "radius"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->outerRadius:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public shape(Lcom/android/camera/customization/TintShapeView$ShapeType;)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "shape"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->type:Lcom/android/camera/customization/TintShapeView$ShapeType;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public stroke(F)Lcom/android/camera/customization/TintShapeView$TintShape;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "stroke"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/customization/TintShapeView$TintShape;->stroke:F
 
+    .line 2
+    .line 3
     return-object p0
 .end method

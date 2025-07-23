@@ -53,5 +53,8 @@
     .line 1
     invoke-virtual {p0}, Lcom/miui/extravideo/watermark/gles/EglSurfaceBase;->releaseEglSurface()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

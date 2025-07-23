@@ -40,8 +40,12 @@
     .line 1
     invoke-static {}, Lcom/android/camera/KeyKeeper$Holder;->access$100()Lcom/android/camera/KeyKeeper;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     return-object v0
 .end method
 
@@ -53,22 +57,18 @@
     .line 1
     iget p0, p0, Lcom/android/camera/KeyKeeper;->mAssistantHash:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setAssistantHash(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "hashcode"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/KeyKeeper;->mAssistantHash:I
 
+    .line 2
+    .line 3
     return-void
 .end method

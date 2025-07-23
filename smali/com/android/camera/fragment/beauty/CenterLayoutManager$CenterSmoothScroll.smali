@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/beauty/CenterLayoutManager$CenterSmoothScroll;
+.class Lcom/android/camera/fragment/beauty/CenterLayoutManager$CenterSmoothScroll;
 .super Landroidx/recyclerview/widget/LinearSmoothScroller;
 .source "CenterLayoutManager.java"
 
@@ -15,29 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/beauty/CenterLayoutManager;
+.field final synthetic this$0:Lcom/android/camera/fragment/beauty/CenterLayoutManager;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/beauty/CenterLayoutManager;Landroid/content/Context;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010,
-            0x0
-        }
-        names = {
-            "this$0",
-            "context"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/beauty/CenterLayoutManager$CenterSmoothScroll;->this$0:Lcom/android/camera/fragment/beauty/CenterLayoutManager;
 
     .line 2
+    .line 3
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/LinearSmoothScroller;-><init>(Landroid/content/Context;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,60 +39,51 @@
 # virtual methods
 .method public calculateDtToFit(IIIII)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "viewStart",
-            "viewEnd",
-            "boxStart",
-            "boxEnd",
-            "snapPreference"
-        }
-    .end annotation
-
-    sub-int/2addr p4, p3
 
     .line 1
+    sub-int/2addr p4, p3
+
+    .line 2
     div-int/lit8 p4, p4, 0x2
 
+    .line 3
+    .line 4
     add-int/2addr p3, p4
 
+    .line 5
     sub-int/2addr p2, p1
 
+    .line 6
     div-int/lit8 p2, p2, 0x2
 
+    .line 7
+    .line 8
     add-int/2addr p1, p2
 
+    .line 9
     sub-int/2addr p3, p1
 
+    .line 10
     return p3
 .end method
 
 .method public calculateSpeedPerPixel(Landroid/util/DisplayMetrics;)F
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "displayMetrics"
-        }
-    .end annotation
 
     .line 1
     iget p0, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
+    .line 2
+    .line 3
     int-to-float p0, p0
 
+    .line 4
     const/high16 p1, 0x42c80000    # 100.0f
 
+    .line 5
+    .line 6
     div-float/2addr p1, p0
 
+    .line 7
     return p1
 .end method

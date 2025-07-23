@@ -58,6 +58,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -109,6 +110,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -118,6 +121,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -127,6 +132,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/ThermalDetector;->onThermalNotification(I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -136,105 +144,150 @@
     .line 1
     invoke-static {}, Lcom/android/camera/ThermalDetector$InstanceHolder;->access$100()Lcom/android/camera/ThermalDetector;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     return-object v0
 .end method
 
 .method private ignoreCloseFlash(I)Z
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "stage"
-        }
-    .end annotation
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->OooO()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     .line 2
-    invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
-
+    .line 3
+    .line 4
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/camera/data/data/global/DataItemGlobal;->getCurrentMode()I
+    .line 5
+    invoke-virtual {p0}, Lo000Oo0/OooO00o;->OooO()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
+    if-eqz p0, :cond_2
+
+    .line 10
+    .line 11
+    invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    invoke-virtual {p0}, Lcom/android/camera/data/data/global/DataItemGlobal;->getCurrentMode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
     const/16 v0, 0xa3
 
+    .line 20
+    .line 21
     if-eq p0, v0, :cond_0
 
+    .line 22
+    .line 23
     const/16 v0, 0xa7
 
+    .line 24
+    .line 25
     if-eq p0, v0, :cond_0
 
+    .line 26
+    .line 27
     const/16 v0, 0xaf
 
+    .line 28
+    .line 29
     if-eq p0, v0, :cond_0
 
+    .line 30
+    .line 31
     const/16 v0, 0xb6
 
+    .line 32
+    .line 33
     if-eq p0, v0, :cond_0
 
+    .line 34
+    .line 35
     const/16 v0, 0xb8
 
+    .line 36
+    .line 37
     if-eq p0, v0, :cond_0
 
+    .line 38
+    .line 39
     const/16 v0, 0xba
 
+    .line 40
+    .line 41
     if-eq p0, v0, :cond_0
 
+    .line 42
+    .line 43
     const/16 v0, 0xcd
 
+    .line 44
+    .line 45
     if-eq p0, v0, :cond_0
 
+    .line 46
+    .line 47
     const/16 v0, 0xe0
 
+    .line 48
+    .line 49
     if-eq p0, v0, :cond_0
 
+    .line 50
+    .line 51
     goto :goto_0
 
+    .line 52
     :cond_0
     const/4 p0, 0x4
 
+    .line 53
     if-eq p1, p0, :cond_1
 
+    .line 54
+    .line 55
     goto :goto_0
 
+    .line 56
     :cond_1
     const/4 p0, 0x1
 
+    .line 57
     return p0
 
+    .line 58
     :cond_2
     :goto_0
     const/4 p0, 0x0
 
+    .line 59
     return p0
 .end method
 
 .method private onThermalNotification(I)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "tempStage"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -286,6 +339,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mCameraHalThermalLevel:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -295,6 +350,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mCameraHalThermalResult:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -304,67 +361,94 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mCameraHalThermalLevel:I
 
+    .line 2
+    .line 3
     const/4 v0, 0x4
 
+    .line 4
     if-lt p0, v0, :cond_0
 
+    .line 5
+    .line 6
     const/4 p0, 0x1
 
+    .line 7
     goto :goto_0
 
+    .line 8
     :cond_0
     const/4 p0, 0x0
 
+    .line 9
     :goto_0
     return p0
 .end method
 
 .method public onCreate(Landroid/content/Context;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const-string v1, "ThermalDetector"
-
-    const-string/jumbo v2, "onCreate"
 
     .line 1
-    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    const/4 v0, 0x0
 
     .line 2
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 3
+    .line 4
+    const-string v1, "ThermalDetector"
+
+    .line 5
+    .line 6
+    const-string/jumbo v2, "onCreate"
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
+    .line 13
+    .line 14
+    .line 15
     move-result-object p1
 
+    .line 16
     iput-object p1, p0, Lcom/android/camera/ThermalDetector;->mContext:Landroid/content/Context;
 
+    .line 17
+    .line 18
     return-void
 .end method
 
 .method public onDestroy()V
     .locals 2
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     new-array p0, p0, [Ljava/lang/Object;
 
+    .line 3
+    .line 4
     const-string v0, "ThermalDetector"
 
+    .line 5
+    .line 6
     const-string/jumbo v1, "onDestroy"
 
-    .line 1
+    .line 7
+    .line 8
+    .line 9
     invoke-static {v0, v1, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -381,93 +465,104 @@
 
 .method public registerReceiver(Lcom/android/camera/ThermalDetector$OnThermalNotificationListener;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listener"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const-string v1, "ThermalDetector"
-
-    const-string/jumbo v2, "registerReceiver"
 
     .line 1
-    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    const/4 v0, 0x0
 
     .line 2
-    iput-object p1, p0, Lcom/android/camera/ThermalDetector;->mListener:Lcom/android/camera/ThermalDetector$OnThermalNotificationListener;
+    new-array v0, v0, [Ljava/lang/Object;
 
     .line 3
+    .line 4
+    const-string v1, "ThermalDetector"
+
+    .line 5
+    .line 6
+    const-string/jumbo v2, "registerReceiver"
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object p1, p0, Lcom/android/camera/ThermalDetector;->mListener:Lcom/android/camera/ThermalDetector$OnThermalNotificationListener;
+
+    .line 13
+    .line 14
     iget-object p1, p0, Lcom/android/camera/ThermalDetector;->mContext:Landroid/content/Context;
 
+    .line 15
+    .line 16
     if-nez p1, :cond_0
 
+    .line 17
+    .line 18
     return-void
 
-    .line 4
+    .line 19
     :cond_0
     iget-boolean v0, p0, Lcom/android/camera/ThermalDetector;->mIsRegister:Z
 
+    .line 20
+    .line 21
     if-nez v0, :cond_1
 
-    .line 5
+    .line 22
+    .line 23
     iget-object v0, p0, Lcom/android/camera/ThermalDetector;->mReceiver:Landroid/content/BroadcastReceiver;
 
+    .line 24
+    .line 25
     iget-object v1, p0, Lcom/android/camera/ThermalDetector;->mFilter:Landroid/content/IntentFilter;
 
+    .line 26
+    .line 27
     invoke-static {}, Lcom/android/camera/lib/compatibility/util/CompatibilityUtils;->receiverFlagExported()I
 
+    .line 28
+    .line 29
+    .line 30
     move-result v2
 
+    .line 31
     invoke-virtual {p1, v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
 
+    .line 32
+    .line 33
+    .line 34
     const/4 p1, 0x1
 
-    .line 6
+    .line 35
     iput-boolean p1, p0, Lcom/android/camera/ThermalDetector;->mIsRegister:Z
 
+    .line 36
+    .line 37
     :cond_1
     return-void
 .end method
 
 .method public setCameraHalThermalLevel(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cameraHalThermalLevel"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ThermalDetector;->mCameraHalThermalLevel:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setCameraHalThermalResult(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "thermalResult"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ThermalDetector;->mCameraHalThermalResult:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -477,17 +572,25 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 2
+    .line 3
     const/4 v0, 0x3
 
+    .line 4
     if-ne p0, v0, :cond_0
 
+    .line 5
+    .line 6
     const/4 p0, 0x1
 
+    .line 7
     goto :goto_0
 
+    .line 8
     :cond_0
     const/4 p0, 0x0
 
+    .line 9
     :goto_0
     return p0
 .end method
@@ -498,82 +601,138 @@
     .line 1
     invoke-static {}, Lcom/android/camera/CameraSettings;->isFrontCamera()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     const/4 v1, 0x4
 
+    .line 6
     const/4 v2, 0x0
 
+    .line 7
     const/4 v3, 0x1
 
+    .line 8
     if-eqz v0, :cond_2
 
-    .line 2
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 9
+    .line 10
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00oOooO()Z
+    .line 14
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o00oOooO()Z
 
+    .line 15
+    .line 16
+    .line 17
     move-result v0
 
+    .line 18
     if-eqz v0, :cond_2
 
-    .line 3
+    .line 19
+    .line 20
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemConfig()Lcom/android/camera/data/data/config/DataItemConfig;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v0
 
+    .line 24
     invoke-virtual {v0}, Lcom/android/camera/data/data/config/DataItemConfig;->getComponentFlash()Lcom/android/camera/data/data/config/ComponentConfigFlash;
 
+    .line 25
+    .line 26
+    .line 27
     move-result-object v0
 
+    .line 28
     invoke-virtual {v0}, Lcom/android/camera/data/data/config/ComponentConfigFlash;->isHardwareSupported()Z
 
+    .line 29
+    .line 30
+    .line 31
     move-result v0
 
+    .line 32
     if-eqz v0, :cond_2
 
-    .line 4
+    .line 33
+    .line 34
     iget v0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 35
+    .line 36
     if-eq v0, v1, :cond_0
 
+    .line 37
+    .line 38
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 39
+    .line 40
     if-ne p0, v3, :cond_1
 
+    .line 41
+    .line 42
     :cond_0
     move v2, v3
 
+    .line 43
     :cond_1
     return v2
 
-    .line 5
+    .line 44
     :cond_2
     iget v0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 45
+    .line 46
     invoke-direct {p0, v0}, Lcom/android/camera/ThermalDetector;->ignoreCloseFlash(I)Z
 
+    .line 47
+    .line 48
+    .line 49
     move-result v0
 
+    .line 50
     if-eqz v0, :cond_3
 
+    .line 51
+    .line 52
     return v2
 
-    .line 6
+    .line 53
     :cond_3
     iget v0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 54
+    .line 55
     if-eq v0, v1, :cond_4
 
+    .line 56
+    .line 57
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 58
+    .line 59
     if-ne p0, v3, :cond_5
 
+    .line 60
+    .line 61
     :cond_4
     move v2, v3
 
+    .line 62
     :cond_5
     return v2
 .end method
@@ -584,53 +743,85 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 2
+    .line 3
     const/4 v0, 0x2
 
+    .line 4
     if-ne p0, v0, :cond_0
 
+    .line 5
+    .line 6
     const/4 p0, 0x1
 
+    .line 7
     goto :goto_0
 
+    .line 8
     :cond_0
     const/4 p0, 0x0
 
+    .line 9
     :goto_0
     return p0
 .end method
 
 .method public thermalCloseNightAlgo()Z
-    .locals 4
+    .locals 3
 
     .line 1
     iget v0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
-    const/4 v1, 0x0
+    .line 2
+    .line 3
+    const/4 v1, 0x5
 
+    .line 4
     const/4 v2, 0x1
 
-    const/4 v3, 0x5
+    .line 5
+    if-eq v0, v1, :cond_1
 
-    if-eq v0, v3, :cond_0
-
+    .line 6
+    .line 7
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
-    if-eq p0, v2, :cond_0
+    .line 8
+    .line 9
+    if-eq p0, v2, :cond_1
 
+    .line 10
+    .line 11
     const-string/jumbo p0, "thermalCloseNightAlgo"
 
-    .line 2
-    invoke-static {p0, v1}, Lcom/xiaomi/camera/util/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+    .line 12
+    .line 13
+    .line 14
+    const/4 v0, 0x0
 
+    .line 15
+    invoke-static {p0, v0}, Lcom/xiaomi/camera/util/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 16
+    .line 17
+    .line 18
     move-result p0
 
-    if-eqz p0, :cond_1
+    .line 19
+    if-eqz p0, :cond_0
 
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
     :cond_0
-    move v1, v2
+    move v2, v0
 
+    .line 23
     :cond_1
-    return v1
+    :goto_0
+    return v2
 .end method
 
 .method public thermalConstrained()Z
@@ -639,15 +830,22 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 2
+    .line 3
     const/4 v0, 0x1
 
+    .line 4
     if-ne p0, v0, :cond_0
 
+    .line 5
+    .line 6
     goto :goto_0
 
+    .line 7
     :cond_0
     const/4 v0, 0x0
 
+    .line 8
     :goto_0
     return v0
 .end method
@@ -655,46 +853,72 @@
 .method public unregisterReceiver()V
     .locals 4
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     new-array v1, v0, [Ljava/lang/Object;
 
+    .line 3
+    .line 4
     const-string v2, "ThermalDetector"
 
+    .line 5
+    .line 6
     const-string/jumbo v3, "unregisterReceiver"
 
-    .line 1
+    .line 7
+    .line 8
+    .line 9
     invoke-static {v2, v3, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 10
+    .line 11
+    .line 12
     const/4 v1, 0x0
 
-    .line 2
+    .line 13
     iput-object v1, p0, Lcom/android/camera/ThermalDetector;->mListener:Lcom/android/camera/ThermalDetector$OnThermalNotificationListener;
 
-    .line 3
+    .line 14
+    .line 15
     iget-object v1, p0, Lcom/android/camera/ThermalDetector;->mContext:Landroid/content/Context;
 
+    .line 16
+    .line 17
     if-nez v1, :cond_0
 
+    .line 18
+    .line 19
     return-void
 
-    .line 4
+    .line 20
     :cond_0
     iget-boolean v2, p0, Lcom/android/camera/ThermalDetector;->mIsRegister:Z
 
+    .line 21
+    .line 22
     if-eqz v2, :cond_1
 
-    .line 5
+    .line 23
+    .line 24
     iget-object v2, p0, Lcom/android/camera/ThermalDetector;->mReceiver:Landroid/content/BroadcastReceiver;
 
+    .line 25
+    .line 26
     invoke-virtual {v1, v2}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 6
+    .line 27
+    .line 28
+    .line 29
     iput-boolean v0, p0, Lcom/android/camera/ThermalDetector;->mIsRegister:Z
 
-    .line 7
+    .line 30
+    .line 31
     iput v0, p0, Lcom/android/camera/ThermalDetector;->mTempStage:I
 
+    .line 32
+    .line 33
     :cond_1
     return-void
 .end method

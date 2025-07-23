@@ -28,11 +28,16 @@
     invoke-direct {p0}, Landroidx/recyclerview/widget/ItemTouchHelper$Callback;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p2, p0, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->mDefaultSwipeDirs:I
 
-    .line 3
+    .line 5
+    .line 6
     iput p1, p0, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->mDefaultDragDirs:I
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -52,6 +57,8 @@
     .line 1
     iget p0, p0, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->mDefaultDragDirs:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -69,18 +76,28 @@
     .line 1
     invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->getDragDirs(Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
-    .line 2
+    .line 5
     invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->getSwipeDirs(Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
-    .line 3
+    .line 9
     invoke-static {v0, p0}, Landroidx/recyclerview/widget/ItemTouchHelper$Callback;->makeMovementFlags(II)I
 
+    .line 10
+    .line 11
+    .line 12
     move-result p0
 
+    .line 13
     return p0
 .end method
 
@@ -98,6 +115,8 @@
     .line 1
     iget p0, p0, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->mDefaultSwipeDirs:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -107,6 +126,8 @@
     .line 1
     iput p1, p0, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->mDefaultDragDirs:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -116,5 +137,7 @@
     .line 1
     iput p1, p0, Landroidx/recyclerview/widget/ItemTouchHelper$SimpleCallback;->mDefaultSwipeDirs:I
 
+    .line 2
+    .line 3
     return-void
 .end method

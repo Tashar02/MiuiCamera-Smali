@@ -1,4 +1,4 @@
-.class public Landroidx/lifecycle/MediatorLiveData$Source;
+.class Landroidx/lifecycle/MediatorLiveData$Source;
 .super Ljava/lang/Object;
 .source "MediatorLiveData.java"
 
@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final mLiveData:Landroidx/lifecycle/LiveData;
+.field final mLiveData:Landroidx/lifecycle/LiveData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/lifecycle/LiveData<",
@@ -38,7 +38,7 @@
     .end annotation
 .end field
 
-.field public final mObserver:Landroidx/lifecycle/Observer;
+.field final mObserver:Landroidx/lifecycle/Observer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/lifecycle/Observer<",
@@ -47,7 +47,7 @@
     .end annotation
 .end field
 
-.field public mVersion:I
+.field mVersion:I
 
 
 # direct methods
@@ -66,17 +66,24 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, -0x1
 
-    .line 2
+    .line 5
     iput v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mVersion:I
 
-    .line 3
+    .line 6
+    .line 7
     iput-object p1, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
-    .line 4
+    .line 8
+    .line 9
     iput-object p2, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mObserver:Landroidx/lifecycle/Observer;
 
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -97,28 +104,49 @@
     .line 1
     iget v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mVersion:I
 
+    .line 2
+    .line 3
     iget-object v1, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
+    .line 4
+    .line 5
     invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getVersion()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v1
 
+    .line 9
     if-eq v0, v1, :cond_0
 
-    .line 2
+    .line 10
+    .line 11
     iget-object v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
+    .line 12
+    .line 13
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getVersion()I
 
+    .line 14
+    .line 15
+    .line 16
     move-result v0
 
+    .line 17
     iput v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mVersion:I
 
-    .line 3
+    .line 18
+    .line 19
     iget-object p0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mObserver:Landroidx/lifecycle/Observer;
 
+    .line 20
+    .line 21
     invoke-interface {p0, p1}, Landroidx/lifecycle/Observer;->onChanged(Ljava/lang/Object;)V
 
+    .line 22
+    .line 23
+    .line 24
     :cond_0
     return-void
 .end method
@@ -129,8 +157,13 @@
     .line 1
     iget-object v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0}, Landroidx/lifecycle/LiveData;->observeForever(Landroidx/lifecycle/Observer;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -140,7 +173,12 @@
     .line 1
     iget-object v0, p0, Landroidx/lifecycle/MediatorLiveData$Source;->mLiveData:Landroidx/lifecycle/LiveData;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0}, Landroidx/lifecycle/LiveData;->removeObserver(Landroidx/lifecycle/Observer;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

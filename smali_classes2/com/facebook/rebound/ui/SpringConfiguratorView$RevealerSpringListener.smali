@@ -1,4 +1,4 @@
-.class public Lcom/facebook/rebound/ui/SpringConfiguratorView$RevealerSpringListener;
+.class Lcom/facebook/rebound/ui/SpringConfiguratorView$RevealerSpringListener;
 .super Ljava/lang/Object;
 .source "SpringConfiguratorView.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
+.field final synthetic this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
 
 
 # direct methods
@@ -47,18 +47,21 @@
 .method public onSpringActivate(Lcom/facebook/rebound/Spring;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onSpringAtRest(Lcom/facebook/rebound/Spring;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onSpringEndStateChange(Lcom/facebook/rebound/Spring;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -68,34 +71,56 @@
     .line 1
     invoke-virtual {p1}, Lcom/facebook/rebound/Spring;->getCurrentValue()D
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     double-to-float p1, v0
 
-    .line 2
+    .line 6
     iget-object v0, p0, Lcom/facebook/rebound/ui/SpringConfiguratorView$RevealerSpringListener;->this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
 
+    .line 7
+    .line 8
     invoke-static {v0}, Lcom/facebook/rebound/ui/SpringConfiguratorView;->access$1300(Lcom/facebook/rebound/ui/SpringConfiguratorView;)F
 
+    .line 9
+    .line 10
+    .line 11
     move-result v0
 
-    .line 3
+    .line 12
     iget-object v1, p0, Lcom/facebook/rebound/ui/SpringConfiguratorView$RevealerSpringListener;->this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
 
+    .line 13
+    .line 14
     invoke-static {v1}, Lcom/facebook/rebound/ui/SpringConfiguratorView;->access$1400(Lcom/facebook/rebound/ui/SpringConfiguratorView;)F
 
+    .line 15
+    .line 16
+    .line 17
     move-result v1
 
+    .line 18
     sub-float/2addr v1, v0
 
+    .line 19
     mul-float/2addr p1, v1
 
+    .line 20
     add-float/2addr p1, v0
 
-    .line 4
+    .line 21
     iget-object p0, p0, Lcom/facebook/rebound/ui/SpringConfiguratorView$RevealerSpringListener;->this$0:Lcom/facebook/rebound/ui/SpringConfiguratorView;
 
-    invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->setTranslationY(F)V
+    .line 22
+    .line 23
+    invoke-virtual {p0, p1}, Landroid/view/View;->setTranslationY(F)V
 
+    .line 24
+    .line 25
+    .line 26
     return-void
 .end method

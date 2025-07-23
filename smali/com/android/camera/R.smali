@@ -13,6 +13,7 @@
         Lcom/android/camera/R$color;,
         Lcom/android/camera/R$dimen;,
         Lcom/android/camera/R$drawable;,
+        Lcom/android/camera/R$font;,
         Lcom/android/camera/R$fraction;,
         Lcom/android/camera/R$id;,
         Lcom/android/camera/R$integer;,
@@ -34,7 +35,11 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

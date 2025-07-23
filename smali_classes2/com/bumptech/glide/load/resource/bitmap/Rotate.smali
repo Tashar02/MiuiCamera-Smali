@@ -18,16 +18,26 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/bumptech/glide/load/Key;->CHARSET:Ljava/nio/charset/Charset;
+    const-string v0, "com.bumptech.glide.load.resource.bitmap.Rotate"
 
-    const-string v1, "com.bumptech.glide.load.resource.bitmap.Rotate"
+    .line 2
+    .line 3
+    sget-object v1, Lcom/bumptech/glide/load/Key;->CHARSET:Ljava/nio/charset/Charset;
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
+    .line 9
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->ID_BYTES:[B
 
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -38,8 +48,12 @@
     invoke-direct {p0}, Lcom/bumptech/glide/load/resource/bitmap/BitmapTransformation;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->degreesToRotate:I
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -51,22 +65,34 @@
     .line 1
     instance-of v0, p1, Lcom/bumptech/glide/load/resource/bitmap/Rotate;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 5
+    .line 6
     check-cast p1, Lcom/bumptech/glide/load/resource/bitmap/Rotate;
 
-    .line 3
+    .line 7
+    .line 8
     iget p0, p0, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->degreesToRotate:I
 
+    .line 9
+    .line 10
     iget p1, p1, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->degreesToRotate:I
 
+    .line 11
+    .line 12
     if-ne p0, p1, :cond_0
 
+    .line 13
+    .line 14
     const/4 v1, 0x1
 
+    .line 15
     :cond_0
     return v1
 .end method
@@ -77,16 +103,29 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->degreesToRotate:I
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/bumptech/glide/util/Util;->hashCode(I)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     const v0, -0x38a7c59c
 
+    .line 8
+    .line 9
+    .line 10
     invoke-static {v0, p0}, Lcom/bumptech/glide/util/Util;->hashCode(II)I
 
+    .line 11
+    .line 12
+    .line 13
     move-result p0
 
+    .line 14
     return p0
 .end method
 
@@ -104,10 +143,16 @@
     .line 1
     iget p0, p0, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->degreesToRotate:I
 
+    .line 2
+    .line 3
     invoke-static {p2, p0}, Lcom/bumptech/glide/load/resource/bitmap/TransformationUtils;->rotateImage(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -121,27 +166,48 @@
     .line 1
     sget-object v0, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->ID_BYTES:[B
 
+    .line 2
+    .line 3
     invoke-virtual {p1, v0}, Ljava/security/MessageDigest;->update([B)V
 
+    .line 4
+    .line 5
+    .line 6
     const/4 v0, 0x4
 
-    .line 2
+    .line 7
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v0
 
+    .line 11
     iget p0, p0, Lcom/bumptech/glide/load/resource/bitmap/Rotate;->degreesToRotate:I
 
+    .line 12
+    .line 13
     invoke-virtual {v0, p0}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object p0
 
+    .line 17
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->array()[B
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object p0
 
-    .line 3
+    .line 21
     invoke-virtual {p1, p0}, Ljava/security/MessageDigest;->update([B)V
 
+    .line 22
+    .line 23
+    .line 24
     return-void
 .end method

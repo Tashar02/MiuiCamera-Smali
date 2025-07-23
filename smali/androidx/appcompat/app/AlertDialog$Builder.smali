@@ -86,65 +86,115 @@
     .line 1
     new-instance v0, Landroidx/appcompat/app/AlertDialog;
 
-    iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
-
-    iget-object v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mContext:Landroid/content/Context;
-
-    iget v2, p0, Landroidx/appcompat/app/AlertDialog$Builder;->mTheme:I
-
-    invoke-direct {v0, v1, v2}, Landroidx/appcompat/app/AlertDialog;-><init>(Landroid/content/Context;I)V
-
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
-
-    iget-object v2, v0, Landroidx/appcompat/app/AlertDialog;->mAlert:Landroidx/appcompat/app/AlertController;
-
-    invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertController$AlertParams;->apply(Landroidx/appcompat/app/AlertController;)V
-
     .line 3
     iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
-    iget-boolean v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mCancelable:Z
-
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCancelable(Z)V
-
     .line 4
-    iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
-
-    iget-boolean v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mCancelable:Z
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x1
-
     .line 5
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    iget-object v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mContext:Landroid/content/Context;
 
     .line 6
+    .line 7
+    iget v2, p0, Landroidx/appcompat/app/AlertDialog$Builder;->mTheme:I
+
+    .line 8
+    .line 9
+    invoke-direct {v0, v1, v2}, Landroidx/appcompat/app/AlertDialog;-><init>(Landroid/content/Context;I)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
+
+    .line 13
+    .line 14
+    iget-object v2, v0, Landroidx/appcompat/app/AlertDialog;->mAlert:Landroidx/appcompat/app/AlertController;
+
+    .line 15
+    .line 16
+    invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertController$AlertParams;->apply(Landroidx/appcompat/app/AlertController;)V
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
+
+    .line 20
+    .line 21
+    iget-boolean v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mCancelable:Z
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCancelable(Z)V
+
+    .line 24
+    .line 25
+    .line 26
+    iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
+
+    .line 27
+    .line 28
+    iget-boolean v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mCancelable:Z
+
+    .line 29
+    .line 30
+    if-eqz v1, :cond_0
+
+    .line 31
+    .line 32
+    const/4 v1, 0x1
+
+    .line 33
+    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+
+    .line 34
+    .line 35
+    .line 36
     :cond_0
     iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 37
+    .line 38
     iget-object v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
 
+    .line 39
+    .line 40
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
-    .line 7
+    .line 41
+    .line 42
+    .line 43
     iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 44
+    .line 45
     iget-object v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
+    .line 46
+    .line 47
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 8
+    .line 48
+    .line 49
+    .line 50
     iget-object p0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 51
+    .line 52
     iget-object p0, p0, Landroidx/appcompat/app/AlertController$AlertParams;->mOnKeyListener:Landroid/content/DialogInterface$OnKeyListener;
 
+    .line 53
+    .line 54
     if-eqz p0, :cond_1
 
-    .line 9
+    .line 55
+    .line 56
     invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
+    .line 57
+    .line 58
+    .line 59
     :cond_1
     return-object v0
 .end method
@@ -157,8 +207,12 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/appcompat/app/AlertController$AlertParams;->mContext:Landroid/content/Context;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -168,11 +222,16 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mAdapter:Landroid/widget/ListAdapter;
 
-    .line 2
+    .line 4
+    .line 5
     iput-object p2, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
+    .line 6
+    .line 7
     return-object p0
 .end method
 
@@ -182,8 +241,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-boolean p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mCancelable:Z
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -193,14 +256,20 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mCursor:Landroid/database/Cursor;
 
-    .line 2
+    .line 4
+    .line 5
     iput-object p3, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mLabelColumn:Ljava/lang/String;
 
-    .line 3
+    .line 6
+    .line 7
     iput-object p2, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
+    .line 8
+    .line 9
     return-object p0
 .end method
 
@@ -214,8 +283,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mCustomTitleView:Landroid/view/View;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -259,28 +332,49 @@
     .line 1
     new-instance v0, Landroid/util/TypedValue;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget-object v1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 7
+    .line 8
     iget-object v1, v1, Landroidx/appcompat/app/AlertController$AlertParams;->mContext:Landroid/content/Context;
 
+    .line 9
+    .line 10
     invoke-virtual {v1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object v1
 
+    .line 14
     const/4 v2, 0x1
 
+    .line 15
     invoke-virtual {v1, p1, v0, v2}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
-    .line 3
+    .line 16
+    .line 17
+    .line 18
     iget-object p1, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 19
+    .line 20
     iget v0, v0, Landroid/util/TypedValue;->resourceId:I
 
+    .line 21
+    .line 22
     iput v0, p1, Landroidx/appcompat/app/AlertController$AlertParams;->mIconId:I
 
+    .line 23
+    .line 24
     return-object p0
 .end method
 
@@ -292,8 +386,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-boolean p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mForceInverseBackground:Z
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -508,8 +606,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mNegativeButtonIcon:Landroid/graphics/drawable/Drawable;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -559,8 +661,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mNeutralButtonIcon:Landroid/graphics/drawable/Drawable;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -570,8 +676,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -581,8 +691,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -592,8 +706,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mOnItemSelectedListener:Landroid/widget/AdapterView$OnItemSelectedListener;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -603,8 +721,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mOnKeyListener:Landroid/content/DialogInterface$OnKeyListener;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -654,8 +776,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-object p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mPositiveButtonIcon:Landroid/graphics/drawable/Drawable;
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -670,8 +796,12 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AlertDialog$Builder;->P:Landroidx/appcompat/app/AlertController$AlertParams;
 
+    .line 2
+    .line 3
     iput-boolean p1, v0, Landroidx/appcompat/app/AlertController$AlertParams;->mRecycleOnMeasure:Z
 
+    .line 4
+    .line 5
     return-object p0
 .end method
 
@@ -905,10 +1035,16 @@
     .line 1
     invoke-virtual {p0}, Landroidx/appcompat/app/AlertDialog$Builder;->create()Landroidx/appcompat/app/AlertDialog;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
-    .line 2
+    .line 5
     invoke-virtual {p0}, Landroid/app/Dialog;->show()V
 
+    .line 6
+    .line 7
+    .line 8
     return-object p0
 .end method

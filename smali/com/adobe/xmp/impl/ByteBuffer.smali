@@ -203,26 +203,41 @@
     .line 1
     iget-object v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->buffer:[B
 
+    .line 2
+    .line 3
     array-length v1, v0
 
+    .line 4
     if-le p1, v1, :cond_0
 
-    .line 2
+    .line 5
+    .line 6
     array-length p1, v0
 
+    .line 7
     mul-int/lit8 p1, p1, 0x2
 
+    .line 8
+    .line 9
     new-array p1, p1, [B
 
+    .line 10
+    .line 11
     iput-object p1, p0, Lcom/adobe/xmp/impl/ByteBuffer;->buffer:[B
 
-    .line 3
+    .line 12
+    .line 13
     array-length p0, v0
 
+    .line 14
     const/4 v1, 0x0
 
+    .line 15
     invoke-static {v0, v1, p1, v1, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
+    .line 16
+    .line 17
+    .line 18
     :cond_0
     return-void
 .end method
@@ -259,9 +274,9 @@
     .line 7
     iget-object v0, p1, Lcom/adobe/xmp/impl/ByteBuffer;->buffer:[B
 
-    iget p1, p1, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
-
     const/4 v1, 0x0
+
+    iget p1, p1, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
 
     invoke-virtual {p0, v0, v1, p1}, Lcom/adobe/xmp/impl/ByteBuffer;->append([BII)V
 
@@ -314,23 +329,37 @@
     .line 1
     iget v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
 
+    .line 2
+    .line 3
     if-ge p1, v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     iget-object p0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->buffer:[B
 
+    .line 6
+    .line 7
     aget-byte p0, p0, p1
 
+    .line 8
+    .line 9
     return p0
 
-    .line 3
+    .line 10
     :cond_0
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
+    .line 11
+    .line 12
     const-string p1, "The index exceeds the valid buffer area"
 
+    .line 13
+    .line 14
     invoke-direct {p0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
+    .line 15
+    .line 16
+    .line 17
     throw p0
 .end method
 
@@ -340,25 +369,41 @@
     .line 1
     iget v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
 
+    .line 2
+    .line 3
     if-ge p1, v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     iget-object p0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->buffer:[B
 
+    .line 6
+    .line 7
     aget-byte p0, p0, p1
 
+    .line 8
+    .line 9
     and-int/lit16 p0, p0, 0xff
 
+    .line 10
+    .line 11
     return p0
 
-    .line 3
+    .line 12
     :cond_0
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
+    .line 13
+    .line 14
     const-string p1, "The index exceeds the valid buffer area"
 
+    .line 15
+    .line 16
     invoke-direct {p0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
+    .line 17
+    .line 18
+    .line 19
     throw p0
 .end method
 
@@ -368,14 +413,24 @@
     .line 1
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
+    .line 2
+    .line 3
     iget-object v1, p0, Lcom/adobe/xmp/impl/ByteBuffer;->buffer:[B
 
-    iget p0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
-
+    .line 4
+    .line 5
     const/4 v2, 0x0
 
+    .line 6
+    iget p0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
+
+    .line 7
+    .line 8
     invoke-direct {v0, v1, v2, p0}, Ljava/io/ByteArrayInputStream;-><init>([BII)V
 
+    .line 9
+    .line 10
+    .line 11
     return-object v0
 .end method
 
@@ -385,192 +440,287 @@
     .line 1
     iget-object v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_d
 
-    .line 2
+    .line 4
+    .line 5
     iget v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
 
+    .line 6
+    .line 7
     const-string v1, "UTF-8"
 
+    .line 8
+    .line 9
     const/4 v2, 0x2
 
+    .line 10
     if-ge v0, v2, :cond_0
 
-    .line 3
+    .line 11
+    .line 12
     iput-object v1, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 13
+    .line 14
     goto/16 :goto_3
 
-    .line 4
+    .line 15
+    .line 16
     :cond_0
     iget-object v3, p0, Lcom/adobe/xmp/impl/ByteBuffer;->buffer:[B
 
+    .line 17
+    .line 18
     const/4 v4, 0x0
 
-    aget-byte v5, v3, v4
+    .line 19
+    aget-byte v4, v3, v4
 
-    const-string v6, "UTF-32"
+    .line 20
+    .line 21
+    const-string v5, "UTF-32"
 
-    const/16 v7, 0xfe
+    .line 22
+    .line 23
+    const/16 v6, 0xfe
 
-    const/4 v8, 0x1
+    .line 24
+    .line 25
+    const/4 v7, 0x1
 
-    const/4 v9, 0x4
+    .line 26
+    const/4 v8, 0x4
 
-    const/16 v10, 0xff
+    .line 27
+    const/16 v9, 0xff
 
-    if-nez v5, :cond_4
+    .line 28
+    .line 29
+    if-nez v4, :cond_4
 
-    if-lt v0, v9, :cond_3
+    .line 30
+    .line 31
+    if-lt v0, v8, :cond_3
 
-    .line 5
-    aget-byte v0, v3, v8
+    .line 32
+    .line 33
+    aget-byte v0, v3, v7
 
+    .line 34
+    .line 35
     if-eqz v0, :cond_1
 
+    .line 36
+    .line 37
     goto :goto_0
 
-    .line 6
+    .line 38
     :cond_1
     aget-byte v0, v3, v2
 
-    and-int/2addr v0, v10
+    .line 39
+    .line 40
+    and-int/2addr v0, v9
 
-    if-ne v0, v7, :cond_2
+    .line 41
+    if-ne v0, v6, :cond_2
 
+    .line 42
+    .line 43
     const/4 v0, 0x3
 
+    .line 44
     aget-byte v0, v3, v0
 
-    and-int/2addr v0, v10
+    .line 45
+    .line 46
+    and-int/2addr v0, v9
 
-    if-ne v0, v10, :cond_2
+    .line 47
+    if-ne v0, v9, :cond_2
 
+    .line 48
+    .line 49
     const-string v0, "UTF-32BE"
 
-    .line 7
+    .line 50
+    .line 51
     iput-object v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 52
+    .line 53
     goto :goto_3
 
-    .line 8
+    .line 54
     :cond_2
-    iput-object v6, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
+    iput-object v5, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 55
+    .line 56
     goto :goto_3
 
+    .line 57
     :cond_3
     :goto_0
     const-string v0, "UTF-16BE"
 
-    .line 9
+    .line 58
+    .line 59
     iput-object v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 60
+    .line 61
     goto :goto_3
 
-    .line 10
+    .line 62
     :cond_4
-    aget-byte v5, v3, v4
+    and-int/lit16 v10, v4, 0xff
 
-    and-int/2addr v5, v10
-
+    .line 63
+    .line 64
     const/16 v11, 0x80
 
-    if-ge v5, v11, :cond_8
+    .line 65
+    .line 66
+    if-ge v10, v11, :cond_8
 
-    .line 11
-    aget-byte v4, v3, v8
+    .line 67
+    .line 68
+    aget-byte v4, v3, v7
 
+    .line 69
+    .line 70
     if-eqz v4, :cond_5
 
-    .line 12
+    .line 71
+    .line 72
     iput-object v1, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 73
+    .line 74
     goto :goto_3
 
+    .line 75
     :cond_5
-    if-lt v0, v9, :cond_7
+    if-lt v0, v8, :cond_7
 
-    .line 13
+    .line 76
+    .line 77
     aget-byte v0, v3, v2
 
+    .line 78
+    .line 79
     if-eqz v0, :cond_6
 
+    .line 80
+    .line 81
     goto :goto_1
 
+    .line 82
     :cond_6
     const-string v0, "UTF-32LE"
 
-    .line 14
+    .line 83
+    .line 84
     iput-object v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 85
+    .line 86
     goto :goto_3
 
+    .line 87
     :cond_7
     :goto_1
     const-string v0, "UTF-16LE"
 
-    .line 15
+    .line 88
+    .line 89
     iput-object v0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 90
+    .line 91
     goto :goto_3
 
-    .line 16
+    .line 92
     :cond_8
-    aget-byte v5, v3, v4
+    and-int/lit16 v7, v4, 0xff
 
-    and-int/2addr v5, v10
+    .line 93
+    .line 94
+    const/16 v10, 0xef
 
-    const/16 v8, 0xef
+    .line 95
+    .line 96
+    if-ne v7, v10, :cond_9
 
-    if-ne v5, v8, :cond_9
-
-    .line 17
+    .line 97
+    .line 98
     iput-object v1, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 99
+    .line 100
     goto :goto_3
 
-    .line 18
+    .line 101
     :cond_9
-    aget-byte v1, v3, v4
+    and-int/lit16 v1, v4, 0xff
 
-    and-int/2addr v1, v10
-
+    .line 102
+    .line 103
     const-string v4, "UTF-16"
 
-    if-ne v1, v7, :cond_a
+    .line 104
+    .line 105
+    if-ne v1, v6, :cond_a
 
-    .line 19
+    .line 106
+    .line 107
     iput-object v4, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 108
+    .line 109
     goto :goto_3
 
+    .line 110
     :cond_a
-    if-lt v0, v9, :cond_c
+    if-lt v0, v8, :cond_c
 
-    .line 20
+    .line 111
+    .line 112
     aget-byte v0, v3, v2
 
+    .line 113
+    .line 114
     if-eqz v0, :cond_b
 
+    .line 115
+    .line 116
     goto :goto_2
 
-    .line 21
+    .line 117
     :cond_b
-    iput-object v6, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
+    iput-object v5, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 118
+    .line 119
     goto :goto_3
 
-    .line 22
+    .line 120
     :cond_c
     :goto_2
     iput-object v4, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
-    .line 23
+    .line 121
+    .line 122
     :cond_d
     :goto_3
     iget-object p0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->encoding:Ljava/lang/String;
 
+    .line 123
+    .line 124
     return-object p0
 .end method
 
@@ -580,5 +730,7 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/ByteBuffer;->length:I
 
+    .line 2
+    .line 3
     return p0
 .end method

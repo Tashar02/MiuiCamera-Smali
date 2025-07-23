@@ -664,6 +664,7 @@
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">ឧបករណ៍របស់អ្នកដូចជាមិនត្រូវបានតភ្ជាប់ទៅ Wi-Fi ទេ។ ប្រើទិន្នន័យចល័ត %1$s MB ដើម្បីទាញយកធាតុទាំងនោះឥឡូវនេះឬ?</string>
     <string name="download_in_progress">កំពុងទាញយក…</string>
+    <string name="download_network_error">មិនអាចទាញយកបានទេ។ សូមពិនិត្យសំណុំកំណត់បណ្តាញរបស់អ្នក។</string>
     <string name="download_title">ការព្រមានអំពីការប្រើប្រាស់ទិន្នន័យ</string>
     <string name="download_waiting">កំពុងរង់ចាំ…</string>
     <string name="dual_camera_lens_covered_toast">កញ្ចក់ត្រូវបានគ្របដណ្តប់។</string>
@@ -862,7 +863,7 @@
     <string name="lighting_hint_too_far">យកកាមេរ៉ាដាក់ឱ្យជិត</string>
     <string name="lighting_hint_usage">"អ្នកអាចប្រើបែបផែនភ្លើងបំភ្លឺ 
  របៀបបញ្ឈរ"</string>
-    <string name="lighting_lanshan">Decadence</string>
+    <string name="lighting_lanshan">ស្រអាប់</string>
     <string name="lighting_movie_light_effect_title">បែបផែនភាពយន្ត</string>
     <string name="lighting_neon">ណេអុង</string>
     <string name="lighting_nostalgia">អារម្មណ៍ពីមុន</string>
@@ -1478,6 +1479,7 @@
     <string name="pref_camera_peak_entry_off">បិទ</string>
     <string name="pref_camera_peak_entry_on">បើក</string>
     <string name="pref_camera_peak_title">លួចផ្តោតសម្លឹង</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">ពេញ</string>
     <string name="pref_camera_picturesize_title_simple_mode">ស៊ុមកាមេរ៉ា</string>
     <string name="pref_camera_portrait_mode_entry_off">ម៉ូដថតរូបមនុស្ស បានបិទ</string>
     <string name="pref_camera_portrait_mode_entry_on">ម៉ូដថតរូបមនុស្ស បានបើក</string>
@@ -1715,7 +1717,7 @@
     <string name="pref_video_quality_hfr_title">អត្រាស៊ុម និង គុណភាពរូបភាព</string>
     <string name="pref_video_quality_title">គុណភាពវីដេអូ</string>
     <string name="pref_video_speed_entry_fast">លឿន</string>
-    <string name="pref_video_speed_entry_normal">ស្តង់ដារ</string>
+    <string name="pref_video_speed_entry_normal">ស្តង់ដា</string>
     <string name="pref_video_speed_entry_slow">យឺត</string>
     <string name="pref_video_speed_fast_title">ពេល​កន្លង​ផុត</string>
     <string name="pref_video_speed_slow_title">ចលនា​យឺត</string>

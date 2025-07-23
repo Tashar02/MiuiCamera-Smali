@@ -1,4 +1,4 @@
-.class public Lcom/miui/blur/sdk/drawable/BlurDrawable$1;
+.class Lcom/miui/blur/sdk/drawable/BlurDrawable$1;
 .super Ljava/lang/Object;
 .source "BlurDrawable.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/miui/blur/sdk/drawable/BlurDrawable;
+.field final synthetic this$0:Lcom/miui/blur/sdk/drawable/BlurDrawable;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/miui/blur/sdk/drawable/BlurDrawable$1;->this$0:Lcom/miui/blur/sdk/drawable/BlurDrawable;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,7 +46,12 @@
     .line 1
     iget-object p0, p0, Lcom/miui/blur/sdk/drawable/BlurDrawable$1;->this$0:Lcom/miui/blur/sdk/drawable/BlurDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

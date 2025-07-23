@@ -1,4 +1,4 @@
-.class public final Lcom/android/camera/data/observeable/RxData$DataCheck;
+.class final Lcom/android/camera/data/observeable/RxData$DataCheck;
 .super Ljava/lang/Object;
 .source "RxData.java"
 
@@ -39,28 +39,30 @@
 # direct methods
 .method public constructor <init>(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "owner"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Lcom/android/camera/data/observeable/RxData$DataCheck$1;
 
+    .line 5
+    .line 6
     invoke-direct {v0, p0}, Lcom/android/camera/data/observeable/RxData$DataCheck$1;-><init>(Lcom/android/camera/data/observeable/RxData$DataCheck;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Lcom/android/camera/data/observeable/RxData$DataCheck;->predicateCheck:Lio/reactivex/functions/Predicate;
 
-    .line 3
+    .line 10
+    .line 11
     iput-object p1, p0, Lcom/android/camera/data/observeable/RxData$DataCheck;->owner:Landroidx/lifecycle/LifecycleOwner;
 
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -70,6 +72,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/observeable/RxData$DataCheck;->owner:Landroidx/lifecycle/LifecycleOwner;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -88,5 +92,7 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/data/observeable/RxData$DataCheck;->predicateCheck:Lio/reactivex/functions/Predicate;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

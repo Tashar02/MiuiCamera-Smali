@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/resource/bitmap/Downsampler$1;
+.class final Lcom/bumptech/glide/load/resource/bitmap/Downsampler$1;
 .super Ljava/lang/Object;
 .source "Downsampler.java"
 
@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -32,11 +35,13 @@
 .method public onDecodeComplete(Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;Landroid/graphics/Bitmap;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onObtainBounds()V
     .locals 0
 
+    .line 1
     return-void
 .end method

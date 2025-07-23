@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/GlideBuilder$1;
+.class Lcom/bumptech/glide/GlideBuilder$1;
 .super Ljava/lang/Object;
 .source "GlideBuilder.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/bumptech/glide/GlideBuilder;
+.field final synthetic this$0:Lcom/bumptech/glide/GlideBuilder;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/GlideBuilder$1;->this$0:Lcom/bumptech/glide/GlideBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -43,7 +48,12 @@
     .line 1
     new-instance p0, Lcom/bumptech/glide/request/RequestOptions;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Lcom/bumptech/glide/request/RequestOptions;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method

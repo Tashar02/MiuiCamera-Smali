@@ -6,23 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Ljava/util/List;Ljava/util/List;Landroid/view/View$OnClickListener;Lcom/android/camera/fragment/vv/VVWorkspaceAdapter$OnVVWorkspacePlayListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "activity",
-            "workspaceItemList",
-            "playerItemList",
-            "onClickListener",
-            "onVVWorkspacePlayListener"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -42,6 +25,9 @@
     .line 1
     invoke-direct/range {p0 .. p5}, Lcom/android/camera/fragment/vv/VVWorkspaceAdapter;-><init>(Landroid/app/Activity;Ljava/util/List;Ljava/util/List;Landroid/view/View$OnClickListener;Lcom/android/camera/fragment/vv/VVWorkspaceAdapter$OnVVWorkspacePlayListener;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -53,16 +39,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -78,16 +54,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     invoke-super {p0, p1, p2}, Lcom/android/camera/fragment/vv/VVWorkspaceAdapter;->onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
@@ -104,7 +70,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0806b3
+    const v0, 0x7f080703
 
     const/4 v1, 0x0
 
@@ -130,7 +96,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0806b4
+    const v2, 0x7f080704
 
     invoke-virtual {v0, v2, v1}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -179,7 +145,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f07016d
+    const p2, 0x7f07016f
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -188,7 +154,7 @@
     .line 12
     iget-object p2, p0, Lcom/android/camera/fragment/vv/VVWorkspaceAdapter;->playView:Landroid/widget/ImageView;
 
-    invoke-virtual {p2}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
@@ -199,7 +165,7 @@
     .line 13
     iget-object p2, p0, Lcom/android/camera/fragment/vv/VVWorkspaceAdapter;->playView:Landroid/widget/ImageView;
 
-    invoke-virtual {p2}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
@@ -210,7 +176,7 @@
 
     const p1, 0x7f08011b
 
-    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
     return-void
 .end method

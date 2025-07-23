@@ -1,4 +1,4 @@
-.class public Landroidx/heifwriter/HeifEncoder$1;
+.class Landroidx/heifwriter/HeifEncoder$1;
 .super Ljava/lang/Object;
 .source "HeifEncoder.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/heifwriter/HeifEncoder;
+.field final synthetic this$0:Landroidx/heifwriter/HeifEncoder;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/heifwriter/HeifEncoder$1;->this$0:Landroidx/heifwriter/HeifEncoder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,7 +46,12 @@
     .line 1
     iget-object p0, p0, Landroidx/heifwriter/HeifEncoder$1;->this$0:Landroidx/heifwriter/HeifEncoder;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/heifwriter/HeifEncoder;->maybeCopyOneTileYUV()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

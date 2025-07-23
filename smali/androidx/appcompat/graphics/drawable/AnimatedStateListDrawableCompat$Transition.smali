@@ -1,4 +1,4 @@
-.class public abstract Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$Transition;
+.class abstract Landroidx/appcompat/graphics/drawable/AnimatedStateListDrawableCompat$Transition;
 .super Ljava/lang/Object;
 .source "AnimatedStateListDrawableCompat.java"
 
@@ -38,14 +38,17 @@
 .method public canReverse()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public reverse()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 

@@ -66,7 +66,7 @@
     <string name="accessibility_filter_open_panel">سۈزگۈچ ئەينەكنى ئېچىش</string>
     <string name="accessibility_filter_pad_close">سۈزگۈچ ئەينەكنى يىغىش</string>
     <string name="accessibility_flash_auto">چاقما لامپا،ئاپتوماتىك ھالەتتە</string>
-    <string name="accessibility_flash_back_soft_light">چاقما لامپا،يۇمشاق نۇر ھالىتى</string>
+    <string name="accessibility_flash_back_soft_light">چاقماق لامپا،يۇمشاق نۇر ھالىتى</string>
     <string name="accessibility_flash_off">چاقما لامپا،تاقاق ھالەتتە</string>
     <string name="accessibility_flash_on">چاقما لامپا،ئوچۇق</string>
     <string name="accessibility_flash_on_but_not_adjust_ambient">يۇمشاق نۇر، تەڭشىگىلى بولمايدۇ</string>
@@ -670,6 +670,7 @@
     <string name="download_hint_cn">ھازىر WLAN مۇھىتىدا ئەمەس، تەخمىنەن %1$sMB ئېقىم مىقدارىنى خورىتىدۇ، چۈشۈرەمسىز؟</string>
     <string name="download_hint_wifi">@string/download_hint</string>
     <string name="download_in_progress">چۈشۈۋاتىدۇ</string>
+    <string name="download_network_error">چۈشۈرەلمىدى،تورنى تەكشۈرۈڭ</string>
     <string name="download_title">ئېقىم مىقدارى ئەسكەرتمىسى</string>
     <string name="download_waiting">ساقلاۋاتىدۇ</string>
     <string name="dual_camera_lens_covered_toast">سىتېرولۇق تەسۋىرتوسۇلغان</string>
@@ -1481,6 +1482,7 @@
     <string name="pref_camera_peak_entry_off">‏‏تاقاش</string>
     <string name="pref_camera_peak_entry_on">ئېچىش</string>
     <string name="pref_camera_peak_title">چوققا قىممىتى</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">پۈتۈن ئېكران</string>
     <string name="pref_camera_picturesize_title_simple_mode">رەسىم چوڭلۇق نىسبىتى</string>
     <string name="pref_camera_portrait_mode_entry_off">شەيئى ھالىتى تاقالدى</string>
     <string name="pref_camera_portrait_mode_entry_on">شەيئى ھالىتى ئېچىلدى</string>

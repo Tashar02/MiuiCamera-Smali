@@ -22,12 +22,4 @@
 .end method
 
 .method public abstract onTTSStopped(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "error"
-        }
-    .end annotation
 .end method

@@ -16,34 +16,10 @@
 
 # virtual methods
 .method public abstract OnIncrease(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mValue"
-        }
-    .end annotation
 .end method
 
 .method public abstract OnTheValue(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mBoo"
-        }
-    .end annotation
 .end method
 
 .method public abstract OnValueUp(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mValue"
-        }
-    .end annotation
 .end method

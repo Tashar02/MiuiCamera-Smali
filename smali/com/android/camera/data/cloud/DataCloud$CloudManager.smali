@@ -22,14 +22,6 @@
 .end method
 
 .method public abstract provideDataCloudConfig(I)Lcom/android/camera/data/cloud/DataCloud$CloudItem;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cameraId"
-        }
-    .end annotation
 .end method
 
 .method public abstract provideDataCloudGlobal()Lcom/android/camera/data/cloud/DataCloud$CloudItem;

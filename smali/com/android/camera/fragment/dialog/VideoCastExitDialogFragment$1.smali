@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment$1;
+.class Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment$1;
 .super Ljava/lang/Object;
 .source "VideoCastExitDialogFragment.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment;
+.field final synthetic this$0:Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment$1;->this$0:Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,21 +42,16 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "dialog",
-            "which"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment$1;->this$0:Lcom/android/camera/fragment/dialog/VideoCastExitDialogFragment;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/DialogFragment;->dismiss()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

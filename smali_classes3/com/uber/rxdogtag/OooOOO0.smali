@@ -1,36 +1,56 @@
 .class public final synthetic Lcom/uber/rxdogtag/OooOOO0;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
-.implements Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic OooO00o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
+.field public final synthetic o0000o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
+
+.field public final synthetic o0000oO0:Lio/reactivex/disposables/Disposable;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagMaybeObserver;)V
+.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagMaybeObserver;Lio/reactivex/disposables/Disposable;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/OooOOO0;->OooO00o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/OooOOO0;->o0000o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
 
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/uber/rxdogtag/OooOOO0;->o0000oO0:Lio/reactivex/disposables/Disposable;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 0
+.method public final run()V
+    .locals 1
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/OooOOO0;->OooO00o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
+    .line 1
+    iget-object v0, p0, Lcom/uber/rxdogtag/OooOOO0;->o0000o:Lcom/uber/rxdogtag/DogTagMaybeObserver;
 
-    check-cast p1, Ljava/lang/Throwable;
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/uber/rxdogtag/OooOOO0;->o0000oO0:Lio/reactivex/disposables/Disposable;
 
-    invoke-virtual {p0, p1}, Lcom/uber/rxdogtag/DogTagMaybeObserver;->OooO0o(Ljava/lang/Throwable;)V
+    .line 4
+    .line 5
+    invoke-static {v0, p0}, Lcom/uber/rxdogtag/DogTagMaybeObserver;->OooO0Oo(Lcom/uber/rxdogtag/DogTagMaybeObserver;Lio/reactivex/disposables/Disposable;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

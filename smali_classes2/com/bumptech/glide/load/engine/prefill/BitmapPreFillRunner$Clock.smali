@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/load/engine/prefill/BitmapPreFillRunner$Clock;
+.class Lcom/bumptech/glide/load/engine/prefill/BitmapPreFillRunner$Clock;
 .super Ljava/lang/Object;
 .source "BitmapPreFillRunner.java"
 
@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -35,7 +38,11 @@
     .line 1
     invoke-static {}, Landroid/os/SystemClock;->currentThreadTimeMillis()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method

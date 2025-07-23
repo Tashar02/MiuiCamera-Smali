@@ -32,28 +32,6 @@
 # direct methods
 .method private constructor <init>(IIIILjava/lang/String;ZZZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "newImageResourceId",
-            "newBackgroundResourceId",
-            "topSelectedAnimID",
-            "mContentDescriptionStringId",
-            "contentDescriptString",
-            "isActivated",
-            "isColoring",
-            "needExpand"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -102,6 +80,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->contentDescriptString:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -111,6 +91,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->newBackgroundResourceId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -120,6 +102,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->newImageResourceId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -129,6 +113,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->topSelectedAnimID:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -138,6 +124,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->mContentDescriptionStringId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -147,6 +135,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->isActivated:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -156,6 +146,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->isColoring:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -165,124 +157,84 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->needExpand:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setActivated(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "activated"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->isActivated:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setColoring(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "coloring"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->isColoring:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setContentDescriptString(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "contentDescriptString"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->contentDescriptString:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setNewBackgroundResourceId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "newBackgroundResourceId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->newBackgroundResourceId:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setNewImageResourceId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "newImageResourceId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->newImageResourceId:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setTopSelectedAnimID(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "topSelectedAnimID"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->topSelectedAnimID:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setmContentDescriptionStringId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mContentDescriptionStringId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;->mContentDescriptionStringId:I
 
+    .line 2
+    .line 3
     return-void
 .end method

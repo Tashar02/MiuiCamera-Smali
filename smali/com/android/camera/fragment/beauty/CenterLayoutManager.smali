@@ -22,23 +22,20 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(Landroid/content/Context;)V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 p1, 0x1
 
-    .line 2
+    .line 5
     iput-boolean p1, p0, Lcom/android/camera/fragment/beauty/CenterLayoutManager;->isScrollEnabled:Z
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -50,37 +47,40 @@
     .line 1
     iget-boolean v0, p0, Lcom/android/camera/fragment/beauty/CenterLayoutManager;->isScrollEnabled:Z
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->canScrollHorizontally()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     if-eqz p0, :cond_0
 
+    .line 10
+    .line 11
     const/4 p0, 0x1
 
+    .line 12
     goto :goto_0
 
+    .line 13
     :cond_0
     const/4 p0, 0x0
 
+    .line 14
     :goto_0
     return p0
 .end method
 
 .method public onLayoutChildren(Landroidx/recyclerview/widget/RecyclerView$Recycler;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "recycler",
-            "state"
-        }
-    .end annotation
 
     .line 1
     :try_start_0
@@ -88,49 +88,42 @@
     :try_end_0
     .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 2
+    .line 3
+    .line 4
     goto :goto_0
 
+    .line 5
     :catch_0
     move-exception p0
 
+    .line 6
     const-string p1, "CenterLayoutManager"
 
-    .line 2
+    .line 7
+    .line 8
     invoke-static {p1, p0}, Lcom/android/camera/log/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 9
+    .line 10
+    .line 11
     :goto_0
     return-void
 .end method
 
 .method public setScrollEnabled(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "flag"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/beauty/CenterLayoutManager;->isScrollEnabled:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public smoothScrollToPosition(Landroidx/recyclerview/widget/RecyclerView;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "recyclerView",
-            "position"
-        }
-    .end annotation
 
     .line 4
     invoke-virtual {p0}, Lcom/android/camera/fragment/beauty/CenterLayoutManager;->canScrollHorizontally()Z
@@ -154,23 +147,11 @@
 
 .method public smoothScrollToPosition(Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "recyclerView",
-            "state",
-            "position"
-        }
-    .end annotation
 
     .line 1
     new-instance p2, Lcom/android/camera/fragment/beauty/CenterLayoutManager$CenterSmoothScroll;
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 

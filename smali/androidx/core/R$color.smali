@@ -18,16 +18,20 @@
 
 .field public static final androidx_core_secondary_text_default_material_light:I = 0x7f060027
 
-.field public static final notification_action_color_filter:I = 0x7f060398
+.field public static final notification_action_color_filter:I = 0x7f06039d
 
-.field public static final notification_icon_bg_color:I = 0x7f060399
+.field public static final notification_icon_bg_color:I = 0x7f06039e
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

@@ -15,16 +15,16 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$StubApi26;,
-        Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$StubApi21;
+        Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$SubscriptionCallbackApi26;,
+        Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$SubscriptionCallbackApi21;
     }
 .end annotation
 
 
 # instance fields
-.field public final mSubscriptionCallbackObj:Ljava/lang/Object;
+.field final mSubscriptionCallbackFwk:Landroid/media/browse/MediaBrowser$SubscriptionCallback;
 
-.field public mSubscriptionRef:Ljava/lang/ref/WeakReference;
+.field mSubscriptionRef:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -34,70 +34,45 @@
     .end annotation
 .end field
 
-.field public final mToken:Landroid/os/IBinder;
+.field final mToken:Landroid/os/IBinder;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Landroid/os/Binder;
 
+    .line 5
+    .line 6
     invoke-direct {v0}, Landroid/os/Binder;-><init>()V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mToken:Landroid/os/IBinder;
 
-    .line 3
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 10
+    .line 11
+    new-instance v0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$SubscriptionCallbackApi26;
 
-    const/16 v1, 0x1a
+    .line 12
+    .line 13
+    invoke-direct {v0, p0}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$SubscriptionCallbackApi26;-><init>(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)V
 
-    if-lt v0, v1, :cond_0
+    .line 14
+    .line 15
+    .line 16
+    iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mSubscriptionCallbackFwk:Landroid/media/browse/MediaBrowser$SubscriptionCallback;
 
-    .line 4
-    new-instance v0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$StubApi26;
-
-    invoke-direct {v0, p0}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$StubApi26;-><init>(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)V
-
-    .line 5
-    invoke-static {v0}, Landroid/support/v4/media/MediaBrowserCompatApi26;->createSubscriptionCallback(Landroid/support/v4/media/MediaBrowserCompatApi26$SubscriptionCallback;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mSubscriptionCallbackObj:Ljava/lang/Object;
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_1
-
-    .line 6
-    new-instance v0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$StubApi21;
-
-    invoke-direct {v0, p0}, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback$StubApi21;-><init>(Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;)V
-
-    .line 7
-    invoke-static {v0}, Landroid/support/v4/media/MediaBrowserCompatApi21;->createSubscriptionCallback(Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallback;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mSubscriptionCallbackObj:Ljava/lang/Object;
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 8
-    iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mSubscriptionCallbackObj:Ljava/lang/Object;
-
-    :goto_0
+    .line 17
+    .line 18
     return-void
 .end method
 
@@ -113,6 +88,17 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parentId",
+            "children"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -123,6 +109,7 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -140,6 +127,19 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "parentId",
+            "children",
+            "options"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -152,6 +152,7 @@
         }
     .end annotation
 
+    .line 2
     return-void
 .end method
 
@@ -161,7 +162,16 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parentId"
+        }
+    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -175,19 +185,45 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parentId",
+            "options"
+        }
+    .end annotation
 
+    .line 2
     return-void
 .end method
 
 .method public setSubscription(Landroid/support/v4/media/MediaBrowserCompat$Subscription;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subscription"
+        }
+    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     iput-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$SubscriptionCallback;->mSubscriptionRef:Ljava/lang/ref/WeakReference;
 
+    .line 7
+    .line 8
     return-void
 .end method

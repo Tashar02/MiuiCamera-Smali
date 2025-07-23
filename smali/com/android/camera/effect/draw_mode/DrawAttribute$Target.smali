@@ -1,4 +1,4 @@
-.class public interface abstract annotation Lcom/android/camera/effect/draw_mode/DrawAttribute$Target;
+.class interface abstract annotation Lcom/android/camera/effect/draw_mode/DrawAttribute$Target;
 .super Ljava/lang/Object;
 .source "DrawAttribute.java"
 

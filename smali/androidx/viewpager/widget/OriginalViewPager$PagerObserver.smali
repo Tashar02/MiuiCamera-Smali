@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager/widget/OriginalViewPager$PagerObserver;
+.class Landroidx/viewpager/widget/OriginalViewPager$PagerObserver;
 .super Landroid/database/DataSetObserver;
 .source "OriginalViewPager.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/viewpager/widget/OriginalViewPager;
+.field final synthetic this$0:Landroidx/viewpager/widget/OriginalViewPager;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Landroidx/viewpager/widget/OriginalViewPager$PagerObserver;->this$0:Landroidx/viewpager/widget/OriginalViewPager;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -38,8 +43,13 @@
     .line 1
     iget-object p0, p0, Landroidx/viewpager/widget/OriginalViewPager$PagerObserver;->this$0:Landroidx/viewpager/widget/OriginalViewPager;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/viewpager/widget/OriginalViewPager;->dataSetChanged()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,7 +59,12 @@
     .line 1
     iget-object p0, p0, Landroidx/viewpager/widget/OriginalViewPager$PagerObserver;->this$0:Landroidx/viewpager/widget/OriginalViewPager;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/viewpager/widget/OriginalViewPager;->dataSetChanged()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

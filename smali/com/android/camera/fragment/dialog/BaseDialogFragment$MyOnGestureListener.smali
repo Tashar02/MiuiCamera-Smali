@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/dialog/BaseDialogFragment$MyOnGestureListener;
+.class Lcom/android/camera/fragment/dialog/BaseDialogFragment$MyOnGestureListener;
 .super Landroid/view/GestureDetector$SimpleOnGestureListener;
 .source "BaseDialogFragment.java"
 
@@ -21,20 +21,12 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/dialog/BaseDialogFragment;
+.field final synthetic this$0:Lcom/android/camera/fragment/dialog/BaseDialogFragment;
 
 
 # direct methods
 .method private constructor <init>(Lcom/android/camera/fragment/dialog/BaseDialogFragment;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/dialog/BaseDialogFragment$MyOnGestureListener;->this$0:Lcom/android/camera/fragment/dialog/BaseDialogFragment;
@@ -57,74 +49,64 @@
 # virtual methods
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "e"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "e1",
-            "e2",
-            "distanceX",
-            "distanceY"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/dialog/BaseDialogFragment$MyOnGestureListener;->this$0:Lcom/android/camera/fragment/dialog/BaseDialogFragment;
 
+    .line 2
+    .line 3
     const/4 v1, 0x5
 
+    .line 4
     invoke-virtual {v0, v1}, Lcom/android/camera/fragment/dialog/BaseDialogFragment;->onBackEvent(I)Z
 
-    .line 2
+    .line 5
+    .line 6
+    .line 7
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/GestureDetector$SimpleOnGestureListener;->onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result p0
 
+    .line 11
     return p0
 .end method
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "e"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/dialog/BaseDialogFragment$MyOnGestureListener;->this$0:Lcom/android/camera/fragment/dialog/BaseDialogFragment;
 
+    .line 2
+    .line 3
     const/4 v1, 0x5
 
+    .line 4
     invoke-virtual {v0, v1}, Lcom/android/camera/fragment/dialog/BaseDialogFragment;->onBackEvent(I)Z
 
-    .line 2
+    .line 5
+    .line 6
+    .line 7
     invoke-super {p0, p1}, Landroid/view/GestureDetector$SimpleOnGestureListener;->onSingleTapUp(Landroid/view/MotionEvent;)Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result p0
 
+    .line 11
     return p0
 .end method

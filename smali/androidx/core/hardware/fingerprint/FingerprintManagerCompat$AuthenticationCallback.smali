@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,23 +32,27 @@
 .method public onAuthenticationError(ILjava/lang/CharSequence;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onAuthenticationFailed()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onAuthenticationHelp(ILjava/lang/CharSequence;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onAuthenticationSucceeded(Landroidx/core/hardware/fingerprint/FingerprintManagerCompat$AuthenticationResult;)V
     .locals 0
 
+    .line 1
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;
+.class Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;
 .super Landroid/os/HandlerThread;
 .source "VideoInterpolatorAsyncImp.java"
 
@@ -30,25 +30,42 @@
         }
     .end annotation
 
+    .line 1
     const/16 v0, -0x13
 
-    .line 1
+    .line 2
+    .line 3
     invoke-direct {p0, p1, v0}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
 
-    .line 2
-    invoke-virtual {p0}, Landroid/os/HandlerThread;->start()V
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
-    .line 3
+    .line 7
+    .line 8
+    .line 9
     new-instance p1, Landroid/os/Handler;
 
+    .line 10
+    .line 11
     invoke-virtual {p0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object v0
 
+    .line 15
     invoke-direct {p1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
+    .line 16
+    .line 17
+    .line 18
     iput-object p1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;->mHandler:Landroid/os/Handler;
 
+    .line 19
+    .line 20
     return-void
 .end method
 
@@ -58,6 +75,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;->mHandler:Landroid/os/Handler;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -70,13 +89,24 @@
     invoke-super {p0}, Landroid/os/HandlerThread;->run()V
 
     .line 2
-    invoke-virtual {p0}, Landroid/os/HandlerThread;->getName()Ljava/lang/String;
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p0
 
-    const-string/jumbo v0, "thread exit"
+    .line 8
+    const-string v0, "thread exit"
 
+    .line 9
+    .line 10
     invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method

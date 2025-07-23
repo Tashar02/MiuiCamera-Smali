@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/request/RequestFutureTarget$Waiter;
+.class Lcom/bumptech/glide/request/RequestFutureTarget$Waiter;
 .super Ljava/lang/Object;
 .source "RequestFutureTarget.java"
 
@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -35,6 +38,9 @@
     .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->notifyAll()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -49,5 +55,8 @@
     .line 1
     invoke-virtual {p1, p2, p3}, Ljava/lang/Object;->wait(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

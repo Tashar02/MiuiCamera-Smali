@@ -20,6 +20,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -31,10 +34,15 @@
     .line 1
     iget v0, p0, Landroidx/core/view/NestedScrollingParentHelper;->mNestedScrollAxesTouch:I
 
+    .line 2
+    .line 3
     iget p0, p0, Landroidx/core/view/NestedScrollingParentHelper;->mNestedScrollAxesNonTouch:I
 
+    .line 4
+    .line 5
     or-int/2addr p0, v0
 
+    .line 6
     return p0
 .end method
 
@@ -107,20 +115,20 @@
         .end annotation
     .end param
 
-    const/4 p1, 0x0
+    const/4 p1, 0x1
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    if-ne p2, v0, :cond_0
+    if-ne p2, p1, :cond_0
 
     .line 2
-    iput p1, p0, Landroidx/core/view/NestedScrollingParentHelper;->mNestedScrollAxesNonTouch:I
+    iput v0, p0, Landroidx/core/view/NestedScrollingParentHelper;->mNestedScrollAxesNonTouch:I
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iput p1, p0, Landroidx/core/view/NestedScrollingParentHelper;->mNestedScrollAxesTouch:I
+    iput v0, p0, Landroidx/core/view/NestedScrollingParentHelper;->mNestedScrollAxesTouch:I
 
     :goto_0
     return-void

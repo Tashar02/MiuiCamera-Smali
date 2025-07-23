@@ -15,27 +15,23 @@
 
 
 # instance fields
-.field public mPadding:I
+.field protected mPadding:I
 
 
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "padding"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera/fragment/manually/FragmentParameterDescription$ItemPadding;->mPadding:I
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -43,27 +39,19 @@
 # virtual methods
 .method public getItemOffsets(Landroid/graphics/Rect;Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "outRect",
-            "view",
-            "parent",
-            "state"
-        }
-    .end annotation
 
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/manually/FragmentParameterDescription$ItemPadding;->mPadding:I
 
+    .line 2
+    .line 3
     const/4 p2, 0x0
 
+    .line 4
     invoke-virtual {p1, p0, p2, p0, p2}, Landroid/graphics/Rect;->set(IIII)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method

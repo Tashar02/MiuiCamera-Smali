@@ -14,14 +14,22 @@
 
 
 # static fields
-.field public static final vv_workspace_menu:I = 0x7f0e0000
+.field public static final example_menu:I = 0x7f0f0000
+
+.field public static final example_menu2:I = 0x7f0f0001
+
+.field public static final vv_workspace_menu:I = 0x7f0f0002
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

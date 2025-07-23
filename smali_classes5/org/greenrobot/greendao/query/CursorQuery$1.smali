@@ -1,4 +1,4 @@
-.class public synthetic Lorg/greenrobot/greendao/query/CursorQuery$1;
+.class synthetic Lorg/greenrobot/greendao/query/CursorQuery$1;
 .super Ljava/lang/Object;
 .source "CursorQuery.java"
 

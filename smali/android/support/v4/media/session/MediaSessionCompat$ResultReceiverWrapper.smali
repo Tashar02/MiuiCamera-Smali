@@ -1,4 +1,4 @@
-.class public final Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;
+.class final Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;
 .super Ljava/lang/Object;
 .source "MediaSessionCompat.java"
 
@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation build Landroidx/annotation/RestrictTo;
+.annotation build Landroid/annotation/SuppressLint;
     value = {
-        .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        "BanParcelableUsage"
     }
 .end annotation
 
@@ -36,7 +36,7 @@
 
 
 # instance fields
-.field public mResultReceiver:Landroid/os/ResultReceiver;
+.field mResultReceiver:Landroid/os/ResultReceiver;
 
 
 # direct methods
@@ -46,15 +46,30 @@
     .line 1
     new-instance v0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -75,6 +90,18 @@
 
 .method public constructor <init>(Landroid/os/ResultReceiver;)V
     .locals 0
+    .param p1    # Landroid/os/ResultReceiver;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resultReceiver"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -90,18 +117,35 @@
 .method public describeContents()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
     .line 1
     iget-object p0, p0, Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;->mResultReceiver:Landroid/os/ResultReceiver;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2}, Landroid/os/ResultReceiver;->writeToParcel(Landroid/os/Parcel;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

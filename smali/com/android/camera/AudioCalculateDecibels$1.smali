@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/AudioCalculateDecibels$1;
+.class synthetic Lcom/android/camera/AudioCalculateDecibels$1;
 .super Ljava/lang/Object;
 .source "AudioCalculateDecibels.java"
 

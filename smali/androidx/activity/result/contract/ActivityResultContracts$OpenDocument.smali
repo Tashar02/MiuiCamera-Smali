@@ -35,6 +35,9 @@
     .line 1
     invoke-direct {p0}, Landroidx/activity/result/contract/ActivityResultContract;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -119,7 +122,7 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
+    .line 2
     check-cast p2, [Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroidx/activity/result/contract/ActivityResultContracts$OpenDocument;->getSynchronousResult(Landroid/content/Context;[Ljava/lang/String;)Landroidx/activity/result/contract/ActivityResultContract$SynchronousResult;
@@ -155,6 +158,7 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
     return-object p0

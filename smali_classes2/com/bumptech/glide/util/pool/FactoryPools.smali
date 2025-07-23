@@ -37,10 +37,17 @@
     .line 1
     new-instance v0, Lcom/bumptech/glide/util/pool/FactoryPools$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lcom/bumptech/glide/util/pool/FactoryPools$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/bumptech/glide/util/pool/FactoryPools;->EMPTY_RESETTER:Lcom/bumptech/glide/util/pool/FactoryPools$Resetter;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -50,6 +57,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -151,6 +161,8 @@
     .line 1
     sget-object v0, Lcom/bumptech/glide/util/pool/FactoryPools;->EMPTY_RESETTER:Lcom/bumptech/glide/util/pool/FactoryPools$Resetter;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -178,12 +190,21 @@
     .line 1
     new-instance v0, Landroidx/core/util/Pools$SimplePool;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p0}, Landroidx/core/util/Pools$SimplePool;-><init>(I)V
 
+    .line 4
+    .line 5
+    .line 6
     invoke-static {v0, p1}, Lcom/bumptech/glide/util/pool/FactoryPools;->build(Landroidx/core/util/Pools$Pool;Lcom/bumptech/glide/util/pool/FactoryPools$Factory;)Landroidx/core/util/Pools$Pool;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object p0
 
+    .line 10
     return-object p0
 .end method
 
@@ -211,12 +232,21 @@
     .line 1
     new-instance v0, Landroidx/core/util/Pools$SynchronizedPool;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p0}, Landroidx/core/util/Pools$SynchronizedPool;-><init>(I)V
 
+    .line 4
+    .line 5
+    .line 6
     invoke-static {v0, p1}, Lcom/bumptech/glide/util/pool/FactoryPools;->build(Landroidx/core/util/Pools$Pool;Lcom/bumptech/glide/util/pool/FactoryPools$Factory;)Landroidx/core/util/Pools$Pool;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object p0
 
+    .line 10
     return-object p0
 .end method
 

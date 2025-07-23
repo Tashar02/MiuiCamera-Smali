@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/media/MediaBrowserServiceCompat$ServiceCallbacks;
+.class interface abstract Landroidx/media/MediaBrowserServiceCompat$ServiceCallbacks;
 .super Ljava/lang/Object;
 .source "MediaBrowserServiceCompat.java"
 
@@ -19,6 +19,19 @@
 .end method
 
 .method public abstract onConnect(Ljava/lang/String;Landroid/support/v4/media/session/MediaSessionCompat$Token;Landroid/os/Bundle;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "root",
+            "session",
+            "extras"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -35,6 +48,21 @@
 .end method
 
 .method public abstract onLoadChildren(Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;Landroid/os/Bundle;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mediaId",
+            "list",
+            "options",
+            "notifyChildrenChangedOptions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -1,23 +1,40 @@
-.class public final Lcom/faceunity/core/avatar/model/Scene$removeAllAvatar$1;
-.super LOooO0o/o00ooOoO/o000O00O/o0000O0O;
+.class final Lcom/faceunity/core/avatar/model/Scene$removeAllAvatar$1;
+.super Lo000oo0/o000;
 .source "Scene.kt"
 
 # interfaces
-.implements LOooO0o/o00ooOoO/o000O00/OooO00o;
+.implements Lo000oo00/OooOo00;
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/faceunity/core/avatar/model/Scene;->removeAllAvatar(Lcom/faceunity/core/listener/OnExecuteListener;Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lo000oo0/o000;",
+        "Lo000oo00/OooOo00<",
+        "Lo000Oo0O/oo00oO;",
+        ">;"
     }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nScene.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scene.kt\ncom/faceunity/core/avatar/model/Scene$removeAllAvatar$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,528:1\n1517#2:529\n1588#2,3:530\n*E\n*S KotlinDebug\n*F\n+ 1 Scene.kt\ncom/faceunity/core/avatar/model/Scene$removeAllAvatar$1\n*L\n370#1:529\n370#1,3:530\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0003\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002"
     }
     d2 = {
-        "LOooO0o/o00OOOOo;",
+        "Lo000Oo0O/oo00oO;",
         "invoke",
         "()V",
         "<anonymous>"
@@ -30,47 +47,34 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/faceunity/core/avatar/model/Scene;->removeAllAvatar(Lcom/faceunity/core/listener/OnExecuteListener;Z)V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "LOooO0o/o00ooOoO/o000O00O/o0000O0O;",
-        "LOooO0o/o00ooOoO/o000O00/OooO00o<",
-        "LOooO0o/o00OOOOo;",
-        ">;"
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScene.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scene.kt\ncom/faceunity/core/avatar/model/Scene$removeAllAvatar$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,528:1\n1517#2:529\n1588#2,3:530\n*E\n*S KotlinDebug\n*F\n+ 1 Scene.kt\ncom/faceunity/core/avatar/model/Scene$removeAllAvatar$1\n*L\n370#1:529\n370#1,3:530\n*E\n"
-.end annotation
-
 
 # instance fields
-.field public final synthetic $removeData:Ljava/util/ArrayList;
+.field final synthetic $removeData:Ljava/util/ArrayList;
 
-.field public final synthetic this$0:Lcom/faceunity/core/avatar/model/Scene;
+.field final synthetic this$0:Lcom/faceunity/core/avatar/model/Scene;
 
 
 # direct methods
 .method public constructor <init>(Lcom/faceunity/core/avatar/model/Scene;Ljava/util/ArrayList;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/faceunity/core/avatar/model/Scene$removeAllAvatar$1;->this$0:Lcom/faceunity/core/avatar/model/Scene;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/faceunity/core/avatar/model/Scene$removeAllAvatar$1;->$removeData:Ljava/util/ArrayList;
 
+    .line 4
+    .line 5
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, LOooO0o/o00ooOoO/o000O00O/o0000O0O;-><init>(I)V
+    .line 6
+    invoke-direct {p0, p1}, Lo000oo0/o000;-><init>(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -82,7 +86,7 @@
     .line 1
     invoke-virtual {p0}, Lcom/faceunity/core/avatar/model/Scene$removeAllAvatar$1;->invoke()V
 
-    sget-object p0, LOooO0o/o00OOOOo;->OooO00o:LOooO0o/o00OOOOo;
+    sget-object p0, Lo000Oo0O/oo00oO;->OooO00o:Lo000Oo0O/oo00oO;
 
     return-object p0
 .end method
@@ -104,7 +108,7 @@
 
     const/16 v3, 0xa
 
-    invoke-static {v1, v3}, LOooO0o/o00ooO00/oo0o0Oo;->OoooOoO(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v3}, Lo000Oo/o0000O0;->OoooOoO(Ljava/lang/Iterable;I)I
 
     move-result v3
 

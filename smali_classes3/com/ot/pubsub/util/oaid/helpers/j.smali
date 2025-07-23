@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public a:Lcom/ot/pubsub/util/oaid/a/e;
+.field a:Lcom/ot/pubsub/util/oaid/a/e;
 
 .field public final b:Ljava/util/concurrent/LinkedBlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
@@ -19,7 +19,7 @@
     .end annotation
 .end field
 
-.field public c:Landroid/content/ServiceConnection;
+.field c:Landroid/content/ServiceConnection;
 
 .field private e:Ljava/lang/String;
 
@@ -32,21 +32,37 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
+    .line 5
+    .line 6
     const/4 v1, 0x1
 
+    .line 7
     invoke-direct {v0, v1}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
 
+    .line 8
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/ot/pubsub/util/oaid/helpers/j;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 
-    .line 3
+    .line 11
+    .line 12
     new-instance v0, Lcom/ot/pubsub/util/oaid/helpers/OppoDeviceIDHelper$1;
 
+    .line 13
+    .line 14
     invoke-direct {v0, p0}, Lcom/ot/pubsub/util/oaid/helpers/OppoDeviceIDHelper$1;-><init>(Lcom/ot/pubsub/util/oaid/helpers/j;)V
 
+    .line 15
+    .line 16
+    .line 17
     iput-object v0, p0, Lcom/ot/pubsub/util/oaid/helpers/j;->c:Landroid/content/ServiceConnection;
 
+    .line 18
+    .line 19
     return-void
 .end method
 
@@ -87,7 +103,7 @@
     move-exception p2
 
     .line 19
-    invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
     move-object p2, v1
 
@@ -173,7 +189,7 @@
     move-exception p2
 
     .line 28
-    invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 29
     :cond_1
@@ -202,52 +218,84 @@
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     const-string p1, "com.heytap.openid"
 
+    .line 6
+    .line 7
     const/4 v0, 0x0
 
-    .line 2
+    .line 8
     invoke-virtual {p0, p1, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
+    .line 12
     if-nez p0, :cond_0
 
+    .line 13
+    .line 14
     return v0
 
-    .line 3
+    .line 15
     :cond_0
     iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 16
+    .line 17
     int-to-long p0, p0
 
+    .line 18
     const-wide/16 v1, 0x1
 
+    .line 19
+    .line 20
     cmp-long p0, p0, v1
 
+    .line 21
+    .line 22
     if-gez p0, :cond_1
 
+    .line 23
+    .line 24
     return v0
 
+    .line 25
     :catch_0
     move-exception p0
 
-    .line 4
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
+    .line 26
     const-string p1, "OppoDeviceIDHelper"
 
+    .line 27
+    .line 28
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p0
+
+    .line 32
     invoke-static {p1, p0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 33
+    .line 34
+    .line 35
     :cond_1
     const/4 p0, 0x1
 
+    .line 36
     return p0
 .end method
 
@@ -296,11 +344,11 @@
     :try_start_0
     iget-object v1, p0, Lcom/ot/pubsub/util/oaid/helpers/j;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 
-    const-wide/16 v3, 0x1
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+    const-wide/16 v4, 0x1
 
-    invoke-virtual {v1, v3, v4, v5}, Ljava/util/concurrent/LinkedBlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    invoke-virtual {v1, v4, v5, v3}, Ljava/util/concurrent/LinkedBlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -325,7 +373,7 @@
     move-exception p0
 
     .line 7
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
@@ -372,7 +420,7 @@
     move-exception p0
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
@@ -390,7 +438,7 @@
 
     .line 12
     :try_start_4
-    invoke-virtual {v1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -422,7 +470,7 @@
     move-exception p0
 
     .line 14
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 

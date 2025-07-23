@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource$1;
+.class synthetic Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource$1;
 .super Ljava/lang/Object;
 .source "ExtraTopConfigResource.java"
 

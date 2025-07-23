@@ -18,6 +18,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -27,6 +28,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -357,7 +361,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v0, "uploadGzipEncryptData success:"
+    const-string v0, "uploadGzipEncryptData success:"
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -376,7 +380,7 @@
     .line 18
     iget-boolean p1, p0, Lcom/ot/pubsub/j/d$b;->a:Z
 
-    const-string/jumbo v1, "uploadGzipEncryptData deleted:"
+    const-string v1, "uploadGzipEncryptData deleted:"
 
     if-eqz p1, :cond_0
 
@@ -478,7 +482,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v3, p0}, Ljava/util/zip/GZIPOutputStream;->write([B)V
+    invoke-virtual {v3, p0}, Ljava/io/OutputStream;->write([B)V
 
     .line 41
     invoke-virtual {v3}, Ljava/util/zip/GZIPOutputStream;->finish()V
@@ -539,7 +543,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -688,7 +692,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo p2, "uploadGzipEncryptData success:"
+    const-string p2, "uploadGzipEncryptData success:"
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -707,7 +711,7 @@
     .line 20
     iget-boolean p1, p0, Lcom/ot/pubsub/j/d$b;->a:Z
 
-    const-string/jumbo v1, "uploadGzipEncryptData deleted:"
+    const-string v1, "uploadGzipEncryptData deleted:"
 
     if-eqz p1, :cond_2
 
@@ -947,7 +951,7 @@
 
     const-string v6, "pub_gzipencrypt"
 
-    const-string/jumbo v7, "true"
+    const-string v7, "true"
 
     .line 39
     invoke-interface {v13, v6, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -969,7 +973,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "zip before : "
+    const-string v7, "zip before : "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1003,7 +1007,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v7, "zip after : "
+    const-string v7, "zip after : "
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1063,7 +1067,7 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1253,7 +1257,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v0, "uploadData success:"
+    const-string v0, "uploadData success:"
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1272,7 +1276,7 @@
     .line 4
     iget-boolean p1, p0, Lcom/ot/pubsub/j/d$b;->a:Z
 
-    const-string/jumbo v1, "upload deleted:"
+    const-string v1, "upload deleted:"
 
     if-eqz p1, :cond_0
 

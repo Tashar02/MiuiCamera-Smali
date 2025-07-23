@@ -1,12 +1,13 @@
-.class public final Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;
-.super Ljava/lang/Object;
+.class final Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;
+.super Landroidx/media/MediaSessionManagerImplBase$RemoteUserInfoImplBase;
 .source "MediaSessionManagerImplApi28.java"
-
-# interfaces
-.implements Landroidx/media/MediaSessionManager$RemoteUserInfoImpl;
 
 
 # annotations
+.annotation build Landroidx/annotation/RequiresApi;
+    value = 0x1c
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Landroidx/media/MediaSessionManagerImplApi28;
 .end annotation
@@ -18,17 +19,39 @@
 
 
 # instance fields
-.field public final mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
+.field final mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
 
 
 # direct methods
 .method public constructor <init>(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)V
-    .locals 0
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "remoteUserInfo"
+        }
+    .end annotation
 
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p1}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->getPid()I
+
+    move-result v1
 
     .line 4
+    invoke-virtual {p1}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->getUid()I
+
+    move-result v2
+
+    .line 5
+    invoke-direct {p0, v0, v1, v2}, Landroidx/media/MediaSessionManagerImplBase$RemoteUserInfoImplBase;-><init>(Ljava/lang/String;II)V
+
+    .line 6
     iput-object p1, p0, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
 
     return-void
@@ -36,9 +59,21 @@
 
 .method public constructor <init>(Ljava/lang/String;II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "packageName",
+            "pid",
+            "uid"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/media/MediaSessionManagerImplBase$RemoteUserInfoImplBase;-><init>(Ljava/lang/String;II)V
 
     .line 2
     new-instance v0, Landroid/media/session/MediaSessionManager$RemoteUserInfo;
@@ -50,99 +85,25 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    if-ne p0, p1, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    .line 1
-    :cond_0
-    instance-of v0, p1, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;
-
-    if-nez v0, :cond_1
-
-    const/4 p0, 0x0
-
-    return p0
-
-    .line 2
-    :cond_1
-    check-cast p1, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;
-
-    .line 3
-    iget-object p0, p0, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
-
-    iget-object p1, p1, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
-
-    invoke-virtual {p0, p1}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getPackageName()Ljava/lang/String;
+.method public static getPackageName(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "remoteUserInfo"
+        }
+    .end annotation
 
     .line 1
-    iget-object p0, p0, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
-
     invoke-virtual {p0}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->getPackageName()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
-.end method
-
-.method public getPid()I
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
-
-    invoke-virtual {p0}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->getPid()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getUid()I
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
-
-    invoke-virtual {p0}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->getUid()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public hashCode()I
-    .locals 2
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    iget-object p0, p0, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
-
-    const/4 v1, 0x0
-
-    aput-object p0, v0, v1
-
-    invoke-static {v0}, Landroidx/core/util/ObjectsCompat;->hash([Ljava/lang/Object;)I
-
-    move-result p0
-
-    return p0
 .end method

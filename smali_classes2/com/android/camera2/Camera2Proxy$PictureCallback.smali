@@ -21,50 +21,28 @@
 .method public onAllHalFrameReceived()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onButtonStatusFocused(Lcom/android/camera/module/loader/camera2/ButtonStatus;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "status"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onCaptureCompleted(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "success"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onCaptureProgress(Lcom/android/camera2/QuickViewParam;Landroid/hardware/camera2/CaptureResult;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "quickViewParam",
-            "partialResult"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -76,88 +54,44 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "quickViewParam"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
 .method public onCaptureStart(Lcom/xiaomi/camera/core/ParallelTaskData;Lcom/android/camera2/CaptureStartParam;)Lcom/xiaomi/camera/core/ParallelTaskData;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parallelTaskData",
-            "captureStartParam"
-        }
-    .end annotation
 
+    .line 1
     return-object p1
 .end method
 
 .method public onMtkNotifyNextCaptureReady()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onPictureTaken([BLandroid/hardware/camera2/CaptureResult;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "data",
-            "captureResult"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onPictureTakenFinished(ZJI)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "success",
-            "captureStartTime",
-            "reason"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onPictureTakenImageConsumed(Landroid/media/Image;Landroid/hardware/camera2/TotalCaptureResult;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "image",
-            "captureResult"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

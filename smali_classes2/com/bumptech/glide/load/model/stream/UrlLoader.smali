@@ -54,8 +54,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/model/stream/UrlLoader;->glideUrlLoader:Lcom/bumptech/glide/load/model/ModelLoader;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -126,7 +130,7 @@
         .end annotation
     .end param
 
-    .line 1
+    .line 2
     check-cast p1, Ljava/net/URL;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/model/stream/UrlLoader;->handles(Ljava/net/URL;)Z
@@ -143,6 +147,7 @@
         .end annotation
     .end param
 
+    .line 1
     const/4 p0, 0x1
 
     return p0

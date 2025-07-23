@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>Kullandığınız kamera sürümü cihaz modelinizle uyumlu değil.&lt;br>Uygulama &lt;font color=#FFCE16>&lt;b>%1$d sn.&lt;/b>&lt;/font> içinde kapatılacak. Kamera güncellemelerini kaldırın ve tekrar deneyin.&lt;/Data></item>
         <item quantity="one">&lt;Data>Kullandığınız kamera sürümü cihaz modelinizle uyumlu değil.&lt;br>Uygulama &lt;font color=#FFCE16>&lt;b>%1$d sn.&lt;/b>&lt;/font> içinde kapatılacak. Kamera güncellemelerini kaldırın ve tekrar deneyin.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d saniye ileri sar</item>
+        <item quantity="one">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d saniye geri sar</item>
+        <item quantity="one">%d saniye geri sar</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d dk.</item>
         <item quantity="one">%1$d dk.</item>

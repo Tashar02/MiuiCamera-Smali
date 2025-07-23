@@ -9,7 +9,7 @@
 # instance fields
 .field private mHelperWidget:Landroidx/constraintlayout/core/widgets/HelperWidget;
 
-.field public mReferences:Ljava/util/ArrayList;
+.field protected mReferences:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -19,9 +19,9 @@
     .end annotation
 .end field
 
-.field public final mState:Landroidx/constraintlayout/core/state/State;
+.field protected final mState:Landroidx/constraintlayout/core/state/State;
 
-.field public final mType:Landroidx/constraintlayout/core/state/State$Helper;
+.field final mType:Landroidx/constraintlayout/core/state/State$Helper;
 
 
 # direct methods
@@ -32,18 +32,29 @@
     invoke-direct {p0, p1}, Landroidx/constraintlayout/core/state/ConstraintReference;-><init>(Landroidx/constraintlayout/core/state/State;)V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
+    .line 5
+    .line 6
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Landroidx/constraintlayout/core/state/HelperReference;->mReferences:Ljava/util/ArrayList;
 
-    .line 3
+    .line 10
+    .line 11
     iput-object p1, p0, Landroidx/constraintlayout/core/state/HelperReference;->mState:Landroidx/constraintlayout/core/state/State;
 
-    .line 4
+    .line 12
+    .line 13
     iput-object p2, p0, Landroidx/constraintlayout/core/state/HelperReference;->mType:Landroidx/constraintlayout/core/state/State$Helper;
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -55,14 +66,20 @@
     .line 1
     iget-object v0, p0, Landroidx/constraintlayout/core/state/HelperReference;->mReferences:Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     invoke-static {v0, p1}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method
 
 .method public apply()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -72,8 +89,12 @@
     .line 1
     invoke-virtual {p0}, Landroidx/constraintlayout/core/state/HelperReference;->getHelperWidget()Landroidx/constraintlayout/core/widgets/HelperWidget;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -83,6 +104,8 @@
     .line 1
     iget-object p0, p0, Landroidx/constraintlayout/core/state/HelperReference;->mHelperWidget:Landroidx/constraintlayout/core/widgets/HelperWidget;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -92,6 +115,8 @@
     .line 1
     iget-object p0, p0, Landroidx/constraintlayout/core/state/HelperReference;->mType:Landroidx/constraintlayout/core/state/State$Helper;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -101,5 +126,7 @@
     .line 1
     iput-object p1, p0, Landroidx/constraintlayout/core/state/HelperReference;->mHelperWidget:Landroidx/constraintlayout/core/widgets/HelperWidget;
 
+    .line 2
+    .line 3
     return-void
 .end method

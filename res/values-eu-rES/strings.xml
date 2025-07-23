@@ -664,6 +664,7 @@ eskaneatutako dokumentuak"</string>
     <string name="download_hint_cn">Badirudi gailua ez dagoela WLAN sarera konektatuta. Datu mugikorren %1$s MB erabili nahi dituzu elementuak deskargatzeko?</string>
     <string name="download_hint_wifi">Badirudi gailua ez dagoela wifi sarera konektatuta. Datu mugikorren %1$s MB erabili nahi dituzu elementuak deskargatzeko?</string>
     <string name="download_in_progress">Deskargatzen…</string>
+    <string name="download_network_error">Ezin izan da deskargatu. Egiaztatu zure sarearen ezarpenak.</string>
     <string name="download_title">Datu erabilera ohartarazpena</string>
     <string name="download_waiting">Zain…</string>
     <string name="dual_camera_lens_covered_toast">Lentea estalita dago.</string>
@@ -1478,6 +1479,7 @@ subjektua geldi mantendu atzealdea lausotzen den bitartean."</string>
     <string name="pref_camera_peak_entry_off">Itzalita</string>
     <string name="pref_camera_peak_entry_on">Piztuta</string>
     <string name="pref_camera_peak_title">Fokuratzearen goreneko puntua</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Osoa</string>
     <string name="pref_camera_picturesize_title_simple_mode">Kameraren markoa</string>
     <string name="pref_camera_portrait_mode_entry_off">Erretratu modua itzalita dago</string>
     <string name="pref_camera_portrait_mode_entry_on">Erretratu modua piztuta dago</string>

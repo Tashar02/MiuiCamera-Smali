@@ -304,182 +304,329 @@
 .method public static constructor <clinit>()V
     .locals 5
 
+    .line 1
     const/16 v0, 0x13
 
-    new-array v0, v0, [I
-
-    .line 1
-    fill-array-data v0, :array_0
-
-    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->CAMERA_TYPES_INIT:[I
-
-    const/16 v0, 0x2e
-
-    new-array v0, v0, [I
-
     .line 2
-    fill-array-data v0, :array_1
-
-    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->CAMERA_TYPES_ON_PREVIEW_SUCCESS:[I
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [I
-
     .line 3
-    fill-array-data v0, :array_2
-
-    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->CAMERA_TYPES_MANUALLY:[I
-
-    const/16 v0, 0xd
-
     new-array v0, v0, [I
 
     .line 4
-    fill-array-data v0, :array_3
-
-    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->VIDEO_TYPES_INIT:[I
-
-    const/16 v0, 0x18
-
-    new-array v0, v0, [I
-
     .line 5
-    fill-array-data v0, :array_4
-
-    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->VIDEO_TYPES_ON_PREVIEW_SUCCESS:[I
-
-    const/16 v0, 0x8
-
-    new-array v1, v0, [I
+    fill-array-data v0, :array_0
 
     .line 6
-    fill-array-data v1, :array_5
-
-    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->VIDEO_TYPES_RECORD:[I
-
-    const/4 v1, 0x6
-
-    new-array v1, v1, [I
-
     .line 7
-    fill-array-data v1, :array_6
-
-    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->FUN_TYPES_INIT:[I
-
-    const/16 v1, 0xe
-
-    new-array v1, v1, [I
-
     .line 8
-    fill-array-data v1, :array_7
-
-    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->FUN_TYPES_ON_PREVIEW_SUCCESS:[I
-
-    const/16 v1, 0x11
-
-    new-array v1, v1, [I
+    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->CAMERA_TYPES_INIT:[I
 
     .line 9
-    fill-array-data v1, :array_8
-
-    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->MI_LIVE_TYPES_ON_PREVIEW_SUCCESS:[I
-
-    const/4 v1, 0x3
-
-    new-array v2, v1, [I
-
     .line 10
-    fill-array-data v2, :array_9
-
-    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->FAKER_TYPES_INIT:[I
-
-    const/4 v2, 0x2
-
-    new-array v2, v2, [I
+    const/16 v0, 0x2e
 
     .line 11
-    fill-array-data v2, :array_a
-
-    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->FAKER_TYPES_ON_PREVIEW_SUCCESS:[I
-
-    const/4 v2, 0x5
-
-    new-array v2, v2, [I
-
     .line 12
-    fill-array-data v2, :array_b
-
-    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->CLONE_TYPES_ON_PREVIEW_SUCCESS:[I
-
-    new-array v2, v0, [I
+    new-array v0, v0, [I
 
     .line 13
-    fill-array-data v2, :array_c
-
-    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->AMBILIGHT_TYPES_ON_PREVIEW_SUCCESS:[I
-
-    new-array v2, v1, [I
-
     .line 14
-    fill-array-data v2, :array_d
-
-    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->PANORAMA_TYPES_INIT:[I
-
-    const/4 v2, 0x1
-
-    new-array v2, v2, [I
-
-    const/4 v3, 0x0
-
-    const/16 v4, 0x20
-
-    aput v4, v2, v3
+    fill-array-data v0, :array_1
 
     .line 15
-    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->PANORAMA_ON_PREVIEW_SUCCESS:[I
-
-    new-array v2, v1, [I
-
     .line 16
-    fill-array-data v2, :array_e
-
-    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->WIDESELFIE_TYPES_INIT:[I
-
-    new-array v1, v1, [I
-
     .line 17
-    fill-array-data v1, :array_f
-
-    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->WIDESELFIE_ON_PREVIEW_SUCCESS:[I
-
-    new-array v0, v0, [I
+    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->CAMERA_TYPES_ON_PREVIEW_SUCCESS:[I
 
     .line 18
-    fill-array-data v0, :array_10
-
-    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->AI_SCENE_CONFIG:[I
-
-    const/4 v0, 0x7
-
-    new-array v0, v0, [I
-
     .line 19
-    fill-array-data v0, :array_11
-
-    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->SUPER_MOON_TYPES_INIT:[I
-
-    const/16 v0, 0x15
-
-    new-array v0, v0, [I
+    const/4 v0, 0x4
 
     .line 20
+    new-array v0, v0, [I
+
+    .line 21
+    .line 22
+    fill-array-data v0, :array_2
+
+    .line 23
+    .line 24
+    .line 25
+    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->CAMERA_TYPES_MANUALLY:[I
+
+    .line 26
+    .line 27
+    const/16 v0, 0xd
+
+    .line 28
+    .line 29
+    new-array v0, v0, [I
+
+    .line 30
+    .line 31
+    fill-array-data v0, :array_3
+
+    .line 32
+    .line 33
+    .line 34
+    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->VIDEO_TYPES_INIT:[I
+
+    .line 35
+    .line 36
+    const/16 v0, 0x18
+
+    .line 37
+    .line 38
+    new-array v0, v0, [I
+
+    .line 39
+    .line 40
+    fill-array-data v0, :array_4
+
+    .line 41
+    .line 42
+    .line 43
+    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->VIDEO_TYPES_ON_PREVIEW_SUCCESS:[I
+
+    .line 44
+    .line 45
+    const/16 v0, 0x8
+
+    .line 46
+    .line 47
+    new-array v1, v0, [I
+
+    .line 48
+    .line 49
+    fill-array-data v1, :array_5
+
+    .line 50
+    .line 51
+    .line 52
+    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->VIDEO_TYPES_RECORD:[I
+
+    .line 53
+    .line 54
+    const/4 v1, 0x6
+
+    .line 55
+    new-array v1, v1, [I
+
+    .line 56
+    .line 57
+    fill-array-data v1, :array_6
+
+    .line 58
+    .line 59
+    .line 60
+    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->FUN_TYPES_INIT:[I
+
+    .line 61
+    .line 62
+    const/16 v1, 0xe
+
+    .line 63
+    .line 64
+    new-array v1, v1, [I
+
+    .line 65
+    .line 66
+    fill-array-data v1, :array_7
+
+    .line 67
+    .line 68
+    .line 69
+    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->FUN_TYPES_ON_PREVIEW_SUCCESS:[I
+
+    .line 70
+    .line 71
+    const/16 v1, 0x11
+
+    .line 72
+    .line 73
+    new-array v1, v1, [I
+
+    .line 74
+    .line 75
+    fill-array-data v1, :array_8
+
+    .line 76
+    .line 77
+    .line 78
+    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->MI_LIVE_TYPES_ON_PREVIEW_SUCCESS:[I
+
+    .line 79
+    .line 80
+    const/4 v1, 0x3
+
+    .line 81
+    new-array v2, v1, [I
+
+    .line 82
+    .line 83
+    fill-array-data v2, :array_9
+
+    .line 84
+    .line 85
+    .line 86
+    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->FAKER_TYPES_INIT:[I
+
+    .line 87
+    .line 88
+    const/4 v2, 0x2
+
+    .line 89
+    new-array v2, v2, [I
+
+    .line 90
+    .line 91
+    fill-array-data v2, :array_a
+
+    .line 92
+    .line 93
+    .line 94
+    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->FAKER_TYPES_ON_PREVIEW_SUCCESS:[I
+
+    .line 95
+    .line 96
+    const/4 v2, 0x5
+
+    .line 97
+    new-array v2, v2, [I
+
+    .line 98
+    .line 99
+    fill-array-data v2, :array_b
+
+    .line 100
+    .line 101
+    .line 102
+    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->CLONE_TYPES_ON_PREVIEW_SUCCESS:[I
+
+    .line 103
+    .line 104
+    new-array v2, v0, [I
+
+    .line 105
+    .line 106
+    fill-array-data v2, :array_c
+
+    .line 107
+    .line 108
+    .line 109
+    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->AMBILIGHT_TYPES_ON_PREVIEW_SUCCESS:[I
+
+    .line 110
+    .line 111
+    new-array v2, v1, [I
+
+    .line 112
+    .line 113
+    fill-array-data v2, :array_d
+
+    .line 114
+    .line 115
+    .line 116
+    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->PANORAMA_TYPES_INIT:[I
+
+    .line 117
+    .line 118
+    const/4 v2, 0x1
+
+    .line 119
+    new-array v2, v2, [I
+
+    .line 120
+    .line 121
+    const/4 v3, 0x0
+
+    .line 122
+    const/16 v4, 0x20
+
+    .line 123
+    .line 124
+    aput v4, v2, v3
+
+    .line 125
+    .line 126
+    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->PANORAMA_ON_PREVIEW_SUCCESS:[I
+
+    .line 127
+    .line 128
+    new-array v2, v1, [I
+
+    .line 129
+    .line 130
+    fill-array-data v2, :array_e
+
+    .line 131
+    .line 132
+    .line 133
+    sput-object v2, Lcom/android/camera/constant/UpdateConstant;->WIDESELFIE_TYPES_INIT:[I
+
+    .line 134
+    .line 135
+    new-array v1, v1, [I
+
+    .line 136
+    .line 137
+    fill-array-data v1, :array_f
+
+    .line 138
+    .line 139
+    .line 140
+    sput-object v1, Lcom/android/camera/constant/UpdateConstant;->WIDESELFIE_ON_PREVIEW_SUCCESS:[I
+
+    .line 141
+    .line 142
+    new-array v0, v0, [I
+
+    .line 143
+    .line 144
+    fill-array-data v0, :array_10
+
+    .line 145
+    .line 146
+    .line 147
+    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->AI_SCENE_CONFIG:[I
+
+    .line 148
+    .line 149
+    const/4 v0, 0x7
+
+    .line 150
+    new-array v0, v0, [I
+
+    .line 151
+    .line 152
+    fill-array-data v0, :array_11
+
+    .line 153
+    .line 154
+    .line 155
+    sput-object v0, Lcom/android/camera/constant/UpdateConstant;->SUPER_MOON_TYPES_INIT:[I
+
+    .line 156
+    .line 157
+    const/16 v0, 0x15
+
+    .line 158
+    .line 159
+    new-array v0, v0, [I
+
+    .line 160
+    .line 161
     fill-array-data v0, :array_12
 
+    .line 162
+    .line 163
+    .line 164
     sput-object v0, Lcom/android/camera/constant/UpdateConstant;->SUPER_MOON_TYPES_ON_PREVIEW_SUCCESS:[I
 
+    .line 165
+    .line 166
     return-void
 
+    .line 167
     :array_0
     .array-data 4
         0x18
@@ -503,6 +650,38 @@
         0x66
     .end array-data
 
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
     :array_1
     .array-data 4
         0x18
@@ -777,5 +956,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

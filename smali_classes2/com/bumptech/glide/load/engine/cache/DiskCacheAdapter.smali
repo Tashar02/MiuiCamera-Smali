@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,25 +32,30 @@
 .method public clear()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public delete(Lcom/bumptech/glide/load/Key;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public get(Lcom/bumptech/glide/load/Key;)Ljava/io/File;
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
 .method public put(Lcom/bumptech/glide/load/Key;Lcom/bumptech/glide/load/engine/cache/DiskCache$Writer;)V
     .locals 0
 
+    .line 1
     return-void
 .end method

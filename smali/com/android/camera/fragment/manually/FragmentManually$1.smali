@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/manually/FragmentManually$1;
+.class Lcom/android/camera/fragment/manually/FragmentManually$1;
 .super Lcom/android/camera/fragment/beauty/LinearLayoutManagerWrapper;
 .source "FragmentManually.java"
 
@@ -15,30 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/manually/FragmentManually;
+.field final synthetic this$0:Lcom/android/camera/fragment/manually/FragmentManually;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/manually/FragmentManually;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0,
-            0x0
-        }
-        names = {
-            "this$0",
-            "context",
-            "viewFrom"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/manually/FragmentManually$1;->this$0:Lcom/android/camera/fragment/manually/FragmentManually;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2, p3}, Lcom/android/camera/fragment/beauty/LinearLayoutManagerWrapper;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -47,7 +40,9 @@
 .method public canScrollHorizontally()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

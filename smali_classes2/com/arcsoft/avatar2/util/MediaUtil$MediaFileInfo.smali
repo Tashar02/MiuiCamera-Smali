@@ -61,6 +61,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -232,6 +235,8 @@
     .line 1
     iput-object p1, p0, Lcom/arcsoft/avatar2/util/MediaUtil$MediaFileInfo;->l:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -241,6 +246,8 @@
     .line 1
     iput-object p1, p0, Lcom/arcsoft/avatar2/util/MediaUtil$MediaFileInfo;->m:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -250,6 +257,8 @@
     .line 1
     iput-object p1, p0, Lcom/arcsoft/avatar2/util/MediaUtil$MediaFileInfo;->n:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -259,5 +268,7 @@
     .line 1
     iput-object p1, p0, Lcom/arcsoft/avatar2/util/MediaUtil$MediaFileInfo;->s:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;
+.class Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;
 .super Ljava/lang/Object;
 .source "TopAlertSlideSwitchButton.java"
 
@@ -66,26 +66,6 @@
 
 .method public constructor <init>(IILjava/lang/String;IIZZ)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "IconRes",
-            "IconShadowRes",
-            "value",
-            "DisplayNameRes",
-            "SelectColor",
-            "IsDisabled",
-            "isShowText"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -125,6 +105,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mOriginalSelectColor:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -134,6 +116,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mContentDescriptionRes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -143,6 +127,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mDisplayNameRes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -152,6 +138,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mValue:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -161,6 +149,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsDisabled:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -170,6 +160,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsShowText:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -177,64 +169,97 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "obj"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    return v0
 
     .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
     :cond_0
     check-cast p1, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;
 
+    .line 6
+    .line 7
     iget v1, p1, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIconRes:I
 
+    .line 8
+    .line 9
     iget v2, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIconRes:I
 
+    .line 10
+    .line 11
     if-ne v1, v2, :cond_1
 
+    .line 12
+    .line 13
     iget-object v1, p1, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mValue:Ljava/lang/String;
 
+    .line 14
+    .line 15
     iget-object v2, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mValue:Ljava/lang/String;
 
-    .line 2
+    .line 16
+    .line 17
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 18
+    .line 19
+    .line 20
     move-result v1
 
+    .line 21
     if-eqz v1, :cond_1
 
+    .line 22
+    .line 23
     iget v1, p1, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mDisplayNameRes:I
 
+    .line 24
+    .line 25
     iget v2, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mDisplayNameRes:I
 
+    .line 26
+    .line 27
     if-ne v1, v2, :cond_1
 
+    .line 28
+    .line 29
     iget v1, p1, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mOriginalSelectColor:I
 
+    .line 30
+    .line 31
     iget v2, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mOriginalSelectColor:I
 
+    .line 32
+    .line 33
     if-ne v1, v2, :cond_1
 
+    .line 34
+    .line 35
     iget-boolean p1, p1, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsShowText:Z
 
+    .line 36
+    .line 37
     iget-boolean p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsShowText:Z
 
+    .line 38
+    .line 39
     if-ne p1, p0, :cond_1
 
+    .line 40
+    .line 41
     const/4 p0, 0x1
 
+    .line 42
     return p0
 
+    .line 43
     :cond_1
     return v0
 .end method
@@ -245,6 +270,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mContentDescriptionRes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -254,6 +281,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mDisplayNameRes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -263,6 +292,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIconRes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -272,6 +303,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIconShadowRes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -281,6 +314,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mValue:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -290,6 +325,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsDisabled:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -299,141 +336,95 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsShowText:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setContentDescriptionRes(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mContentDescriptionRes"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mContentDescriptionRes:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setDisplayNameRes(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mDisplayNameRes"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mDisplayNameRes:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setIconRes(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mIconRes"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIconRes:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setIconShadowRes(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mIconShadowRes"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIconShadowRes:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setIsDisabled(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mIsDisabled"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsDisabled:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setIsShowText(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mIsShowText"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mIsShowText:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setOriginalSelectColor(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mSelectColor"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mOriginalSelectColor:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setValue(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mValue"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/TopAlertSlideSwitchButton$ItemData;->mValue:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method

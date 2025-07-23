@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/TwilightManager$TwilightState;
+.class Landroidx/appcompat/app/TwilightManager$TwilightState;
 .super Ljava/lang/Object;
 .source "TwilightManager.java"
 
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field public isNight:Z
+.field isNight:Z
 
-.field public nextUpdate:J
+.field nextUpdate:J
 
-.field public todaySunrise:J
+.field todaySunrise:J
 
-.field public todaySunset:J
+.field todaySunset:J
 
-.field public tomorrowSunrise:J
+.field tomorrowSunrise:J
 
-.field public yesterdaySunset:J
+.field yesterdaySunset:J
 
 
 # direct methods
@@ -35,5 +35,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

@@ -60,10 +60,16 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/resource/gif/GifBitmapProvider;->bitmapPool:Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;
 
+    .line 2
+    .line 3
     invoke-interface {p0, p1, p2, p3}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BitmapPool;->getDirty(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -75,23 +81,36 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/resource/gif/GifBitmapProvider;->arrayPool:Lcom/bumptech/glide/load/engine/bitmap_recycle/ArrayPool;
 
+    .line 2
+    .line 3
     if-nez p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-array p0, p1, [B
 
+    .line 6
+    .line 7
     return-object p0
 
-    .line 3
+    .line 8
     :cond_0
     const-class v0, [B
 
+    .line 9
+    .line 10
     invoke-interface {p0, p1, v0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/ArrayPool;->get(ILjava/lang/Class;)Ljava/lang/Object;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object p0
 
+    .line 14
     check-cast p0, [B
 
+    .line 15
+    .line 16
     return-object p0
 .end method
 
@@ -103,23 +122,36 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/resource/gif/GifBitmapProvider;->arrayPool:Lcom/bumptech/glide/load/engine/bitmap_recycle/ArrayPool;
 
+    .line 2
+    .line 3
     if-nez p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     new-array p0, p1, [I
 
+    .line 6
+    .line 7
     return-object p0
 
-    .line 3
+    .line 8
     :cond_0
     const-class v0, [I
 
+    .line 9
+    .line 10
     invoke-interface {p0, p1, v0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/ArrayPool;->get(ILjava/lang/Class;)Ljava/lang/Object;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object p0
 
+    .line 14
     check-cast p0, [I
 
+    .line 15
+    .line 16
     return-object p0
 .end method
 

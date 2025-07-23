@@ -43,10 +43,17 @@
     .line 1
     new-instance v0, Lmiuix/view/animation/CubicEaseOutInterpolator;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lmiuix/view/animation/CubicEaseOutInterpolator;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/android/camera/animation/AnimationDelegate;->DEFAULT_INTERPOLATOR:Landroid/view/animation/Interpolator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -56,5 +63,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

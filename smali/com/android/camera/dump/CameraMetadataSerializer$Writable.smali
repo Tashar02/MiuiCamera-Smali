@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/camera/dump/CameraMetadataSerializer$Writable;
+.class interface abstract Lcom/android/camera/dump/CameraMetadataSerializer$Writable;
 .super Ljava/lang/Object;
 .source "CameraMetadataSerializer.java"
 
@@ -16,15 +16,6 @@
 
 # virtual methods
 .method public abstract write(Ljava/io/Writer;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "writer"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

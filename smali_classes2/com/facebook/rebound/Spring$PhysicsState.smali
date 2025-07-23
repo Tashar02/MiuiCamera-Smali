@@ -1,4 +1,4 @@
-.class public Lcom/facebook/rebound/Spring$PhysicsState;
+.class Lcom/facebook/rebound/Spring$PhysicsState;
 .super Ljava/lang/Object;
 .source "Spring.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public position:D
+.field position:D
 
-.field public velocity:D
+.field velocity:D
 
 
 # direct methods

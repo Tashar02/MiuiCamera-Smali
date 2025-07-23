@@ -21,20 +21,12 @@
 
 .field private mVideoPath:Ljava/lang/String;
 
-.field public final synthetic this$0:Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem;
+.field final synthetic this$0:Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->this$0:Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem;
@@ -46,20 +38,6 @@
 
 .method public constructor <init>(Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "this$0",
-            "index",
-            "videoPath",
-            "thumbPath"
-        }
-    .end annotation
 
     .line 2
     iput-object p1, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->this$0:Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem;
@@ -84,6 +62,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mSegmentIndex:I
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -93,6 +73,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mVideoPath:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -102,6 +84,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mVideoPath:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -111,6 +95,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mThumbPath:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -120,6 +106,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mThumbPath:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -131,6 +119,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mSegmentIndex:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -140,6 +130,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mThumbPath:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -149,5 +141,7 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/vlogpro/VPWorkspaceItem$VideoSegmentInfo;->mVideoPath:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

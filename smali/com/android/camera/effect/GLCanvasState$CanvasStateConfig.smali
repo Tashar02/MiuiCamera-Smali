@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;
+.class Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;
 .super Ljava/lang/Object;
 .source "GLCanvasState.java"
 
@@ -15,74 +15,86 @@
 
 
 # instance fields
-.field public mAlpha:F
+.field mAlpha:F
 
-.field public mBlendAlpha:F
+.field mBlendAlpha:F
 
-.field public mModelMatrix:[F
+.field mModelMatrix:[F
 
-.field public mTexMatrix:[F
+.field mTexMatrix:[F
 
 
 # direct methods
 .method public constructor <init>([F[FFF)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "modelMatrix",
-            "texMatrix",
-            "alpha",
-            "blendAlpha"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/16 v0, 0x10
 
+    .line 5
+    .line 6
     new-array v1, v0, [F
 
-    .line 2
+    .line 7
+    .line 8
     iput-object v1, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mModelMatrix:[F
 
+    .line 9
+    .line 10
     new-array v2, v0, [F
 
-    .line 3
+    .line 11
+    .line 12
     iput-object v2, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mTexMatrix:[F
 
+    .line 13
+    .line 14
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 4
+    .line 15
+    .line 16
     iput v2, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mAlpha:F
 
+    .line 17
+    .line 18
     const/high16 v2, -0x40800000    # -1.0f
 
-    .line 5
+    .line 19
+    .line 20
     iput v2, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mBlendAlpha:F
 
+    .line 21
+    .line 22
     const/4 v2, 0x0
 
-    .line 6
+    .line 23
     invoke-static {p1, v2, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 7
+    .line 24
+    .line 25
+    .line 26
     iget-object p1, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mTexMatrix:[F
 
+    .line 27
+    .line 28
     invoke-static {p2, v2, p1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 8
+    .line 29
+    .line 30
+    .line 31
     iput p3, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mAlpha:F
 
-    .line 9
+    .line 32
+    .line 33
     iput p4, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mBlendAlpha:F
 
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -94,6 +106,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mAlpha:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -103,6 +117,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mBlendAlpha:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -112,6 +128,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mModelMatrix:[F
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -121,5 +139,7 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/GLCanvasState$CanvasStateConfig;->mTexMatrix:[F
 
+    .line 2
+    .line 3
     return-object p0
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/arch/core/executor/DefaultTaskExecutor$1;
+.class Landroidx/arch/core/executor/DefaultTaskExecutor$1;
 .super Ljava/lang/Object;
 .source "DefaultTaskExecutor.java"
 
@@ -24,7 +24,7 @@
 # instance fields
 .field private final mThreadId:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field public final synthetic this$0:Landroidx/arch/core/executor/DefaultTaskExecutor;
+.field final synthetic this$0:Landroidx/arch/core/executor/DefaultTaskExecutor;
 
 
 # direct methods
@@ -34,17 +34,29 @@
     .line 1
     iput-object p1, p0, Landroidx/arch/core/executor/DefaultTaskExecutor$1;->this$0:Landroidx/arch/core/executor/DefaultTaskExecutor;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
+    .line 7
+    .line 8
     const/4 v0, 0x0
 
+    .line 9
     invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
+    .line 10
+    .line 11
+    .line 12
     iput-object p1, p0, Landroidx/arch/core/executor/DefaultTaskExecutor$1;->mThreadId:Ljava/util/concurrent/atomic/AtomicInteger;
 
+    .line 13
+    .line 14
     return-void
 .end method
 
@@ -56,34 +68,63 @@
     .line 1
     new-instance v0, Ljava/lang/Thread;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
+    .line 4
+    .line 5
+    .line 6
     const/4 p1, 0x1
 
+    .line 7
     new-array p1, p1, [Ljava/lang/Object;
 
-    .line 2
+    .line 8
+    .line 9
     iget-object p0, p0, Landroidx/arch/core/executor/DefaultTaskExecutor$1;->mThreadId:Ljava/util/concurrent/atomic/AtomicInteger;
 
+    .line 10
+    .line 11
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
+    .line 12
+    .line 13
+    .line 14
     move-result p0
 
+    .line 15
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p0
 
+    .line 19
     const/4 v1, 0x0
 
+    .line 20
     aput-object p0, p1, v1
 
+    .line 21
+    .line 22
     const-string p0, "arch_disk_io_%d"
 
+    .line 23
+    .line 24
     invoke-static {p0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
+    .line 25
+    .line 26
+    .line 27
     move-result-object p0
 
+    .line 28
     invoke-virtual {v0, p0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
+    .line 29
+    .line 30
+    .line 31
     return-object v0
 .end method

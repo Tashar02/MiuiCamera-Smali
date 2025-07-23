@@ -23,14 +23,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "name"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,14 +35,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "text"
-        }
-    .end annotation
 
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -67,6 +51,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/beauty/LevelBeautyAdapter$LevelItem;->mText:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -78,6 +64,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/beauty/LevelBeautyAdapter$LevelItem;->mText:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -87,5 +75,7 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/beauty/LevelBeautyAdapter$LevelItem;->mTextResource:I
 
+    .line 2
+    .line 3
     return p0
 .end method

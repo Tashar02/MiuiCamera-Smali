@@ -26,6 +26,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -52,63 +55,75 @@
         value = "android.permission.ACCESS_NETWORK_STATE"
     .end annotation
 
+    .line 1
     const-string/jumbo v0, "networkInfo"
 
-    .line 1
+    .line 2
+    .line 3
+    .line 4
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p1
 
+    .line 8
     check-cast p1, Landroid/net/NetworkInfo;
 
+    .line 9
+    .line 10
     if-eqz p1, :cond_0
 
-    .line 2
+    .line 11
+    .line 12
     invoke-virtual {p1}, Landroid/net/NetworkInfo;->getType()I
 
+    .line 13
+    .line 14
+    .line 15
     move-result p1
 
+    .line 16
     invoke-virtual {p0, p1}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object p0
 
+    .line 20
     return-object p0
 
+    .line 21
     :cond_0
     const/4 p0, 0x0
 
+    .line 22
     return-object p0
 .end method
 
 .method public static getRestrictBackgroundStatus(Landroid/net/ConnectivityManager;)I
-    .locals 2
+    .locals 0
     .param p0    # Landroid/net/ConnectivityManager;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x18
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getRestrictBackgroundStatus()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
-    return p0
-
-    :cond_0
-    const/4 p0, 0x3
-
+    .line 5
     return p0
 .end method
 
 .method public static isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
-    .locals 2
+    .locals 0
     .param p0    # Landroid/net/ConnectivityManager;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -118,51 +133,13 @@
     .end annotation
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x10
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     invoke-virtual {p0}, Landroid/net/ConnectivityManager;->isActiveNetworkMetered()Z
 
-    move-result p0
-
-    return p0
-
+    .line 2
     .line 3
-    :cond_0
-    invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
-
-    move-result-object p0
-
-    const/4 v0, 0x1
-
-    if-nez p0, :cond_1
-
-    return v0
-
     .line 4
-    :cond_1
-    invoke-virtual {p0}, Landroid/net/NetworkInfo;->getType()I
-
     move-result p0
 
-    if-eq p0, v0, :cond_2
-
-    const/4 v1, 0x7
-
-    if-eq p0, v1, :cond_2
-
-    const/16 v1, 0x9
-
-    if-eq p0, v1, :cond_2
-
-    return v0
-
-    :cond_2
-    const/4 p0, 0x0
-
+    .line 5
     return p0
 .end method

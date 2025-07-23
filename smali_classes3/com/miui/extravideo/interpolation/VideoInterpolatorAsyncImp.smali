@@ -1,4 +1,4 @@
-.class public Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;
+.class Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;
 .super Ljava/lang/Object;
 .source "VideoInterpolatorAsyncImp.java"
 
@@ -100,8 +100,12 @@
     .line 1
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
+    .line 2
+    .line 3
     sput-object v0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->bInitWatemarkPipeline:Ljava/lang/Boolean;
 
+    .line 4
+    .line 5
     return-void
 .end method
 
@@ -641,6 +645,8 @@
     .line 1
     iget p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSkipSizeTarget2Origin:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -650,6 +656,8 @@
     .line 1
     iget p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSkipSizeTarget2Normal:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -659,6 +667,9 @@
     .line 1
     invoke-direct {p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->putEndFlagToQueue()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -668,6 +679,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->isDecoderNeededStop:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -677,6 +690,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->isDecoderNeededStop:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -686,6 +701,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDecodeThread:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -695,6 +712,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mQueue:Ljava/util/concurrent/BlockingQueue;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -704,8 +723,12 @@
     .line 1
     invoke-direct {p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->getBufferFromQueue()Lcom/miui/extravideo/interpolation/EncodeBufferHolder;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -715,6 +738,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mFrameMapping:[I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -724,6 +749,9 @@
     .line 1
     invoke-direct {p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->notifyTaskFinish()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -733,6 +761,9 @@
     .line 1
     invoke-direct {p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->deleteBadFile()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -742,6 +773,9 @@
     .line 1
     invoke-direct {p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->notifyTaskError()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -751,6 +785,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeThread:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -760,6 +796,8 @@
     .line 1
     iget p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mFrameIndexBeginInterpolation:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -769,6 +807,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDecoder:Lcom/miui/extravideo/common/MediaDecoderAsync;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -778,6 +818,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mNeedDump:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -787,6 +829,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mYuvFile:Ljava/io/File;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -796,6 +840,8 @@
     .line 1
     iget p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mFrameSizeInterpolation:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -805,6 +851,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncoder:Lcom/miui/extravideo/common/MediaEncoderAsync;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -814,108 +862,189 @@
     .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->putBufferToQueue([BJI)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method private addMetaData()V
     .locals 7
 
+    .line 1
     const-string v0, "jcodec"
 
-    .line 1
+    .line 2
+    .line 3
     :try_start_0
     new-instance v1, Ljava/io/File;
 
+    .line 4
+    .line 5
     iget-object v2, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDstPath:Ljava/lang/String;
 
+    .line 6
+    .line 7
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
+    .line 8
+    .line 9
+    .line 10
     invoke-static {v1}, Lorg/jcodec/movtool/MetadataEditor;->createFrom(Ljava/io/File;)Lorg/jcodec/movtool/MetadataEditor;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object v1
 
-    .line 2
+    .line 14
     invoke-virtual {v1}, Lorg/jcodec/movtool/MetadataEditor;->getKeyedMeta()Ljava/util/Map;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v2
 
-    .line 3
+    .line 18
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 19
+    .line 20
+    .line 21
     move-result-wide v3
 
+    .line 22
     const-string v5, "com.xiaomi.capture_framerate"
 
-    .line 4
+    .line 23
+    .line 24
     iget v6, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mTargetFPS:I
 
+    .line 25
+    .line 26
     invoke-static {v6}, Lorg/jcodec/containers/mp4/boxes/MetaValue;->createInt(I)Lorg/jcodec/containers/mp4/boxes/MetaValue;
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object v6
 
+    .line 30
     invoke-interface {v2, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
+    .line 31
+    .line 32
+    .line 33
     iget-boolean v5, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSupportEditor:Z
 
+    .line 34
+    .line 35
     if-eqz v5, :cond_0
 
+    .line 36
+    .line 37
     iget p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mOriginVideoTrack:I
 
+    .line 38
+    .line 39
     const/4 v5, -0x1
 
+    .line 40
     if-eq p0, v5, :cond_0
 
+    .line 41
+    .line 42
     const-string v5, "com.xiaomi.capture_origin_track"
 
-    .line 6
+    .line 43
+    .line 44
     invoke-static {p0}, Lorg/jcodec/containers/mp4/boxes/MetaValue;->createInt(I)Lorg/jcodec/containers/mp4/boxes/MetaValue;
 
+    .line 45
+    .line 46
+    .line 47
     move-result-object p0
 
+    .line 48
     invoke-interface {v2, v5, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 49
+    .line 50
+    .line 51
     :cond_0
     const/4 p0, 0x1
 
-    .line 7
+    .line 52
     invoke-virtual {v1, p0}, Lorg/jcodec/movtool/MetadataEditor;->save(Z)V
 
-    .line 8
+    .line 53
+    .line 54
+    .line 55
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 56
+    .line 57
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 58
+    .line 59
+    .line 60
     const-string v1, "cost: "
 
+    .line 61
+    .line 62
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 63
+    .line 64
+    .line 65
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 66
+    .line 67
+    .line 68
     move-result-wide v1
 
+    .line 69
     sub-long/2addr v1, v3
 
+    .line 70
     invoke-virtual {p0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    .line 71
+    .line 72
+    .line 73
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 74
+    .line 75
+    .line 76
     move-result-object p0
 
+    .line 77
     invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 78
+    .line 79
+    .line 80
     goto :goto_0
 
+    .line 81
     :catch_0
     move-exception p0
 
+    .line 82
     const-string v1, "error \n"
 
-    .line 9
+    .line 83
+    .line 84
     invoke-static {v0, v1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
+    .line 85
+    .line 86
+    .line 87
     :goto_0
     return-void
 .end method
@@ -931,70 +1060,122 @@
     .line 1
     iget-boolean v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSupportEditor:Z
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
+    .line 4
+    .line 5
     return-void
 
-    .line 2
+    .line 6
     :cond_0
     new-instance v0, Ljava/io/File;
 
+    .line 7
+    .line 8
     iget-object v1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDstPath:Ljava/lang/String;
 
+    .line 9
+    .line 10
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 3
+    .line 11
+    .line 12
+    .line 13
     new-instance v1, Ljava/io/File;
 
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/io/File;->getParent()Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object v2
 
+    .line 19
     const-string v3, ".tempResult"
 
+    .line 20
+    .line 21
     invoke-direct {v1, v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
+    .line 22
+    .line 23
+    .line 24
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 5
+    .line 25
+    .line 26
+    .line 27
     invoke-virtual {v0, v1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    .line 6
+    .line 28
+    .line 29
+    .line 30
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
+    .line 31
+    .line 32
+    .line 33
     move-result-object v2
 
+    .line 34
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
+    .line 35
+    .line 36
+    .line 37
     move-result-object v3
 
+    .line 38
     iget-object v4, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSrcPath:Ljava/lang/String;
 
+    .line 39
+    .line 40
     iget v5, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDegree:I
 
+    .line 41
+    .line 42
     invoke-static {v2, v3, v4, v5}, Lcom/miui/extravideo/common/MediaUtils;->mixVideo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
 
+    .line 43
+    .line 44
+    .line 45
     move-result v2
 
+    .line 46
     iput v2, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mOriginVideoTrack:I
 
+    .line 47
+    .line 48
     const/4 p0, -0x1
 
+    .line 49
     if-eq v2, p0, :cond_1
 
-    .line 7
+    .line 50
+    .line 51
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
+    .line 52
+    .line 53
+    .line 54
     goto :goto_0
 
-    .line 8
+    .line 55
     :cond_1
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 9
+    .line 56
+    .line 57
+    .line 58
     invoke-virtual {v1, v0}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
+    .line 59
+    .line 60
+    .line 61
     :goto_0
     return-void
 .end method
@@ -1005,20 +1186,34 @@
     .line 1
     new-instance v0, Ljava/io/File;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDstPath:Ljava/lang/String;
 
+    .line 4
+    .line 5
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     if-eqz p0, :cond_0
 
-    .line 3
+    .line 13
+    .line 14
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
+    .line 15
+    .line 16
+    .line 17
     :cond_0
     return-void
 .end method
@@ -1037,56 +1232,95 @@
     .line 1
     new-instance v0, Landroid/view/animation/LinearInterpolator;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget v1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mFrameIndexBeginInterpolation:I
 
-    const/4 v2, 0x1
-
+    .line 7
+    .line 8
     if-ge p1, v1, :cond_0
 
-    .line 3
-    iget v2, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSkipSizeTarget2Normal:I
+    .line 9
+    .line 10
+    iget p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSkipSizeTarget2Normal:I
 
+    .line 11
+    .line 12
     goto :goto_0
 
+    .line 13
     :cond_0
     add-int/lit8 p0, v1, 0x8
 
+    .line 14
+    .line 15
+    const/4 v2, 0x1
+
+    .line 16
     if-ge p1, p0, :cond_1
 
+    .line 17
+    .line 18
     sub-int/2addr p1, v1
 
+    .line 19
     int-to-float p0, p1
 
+    .line 20
     const/high16 p1, 0x41000000    # 8.0f
 
+    .line 21
+    .line 22
     div-float/2addr p0, p1
 
-    .line 4
-    invoke-interface {v0, p0}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
+    .line 23
+    invoke-interface {v0, p0}, Landroid/animation/TimeInterpolator;->getInterpolation(F)F
 
+    .line 24
+    .line 25
+    .line 26
     move-result p0
 
-    const/high16 p1, 0x41700000    # 15.0f
+    .line 27
+    const/high16 p1, 0x3f800000    # 1.0f
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    .line 28
+    .line 29
+    sub-float/2addr p1, p0
 
-    sub-float/2addr v0, p0
+    .line 30
+    const/high16 p0, 0x41700000    # 15.0f
 
-    mul-float/2addr v0, p1
+    .line 31
+    .line 32
+    mul-float/2addr p1, p0
 
-    .line 5
-    invoke-static {v0}, Ljava/lang/Math;->round(F)I
+    .line 33
+    invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
+    .line 34
+    .line 35
+    .line 36
     move-result p0
 
-    add-int/2addr v2, p0
+    .line 37
+    add-int/2addr p0, v2
 
+    .line 38
+    goto :goto_0
+
+    .line 39
     :cond_1
+    move p0, v2
+
+    .line 40
     :goto_0
-    return v2
+    return p0
 .end method
 
 .method private getBufferFromQueue()Lcom/miui/extravideo/interpolation/EncodeBufferHolder;
@@ -1096,24 +1330,37 @@
     :try_start_0
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mQueue:Ljava/util/concurrent/BlockingQueue;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/concurrent/BlockingQueue;->take()Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     check-cast p0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 8
+    .line 9
     goto :goto_0
 
+    .line 10
     :catch_0
     move-exception p0
 
-    .line 2
-    invoke-virtual {p0}, Ljava/lang/InterruptedException;->printStackTrace()V
+    .line 11
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
+    .line 12
+    .line 13
+    .line 14
     const/4 p0, 0x0
 
+    .line 15
     :goto_0
     return-object p0
 .end method
@@ -1121,51 +1368,79 @@
 .method private initMapping()V
     .locals 5
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     move v1, v0
 
-    .line 1
+    .line 3
     :goto_0
     iget-object v2, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mFrameMapping:[I
 
+    .line 4
+    .line 5
     array-length v2, v2
 
+    .line 6
     if-ge v1, v2, :cond_1
 
-    .line 2
+    .line 7
+    .line 8
     invoke-direct {p0, v1}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->getAddIndexByFrame(I)I
 
+    .line 9
+    .line 10
+    .line 11
     move-result v2
 
+    .line 12
     const/4 v3, 0x1
 
+    .line 13
     if-ge v1, v3, :cond_0
 
-    .line 3
+    .line 14
+    .line 15
     iget-object v2, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mFrameMapping:[I
 
+    .line 16
+    .line 17
     aput v0, v2, v1
 
+    .line 18
+    .line 19
     goto :goto_1
 
-    .line 4
+    .line 20
     :cond_0
     iget-object v3, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mFrameMapping:[I
 
+    .line 21
+    .line 22
     add-int/lit8 v4, v1, -0x1
 
+    .line 23
+    .line 24
     aget v4, v3, v4
 
+    .line 25
+    .line 26
     add-int/2addr v4, v2
 
+    .line 27
     aput v4, v3, v1
 
+    .line 28
+    .line 29
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
+    .line 30
+    .line 31
     goto :goto_0
 
+    .line 32
     :cond_1
     return-void
 .end method
@@ -1176,16 +1451,24 @@
     .line 1
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-interface {v0}, Lcom/miui/extravideo/interpolation/EncodeListener;->onError()V
 
+    .line 6
+    .line 7
+    .line 8
     const/4 v0, 0x0
 
-    .line 3
+    .line 9
     iput-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 10
+    .line 11
     :cond_0
     return-void
 .end method
@@ -1199,54 +1482,79 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
+    .line 5
     goto :goto_0
 
+    .line 6
     :catch_0
     move-exception v0
 
-    const/4 v1, 0x1
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 2
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    .line 8
+    .line 9
+    .line 10
+    const/4 v0, 0x1
 
-    move v0, v1
-
+    .line 11
     :goto_0
     const/4 v1, 0x0
 
+    .line 12
     if-eqz v0, :cond_1
 
-    .line 3
+    .line 13
+    .line 14
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 15
+    .line 16
     if-eqz v0, :cond_0
 
-    .line 4
+    .line 17
+    .line 18
     invoke-interface {v0}, Lcom/miui/extravideo/interpolation/EncodeListener;->onError()V
 
-    .line 5
+    .line 19
+    .line 20
+    .line 21
     iput-object v1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 22
+    .line 23
     :cond_0
     return-void
 
-    .line 6
+    .line 24
     :cond_1
     invoke-direct {p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->addMetaData()V
 
-    .line 7
+    .line 25
+    .line 26
+    .line 27
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 28
+    .line 29
     if-eqz v0, :cond_2
 
-    .line 8
+    .line 30
+    .line 31
     invoke-interface {v0}, Lcom/miui/extravideo/interpolation/EncodeListener;->onEncodeFinish()V
 
-    .line 9
+    .line 32
+    .line 33
+    .line 34
     iput-object v1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 35
+    .line 36
     :cond_2
     return-void
 .end method
@@ -1269,57 +1577,89 @@
     .line 1
     iget-boolean v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSupportWatermark:Z
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mWatermarkPipeline:Lcom/miui/extravideo/watermark/WatermarkRenderPipeline;
 
+    .line 6
+    .line 7
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 8
+    .line 9
     invoke-virtual {v0, p1}, Lcom/miui/extravideo/watermark/WatermarkRenderPipeline;->process([B)V
 
-    .line 3
+    .line 10
+    .line 11
+    .line 12
     :cond_0
     new-instance v0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;
 
+    .line 13
+    .line 14
     invoke-direct {v0}, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;-><init>()V
 
-    .line 4
+    .line 15
+    .line 16
+    .line 17
     array-length v1, p1
 
+    .line 18
     invoke-static {p1, v1}, Ljava/util/Arrays;->copyOf([BI)[B
 
+    .line 19
+    .line 20
+    .line 21
     move-result-object p1
 
+    .line 22
     iput-object p1, v0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;->data:[B
 
+    .line 23
+    .line 24
     const/4 p1, 0x0
 
-    .line 5
+    .line 25
     iput p1, v0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;->flag:I
 
-    .line 6
+    .line 26
+    .line 27
     iput-wide p2, v0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;->presentationTimeUs:J
 
-    .line 7
+    .line 28
+    .line 29
     iput p4, v0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;->representativeIndex:I
 
-    .line 8
+    .line 30
+    .line 31
     :try_start_0
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mQueue:Ljava/util/concurrent/BlockingQueue;
 
+    .line 32
+    .line 33
     invoke-interface {p0, v0}, Ljava/util/concurrent/BlockingQueue;->put(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 34
+    .line 35
+    .line 36
     goto :goto_0
 
+    .line 37
     :catch_0
     move-exception p0
 
-    .line 9
-    invoke-virtual {p0}, Ljava/lang/InterruptedException;->printStackTrace()V
+    .line 38
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
+    .line 39
+    .line 40
+    .line 41
     :goto_0
     return-void
 .end method
@@ -1330,29 +1670,44 @@
     .line 1
     new-instance v0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const/4 v1, 0x4
 
-    .line 2
+    .line 7
     iput v1, v0, Lcom/miui/extravideo/interpolation/EncodeBufferHolder;->flag:I
 
-    .line 3
+    .line 8
+    .line 9
     :try_start_0
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mQueue:Ljava/util/concurrent/BlockingQueue;
 
+    .line 10
+    .line 11
     invoke-interface {p0, v0}, Ljava/util/concurrent/BlockingQueue;->put(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 12
+    .line 13
+    .line 14
     goto :goto_0
 
+    .line 15
     :catch_0
     move-exception p0
 
-    .line 4
-    invoke-virtual {p0}, Ljava/lang/InterruptedException;->printStackTrace()V
+    .line 16
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
+    .line 17
+    .line 18
+    .line 19
     :goto_0
     return-void
 .end method
@@ -1365,81 +1720,147 @@
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v1, "doDecodeAndEncode FRAME_SKIP_SIZE_ORIGIN_SPEED_TO_NORMAL="
 
+    .line 7
+    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     iget v1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSkipSizeOrigin2Normal:I
 
+    .line 12
+    .line 13
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 14
+    .line 15
+    .line 16
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object v0
 
+    .line 20
     const-string v1, "VideoInterpolatorAsyncImp"
 
+    .line 21
+    .line 22
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 23
+    .line 24
+    .line 25
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDecoder:Lcom/miui/extravideo/common/MediaDecoderAsync;
 
+    .line 26
+    .line 27
     iget v1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mSkipSizeOrigin2Normal:I
 
+    .line 28
+    .line 29
     invoke-virtual {v0, v1}, Lcom/miui/extravideo/common/MediaDecoderAsync;->setSkipFrameTimes(I)V
 
-    .line 3
+    .line 30
+    .line 31
+    .line 32
     :try_start_0
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDecoder:Lcom/miui/extravideo/common/MediaDecoderAsync;
 
+    .line 33
+    .line 34
     invoke-virtual {v0}, Lcom/miui/extravideo/common/MediaDecoderAsync;->start()V
 
-    .line 4
+    .line 35
+    .line 36
+    .line 37
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncoder:Lcom/miui/extravideo/common/MediaEncoderAsync;
 
+    .line 38
+    .line 39
     invoke-virtual {v0}, Lcom/miui/extravideo/common/MediaEncoderAsync;->start()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 40
+    .line 41
+    .line 42
     goto :goto_0
 
+    .line 43
     :catch_0
     move-exception v0
 
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    .line 44
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 6
+    .line 45
+    .line 46
+    .line 47
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 48
+    .line 49
     if-eqz v0, :cond_0
 
-    .line 7
+    .line 50
+    .line 51
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDecodeThread:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;
 
+    .line 52
+    .line 53
     invoke-static {v0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;->access$000(Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;)Landroid/os/Handler;
 
+    .line 54
+    .line 55
+    .line 56
     move-result-object v0
 
+    .line 57
     new-instance v1, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$1;
 
+    .line 58
+    .line 59
     invoke-direct {v1, p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$1;-><init>(Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;)V
 
+    .line 60
+    .line 61
+    .line 62
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 8
+    .line 63
+    .line 64
+    .line 65
     :cond_0
     iget-object v0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeThread:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;
 
+    .line 66
+    .line 67
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
-    .line 9
+    .line 68
+    .line 69
+    .line 70
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mDecodeThread:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$MediaCodecHandlerThread;
 
+    .line 71
+    .line 72
     invoke-virtual {p0}, Landroid/os/HandlerThread;->quitSafely()Z
 
+    .line 73
+    .line 74
+    .line 75
     :goto_0
     return-void
 .end method
@@ -1458,5 +1879,7 @@
     .line 1
     iput-object p1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->mEncodeListener:Lcom/miui/extravideo/interpolation/EncodeListener;
 
+    .line 2
+    .line 3
     return-void
 .end method

@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Landroidx/core/view/accessibility/AccessibilityViewCommand$CommandArguments;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -32,11 +35,19 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/accessibility/AccessibilityViewCommand$CommandArguments;->mBundle:Landroid/os/Bundle;
 
+    .line 2
+    .line 3
     const-string v0, "ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE"
 
+    .line 4
+    .line 5
     invoke-virtual {p0, v0}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
+    .line 9
     return-object p0
 .end method

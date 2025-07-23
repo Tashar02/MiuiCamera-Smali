@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/engine/cache/SafeKeyGenerator$PoolableDigestContainer;
+.class final Lcom/bumptech/glide/load/engine/cache/SafeKeyGenerator$PoolableDigestContainer;
 .super Ljava/lang/Object;
 .source "SafeKeyGenerator.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final messageDigest:Ljava/security/MessageDigest;
+.field final messageDigest:Ljava/security/MessageDigest;
 
 .field private final stateVerifier:Lcom/bumptech/glide/util/pool/StateVerifier;
 
@@ -31,15 +31,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {}, Lcom/bumptech/glide/util/pool/StateVerifier;->newInstance()Lcom/bumptech/glide/util/pool/StateVerifier;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object v0
 
+    .line 8
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/cache/SafeKeyGenerator$PoolableDigestContainer;->stateVerifier:Lcom/bumptech/glide/util/pool/StateVerifier;
 
-    .line 3
+    .line 9
+    .line 10
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/cache/SafeKeyGenerator$PoolableDigestContainer;->messageDigest:Ljava/security/MessageDigest;
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -53,5 +62,7 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/engine/cache/SafeKeyGenerator$PoolableDigestContainer;->stateVerifier:Lcom/bumptech/glide/util/pool/StateVerifier;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

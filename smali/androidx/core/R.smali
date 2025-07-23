@@ -12,6 +12,7 @@
         Landroidx/core/R$id;,
         Landroidx/core/R$integer;,
         Landroidx/core/R$layout;,
+        Landroidx/core/R$menu;,
         Landroidx/core/R$string;,
         Landroidx/core/R$style;,
         Landroidx/core/R$styleable;
@@ -23,7 +24,11 @@
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

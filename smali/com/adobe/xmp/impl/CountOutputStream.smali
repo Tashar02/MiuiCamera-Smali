@@ -16,14 +16,20 @@
     .line 1
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
+    .line 5
     iput v0, p0, Lcom/adobe/xmp/impl/CountOutputStream;->bytesWritten:I
 
-    .line 3
+    .line 6
+    .line 7
     iput-object p1, p0, Lcom/adobe/xmp/impl/CountOutputStream;->out:Ljava/io/OutputStream;
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -35,6 +41,8 @@
     .line 1
     iget p0, p0, Lcom/adobe/xmp/impl/CountOutputStream;->bytesWritten:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 

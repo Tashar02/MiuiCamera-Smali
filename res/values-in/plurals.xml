@@ -54,6 +54,14 @@
     <plurals name="exit_version_hint">
         <item quantity="other">&lt;Data>Versi Kamera yang Anda gunakan tidak kompatibel dengan model perangkat Anda.&lt;br>Apl ini akan ditutup setelah &lt;font color=#FFCE16>&lt;b>%1$d dtk&lt;/b>&lt;/font> lagi. Uninstal pembaruan Kamera dan coba lagi&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Maju cepat %d detik</item>
+        <item quantity="one">Maju cepat %d detik</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Mundur %d detik</item>
+        <item quantity="one">Mundur %d detik</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d mnt</item>
     </plurals>

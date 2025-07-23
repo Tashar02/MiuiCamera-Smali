@@ -1,4 +1,4 @@
-.class public Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;
+.class Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;
 .super Ljava/lang/Object;
 .source "AsyncLayoutInflater.java"
 
@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public callback:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$OnInflateFinishedListener;
+.field callback:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$OnInflateFinishedListener;
 
-.field public inflater:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;
+.field inflater:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;
 
-.field public parent:Landroid/view/ViewGroup;
+.field parent:Landroid/view/ViewGroup;
 
-.field public resid:I
+.field resid:I
 
-.field public view:Landroid/view/View;
+.field view:Landroid/view/View;
 
 
 # direct methods
@@ -33,5 +33,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

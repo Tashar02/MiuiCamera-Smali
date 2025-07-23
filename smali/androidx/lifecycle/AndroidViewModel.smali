@@ -25,8 +25,12 @@
     invoke-direct {p0}, Landroidx/lifecycle/ViewModel;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/lifecycle/AndroidViewModel;->mApplication:Landroid/app/Application;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -48,5 +52,7 @@
     .line 1
     iget-object p0, p0, Landroidx/lifecycle/AndroidViewModel;->mApplication:Landroid/app/Application;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

@@ -43,70 +43,109 @@
     .locals 3
 
     .line 1
-    :try_start_0
     const-class v0, Landroidx/recyclerview/widget/RecyclerView;
 
-    const-string/jumbo v1, "mViewFlinger"
+    .line 2
+    .line 3
+    :try_start_0
+    const-string v1, "mViewFlinger"
 
+    .line 4
+    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v0
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
 
-    sput-object v0, Landroidx/recyclerview/widget/SpringRecyclerView;->VIEW_FLINGER:Ljava/lang/reflect/Field;
+    .line 9
+    sput-object v1, Landroidx/recyclerview/widget/SpringRecyclerView;->VIEW_FLINGER:Ljava/lang/reflect/Field;
 
-    const/4 v1, 0x1
+    .line 10
+    .line 11
+    const/4 v2, 0x1
 
-    .line 2
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    .line 12
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 3
+    .line 13
+    .line 14
+    .line 15
     :try_start_1
-    const-class v0, Landroidx/recyclerview/widget/RecyclerView;
+    const-string v1, "mScrollingChildHelper"
 
-    const-string v2, "mScrollingChildHelper"
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
+    .line 18
+    .line 19
+    .line 20
     move-result-object v0
 
+    .line 21
     sput-object v0, Landroidx/recyclerview/widget/SpringRecyclerView;->NESTED_SCROLL_HELPER:Ljava/lang/reflect/Field;
 
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    .line 22
+    .line 23
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_1
     .catch Ljava/lang/NoSuchFieldException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 5
+    .line 24
+    .line 25
+    .line 26
     new-instance v0, Landroidx/recyclerview/widget/SpringRecyclerView$NonEdgeEffectFactory;
 
+    .line 27
+    .line 28
     const/4 v1, 0x0
 
+    .line 29
     invoke-direct {v0, v1}, Landroidx/recyclerview/widget/SpringRecyclerView$NonEdgeEffectFactory;-><init>(Landroidx/recyclerview/widget/SpringRecyclerView$1;)V
 
+    .line 30
+    .line 31
+    .line 32
     sput-object v0, Landroidx/recyclerview/widget/SpringRecyclerView;->NON_EFFECT_FACTORY:Landroidx/recyclerview/widget/RecyclerView$EdgeEffectFactory;
 
+    .line 33
+    .line 34
     return-void
 
+    .line 35
     :catch_0
     move-exception v0
 
-    .line 6
+    .line 36
     new-instance v1, Ljava/lang/RuntimeException;
 
+    .line 37
+    .line 38
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 39
+    .line 40
+    .line 41
     throw v1
 
+    .line 42
     :catch_1
     move-exception v0
 
-    .line 7
+    .line 43
     new-instance v1, Ljava/lang/RuntimeException;
 
+    .line 44
+    .line 45
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 46
+    .line 47
+    .line 48
     throw v1
 .end method
 
@@ -226,6 +265,8 @@
     .line 1
     iget-object p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringHelper:Lmiuix/spring/view/SpringHelper;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -235,8 +276,12 @@
     .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/SpringRecyclerView;->springAvailable()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -246,6 +291,8 @@
     .line 1
     iget-boolean p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mHorizontalOverScrolling:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -255,6 +302,8 @@
     .line 1
     iput-boolean p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mHorizontalOverScrolling:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -264,6 +313,8 @@
     .line 1
     iget-boolean p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mVerticalOverScrolling:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -273,6 +324,8 @@
     .line 1
     iput-boolean p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mVerticalOverScrolling:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -282,6 +335,8 @@
     .line 1
     iget-object p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringNestedScrollingHelper:Landroidx/recyclerview/widget/SpringRecyclerView$SpringNestedScrollingHelper;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -291,6 +346,8 @@
     .line 1
     iget p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mManagedScrollState:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -300,6 +357,8 @@
     .line 1
     iget-object p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringFlinger:Landroidx/recyclerview/widget/SpringRecyclerView$SpringFlinger;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -310,20 +369,31 @@
     :try_start_0
     sget-object v0, Landroidx/recyclerview/widget/SpringRecyclerView;->NESTED_SCROLL_HELPER:Ljava/lang/reflect/Field;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 
+    .line 7
     :catch_0
     move-exception p0
 
-    .line 2
+    .line 8
     new-instance p1, Ljava/lang/RuntimeException;
 
+    .line 9
+    .line 10
     invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 11
+    .line 12
+    .line 13
     throw p1
 .end method
 
@@ -334,20 +404,31 @@
     :try_start_0
     sget-object v0, Landroidx/recyclerview/widget/SpringRecyclerView;->VIEW_FLINGER:Ljava/lang/reflect/Field;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 
+    .line 7
     :catch_0
     move-exception p0
 
-    .line 2
+    .line 8
     new-instance p1, Ljava/lang/RuntimeException;
 
+    .line 9
+    .line 10
     invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 11
+    .line 12
+    .line 13
     throw p1
 .end method
 
@@ -355,27 +436,43 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getOverScrollMode()I
+    invoke-virtual {p0}, Landroid/view/View;->getOverScrollMode()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     const/4 v1, 0x2
 
+    .line 6
     if-eq v0, v1, :cond_0
 
+    .line 7
+    .line 8
     invoke-virtual {p0}, Landroidx/recyclerview/widget/SpringRecyclerView;->getSpringEnabled()Z
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     if-eqz p0, :cond_0
 
+    .line 13
+    .line 14
     const/4 p0, 0x1
 
+    .line 15
     goto :goto_0
 
+    .line 16
     :cond_0
     const/4 p0, 0x0
 
+    .line 17
     :goto_0
     return p0
 .end method
@@ -388,53 +485,85 @@
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringHelper:Lmiuix/spring/view/SpringHelper;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lmiuix/spring/view/SpringHelper;->getHorizontalDistance()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
-    .line 2
+    .line 7
     iget-object v1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringHelper:Lmiuix/spring/view/SpringHelper;
 
+    .line 8
+    .line 9
     invoke-virtual {v1}, Lmiuix/spring/view/SpringHelper;->getVerticalDistance()I
 
+    .line 10
+    .line 11
+    .line 12
     move-result v1
 
+    .line 13
     if-nez v0, :cond_1
 
+    .line 14
+    .line 15
     if-eqz v1, :cond_0
 
+    .line 16
+    .line 17
     goto :goto_0
 
-    .line 3
+    .line 18
     :cond_0
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->draw(Landroid/graphics/Canvas;)V
 
+    .line 19
+    .line 20
+    .line 21
     goto :goto_1
 
-    .line 4
+    .line 22
     :cond_1
     :goto_0
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
+    .line 23
+    .line 24
+    .line 25
     move-result v2
 
+    .line 26
     neg-int v0, v0
 
+    .line 27
     int-to-float v0, v0
 
+    .line 28
     neg-int v1, v1
 
+    .line 29
     int-to-float v1, v1
 
-    .line 5
+    .line 30
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 6
+    .line 31
+    .line 32
+    .line 33
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->draw(Landroid/graphics/Canvas;)V
 
-    .line 7
+    .line 34
+    .line 35
+    .line 36
     invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
+    .line 37
+    .line 38
+    .line 39
     :goto_1
     return-void
 .end method
@@ -445,8 +574,12 @@
     .line 1
     invoke-super {p0}, Landroidx/recyclerview/widget/RemixRecyclerView;->getSpringEnabled()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -456,23 +589,35 @@
     .line 1
     iget-boolean v0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mHorizontalOverScrolling:Z
 
+    .line 2
+    .line 3
     if-nez v0, :cond_1
 
+    .line 4
+    .line 5
     iget-boolean p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mVerticalOverScrolling:Z
 
+    .line 6
+    .line 7
     if-eqz p0, :cond_0
 
+    .line 8
+    .line 9
     goto :goto_0
 
+    .line 10
     :cond_0
     const/4 p0, 0x0
 
+    .line 11
     goto :goto_1
 
+    .line 12
     :cond_1
     :goto_0
     const/4 p0, 0x1
 
+    .line 13
     :goto_1
     return p0
 .end method
@@ -483,8 +628,12 @@
     .line 1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RemixRecyclerView;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -495,45 +644,72 @@
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->onScrollStateChanged(I)V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mManagedScrollState:I
 
-    .line 3
+    .line 5
+    .line 6
     invoke-direct {p0}, Landroidx/recyclerview/widget/SpringRecyclerView;->springAvailable()Z
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     if-nez v0, :cond_0
 
+    .line 11
+    .line 12
     return-void
 
+    .line 13
     :cond_0
     const/4 v0, 0x2
 
+    .line 14
     if-eq p1, v0, :cond_2
 
-    .line 4
+    .line 15
+    .line 16
     iget-boolean p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mHorizontalOverScrolling:Z
 
+    .line 17
+    .line 18
     if-nez p1, :cond_1
 
+    .line 19
+    .line 20
     iget-boolean p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mVerticalOverScrolling:Z
 
+    .line 21
+    .line 22
     if-eqz p1, :cond_2
 
-    .line 5
+    .line 23
+    .line 24
     :cond_1
     iget-object p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringFlinger:Landroidx/recyclerview/widget/SpringRecyclerView$SpringFlinger;
 
+    .line 25
+    .line 26
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RemixRecyclerView$ViewFlinger;->stop()V
 
+    .line 27
+    .line 28
+    .line 29
     const/4 p1, 0x0
 
-    .line 6
+    .line 30
     iput-boolean p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mHorizontalOverScrolling:Z
 
-    .line 7
+    .line 31
+    .line 32
     iput-boolean p1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mVerticalOverScrolling:Z
 
+    .line 33
+    .line 34
     :cond_2
     return-void
 .end method
@@ -544,8 +720,12 @@
     .line 1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RemixRecyclerView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -555,6 +735,9 @@
     .line 1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RemixRecyclerView;->setOverScrollMode(I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -564,42 +747,70 @@
     .line 1
     iget v0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mManagedScrollState:I
 
+    .line 2
+    .line 3
     const/4 v1, 0x1
 
+    .line 4
     if-ne v0, v1, :cond_1
 
+    .line 5
+    .line 6
     if-nez p1, :cond_1
 
-    .line 2
+    .line 7
+    .line 8
     iget-object v0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringHelper:Lmiuix/spring/view/SpringHelper;
 
+    .line 9
+    .line 10
     invoke-virtual {v0}, Lmiuix/spring/view/SpringHelper;->getHorizontalDistance()I
 
+    .line 11
+    .line 12
+    .line 13
     move-result v0
 
-    .line 3
+    .line 14
     iget-object v1, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringHelper:Lmiuix/spring/view/SpringHelper;
 
+    .line 15
+    .line 16
     invoke-virtual {v1}, Lmiuix/spring/view/SpringHelper;->getVerticalDistance()I
 
+    .line 17
+    .line 18
+    .line 19
     move-result v1
 
+    .line 20
     if-nez v0, :cond_0
 
+    .line 21
+    .line 22
     if-eqz v1, :cond_1
 
-    .line 4
+    .line 23
+    .line 24
     :cond_0
     iget-object p0, p0, Landroidx/recyclerview/widget/SpringRecyclerView;->mSpringFlinger:Landroidx/recyclerview/widget/SpringRecyclerView$SpringFlinger;
 
+    .line 25
+    .line 26
     invoke-virtual {p0, v0, v1}, Landroidx/recyclerview/widget/SpringRecyclerView$SpringFlinger;->springBack(II)V
 
+    .line 27
+    .line 28
+    .line 29
     return-void
 
-    .line 5
+    .line 30
     :cond_1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setScrollState(I)V
 
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method
 
@@ -609,5 +820,8 @@
     .line 1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RemixRecyclerView;->setSpringEnabled(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

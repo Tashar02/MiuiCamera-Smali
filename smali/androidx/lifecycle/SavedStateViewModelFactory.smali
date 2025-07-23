@@ -42,31 +42,51 @@
     .locals 4
 
     .line 1
-    const-class v0, Landroidx/lifecycle/SavedStateHandle;
-
-    const/4 v1, 0x2
-
-    new-array v1, v1, [Ljava/lang/Class;
-
-    const-class v2, Landroid/app/Application;
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const/4 v2, 0x1
-
-    aput-object v0, v1, v2
-
-    sput-object v1, Landroidx/lifecycle/SavedStateViewModelFactory;->ANDROID_VIEWMODEL_SIGNATURE:[Ljava/lang/Class;
-
-    new-array v1, v2, [Ljava/lang/Class;
-
-    aput-object v0, v1, v3
+    const/4 v0, 0x2
 
     .line 2
-    sput-object v1, Landroidx/lifecycle/SavedStateViewModelFactory;->VIEWMODEL_SIGNATURE:[Ljava/lang/Class;
+    new-array v0, v0, [Ljava/lang/Class;
 
+    .line 3
+    .line 4
+    const-class v1, Landroid/app/Application;
+
+    .line 5
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    aput-object v1, v0, v2
+
+    .line 8
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    const-class v3, Landroidx/lifecycle/SavedStateHandle;
+
+    .line 11
+    .line 12
+    aput-object v3, v0, v1
+
+    .line 13
+    .line 14
+    sput-object v0, Landroidx/lifecycle/SavedStateViewModelFactory;->ANDROID_VIEWMODEL_SIGNATURE:[Ljava/lang/Class;
+
+    .line 15
+    .line 16
+    new-array v0, v1, [Ljava/lang/Class;
+
+    .line 17
+    .line 18
+    aput-object v3, v0, v2
+
+    .line 19
+    .line 20
+    sput-object v0, Landroidx/lifecycle/SavedStateViewModelFactory;->VIEWMODEL_SIGNATURE:[Ljava/lang/Class;
+
+    .line 21
+    .line 22
     return-void
 .end method
 
@@ -206,39 +226,62 @@
     .line 1
     invoke-virtual {p0}, Ljava/lang/Class;->getConstructors()[Ljava/lang/reflect/Constructor;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     array-length v0, p0
 
+    .line 6
     const/4 v1, 0x0
 
+    .line 7
     :goto_0
     if-ge v1, v0, :cond_1
 
+    .line 8
+    .line 9
     aget-object v2, p0, v1
 
-    .line 2
+    .line 10
+    .line 11
     invoke-virtual {v2}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object v3
 
-    .line 3
+    .line 15
     invoke-static {p1, v3}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
+    .line 16
+    .line 17
+    .line 18
     move-result v3
 
+    .line 19
     if-eqz v3, :cond_0
 
+    .line 20
+    .line 21
     return-object v2
 
+    .line 22
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
+    .line 23
+    .line 24
     goto :goto_0
 
+    .line 25
     :cond_1
     const/4 p0, 0x0
 
+    .line 26
     return-object p0
 .end method
 
@@ -548,9 +591,16 @@
     .line 1
     iget-object v0, p0, Landroidx/lifecycle/SavedStateViewModelFactory;->mSavedStateRegistry:Landroidx/savedstate/SavedStateRegistry;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/lifecycle/SavedStateViewModelFactory;->mLifecycle:Landroidx/lifecycle/Lifecycle;
 
+    .line 4
+    .line 5
     invoke-static {p1, v0, p0}, Landroidx/lifecycle/SavedStateHandleController;->attachHandleIfNeeded(Landroidx/lifecycle/ViewModel;Landroidx/savedstate/SavedStateRegistry;Landroidx/lifecycle/Lifecycle;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

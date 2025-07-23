@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/vlogpro/VPItem$1;
+.class Lcom/android/camera/fragment/vlogpro/VPItem$1;
 .super Ljava/lang/Object;
 .source "VPItem.java"
 
@@ -33,6 +33,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -40,14 +43,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/android/camera/fragment/vlogpro/VPItem;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "source"
-        }
-    .end annotation
 
     .line 2
     new-instance p0, Lcom/android/camera/fragment/vlogpro/VPItem;
@@ -59,14 +54,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "source"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1}, Lcom/android/camera/fragment/vlogpro/VPItem$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/camera/fragment/vlogpro/VPItem;
@@ -78,14 +65,6 @@
 
 .method public newArray(I)[Lcom/android/camera/fragment/vlogpro/VPItem;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "size"
-        }
-    .end annotation
 
     .line 2
     new-array p0, p1, [Lcom/android/camera/fragment/vlogpro/VPItem;
@@ -95,14 +74,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "size"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1}, Lcom/android/camera/fragment/vlogpro/VPItem$1;->newArray(I)[Lcom/android/camera/fragment/vlogpro/VPItem;

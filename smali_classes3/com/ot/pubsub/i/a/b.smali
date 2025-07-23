@@ -30,6 +30,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -39,6 +40,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -72,10 +76,10 @@
 
     .line 2
     :try_start_1
-    invoke-virtual {p0, v4}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p0, v4}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 3
-    invoke-virtual {p0, v4}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p0, v4}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     const-string v4, "POST"
 
@@ -87,29 +91,29 @@
     const-string v5, "*/*"
 
     .line 5
-    invoke-virtual {p0, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v4, v5}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v4, "connection"
 
     const-string v5, "Keep-Alive"
 
     .line 6
-    invoke-virtual {p0, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v4, v5}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v4, "Content-Type"
 
     const-string v5, "application/json"
 
     .line 7
-    invoke-virtual {p0, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v4, v5}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v4, "Authorization"
 
     .line 8
-    invoke-virtual {p0, v4, p2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v4, p2}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    invoke-virtual {p0, v2}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+    invoke-virtual {p0, v2}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
     .line 10
     invoke-virtual {p1, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
@@ -117,7 +121,7 @@
     move-result-object p1
 
     .line 11
-    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object p2
     :try_end_1
@@ -159,7 +163,7 @@
 
     .line 18
     :cond_0
-    invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object p1
     :try_end_2
@@ -327,7 +331,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
@@ -434,10 +438,10 @@
 
     .line 38
     :try_start_1
-    invoke-virtual {p1, v3}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p1, v3}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 39
-    invoke-virtual {p1, v3}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p1, v3}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     const-string v3, "POST"
 
@@ -449,7 +453,7 @@
     const-string v4, "application/x-www-form-urlencoded"
 
     .line 41
-    invoke-virtual {p1, v3, v4}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v3, v4}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "Authorization"
 
@@ -468,10 +472,10 @@
 
     move-result-object p0
 
-    invoke-virtual {p1, v3, p0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v3, p0}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 43
-    invoke-virtual {p1, v1}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+    invoke-virtual {p1, v1}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
     .line 44
     invoke-virtual {p2, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
@@ -479,20 +483,20 @@
     move-result-object p0
 
     .line 45
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {p1}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object p2
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    const/4 v1, 0x0
-
     .line 46
     :try_start_2
-    array-length v3, p0
+    array-length v1, p0
 
-    invoke-virtual {p2, p0, v1, v3}, Ljava/io/OutputStream;->write([BII)V
+    const/4 v3, 0x0
+
+    invoke-virtual {p2, p0, v3, v1}, Ljava/io/OutputStream;->write([BII)V
 
     .line 47
     invoke-virtual {p2}, Ljava/io/OutputStream;->flush()V
@@ -522,7 +526,7 @@
     invoke-static {v1, p0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 50
-    invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p1}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object p0
     :try_end_2
@@ -731,10 +735,10 @@
 
     .line 69
     :try_start_1
-    invoke-virtual {p3, v3}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+    invoke-virtual {p3, v3}, Ljava/net/URLConnection;->setConnectTimeout(I)V
 
     .line 70
-    invoke-virtual {p3, v3}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+    invoke-virtual {p3, v3}, Ljava/net/URLConnection;->setReadTimeout(I)V
 
     .line 71
     invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -776,10 +780,10 @@
     const-string v0, "application/x-www-form-urlencoded"
 
     .line 75
-    invoke-virtual {p3, p0, v0}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p3, p0, v0}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 76
-    invoke-virtual {p3, v5}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+    invoke-virtual {p3, v5}, Ljava/net/URLConnection;->setDoOutput(Z)V
 
     .line 77
     invoke-virtual {p2, v4}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
@@ -787,7 +791,7 @@
     move-result-object p0
 
     .line 78
-    invoke-virtual {p3}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+    invoke-virtual {p3}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object p2
     :try_end_2
@@ -816,7 +820,7 @@
     move-result p0
 
     .line 82
-    invoke-virtual {p3}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+    invoke-virtual {p3}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v0
     :try_end_3

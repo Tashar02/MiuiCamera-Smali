@@ -31,14 +31,4 @@
 .end method
 
 .method public abstract onUpdate(FF)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "x",
-            "y"
-        }
-    .end annotation
 .end method

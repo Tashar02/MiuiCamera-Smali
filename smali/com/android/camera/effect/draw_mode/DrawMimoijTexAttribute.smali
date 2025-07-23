@@ -57,25 +57,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "viewWidth",
-            "viewHeight",
-            "textureWidth",
-            "textureHeight",
-            "isSnapshot"
-        }
-    .end annotation
-
     .line 5
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawAttribute;-><init>()V
 
@@ -121,22 +102,6 @@
 # virtual methods
 .method public init(I[F[FII)Lcom/android/camera/effect/draw_mode/DrawMimoijTexAttribute;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "textureTransform",
-            "mvpTransform",
-            "w",
-            "h"
-        }
-    .end annotation
 
     const/16 v0, 0xd
 
@@ -163,24 +128,6 @@
 
 .method public init(I[F[FIIZ)Lcom/android/camera/effect/draw_mode/DrawMimoijTexAttribute;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "textureTransform",
-            "mvpTransform",
-            "w",
-            "h",
-            "isTextureOES"
-        }
-    .end annotation
 
     .line 7
     iput-boolean p6, p0, Lcom/android/camera/effect/draw_mode/DrawMimoijTexAttribute;->mIsTextureOES:Z

@@ -108,6 +108,18 @@
         <item quantity="few">&lt;Data>Verze fotoaparátu, kterou používáte, není kompatibilní s modelem vašeho zařízení.&lt;br>Aplikace se zavře za &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Odinstalujte aktualizace fotoaparátu a zkuste to znovu.&lt;/Data></item>
         <item quantity="many">&lt;Data>Verze fotoaparátu, kterou používáte, není kompatibilní s modelem vašeho zařízení.&lt;br>Aplikace se zavře za &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Odinstalujte aktualizace fotoaparátu a zkuste to znovu.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Posunout vpřed o %d sekund</item>
+        <item quantity="one">Posunout vpřed o %d sekundu</item>
+        <item quantity="few">Posunout vpřed o %d sekundy</item>
+        <item quantity="many">Posunout vpřed o %d sekundy</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Přetočit zpět o %d sekund</item>
+        <item quantity="one">Přetočit zpět o %d sekundu</item>
+        <item quantity="few">Přetočit zpět o %d sekundy</item>
+        <item quantity="many">Přetočit zpět o %d sekundy</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min.</item>
         <item quantity="one">%1$d min.</item>

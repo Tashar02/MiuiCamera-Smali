@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/engine/bitmap_recycle/LruArrayPool$KeyPool;
+.class final Lcom/bumptech/glide/load/engine/bitmap_recycle/LruArrayPool$KeyPool;
 .super Lcom/bumptech/glide/load/engine/bitmap_recycle/BaseKeyPool;
 .source "LruArrayPool.java"
 
@@ -29,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BaseKeyPool;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -70,12 +73,20 @@
     .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/bitmap_recycle/BaseKeyPool;->get()Lcom/bumptech/glide/load/engine/bitmap_recycle/Poolable;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     check-cast p0, Lcom/bumptech/glide/load/engine/bitmap_recycle/LruArrayPool$Key;
 
-    .line 2
+    .line 6
+    .line 7
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/engine/bitmap_recycle/LruArrayPool$Key;->init(ILjava/lang/Class;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-object p0
 .end method

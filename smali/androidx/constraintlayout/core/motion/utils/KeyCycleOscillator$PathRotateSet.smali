@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public type:Ljava/lang/String;
+.field type:Ljava/lang/String;
 
-.field public typeId:I
+.field typeId:I
 
 
 # direct methods
@@ -28,15 +28,24 @@
     invoke-direct {p0}, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$PathRotateSet;->type:Ljava/lang/String;
 
-    .line 3
+    .line 5
+    .line 6
     invoke-static {p1}, Landroidx/constraintlayout/core/motion/utils/TypedValues$CycleType;->getId(Ljava/lang/String;)I
 
+    .line 7
+    .line 8
+    .line 9
     move-result p1
 
+    .line 10
     iput p1, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$PathRotateSet;->typeId:I
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -48,22 +57,39 @@
     .line 1
     invoke-virtual {p0, p2}, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator;->get(F)F
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     invoke-static {p5, p6, p3, p4}, Ljava/lang/Math;->atan2(DD)D
 
+    .line 6
+    .line 7
+    .line 8
     move-result-wide p2
 
+    .line 9
     invoke-static {p2, p3}, Ljava/lang/Math;->toDegrees(D)D
 
+    .line 10
+    .line 11
+    .line 12
     move-result-wide p2
 
+    .line 13
     double-to-float p2, p2
 
+    .line 14
     add-float/2addr p0, p2
 
+    .line 15
     invoke-virtual {p1, p0}, Landroidx/constraintlayout/core/motion/MotionWidget;->setRotationZ(F)V
 
+    .line 16
+    .line 17
+    .line 18
     return-void
 .end method
 
@@ -73,11 +99,20 @@
     .line 1
     iget v0, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$PathRotateSet;->typeId:I
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p2}, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator;->get(F)F
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     invoke-virtual {p1, v0, p0}, Landroidx/constraintlayout/core/motion/MotionWidget;->setValue(IF)Z
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

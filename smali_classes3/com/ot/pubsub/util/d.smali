@@ -1,4 +1,4 @@
-.class public final Lcom/ot/pubsub/util/d;
+.class final Lcom/ot/pubsub/util/d;
 .super Ljava/lang/Object;
 
 # interfaces
@@ -23,6 +23,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -34,8 +37,12 @@
     .line 1
     invoke-virtual {p1, p2}, Ljava/lang/String;->compareToIgnoreCase(Ljava/lang/String;)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -45,11 +52,19 @@
     .line 1
     check-cast p1, Ljava/lang/String;
 
+    .line 2
+    .line 3
     check-cast p2, Ljava/lang/String;
 
+    .line 4
+    .line 5
     invoke-virtual {p0, p1, p2}, Lcom/ot/pubsub/util/d;->a(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method

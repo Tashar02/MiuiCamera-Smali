@@ -1,4 +1,4 @@
-.class public Lcom/arcsoft/avatar2/AvatarEngine$2;
+.class Lcom/arcsoft/avatar2/AvatarEngine$2;
 .super Ljava/lang/Object;
 .source "AvatarEngine.java"
 
@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/ArrayList;
+.field final synthetic a:Ljava/util/ArrayList;
 
-.field public final synthetic b:I
+.field final synthetic b:I
 
-.field public final synthetic c:Lcom/arcsoft/avatar2/AvatarEngine;
+.field final synthetic c:Lcom/arcsoft/avatar2/AvatarEngine;
 
 
 # direct methods
@@ -32,12 +32,21 @@
     .line 1
     iput-object p1, p0, Lcom/arcsoft/avatar2/AvatarEngine$2;->c:Lcom/arcsoft/avatar2/AvatarEngine;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/arcsoft/avatar2/AvatarEngine$2;->a:Ljava/util/ArrayList;
 
+    .line 4
+    .line 5
     iput p3, p0, Lcom/arcsoft/avatar2/AvatarEngine$2;->b:I
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -146,7 +155,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p2, "type = "
+    const-string/jumbo p2, "type = "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

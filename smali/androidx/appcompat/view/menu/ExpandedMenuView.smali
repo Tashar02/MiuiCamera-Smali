@@ -30,19 +30,29 @@
 .method public static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x2
 
+    .line 2
     new-array v0, v0, [I
 
-    .line 1
+    .line 3
+    .line 4
     fill-array-data v0, :array_0
 
+    .line 5
+    .line 6
+    .line 7
     sput-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->TINT_ATTRS:[I
 
+    .line 8
+    .line 9
     return-void
 
+    .line 10
     nop
 
+    .line 11
     :array_0
     .array-data 4
         0x10100d4
@@ -68,7 +78,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    invoke-virtual {p0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {p0, p0}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 4
     sget-object v0, Landroidx/appcompat/view/menu/ExpandedMenuView;->TINT_ATTRS:[I
@@ -91,7 +101,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p0, p2}, Landroid/widget/ListView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p2}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
     const/4 p2, 0x1
@@ -125,6 +135,8 @@
     .line 1
     iget p0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->mAnimations:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -134,6 +146,8 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->mMenu:Landroidx/appcompat/view/menu/MenuBuilder;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -143,12 +157,19 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/view/menu/ExpandedMenuView;->mMenu:Landroidx/appcompat/view/menu/MenuBuilder;
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     invoke-virtual {p0, p1, v0}, Landroidx/appcompat/view/menu/MenuBuilder;->performItemAction(Landroid/view/MenuItem;I)Z
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     return p0
 .end method
 
@@ -158,11 +179,17 @@
     .line 1
     invoke-super {p0}, Landroid/widget/ListView;->onDetachedFromWindow()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
-    invoke-virtual {p0, v0}, Landroid/widget/ListView;->setChildrenDrawingCacheEnabled(Z)V
+    .line 5
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setChildrenDrawingCacheEnabled(Z)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -172,15 +199,28 @@
     .line 1
     invoke-virtual {p0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p1
 
-    invoke-interface {p1, p3}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
+    .line 5
+    invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p1
 
+    .line 9
     check-cast p1, Landroidx/appcompat/view/menu/MenuItemImpl;
 
+    .line 10
+    .line 11
     invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/ExpandedMenuView;->invokeItem(Landroidx/appcompat/view/menu/MenuItemImpl;)Z
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method

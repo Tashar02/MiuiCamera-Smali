@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/DefaultSpecialEffectsController$7;
+.class Landroidx/fragment/app/DefaultSpecialEffectsController$7;
 .super Ljava/lang/Object;
 .source "DefaultSpecialEffectsController.java"
 
@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
+.field final synthetic this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
 
-.field public final synthetic val$impl:Landroidx/fragment/app/FragmentTransitionImpl;
+.field final synthetic val$impl:Landroidx/fragment/app/FragmentTransitionImpl;
 
-.field public final synthetic val$lastInEpicenterRect:Landroid/graphics/Rect;
+.field final synthetic val$lastInEpicenterRect:Landroid/graphics/Rect;
 
-.field public final synthetic val$lastInEpicenterView:Landroid/view/View;
+.field final synthetic val$lastInEpicenterView:Landroid/view/View;
 
 
 # direct methods
@@ -34,14 +34,25 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$7;->this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$7;->val$impl:Landroidx/fragment/app/FragmentTransitionImpl;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$7;->val$lastInEpicenterView:Landroid/view/View;
 
+    .line 6
+    .line 7
     iput-object p4, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$7;->val$lastInEpicenterRect:Landroid/graphics/Rect;
 
+    .line 8
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -53,11 +64,20 @@
     .line 1
     iget-object v0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$7;->val$impl:Landroidx/fragment/app/FragmentTransitionImpl;
 
+    .line 2
+    .line 3
     iget-object v1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$7;->val$lastInEpicenterView:Landroid/view/View;
 
+    .line 4
+    .line 5
     iget-object p0, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$7;->val$lastInEpicenterRect:Landroid/graphics/Rect;
 
+    .line 6
+    .line 7
     invoke-virtual {v0, v1, p0}, Landroidx/fragment/app/FragmentTransitionImpl;->getBoundsOnScreen(Landroid/view/View;Landroid/graphics/Rect;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

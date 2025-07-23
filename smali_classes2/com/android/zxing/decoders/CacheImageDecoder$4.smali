@@ -1,4 +1,4 @@
-.class public Lcom/android/zxing/decoders/CacheImageDecoder$4;
+.class Lcom/android/zxing/decoders/CacheImageDecoder$4;
 .super Ljava/lang/Object;
 .source "CacheImageDecoder.java"
 
@@ -28,26 +28,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
+.field final synthetic this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/zxing/decoders/CacheImageDecoder;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/zxing/decoders/CacheImageDecoder$4;->this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -55,15 +52,6 @@
 # virtual methods
 .method public apply(Lcom/android/zxing/decoders/CacheImageDecoder$FrameInfo;)Ljava/lang/Long;
     .locals 11
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "info"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -101,7 +89,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -170,7 +158,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -270,15 +258,6 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "info"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

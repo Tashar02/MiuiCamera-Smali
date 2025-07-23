@@ -30,15 +30,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "config"
-        }
-    .end annotation
-
     .line 1
     invoke-direct {p0, p1}, Lorg/greenrobot/greendao/AbstractDao;-><init>(Lorg/greenrobot/greendao/internal/DaoConfig;)V
 
@@ -47,16 +38,6 @@
 
 .method public constructor <init>(Lorg/greenrobot/greendao/internal/DaoConfig;Lcom/android/camera/db/greendao/DaoSession;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "config",
-            "daoSession"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0, p1, p2}, Lorg/greenrobot/greendao/AbstractDao;-><init>(Lorg/greenrobot/greendao/internal/DaoConfig;Lorg/greenrobot/greendao/AbstractDaoSession;)V
@@ -66,96 +47,139 @@
 
 .method public static createTable(Lorg/greenrobot/greendao/database/Database;Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "db",
-            "ifNotExists"
-        }
-    .end annotation
 
+    .line 1
     if-eqz p1, :cond_0
 
+    .line 2
+    .line 3
     const-string p1, "IF NOT EXISTS "
 
+    .line 4
+    .line 5
     goto :goto_0
 
+    .line 6
     :cond_0
     const-string p1, ""
 
-    .line 1
+    .line 7
+    .line 8
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 11
+    .line 12
+    .line 13
     const-string v1, "CREATE TABLE "
 
+    .line 14
+    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 16
+    .line 17
+    .line 18
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     const-string p1, "\"tasks\" (\"_id\" INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,\"start_time\" INTEGER,\"media_store_id\" INTEGER,\"media_path\" TEXT,\"progress_status\" INTEGER NOT NULL,\"progress_percentage\" INTEGER NOT NULL,\"jpeg_rotation\" INTEGER NOT NULL,\"no_gaussian\" INTEGER NOT NULL,\"application_id\" TEXT,\"thumbnail_path\" TEXT,\"size\" INTEGER,\"mime_type\" TEXT,\"date_taken\" INTEGER,\"width\" INTEGER,\"height\" INTEGER,\"bucket_id\" TEXT,\"progress_anim_type\" INTEGER);"
 
+    .line 22
+    .line 23
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 24
+    .line 25
+    .line 26
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object p1
 
+    .line 30
     invoke-interface {p0, p1}, Lorg/greenrobot/greendao/database/Database;->execSQL(Ljava/lang/String;)V
 
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method
 
 .method public static dropTable(Lorg/greenrobot/greendao/database/Database;Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "db",
-            "ifExists"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v1, "DROP TABLE "
 
+    .line 7
+    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     if-eqz p1, :cond_0
 
+    .line 12
+    .line 13
     const-string p1, "IF EXISTS "
 
+    .line 14
+    .line 15
     goto :goto_0
 
+    .line 16
     :cond_0
     const-string p1, ""
 
+    .line 17
+    .line 18
     :goto_0
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     const-string p1, "\"tasks\""
 
+    .line 22
+    .line 23
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 24
+    .line 25
+    .line 26
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object p1
 
-    .line 2
+    .line 30
     invoke-interface {p0, p1}, Lorg/greenrobot/greendao/database/Database;->execSQL(Ljava/lang/String;)V
 
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method
 
@@ -163,19 +187,9 @@
 # virtual methods
 .method public final bindValues(Landroid/database/sqlite/SQLiteStatement;Lcom/android/camera/db/element/SaveTask;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "stmt",
-            "entity"
-        }
-    .end annotation
 
     .line 28
-    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteStatement;->clearBindings()V
+    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteProgram;->clearBindings()V
 
     .line 29
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getId()Ljava/lang/Long;
@@ -191,7 +205,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 31
     :cond_0
@@ -208,7 +222,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 33
     :cond_1
@@ -225,7 +239,7 @@
 
     move-result-wide v1
 
-    invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 35
     :cond_2
@@ -238,52 +252,52 @@
     const/4 v0, 0x4
 
     .line 36
-    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
-
-    :cond_3
-    const/4 p0, 0x5
+    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteProgram;->bindString(ILjava/lang/String;)V
 
     .line 37
+    :cond_3
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getStatus()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    const/4 p0, 0x5
 
-    const/4 p0, 0x6
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 38
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getPercentage()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    const/4 p0, 0x6
 
-    const/4 p0, 0x7
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 39
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getJpegRotation()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    const/4 p0, 0x7
 
-    const/16 p0, 0x8
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 40
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getNoGaussian()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    const/16 p0, 0x8
+
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     const/16 p0, 0x9
 
@@ -292,7 +306,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1, p0, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
+    invoke-virtual {p1, p0, v0}, Landroid/database/sqlite/SQLiteProgram;->bindString(ILjava/lang/String;)V
 
     .line 42
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getThumbnailPath()Ljava/lang/String;
@@ -304,7 +318,7 @@
     const/16 v0, 0xa
 
     .line 43
-    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
+    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteProgram;->bindString(ILjava/lang/String;)V
 
     :cond_4
     const/16 p0, 0xb
@@ -314,7 +328,7 @@
 
     move-result-wide v0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 45
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getMimeType()Ljava/lang/String;
@@ -326,7 +340,7 @@
     const/16 v0, 0xc
 
     .line 46
-    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
+    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteProgram;->bindString(ILjava/lang/String;)V
 
     :cond_5
     const/16 p0, 0xd
@@ -336,29 +350,29 @@
 
     move-result-wide v0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
-
-    const/16 p0, 0xe
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 48
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getWidth()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    const/16 p0, 0xe
 
-    const/16 p0, 0xf
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 49
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getHeight()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    const/16 p0, 0xf
+
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     .line 50
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getBucketId()Ljava/lang/String;
@@ -370,35 +384,25 @@
     const/16 v0, 0x10
 
     .line 51
-    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
-
-    :cond_6
-    const/16 p0, 0x11
+    invoke-virtual {p1, v0, p0}, Landroid/database/sqlite/SQLiteProgram;->bindString(ILjava/lang/String;)V
 
     .line 52
+    :cond_6
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getProgressAnimType()I
 
-    move-result p2
+    move-result p0
 
-    int-to-long v0, p2
+    int-to-long v0, p0
 
-    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
+    const/16 p0, 0x11
+
+    invoke-virtual {p1, p0, v0, v1}, Landroid/database/sqlite/SQLiteProgram;->bindLong(IJ)V
 
     return-void
 .end method
 
 .method public bridge synthetic bindValues(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "stmt",
-            "entity"
-        }
-    .end annotation
 
     .line 1
     check-cast p2, Lcom/android/camera/db/element/SaveTask;
@@ -410,16 +414,6 @@
 
 .method public final bindValues(Lorg/greenrobot/greendao/database/DatabaseStatement;Lcom/android/camera/db/element/SaveTask;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "stmt",
-            "entity"
-        }
-    .end annotation
 
     .line 3
     invoke-interface {p1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->clearBindings()V
@@ -487,48 +481,48 @@
     .line 11
     invoke-interface {p1, v0, p0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    :cond_3
-    const/4 p0, 0x5
-
     .line 12
+    :cond_3
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getStatus()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
+
+    const/4 p0, 0x5
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
-
-    const/4 p0, 0x6
 
     .line 13
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getPercentage()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
+
+    const/4 p0, 0x6
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
-
-    const/4 p0, 0x7
 
     .line 14
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getJpegRotation()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
+
+    const/4 p0, 0x7
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
-
-    const/16 p0, 0x8
 
     .line 15
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getNoGaussian()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
+
+    const/16 p0, 0x8
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
@@ -585,25 +579,25 @@
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    const/16 p0, 0xe
-
     .line 23
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getWidth()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
+
+    const/16 p0, 0xe
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
-
-    const/16 p0, 0xf
 
     .line 24
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getHeight()I
 
-    move-result v0
+    move-result p0
 
-    int-to-long v0, v0
+    int-to-long v0, p0
+
+    const/16 p0, 0xf
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
@@ -619,15 +613,15 @@
     .line 26
     invoke-interface {p1, v0, p0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    :cond_6
-    const/16 p0, 0x11
-
     .line 27
+    :cond_6
     invoke-virtual {p2}, Lcom/android/camera/db/element/SaveTask;->getProgressAnimType()I
 
-    move-result p2
+    move-result p0
 
-    int-to-long v0, p2
+    int-to-long v0, p0
+
+    const/16 p0, 0x11
 
     invoke-interface {p1, p0, v0, v1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
@@ -636,16 +630,6 @@
 
 .method public bridge synthetic bindValues(Lorg/greenrobot/greendao/database/DatabaseStatement;Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "stmt",
-            "entity"
-        }
-    .end annotation
 
     .line 2
     check-cast p2, Lcom/android/camera/db/element/SaveTask;
@@ -657,14 +641,6 @@
 
 .method public getKey(Lcom/android/camera/db/element/SaveTask;)Ljava/lang/Long;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "entity"
-        }
-    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -683,14 +659,6 @@
 
 .method public bridge synthetic getKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "entity"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/db/element/SaveTask;
@@ -704,14 +672,6 @@
 
 .method public hasKey(Lcom/android/camera/db/element/SaveTask;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "entity"
-        }
-    .end annotation
 
     .line 2
     invoke-virtual {p1}, Lcom/android/camera/db/element/SaveTask;->getId()Ljava/lang/Long;
@@ -733,14 +693,6 @@
 
 .method public bridge synthetic hasKey(Ljava/lang/Object;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "entity"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/db/element/SaveTask;
@@ -755,23 +707,15 @@
 .method public final isEntityUpdateable()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
 .method public readEntity(Landroid/database/Cursor;I)Lcom/android/camera/db/element/SaveTask;
     .locals 23
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cursor",
-            "offset"
-        }
-    .end annotation
 
     move-object/from16 v0, p1
 
@@ -1102,16 +1046,6 @@
 
 .method public bridge synthetic readEntity(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "cursor",
-            "offset"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/db/greendao/SaveTaskDao;->readEntity(Landroid/database/Cursor;I)Lcom/android/camera/db/element/SaveTask;
@@ -1123,18 +1057,6 @@
 
 .method public readEntity(Landroid/database/Cursor;Lcom/android/camera/db/element/SaveTask;I)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "cursor",
-            "entity",
-            "offset"
-        }
-    .end annotation
 
     add-int/lit8 p0, p3, 0x0
 
@@ -1450,18 +1372,6 @@
 
 .method public bridge synthetic readEntity(Landroid/database/Cursor;Ljava/lang/Object;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000,
-            0x1000
-        }
-        names = {
-            "cursor",
-            "entity",
-            "offset"
-        }
-    .end annotation
 
     .line 2
     check-cast p2, Lcom/android/camera/db/element/SaveTask;
@@ -1473,16 +1383,6 @@
 
 .method public readKey(Landroid/database/Cursor;I)Ljava/lang/Long;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cursor",
-            "offset"
-        }
-    .end annotation
 
     add-int/lit8 p2, p2, 0x0
 
@@ -1512,16 +1412,6 @@
 
 .method public bridge synthetic readKey(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "cursor",
-            "offset"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/db/greendao/SaveTaskDao;->readKey(Landroid/database/Cursor;I)Ljava/lang/Long;
@@ -1533,16 +1423,6 @@
 
 .method public final updateKeyAfterInsert(Lcom/android/camera/db/element/SaveTask;J)Ljava/lang/Long;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "entity",
-            "rowId"
-        }
-    .end annotation
 
     .line 2
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -1561,16 +1441,6 @@
 
 .method public bridge synthetic updateKeyAfterInsert(Ljava/lang/Object;J)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "entity",
-            "rowId"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/db/element/SaveTask;

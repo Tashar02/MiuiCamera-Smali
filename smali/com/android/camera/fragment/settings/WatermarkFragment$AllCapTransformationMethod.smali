@@ -1,4 +1,4 @@
-.class public final Lcom/android/camera/fragment/settings/WatermarkFragment$AllCapTransformationMethod;
+.class final Lcom/android/camera/fragment/settings/WatermarkFragment$AllCapTransformationMethod;
 .super Landroid/text/method/ReplacementTransformationMethod;
 .source "WatermarkFragment.java"
 
@@ -38,15 +38,23 @@
 .method public getOriginal()[C
     .locals 0
 
+    .line 1
     const/16 p0, 0x1a
 
+    .line 2
+    .line 3
     new-array p0, p0, [C
 
-    .line 1
+    .line 4
+    .line 5
     fill-array-data p0, :array_0
 
+    .line 6
+    .line 7
+    .line 8
     return-object p0
 
+    .line 9
     :array_0
     .array-data 2
         0x61s
@@ -81,15 +89,23 @@
 .method public getReplacement()[C
     .locals 0
 
+    .line 1
     const/16 p0, 0x1a
 
+    .line 2
+    .line 3
     new-array p0, p0, [C
 
-    .line 1
+    .line 4
+    .line 5
     fill-array-data p0, :array_0
 
+    .line 6
+    .line 7
+    .line 8
     return-object p0
 
+    .line 9
     :array_0
     .array-data 2
         0x41s

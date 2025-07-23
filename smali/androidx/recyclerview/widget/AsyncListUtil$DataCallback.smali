@@ -30,6 +30,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -55,8 +58,11 @@
     .annotation build Landroidx/annotation/WorkerThread;
     .end annotation
 
+    .line 1
     const/16 p0, 0xa
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -75,6 +81,7 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 

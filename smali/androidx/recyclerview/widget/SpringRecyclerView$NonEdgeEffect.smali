@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/SpringRecyclerView$NonEdgeEffect;
+.class Landroidx/recyclerview/widget/SpringRecyclerView$NonEdgeEffect;
 .super Landroid/widget/EdgeEffect;
 .source "SpringRecyclerView.java"
 
@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0, p1}, Landroid/widget/EdgeEffect;-><init>(Landroid/content/Context;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,14 +32,17 @@
 .method public draw(Landroid/graphics/Canvas;)Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public finish()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -45,56 +51,68 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
 .method public getColor()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public getMaxHeight()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public isFinished()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
 .method public onAbsorb(I)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onPull(F)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onPull(FF)V
     .locals 0
 
+    .line 2
     return-void
 .end method
 
 .method public onRelease()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -105,17 +123,20 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
 .method public setColor(I)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public setSize(II)V
     .locals 0
 
+    .line 1
     return-void
 .end method

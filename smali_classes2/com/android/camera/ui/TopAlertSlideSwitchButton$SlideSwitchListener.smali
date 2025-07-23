@@ -19,14 +19,4 @@
 .end method
 
 .method public abstract toSlideSwitch(ILjava/lang/String;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parentKey",
-            "child"
-        }
-    .end annotation
 .end method

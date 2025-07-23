@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AlertController$2;
+.class Landroidx/appcompat/app/AlertController$2;
 .super Ljava/lang/Object;
 .source "AlertController.java"
 
@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/app/AlertController;
+.field final synthetic this$0:Landroidx/appcompat/app/AlertController;
 
-.field public final synthetic val$bottom:Landroid/view/View;
+.field final synthetic val$bottom:Landroid/view/View;
 
-.field public final synthetic val$top:Landroid/view/View;
+.field final synthetic val$top:Landroid/view/View;
 
 
 # direct methods
@@ -32,12 +32,21 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$2;->this$0:Landroidx/appcompat/app/AlertController;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$2;->val$top:Landroid/view/View;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/appcompat/app/AlertController$2;->val$bottom:Landroid/view/View;
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -49,9 +58,16 @@
     .line 1
     iget-object p2, p0, Landroidx/appcompat/app/AlertController$2;->val$top:Landroid/view/View;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/appcompat/app/AlertController$2;->val$bottom:Landroid/view/View;
 
+    .line 4
+    .line 5
     invoke-static {p1, p2, p0}, Landroidx/appcompat/app/AlertController;->manageScrollIndicators(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

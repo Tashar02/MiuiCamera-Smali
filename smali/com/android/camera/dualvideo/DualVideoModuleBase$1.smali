@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/dualvideo/DualVideoModuleBase$1;
+.class Lcom/android/camera/dualvideo/DualVideoModuleBase$1;
 .super Ljava/lang/Object;
 .source "DualVideoModuleBase.java"
 
@@ -27,32 +27,29 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/dualvideo/DualVideoModuleBase;
+.field final synthetic this$0:Lcom/android/camera/dualvideo/DualVideoModuleBase;
 
-.field public final synthetic val$ids:[I
+.field final synthetic val$ids:[I
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/dualvideo/DualVideoModuleBase;[I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$ids"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/dualvideo/DualVideoModuleBase$1;->this$0:Lcom/android/camera/dualvideo/DualVideoModuleBase;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera/dualvideo/DualVideoModuleBase$1;->val$ids:[I
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -64,15 +61,6 @@
         ignore = false
         key = "isMTKPlatform"
         type = 0x1
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "camera2Proxy"
-        }
     .end annotation
 
     .line 2
@@ -99,15 +87,6 @@
         ignore = false
         key = "isMTKPlatform"
         type = 0x1
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "camera2Proxy"
-        }
     .end annotation
 
     .line 1

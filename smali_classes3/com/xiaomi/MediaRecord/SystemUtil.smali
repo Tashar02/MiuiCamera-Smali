@@ -10,6 +10,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -19,11 +22,17 @@
     .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
-    .line 2
+    .line 5
     invoke-static {p0, p1, v0}, Lcom/xiaomi/MediaRecord/SystemUtil;->Init(Landroid/content/Context;ILjava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 

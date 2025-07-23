@@ -31,6 +31,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -104,6 +107,7 @@
         .end annotation
     .end param
 
+    .line 1
     const/4 p0, 0x1
 
     return p0
@@ -125,7 +129,7 @@
         }
     .end annotation
 
-    .line 1
+    .line 2
     check-cast p1, Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/resource/bitmap/UnitBitmapDecoder;->handles(Landroid/graphics/Bitmap;Lcom/bumptech/glide/load/Options;)Z

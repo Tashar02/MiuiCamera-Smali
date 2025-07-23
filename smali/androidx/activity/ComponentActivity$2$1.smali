@@ -1,4 +1,4 @@
-.class public Landroidx/activity/ComponentActivity$2$1;
+.class Landroidx/activity/ComponentActivity$2$1;
 .super Ljava/lang/Object;
 .source "ComponentActivity.java"
 
@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final synthetic this$1:Landroidx/activity/ComponentActivity$2;
+.field final synthetic this$1:Landroidx/activity/ComponentActivity$2;
 
-.field public final synthetic val$requestCode:I
+.field final synthetic val$requestCode:I
 
-.field public final synthetic val$synchronousResult:Landroidx/activity/result/contract/ActivityResultContract$SynchronousResult;
+.field final synthetic val$synchronousResult:Landroidx/activity/result/contract/ActivityResultContract$SynchronousResult;
 
 
 # direct methods
@@ -32,12 +32,21 @@
     .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$2$1;->this$1:Landroidx/activity/ComponentActivity$2;
 
+    .line 2
+    .line 3
     iput p2, p0, Landroidx/activity/ComponentActivity$2$1;->val$requestCode:I
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroidx/activity/ComponentActivity$2$1;->val$synchronousResult:Landroidx/activity/result/contract/ActivityResultContract$SynchronousResult;
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -49,15 +58,28 @@
     .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity$2$1;->this$1:Landroidx/activity/ComponentActivity$2;
 
+    .line 2
+    .line 3
     iget v1, p0, Landroidx/activity/ComponentActivity$2$1;->val$requestCode:I
 
+    .line 4
+    .line 5
     iget-object p0, p0, Landroidx/activity/ComponentActivity$2$1;->val$synchronousResult:Landroidx/activity/result/contract/ActivityResultContract$SynchronousResult;
 
+    .line 6
+    .line 7
     invoke-virtual {p0}, Landroidx/activity/result/contract/ActivityResultContract$SynchronousResult;->getValue()Ljava/lang/Object;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
     invoke-virtual {v0, v1, p0}, Landroidx/activity/result/ActivityResultRegistry;->dispatchResult(ILjava/lang/Object;)Z
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method

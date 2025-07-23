@@ -14,28 +14,47 @@
 .method public static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const/16 v0, 0x40
 
+    .line 2
+    .line 3
     new-array v0, v0, [C
 
-    .line 1
+    .line 4
+    .line 5
     fill-array-data v0, :array_0
 
+    .line 6
+    .line 7
+    .line 8
     sput-object v0, Lcom/ot/pubsub/c/c;->b:[C
 
+    .line 9
+    .line 10
     const/16 v0, 0x80
 
+    .line 11
+    .line 12
     new-array v0, v0, [B
 
-    .line 2
+    .line 13
+    .line 14
     fill-array-data v0, :array_1
 
+    .line 15
+    .line 16
+    .line 17
     sput-object v0, Lcom/ot/pubsub/c/c;->c:[B
 
+    .line 18
+    .line 19
     return-void
 
+    .line 20
     nop
 
+    .line 21
     :array_0
     .array-data 2
         0x41s
@@ -104,6 +123,49 @@
         0x2fs
     .end array-data
 
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
     :array_1
     .array-data 1
         -0x1t
@@ -243,6 +305,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -521,7 +586,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
@@ -727,33 +792,55 @@
     :try_start_0
     invoke-static {p0}, Lcom/ot/pubsub/c/c;->a(Ljava/lang/String;)[B
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
-    .line 2
+    .line 5
     new-instance v0, Ljava/lang/String;
 
+    .line 6
+    .line 7
     const-string v1, "UTF-8"
 
+    .line 8
+    .line 9
     invoke-direct {v0, p0, v1}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 10
+    .line 11
+    .line 12
     return-object v0
 
+    .line 13
     :catch_0
     move-exception p0
 
-    .line 3
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
+    .line 14
     const-string v0, "Base64Util"
 
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
     invoke-static {v0, p0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 21
+    .line 22
+    .line 23
     const-string p0, ""
 
+    .line 24
+    .line 25
     return-object p0
 .end method
 
@@ -768,224 +855,369 @@
     .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v1, "US-ASCII"
 
-    .line 2
+    .line 7
+    .line 8
     invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
-    .line 3
+    .line 12
     array-length v1, p0
 
+    .line 13
     const/4 v2, 0x0
 
+    .line 14
     :goto_0
     const-string v3, "iso8859-1"
 
+    .line 15
+    .line 16
     if-ge v2, v1, :cond_e
 
-    .line 4
+    .line 17
+    .line 18
     :goto_1
     sget-object v4, Lcom/ot/pubsub/c/c;->c:[B
 
+    .line 19
+    .line 20
     add-int/lit8 v5, v2, 0x1
 
+    .line 21
+    .line 22
     aget-byte v2, p0, v2
 
+    .line 23
+    .line 24
     aget-byte v2, v4, v2
 
+    .line 25
+    .line 26
     const/4 v4, -0x1
 
+    .line 27
     if-ge v5, v1, :cond_1
 
+    .line 28
+    .line 29
     if-eq v2, v4, :cond_0
 
+    .line 30
+    .line 31
     goto :goto_2
 
+    .line 32
     :cond_0
     move v2, v5
 
+    .line 33
     goto :goto_1
 
+    .line 34
     :cond_1
     :goto_2
     if-ne v2, v4, :cond_2
 
+    .line 35
+    .line 36
     goto/16 :goto_9
 
-    .line 5
+    .line 37
+    .line 38
     :cond_2
     :goto_3
     sget-object v6, Lcom/ot/pubsub/c/c;->c:[B
 
+    .line 39
+    .line 40
     add-int/lit8 v7, v5, 0x1
 
+    .line 41
+    .line 42
     aget-byte v5, p0, v5
 
+    .line 43
+    .line 44
     aget-byte v5, v6, v5
 
+    .line 45
+    .line 46
     if-ge v7, v1, :cond_4
 
+    .line 47
+    .line 48
     if-eq v5, v4, :cond_3
 
+    .line 49
+    .line 50
     goto :goto_4
 
+    .line 51
     :cond_3
     move v5, v7
 
+    .line 52
     goto :goto_3
 
+    .line 53
     :cond_4
     :goto_4
     if-ne v5, v4, :cond_5
 
+    .line 54
+    .line 55
     goto :goto_9
 
+    .line 56
     :cond_5
     shl-int/lit8 v2, v2, 0x2
 
+    .line 57
+    .line 58
     and-int/lit8 v6, v5, 0x30
 
+    .line 59
+    .line 60
     ushr-int/lit8 v6, v6, 0x4
 
+    .line 61
+    .line 62
     or-int/2addr v2, v6
 
+    .line 63
     int-to-char v2, v2
 
-    .line 6
+    .line 64
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
+    .line 65
+    .line 66
+    .line 67
     :goto_5
     add-int/lit8 v2, v7, 0x1
 
-    .line 7
+    .line 68
+    .line 69
     aget-byte v6, p0, v7
 
+    .line 70
+    .line 71
     const/16 v7, 0x3d
 
+    .line 72
+    .line 73
     if-ne v6, v7, :cond_6
 
-    .line 8
+    .line 74
+    .line 75
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
+    .line 76
+    .line 77
+    .line 78
     move-result-object p0
 
+    .line 79
     invoke-virtual {p0, v3}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
+    .line 80
+    .line 81
+    .line 82
     move-result-object p0
 
+    .line 83
     return-object p0
 
-    .line 9
+    .line 84
     :cond_6
     sget-object v8, Lcom/ot/pubsub/c/c;->c:[B
 
+    .line 85
+    .line 86
     aget-byte v6, v8, v6
 
+    .line 87
+    .line 88
     if-ge v2, v1, :cond_8
 
+    .line 89
+    .line 90
     if-eq v6, v4, :cond_7
 
+    .line 91
+    .line 92
     goto :goto_6
 
+    .line 93
     :cond_7
     move v7, v2
 
+    .line 94
     goto :goto_5
 
+    .line 95
     :cond_8
     :goto_6
     if-ne v6, v4, :cond_9
 
+    .line 96
+    .line 97
     goto :goto_9
 
+    .line 98
     :cond_9
     and-int/lit8 v5, v5, 0xf
 
+    .line 99
+    .line 100
     shl-int/lit8 v5, v5, 0x4
 
+    .line 101
+    .line 102
     and-int/lit8 v8, v6, 0x3c
 
+    .line 103
+    .line 104
     ushr-int/lit8 v8, v8, 0x2
 
+    .line 105
+    .line 106
     or-int/2addr v5, v8
 
+    .line 107
     int-to-char v5, v5
 
-    .line 10
+    .line 108
     invoke-virtual {v0, v5}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
+    .line 109
+    .line 110
+    .line 111
     :goto_7
     add-int/lit8 v5, v2, 0x1
 
-    .line 11
+    .line 112
+    .line 113
     aget-byte v2, p0, v2
 
+    .line 114
+    .line 115
     if-ne v2, v7, :cond_a
 
-    .line 12
+    .line 116
+    .line 117
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
+    .line 118
+    .line 119
+    .line 120
     move-result-object p0
 
+    .line 121
     invoke-virtual {p0, v3}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
+    .line 122
+    .line 123
+    .line 124
     move-result-object p0
 
+    .line 125
     return-object p0
 
-    .line 13
+    .line 126
     :cond_a
     sget-object v8, Lcom/ot/pubsub/c/c;->c:[B
 
+    .line 127
+    .line 128
     aget-byte v2, v8, v2
 
+    .line 129
+    .line 130
     if-ge v5, v1, :cond_c
 
+    .line 131
+    .line 132
     if-eq v2, v4, :cond_b
 
+    .line 133
+    .line 134
     goto :goto_8
 
+    .line 135
     :cond_b
     move v2, v5
 
+    .line 136
     goto :goto_7
 
+    .line 137
     :cond_c
     :goto_8
     if-ne v2, v4, :cond_d
 
+    .line 138
+    .line 139
     goto :goto_9
 
+    .line 140
     :cond_d
     and-int/lit8 v3, v6, 0x3
 
+    .line 141
+    .line 142
     shl-int/lit8 v3, v3, 0x6
 
+    .line 143
+    .line 144
     or-int/2addr v2, v3
 
+    .line 145
     int-to-char v2, v2
 
-    .line 14
+    .line 146
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
+    .line 147
+    .line 148
+    .line 149
     move v2, v5
 
+    .line 150
     goto/16 :goto_0
 
-    .line 15
+    .line 151
+    .line 152
     :cond_e
     :goto_9
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
+    .line 153
+    .line 154
+    .line 155
     move-result-object p0
 
+    .line 156
     invoke-virtual {p0, v3}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
+    .line 157
+    .line 158
+    .line 159
     move-result-object p0
 
+    .line 160
     return-object p0
 .end method

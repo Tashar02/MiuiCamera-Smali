@@ -25,52 +25,16 @@
 .end method
 
 .method public abstract onFrameAvailable(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "arrivedType"
-        }
-    .end annotation
 .end method
 
 .method public abstract onFrameDrawn()V
 .end method
 
 .method public abstract onPreviewPixelsRead([BIII)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "pixels",
-            "width",
-            "height",
-            "readPixelsType"
-        }
-    .end annotation
 .end method
 
 .method public abstract onPreviewTextureCopied()V
 .end method
 
 .method public abstract savePreviewPixel([BIII)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "pixels",
-            "width",
-            "height",
-            "orientation"
-        }
-    .end annotation
 .end method

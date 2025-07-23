@@ -20,6 +20,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -29,6 +30,9 @@
     .line 1
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -43,7 +47,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v1, "will post msg, prio="
+    const-string v1, "will post msg, prio="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -212,7 +216,7 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "will check prio="
+    const-string v3, "will check prio="
 
     invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -294,6 +298,8 @@
     .line 1
     sget p0, Lcom/ot/pubsub/j/b;->f:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -304,108 +310,203 @@
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
     .line 2
+    .line 3
+    .line 4
     iget p0, p1, Landroid/os/Message;->what:I
 
-    const/4 v0, 0x1
-
-    const/16 v1, 0xa
-
-    if-ne p0, v1, :cond_0
-
-    .line 3
-    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lcom/ot/pubsub/j/d;->d()Z
-
-    .line 4
-    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
-
-    move-result-object p0
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1}, Lcom/ot/pubsub/j/d;->a(I)Z
-
     .line 5
-    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
-
-    move-result-object p0
-
-    invoke-virtual {p0, v0}, Lcom/ot/pubsub/j/d;->a(I)Z
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v1, 0xb
-
-    const-string v2, "UploadTimer.handleMessage, msg.what="
-
-    const-string v3, "UploadTimer"
-
-    if-ne p0, v1, :cond_1
-
     .line 6
-    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lcom/ot/pubsub/j/d;->d()Z
+    const/16 v0, 0xa
 
     .line 7
-    new-instance p0, Ljava/lang/StringBuilder;
+    .line 8
+    const/4 v1, 0x1
 
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    .line 9
+    if-ne p0, v0, :cond_0
 
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 10
+    .line 11
+    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
 
-    iget p1, p1, Landroid/os/Message;->what:I
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
-    invoke-static {v3, p0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;)V
+    .line 15
+    invoke-virtual {p0}, Lcom/ot/pubsub/j/d;->d()Z
 
+    .line 16
+    .line 17
+    .line 18
+    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    const/4 p1, 0x0
+
+    .line 23
+    invoke-virtual {p0, p1}, Lcom/ot/pubsub/j/d;->a(I)Z
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p0
+
+    .line 30
+    invoke-virtual {p0, v1}, Lcom/ot/pubsub/j/d;->a(I)Z
+
+    .line 31
+    .line 32
+    .line 33
     goto :goto_0
 
+    .line 34
+    :cond_0
+    const/16 v0, 0xb
+
+    .line 35
+    .line 36
+    const-string v2, "UploadTimer.handleMessage, msg.what="
+
+    .line 37
+    .line 38
+    const-string v3, "UploadTimer"
+
+    .line 39
+    .line 40
+    if-ne p0, v0, :cond_1
+
+    .line 41
+    .line 42
+    invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p0
+
+    .line 46
+    invoke-virtual {p0}, Lcom/ot/pubsub/j/d;->d()Z
+
+    .line 47
+    .line 48
+    .line 49
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    .line 50
+    .line 51
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 55
+    .line 56
+    .line 57
+    iget p1, p1, Landroid/os/Message;->what:I
+
+    .line 58
+    .line 59
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object p0
+
+    .line 66
+    invoke-static {v3, p0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 67
+    .line 68
+    .line 69
+    goto :goto_0
+
+    .line 70
     :cond_1
     if-eqz p0, :cond_2
 
-    if-eq p0, v0, :cond_2
+    .line 71
+    .line 72
+    if-eq p0, v1, :cond_2
 
+    .line 73
+    .line 74
     const/4 v0, 0x2
 
+    .line 75
     if-ne p0, v0, :cond_3
 
-    .line 8
+    .line 76
+    .line 77
     :cond_2
     invoke-static {}, Lcom/ot/pubsub/j/d;->a()Lcom/ot/pubsub/j/d;
 
+    .line 78
+    .line 79
+    .line 80
     move-result-object v0
 
+    .line 81
     invoke-virtual {v0, p0}, Lcom/ot/pubsub/j/d;->a(I)Z
 
-    .line 9
+    .line 82
+    .line 83
+    .line 84
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 85
+    .line 86
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 87
+    .line 88
+    .line 89
     invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 90
+    .line 91
+    .line 92
     iget p1, p1, Landroid/os/Message;->what:I
 
+    .line 93
+    .line 94
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 95
+    .line 96
+    .line 97
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 98
+    .line 99
+    .line 100
     move-result-object p0
 
+    .line 101
     invoke-static {v3, p0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 102
+    .line 103
+    .line 104
     :cond_3
     :goto_0
     return-void

@@ -16,27 +16,7 @@
 
 # virtual methods
 .method public abstract getTopImage(I)Landroid/widget/ImageView;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "config"
-        }
-    .end annotation
 .end method
 
 .method public abstract onExpandValueChange(Lcom/android/camera/data/data/ComponentData;Ljava/lang/String;Ljava/lang/String;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "componentData",
-            "oldValue",
-            "newValue"
-        }
-    .end annotation
 .end method

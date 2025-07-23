@@ -10,6 +10,9 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/features/mode/BaseModuleDevice;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -18,7 +21,11 @@
 .method public getOperatingMode()I
     .locals 0
 
+    .line 1
     const p0, 0x9002
 
+    .line 2
+    .line 3
+    .line 4
     return p0
 .end method

@@ -1,4 +1,4 @@
-.class public final Landroidx/recyclerview/widget/DiffUtil$1;
+.class Landroidx/recyclerview/widget/DiffUtil$1;
 .super Ljava/lang/Object;
 .source "DiffUtil.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Landroidx/recyclerview/widget/DiffUtil$Snake;",
+        "Landroidx/recyclerview/widget/DiffUtil$Diagonal;",
         ">;"
     }
 .end annotation
@@ -33,31 +33,24 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Landroidx/recyclerview/widget/DiffUtil$Snake;Landroidx/recyclerview/widget/DiffUtil$Snake;)I
-    .locals 1
+.method public compare(Landroidx/recyclerview/widget/DiffUtil$Diagonal;Landroidx/recyclerview/widget/DiffUtil$Diagonal;)I
+    .locals 0
 
     .line 2
-    iget p0, p1, Landroidx/recyclerview/widget/DiffUtil$Snake;->x:I
+    iget p0, p1, Landroidx/recyclerview/widget/DiffUtil$Diagonal;->x:I
 
-    iget v0, p2, Landroidx/recyclerview/widget/DiffUtil$Snake;->x:I
-
-    sub-int/2addr p0, v0
-
-    if-nez p0, :cond_0
-
-    .line 3
-    iget p0, p1, Landroidx/recyclerview/widget/DiffUtil$Snake;->y:I
-
-    iget p1, p2, Landroidx/recyclerview/widget/DiffUtil$Snake;->y:I
+    iget p1, p2, Landroidx/recyclerview/widget/DiffUtil$Diagonal;->x:I
 
     sub-int/2addr p0, p1
 
-    :cond_0
     return p0
 .end method
 
@@ -65,11 +58,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/recyclerview/widget/DiffUtil$Snake;
+    check-cast p1, Landroidx/recyclerview/widget/DiffUtil$Diagonal;
 
-    check-cast p2, Landroidx/recyclerview/widget/DiffUtil$Snake;
+    check-cast p2, Landroidx/recyclerview/widget/DiffUtil$Diagonal;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/DiffUtil$1;->compare(Landroidx/recyclerview/widget/DiffUtil$Snake;Landroidx/recyclerview/widget/DiffUtil$Snake;)I
+    invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/DiffUtil$1;->compare(Landroidx/recyclerview/widget/DiffUtil$Diagonal;Landroidx/recyclerview/widget/DiffUtil$Diagonal;)I
 
     move-result p0
 

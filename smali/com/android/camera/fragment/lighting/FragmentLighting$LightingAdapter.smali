@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;
+.class Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;
 .super Lcom/android/camera/fragment/EffectItemAdapter;
 .source "FragmentLighting.java"
 
@@ -37,111 +37,144 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/view/View$OnClickListener;Lcom/android/camera/data/data/runing/ComponentRunningLighting;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "currentMode",
-            "onClickListener",
-            "componentRunningLighting"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1, p4}, Lcom/android/camera/fragment/EffectItemAdapter;-><init>(Landroid/content/Context;Lcom/android/camera/data/data/ComponentData;)V
 
     .line 2
+    .line 3
+    .line 4
     iput p2, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mCurrentMode:I
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p3, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    .line 4
+    .line 7
+    .line 8
     iput-object p4, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mComponentRunningLighting:Lcom/android/camera/data/data/ComponentData;
 
-    .line 5
+    .line 9
+    .line 10
     invoke-virtual {p4}, Lcom/android/camera/data/data/ComponentData;->getItems()Ljava/util/List;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object p2
 
+    .line 14
     invoke-interface {p2}, Ljava/util/List;->size()I
 
+    .line 15
+    .line 16
+    .line 17
     move-result p2
 
+    .line 18
     iput p2, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mCount:I
 
-    .line 6
+    .line 19
+    .line 20
     invoke-direct {p0, p1}, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->updateContent(Landroid/content/Context;)V
 
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method
 
 .method private updateContent(Landroid/content/Context;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 
     .line 1
     invoke-static {}, Lcom/android/camera/Util;->isAccessible()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     iget v0, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mCount:I
 
+    .line 8
+    .line 9
     new-array v0, v0, [Ljava/lang/String;
 
+    .line 10
+    .line 11
     iput-object v0, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mContent:[Ljava/lang/String;
 
+    .line 12
+    .line 13
     const/4 v0, 0x0
 
-    .line 3
+    .line 14
     :goto_0
     iget v1, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mCount:I
 
+    .line 15
+    .line 16
     if-ge v0, v1, :cond_0
 
-    .line 4
+    .line 17
+    .line 18
     iget-object v1, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mComponentRunningLighting:Lcom/android/camera/data/data/ComponentData;
 
+    .line 19
+    .line 20
     invoke-virtual {v1}, Lcom/android/camera/data/data/ComponentData;->getItems()Ljava/util/List;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v1
 
+    .line 24
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 25
+    .line 26
+    .line 27
     move-result-object v1
 
+    .line 28
     check-cast v1, Lcom/android/camera/data/data/ComponentDataItem;
 
-    .line 5
+    .line 29
+    .line 30
     iget-object v2, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mContent:[Ljava/lang/String;
 
+    .line 31
+    .line 32
     iget v1, v1, Lcom/android/camera/data/data/ComponentDataItem;->mDisplayNameRes:I
 
+    .line 33
+    .line 34
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 35
+    .line 36
+    .line 37
     move-result-object v1
 
+    .line 38
     aput-object v1, v2, v0
 
+    .line 39
+    .line 40
     add-int/lit8 v0, v0, 0x1
 
+    .line 41
+    .line 42
     goto :goto_0
 
+    .line 43
     :cond_0
     return-void
 .end method
@@ -154,26 +187,18 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mCount:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f0a013a
+    const v1, 0x7f0b013a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -189,7 +214,7 @@
     .line 3
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f0a032a
+    const v1, 0x7f0b0362
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -222,7 +247,7 @@
     .line 6
     iget-object v3, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v4, 0x7f0a032c
+    const v4, 0x7f0b0364
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -297,7 +322,7 @@
     invoke-virtual {v0, v1}, Lcom/android/camera/ui/ColorImageView;->setColor(I)V
 
     .line 16
-    invoke-virtual {v3}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -344,18 +369,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position",
-            "payloads"
-        }
-    .end annotation
 
     .line 20
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
@@ -365,91 +378,104 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object p2
-
-    invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object p2
-
-    const v0, 0x7f0d0129
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p2, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 2
+    .line 3
+    .line 4
+    move-result-object p2
+
+    .line 5
+    invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p2
+
+    .line 9
+    const v0, 0x7f0e0133
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 v1, 0x0
+
+    .line 13
+    invoke-virtual {p2, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
     new-instance p2, Lcom/android/camera/fragment/EffectItemAdapter$EffectStillItemHolder;
 
+    .line 18
+    .line 19
     invoke-direct {p2, p0, p1}, Lcom/android/camera/fragment/EffectItemAdapter$EffectStillItemHolder;-><init>(Lcom/android/camera/fragment/EffectItemAdapter;Landroid/view/View;)V
 
+    .line 20
+    .line 21
+    .line 22
     return-object p2
 .end method
 
 .method public setRotation(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public updateData(Lcom/android/camera/data/data/ComponentData;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "componentData"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mComponentRunningLighting:Lcom/android/camera/data/data/ComponentData;
 
     .line 2
+    .line 3
     invoke-virtual {p1}, Lcom/android/camera/data/data/ComponentData;->getItems()Ljava/util/List;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
+    .line 7
     invoke-interface {p1}, Ljava/util/List;->size()I
 
+    .line 8
+    .line 9
+    .line 10
     move-result p1
 
+    .line 11
     iput p1, p0, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->mCount:I
 
-    .line 3
+    .line 12
+    .line 13
     iget-object p1, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mContext:Landroid/content/Context;
 
+    .line 14
+    .line 15
     invoke-direct {p0, p1}, Lcom/android/camera/fragment/lighting/FragmentLighting$LightingAdapter;->updateContent(Landroid/content/Context;)V
 
-    .line 4
+    .line 16
+    .line 17
+    .line 18
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
 
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method

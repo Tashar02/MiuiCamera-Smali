@@ -27,9 +27,9 @@
 
 
 # instance fields
-.field public expandedMenuItemId:I
+.field expandedMenuItemId:I
 
-.field public isOverflowOpen:Z
+.field isOverflowOpen:Z
 
 
 # direct methods
@@ -39,10 +39,17 @@
     .line 1
     new-instance v0, Landroidx/appcompat/widget/Toolbar$SavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/appcompat/widget/Toolbar$SavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/appcompat/widget/Toolbar$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -108,14 +115,25 @@
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
+    .line 3
+    .line 4
     iget p2, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->expandedMenuItemId:I
 
+    .line 5
+    .line 6
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 3
+    .line 7
+    .line 8
+    .line 9
     iget-boolean p0, p0, Landroidx/appcompat/widget/Toolbar$SavedState;->isOverflowOpen:Z
 
+    .line 10
+    .line 11
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method

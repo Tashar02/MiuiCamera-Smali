@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/film/FragmentFilmDreamProcess$11;
+.class Lcom/android/camera/fragment/film/FragmentFilmDreamProcess$11;
 .super Ljava/lang/Object;
 .source "FragmentFilmDreamProcess.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/film/FragmentFilmDreamProcess;
+.field final synthetic this$0:Lcom/android/camera/fragment/film/FragmentFilmDreamProcess;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/film/FragmentFilmDreamProcess;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/film/FragmentFilmDreamProcess$11;->this$0:Lcom/android/camera/fragment/film/FragmentFilmDreamProcess;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,24 +42,26 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "v"
-        }
-    .end annotation
-
-    const-string/jumbo p1, "value_film_dream_click_play_share_cancel"
 
     .line 1
-    invoke-static {p1}, Lcom/android/camera/statistic/CameraStatUtils;->trackFilmDreamClick(Ljava/lang/String;)V
+    const-string/jumbo p1, "value_film_dream_click_play_share_cancel"
 
     .line 2
+    .line 3
+    .line 4
+    invoke-static {p1}, Lcom/android/camera/statistic/CameraStatUtils;->trackFilmDreamClick(Ljava/lang/String;)V
+
+    .line 5
+    .line 6
+    .line 7
     iget-object p0, p0, Lcom/android/camera/fragment/film/FragmentFilmDreamProcess$11;->this$0:Lcom/android/camera/fragment/film/FragmentFilmDreamProcess;
 
+    .line 8
+    .line 9
     invoke-static {p0}, Lcom/android/camera/fragment/film/FragmentFilmDreamProcess;->access$1500(Lcom/android/camera/fragment/film/FragmentFilmDreamProcess;)Z
 
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method

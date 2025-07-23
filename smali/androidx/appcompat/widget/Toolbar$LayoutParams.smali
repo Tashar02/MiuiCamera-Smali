@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final CUSTOM:I = 0x0
+.field static final CUSTOM:I = 0x0
 
-.field public static final EXPANDED:I = 0x2
+.field static final EXPANDED:I = 0x2
 
-.field public static final SYSTEM:I = 0x1
+.field static final SYSTEM:I = 0x1
 
 
 # instance fields
-.field public mViewType:I
+.field mViewType:I
 
 
 # direct methods
@@ -166,22 +166,35 @@
     .line 1
     iget v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
+    .line 2
+    .line 3
     iput v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
-    .line 2
+    .line 4
+    .line 5
     iget v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
+    .line 6
+    .line 7
     iput v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
-    .line 3
+    .line 8
+    .line 9
     iget v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
+    .line 10
+    .line 11
     iput v0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
-    .line 4
+    .line 12
+    .line 13
     iget p1, p1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
+    .line 14
+    .line 15
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
+    .line 16
+    .line 17
     return-void
 .end method

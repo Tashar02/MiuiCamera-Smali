@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/utils/widget/MotionButton$2;
+.class Landroidx/constraintlayout/utils/widget/MotionButton$2;
 .super Landroid/view/ViewOutlineProvider;
 .source "MotionButton.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/constraintlayout/utils/widget/MotionButton;
+.field final synthetic this$0:Landroidx/constraintlayout/utils/widget/MotionButton;
 
 
 # direct methods
@@ -33,8 +33,13 @@
     .line 1
     iput-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionButton$2;->this$0:Landroidx/constraintlayout/utils/widget/MotionButton;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -56,31 +61,53 @@
     .line 1
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionButton$2;->this$0:Landroidx/constraintlayout/utils/widget/MotionButton;
 
-    invoke-virtual {p1}, Landroid/widget/Button;->getWidth()I
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v3
 
-    .line 2
+    .line 7
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/MotionButton$2;->this$0:Landroidx/constraintlayout/utils/widget/MotionButton;
 
-    invoke-virtual {p1}, Landroid/widget/Button;->getHeight()I
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
+    .line 10
+    .line 11
+    .line 12
     move-result v4
 
-    .line 3
-    iget-object p0, p0, Landroidx/constraintlayout/utils/widget/MotionButton$2;->this$0:Landroidx/constraintlayout/utils/widget/MotionButton;
-
-    invoke-static {p0}, Landroidx/constraintlayout/utils/widget/MotionButton;->access$100(Landroidx/constraintlayout/utils/widget/MotionButton;)F
-
-    move-result v5
-
+    .line 13
     const/4 v1, 0x0
 
+    .line 14
     const/4 v2, 0x0
 
+    .line 15
+    iget-object p0, p0, Landroidx/constraintlayout/utils/widget/MotionButton$2;->this$0:Landroidx/constraintlayout/utils/widget/MotionButton;
+
+    .line 16
+    .line 17
+    invoke-static {p0}, Landroidx/constraintlayout/utils/widget/MotionButton;->access$100(Landroidx/constraintlayout/utils/widget/MotionButton;)F
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v5
+
+    .line 21
     move-object v0, p2
 
+    .line 22
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Outline;->setRoundRect(IIIIF)V
 
+    .line 23
+    .line 24
+    .line 25
     return-void
 .end method

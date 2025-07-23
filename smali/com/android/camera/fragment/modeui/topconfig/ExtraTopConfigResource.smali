@@ -34,14 +34,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource$Builder;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "builder"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -129,6 +121,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->componentData:Lcom/android/camera/data/data/ComponentData;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -138,6 +132,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->textResource:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -147,6 +143,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->textResourceString:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -156,6 +154,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->topResourceId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -165,6 +165,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->topSelectedAnimID:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -174,6 +176,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->enableClick:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -183,6 +187,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->isShowRightAngleTag:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -192,6 +198,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->isShowText:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -201,108 +209,74 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->isSwitchOn:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setComponentData(Lcom/android/camera/data/data/ComponentData;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "componentData"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->componentData:Lcom/android/camera/data/data/ComponentData;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setEnableClick(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enableClick"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->enableClick:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setShowRightAngleTag(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "showRightAngleTag"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->isShowRightAngleTag:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setShowText(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "showText"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->isShowText:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSwitchOn(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "switchOn"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->isSwitchOn:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setTextResource(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "textResource"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->textResource:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -314,51 +288,32 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "textResourceString"
-        }
-    .end annotation
-
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->textResourceString:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setTopResourceId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "topResourceId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->topResourceId:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setTopSelectedAnimID(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "topSelectedAnimID"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/topconfig/ExtraTopConfigResource;->topSelectedAnimID:I
 
+    .line 2
+    .line 3
     return-void
 .end method

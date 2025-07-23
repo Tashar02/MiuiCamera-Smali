@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/app/AppCompatDelegateImpl$5;
+.class Landroidx/appcompat/app/AppCompatDelegateImpl$5;
 .super Ljava/lang/Object;
 .source "AppCompatDelegateImpl.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field final synthetic this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$5;->this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -38,6 +43,7 @@
 .method public onAttachedFromWindow()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -47,7 +53,12 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$5;->this$0:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->dismissPopups()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

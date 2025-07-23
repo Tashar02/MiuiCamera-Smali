@@ -16,25 +16,7 @@
 
 # virtual methods
 .method public abstract onImagePostProcessEnd(Lcom/xiaomi/camera/core/ParallelTaskData;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "taskData"
-        }
-    .end annotation
 .end method
 
 .method public abstract onImagePostProcessStart(Lcom/xiaomi/camera/core/ParallelTaskData;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "taskData",
-            "reason"
-        }
-    .end annotation
 .end method

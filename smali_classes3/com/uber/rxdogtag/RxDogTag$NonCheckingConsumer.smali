@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
+.class interface abstract Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
 .super Ljava/lang/Object;
 .source "RxDogTag.java"
 

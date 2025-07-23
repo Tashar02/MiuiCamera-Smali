@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/film/FragmentTimeBackflowProcess$9;
+.class Lcom/android/camera/fragment/film/FragmentTimeBackflowProcess$9;
 .super Landroid/os/Handler;
 .source "FragmentTimeBackflowProcess.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/film/FragmentTimeBackflowProcess;
+.field final synthetic this$0:Lcom/android/camera/fragment/film/FragmentTimeBackflowProcess;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/film/FragmentTimeBackflowProcess;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/film/FragmentTimeBackflowProcess$9;->this$0:Lcom/android/camera/fragment/film/FragmentTimeBackflowProcess;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,17 +39,12 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "msg"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

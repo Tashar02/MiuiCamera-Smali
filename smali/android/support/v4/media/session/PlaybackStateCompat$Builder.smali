@@ -70,6 +70,14 @@
 
 .method public constructor <init>(Landroid/support/v4/media/session/PlaybackStateCompat;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "source"
+        }
+    .end annotation
 
     .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -152,6 +160,14 @@
 # virtual methods
 .method public addCustomAction(Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "customAction"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -166,7 +182,7 @@
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "You may not add a null CustomAction to PlaybackStateCompat."
+    const-string p1, "You may not add a null CustomAction to PlaybackStateCompat"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -175,6 +191,18 @@
 
 .method public addCustomAction(Ljava/lang/String;Ljava/lang/String;I)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "action",
+            "name",
+            "icon"
+        }
+    .end annotation
 
     .line 1
     new-instance v0, Landroid/support/v4/media/session/PlaybackStateCompat$CustomAction;
@@ -193,81 +221,163 @@
 .method public build()Landroid/support/v4/media/session/PlaybackStateCompat;
     .locals 21
 
+    .line 1
     move-object/from16 v0, p0
 
-    .line 1
+    .line 2
+    .line 3
     new-instance v18, Landroid/support/v4/media/session/PlaybackStateCompat;
 
+    .line 4
+    .line 5
     move-object/from16 v1, v18
 
+    .line 6
+    .line 7
     iget v2, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mState:I
 
+    .line 8
+    .line 9
     iget-wide v3, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mPosition:J
 
+    .line 10
+    .line 11
     iget-wide v5, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mBufferedPosition:J
 
+    .line 12
+    .line 13
     iget v7, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mRate:F
 
+    .line 14
+    .line 15
     iget-wide v8, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActions:J
 
+    .line 16
+    .line 17
     iget v10, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mErrorCode:I
 
+    .line 18
+    .line 19
     iget-object v11, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mErrorMessage:Ljava/lang/CharSequence;
 
+    .line 20
+    .line 21
     iget-wide v12, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mUpdateTime:J
 
+    .line 22
+    .line 23
     iget-object v14, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mCustomActions:Ljava/util/List;
 
+    .line 24
+    .line 25
     move-object/from16 v19, v1
 
+    .line 26
+    .line 27
     move/from16 v20, v2
 
+    .line 28
+    .line 29
     iget-wide v1, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActiveItemId:J
 
+    .line 30
+    .line 31
     move-wide v15, v1
 
+    .line 32
     iget-object v0, v0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mExtras:Landroid/os/Bundle;
 
+    .line 33
+    .line 34
     move-object/from16 v17, v0
 
+    .line 35
+    .line 36
     move-object/from16 v1, v19
 
+    .line 37
+    .line 38
     move/from16 v2, v20
 
+    .line 39
+    .line 40
     invoke-direct/range {v1 .. v17}, Landroid/support/v4/media/session/PlaybackStateCompat;-><init>(IJJFJILjava/lang/CharSequence;JLjava/util/List;JLandroid/os/Bundle;)V
 
+    .line 41
+    .line 42
+    .line 43
     return-object v18
 .end method
 
 .method public setActions(J)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capabilities"
+        }
+    .end annotation
 
     .line 1
     iput-wide p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActions:J
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setActiveQueueItemId(J)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
     .line 1
     iput-wide p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActiveItemId:J
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setBufferedPosition(J)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bufferPosition"
+        }
+    .end annotation
 
     .line 1
     iput-wide p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mBufferedPosition:J
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setErrorMessage(ILjava/lang/CharSequence;)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "errorCode",
+            "errorMessage"
+        }
+    .end annotation
 
     .line 2
     iput p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mErrorCode:I
@@ -280,6 +390,17 @@
 
 .method public setErrorMessage(Ljava/lang/CharSequence;)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "errorMessage"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
     .line 1
     iput-object p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mErrorMessage:Ljava/lang/CharSequence;
@@ -289,15 +410,37 @@
 
 .method public setExtras(Landroid/os/Bundle;)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "extras"
+        }
+    .end annotation
 
     .line 1
     iput-object p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mExtras:Landroid/os/Bundle;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setState(IJF)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "state",
+            "position",
+            "playbackSpeed"
+        }
+    .end annotation
 
     .line 1
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -321,6 +464,20 @@
 
 .method public setState(IJFJ)Landroid/support/v4/media/session/PlaybackStateCompat$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "state",
+            "position",
+            "playbackSpeed",
+            "updateTime"
+        }
+    .end annotation
 
     .line 2
     iput p1, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mState:I

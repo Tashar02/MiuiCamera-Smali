@@ -6,22 +6,13 @@
 # direct methods
 .method public constructor <init>(ZLandroid/content/Context;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "isConsume",
-            "context",
-            "spots"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/android/camera/aiwatermark/handler/ASDHandler;-><init>(ZLandroid/content/Context;I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -33,8 +24,12 @@
     .line 1
     invoke-super {p0}, Lcom/android/camera/aiwatermark/handler/ASDHandler;->findWatermark()Lcom/android/camera/aiwatermark/data/WatermarkItem;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -52,9 +47,15 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/aiwatermark/handler/AbstractHandler;->mData:Lcom/android/camera/aiwatermark/data/AbstractWatermarkData;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/aiwatermark/data/AbstractWatermarkData;->getForAI()Ljava/util/ArrayList;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method

@@ -18,12 +18,12 @@
 
 
 # static fields
-.field public static final OoooOo0:I = -0x1
+.field public static final OoooO:I = 0x1
 
-.field public static final OoooOoO:I = 0x0
+.field public static final OoooO0:I = -0x1
 
-.field public static final OoooOoo:I = 0x1
+.field public static final OoooO0O:I = 0x0
 
-.field public static final Ooooo00:I = 0x2
+.field public static final OoooOO0:I = 0x2
 
-.field public static final Ooooo0o:I = 0x3
+.field public static final o000oOoO:I = 0x3

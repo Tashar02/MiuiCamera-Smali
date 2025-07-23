@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$1;
+.class Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$1;
 .super Ljava/lang/Object;
 .source "FastMotionDescriptionAdapter.java"
 
@@ -18,32 +18,29 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter;
+.field final synthetic this$0:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter;
 
-.field public final synthetic val$holder:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;
+.field final synthetic val$holder:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter;Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$holder"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$1;->this$0:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$1;->val$holder:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -54,17 +51,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "percent"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -73,15 +60,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mp"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -90,55 +69,45 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "what",
-            "extra"
-        }
-    .end annotation
-
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public onInfo(Landroid/media/MediaPlayer;II)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "what",
-            "extra"
-        }
-    .end annotation
-
-    const/4 p1, 0x3
-
-    if-ne p2, p1, :cond_0
 
     .line 1
+    const/4 p1, 0x3
+
+    .line 2
+    if-ne p2, p1, :cond_0
+
+    .line 3
+    .line 4
     iget-object p0, p0, Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$1;->val$holder:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;
 
+    .line 5
+    .line 6
     iget-object p0, p0, Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;->mCoverView:Landroid/view/View;
 
+    .line 7
+    .line 8
     const/16 p1, 0x8
 
+    .line 9
+    .line 10
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
+    .line 11
+    .line 12
+    .line 13
     :cond_0
     const/4 p0, 0x0
 
+    .line 14
     return p0
 .end method
 
@@ -147,15 +116,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mp"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -164,15 +125,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "surface"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -181,19 +134,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "mp",
-            "width",
-            "height"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -203,11 +144,19 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$1;->val$holder:Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Lcom/android/camera/fragment/fastmotion/FastMotionDescriptionAdapter$FastMotionViewHolder;->mCoverView:Landroid/view/View;
 
+    .line 4
+    .line 5
     const/4 v0, 0x0
 
+    .line 6
     invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method

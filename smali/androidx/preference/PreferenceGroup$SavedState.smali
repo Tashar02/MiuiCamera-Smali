@@ -1,4 +1,4 @@
-.class public Landroidx/preference/PreferenceGroup$SavedState;
+.class Landroidx/preference/PreferenceGroup$SavedState;
 .super Landroidx/preference/Preference$BaseSavedState;
 .source "PreferenceGroup.java"
 
@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public mInitialExpandedChildrenCount:I
+.field mInitialExpandedChildrenCount:I
 
 
 # direct methods
@@ -37,10 +37,17 @@
     .line 1
     new-instance v0, Landroidx/preference/PreferenceGroup$SavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/preference/PreferenceGroup$SavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/preference/PreferenceGroup$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -81,9 +88,16 @@
     invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
+    .line 3
+    .line 4
     iget p0, p0, Landroidx/preference/PreferenceGroup$SavedState;->mInitialExpandedChildrenCount:I
 
+    .line 5
+    .line 6
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method

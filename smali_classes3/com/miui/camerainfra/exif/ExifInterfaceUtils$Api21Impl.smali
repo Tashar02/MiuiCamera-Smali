@@ -1,4 +1,4 @@
-.class public Lcom/miui/camerainfra/exif/ExifInterfaceUtils$Api21Impl;
+.class Lcom/miui/camerainfra/exif/ExifInterfaceUtils$Api21Impl;
 .super Ljava/lang/Object;
 .source "ExifInterfaceUtils.java"
 
@@ -25,6 +25,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -42,6 +45,9 @@
     .line 1
     invoke-static {p0}, Landroid/system/Os;->close(Ljava/io/FileDescriptor;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -59,8 +65,12 @@
     .line 1
     invoke-static {p0}, Landroid/system/Os;->dup(Ljava/io/FileDescriptor;)Ljava/io/FileDescriptor;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -78,7 +88,11 @@
     .line 1
     invoke-static {p0, p1, p2, p3}, Landroid/system/Os;->lseek(Ljava/io/FileDescriptor;JI)J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide p0
 
+    .line 5
     return-wide p0
 .end method

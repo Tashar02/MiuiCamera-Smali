@@ -54,8 +54,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/model/ByteArrayLoader;->converter:Lcom/bumptech/glide/load/model/ByteArrayLoader$Converter;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -127,7 +131,7 @@
         .end annotation
     .end param
 
-    .line 1
+    .line 2
     check-cast p1, [B
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/model/ByteArrayLoader;->handles([B)Z
@@ -144,6 +148,7 @@
         .end annotation
     .end param
 
+    .line 1
     const/4 p0, 0x1
 
     return p0

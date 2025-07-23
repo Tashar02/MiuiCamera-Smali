@@ -14,742 +14,748 @@
 
 
 # static fields
-.field public static final ai_watermark:I = 0x7f110000
+.field public static final ai_watermark:I = 0x7f120000
 
-.field public static final aiscene_autumn:I = 0x7f110001
+.field public static final aiscene_autumn:I = 0x7f120001
 
-.field public static final aiscene_autumn_india:I = 0x7f110002
+.field public static final aiscene_autumn_india:I = 0x7f120002
 
-.field public static final aiscene_autumn_lite:I = 0x7f110003
+.field public static final aiscene_autumn_lite:I = 0x7f120003
 
-.field public static final aiscene_backlight:I = 0x7f110004
+.field public static final aiscene_backlight:I = 0x7f120004
 
-.field public static final aiscene_backlight_india:I = 0x7f110005
+.field public static final aiscene_backlight_india:I = 0x7f120005
 
-.field public static final aiscene_beach:I = 0x7f110006
+.field public static final aiscene_beach:I = 0x7f120006
 
-.field public static final aiscene_beach_india:I = 0x7f110007
+.field public static final aiscene_beach_india:I = 0x7f120007
 
-.field public static final aiscene_beach_lite:I = 0x7f110008
+.field public static final aiscene_beach_lite:I = 0x7f120008
 
-.field public static final aiscene_buddha:I = 0x7f110009
+.field public static final aiscene_buddha:I = 0x7f120009
 
-.field public static final aiscene_buddha_india:I = 0x7f11000a
+.field public static final aiscene_buddha_india:I = 0x7f12000a
 
-.field public static final aiscene_buddha_lite:I = 0x7f11000b
+.field public static final aiscene_buddha_lite:I = 0x7f12000b
 
-.field public static final aiscene_building:I = 0x7f11000c
+.field public static final aiscene_building:I = 0x7f12000c
 
-.field public static final aiscene_building_india:I = 0x7f11000d
+.field public static final aiscene_building_india:I = 0x7f12000d
 
-.field public static final aiscene_building_lite:I = 0x7f11000e
+.field public static final aiscene_building_lite:I = 0x7f12000e
 
-.field public static final aiscene_candlelight:I = 0x7f11000f
+.field public static final aiscene_candlelight:I = 0x7f12000f
 
-.field public static final aiscene_candlelight_india:I = 0x7f110010
+.field public static final aiscene_candlelight_india:I = 0x7f120010
 
-.field public static final aiscene_candlelight_lite:I = 0x7f110011
+.field public static final aiscene_candlelight_lite:I = 0x7f120011
 
-.field public static final aiscene_car:I = 0x7f110012
+.field public static final aiscene_car:I = 0x7f120012
 
-.field public static final aiscene_car_india:I = 0x7f110013
+.field public static final aiscene_car_india:I = 0x7f120013
 
-.field public static final aiscene_car_lite:I = 0x7f110014
+.field public static final aiscene_car_lite:I = 0x7f120014
 
-.field public static final aiscene_cat:I = 0x7f110015
+.field public static final aiscene_cat:I = 0x7f120015
 
-.field public static final aiscene_cat_india:I = 0x7f110016
+.field public static final aiscene_cat_india:I = 0x7f120016
 
-.field public static final aiscene_cat_lite:I = 0x7f110017
+.field public static final aiscene_cat_lite:I = 0x7f120017
 
-.field public static final aiscene_city:I = 0x7f110018
+.field public static final aiscene_city:I = 0x7f120018
 
-.field public static final aiscene_city_india:I = 0x7f110019
+.field public static final aiscene_city_india:I = 0x7f120019
 
-.field public static final aiscene_city_lite:I = 0x7f11001a
+.field public static final aiscene_city_lite:I = 0x7f12001a
 
-.field public static final aiscene_cloud:I = 0x7f11001b
+.field public static final aiscene_cloud:I = 0x7f12001b
 
-.field public static final aiscene_cloud_india:I = 0x7f11001c
+.field public static final aiscene_cloud_india:I = 0x7f12001c
 
-.field public static final aiscene_cloud_lite:I = 0x7f11001d
+.field public static final aiscene_cloud_lite:I = 0x7f12001d
 
-.field public static final aiscene_common:I = 0x7f11001e
+.field public static final aiscene_common:I = 0x7f12001e
 
-.field public static final aiscene_cow:I = 0x7f11001f
+.field public static final aiscene_cow:I = 0x7f12001f
 
-.field public static final aiscene_cow_india:I = 0x7f110020
+.field public static final aiscene_cow_india:I = 0x7f120020
 
-.field public static final aiscene_cow_lite:I = 0x7f110021
+.field public static final aiscene_cow_lite:I = 0x7f120021
 
-.field public static final aiscene_curry:I = 0x7f110022
+.field public static final aiscene_curry:I = 0x7f120022
 
-.field public static final aiscene_curry_india:I = 0x7f110023
+.field public static final aiscene_curry_india:I = 0x7f120023
 
-.field public static final aiscene_curry_lite:I = 0x7f110024
+.field public static final aiscene_curry_lite:I = 0x7f120024
 
-.field public static final aiscene_debug_black:I = 0x7f110025
+.field public static final aiscene_debug_black:I = 0x7f120025
 
-.field public static final aiscene_diving:I = 0x7f110026
+.field public static final aiscene_diving:I = 0x7f120026
 
-.field public static final aiscene_diving_india:I = 0x7f110027
+.field public static final aiscene_diving_india:I = 0x7f120027
 
-.field public static final aiscene_diving_lite:I = 0x7f110028
+.field public static final aiscene_diving_lite:I = 0x7f120028
 
-.field public static final aiscene_doc:I = 0x7f110029
+.field public static final aiscene_doc:I = 0x7f120029
 
-.field public static final aiscene_doc_india:I = 0x7f11002a
+.field public static final aiscene_doc_india:I = 0x7f12002a
 
-.field public static final aiscene_doc_lite:I = 0x7f11002b
+.field public static final aiscene_doc_lite:I = 0x7f12002b
 
-.field public static final aiscene_dog:I = 0x7f11002c
+.field public static final aiscene_dog:I = 0x7f12002c
 
-.field public static final aiscene_dog_india:I = 0x7f11002d
+.field public static final aiscene_dog_india:I = 0x7f12002d
 
-.field public static final aiscene_dog_lite:I = 0x7f11002e
+.field public static final aiscene_dog_lite:I = 0x7f12002e
 
-.field public static final aiscene_flower:I = 0x7f11002f
+.field public static final aiscene_flower:I = 0x7f12002f
 
-.field public static final aiscene_flower_india:I = 0x7f110030
+.field public static final aiscene_flower_india:I = 0x7f120030
 
-.field public static final aiscene_flower_lite:I = 0x7f110031
+.field public static final aiscene_flower_lite:I = 0x7f120031
 
-.field public static final aiscene_food:I = 0x7f110032
+.field public static final aiscene_food:I = 0x7f120032
 
-.field public static final aiscene_food_india:I = 0x7f110033
+.field public static final aiscene_food_india:I = 0x7f120033
 
-.field public static final aiscene_food_lite:I = 0x7f110034
+.field public static final aiscene_food_lite:I = 0x7f120034
 
-.field public static final aiscene_grass:I = 0x7f110035
+.field public static final aiscene_grass:I = 0x7f120035
 
-.field public static final aiscene_grass_india:I = 0x7f110036
+.field public static final aiscene_grass_india:I = 0x7f120036
 
-.field public static final aiscene_grass_lite:I = 0x7f110037
+.field public static final aiscene_grass_lite:I = 0x7f120037
 
-.field public static final aiscene_green_plants:I = 0x7f110038
+.field public static final aiscene_green_plants:I = 0x7f120038
 
-.field public static final aiscene_green_plants_india:I = 0x7f110039
+.field public static final aiscene_green_plants_india:I = 0x7f120039
 
-.field public static final aiscene_green_plants_lite:I = 0x7f11003a
+.field public static final aiscene_green_plants_lite:I = 0x7f12003a
 
-.field public static final aiscene_human:I = 0x7f11003b
+.field public static final aiscene_human:I = 0x7f12003b
 
-.field public static final aiscene_human_india:I = 0x7f11003c
+.field public static final aiscene_human_india:I = 0x7f12003c
 
-.field public static final aiscene_human_lite:I = 0x7f11003d
+.field public static final aiscene_human_lite:I = 0x7f12003d
 
-.field public static final aiscene_jewelry:I = 0x7f11003e
+.field public static final aiscene_jewelry:I = 0x7f12003e
 
-.field public static final aiscene_jewelry_india:I = 0x7f11003f
+.field public static final aiscene_jewelry_india:I = 0x7f12003f
 
-.field public static final aiscene_jewelry_lite:I = 0x7f110040
+.field public static final aiscene_jewelry_lite:I = 0x7f120040
 
-.field public static final aiscene_maple_leaves:I = 0x7f110041
+.field public static final aiscene_maple_leaves:I = 0x7f120041
 
-.field public static final aiscene_maple_leaves_india:I = 0x7f110042
+.field public static final aiscene_maple_leaves_india:I = 0x7f120042
 
-.field public static final aiscene_maple_leaves_lite:I = 0x7f110043
+.field public static final aiscene_maple_leaves_lite:I = 0x7f120043
 
-.field public static final aiscene_motorbike:I = 0x7f110044
+.field public static final aiscene_motorbike:I = 0x7f120044
 
-.field public static final aiscene_motorbike_india:I = 0x7f110045
+.field public static final aiscene_motorbike_india:I = 0x7f120045
 
-.field public static final aiscene_motorbike_lite:I = 0x7f110046
+.field public static final aiscene_motorbike_lite:I = 0x7f120046
 
-.field public static final aiscene_night:I = 0x7f110047
+.field public static final aiscene_night:I = 0x7f120047
 
-.field public static final aiscene_night_india:I = 0x7f110048
+.field public static final aiscene_night_india:I = 0x7f120048
 
-.field public static final aiscene_night_lite:I = 0x7f110049
+.field public static final aiscene_night_lite:I = 0x7f120049
 
-.field public static final aiscene_night_lite_ii:I = 0x7f11004a
+.field public static final aiscene_night_lite_ii:I = 0x7f12004a
 
-.field public static final aiscene_overcast:I = 0x7f11004b
+.field public static final aiscene_overcast:I = 0x7f12004b
 
-.field public static final aiscene_overcast_india:I = 0x7f11004c
+.field public static final aiscene_overcast_india:I = 0x7f12004c
 
-.field public static final aiscene_overcast_lite:I = 0x7f11004d
+.field public static final aiscene_overcast_lite:I = 0x7f12004d
 
-.field public static final aiscene_ppt:I = 0x7f11004e
+.field public static final aiscene_ppt:I = 0x7f12004e
 
-.field public static final aiscene_ppt_india:I = 0x7f11004f
+.field public static final aiscene_ppt_india:I = 0x7f12004f
 
-.field public static final aiscene_ppt_lite:I = 0x7f110050
+.field public static final aiscene_ppt_lite:I = 0x7f120050
 
-.field public static final aiscene_sea:I = 0x7f110051
+.field public static final aiscene_sea:I = 0x7f120051
 
-.field public static final aiscene_sea_india:I = 0x7f110052
+.field public static final aiscene_sea_india:I = 0x7f120052
 
-.field public static final aiscene_sea_lite:I = 0x7f110053
+.field public static final aiscene_sea_lite:I = 0x7f120053
 
-.field public static final aiscene_silhouette:I = 0x7f110054
+.field public static final aiscene_silhouette:I = 0x7f120054
 
-.field public static final aiscene_silhouette_india:I = 0x7f110055
+.field public static final aiscene_silhouette_india:I = 0x7f120055
 
-.field public static final aiscene_sky:I = 0x7f110056
+.field public static final aiscene_sky:I = 0x7f120056
 
-.field public static final aiscene_sky_india:I = 0x7f110057
+.field public static final aiscene_sky_india:I = 0x7f120057
 
-.field public static final aiscene_sky_lite:I = 0x7f110058
+.field public static final aiscene_sky_lite:I = 0x7f120058
 
-.field public static final aiscene_snow:I = 0x7f110059
+.field public static final aiscene_snow:I = 0x7f120059
 
-.field public static final aiscene_snow_india:I = 0x7f11005a
+.field public static final aiscene_snow_india:I = 0x7f12005a
 
-.field public static final aiscene_snow_lite:I = 0x7f11005b
+.field public static final aiscene_snow_lite:I = 0x7f12005b
 
-.field public static final aiscene_succulent:I = 0x7f11005c
+.field public static final aiscene_succulent:I = 0x7f12005c
 
-.field public static final aiscene_succulent_india:I = 0x7f11005d
+.field public static final aiscene_succulent_india:I = 0x7f12005d
 
-.field public static final aiscene_succulent_lite:I = 0x7f11005e
+.field public static final aiscene_succulent_lite:I = 0x7f12005e
 
-.field public static final aiscene_sunrise_sunset:I = 0x7f11005f
+.field public static final aiscene_sunrise_sunset:I = 0x7f12005f
 
-.field public static final aiscene_sunrise_sunset_india:I = 0x7f110060
+.field public static final aiscene_sunrise_sunset_india:I = 0x7f120060
 
-.field public static final aiscene_sunrise_sunset_lite:I = 0x7f110061
+.field public static final aiscene_sunrise_sunset_lite:I = 0x7f120061
 
-.field public static final aiscene_sunrise_sunset_lite_ii:I = 0x7f110062
+.field public static final aiscene_sunrise_sunset_lite_ii:I = 0x7f120062
 
-.field public static final aiscene_temple:I = 0x7f110063
+.field public static final aiscene_temple:I = 0x7f120063
 
-.field public static final aiscene_temple_india:I = 0x7f110064
+.field public static final aiscene_temple_india:I = 0x7f120064
 
-.field public static final aiscene_temple_lite:I = 0x7f110065
+.field public static final aiscene_temple_lite:I = 0x7f120065
 
-.field public static final backdropper:I = 0x7f110066
+.field public static final backdropper:I = 0x7f120066
 
-.field public static final beauty_india_dusk:I = 0x7f110067
+.field public static final beauty_india_dusk:I = 0x7f120067
 
-.field public static final beauty_india_pink:I = 0x7f110068
+.field public static final beauty_india_pink:I = 0x7f120068
 
-.field public static final beauty_india_strong:I = 0x7f110069
+.field public static final beauty_india_strong:I = 0x7f120069
 
-.field public static final beauty_india_sunny:I = 0x7f11006a
+.field public static final beauty_india_sunny:I = 0x7f12006a
 
-.field public static final beauty_india_tea:I = 0x7f11006b
+.field public static final beauty_india_tea:I = 0x7f12006b
 
-.field public static final blank:I = 0x7f11006c
+.field public static final blank:I = 0x7f12006c
 
-.field public static final camera_click_cv:I = 0x7f11006d
+.field public static final camera_click_cv:I = 0x7f12006d
 
-.field public static final camera_fast_burst_cv:I = 0x7f11006e
+.field public static final camera_fast_burst_cv:I = 0x7f12006e
 
-.field public static final camera_fast_burst_end_cv:I = 0x7f11006f
+.field public static final camera_fast_burst_end_cv:I = 0x7f12006f
 
-.field public static final camera_focus_cv:I = 0x7f110070
+.field public static final camera_focus_cv:I = 0x7f120070
 
-.field public static final cvstyle_common:I = 0x7f110071
+.field public static final cvstyle_common:I = 0x7f120071
 
-.field public static final cvstyle_food:I = 0x7f110072
+.field public static final cvstyle_food:I = 0x7f120072
 
-.field public static final cvstyle_human:I = 0x7f110073
+.field public static final cvstyle_human:I = 0x7f120073
 
-.field public static final cvstyle_night:I = 0x7f110074
+.field public static final cvstyle_night:I = 0x7f120074
 
-.field public static final cvstyle_plants:I = 0x7f110075
+.field public static final cvstyle_plants:I = 0x7f120075
 
-.field public static final cvstyle_sunrise_sunset:I = 0x7f110076
+.field public static final cvstyle_sunrise_sunset:I = 0x7f120076
 
-.field public static final cvstyle_zizhan_common:I = 0x7f110077
+.field public static final cvstyle_zizhan_common:I = 0x7f120077
 
-.field public static final cvstyle_zizhan_food:I = 0x7f110078
+.field public static final cvstyle_zizhan_food:I = 0x7f120078
 
-.field public static final cvstyle_zizhan_human:I = 0x7f110079
+.field public static final cvstyle_zizhan_human:I = 0x7f120079
 
-.field public static final cvstyle_zizhan_night:I = 0x7f11007a
+.field public static final cvstyle_zizhan_night:I = 0x7f12007a
 
-.field public static final cvstyle_zizhan_plants:I = 0x7f11007b
+.field public static final cvstyle_zizhan_plants:I = 0x7f12007b
 
-.field public static final cvstyle_zizhan_sunrise_sunset:I = 0x7f11007c
+.field public static final cvstyle_zizhan_sunrise_sunset:I = 0x7f12007c
 
-.field public static final dd_f_t:I = 0x7f11007d
+.field public static final dd_f_t:I = 0x7f12007d
 
-.field public static final dd_unf_t:I = 0x7f11007e
+.field public static final dd_unf_t:I = 0x7f12007e
 
-.field public static final dual_video_win_switch_a:I = 0x7f11007f
+.field public static final dual_video_win_switch_a:I = 0x7f12007f
 
-.field public static final dual_video_win_switch_a_cv:I = 0x7f110080
+.field public static final dual_video_win_switch_a_cv:I = 0x7f120080
 
-.field public static final dual_video_win_switch_b:I = 0x7f110081
+.field public static final dual_video_win_switch_b:I = 0x7f120081
 
-.field public static final dual_video_win_switch_b_cv:I = 0x7f110082
+.field public static final dual_video_win_switch_b_cv:I = 0x7f120082
 
-.field public static final effect_comparision_3d:I = 0x7f110083
+.field public static final effect_comparision_3d:I = 0x7f120083
 
-.field public static final effect_comparision_3d_sound:I = 0x7f110084
+.field public static final effect_comparision_3d_sound:I = 0x7f120084
 
-.field public static final effect_comparision_original:I = 0x7f110085
+.field public static final effect_comparision_original:I = 0x7f120085
 
-.field public static final effect_comparision_original_sound:I = 0x7f110086
+.field public static final effect_comparision_original_sound:I = 0x7f120086
 
-.field public static final effect_comparison_ai_audio_noise_en:I = 0x7f110087
+.field public static final effect_comparison_ai_audio_noise_en:I = 0x7f120087
 
-.field public static final effect_comparison_ai_audio_silence_en:I = 0x7f110088
+.field public static final effect_comparison_ai_audio_silence_en:I = 0x7f120088
 
-.field public static final effect_comparison_noise_en:I = 0x7f110089
+.field public static final effect_comparison_noise_en:I = 0x7f120089
 
-.field public static final effect_comparison_noise_zh:I = 0x7f11008a
+.field public static final effect_comparison_noise_zh:I = 0x7f12008a
 
-.field public static final effect_comparison_silence_en:I = 0x7f11008b
+.field public static final effect_comparison_silence_en:I = 0x7f12008b
 
-.field public static final effect_comparison_silence_zh:I = 0x7f11008c
+.field public static final effect_comparison_silence_zh:I = 0x7f12008c
 
-.field public static final extra_anim_ai_audio_new:I = 0x7f11008d
+.field public static final extra_anim_ai_audio_new:I = 0x7f12008d
 
-.field public static final extra_anim_ai_audio_new_cv:I = 0x7f11008e
+.field public static final extra_anim_ai_audio_new_cv:I = 0x7f12008e
 
-.field public static final extra_anim_ai_audio_single:I = 0x7f11008f
+.field public static final extra_anim_ai_audio_single:I = 0x7f12008f
 
-.field public static final extra_anim_ai_audio_single_cv:I = 0x7f110090
+.field public static final extra_anim_ai_audio_single_cv:I = 0x7f120090
 
-.field public static final extra_anim_auto_zoom:I = 0x7f110091
+.field public static final extra_anim_auto_zoom:I = 0x7f120091
 
-.field public static final extra_anim_auto_zoom_cv:I = 0x7f110092
+.field public static final extra_anim_auto_zoom_cv:I = 0x7f120092
 
-.field public static final extra_anim_center_mark:I = 0x7f110093
+.field public static final extra_anim_center_mark:I = 0x7f120093
 
-.field public static final extra_anim_center_mark_cv:I = 0x7f110094
+.field public static final extra_anim_center_mark_cv:I = 0x7f120094
 
-.field public static final extra_anim_cinema:I = 0x7f110095
+.field public static final extra_anim_cinema:I = 0x7f120095
 
-.field public static final extra_anim_cinema_cv:I = 0x7f110096
+.field public static final extra_anim_cinema_cv:I = 0x7f120096
 
-.field public static final extra_anim_color_enhance:I = 0x7f110097
+.field public static final extra_anim_color_enhance:I = 0x7f120097
 
-.field public static final extra_anim_color_enhance_cv:I = 0x7f110098
+.field public static final extra_anim_color_enhance_cv:I = 0x7f120098
 
-.field public static final extra_anim_exposure_feedback:I = 0x7f110099
+.field public static final extra_anim_exposure_feedback:I = 0x7f120099
 
-.field public static final extra_anim_exposure_feedback_cv:I = 0x7f11009a
+.field public static final extra_anim_exposure_feedback_cv:I = 0x7f12009a
 
-.field public static final extra_anim_focus_peak:I = 0x7f11009b
+.field public static final extra_anim_focus_peak:I = 0x7f12009b
 
-.field public static final extra_anim_focus_peak_cv:I = 0x7f11009c
+.field public static final extra_anim_focus_peak_cv:I = 0x7f12009c
 
-.field public static final extra_anim_google:I = 0x7f11009d
+.field public static final extra_anim_google:I = 0x7f12009d
 
-.field public static final extra_anim_gradienter:I = 0x7f11009e
+.field public static final extra_anim_gradienter:I = 0x7f12009e
 
-.field public static final extra_anim_gradienter_cv:I = 0x7f11009f
+.field public static final extra_anim_gradienter_cv:I = 0x7f12009f
 
-.field public static final extra_anim_hand_gesture:I = 0x7f1100a0
+.field public static final extra_anim_hand_gesture:I = 0x7f1200a0
 
-.field public static final extra_anim_hand_gesture_cv:I = 0x7f1100a1
+.field public static final extra_anim_hand_gesture_cv:I = 0x7f1200a1
 
-.field public static final extra_anim_histogram:I = 0x7f1100a2
+.field public static final extra_anim_histogram:I = 0x7f1200a2
 
-.field public static final extra_anim_inteval:I = 0x7f1100a3
+.field public static final extra_anim_inteval:I = 0x7f1200a3
 
-.field public static final extra_anim_line:I = 0x7f1100a4
+.field public static final extra_anim_line:I = 0x7f1200a4
 
-.field public static final extra_anim_log:I = 0x7f1100a5
+.field public static final extra_anim_log:I = 0x7f1200a5
 
-.field public static final extra_anim_log_cv:I = 0x7f1100a6
+.field public static final extra_anim_log_cv:I = 0x7f1200a6
 
-.field public static final extra_anim_macro_mode:I = 0x7f1100a7
+.field public static final extra_anim_macro_mode:I = 0x7f1200a7
 
-.field public static final extra_anim_macro_mode_cv:I = 0x7f1100a8
+.field public static final extra_anim_macro_mode_cv:I = 0x7f1200a8
 
-.field public static final extra_anim_motionphoto:I = 0x7f1100a9
+.field public static final extra_anim_motionphoto:I = 0x7f1200a9
 
-.field public static final extra_anim_motionphoto_cv:I = 0x7f1100aa
+.field public static final extra_anim_motionphoto_cv:I = 0x7f1200aa
 
-.field public static final extra_anim_raw:I = 0x7f1100ab
+.field public static final extra_anim_raw:I = 0x7f1200ab
 
-.field public static final extra_anim_raw_cv:I = 0x7f1100ac
+.field public static final extra_anim_raw_cv:I = 0x7f1200ac
 
-.field public static final extra_anim_referenceline_golden_section:I = 0x7f1100ad
+.field public static final extra_anim_referenceline_golden_section:I = 0x7f1200ad
 
-.field public static final extra_anim_referenceline_golden_section_cv:I = 0x7f1100ae
+.field public static final extra_anim_referenceline_golden_section_cv:I = 0x7f1200ae
 
-.field public static final extra_anim_referenceline_jiugongge:I = 0x7f1100af
+.field public static final extra_anim_referenceline_jiugongge:I = 0x7f1200af
 
-.field public static final extra_anim_referenceline_jiugongge_cv:I = 0x7f1100b0
+.field public static final extra_anim_referenceline_jiugongge_cv:I = 0x7f1200b0
 
-.field public static final extra_anim_referenceline_left_golden_spiral:I = 0x7f1100b1
+.field public static final extra_anim_referenceline_left_golden_spiral:I = 0x7f1200b1
 
-.field public static final extra_anim_referenceline_left_golden_spiral_cv:I = 0x7f1100b2
+.field public static final extra_anim_referenceline_left_golden_spiral_cv:I = 0x7f1200b2
 
-.field public static final extra_anim_referenceline_right_golden_spiral:I = 0x7f1100b3
+.field public static final extra_anim_referenceline_right_golden_spiral:I = 0x7f1200b3
 
-.field public static final extra_anim_referenceline_right_golden_spiral_cv:I = 0x7f1100b4
+.field public static final extra_anim_referenceline_right_golden_spiral_cv:I = 0x7f1200b4
 
-.field public static final extra_anim_speech:I = 0x7f1100b5
+.field public static final extra_anim_speech:I = 0x7f1200b5
 
-.field public static final extra_anim_speech_cv:I = 0x7f1100b6
+.field public static final extra_anim_speech_cv:I = 0x7f1200b6
 
-.field public static final extra_anim_subtitle:I = 0x7f1100b7
+.field public static final extra_anim_subtitle:I = 0x7f1200b7
 
-.field public static final extra_anim_subtitle_cv:I = 0x7f1100b8
+.field public static final extra_anim_subtitle_cv:I = 0x7f1200b8
 
-.field public static final extra_anim_tilt:I = 0x7f1100b9
+.field public static final extra_anim_tilt:I = 0x7f1200b9
 
-.field public static final extra_anim_tilt_cv:I = 0x7f1100ba
+.field public static final extra_anim_tilt_cv:I = 0x7f1200ba
 
-.field public static final extra_anim_timer_burst:I = 0x7f1100bb
+.field public static final extra_anim_timer_burst:I = 0x7f1200bb
 
-.field public static final extra_anim_timer_burst_cv:I = 0x7f1100bc
+.field public static final extra_anim_timer_burst_cv:I = 0x7f1200bc
 
-.field public static final extra_anim_video_vokeh:I = 0x7f1100bd
+.field public static final extra_anim_video_vokeh:I = 0x7f1200bd
 
-.field public static final face_beauty_animation:I = 0x7f1100be
+.field public static final face_beauty_animation:I = 0x7f1200be
 
-.field public static final fastmotion_150x:I = 0x7f1100bf
+.field public static final fastmotion_150x:I = 0x7f1200bf
 
-.field public static final fastmotion_1800x:I = 0x7f1100c0
+.field public static final fastmotion_1800x:I = 0x7f1200c0
 
-.field public static final fastmotion_30x:I = 0x7f1100c1
+.field public static final fastmotion_30x:I = 0x7f1200c1
 
-.field public static final fastmotion_750x:I = 0x7f1100c2
+.field public static final fastmotion_750x:I = 0x7f1200c2
 
-.field public static final fastmotion_90x:I = 0x7f1100c3
+.field public static final fastmotion_90x:I = 0x7f1200c3
 
-.field public static final flat_selfie_in2out:I = 0x7f1100c4
+.field public static final firebase_common_keep:I = 0x7f1200c4
 
-.field public static final flat_selfie_out2in:I = 0x7f1100c5
+.field public static final flat_selfie_in2out:I = 0x7f1200c5
 
-.field public static final focus_lock:I = 0x7f1100c6
+.field public static final flat_selfie_out2in:I = 0x7f1200c6
 
-.field public static final front_camera_hint_animation:I = 0x7f1100c7
+.field public static final focus_lock:I = 0x7f1200c7
 
-.field public static final front_facing_fold_tip:I = 0x7f1100c8
+.field public static final front_camera_hint_animation:I = 0x7f1200c8
 
-.field public static final goofy_face:I = 0x7f1100c9
+.field public static final front_facing_fold_tip:I = 0x7f1200c9
 
-.field public static final ic_mode_downloading_cv:I = 0x7f1100ca
+.field public static final goofy_face:I = 0x7f1200ca
 
-.field public static final lighting_2_bright_red:I = 0x7f1100cb
+.field public static final ic_mode_downloading_cv:I = 0x7f1200cb
 
-.field public static final lighting_2_dazzling:I = 0x7f1100cc
+.field public static final lighting_2_bright_red:I = 0x7f1200cc
 
-.field public static final lighting_2_dreamland:I = 0x7f1100cd
+.field public static final lighting_2_dazzling:I = 0x7f1200cd
 
-.field public static final lighting_2_gorgeous:I = 0x7f1100ce
+.field public static final lighting_2_dreamland:I = 0x7f1200ce
 
-.field public static final lighting_2_lanshan:I = 0x7f1100cf
+.field public static final lighting_2_gorgeous:I = 0x7f1200cf
 
-.field public static final lighting_2_neon:I = 0x7f1100d0
+.field public static final lighting_2_lanshan:I = 0x7f1200d0
 
-.field public static final lighting_2_nostalgia:I = 0x7f1100d1
+.field public static final lighting_2_neon:I = 0x7f1200d1
 
-.field public static final lighting_2_phantom:I = 0x7f1100d2
+.field public static final lighting_2_nostalgia:I = 0x7f1200d2
 
-.field public static final lighting_2_rainbow:I = 0x7f1100d3
+.field public static final lighting_2_phantom:I = 0x7f1200d3
 
-.field public static final lighting_dot:I = 0x7f1100d4
+.field public static final lighting_2_rainbow:I = 0x7f1200d4
 
-.field public static final lighting_holi:I = 0x7f1100d5
+.field public static final lighting_dot:I = 0x7f1200d5
 
-.field public static final lighting_leaf:I = 0x7f1100d6
+.field public static final lighting_holi:I = 0x7f1200d6
 
-.field public static final lighting_movie:I = 0x7f1100d7
+.field public static final lighting_leaf:I = 0x7f1200d7
 
-.field public static final lighting_nature:I = 0x7f1100d8
+.field public static final lighting_movie:I = 0x7f1200d8
 
-.field public static final lighting_rainbow:I = 0x7f1100d9
+.field public static final lighting_nature:I = 0x7f1200d9
 
-.field public static final lighting_shutter:I = 0x7f1100da
+.field public static final lighting_rainbow:I = 0x7f1200da
 
-.field public static final lighting_stage:I = 0x7f1100db
+.field public static final lighting_shutter:I = 0x7f1200db
 
-.field public static final lottie_exposure_sun:I = 0x7f1100dc
+.field public static final lighting_stage:I = 0x7f1200dc
 
-.field public static final makeup_cool:I = 0x7f1100dd
+.field public static final lottie_exposure_sun:I = 0x7f1200dd
 
-.field public static final makeup_hardline:I = 0x7f1100de
+.field public static final makeup_cool:I = 0x7f1200de
 
-.field public static final makeup_neutral:I = 0x7f1100df
+.field public static final makeup_hardline:I = 0x7f1200df
 
-.field public static final makeup_nude:I = 0x7f1100e0
+.field public static final makeup_neutral:I = 0x7f1200e0
 
-.field public static final makeup_soft:I = 0x7f1100e1
+.field public static final makeup_nude:I = 0x7f1200e1
 
-.field public static final makeup_sweet:I = 0x7f1100e2
+.field public static final makeup_soft:I = 0x7f1200e2
 
-.field public static final more_mode_style_popup_light:I = 0x7f1100e3
+.field public static final makeup_sweet:I = 0x7f1200e3
 
-.field public static final more_mode_style_popup_light_123:I = 0x7f1100e4
+.field public static final more_mode_style_popup_light:I = 0x7f1200e4
 
-.field public static final more_mode_style_popup_light_456:I = 0x7f1100e5
+.field public static final more_mode_style_popup_light_123:I = 0x7f1200e5
 
-.field public static final more_mode_style_popup_light_789:I = 0x7f1100e6
+.field public static final more_mode_style_popup_light_456:I = 0x7f1200e6
 
-.field public static final more_mode_style_popup_night:I = 0x7f1100e7
+.field public static final more_mode_style_popup_light_789:I = 0x7f1200e7
 
-.field public static final more_mode_style_popup_night_123:I = 0x7f1100e8
+.field public static final more_mode_style_popup_night:I = 0x7f1200e8
 
-.field public static final more_mode_style_popup_night_456:I = 0x7f1100e9
+.field public static final more_mode_style_popup_night_123:I = 0x7f1200e9
 
-.field public static final more_mode_style_popup_night_789:I = 0x7f1100ea
+.field public static final more_mode_style_popup_night_456:I = 0x7f1200ea
 
-.field public static final more_mode_style_tab_light:I = 0x7f1100eb
+.field public static final more_mode_style_popup_night_789:I = 0x7f1200eb
 
-.field public static final more_mode_style_tab_light_123:I = 0x7f1100ec
+.field public static final more_mode_style_tab_light:I = 0x7f1200ec
 
-.field public static final more_mode_style_tab_light_456:I = 0x7f1100ed
+.field public static final more_mode_style_tab_light_123:I = 0x7f1200ed
 
-.field public static final more_mode_style_tab_light_789:I = 0x7f1100ee
+.field public static final more_mode_style_tab_light_456:I = 0x7f1200ee
 
-.field public static final more_mode_style_tab_night:I = 0x7f1100ef
+.field public static final more_mode_style_tab_light_789:I = 0x7f1200ef
 
-.field public static final more_mode_style_tab_night_123:I = 0x7f1100f0
+.field public static final more_mode_style_tab_night:I = 0x7f1200f0
 
-.field public static final more_mode_style_tab_night_456:I = 0x7f1100f1
+.field public static final more_mode_style_tab_night_123:I = 0x7f1200f1
 
-.field public static final more_mode_style_tab_night_789:I = 0x7f1100f2
+.field public static final more_mode_style_tab_night_456:I = 0x7f1200f2
 
-.field public static final normal_berry:I = 0x7f1100f3
+.field public static final more_mode_style_tab_night_789:I = 0x7f1200f3
 
-.field public static final normal_blackgold:I = 0x7f1100f4
+.field public static final normal_berry:I = 0x7f1200f4
 
-.field public static final normal_blackice:I = 0x7f1100f5
+.field public static final normal_blackgold:I = 0x7f1200f5
 
-.field public static final normal_bright:I = 0x7f1100f6
+.field public static final normal_blackice:I = 0x7f1200f6
 
-.field public static final normal_c_50d:I = 0x7f1100f7
+.field public static final normal_bright:I = 0x7f1200f7
 
-.field public static final normal_c_64:I = 0x7f1100f8
+.field public static final normal_c_50d:I = 0x7f1200f8
 
-.field public static final normal_classic:I = 0x7f1100f9
+.field public static final normal_c_64:I = 0x7f1200f9
 
-.field public static final normal_cold_white:I = 0x7f1100fa
+.field public static final normal_classic:I = 0x7f1200fa
 
-.field public static final normal_cookie:I = 0x7f1100fb
+.field public static final normal_cold_white:I = 0x7f1200fb
 
-.field public static final normal_dark:I = 0x7f1100fc
+.field public static final normal_cookie:I = 0x7f1200fc
 
-.field public static final normal_dark_high:I = 0x7f1100fd
+.field public static final normal_dark:I = 0x7f1200fd
 
-.field public static final normal_delicacy:I = 0x7f1100fe
+.field public static final normal_dark_high:I = 0x7f1200fe
 
-.field public static final normal_fade:I = 0x7f1100ff
+.field public static final normal_delicacy:I = 0x7f1200ff
 
-.field public static final normal_film:I = 0x7f110100
+.field public static final normal_fade:I = 0x7f120100
 
-.field public static final normal_first:I = 0x7f110101
+.field public static final normal_film:I = 0x7f120101
 
-.field public static final normal_g_200:I = 0x7f110102
+.field public static final normal_first:I = 0x7f120102
 
-.field public static final normal_h_400:I = 0x7f110103
+.field public static final normal_g_200:I = 0x7f120103
 
-.field public static final normal_holiday:I = 0x7f110104
+.field public static final normal_h_400:I = 0x7f120104
 
-.field public static final normal_japanese:I = 0x7f110105
+.field public static final normal_holiday:I = 0x7f120105
 
-.field public static final normal_latte:I = 0x7f110106
+.field public static final normal_japanese:I = 0x7f120106
 
-.field public static final normal_light:I = 0x7f110107
+.field public static final normal_latte:I = 0x7f120107
 
-.field public static final normal_lilt:I = 0x7f110108
+.field public static final normal_light:I = 0x7f120108
 
-.field public static final normal_lively:I = 0x7f110109
+.field public static final normal_lilt:I = 0x7f120109
 
-.field public static final normal_mint:I = 0x7f11010a
+.field public static final normal_lively:I = 0x7f12010a
 
-.field public static final normal_natural:I = 0x7f11010b
+.field public static final normal_mint:I = 0x7f12010b
 
-.field public static final normal_nature:I = 0x7f11010c
+.field public static final normal_natural:I = 0x7f12010c
 
-.field public static final normal_original:I = 0x7f11010d
+.field public static final normal_nature:I = 0x7f12010d
 
-.field public static final normal_oxygen:I = 0x7f11010e
+.field public static final normal_original:I = 0x7f12010e
 
-.field public static final normal_p_160nc:I = 0x7f11010f
+.field public static final normal_oxygen:I = 0x7f12010f
 
-.field public static final normal_p_400h:I = 0x7f110110
+.field public static final normal_p_160nc:I = 0x7f120110
 
-.field public static final normal_pink:I = 0x7f110111
+.field public static final normal_p_400h:I = 0x7f120111
 
-.field public static final normal_pink_orange:I = 0x7f110112
+.field public static final normal_pink:I = 0x7f120112
 
-.field public static final normal_quiet:I = 0x7f110113
+.field public static final normal_pink_orange:I = 0x7f120113
 
-.field public static final normal_shallots:I = 0x7f110114
+.field public static final normal_quiet:I = 0x7f120114
 
-.field public static final normal_sibopenk:I = 0x7f110115
+.field public static final normal_shallots:I = 0x7f120115
 
-.field public static final normal_v_5207:I = 0x7f110116
+.field public static final normal_sibopenk:I = 0x7f120116
 
-.field public static final normal_warm:I = 0x7f110117
+.field public static final normal_v_5207:I = 0x7f120117
 
-.field public static final normal_whiteandblack:I = 0x7f110118
+.field public static final normal_warm:I = 0x7f120118
 
-.field public static final number_picker_value_change:I = 0x7f110119
+.field public static final normal_whiteandblack:I = 0x7f120119
 
-.field public static final presenation_record_2s:I = 0x7f11011a
+.field public static final number_picker_value_change:I = 0x7f12011a
 
-.field public static final presenation_record_2s_slow:I = 0x7f11011b
+.field public static final presenation_record_2s:I = 0x7f12011b
 
-.field public static final pro_video_recording_simple_anim:I = 0x7f11011c
+.field public static final presenation_record_2s_slow:I = 0x7f12011c
 
-.field public static final pro_video_recording_simple_anim_cv:I = 0x7f11011d
+.field public static final pro_video_recording_simple_anim:I = 0x7f12011d
 
-.field public static final recording_snap:I = 0x7f11011e
+.field public static final pro_video_recording_simple_anim_cv:I = 0x7f12011e
 
-.field public static final recording_snap_light:I = 0x7f11011f
+.field public static final recording_snap:I = 0x7f12011f
 
-.field public static final resource_anim_finish:I = 0x7f110120
+.field public static final recording_snap_light:I = 0x7f120120
 
-.field public static final resource_anim_finish_cv:I = 0x7f110121
+.field public static final resource_anim_finish:I = 0x7f120121
 
-.field public static final resource_anim_finish_max:I = 0x7f110122
+.field public static final resource_anim_finish_cv:I = 0x7f120122
 
-.field public static final resource_anim_finish_max_cv:I = 0x7f110123
+.field public static final resource_anim_finish_max:I = 0x7f120123
 
-.field public static final resource_anim_loading_max_cv:I = 0x7f110124
+.field public static final resource_anim_finish_max_cv:I = 0x7f120124
 
-.field public static final switch_capture_record:I = 0x7f110125
+.field public static final resource_anim_loading_max_cv:I = 0x7f120125
 
-.field public static final switch_capture_record_cv:I = 0x7f110126
+.field public static final switch_capture_record:I = 0x7f120126
 
-.field public static final switch_capture_record_cv_light:I = 0x7f110127
+.field public static final switch_capture_record_cv:I = 0x7f120127
 
-.field public static final switch_capture_record_light:I = 0x7f110128
+.field public static final switch_capture_record_cv_light:I = 0x7f120128
 
-.field public static final switch_pause_play:I = 0x7f110129
+.field public static final switch_capture_record_light:I = 0x7f120129
 
-.field public static final switch_pause_play_cv:I = 0x7f11012a
+.field public static final switch_pause_play:I = 0x7f12012a
 
-.field public static final switch_pause_play_cv_light:I = 0x7f11012b
+.field public static final switch_pause_play_cv:I = 0x7f12012b
 
-.field public static final switch_pause_play_light:I = 0x7f11012c
+.field public static final switch_pause_play_cv_light:I = 0x7f12012c
 
-.field public static final switch_play_pause:I = 0x7f11012d
+.field public static final switch_pause_play_light:I = 0x7f12012d
 
-.field public static final switch_play_pause_cv:I = 0x7f11012e
+.field public static final switch_play_pause:I = 0x7f12012e
 
-.field public static final switch_play_pause_cv_light:I = 0x7f11012f
+.field public static final switch_play_pause_cv:I = 0x7f12012f
 
-.field public static final switch_play_pause_light:I = 0x7f110130
+.field public static final switch_play_pause_cv_light:I = 0x7f120130
 
-.field public static final switch_record_capture:I = 0x7f110131
+.field public static final switch_play_pause_light:I = 0x7f120131
 
-.field public static final switch_record_capture_cv:I = 0x7f110132
+.field public static final switch_record_capture:I = 0x7f120132
 
-.field public static final switch_record_capture_cv_light:I = 0x7f110133
+.field public static final switch_record_capture_cv:I = 0x7f120133
 
-.field public static final switch_record_capture_light:I = 0x7f110134
+.field public static final switch_record_capture_cv_light:I = 0x7f120134
 
-.field public static final top_anim_aidetect_cv:I = 0x7f110135
+.field public static final switch_record_capture_light:I = 0x7f120135
 
-.field public static final top_anim_cinematic_cv:I = 0x7f110136
+.field public static final top_anim_aidetect_cv:I = 0x7f120136
 
-.field public static final top_anim_flash_auto_cv:I = 0x7f110137
+.field public static final top_anim_cinematic_cv:I = 0x7f120137
 
-.field public static final top_anim_flash_halo_on_cv:I = 0x7f110138
+.field public static final top_anim_flash_auto_cv:I = 0x7f120138
 
-.field public static final top_anim_flash_off_cv:I = 0x7f110139
+.field public static final top_anim_flash_halo_on_cv:I = 0x7f120139
 
-.field public static final top_anim_flash_on_cv:I = 0x7f11013a
+.field public static final top_anim_flash_off_cv:I = 0x7f12013a
 
-.field public static final top_anim_flash_torch_cv:I = 0x7f11013b
+.field public static final top_anim_flash_on_cv:I = 0x7f12013b
 
-.field public static final top_anim_hdr_off_cv:I = 0x7f11013c
+.field public static final top_anim_flash_torch_cv:I = 0x7f12013c
 
-.field public static final top_anim_hdr_off_halo_cv:I = 0x7f11013d
+.field public static final top_anim_hdr_off_cv:I = 0x7f12013d
 
-.field public static final top_anim_hdr_on_cv:I = 0x7f11013e
+.field public static final top_anim_hdr_off_halo_cv:I = 0x7f12013e
 
-.field public static final top_anim_hdr_on_halo_cv:I = 0x7f11013f
+.field public static final top_anim_hdr_on_cv:I = 0x7f12013f
 
-.field public static final top_anim_hdr_on_video_cv:I = 0x7f110140
+.field public static final top_anim_hdr_on_halo_cv:I = 0x7f120140
 
-.field public static final top_anim_macro_cv:I = 0x7f110141
+.field public static final top_anim_hdr_on_video_cv:I = 0x7f120141
 
-.field public static final top_anim_motion_photo_cv:I = 0x7f110142
+.field public static final top_anim_macro_cv:I = 0x7f120142
 
-.field public static final top_anim_motion_photo_halo_cv:I = 0x7f110143
+.field public static final top_anim_motion_photo_cv:I = 0x7f120143
 
-.field public static final top_anim_portrait_cv:I = 0x7f110144
+.field public static final top_anim_motion_photo_halo_cv:I = 0x7f120144
 
-.field public static final top_anim_portrait_repair_off:I = 0x7f110145
+.field public static final top_anim_portrait_cv:I = 0x7f120145
 
-.field public static final top_anim_portrait_repair_on:I = 0x7f110146
+.field public static final top_anim_portrait_repair_off:I = 0x7f120146
 
-.field public static final top_anim_shine_cv:I = 0x7f110147
+.field public static final top_anim_portrait_repair_on:I = 0x7f120147
 
-.field public static final video_blackgold:I = 0x7f110148
+.field public static final top_anim_shine_cv:I = 0x7f120148
 
-.field public static final video_blackice:I = 0x7f110149
+.field public static final video_blackgold:I = 0x7f120149
 
-.field public static final video_central:I = 0x7f11014a
+.field public static final video_blackice:I = 0x7f12014a
 
-.field public static final video_cyberpink:I = 0x7f11014b
+.field public static final video_central:I = 0x7f12014b
 
-.field public static final video_fantasy:I = 0x7f11014c
+.field public static final video_cyberpink:I = 0x7f12014c
 
-.field public static final video_lost:I = 0x7f11014d
+.field public static final video_fantasy:I = 0x7f12014d
 
-.field public static final video_meet:I = 0x7f11014e
+.field public static final video_lost:I = 0x7f12014e
 
-.field public static final video_northern_europe:I = 0x7f11014f
+.field public static final video_meet:I = 0x7f12014f
 
-.field public static final video_orange:I = 0x7f110150
+.field public static final video_northern_europe:I = 0x7f120150
 
-.field public static final video_prompter_play:I = 0x7f110151
+.field public static final video_orange:I = 0x7f120151
 
-.field public static final video_prompter_play_cv:I = 0x7f110152
+.field public static final video_prompter_play:I = 0x7f120152
 
-.field public static final video_prompter_stop:I = 0x7f110153
+.field public static final video_prompter_play_cv:I = 0x7f120153
 
-.field public static final video_prompter_stop_cv:I = 0x7f110154
+.field public static final video_prompter_stop:I = 0x7f120154
 
-.field public static final video_prompter_zoom_in:I = 0x7f110155
+.field public static final video_prompter_stop_cv:I = 0x7f120155
 
-.field public static final video_prompter_zoom_in_cv:I = 0x7f110156
+.field public static final video_prompter_zoom_in:I = 0x7f120156
 
-.field public static final video_prompter_zoom_out:I = 0x7f110157
+.field public static final video_prompter_zoom_in_cv:I = 0x7f120157
 
-.field public static final video_prompter_zoom_out_cv:I = 0x7f110158
+.field public static final video_prompter_zoom_out:I = 0x7f120158
 
-.field public static final video_record_end_cv:I = 0x7f110159
+.field public static final video_prompter_zoom_out_cv:I = 0x7f120159
 
-.field public static final video_record_start_cv:I = 0x7f11015a
+.field public static final video_record_end_cv:I = 0x7f12015a
 
-.field public static final video_rome:I = 0x7f11015b
+.field public static final video_record_start_cv:I = 0x7f12015b
 
-.field public static final video_summer_day:I = 0x7f11015c
+.field public static final video_rome:I = 0x7f12015c
 
-.field public static final video_wind_sing:I = 0x7f11015d
+.field public static final video_summer_day:I = 0x7f12015d
 
-.field public static final vlog_pro_preview_pause:I = 0x7f11015e
+.field public static final video_wind_sing:I = 0x7f12015e
 
-.field public static final vlog_pro_preview_playing:I = 0x7f11015f
+.field public static final vlog_pro_preview_pause:I = 0x7f12015f
 
-.field public static final vlog_pro_preview_sound_off:I = 0x7f110160
+.field public static final vlog_pro_preview_playing:I = 0x7f120160
 
-.field public static final vlog_pro_preview_sound_off_cv:I = 0x7f110161
+.field public static final vlog_pro_preview_sound_off:I = 0x7f120161
 
-.field public static final vlog_pro_preview_sound_on:I = 0x7f110162
+.field public static final vlog_pro_preview_sound_off_cv:I = 0x7f120162
 
-.field public static final vlog_pro_preview_sound_on_cv:I = 0x7f110163
+.field public static final vlog_pro_preview_sound_on:I = 0x7f120163
 
-.field public static final volume_silence:I = 0x7f110164
+.field public static final vlog_pro_preview_sound_on_cv:I = 0x7f120164
 
-.field public static final volume_up:I = 0x7f110165
+.field public static final volume_silence:I = 0x7f120165
 
-.field public static final vv_save:I = 0x7f110166
+.field public static final volume_up:I = 0x7f120166
 
-.field public static final vv_save_cv:I = 0x7f110167
+.field public static final vv_save:I = 0x7f120167
 
-.field public static final vv_save_full_cv_light:I = 0x7f110168
+.field public static final vv_save_cv:I = 0x7f120168
 
-.field public static final vv_save_half_cv_light:I = 0x7f110169
+.field public static final vv_save_full_cv_light:I = 0x7f120169
 
-.field public static final vv_save_light:I = 0x7f11016a
+.field public static final vv_save_half_cv_light:I = 0x7f12016a
 
-.field public static final wideselfie_guide:I = 0x7f11016b
+.field public static final vv_save_light:I = 0x7f12016b
 
-.field public static final xiaomi_static_config:I = 0x7f11016c
+.field public static final wideselfie_guide:I = 0x7f12016c
+
+.field public static final xiaomi_static_config:I = 0x7f12016d
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

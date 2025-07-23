@@ -54,13 +54,20 @@
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     check-cast p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;
 
-    .line 2
+    .line 6
+    .line 7
     iget-object p0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mBehaviorTag:Ljava/lang/Object;
 
+    .line 8
+    .line 9
     return-object p0
 .end method
 
@@ -78,13 +85,20 @@
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     check-cast p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;
 
-    .line 2
+    .line 6
+    .line 7
     iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mBehaviorTag:Ljava/lang/Object;
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -111,21 +125,33 @@
     .line 1
     invoke-virtual {p0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->getScrimOpacity(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)F
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     const/4 p1, 0x0
 
+    .line 6
     cmpl-float p0, p0, p1
 
+    .line 7
+    .line 8
     if-lez p0, :cond_0
 
+    .line 9
+    .line 10
     const/4 p0, 0x1
 
+    .line 11
     goto :goto_0
 
+    .line 12
     :cond_0
     const/4 p0, 0x0
 
+    .line 13
     :goto_0
     return p0
 .end method
@@ -154,8 +180,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -180,8 +208,11 @@
         }
     .end annotation
 
+    .line 1
     const/high16 p0, -0x1000000
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -208,8 +239,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -237,8 +270,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -270,6 +305,7 @@
         }
     .end annotation
 
+    .line 1
     return-object p3
 .end method
 
@@ -280,6 +316,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 
@@ -307,8 +344,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -336,12 +375,14 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public onDetachedFromLayoutParams()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -369,8 +410,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -392,8 +435,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -415,8 +460,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -444,8 +491,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -473,8 +522,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -509,6 +560,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -542,7 +594,7 @@
 
     if-nez p7, :cond_0
 
-    .line 1
+    .line 2
     invoke-virtual/range {p0 .. p6}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onNestedPreScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II[I)V
 
     :cond_0
@@ -576,6 +628,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -605,7 +658,7 @@
 
     if-nez p8, :cond_0
 
-    .line 1
+    .line 2
     invoke-virtual/range {p0 .. p7}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIII)V
 
     :cond_0
@@ -644,6 +697,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -678,7 +732,7 @@
 
     if-nez p6, :cond_0
 
-    .line 1
+    .line 2
     invoke-virtual/range {p0 .. p5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onNestedScrollAccepted(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;I)V
 
     :cond_0
@@ -709,8 +763,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -738,6 +794,7 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -766,6 +823,8 @@
     .line 1
     sget-object p0, Landroid/view/View$BaseSavedState;->EMPTY_STATE:Landroid/view/AbsSavedState;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -801,6 +860,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
     return p0
@@ -837,7 +897,7 @@
 
     if-nez p6, :cond_0
 
-    .line 1
+    .line 2
     invoke-virtual/range {p0 .. p5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;I)Z
 
     move-result p0
@@ -877,6 +937,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -906,7 +967,7 @@
 
     if-nez p4, :cond_0
 
-    .line 1
+    .line 2
     invoke-virtual {p0, p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onStopNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)V
 
     :cond_0
@@ -937,7 +998,9 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

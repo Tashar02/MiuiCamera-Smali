@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/widget/ViewTransition$1;
+.class Landroidx/constraintlayout/motion/widget/ViewTransition$1;
 .super Ljava/lang/Object;
 .source "ViewTransition.java"
 
@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/constraintlayout/motion/widget/ViewTransition;
+.field final synthetic this$0:Landroidx/constraintlayout/motion/widget/ViewTransition;
 
-.field public final synthetic val$easing:Landroidx/constraintlayout/core/motion/utils/Easing;
+.field final synthetic val$easing:Landroidx/constraintlayout/core/motion/utils/Easing;
 
 
 # direct methods
@@ -40,10 +40,17 @@
     .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/ViewTransition$1;->this$0:Landroidx/constraintlayout/motion/widget/ViewTransition;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/constraintlayout/motion/widget/ViewTransition$1;->val$easing:Landroidx/constraintlayout/core/motion/utils/Easing;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -63,13 +70,21 @@
     .line 1
     iget-object p0, p0, Landroidx/constraintlayout/motion/widget/ViewTransition$1;->val$easing:Landroidx/constraintlayout/core/motion/utils/Easing;
 
+    .line 2
+    .line 3
     float-to-double v0, p1
 
+    .line 4
     invoke-virtual {p0, v0, v1}, Landroidx/constraintlayout/core/motion/utils/Easing;->get(D)D
 
+    .line 5
+    .line 6
+    .line 7
     move-result-wide p0
 
+    .line 8
     double-to-float p0, p0
 
+    .line 9
     return p0
 .end method

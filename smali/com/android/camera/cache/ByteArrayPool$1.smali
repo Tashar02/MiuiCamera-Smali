@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/cache/ByteArrayPool$1;
+.class Lcom/android/camera/cache/ByteArrayPool$1;
 .super Landroid/util/LruCache;
 .source "ByteArrayPool.java"
 
@@ -23,28 +23,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/cache/ByteArrayPool;
+.field final synthetic this$0:Lcom/android/camera/cache/ByteArrayPool;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/cache/ByteArrayPool;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0
-        }
-        names = {
-            "this$0",
-            "maxSize"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/cache/ByteArrayPool$1;->this$0:Lcom/android/camera/cache/ByteArrayPool;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2}, Landroid/util/LruCache;-><init>(I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -52,16 +47,6 @@
 # virtual methods
 .method public sizeOf(Ljava/lang/Integer;[B)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "key",
-            "value"
-        }
-    .end annotation
 
     .line 2
     array-length p0, p2
@@ -71,16 +56,6 @@
 
 .method public bridge synthetic sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "key",
-            "value"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Ljava/lang/Integer;

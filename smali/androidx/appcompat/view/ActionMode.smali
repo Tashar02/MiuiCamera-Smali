@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -50,6 +53,8 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/view/ActionMode;->mTag:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -62,6 +67,8 @@
     .line 1
     iget-boolean p0, p0, Landroidx/appcompat/view/ActionMode;->mTitleOptionalHint:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -71,8 +78,10 @@
 .method public isTitleOptional()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -84,8 +93,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
@@ -104,6 +115,8 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/view/ActionMode;->mTag:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -119,5 +132,7 @@
     .line 1
     iput-boolean p1, p0, Landroidx/appcompat/view/ActionMode;->mTitleOptionalHint:Z
 
+    .line 2
+    .line 3
     return-void
 .end method

@@ -72,6 +72,14 @@
         <item quantity="other">&lt;Data>La versión de Cámara que está usando no es compatible con su modelo de dispositivo.&lt;br>La aplicación se cerrará en &lt;font color=#FFCE16>&lt;b>%1$d segs&lt;/b>&lt;/font>. Desinstale las actualizaciones de Cámara e inténtelo de nuevo.&lt;/Data></item>
         <item quantity="one">&lt;Data>La versión de Cámara que está usando no es compatible con su modelo de dispositivo.&lt;br>La aplicación se cerrará en &lt;font color=#FFCE16>&lt;b>%1$d seg&lt;/b>&lt;/font>. Desinstale las actualizaciones de Cámara e inténtelo de nuevo.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Adelantar %d segundos</item>
+        <item quantity="one">Adelantar %d segundo</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Retroceder %d segundos</item>
+        <item quantity="one">Retroceder %d segundo</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d mins</item>
         <item quantity="one">%1$d min</item>

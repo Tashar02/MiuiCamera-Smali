@@ -1,4 +1,4 @@
-.class public Landroidx/heifwriter/HeifWriter$1;
+.class Landroidx/heifwriter/HeifWriter$1;
 .super Ljava/lang/Object;
 .source "HeifWriter.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/heifwriter/HeifWriter;
+.field final synthetic this$0:Landroidx/heifwriter/HeifWriter;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/heifwriter/HeifWriter$1;->this$0:Landroidx/heifwriter/HeifWriter;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,10 +47,15 @@
     :try_start_0
     iget-object p0, p0, Landroidx/heifwriter/HeifWriter$1;->this$0:Landroidx/heifwriter/HeifWriter;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/heifwriter/HeifWriter;->closeInternal()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 4
+    .line 5
+    .line 6
     :catch_0
     return-void
 .end method

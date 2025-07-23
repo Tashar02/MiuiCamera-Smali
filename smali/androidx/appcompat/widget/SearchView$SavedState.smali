@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$SavedState;
+.class Landroidx/appcompat/widget/SearchView$SavedState;
 .super Landroidx/customview/view/AbsSavedState;
 .source "SearchView.java"
 
@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public isIconified:Z
+.field isIconified:Z
 
 
 # direct methods
@@ -37,10 +37,17 @@
     .line 1
     new-instance v0, Landroidx/appcompat/widget/SearchView$SavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/appcompat/widget/SearchView$SavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/appcompat/widget/SearchView$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -85,39 +92,79 @@
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v1, "SearchView.SavedState{"
 
+    .line 7
+    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
+    .line 9
+    .line 10
+    .line 11
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
+    .line 12
+    .line 13
+    .line 14
     move-result v1
 
+    .line 15
     invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object v1
 
+    .line 19
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 20
+    .line 21
+    .line 22
     const-string v1, " isIconified="
 
+    .line 23
+    .line 24
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 25
+    .line 26
+    .line 27
     iget-boolean p0, p0, Landroidx/appcompat/widget/SearchView$SavedState;->isIconified:Z
 
+    .line 28
+    .line 29
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 30
+    .line 31
+    .line 32
     const-string/jumbo p0, "}"
 
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 36
+    .line 37
+    .line 38
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 39
+    .line 40
+    .line 41
     move-result-object p0
 
+    .line 42
     return-object p0
 .end method
 
@@ -128,13 +175,24 @@
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
+    .line 3
+    .line 4
     iget-boolean p0, p0, Landroidx/appcompat/widget/SearchView$SavedState;->isIconified:Z
 
+    .line 5
+    .line 6
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object p0
 
+    .line 10
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method

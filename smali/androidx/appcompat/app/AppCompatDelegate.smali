@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final DEBUG:Z = false
+.field static final DEBUG:Z = false
 
 .field public static final FEATURE_ACTION_MODE_OVERLAY:I = 0xa
 
@@ -40,7 +40,7 @@
 
 .field public static final MODE_NIGHT_YES:I = 0x2
 
-.field public static final TAG:Ljava/lang/String; = "AppCompatDelegate"
+.field static final TAG:Ljava/lang/String; = "AppCompatDelegate"
 
 .field private static final sActivityDelegates:Landroidx/collection/ArraySet;
     .annotation system Ldalvik/annotation/Signature;
@@ -59,23 +59,36 @@
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
     new-instance v0, Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/collection/ArraySet;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegates:Landroidx/collection/ArraySet;
 
-    .line 2
+    .line 7
+    .line 8
     new-instance v0, Ljava/lang/Object;
 
+    .line 9
+    .line 10
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 11
+    .line 12
+    .line 13
     sput-object v0, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegatesLock:Ljava/lang/Object;
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -85,6 +98,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -98,33 +114,50 @@
     .line 1
     sget-object v0, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegatesLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     invoke-static {p0}, Landroidx/appcompat/app/AppCompatDelegate;->removeDelegateFromActives(Landroidx/appcompat/app/AppCompatDelegate;)V
 
-    .line 3
+    .line 5
+    .line 6
+    .line 7
     sget-object v1, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegates:Landroidx/collection/ArraySet;
 
+    .line 8
+    .line 9
     new-instance v2, Ljava/lang/ref/WeakReference;
 
+    .line 10
+    .line 11
     invoke-direct {v2, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {v1, v2}, Landroidx/collection/ArraySet;->add(Ljava/lang/Object;)Z
 
-    .line 4
+    .line 15
+    .line 16
+    .line 17
     monitor-exit v0
 
+    .line 18
     return-void
 
+    .line 19
     :catchall_0
     move-exception p0
 
+    .line 20
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 21
     throw p0
 .end method
 
@@ -134,57 +167,90 @@
     .line 1
     sget-object v0, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegatesLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     sget-object v1, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegates:Landroidx/collection/ArraySet;
 
+    .line 5
+    .line 6
     invoke-virtual {v1}, Landroidx/collection/ArraySet;->iterator()Ljava/util/Iterator;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object v1
 
+    .line 10
     :cond_0
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 11
+    .line 12
+    .line 13
     move-result v2
 
+    .line 14
     if-eqz v2, :cond_1
 
+    .line 15
+    .line 16
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object v2
 
+    .line 20
     check-cast v2, Ljava/lang/ref/WeakReference;
 
-    .line 3
-    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 21
+    .line 22
+    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 23
+    .line 24
+    .line 25
     move-result-object v2
 
+    .line 26
     check-cast v2, Landroidx/appcompat/app/AppCompatDelegate;
 
+    .line 27
+    .line 28
     if-eqz v2, :cond_0
 
-    .line 4
+    .line 29
+    .line 30
     invoke-virtual {v2}, Landroidx/appcompat/app/AppCompatDelegate;->applyDayNight()Z
 
+    .line 31
+    .line 32
+    .line 33
     goto :goto_0
 
-    .line 5
+    .line 34
     :cond_1
     monitor-exit v0
 
+    .line 35
     return-void
 
+    .line 36
     :catchall_0
     move-exception v1
 
+    .line 37
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 38
     throw v1
 .end method
 
@@ -286,6 +352,8 @@
     .line 1
     sget v0, Landroidx/appcompat/app/AppCompatDelegate;->sDefaultNightMode:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -295,8 +363,12 @@
     .line 1
     invoke-static {}, Landroidx/appcompat/widget/VectorEnabledTintResources;->isCompatVectorFromResourcesEnabled()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     return v0
 .end method
 
@@ -310,24 +382,32 @@
     .line 1
     sget-object v0, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegatesLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     invoke-static {p0}, Landroidx/appcompat/app/AppCompatDelegate;->removeDelegateFromActives(Landroidx/appcompat/app/AppCompatDelegate;)V
 
-    .line 3
+    .line 5
+    .line 6
+    .line 7
     monitor-exit v0
 
+    .line 8
     return-void
 
+    .line 9
     :catchall_0
     move-exception p0
 
+    .line 10
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 11
     throw p0
 .end method
 
@@ -341,61 +421,95 @@
     .line 1
     sget-object v0, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegatesLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     sget-object v1, Landroidx/appcompat/app/AppCompatDelegate;->sActivityDelegates:Landroidx/collection/ArraySet;
 
+    .line 5
+    .line 6
     invoke-virtual {v1}, Landroidx/collection/ArraySet;->iterator()Ljava/util/Iterator;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object v1
 
-    .line 3
+    .line 10
     :cond_0
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 11
+    .line 12
+    .line 13
     move-result v2
 
+    .line 14
     if-eqz v2, :cond_2
 
-    .line 4
+    .line 15
+    .line 16
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object v2
 
+    .line 20
     check-cast v2, Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 21
+    .line 22
+    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 23
+    .line 24
+    .line 25
     move-result-object v2
 
+    .line 26
     check-cast v2, Landroidx/appcompat/app/AppCompatDelegate;
 
+    .line 27
+    .line 28
     if-eq v2, p0, :cond_1
 
+    .line 29
+    .line 30
     if-nez v2, :cond_0
 
-    .line 5
+    .line 31
+    .line 32
     :cond_1
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
+    .line 33
+    .line 34
+    .line 35
     goto :goto_0
 
-    .line 6
+    .line 36
     :cond_2
     monitor-exit v0
 
+    .line 37
     return-void
 
+    .line 38
     :catchall_0
     move-exception p0
 
+    .line 39
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 40
     throw p0
 .end method
 
@@ -405,51 +519,83 @@
     .line 1
     invoke-static {p0}, Landroidx/appcompat/widget/VectorEnabledTintResources;->setCompatVectorFromResourcesEnabled(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public static setDefaultNightMode(I)V
     .locals 1
 
+    .line 1
     const/4 v0, -0x1
 
+    .line 2
     if-eq p0, v0, :cond_0
 
+    .line 3
+    .line 4
     if-eqz p0, :cond_0
 
+    .line 5
+    .line 6
     const/4 v0, 0x1
 
+    .line 7
     if-eq p0, v0, :cond_0
 
+    .line 8
+    .line 9
     const/4 v0, 0x2
 
+    .line 10
     if-eq p0, v0, :cond_0
 
+    .line 11
+    .line 12
     const/4 v0, 0x3
 
+    .line 13
     if-eq p0, v0, :cond_0
 
+    .line 14
+    .line 15
     const-string p0, "AppCompatDelegate"
 
+    .line 16
+    .line 17
     const-string/jumbo v0, "setDefaultNightMode() called with an unknown mode"
 
-    .line 1
+    .line 18
+    .line 19
+    .line 20
     invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 21
+    .line 22
+    .line 23
     goto :goto_0
 
-    .line 2
+    .line 24
     :cond_0
     sget v0, Landroidx/appcompat/app/AppCompatDelegate;->sDefaultNightMode:I
 
+    .line 25
+    .line 26
     if-eq v0, p0, :cond_1
 
-    .line 3
+    .line 27
+    .line 28
     sput p0, Landroidx/appcompat/app/AppCompatDelegate;->sDefaultNightMode:I
 
-    .line 4
+    .line 29
+    .line 30
     invoke-static {}, Landroidx/appcompat/app/AppCompatDelegate;->applyDayNightToActiveDelegates()V
 
+    .line 31
+    .line 32
+    .line 33
     :cond_1
     :goto_0
     return-void
@@ -468,6 +614,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -486,6 +633,9 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDelegate;->attachBaseContext(Landroid/content/Context;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-object p1
 .end method
 
@@ -529,8 +679,11 @@
 .method public getLocalNightMode()I
     .locals 0
 
+    .line 1
     const/16 p0, -0x64
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -617,6 +770,7 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method
 

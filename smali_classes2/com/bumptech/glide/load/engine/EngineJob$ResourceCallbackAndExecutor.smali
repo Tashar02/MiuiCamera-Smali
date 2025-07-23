@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;
+.class final Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;
 .super Ljava/lang/Object;
 .source "EngineJob.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final cb:Lcom/bumptech/glide/request/ResourceCallback;
+.field final cb:Lcom/bumptech/glide/request/ResourceCallback;
 
-.field public final executor:Ljava/util/concurrent/Executor;
+.field final executor:Ljava/util/concurrent/Executor;
 
 
 # direct methods
@@ -28,11 +28,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;->cb:Lcom/bumptech/glide/request/ResourceCallback;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;->executor:Ljava/util/concurrent/Executor;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -44,25 +49,39 @@
     .line 1
     instance-of v0, p1, Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     check-cast p1, Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;
 
-    .line 3
+    .line 6
+    .line 7
     iget-object p0, p0, Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;->cb:Lcom/bumptech/glide/request/ResourceCallback;
 
+    .line 8
+    .line 9
     iget-object p1, p1, Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;->cb:Lcom/bumptech/glide/request/ResourceCallback;
 
+    .line 10
+    .line 11
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 12
+    .line 13
+    .line 14
     move-result p0
 
+    .line 15
     return p0
 
+    .line 16
     :cond_0
     const/4 p0, 0x0
 
+    .line 17
     return p0
 .end method
 
@@ -72,9 +91,15 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/engine/EngineJob$ResourceCallbackAndExecutor;->cb:Lcom/bumptech/glide/request/ResourceCallback;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/lifecycle/Lifecycling$1;
+.class Landroidx/lifecycle/Lifecycling$1;
 .super Ljava/lang/Object;
 .source "Lifecycling.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic val$observer:Landroidx/lifecycle/LifecycleEventObserver;
+.field final synthetic val$observer:Landroidx/lifecycle/LifecycleEventObserver;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/lifecycle/Lifecycling$1;->val$observer:Landroidx/lifecycle/LifecycleEventObserver;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,7 +54,12 @@
     .line 1
     iget-object p0, p0, Landroidx/lifecycle/Lifecycling$1;->val$observer:Landroidx/lifecycle/LifecycleEventObserver;
 
+    .line 2
+    .line 3
     invoke-interface {p0, p1, p2}, Landroidx/lifecycle/LifecycleEventObserver;->onStateChanged(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

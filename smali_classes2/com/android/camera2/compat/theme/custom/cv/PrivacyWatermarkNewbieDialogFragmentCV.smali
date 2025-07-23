@@ -10,42 +10,60 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/fragment/dialog/PrivacyWatermarkNewbieDialogFragment;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic OooO0O0(Lcom/android/camera2/compat/theme/custom/cv/PrivacyWatermarkNewbieDialogFragmentCV;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/android/camera2/compat/theme/custom/cv/PrivacyWatermarkNewbieDialogFragmentCV;->lambda$onCreateView$0(Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method private synthetic lambda$onCreateView$0(Landroid/view/View;)V
     .locals 0
 
+    .line 1
     const/4 p1, 0x5
 
-    .line 1
+    .line 2
     invoke-virtual {p0, p1}, Lcom/android/camera/fragment/dialog/AiSceneNewbieDialogFragment;->onBackEvent(I)Z
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic OooO0O0(Landroid/view/View;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/camera2/compat/theme/custom/cv/PrivacyWatermarkNewbieDialogFragmentCV;->lambda$onCreateView$0(Landroid/view/View;)V
-
-    return-void
-.end method
-
 .method public getBgColor()I
     .locals 1
 
+    .line 1
     const/16 p0, 0xa6
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
-    .line 1
+    .line 4
     invoke-static {p0, v0, v0, v0}, Landroid/graphics/Color;->argb(IIII)I
 
+    .line 5
+    .line 6
+    .line 7
     move-result p0
 
+    .line 8
     return p0
 .end method
 
@@ -62,62 +80,87 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "inflater",
-            "container",
-            "savedInstanceState"
-        }
-    .end annotation
-
-    const p3, 0x7f0d008c
-
-    const/4 v0, 0x0
-
     .line 1
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p3
+    const p3, 0x7f0e0096
 
     .line 2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
     .line 3
-    invoke-static {v1}, Lcom/android/camera/Util;->isInNightMode(Landroid/content/Context;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const p3, 0x7f0d008d
-
     .line 4
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p3
-
-    :cond_0
-    const p1, 0x7f0a00ce
+    const/4 v0, 0x0
 
     .line 5
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p3
+
+    .line 9
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    if-eqz v1, :cond_0
+
+    .line 14
+    .line 15
+    invoke-static {v1}, Lcom/android/camera/Util;->isInNightMode(Landroid/content/Context;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    if-eqz v1, :cond_0
+
+    .line 20
+    .line 21
+    const p3, 0x7f0e0097
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p3
+
+    .line 28
+    :cond_0
+    const p1, 0x7f0b00ce
+
+    .line 29
+    .line 30
+    .line 31
     invoke-virtual {p3, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 32
+    .line 33
+    .line 34
     move-result-object p1
 
-    new-instance p2, LOooO0OO/OooO0O0/OooO0O0/o00oOoo/OooO00o/OooO0O0/OooO00o/OooOo;
+    .line 35
+    new-instance p2, Lcom/android/camera2/compat/theme/custom/cv/OooOo;
 
-    invoke-direct {p2, p0}, LOooO0OO/OooO0O0/OooO0O0/o00oOoo/OooO00o/OooO0O0/OooO00o/OooOo;-><init>(Lcom/android/camera2/compat/theme/custom/cv/PrivacyWatermarkNewbieDialogFragmentCV;)V
+    .line 36
+    .line 37
+    invoke-direct {p2, p0}, Lcom/android/camera2/compat/theme/custom/cv/OooOo;-><init>(Lcom/android/camera2/compat/theme/custom/cv/PrivacyWatermarkNewbieDialogFragmentCV;)V
 
+    .line 38
+    .line 39
+    .line 40
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 41
+    .line 42
+    .line 43
     return-object p3
 .end method

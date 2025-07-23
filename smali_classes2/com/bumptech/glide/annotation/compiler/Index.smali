@@ -1,4 +1,4 @@
-.class public interface abstract annotation Lcom/bumptech/glide/annotation/compiler/Index;
+.class interface abstract annotation Lcom/bumptech/glide/annotation/compiler/Index;
 .super Ljava/lang/Object;
 .source "Index.java"
 

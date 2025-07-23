@@ -69,45 +69,76 @@
 .method public static constructor <clinit>()V
     .locals 2
 
+    .line 1
     const-string v0, "camera_vlog_test_time"
 
+    .line 2
+    .line 3
     const/16 v1, 0xfa0
 
-    .line 1
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Lcom/xiaomi/camera/util/SystemProperties;->getInt(Ljava/lang/String;I)I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     sput v0, Lcom/android/camera/constant/DurationConstant;->NEW_TIP_SHOW_TIME_TEST:I
 
-    .line 2
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 10
+    .line 11
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000000()I
+    .line 15
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o000000()I
 
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
+    .line 19
     sput v0, Lcom/android/camera/constant/DurationConstant;->DURATION_AMBILIGHT_MAGIC_STAR_CAPTURE:I
 
-    .line 3
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
+    .line 20
+    .line 21
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
 
+    .line 22
+    .line 23
+    .line 24
     move-result v0
 
+    .line 25
     if-eqz v0, :cond_0
 
+    .line 26
+    .line 27
     const/16 v0, 0x1900
 
+    .line 28
+    .line 29
     goto :goto_0
 
+    .line 30
     :cond_0
     const/16 v0, 0xc80
 
+    .line 31
+    .line 32
     :goto_0
     sput v0, Lcom/android/camera/constant/DurationConstant;->DURATION_AMBILIGHT_STAR_TRACK_CAPTURE:I
 
+    .line 33
+    .line 34
     return-void
 .end method
 
@@ -117,5 +148,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

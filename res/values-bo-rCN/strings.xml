@@ -670,6 +670,7 @@
     <string name="download_hint_cn">མིག་སྔར་WLANམེད་པའི་ཁོར་ཡུག་ཡིན་པས། བཞུར་ཚེད་%1$sMBཙམ་ཟད་སྲིད། ཕབ་ལེན་བྱ་རྒྱུར་གཏན་འཁེལ་ཡིན་ནམ།</string>
     <string name="download_hint_wifi">@string/download_hint</string>
     <string name="download_in_progress">ཕབ་ལེན་བྱེད་བཞིན་ཡོད།</string>
+    <string name="download_network_error">ཕབ་ལེན་མི་ཐུབ། དྲ་རྒྱའི་སྦྲེལ་མཐུད་ལ་ཞིབ་དཔྱད་གནང་རོགས།</string>
     <string name="download_title">བཞུར་ཚད་དྲན་སྐུལ།</string>
     <string name="download_waiting">སྒུག་བཞིན་ཡོད།</string>
     <string name="dual_camera_lens_covered_toast">བསླང་གཟུགས་པར་མིག་ཁྱད་ནུས་བསྒྲིབས་འདུག</string>
@@ -1481,6 +1482,7 @@
     <string name="pref_camera_peak_entry_off">ཁ་བརྒྱབ།</string>
     <string name="pref_camera_peak_entry_on">ཁ་ཕྱེ།</string>
     <string name="pref_camera_peak_title">རྩེ་ཐང་།</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">ངོས་ཡོངས།</string>
     <string name="pref_camera_picturesize_title_simple_mode">པར་ལེན་རི་མོ།</string>
     <string name="pref_camera_portrait_mode_entry_off">མིའི་པར་རིས་དཔེ་ཚུལ་ཁ་རྒྱག</string>
     <string name="pref_camera_portrait_mode_entry_on">མིའི་པར་རིས་དཔེ་ཚུལ་ཁ་འབྱེད།</string>

@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$WavePoint;
+.class Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$WavePoint;
 .super Ljava/lang/Object;
 .source "KeyCycleOscillator.java"
 
@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public mOffset:F
+.field mOffset:F
 
-.field public mPeriod:F
+.field mPeriod:F
 
-.field public mPhase:F
+.field mPhase:F
 
-.field public mPosition:I
+.field mPosition:I
 
-.field public mValue:F
+.field mValue:F
 
 
 # direct methods
@@ -34,19 +34,27 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$WavePoint;->mPosition:I
 
-    .line 3
+    .line 5
+    .line 6
     iput p5, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$WavePoint;->mValue:F
 
-    .line 4
+    .line 7
+    .line 8
     iput p3, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$WavePoint;->mOffset:F
 
-    .line 5
+    .line 9
+    .line 10
     iput p2, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$WavePoint;->mPeriod:F
 
-    .line 6
+    .line 11
+    .line 12
     iput p4, p0, Landroidx/constraintlayout/core/motion/utils/KeyCycleOscillator$WavePoint;->mPhase:F
 
+    .line 13
+    .line 14
     return-void
 .end method

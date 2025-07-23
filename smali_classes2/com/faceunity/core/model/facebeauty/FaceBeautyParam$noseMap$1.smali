@@ -4,7 +4,25 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/faceunity/core/model/facebeauty/FaceBeautyParam;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/HashMap<",
+        "Lcom/faceunity/core/model/facebeauty/FaceBeautyVersionEnum;",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
     bv = {
         0x1,
         0x0,
@@ -29,52 +47,56 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/faceunity/core/model/facebeauty/FaceBeautyParam;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/util/HashMap<",
-        "Lcom/faceunity/core/model/facebeauty/FaceBeautyVersionEnum;",
-        "Ljava/lang/String;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final synthetic this$0:Lcom/faceunity/core/model/facebeauty/FaceBeautyParam;
+.field final synthetic this$0:Lcom/faceunity/core/model/facebeauty/FaceBeautyParam;
 
 
 # direct methods
 .method public constructor <init>(Lcom/faceunity/core/model/facebeauty/FaceBeautyParam;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/faceunity/core/model/facebeauty/FaceBeautyParam$noseMap$1;->this$0:Lcom/faceunity/core/model/facebeauty/FaceBeautyParam;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     sget-object p1, Lcom/faceunity/core/model/facebeauty/FaceBeautyVersionEnum;->VERSION_1:Lcom/faceunity/core/model/facebeauty/FaceBeautyVersionEnum;
 
+    .line 7
+    .line 8
     const-string v0, "intensity_nose"
 
-    invoke-virtual {p0, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 9
+    .line 10
+    invoke-virtual {p0, p1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
+    .line 11
+    .line 12
+    .line 13
     sget-object p1, Lcom/faceunity/core/model/facebeauty/FaceBeautyVersionEnum;->VERSION_2:Lcom/faceunity/core/model/facebeauty/FaceBeautyVersionEnum;
 
+    .line 14
+    .line 15
     const-string v0, "intensity_nose_v2"
 
-    invoke-virtual {p0, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 16
+    .line 17
+    invoke-virtual {p0, p1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 18
+    .line 19
+    .line 20
     return-void
 .end method
 
@@ -162,8 +184,12 @@
     .line 1
     invoke-virtual {p0}, Lcom/faceunity/core/model/facebeauty/FaceBeautyParam$noseMap$1;->getEntries()Ljava/util/Set;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -208,8 +234,12 @@
     .line 1
     invoke-super {p0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -219,8 +249,12 @@
     .line 1
     invoke-super {p0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -265,8 +299,12 @@
     .line 1
     invoke-super {p0}, Ljava/util/HashMap;->size()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -276,8 +314,12 @@
     .line 1
     invoke-super {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -295,8 +337,12 @@
     .line 1
     invoke-virtual {p0}, Lcom/faceunity/core/model/facebeauty/FaceBeautyParam$noseMap$1;->getKeys()Ljava/util/Set;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -380,8 +426,12 @@
     .line 1
     invoke-virtual {p0}, Lcom/faceunity/core/model/facebeauty/FaceBeautyParam$noseMap$1;->getSize()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -399,7 +449,11 @@
     .line 1
     invoke-virtual {p0}, Lcom/faceunity/core/model/facebeauty/FaceBeautyParam$noseMap$1;->getValues()Ljava/util/Collection;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method

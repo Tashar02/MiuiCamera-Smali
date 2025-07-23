@@ -14,7 +14,7 @@
     .end annotation
 .end field
 
-.field public iconShadowRes:I
+.field iconShadowRes:I
     .annotation build Landroidx/annotation/DrawableRes;
     .end annotation
 .end field
@@ -36,5 +36,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

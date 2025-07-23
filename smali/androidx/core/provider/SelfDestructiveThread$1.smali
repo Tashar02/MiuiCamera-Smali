@@ -1,4 +1,4 @@
-.class public Landroidx/core/provider/SelfDestructiveThread$1;
+.class Landroidx/core/provider/SelfDestructiveThread$1;
 .super Ljava/lang/Object;
 .source "SelfDestructiveThread.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/core/provider/SelfDestructiveThread;
+.field final synthetic this$0:Landroidx/core/provider/SelfDestructiveThread;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/core/provider/SelfDestructiveThread$1;->this$0:Landroidx/core/provider/SelfDestructiveThread;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,31 +46,52 @@
     .line 1
     iget v0, p1, Landroid/os/Message;->what:I
 
+    .line 2
+    .line 3
     const/4 v1, 0x1
 
+    .line 4
     if-eqz v0, :cond_1
 
+    .line 5
+    .line 6
     if-eq v0, v1, :cond_0
 
+    .line 7
+    .line 8
     return v1
 
-    .line 2
+    .line 9
     :cond_0
     iget-object p0, p0, Landroidx/core/provider/SelfDestructiveThread$1;->this$0:Landroidx/core/provider/SelfDestructiveThread;
 
+    .line 10
+    .line 11
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
+    .line 12
+    .line 13
     check-cast p1, Ljava/lang/Runnable;
 
+    .line 14
+    .line 15
     invoke-virtual {p0, p1}, Landroidx/core/provider/SelfDestructiveThread;->onInvokeRunnable(Ljava/lang/Runnable;)V
 
+    .line 16
+    .line 17
+    .line 18
     return v1
 
-    .line 3
+    .line 19
     :cond_1
     iget-object p0, p0, Landroidx/core/provider/SelfDestructiveThread$1;->this$0:Landroidx/core/provider/SelfDestructiveThread;
 
+    .line 20
+    .line 21
     invoke-virtual {p0}, Landroidx/core/provider/SelfDestructiveThread;->onDestruction()V
 
+    .line 22
+    .line 23
+    .line 24
     return v1
 .end method

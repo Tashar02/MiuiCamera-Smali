@@ -35,49 +35,47 @@
 # direct methods
 .method public constructor <init>(FFDF)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "width",
-            "height",
-            "smooth",
-            "ksi"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->width:F
 
-    .line 3
+    .line 5
+    .line 6
     iput p2, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->height:F
 
-    .line 4
+    .line 7
+    .line 8
     iput-wide p3, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->smooth:D
 
-    .line 5
+    .line 9
+    .line 10
     iput p5, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->ksi:F
 
+    .line 11
+    .line 12
     const/4 p1, 0x0
 
-    .line 6
+    .line 13
     iput-object p1, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->topLeft:Lcom/android/camera/ui/SmoothPathProvider$CornerData;
 
-    .line 7
+    .line 14
+    .line 15
     iput-object p1, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->topRight:Lcom/android/camera/ui/SmoothPathProvider$CornerData;
 
-    .line 8
+    .line 16
+    .line 17
     iput-object p1, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->bottomRight:Lcom/android/camera/ui/SmoothPathProvider$CornerData;
 
-    .line 9
+    .line 18
+    .line 19
     iput-object p1, p0, Lcom/android/camera/ui/SmoothPathProvider$SmoothData;->bottomLeft:Lcom/android/camera/ui/SmoothPathProvider$CornerData;
 
+    .line 20
+    .line 21
     return-void
 .end method

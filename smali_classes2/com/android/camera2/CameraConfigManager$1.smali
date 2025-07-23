@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/CameraConfigManager$1;
+.class Lcom/android/camera2/CameraConfigManager$1;
 .super Ljava/lang/Object;
 .source "CameraConfigManager.java"
 
@@ -27,32 +27,29 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera2/CameraConfigManager;
+.field final synthetic this$0:Lcom/android/camera2/CameraConfigManager;
 
-.field public final synthetic val$enabled:Z
+.field final synthetic val$enabled:Z
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera2/CameraConfigManager;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$enabled"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/CameraConfigManager$1;->this$0:Lcom/android/camera2/CameraConfigManager;
 
+    .line 2
+    .line 3
     iput-boolean p2, p0, Lcom/android/camera2/CameraConfigManager$1;->val$enabled:Z
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -64,15 +61,6 @@
         ignore = false
         key = "supportSATUltraWideLDCEnable"
         type = 0x2
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "device"
-        }
     .end annotation
 
     .line 2
@@ -97,15 +85,6 @@
         ignore = false
         key = "supportSATUltraWideLDCEnable"
         type = 0x2
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "device"
-        }
     .end annotation
 
     .line 1

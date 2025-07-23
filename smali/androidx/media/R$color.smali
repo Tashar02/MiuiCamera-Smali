@@ -14,26 +14,22 @@
 
 
 # static fields
-.field public static final notification_action_color_filter:I = 0x7f060398
+.field public static final notification_material_background_media_default_color:I = 0x7f06039f
 
-.field public static final notification_icon_bg_color:I = 0x7f060399
+.field public static final primary_text_default_material_dark:I = 0x7f0603b4
 
-.field public static final notification_material_background_media_default_color:I = 0x7f06039a
-
-.field public static final primary_text_default_material_dark:I = 0x7f0603af
-
-.field public static final ripple_material_light:I = 0x7f0603bf
-
-.field public static final secondary_text_default_material_dark:I = 0x7f0603c0
-
-.field public static final secondary_text_default_material_light:I = 0x7f0603c1
+.field public static final secondary_text_default_material_dark:I = 0x7f0603c5
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

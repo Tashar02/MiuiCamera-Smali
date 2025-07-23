@@ -48,15 +48,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "targetFile"
-        }
-    .end annotation
-
     const/4 v2, 0x0
 
     const-wide/16 v3, 0x0
@@ -75,20 +66,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/os/Handler;JI)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "targetFile",
-            "handler",
-            "seekTo",
-            "number"
-        }
-    .end annotation
 
     const-string v0, "XiaomiAlgoDecoderAsync"
 
@@ -177,7 +154,7 @@
 
     move-result-object v4
 
-    const-string/jumbo v5, "video/"
+    const-string v5, "video/"
 
     .line 17
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -189,7 +166,7 @@
     .line 18
     iget-object v5, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mMediaParamsHolder:Lcom/miui/extravideo/common/MediaParamsHolder;
 
-    const-string/jumbo v6, "width"
+    const-string v6, "width"
 
     invoke-virtual {v2, v6}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
 
@@ -321,12 +298,26 @@
     return-void
 .end method
 
+.method public static synthetic OooO00o(Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->lambda$stop$0()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
 .method public static synthetic access$100(Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;)Landroid/media/MediaExtractor;
     .locals 0
 
     .line 1
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mMediaExtractor:Landroid/media/MediaExtractor;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -336,6 +327,8 @@
     .line 1
     iget p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecodeFrameIndex:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -345,10 +338,16 @@
     .line 1
     iget v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecodeFrameIndex:I
 
+    .line 2
+    .line 3
     add-int/lit8 v1, v0, 0x1
 
+    .line 4
+    .line 5
     iput v1, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecodeFrameIndex:I
 
+    .line 6
+    .line 7
     return v0
 .end method
 
@@ -358,6 +357,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mListener:Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -367,6 +368,8 @@
     .line 1
     iget p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mSkipFrameTimes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -376,6 +379,8 @@
     .line 1
     iput p1, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mSkipFrameTimes:I
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -385,6 +390,8 @@
     .line 1
     iget p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecodedFramesNumber:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -393,30 +400,22 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "format",
-            "name",
-            "defaultValue"
-        }
-    .end annotation
-
     .line 1
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 5
     return p0
 
+    .line 6
     :catch_0
     return p2
 .end method
@@ -427,33 +426,34 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mListener:Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x0
 
-    .line 2
+    .line 6
     invoke-interface {p0, v0}, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;->onDecodeStop(Z)V
 
+    .line 7
+    .line 8
+    .line 9
     :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic OooO00o()V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->lambda$stop$0()V
-
-    return-void
-.end method
-
 .method public getColorFormat()I
     .locals 0
 
     .line 1
     iget p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mColorFormat:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -463,6 +463,8 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mMediaParamsHolder:Lcom/miui/extravideo/common/MediaParamsHolder;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -472,107 +474,108 @@
     .line 1
     iget-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecoder:Landroid/media/MediaCodec;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-virtual {v0}, Landroid/media/MediaCodec;->stop()V
 
-    .line 3
+    .line 6
+    .line 7
+    .line 8
     iget-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecoder:Landroid/media/MediaCodec;
 
+    .line 9
+    .line 10
     invoke-virtual {v0}, Landroid/media/MediaCodec;->release()V
 
+    .line 11
+    .line 12
+    .line 13
     const/4 v0, 0x0
 
-    .line 4
+    .line 14
     iput-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecoder:Landroid/media/MediaCodec;
 
-    .line 5
+    .line 15
+    .line 16
     :cond_0
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mMediaExtractor:Landroid/media/MediaExtractor;
 
+    .line 17
+    .line 18
     if-eqz p0, :cond_1
 
-    .line 6
+    .line 19
+    .line 20
     invoke-virtual {p0}, Landroid/media/MediaExtractor;->release()V
 
+    .line 21
+    .line 22
+    .line 23
     :cond_1
     return-void
 .end method
 
 .method public seekToEndTimer(Ljava/lang/Long;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "times"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mMediaExtractor:Landroid/media/MediaExtractor;
 
+    .line 2
+    .line 3
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
+    .line 4
+    .line 5
+    .line 6
     move-result-wide v0
 
+    .line 7
     const/4 p1, 0x2
 
+    .line 8
     invoke-virtual {p0, v0, v1, p1}, Landroid/media/MediaExtractor;->seekTo(JI)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
 .method public setColorFormat(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "colorFormat"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mColorFormat:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setListener(Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listener"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mListener:Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSkipFrameTimes(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "skipFrameTimes"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mSkipFrameTimes:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -590,16 +593,24 @@
     .line 1
     iget-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mInitException:Ljava/lang/Exception;
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecoder:Landroid/media/MediaCodec;
 
+    .line 6
+    .line 7
     invoke-virtual {p0}, Landroid/media/MediaCodec;->start()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 
-    .line 3
+    .line 11
     :cond_0
     throw v0
 .end method
@@ -612,51 +623,88 @@
     .line 1
     iget-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mDecoder:Landroid/media/MediaCodec;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-virtual {v0}, Landroid/media/MediaCodec;->stop()V
 
-    .line 3
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     iget-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mListener:Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;
 
+    .line 9
+    .line 10
     if-eqz v0, :cond_2
 
-    .line 4
+    .line 11
+    .line 12
     iget-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mHandler:Landroid/os/Handler;
 
+    .line 13
+    .line 14
     if-eqz v0, :cond_1
 
+    .line 15
+    .line 16
     invoke-virtual {v0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object v0
 
+    .line 20
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v1
 
+    .line 24
     if-eq v0, v1, :cond_1
 
-    .line 5
+    .line 25
+    .line 26
     iget-object v0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, LOooO0OO/OooO0oo/OooO00o/OooO0O0/OooO00o;
+    .line 27
+    .line 28
+    new-instance v1, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/OooO00o;
 
-    invoke-direct {v1, p0}, LOooO0OO/OooO0oo/OooO00o/OooO0O0/OooO00o;-><init>(Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;)V
+    .line 29
+    .line 30
+    invoke-direct {v1, p0}, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/OooO00o;-><init>(Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;)V
 
+    .line 31
+    .line 32
+    .line 33
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 34
+    .line 35
+    .line 36
     goto :goto_0
 
-    .line 6
+    .line 37
     :cond_1
     iget-object p0, p0, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync;->mListener:Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;
 
+    .line 38
+    .line 39
     const/4 v0, 0x0
 
+    .line 40
     invoke-interface {p0, v0}, Lcom/miui/extravideoxmalgo/xaiomiAlogMedia/XiaomiAlgoDecoderAsync$DecodeUpdateListener;->onDecodeStop(Z)V
 
+    .line 41
+    .line 42
+    .line 43
     :cond_2
     :goto_0
     return-void

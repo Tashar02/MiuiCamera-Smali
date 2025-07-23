@@ -1,43 +1,43 @@
-.class public Lcom/bumptech/glide/gifdecoder/GifFrame;
+.class Lcom/bumptech/glide/gifdecoder/GifFrame;
 .super Ljava/lang/Object;
 .source "GifFrame.java"
 
 
 # static fields
-.field public static final DISPOSAL_BACKGROUND:I = 0x2
+.field static final DISPOSAL_BACKGROUND:I = 0x2
 
-.field public static final DISPOSAL_NONE:I = 0x1
+.field static final DISPOSAL_NONE:I = 0x1
 
-.field public static final DISPOSAL_PREVIOUS:I = 0x3
+.field static final DISPOSAL_PREVIOUS:I = 0x3
 
-.field public static final DISPOSAL_UNSPECIFIED:I
+.field static final DISPOSAL_UNSPECIFIED:I
 
 
 # instance fields
-.field public bufferFrameStart:I
+.field bufferFrameStart:I
 
-.field public delay:I
+.field delay:I
 
-.field public dispose:I
+.field dispose:I
 
-.field public ih:I
+.field ih:I
 
-.field public interlace:Z
+.field interlace:Z
 
-.field public iw:I
+.field iw:I
 
-.field public ix:I
+.field ix:I
 
-.field public iy:I
+.field iy:I
 
-.field public lct:[I
+.field lct:[I
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 .end field
 
-.field public transIndex:I
+.field transIndex:I
 
-.field public transparency:Z
+.field transparency:Z
 
 
 # direct methods
@@ -47,5 +47,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

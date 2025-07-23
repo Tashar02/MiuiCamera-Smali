@@ -6,18 +6,13 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera2/imagereaders/ImageReaderParam;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "param"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera2/imagereaders/ImageReaderHandler;-><init>(Lcom/android/camera2/imagereaders/ImageReaderParam;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,71 +24,128 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/module/shottype/ChainHandler;->mParam:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     check-cast v0, Lcom/android/camera2/imagereaders/ImageReaderParam;
 
+    .line 4
+    .line 5
     invoke-virtual {v0}, Lcom/android/camera2/imagereaders/ImageReaderParam;->isQcfaMode()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     const/4 v1, 0x0
 
+    .line 10
     if-eqz v0, :cond_0
 
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 11
+    .line 12
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 13
+    .line 14
+    .line 15
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00Oo00o()Z
+    .line 16
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o00Oo00o()Z
 
+    .line 17
+    .line 18
+    .line 19
     move-result v0
 
+    .line 20
     if-nez v0, :cond_2
 
-    .line 2
+    .line 21
+    .line 22
     :cond_0
     invoke-static {}, Lcom/android/camera/CameraSettings;->isUltraPixelOn()Z
 
+    .line 23
+    .line 24
+    .line 25
     move-result v0
 
+    .line 26
     if-eqz v0, :cond_1
 
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 27
+    .line 28
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00OoOO0()Z
+    .line 32
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o00OoOO0()Z
 
+    .line 33
+    .line 34
+    .line 35
     move-result v0
 
+    .line 36
     if-nez v0, :cond_2
 
+    .line 37
+    .line 38
     :cond_1
     iget-object p0, p0, Lcom/android/camera/module/shottype/ChainHandler;->mParam:Ljava/lang/Object;
 
+    .line 39
+    .line 40
     check-cast p0, Lcom/android/camera2/imagereaders/ImageReaderParam;
 
-    .line 3
+    .line 41
+    .line 42
     invoke-virtual {p0}, Lcom/android/camera2/imagereaders/ImageReaderParam;->getRawCallbackType()I
 
+    .line 43
+    .line 44
+    .line 45
     move-result p0
 
+    .line 46
     and-int/lit8 p0, p0, 0x8
 
+    .line 47
+    .line 48
     if-nez p0, :cond_2
 
-    new-array p0, v1, [Ljava/lang/Object;
+    .line 49
+    .line 50
+    const-string p0, "could normal handle"
 
-    const-string v0, "ImageReaderHandler"
+    .line 51
+    .line 52
+    new-array v0, v1, [Ljava/lang/Object;
 
-    const-string v1, "could normal handle"
+    .line 53
+    .line 54
+    const-string v1, "ImageReaderHandler"
 
-    .line 4
-    invoke-static {v0, v1, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 55
+    .line 56
+    invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 57
+    .line 58
+    .line 59
     const/4 p0, 0x1
 
+    .line 60
     return p0
 
+    .line 61
     :cond_2
     return v1
 .end method

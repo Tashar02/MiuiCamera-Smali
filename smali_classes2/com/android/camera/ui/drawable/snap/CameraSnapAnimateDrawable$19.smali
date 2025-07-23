@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$19;
+.class Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$19;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "CameraSnapAnimateDrawable.java"
 
@@ -15,32 +15,29 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
+.field final synthetic this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
-.field public final synthetic val$animationConfig:Lcom/android/camera/fragment/bottom/BottomAnimationConfig;
+.field final synthetic val$animationConfig:Lcom/android/camera/fragment/bottom/BottomAnimationConfig;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$animationConfig"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$19;->this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$19;->val$animationConfig:Lcom/android/camera/fragment/bottom/BottomAnimationConfig;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -48,31 +45,37 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animation"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
 
     .line 2
+    .line 3
+    .line 4
     iget-object p1, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$19;->this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 5
+    .line 6
     const/4 v0, 0x0
 
+    .line 7
     invoke-static {p1, v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->access$502(Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
 
-    .line 3
+    .line 8
+    .line 9
+    .line 10
     iget-object p1, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$19;->this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 11
+    .line 12
     iget-object p0, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$19;->val$animationConfig:Lcom/android/camera/fragment/bottom/BottomAnimationConfig;
 
+    .line 13
+    .line 14
     invoke-virtual {p1, p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->stopRecord(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 15
+    .line 16
+    .line 17
     return-void
 .end method

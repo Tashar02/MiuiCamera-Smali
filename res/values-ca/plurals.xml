@@ -72,6 +72,14 @@
         <item quantity="other">"&lt;Data>La versió de la Càmera que estàs utilitzant no és compatible amb el model del teu dispositiu.&lt;br>L'aplicació es tancarà a &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Desinstal·leu les actualitzacions de la Càmera i torneu-ho a provar.&lt;/Data>"</item>
         <item quantity="one">"&lt;Data>La versió de la Càmera que estàs utilitzant no és compatible amb el model del teu dispositiu.&lt;br>L'aplicació es tancarà a &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Desinstal·leu les actualitzacions de la Càmera i torneu-ho a provar.&lt;/Data>"</item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avança ràpidament %d segons</item>
+        <item quantity="one">Avança ràpidament %d segon</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rebobina %d segons</item>
+        <item quantity="one">Rebobina %d segon</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d mins</item>
         <item quantity="one">%1$d min</item>

@@ -15,20 +15,12 @@
 
 
 # instance fields
-.field public final string:Ljava/lang/String;
+.field protected final string:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "string"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Lorg/greenrobot/greendao/query/WhereCondition$AbstractCondition;-><init>()V
@@ -41,16 +33,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "string",
-            "value"
-        }
-    .end annotation
 
     .line 3
     invoke-direct {p0, p2}, Lorg/greenrobot/greendao/query/WhereCondition$AbstractCondition;-><init>(Ljava/lang/Object;)V
@@ -63,16 +45,6 @@
 
 .method public varargs constructor <init>(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "string",
-            "values"
-        }
-    .end annotation
 
     .line 5
     invoke-direct {p0, p2}, Lorg/greenrobot/greendao/query/WhereCondition$AbstractCondition;-><init>([Ljava/lang/Object;)V
@@ -87,21 +59,16 @@
 # virtual methods
 .method public appendTo(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "builder",
-            "tableAlias"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lorg/greenrobot/greendao/query/WhereCondition$StringCondition;->string:Ljava/lang/String;
 
+    .line 2
+    .line 3
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

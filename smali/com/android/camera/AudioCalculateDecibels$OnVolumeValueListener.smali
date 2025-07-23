@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onVolumeValue([F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "valueArray"
-        }
-    .end annotation
 .end method

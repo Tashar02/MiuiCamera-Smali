@@ -25,11 +25,11 @@
 # instance fields
 .field public gravity:I
 
-.field public isPeeking:Z
+.field isPeeking:Z
 
-.field public onScreen:F
+.field onScreen:F
 
-.field public openState:I
+.field openState:I
 
 
 # direct methods

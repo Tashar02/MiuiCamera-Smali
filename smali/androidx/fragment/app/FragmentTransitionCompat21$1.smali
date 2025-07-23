@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentTransitionCompat21$1;
+.class Landroidx/fragment/app/FragmentTransitionCompat21$1;
 .super Landroid/transition/Transition$EpicenterCallback;
 .source "FragmentTransitionCompat21.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/FragmentTransitionCompat21;
+.field final synthetic this$0:Landroidx/fragment/app/FragmentTransitionCompat21;
 
-.field public final synthetic val$epicenter:Landroid/graphics/Rect;
+.field final synthetic val$epicenter:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -27,10 +27,17 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentTransitionCompat21$1;->this$0:Landroidx/fragment/app/FragmentTransitionCompat21;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroidx/fragment/app/FragmentTransitionCompat21$1;->val$epicenter:Landroid/graphics/Rect;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Landroid/transition/Transition$EpicenterCallback;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -42,5 +49,7 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/FragmentTransitionCompat21$1;->val$epicenter:Landroid/graphics/Rect;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

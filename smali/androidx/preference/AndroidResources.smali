@@ -20,11 +20,11 @@
 # static fields
 .field public static final ANDROID_R_ICON_FRAME:I = 0x102003e
 
-.field public static final ANDROID_R_LIST_CONTAINER:I = 0x102003f
+.field static final ANDROID_R_LIST_CONTAINER:I = 0x102003f
 
-.field public static final ANDROID_R_PREFERENCE_FRAGMENT_STYLE:I = 0x1010506
+.field static final ANDROID_R_PREFERENCE_FRAGMENT_STYLE:I = 0x1010506
 
-.field public static final ANDROID_R_SWITCH_WIDGET:I = 0x1020040
+.field static final ANDROID_R_SWITCH_WIDGET:I = 0x1020040
 
 
 # direct methods
@@ -34,5 +34,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

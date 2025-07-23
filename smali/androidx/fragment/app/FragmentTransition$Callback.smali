@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/fragment/app/FragmentTransition$Callback;
+.class interface abstract Landroidx/fragment/app/FragmentTransition$Callback;
 .super Ljava/lang/Object;
 .source "FragmentTransition.java"
 

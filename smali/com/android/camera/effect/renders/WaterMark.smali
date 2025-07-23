@@ -6,56 +6,61 @@
 # instance fields
 .field private mCacheKey:Lcom/android/camera/effect/renders/CacheKey;
 
-.field public mIsLTR:Z
+.field protected mIsLTR:Z
 
-.field public mOrientation:I
+.field protected mOrientation:I
 
-.field public mPictureHeight:I
+.field protected mPictureHeight:I
 
-.field public mPictureWidth:I
+.field protected mPictureWidth:I
 
 
 # direct methods
 .method public constructor <init>(III)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "width",
-            "height",
-            "orientation"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0O0oO0()Z
-
-    move-result v0
-
-    xor-int/lit8 v0, v0, 0x1
-
-    iput-boolean v0, p0, Lcom/android/camera/effect/renders/WaterMark;->mIsLTR:Z
-
     .line 3
-    iput p1, p0, Lcom/android/camera/effect/renders/WaterMark;->mPictureWidth:I
-
     .line 4
-    iput p2, p0, Lcom/android/camera/effect/renders/WaterMark;->mPictureHeight:I
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o0O0oO0O()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    xor-int/lit8 v0, v0, 0x1
+
+    .line 13
+    .line 14
+    iput-boolean v0, p0, Lcom/android/camera/effect/renders/WaterMark;->mIsLTR:Z
+
+    .line 15
+    .line 16
+    iput p1, p0, Lcom/android/camera/effect/renders/WaterMark;->mPictureWidth:I
+
+    .line 17
+    .line 18
+    iput p2, p0, Lcom/android/camera/effect/renders/WaterMark;->mPictureHeight:I
+
+    .line 19
+    .line 20
     iput p3, p0, Lcom/android/camera/effect/renders/WaterMark;->mOrientation:I
 
+    .line 21
+    .line 22
     return-void
 .end method
 
@@ -67,6 +72,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/renders/WaterMark;->mCacheKey:Lcom/android/camera/effect/renders/CacheKey;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -85,16 +92,27 @@
     .line 1
     invoke-virtual {p0}, Lcom/android/camera/effect/renders/WaterMark;->getCenterX()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     invoke-virtual {p0}, Lcom/android/camera/effect/renders/WaterMark;->getWidth()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     div-int/lit8 p0, p0, 0x2
 
+    .line 10
+    .line 11
     sub-int/2addr v0, p0
 
+    .line 12
     return v0
 .end method
 
@@ -113,16 +131,27 @@
     .line 1
     invoke-virtual {p0}, Lcom/android/camera/effect/renders/WaterMark;->getCenterY()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     invoke-virtual {p0}, Lcom/android/camera/effect/renders/WaterMark;->getHeight()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     div-int/lit8 p0, p0, 0x2
 
+    .line 10
+    .line 11
     sub-int/2addr v0, p0
 
+    .line 12
     return v0
 .end method
 
@@ -135,22 +164,18 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/effect/renders/WaterMark;->mIsLTR:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setCacheKey(Lcom/android/camera/effect/renders/CacheKey;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cacheKey"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/renders/WaterMark;->mCacheKey:Lcom/android/camera/effect/renders/CacheKey;
 
+    .line 2
+    .line 3
     return-void
 .end method

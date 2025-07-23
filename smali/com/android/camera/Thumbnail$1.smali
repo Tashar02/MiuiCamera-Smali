@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/Thumbnail$1;
+.class synthetic Lcom/android/camera/Thumbnail$1;
 .super Ljava/lang/Object;
 .source "Thumbnail.java"
 

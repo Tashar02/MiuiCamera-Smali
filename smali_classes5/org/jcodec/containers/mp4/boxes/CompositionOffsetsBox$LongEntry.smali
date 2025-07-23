@@ -28,11 +28,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-wide p1, p0, Lorg/jcodec/containers/mp4/boxes/CompositionOffsetsBox$LongEntry;->count:J
 
-    .line 3
+    .line 5
+    .line 6
     iput-wide p3, p0, Lorg/jcodec/containers/mp4/boxes/CompositionOffsetsBox$LongEntry;->offset:J
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -44,6 +49,8 @@
     .line 1
     iget-wide v0, p0, Lorg/jcodec/containers/mp4/boxes/CompositionOffsetsBox$LongEntry;->count:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -53,5 +60,7 @@
     .line 1
     iget-wide v0, p0, Lorg/jcodec/containers/mp4/boxes/CompositionOffsetsBox$LongEntry;->offset:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method

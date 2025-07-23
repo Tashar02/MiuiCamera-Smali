@@ -1,14 +1,14 @@
-.class public abstract Landroidx/constraintlayout/motion/widget/KeyPositionBase;
+.class abstract Landroidx/constraintlayout/motion/widget/KeyPositionBase;
 .super Landroidx/constraintlayout/motion/widget/Key;
 .source "KeyPositionBase.java"
 
 
 # static fields
-.field public static final SELECTION_SLOPE:F = 20.0f
+.field protected static final SELECTION_SLOPE:F = 20.0f
 
 
 # instance fields
-.field public mCurveFit:I
+.field mCurveFit:I
 
 
 # direct methods
@@ -19,10 +19,16 @@
     invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/Key;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     sget v0, Landroidx/constraintlayout/motion/widget/Key;->UNSET:I
 
+    .line 5
+    .line 6
     iput v0, p0, Landroidx/constraintlayout/motion/widget/KeyPositionBase;->mCurveFit:I
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -69,6 +75,7 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method
 

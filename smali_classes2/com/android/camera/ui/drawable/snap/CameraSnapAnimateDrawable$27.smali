@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$27;
+.class Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$27;
 .super Lmiuix/view/animation/CubicEaseOutInterpolator;
 .source "CameraSnapAnimateDrawable.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
+.field final synthetic this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$27;->this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Lmiuix/view/animation/CubicEaseOutInterpolator;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,31 +39,37 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "input"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Lmiuix/view/animation/CubicEaseOutInterpolator;->getInterpolation(F)F
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
-    .line 2
+    .line 5
     iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$27;->this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 6
+    .line 7
     iget-object v0, v0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->mSecondPaintItem:Lcom/android/camera/ui/drawable/snap/CameraSnapPaintSecond;
 
+    .line 8
+    .line 9
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintSecond;->updateValue(F)V
 
-    .line 3
+    .line 10
+    .line 11
+    .line 12
     iget-object p0, p0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable$27;->this$0:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 13
+    .line 14
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
+    .line 15
+    .line 16
+    .line 17
     return p1
 .end method

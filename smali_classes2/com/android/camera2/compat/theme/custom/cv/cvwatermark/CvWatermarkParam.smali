@@ -51,18 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;II)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "src",
-            "type",
-            "orientation"
-        }
-    .end annotation
 
     .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -86,16 +74,6 @@
 
 .method public constructor <init>(Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/I420Image;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "origin",
-            "orientation"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -125,6 +103,8 @@
     .line 1
     iput-short p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->focalLength35mm:S
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -134,6 +114,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->aperture:F
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -143,6 +125,8 @@
     .line 1
     iput-wide p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->exposureTime:J
 
+    .line 2
+    .line 3
     return-wide p1
 .end method
 
@@ -152,6 +136,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->iso:I
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -161,6 +147,8 @@
     .line 1
     iput-wide p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->takenTime:J
 
+    .line 2
+    .line 3
     return-wide p1
 .end method
 
@@ -170,6 +158,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->location:Landroid/location/Location;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -179,6 +169,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->isLocationOn:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -188,6 +180,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->isTimestampOn:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -197,6 +191,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->isNeedIcc:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -206,6 +202,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->fileName:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -217,6 +215,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->aperture:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -226,6 +226,8 @@
     .line 1
     iget-wide v0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->exposureTime:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -235,6 +237,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->fileName:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -244,6 +248,8 @@
     .line 1
     iget-short p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->focalLength35mm:S
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -253,6 +259,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->iso:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -262,6 +270,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->location:Landroid/location/Location;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -271,6 +281,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->orientation:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -280,6 +292,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->origin:Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/I420Image;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -289,6 +303,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->rect:Landroid/graphics/Rect;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -298,6 +314,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->rectType:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -307,6 +325,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->src:Landroid/graphics/Bitmap;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -316,6 +336,8 @@
     .line 1
     iget-wide v0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->takenTime:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -325,6 +347,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->type:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -334,6 +358,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->isLocationOn:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -343,6 +369,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->isNeedIcc:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -352,44 +380,33 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->isTimestampOn:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setLocationOn(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "locationOn"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->isLocationOn:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setRect(ILandroid/graphics/Rect;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "rectType",
-            "rect"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->rectType:I
 
     .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/CvWatermarkParam;->rect:Landroid/graphics/Rect;
 
+    .line 4
+    .line 5
     return-void
 .end method

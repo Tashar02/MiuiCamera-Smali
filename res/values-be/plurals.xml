@@ -108,6 +108,18 @@
         <item quantity="few">&lt;Data>Выкарыстоўваная вамі версія камеры несумяшчальная з мадэллю вашай прылады.&lt;br>Праграма зачыніцца праз &lt;font color=#FFCE16>&lt;b>%1$d сек.&lt;/b>&lt;/font>. Выдаліце ​​абнаўленні камеры і паспрабуйце яшчэ раз.&lt;/Data></item>
         <item quantity="many">&lt;Data>Выкарыстоўваная вамі версія камеры несумяшчальная з мадэллю вашай прылады.&lt;br>Праграма зачыніцца праз &lt;font color=#FFCE16>&lt;b>%1$d сек.&lt;/b>&lt;/font>. Выдаліце ​​абнаўленні камеры і паспрабуйце яшчэ раз.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Пераматаць уперад на %d секунды</item>
+        <item quantity="one">Пераматаць уперад на %d секунду</item>
+        <item quantity="few">Пераматаць уперад на %d секунды</item>
+        <item quantity="many">Пераматаць уперад на %d секунд</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Пераматаць назад на %d секунды</item>
+        <item quantity="one">Пераматаць назад на %d секунду</item>
+        <item quantity="few">Пераматаць назад на %d секунды</item>
+        <item quantity="many">Пераматаць назад на %d секунд</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d хв.</item>
         <item quantity="one">%1$d хв.</item>

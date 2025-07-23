@@ -33,6 +33,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -44,10 +47,16 @@
     .line 1
     new-instance p0, Lcom/airbnb/lottie/LottieAnimationView$OooOO0;
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     invoke-direct {p0, p1, v0}, Lcom/airbnb/lottie/LottieAnimationView$OooOO0;-><init>(Landroid/os/Parcel;Lcom/airbnb/lottie/LottieAnimationView$OooO00o;)V
 
+    .line 5
+    .line 6
+    .line 7
     return-object p0
 .end method
 
@@ -57,6 +66,8 @@
     .line 1
     new-array p0, p1, [Lcom/airbnb/lottie/LottieAnimationView$OooOO0;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -66,8 +77,12 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/airbnb/lottie/LottieAnimationView$OooOO0$OooO00o;->OooO00o(Landroid/os/Parcel;)Lcom/airbnb/lottie/LottieAnimationView$OooOO0;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -77,7 +92,11 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/airbnb/lottie/LottieAnimationView$OooOO0$OooO00o;->OooO0O0(I)[Lcom/airbnb/lottie/LottieAnimationView$OooOO0;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method

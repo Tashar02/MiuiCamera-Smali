@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public mContext:Landroid/content/Context;
+.field protected mContext:Landroid/content/Context;
 
 .field public mKaleidoscopeList:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -51,21 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;ILandroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "list",
-            "selectIndex",
-            "listener"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -82,24 +67,48 @@
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mContext:Landroid/content/Context;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mKaleidoscopeList:Ljava/util/List;
 
-    .line 4
+    .line 7
+    .line 8
     iput p3, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mSelectIndex:I
 
-    .line 5
+    .line 9
+    .line 10
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object p1
 
+    .line 14
     iput-object p1, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    .line 6
+    .line 15
+    .line 16
     iput-object p4, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mListener:Landroid/widget/AdapterView$OnItemClickListener;
 
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public static synthetic OooO00o(Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->lambda$onBindViewHolder$0(Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -109,54 +118,52 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mListener:Landroid/widget/AdapterView$OnItemClickListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     iget-object p0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
+    .line 6
+    .line 7
     const/16 p1, 0x80
 
+    .line 8
+    .line 9
     invoke-virtual {p0, p1}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
+    .line 10
+    .line 11
+    .line 12
     :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic OooO00o(Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->lambda$onBindViewHolder$0(Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;)V
-
-    return-void
-.end method
-
 .method public getItemCount()I
     .locals 0
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mKaleidoscopeList:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;
@@ -168,21 +175,11 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;I)V
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f080862
+    const v1, 0x7f0808b4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -201,7 +198,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setRotation(F)V
 
-    const v0, 0x7f0a0359
+    const v0, 0x7f0b0392
 
     .line 4
     invoke-virtual {p1, v0}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -210,7 +207,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    const v1, 0x7f0a035a
+    const v1, 0x7f0b0393
 
     .line 5
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -263,7 +260,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0801e0
+    const v3, 0x7f0801e1
 
     invoke-virtual {v2, v3}, Lcom/android/camera/customization/ThemeResource;->getTintResId(I)I
 
@@ -287,7 +284,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1204bc
+    const v2, 0x7f1304f7
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -306,7 +303,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120082
+    const v3, 0x7f130082
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -343,7 +340,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1200bb
+    const v2, 0x7f1300bb
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -368,9 +365,9 @@
     .line 19
     iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    new-instance v0, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO0OOOoO/o0000O0O;
+    new-instance v0, Lcom/android/camera/fragment/live/OooO00o;
 
-    invoke-direct {v0, p0, p1}, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO0OOOoO/o0000O0O;-><init>(Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/camera/fragment/live/OooO00o;-><init>(Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;)V
 
     const-wide/16 p0, 0x64
 
@@ -391,16 +388,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;
@@ -412,21 +399,11 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter$KaleidoItemHolder;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 2
     iget-object p2, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0d00a8
+    const v0, 0x7f0e00b2
 
     const/4 v1, 0x0
 
@@ -444,17 +421,11 @@
 
 .method public setSelectIndex(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "index"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/live/FragmentKaleidoscope$KaleidoscopeAdapter;->mSelectIndex:I
 
+    .line 2
+    .line 3
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/HardwareCapabilities$5;
+.class Lcom/android/camera2/HardwareCapabilities$5;
 .super Lcom/xiaomi/camera/util/TypedValue;
 .source "HardwareCapabilities.java"
 
@@ -29,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/camera/util/TypedValue;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -53,23 +56,23 @@
 
     move-result-object v1
 
-    const/4 v2, -0x1
-
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 4
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v4
+    move-result-object v3
 
-    if-eq p0, v2, :cond_9
+    const/4 v4, -0x1
+
+    if-eq p0, v4, :cond_9
 
     .line 5
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v5
 
-    invoke-virtual {v5}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OoO0oO()Z
+    invoke-virtual {v5}, Lo000Oo0/OooO00o;->o0OoO0oo()Z
 
     move-result v5
 
@@ -81,15 +84,15 @@
     :cond_0
     invoke-static {}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getInstance()Lcom/android/camera/module/loader/camera2/Camera2DataContainer;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2, p0}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getCapabilities(I)Lcom/android/camera2/CameraCapabilities;
+    invoke-virtual {v4, p0}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getCapabilities(I)Lcom/android/camera2/CameraCapabilities;
 
     move-result-object p0
 
     if-nez p0, :cond_1
 
-    return-object v4
+    return-object v3
 
     .line 7
     :cond_1
@@ -102,11 +105,11 @@
     .line 8
     invoke-interface {p0}, Ljava/util/Set;->size()I
 
-    move-result v2
+    move-result v4
 
     const/4 v5, 0x3
 
-    if-ge v2, v5, :cond_2
+    if-ge v4, v5, :cond_2
 
     goto :goto_2
 
@@ -114,17 +117,17 @@
     :cond_2
     invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-result-object v2
+    move-result-object v4
 
     :cond_3
     :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v5
 
     if-eqz v5, :cond_5
 
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v5
 
@@ -157,16 +160,16 @@
 
     if-eqz v5, :cond_3
 
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
     :catch_0
     :cond_5
     :goto_1
-    if-eqz v3, :cond_8
+    if-eqz v2, :cond_8
 
-    if-ne v3, v0, :cond_6
+    if-ne v2, v0, :cond_6
 
     goto :goto_2
 
@@ -176,7 +179,7 @@
 
     move-result p0
 
-    if-ge v3, p0, :cond_7
+    if-ge v2, p0, :cond_7
 
     return-object v1
 
@@ -192,7 +195,7 @@
 
     :cond_8
     :goto_2
-    return-object v4
+    return-object v3
 
     .line 15
     :cond_9
@@ -205,9 +208,9 @@
 
     move-result p0
 
-    if-ne p0, v2, :cond_a
+    if-ne p0, v4, :cond_a
 
-    return-object v4
+    return-object v3
 
     .line 16
     :cond_a
@@ -222,17 +225,17 @@
     .line 17
     invoke-static {}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getInstance()Lcom/android/camera/module/loader/camera2/Camera2DataContainer;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getUltraTeleCameraId()I
+    invoke-virtual {v2}, Lcom/android/camera/module/loader/camera2/Camera2DataContainer;->getUltraTeleCameraId()I
 
-    move-result v3
+    move-result v2
 
-    if-ne v0, v2, :cond_b
+    if-ne v0, v4, :cond_b
 
-    if-ne v3, v2, :cond_b
+    if-ne v2, v4, :cond_b
 
-    return-object v4
+    return-object v3
 
     .line 18
     :cond_b
@@ -249,7 +252,7 @@
 
     if-nez p0, :cond_d
 
-    invoke-static {v3}, Lcom/android/camera2/HardwareCapabilities;->access$000(I)Z
+    invoke-static {v2}, Lcom/android/camera2/HardwareCapabilities;->access$000(I)Z
 
     move-result p0
 
@@ -258,14 +261,14 @@
     goto :goto_4
 
     :cond_c
-    return-object v4
+    return-object v3
 
     :cond_d
     :goto_4
     return-object v1
 
     :cond_e
-    return-object v4
+    return-object v3
 .end method
 
 .method public bridge synthetic create()Ljava/lang/Object;

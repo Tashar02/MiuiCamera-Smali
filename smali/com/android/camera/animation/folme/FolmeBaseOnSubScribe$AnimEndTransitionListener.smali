@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe$AnimEndTransitionListener;
+.class Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe$AnimEndTransitionListener;
 .super Lmiuix/animation/listener/TransitionListener;
 .source "FolmeBaseOnSubScribe.java"
 
@@ -33,14 +33,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "subScribe"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Lmiuix/animation/listener/TransitionListener;-><init>()V
@@ -70,45 +62,79 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe$AnimEndTransitionListener;->weakReference:Ljava/lang/ref/SoftReference;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/ref/SoftReference;->get()Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     check-cast p0, Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe;
 
+    .line 8
+    .line 9
     if-nez p0, :cond_0
 
+    .line 10
+    .line 11
     const/4 p0, 0x0
 
+    .line 12
     new-array p0, p0, [Ljava/lang/Object;
 
+    .line 13
+    .line 14
     const-string v0, "AnimEndTransitionListen"
 
+    .line 15
+    .line 16
     const-string/jumbo v1, "onComplete: subScribe is null, returning."
 
-    .line 2
+    .line 17
+    .line 18
+    .line 19
     invoke-static {v0, v1, p0}, Lcom/android/camera/log/Log;->w(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 20
+    .line 21
+    .line 22
     return-void
 
-    .line 3
+    .line 23
     :cond_0
     invoke-virtual {p0}, Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe;->onAnimationEnd()V
 
-    .line 4
+    .line 24
+    .line 25
+    .line 26
     invoke-static {p0}, Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe;->access$100(Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe;)Lio/reactivex/CompletableEmitter;
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object v0
 
+    .line 30
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 31
+    .line 32
     invoke-static {p0}, Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe;->access$100(Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe;)Lio/reactivex/CompletableEmitter;
 
+    .line 33
+    .line 34
+    .line 35
     move-result-object p0
 
+    .line 36
     invoke-interface {p0}, Lio/reactivex/CompletableEmitter;->onComplete()V
 
+    .line 37
+    .line 38
+    .line 39
     :cond_1
     return-void
 .end method
@@ -117,34 +143,24 @@
 # virtual methods
 .method public onCancel(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "toTag"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe$AnimEndTransitionListener;->onEndAction()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public onComplete(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "toTag"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Lcom/android/camera/animation/folme/FolmeBaseOnSubScribe$AnimEndTransitionListener;->onEndAction()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

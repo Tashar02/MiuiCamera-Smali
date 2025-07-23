@@ -1,4 +1,4 @@
-.class public final Lcom/adobe/xmp/XMPMetaFactory$1;
+.class final Lcom/adobe/xmp/XMPMetaFactory$1;
 .super Ljava/lang/Object;
 .source "XMPMetaFactory.java"
 
@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -32,55 +35,71 @@
 .method public getBuild()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x3
 
+    .line 2
     return p0
 .end method
 
 .method public getMajor()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x5
 
+    .line 2
     return p0
 .end method
 
 .method public getMessage()Ljava/lang/String;
     .locals 0
 
+    .line 1
     const-string p0, "Adobe XMP Core 5.1.0-jc003"
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public getMicro()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public getMinor()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     return p0
 .end method
 
 .method public isDebug()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 0
 
+    .line 1
     const-string p0, "Adobe XMP Core 5.1.0-jc003"
 
+    .line 2
+    .line 3
     return-object p0
 .end method

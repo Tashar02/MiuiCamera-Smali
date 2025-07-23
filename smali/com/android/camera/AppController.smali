@@ -20,12 +20,4 @@
 .end method
 
 .method public abstract onModeSelected(Lcom/android/camera/module/loader/base/StartControl;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "startControl"
-        }
-    .end annotation
 .end method

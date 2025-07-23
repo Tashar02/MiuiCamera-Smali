@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/request/target/FixedSizeDrawable$State;
+.class final Lcom/bumptech/glide/request/target/FixedSizeDrawable$State;
 .super Landroid/graphics/drawable/Drawable$ConstantState;
 .source "FixedSizeDrawable.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final height:I
+.field final height:I
 
-.field public final width:I
+.field final width:I
 
 .field private final wrapped:Landroid/graphics/drawable/Drawable$ConstantState;
 
@@ -61,8 +61,10 @@
 .method public getChangingConfigurations()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 

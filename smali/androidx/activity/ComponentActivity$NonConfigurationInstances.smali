@@ -1,4 +1,4 @@
-.class public final Landroidx/activity/ComponentActivity$NonConfigurationInstances;
+.class final Landroidx/activity/ComponentActivity$NonConfigurationInstances;
 .super Ljava/lang/Object;
 .source "ComponentActivity.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public custom:Ljava/lang/Object;
+.field custom:Ljava/lang/Object;
 
-.field public viewModelStore:Landroidx/lifecycle/ViewModelStore;
+.field viewModelStore:Landroidx/lifecycle/ViewModelStore;
 
 
 # direct methods
@@ -27,5 +27,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

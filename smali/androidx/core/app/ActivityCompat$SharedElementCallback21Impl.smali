@@ -1,4 +1,4 @@
-.class public Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;
+.class Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;
 .super Landroid/app/SharedElementCallback;
 .source "ActivityCompat.java"
 
@@ -30,8 +30,12 @@
     invoke-direct {p0}, Landroid/app/SharedElementCallback;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -43,10 +47,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2, p3}, Landroidx/core/app/SharedElementCallback;->onCaptureSharedElementSnapshot(Landroid/view/View;Landroid/graphics/Matrix;Landroid/graphics/RectF;)Landroid/os/Parcelable;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -56,10 +66,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2}, Landroidx/core/app/SharedElementCallback;->onCreateSnapshotView(Landroid/content/Context;Landroid/os/Parcelable;)Landroid/view/View;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -81,8 +97,13 @@
     .line 1
     iget-object p0, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2}, Landroidx/core/app/SharedElementCallback;->onMapSharedElements(Ljava/util/List;Ljava/util/Map;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -100,8 +121,13 @@
     .line 1
     iget-object p0, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/core/app/SharedElementCallback;->onRejectSharedElements(Ljava/util/List;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -125,8 +151,13 @@
     .line 1
     iget-object p0, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2, p3}, Landroidx/core/app/SharedElementCallback;->onSharedElementEnd(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -150,8 +181,13 @@
     .line 1
     iget-object p0, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2, p3}, Landroidx/core/app/SharedElementCallback;->onSharedElementStart(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -178,11 +214,21 @@
     .line 1
     iget-object v0, p0, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;->mCallback:Landroidx/core/app/SharedElementCallback;
 
+    .line 2
+    .line 3
     new-instance v1, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl$1;
 
+    .line 4
+    .line 5
     invoke-direct {v1, p0, p3}, Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl$1;-><init>(Landroidx/core/app/ActivityCompat$SharedElementCallback21Impl;Landroid/app/SharedElementCallback$OnSharedElementsReadyListener;)V
 
+    .line 6
+    .line 7
+    .line 8
     invoke-virtual {v0, p1, p2, v1}, Landroidx/core/app/SharedElementCallback;->onSharedElementsArrived(Ljava/util/List;Ljava/util/List;Landroidx/core/app/SharedElementCallback$OnSharedElementsReadyListener;)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

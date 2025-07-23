@@ -664,6 +664,7 @@ meningkatkan dokumen yang disemak secara automatik"</string>
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">Nampaknya peranti anda tidak disambungkan ke Wi-Fi. Gunakan %1$s MB data mudah alih untuk memuat turun item sekarang?</string>
     <string name="download_in_progress">Memuat turun…</string>
+    <string name="download_network_error">Gagal memuat turun. Semak tetapan rangkaian anda.</string>
     <string name="download_title">Amaran penggunaan data</string>
     <string name="download_waiting">Belum selesai…</string>
     <string name="dual_camera_lens_covered_toast">Kanta terlindung.</string>
@@ -1478,6 +1479,7 @@ Pastikan subjek jelas sambil mengaburkan latar belakang."</string>
     <string name="pref_camera_peak_entry_off">Mati</string>
     <string name="pref_camera_peak_entry_on">Hidup</string>
     <string name="pref_camera_peak_title">Puncak fokus</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Penuh</string>
     <string name="pref_camera_picturesize_title_simple_mode">Bingkai kamera</string>
     <string name="pref_camera_portrait_mode_entry_off">Mod potret tidak aktif</string>
     <string name="pref_camera_portrait_mode_entry_on">Mod potret aktif</string>

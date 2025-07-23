@@ -11,6 +11,7 @@
     <bool name="camera_streaming_server_enabled">true</bool>
     <bool name="check_widget_anim_enable">true</bool>
     <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="leak_canary_watcher_watch_dismissed_dialogs">false</bool>
     <bool name="miuix_appcompat_floating_window_is_translucent">false</bool>
     <bool name="miuix_appcompat_window_floating">false</bool>
     <bool name="pref_3d_audio_denoise_default">false</bool>

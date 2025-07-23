@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera/LocationManager$1;
+.class synthetic Lcom/android/camera/LocationManager$1;
 .super Ljava/lang/Object;
 .source "LocationManager.java"
 

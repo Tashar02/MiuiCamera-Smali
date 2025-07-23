@@ -34,7 +34,7 @@
     .end annotation
 .end field
 
-.field public mNext:Landroidx/recyclerview/widget/TileList$Tile;
+.field mNext:Landroidx/recyclerview/widget/TileList$Tile;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/recyclerview/widget/TileList$Tile<",
@@ -61,15 +61,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {p1, p2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p1
 
+    .line 8
     check-cast p1, [Ljava/lang/Object;
 
-    .line 3
+    .line 9
+    .line 10
     iput-object p1, p0, Landroidx/recyclerview/widget/TileList$Tile;->mItems:[Ljava/lang/Object;
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -81,21 +90,33 @@
     .line 1
     iget v0, p0, Landroidx/recyclerview/widget/TileList$Tile;->mStartPosition:I
 
+    .line 2
+    .line 3
     if-gt v0, p1, :cond_0
 
+    .line 4
+    .line 5
     iget p0, p0, Landroidx/recyclerview/widget/TileList$Tile;->mItemCount:I
 
+    .line 6
+    .line 7
     add-int/2addr v0, p0
 
+    .line 8
     if-ge p1, v0, :cond_0
 
+    .line 9
+    .line 10
     const/4 p0, 0x1
 
+    .line 11
     goto :goto_0
 
+    .line 12
     :cond_0
     const/4 p0, 0x0
 
+    .line 13
     :goto_0
     return p0
 .end method
@@ -111,11 +132,18 @@
     .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/TileList$Tile;->mItems:[Ljava/lang/Object;
 
+    .line 2
+    .line 3
     iget p0, p0, Landroidx/recyclerview/widget/TileList$Tile;->mStartPosition:I
 
+    .line 4
+    .line 5
     sub-int/2addr p1, p0
 
+    .line 6
     aget-object p0, v0, p1
 
+    .line 7
+    .line 8
     return-object p0
 .end method

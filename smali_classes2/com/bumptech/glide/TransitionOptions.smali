@@ -41,12 +41,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {}, Lcom/bumptech/glide/request/transition/NoTransition;->getFactory()Lcom/bumptech/glide/request/transition/TransitionFactory;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object v0
 
+    .line 8
     iput-object v0, p0, Lcom/bumptech/glide/TransitionOptions;->transitionFactory:Lcom/bumptech/glide/request/transition/TransitionFactory;
 
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -59,6 +67,7 @@
         }
     .end annotation
 
+    .line 1
     return-object p0
 .end method
 
@@ -127,12 +136,20 @@
     .line 1
     invoke-static {}, Lcom/bumptech/glide/request/transition/NoTransition;->getFactory()Lcom/bumptech/glide/request/transition/TransitionFactory;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-virtual {p0, v0}, Lcom/bumptech/glide/TransitionOptions;->transition(Lcom/bumptech/glide/request/transition/TransitionFactory;)Lcom/bumptech/glide/TransitionOptions;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
+    .line 9
     return-object p0
 .end method
 
@@ -149,6 +166,8 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/TransitionOptions;->transitionFactory:Lcom/bumptech/glide/request/transition/TransitionFactory;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 

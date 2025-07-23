@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/Camera$FunctionCameraOpenResult;
+.class Lcom/android/camera/Camera$FunctionCameraOpenResult;
 .super Ljava/lang/Object;
 .source "Camera.java"
 
@@ -50,25 +50,26 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/Camera;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "activity"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Ljava/lang/ref/WeakReference;
 
+    .line 5
+    .line 6
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Lcom/android/camera/Camera$FunctionCameraOpenResult;->mActivityRef:Ljava/lang/ref/WeakReference;
 
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -76,17 +77,6 @@
 # virtual methods
 .method public apply(Lcom/android/camera/module/loader/base/NullHolder;Lcom/android/camera/module/loader/camera2/Camera2Result;)Lcom/android/camera/module/loader/base/NullHolder;
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "moduleNullHolder",
-            "camera2Result"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -163,7 +153,7 @@
     :cond_1
     iget-object p0, p0, Lcom/android/camera/Camera$FunctionCameraOpenResult;->mActivityRef:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -185,17 +175,6 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "moduleNullHolder",
-            "camera2Result"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

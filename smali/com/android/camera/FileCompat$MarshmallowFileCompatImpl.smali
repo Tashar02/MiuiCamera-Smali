@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/FileCompat$MarshmallowFileCompatImpl;
+.class Lcom/android/camera/FileCompat$MarshmallowFileCompatImpl;
 .super Lcom/android/camera/FileCompat$LollipopFileCompatImpl;
 .source "FileCompat.java"
 
@@ -21,5 +21,8 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/FileCompat$LollipopFileCompatImpl;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

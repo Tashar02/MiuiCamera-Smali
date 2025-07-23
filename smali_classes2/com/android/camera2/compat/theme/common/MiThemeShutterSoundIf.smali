@@ -16,16 +16,4 @@
 .end method
 
 .method public abstract loadFromSomewhere(IILandroid/media/SoundPool;)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "current",
-            "which",
-            "pool"
-        }
-    .end annotation
 .end method

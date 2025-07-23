@@ -1,4 +1,4 @@
-.class public Lcom/faceunity/core/weight/GLTextureView$DefaultWindowSurfaceFactory;
+.class Lcom/faceunity/core/weight/GLTextureView$DefaultWindowSurfaceFactory;
 .super Ljava/lang/Object;
 .source "GLTextureView.java"
 
@@ -41,40 +41,63 @@
 .method public createWindowSurface(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLConfig;Ljava/lang/Object;)Landroid/opengl/EGLSurface;
     .locals 2
 
+    .line 1
     const/4 p0, 0x1
 
+    .line 2
     :try_start_0
     new-array p0, p0, [I
 
+    .line 3
+    .line 4
     const/16 v0, 0x3038
 
+    .line 5
+    .line 6
     const/4 v1, 0x0
 
+    .line 7
     aput v0, p0, v1
 
-    .line 1
+    .line 8
+    .line 9
     invoke-static {p1, p2, p3, p0, v1}, Landroid/opengl/EGL14;->eglCreateWindowSurface(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLConfig;Ljava/lang/Object;[II)Landroid/opengl/EGLSurface;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object p0
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 13
     goto :goto_0
 
+    .line 14
     :catch_0
     move-exception p0
 
-    .line 2
+    .line 15
     invoke-static {}, Lcom/faceunity/core/weight/GLTextureView;->access$300()Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p1
 
+    .line 19
     const-string p2, "eglCreateWindowSurface"
 
+    .line 20
+    .line 21
     invoke-static {p1, p2, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
+    .line 22
+    .line 23
+    .line 24
     const/4 p0, 0x0
 
+    .line 25
     :goto_0
     return-object p0
 .end method
@@ -85,5 +108,8 @@
     .line 1
     invoke-static {p1, p2}, Landroid/opengl/EGL14;->eglDestroySurface(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSurface;)Z
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

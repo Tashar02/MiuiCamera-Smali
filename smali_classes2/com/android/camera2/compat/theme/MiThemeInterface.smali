@@ -5,32 +5,12 @@
 
 # virtual methods
 .method public abstract create(Landroid/content/Context;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 .end method
 
 .method public abstract destroy()V
 .end method
 
 .method public abstract getDeviceWatermark(Ljava/lang/String;FZ)Lcom/android/gallery3d/ui/BasicTexture;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "customText",
-            "ratio",
-            "isLTR"
-        }
-    .end annotation
 .end method
 
 .method public abstract getFragmentOverlay()Lcom/android/camera2/compat/theme/common/MiThemeOperationFragmentIf;
@@ -82,27 +62,9 @@
 .end method
 
 .method public abstract getOverlayResByDefaultSuffix(I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "srcId"
-        }
-    .end annotation
 .end method
 
 .method public abstract getOverlayResBySuffix(ILjava/lang/String;)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "srcId",
-            "suffix"
-        }
-    .end annotation
 .end method
 
 .method public abstract getShutterSoundIf()Lcom/android/camera2/compat/theme/common/MiThemeShutterSoundIf;
@@ -112,16 +74,6 @@
 .end method
 
 .method public abstract getTypeface(Landroid/content/Context;Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "tf"
-        }
-    .end annotation
 .end method
 
 .method public abstract getVideoResource()Lcom/android/camera2/compat/theme/common/MiThemeOperationVideoResourceInterface;
@@ -131,12 +83,4 @@
 .end method
 
 .method public abstract setTheme(Landroid/app/Activity;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "activity"
-        }
-    .end annotation
 .end method

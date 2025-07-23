@@ -23,8 +23,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,8 +45,13 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
-    invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->close()V
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/nio/channels/spi/AbstractInterruptibleChannel;->close()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -52,10 +61,16 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
-    invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->isOpen()Z
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/nio/channels/spi/AbstractInterruptibleChannel;->isOpen()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -70,10 +85,16 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->position()J
 
+    .line 4
+    .line 5
+    .line 6
     move-result-wide v0
 
+    .line 7
     return-wide v0
 .end method
 
@@ -88,10 +109,16 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Ljava/nio/channels/FileChannel;->read(Ljava/nio/ByteBuffer;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -106,8 +133,13 @@
     .line 1
     iget-object v0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p1, p2}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method
 
@@ -122,10 +154,16 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->size()J
 
+    .line 4
+    .line 5
+    .line 6
     move-result-wide v0
 
+    .line 7
     return-wide v0
 .end method
 
@@ -140,8 +178,13 @@
     .line 1
     iget-object v0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p1, p2}, Ljava/nio/channels/FileChannel;->truncate(J)Ljava/nio/channels/FileChannel;
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method
 
@@ -156,9 +199,15 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/common/io/FileChannelWrapper;->ch:Ljava/nio/channels/FileChannel;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Ljava/nio/channels/FileChannel;->write(Ljava/nio/ByteBuffer;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method

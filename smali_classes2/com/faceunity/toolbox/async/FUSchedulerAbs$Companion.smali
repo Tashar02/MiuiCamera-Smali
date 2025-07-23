@@ -4,35 +4,6 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
-    d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0007\u0010\u0008R\u0019\u0010\u0003\u001a\u00020\u00028\u0006@\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010\u0004\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\t"
-    }
-    d2 = {
-        "Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;",
-        "",
-        "Landroid/os/Handler;",
-        "mHandler",
-        "Landroid/os/Handler;",
-        "getMHandler",
-        "()Landroid/os/Handler;",
-        "<init>",
-        "()V",
-        "lib_toolbox_release"
-    }
-    k = 0x1
-    mv = {
-        0x1,
-        0x4,
-        0x0
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/faceunity/toolbox/async/FUSchedulerAbs;
 .end annotation
@@ -40,6 +11,33 @@
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
     name = "Companion"
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\u0007"
+    }
+    d2 = {
+        "Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;",
+        "",
+        "()V",
+        "mHandler",
+        "Landroid/os/Handler;",
+        "getMHandler",
+        "()Landroid/os/Handler;",
+        "lib_toolbox_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x1,
+        0xf
+    }
 .end annotation
 
 
@@ -53,7 +51,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(LOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+.method public synthetic constructor <init>(Lo000oo0/o0O0O00;)V
     .locals 0
 
     .line 2
@@ -66,13 +64,17 @@
 # virtual methods
 .method public final getMHandler()Landroid/os/Handler;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     invoke-static {}, Lcom/faceunity/toolbox/async/FUSchedulerAbs;->access$getMHandler$cp()Landroid/os/Handler;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method

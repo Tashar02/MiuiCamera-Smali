@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/FourSideFilm$1;
+.class synthetic Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/FourSideFilm$1;
 .super Ljava/lang/Object;
 .source "FourSideFilm.java"
 

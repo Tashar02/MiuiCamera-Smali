@@ -30,14 +30,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-wide p1, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->first:J
 
-    .line 3
+    .line 5
+    .line 6
     iput p3, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->count:I
 
-    .line 4
+    .line 7
+    .line 8
     iput p4, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->entry:I
 
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -49,6 +55,8 @@
     .line 1
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->count:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -58,6 +66,8 @@
     .line 1
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->entry:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -67,6 +77,8 @@
     .line 1
     iget-wide v0, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->first:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -76,6 +88,8 @@
     .line 1
     iput p1, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->count:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -85,6 +99,8 @@
     .line 1
     iput p1, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->entry:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -94,5 +110,7 @@
     .line 1
     iput-wide p1, p0, Lorg/jcodec/containers/mp4/boxes/SampleToChunkBox$SampleToChunkEntry;->first:J
 
+    .line 2
+    .line 3
     return-void
 .end method

@@ -16,20 +16,4 @@
 
 # virtual methods
 .method public abstract showFastmotionTips(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "title",
-            "speedDesc",
-            "saveTime",
-            "singleShow",
-            "needExtendSpeedWidth"
-        }
-    .end annotation
 .end method

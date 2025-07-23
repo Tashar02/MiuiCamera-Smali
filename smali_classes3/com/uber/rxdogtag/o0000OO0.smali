@@ -1,34 +1,41 @@
 .class public final synthetic Lcom/uber/rxdogtag/o0000OO0;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic o0000o0o:Lorg/reactivestreams/Subscriber;
+.implements Lcom/uber/rxdogtag/RxDogTag$NonCheckingPredicate;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lorg/reactivestreams/Subscriber;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/o0000OO0;->o0000o0o:Lorg/reactivestreams/Subscriber;
-
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final test(Ljava/lang/Object;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/o0000OO0;->o0000o0o:Lorg/reactivestreams/Subscriber;
+    .line 1
+    check-cast p1, Ljava/lang/StackTraceElement;
 
-    invoke-interface {p0}, Lorg/reactivestreams/Subscriber;->onComplete()V
+    .line 2
+    .line 3
+    invoke-static {p1}, Lcom/uber/rxdogtag/RxDogTag;->OooO0OO(Ljava/lang/StackTraceElement;)Z
 
-    return-void
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
 .end method

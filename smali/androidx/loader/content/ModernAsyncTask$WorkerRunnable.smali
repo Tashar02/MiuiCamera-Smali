@@ -1,4 +1,4 @@
-.class public abstract Landroidx/loader/content/ModernAsyncTask$WorkerRunnable;
+.class abstract Landroidx/loader/content/ModernAsyncTask$WorkerRunnable;
 .super Ljava/lang/Object;
 .source "ModernAsyncTask.java"
 
@@ -31,7 +31,7 @@
 
 
 # instance fields
-.field public mParams:[Ljava/lang/Object;
+.field mParams:[Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[TParams;"
@@ -47,5 +47,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

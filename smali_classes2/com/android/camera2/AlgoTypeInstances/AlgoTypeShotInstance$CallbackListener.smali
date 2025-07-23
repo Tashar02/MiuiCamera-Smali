@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -40,21 +43,8 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "session",
-            "request",
-            "target",
-            "frameNumber"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -72,21 +62,8 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "session",
-            "request",
-            "result",
-            "isFirstResult"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -107,19 +84,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "session",
-            "request",
-            "failure"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -137,19 +102,8 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "session",
-            "request",
-            "partialResult"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -162,17 +116,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "session",
-            "sequenceId"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -182,19 +126,8 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "session",
-            "sequenceId",
-            "frameNumber"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -208,22 +141,7 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "session",
-            "taskData",
-            "request",
-            "timestamp",
-            "frameNumber"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method

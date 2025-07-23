@@ -128,25 +128,39 @@
     .line 1
     instance-of v0, p1, Lcom/bumptech/glide/load/MultiTransformation;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     check-cast p1, Lcom/bumptech/glide/load/MultiTransformation;
 
-    .line 3
+    .line 6
+    .line 7
     iget-object p0, p0, Lcom/bumptech/glide/load/MultiTransformation;->transformations:Ljava/util/Collection;
 
+    .line 8
+    .line 9
     iget-object p1, p1, Lcom/bumptech/glide/load/MultiTransformation;->transformations:Ljava/util/Collection;
 
+    .line 10
+    .line 11
     invoke-interface {p0, p1}, Ljava/util/Collection;->equals(Ljava/lang/Object;)Z
 
+    .line 12
+    .line 13
+    .line 14
     move-result p0
 
+    .line 15
     return p0
 
+    .line 16
     :cond_0
     const/4 p0, 0x0
 
+    .line 17
     return p0
 .end method
 
@@ -156,10 +170,16 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/MultiTransformation;->transformations:Ljava/util/Collection;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/Collection;->hashCode()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -190,53 +210,92 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/MultiTransformation;->transformations:Ljava/util/Collection;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     move-object v0, p2
 
+    .line 8
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 9
+    .line 10
+    .line 11
     move-result v1
 
+    .line 12
     if-eqz v1, :cond_1
 
+    .line 13
+    .line 14
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v1
 
+    .line 18
     check-cast v1, Lcom/bumptech/glide/load/Transformation;
 
-    .line 2
+    .line 19
+    .line 20
     invoke-interface {v1, p1, v0, p3, p4}, Lcom/bumptech/glide/load/Transformation;->transform(Landroid/content/Context;Lcom/bumptech/glide/load/engine/Resource;II)Lcom/bumptech/glide/load/engine/Resource;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v1
 
+    .line 24
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 25
+    .line 26
     invoke-virtual {v0, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 27
+    .line 28
+    .line 29
     move-result v2
 
+    .line 30
     if-nez v2, :cond_0
 
+    .line 31
+    .line 32
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 33
+    .line 34
+    .line 35
     move-result v2
 
+    .line 36
     if-nez v2, :cond_0
 
-    .line 4
+    .line 37
+    .line 38
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/Resource;->recycle()V
 
+    .line 39
+    .line 40
+    .line 41
     :cond_0
     move-object v0, v1
 
+    .line 42
     goto :goto_0
 
+    .line 43
     :cond_1
     return-object v0
 .end method
@@ -251,28 +310,49 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/MultiTransformation;->transformations:Ljava/util/Collection;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result v0
 
+    .line 11
     if-eqz v0, :cond_0
 
+    .line 12
+    .line 13
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object v0
 
+    .line 17
     check-cast v0, Lcom/bumptech/glide/load/Transformation;
 
-    .line 2
+    .line 18
+    .line 19
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/Key;->updateDiskCacheKey(Ljava/security/MessageDigest;)V
 
+    .line 20
+    .line 21
+    .line 22
     goto :goto_0
 
+    .line 23
     :cond_0
     return-void
 .end method

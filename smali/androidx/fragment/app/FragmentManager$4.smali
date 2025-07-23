@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentManager$4;
+.class Landroidx/fragment/app/FragmentManager$4;
 .super Ljava/lang/Object;
 .source "FragmentManager.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/FragmentManager;
+.field final synthetic this$0:Landroidx/fragment/app/FragmentManager;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$4;->this$0:Landroidx/fragment/app/FragmentManager;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -47,7 +52,12 @@
     .line 1
     new-instance p0, Landroidx/fragment/app/DefaultSpecialEffectsController;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p1}, Landroidx/fragment/app/DefaultSpecialEffectsController;-><init>(Landroid/view/ViewGroup;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method

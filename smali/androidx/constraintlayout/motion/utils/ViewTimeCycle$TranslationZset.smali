@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/utils/ViewTimeCycle$TranslationZset;
+.class Landroidx/constraintlayout/motion/utils/ViewTimeCycle$TranslationZset;
 .super Landroidx/constraintlayout/motion/utils/ViewTimeCycle;
 .source "ViewTimeCycle.java"
 
@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/motion/utils/ViewTimeCycle;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -44,32 +47,37 @@
     .end annotation
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
     move-object v0, p0
 
+    .line 2
     move v1, p2
 
+    .line 3
     move-wide v2, p3
 
+    .line 4
     move-object v4, p1
 
+    .line 5
     move-object v5, p5
 
-    .line 2
+    .line 6
     invoke-virtual/range {v0 .. v5}, Landroidx/constraintlayout/motion/utils/ViewTimeCycle;->get(FJLandroid/view/View;Landroidx/constraintlayout/core/motion/utils/KeyCache;)F
 
+    .line 7
+    .line 8
+    .line 9
     move-result p2
 
+    .line 10
     invoke-virtual {p1, p2}, Landroid/view/View;->setTranslationZ(F)V
 
-    .line 3
-    :cond_0
+    .line 11
+    .line 12
+    .line 13
     iget-boolean p0, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mContinue:Z
 
+    .line 14
+    .line 15
     return p0
 .end method

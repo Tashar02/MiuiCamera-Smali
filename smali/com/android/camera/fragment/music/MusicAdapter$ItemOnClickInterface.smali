@@ -16,16 +16,4 @@
 
 # virtual methods
 .method public abstract onItemClick(Landroid/widget/ImageView;ILandroid/widget/ProgressBar;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "position",
-            "music_loading"
-        }
-    .end annotation
 .end method

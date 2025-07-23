@@ -5,14 +5,4 @@
 
 # virtual methods
 .method public abstract setOrientation(IZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "orientation",
-            "animation"
-        }
-    .end annotation
 .end method

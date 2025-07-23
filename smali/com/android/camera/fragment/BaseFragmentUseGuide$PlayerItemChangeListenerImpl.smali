@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -31,14 +34,7 @@
 # virtual methods
 .method public onPlayerItemChanged(Lcom/android/camera/videoplayer/meta/MetaData;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "metaData"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method

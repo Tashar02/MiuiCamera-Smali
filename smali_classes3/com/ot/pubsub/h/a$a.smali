@@ -36,6 +36,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -72,6 +75,8 @@
     .line 1
     iget-object p0, p0, Lcom/ot/pubsub/h/a$a;->d:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -81,6 +86,8 @@
     .line 1
     iget p0, p0, Lcom/ot/pubsub/h/a$a;->e:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -90,6 +97,8 @@
     .line 1
     iget-object p0, p0, Lcom/ot/pubsub/h/a$a;->f:Lorg/json/JSONObject;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -99,6 +108,8 @@
     .line 1
     iget-wide v0, p0, Lcom/ot/pubsub/h/a$a;->g:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 

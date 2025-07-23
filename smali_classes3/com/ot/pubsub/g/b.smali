@@ -32,6 +32,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -41,32 +42,52 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/ot/pubsub/g/b;->k:Z
 
-    .line 3
+    .line 6
+    .line 7
     invoke-static {}, Lcom/ot/pubsub/util/b;->a()Landroid/content/Context;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v0
 
+    .line 11
     iput-object v0, p0, Lcom/ot/pubsub/g/b;->h:Landroid/content/Context;
 
-    .line 4
+    .line 12
+    .line 13
     invoke-static {}, Lcom/ot/pubsub/util/b;->b()Landroid/content/Context;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object v0
 
+    .line 17
     iput-object v0, p0, Lcom/ot/pubsub/g/b;->i:Landroid/content/Context;
 
-    .line 5
+    .line 18
+    .line 19
     invoke-static {}, Lcom/ot/pubsub/util/b;->e()Ljava/lang/String;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object p0
 
+    .line 23
     sput-object p0, Lcom/ot/pubsub/g/b;->j:Ljava/lang/String;
 
+    .line 24
+    .line 25
     return-void
 .end method
 
@@ -183,113 +204,195 @@
 .method private c()Ljava/lang/String;
     .locals 8
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     :try_start_0
     const-string v1, "content://com.miui.analytics.OneTrackProvider/insId"
 
-    .line 1
+    .line 3
+    .line 4
     invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object v1
 
+    .line 8
     invoke-virtual {v1}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object v1
 
+    .line 12
     const-string v2, "pkg"
 
-    .line 2
+    .line 13
+    .line 14
     sget-object v3, Lcom/ot/pubsub/g/b;->j:Ljava/lang/String;
 
+    .line 15
+    .line 16
     invoke-virtual {v1, v2, v3}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
+    .line 17
+    .line 18
+    .line 19
     const-string v2, "sign"
 
-    .line 3
+    .line 20
+    .line 21
     new-instance v3, Ljava/lang/StringBuilder;
 
+    .line 22
+    .line 23
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 24
+    .line 25
+    .line 26
     const-string v4, "insId"
 
+    .line 27
+    .line 28
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 29
+    .line 30
+    .line 31
     sget-object v4, Lcom/ot/pubsub/g/b;->j:Ljava/lang/String;
 
+    .line 32
+    .line 33
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 34
+    .line 35
+    .line 36
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 37
+    .line 38
+    .line 39
     move-result-object v3
 
+    .line 40
     invoke-static {v3}, Lcom/ot/pubsub/c/a;->a(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 41
+    .line 42
+    .line 43
     move-result-object v3
 
+    .line 44
     invoke-virtual {v1, v2, v3}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 4
+    .line 45
+    .line 46
+    .line 47
     iget-object p0, p0, Lcom/ot/pubsub/g/b;->i:Landroid/content/Context;
 
+    .line 48
+    .line 49
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
+    .line 50
+    .line 51
+    .line 52
     move-result-object v2
 
-    .line 5
+    .line 53
     invoke-virtual {v1}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
+    .line 54
+    .line 55
+    .line 56
     move-result-object v3
 
+    .line 57
     const/4 v4, 0x0
 
+    .line 58
     const/4 v5, 0x0
 
+    .line 59
     const/4 v6, 0x0
 
+    .line 60
     const/4 v7, 0x0
 
+    .line 61
     invoke-virtual/range {v2 .. v7}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
+    .line 62
+    .line 63
+    .line 64
     move-result-object p0
 
+    .line 65
     if-eqz p0, :cond_1
 
-    .line 6
+    .line 66
+    .line 67
     :goto_0
     invoke-interface {p0}, Landroid/database/Cursor;->moveToNext()Z
 
+    .line 68
+    .line 69
+    .line 70
     move-result v1
 
+    .line 71
     if-eqz v1, :cond_0
 
+    .line 72
+    .line 73
     const/4 v1, 0x0
 
-    .line 7
+    .line 74
     invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
+    .line 75
+    .line 76
+    .line 77
     move-result-object v0
 
+    .line 78
     goto :goto_0
 
-    .line 8
+    .line 79
     :cond_0
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 80
+    .line 81
+    .line 82
     goto :goto_1
 
+    .line 83
     :catch_0
     move-exception p0
 
-    .line 9
+    .line 84
     sget-object v1, Lcom/ot/pubsub/g/b;->a:Ljava/lang/String;
 
+    .line 85
+    .line 86
     const-string v2, "getRemoteCacheInstanceId e"
 
+    .line 87
+    .line 88
     invoke-static {v1, v2, p0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 89
+    .line 90
+    .line 91
     :cond_1
     :goto_1
     return-object v0
@@ -301,28 +404,45 @@
     .line 1
     iget-object p0, p0, Lcom/ot/pubsub/g/b;->h:Landroid/content/Context;
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/ot/pubsub/util/u;->a(Landroid/content/Context;)Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
-    .line 2
+    .line 7
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result v0
 
+    .line 11
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 12
+    .line 13
     invoke-static {}, Lcom/ot/pubsub/util/u;->f()Ljava/lang/String;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object p0
 
+    .line 17
     return-object p0
 
-    .line 4
+    .line 18
     :cond_0
     invoke-static {p0}, Lcom/ot/pubsub/util/u;->e(Ljava/lang/String;)V
 
+    .line 19
+    .line 20
+    .line 21
     return-object p0
 .end method
 

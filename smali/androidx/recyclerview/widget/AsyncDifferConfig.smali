@@ -73,14 +73,20 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/recyclerview/widget/AsyncDifferConfig;->mMainThreadExecutor:Ljava/util/concurrent/Executor;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Landroidx/recyclerview/widget/AsyncDifferConfig;->mBackgroundThreadExecutor:Ljava/util/concurrent/Executor;
 
-    .line 4
+    .line 7
+    .line 8
     iput-object p3, p0, Landroidx/recyclerview/widget/AsyncDifferConfig;->mDiffCallback:Landroidx/recyclerview/widget/DiffUtil$ItemCallback;
 
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -94,6 +100,8 @@
     .line 1
     iget-object p0, p0, Landroidx/recyclerview/widget/AsyncDifferConfig;->mBackgroundThreadExecutor:Ljava/util/concurrent/Executor;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -113,6 +121,8 @@
     .line 1
     iget-object p0, p0, Landroidx/recyclerview/widget/AsyncDifferConfig;->mDiffCallback:Landroidx/recyclerview/widget/DiffUtil$ItemCallback;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -130,5 +140,7 @@
     .line 1
     iget-object p0, p0, Landroidx/recyclerview/widget/AsyncDifferConfig;->mMainThreadExecutor:Ljava/util/concurrent/Executor;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

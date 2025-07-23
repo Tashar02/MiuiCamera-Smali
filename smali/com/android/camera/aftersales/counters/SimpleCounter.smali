@@ -10,5 +10,8 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/aftersales/counters/BaseCounter;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/fragment/app/FragmentManager$1;
+.class Landroidx/fragment/app/FragmentManager$1;
 .super Landroidx/activity/OnBackPressedCallback;
 .source "FragmentManager.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/fragment/app/FragmentManager;
+.field final synthetic this$0:Landroidx/fragment/app/FragmentManager;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$1;->this$0:Landroidx/fragment/app/FragmentManager;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2}, Landroidx/activity/OnBackPressedCallback;-><init>(Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -38,7 +43,12 @@
     .line 1
     iget-object p0, p0, Landroidx/fragment/app/FragmentManager$1;->this$0:Landroidx/fragment/app/FragmentManager;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->handleOnBackPressed()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

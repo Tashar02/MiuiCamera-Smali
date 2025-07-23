@@ -1,4 +1,4 @@
-.class public Landroidx/collection/ArraySet$1;
+.class Landroidx/collection/ArraySet$1;
 .super Landroidx/collection/MapCollections;
 .source "ArraySet.java"
 
@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/collection/ArraySet;
+.field final synthetic this$0:Landroidx/collection/ArraySet;
 
 
 # direct methods
@@ -32,8 +32,13 @@
     .line 1
     iput-object p1, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroidx/collection/MapCollections;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,8 +50,13 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/collection/ArraySet;->clear()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -56,10 +66,16 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/collection/ArraySet;->mArray:[Ljava/lang/Object;
 
+    .line 4
+    .line 5
     aget-object p0, p0, p1
 
+    .line 6
+    .line 7
     return-object p0
 .end method
 
@@ -76,10 +92,18 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string/jumbo v0, "not a map"
 
+    .line 4
+    .line 5
+    .line 6
     invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 7
+    .line 8
+    .line 9
     throw p0
 .end method
 
@@ -89,8 +113,12 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     iget p0, p0, Landroidx/collection/ArraySet;->mSize:I
 
+    .line 4
+    .line 5
     return p0
 .end method
 
@@ -100,10 +128,16 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/collection/ArraySet;->indexOf(Ljava/lang/Object;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -113,10 +147,16 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/collection/ArraySet;->indexOf(Ljava/lang/Object;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -131,8 +171,13 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/collection/ArraySet;->add(Ljava/lang/Object;)Z
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -142,8 +187,13 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArraySet$1;->this$0:Landroidx/collection/ArraySet;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/collection/ArraySet;->removeAt(I)Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -158,9 +208,17 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     const-string/jumbo p1, "not a map"
 
+    .line 4
+    .line 5
+    .line 6
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
+    .line 7
+    .line 8
+    .line 9
     throw p0
 .end method

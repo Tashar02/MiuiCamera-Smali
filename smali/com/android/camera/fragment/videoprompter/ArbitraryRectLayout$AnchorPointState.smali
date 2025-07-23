@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/videoprompter/ArbitraryRectLayout$AnchorPointState;
+.class Lcom/android/camera/fragment/videoprompter/ArbitraryRectLayout$AnchorPointState;
 .super Ljava/lang/Object;
 .source "ArbitraryRectLayout.java"
 
@@ -27,25 +27,22 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/videoprompter/ArbitraryRectLayout;
+.field final synthetic this$0:Lcom/android/camera/fragment/videoprompter/ArbitraryRectLayout;
 
 
 # direct methods
 .method private constructor <init>(Lcom/android/camera/fragment/videoprompter/ArbitraryRectLayout;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/videoprompter/ArbitraryRectLayout$AnchorPointState;->this$0:Lcom/android/camera/fragment/videoprompter/ArbitraryRectLayout;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

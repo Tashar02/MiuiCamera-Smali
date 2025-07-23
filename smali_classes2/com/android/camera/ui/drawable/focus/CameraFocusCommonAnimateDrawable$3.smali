@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable$3;
+.class Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable$3;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "CameraFocusCommonAnimateDrawable.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable;
+.field final synthetic this$0:Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,23 +39,24 @@
 # virtual methods
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animation"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Lcom/android/camera/ui/drawable/focus/CameraFocusCommonAnimateDrawable;->mPaintOuterRect:Lcom/android/camera/ui/drawable/focus/CameraFocusPaintOuterRect;
 
+    .line 4
+    .line 5
     const/high16 p1, 0x3f800000    # 1.0f
 
+    .line 6
+    .line 7
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/CameraPaintBase;->setTargetWidthPercent(F)Lcom/android/camera/ui/drawable/CameraPaintBase;
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

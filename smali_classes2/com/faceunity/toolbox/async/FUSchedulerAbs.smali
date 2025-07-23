@@ -4,36 +4,35 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/faceunity/toolbox/async/FUSchedulerAbs$AsyncTask;,
+        Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;
+    }
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
     bv = {
         0x1,
         0x0,
         0x3
     }
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0005\u0008&\u0018\u0000 \u00042\u00020\u0001:\u0002\u0005\u0004B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0006"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0004\u0008&\u0018\u0000 \u00042\u00020\u0001:\u0002\u0003\u0004B\u0005\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0005"
     }
     d2 = {
         "Lcom/faceunity/toolbox/async/FUSchedulerAbs;",
         "",
-        "<init>",
         "()V",
-        "Companion",
         "AsyncTask",
+        "Companion",
         "lib_toolbox_release"
     }
     k = 0x1
     mv = {
         0x1,
-        0x4,
-        0x0
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/faceunity/toolbox/async/FUSchedulerAbs$AsyncTask;,
-        Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;
+        0x1,
+        0xf
     }
 .end annotation
 
@@ -42,7 +41,7 @@
 .field public static final Companion:Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;
 
 .field private static final mHandler:Landroid/os/Handler;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
@@ -51,25 +50,44 @@
 .method public static constructor <clinit>()V
     .locals 2
 
+    .line 1
     new-instance v0, Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;-><init>(LOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    .line 4
+    invoke-direct {v0, v1}, Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;-><init>(Lo000oo0/o0O0O00;)V
 
+    .line 5
+    .line 6
+    .line 7
     sput-object v0, Lcom/faceunity/toolbox/async/FUSchedulerAbs;->Companion:Lcom/faceunity/toolbox/async/FUSchedulerAbs$Companion;
 
-    .line 1
+    .line 8
+    .line 9
     new-instance v0, Landroid/os/Handler;
 
+    .line 10
+    .line 11
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object v1
 
+    .line 15
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
+    .line 16
+    .line 17
+    .line 18
     sput-object v0, Lcom/faceunity/toolbox/async/FUSchedulerAbs;->mHandler:Landroid/os/Handler;
 
+    .line 19
+    .line 20
     return-void
 .end method
 
@@ -79,6 +97,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -88,5 +109,7 @@
     .line 1
     sget-object v0, Lcom/faceunity/toolbox/async/FUSchedulerAbs;->mHandler:Landroid/os/Handler;
 
+    .line 2
+    .line 3
     return-object v0
 .end method

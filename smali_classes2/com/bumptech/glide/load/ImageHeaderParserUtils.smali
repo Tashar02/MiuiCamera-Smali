@@ -23,6 +23,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -171,36 +174,58 @@
     .line 1
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     const/4 v1, 0x0
 
+    .line 6
     :goto_0
     const/4 v2, -0x1
 
+    .line 7
     if-ge v1, v0, :cond_1
 
-    .line 2
+    .line 8
+    .line 9
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v3
 
+    .line 13
     check-cast v3, Lcom/bumptech/glide/load/ImageHeaderParser;
 
-    .line 3
+    .line 14
+    .line 15
     invoke-interface {p1, v3}, Lcom/bumptech/glide/load/ImageHeaderParserUtils$OrientationReader;->getOrientation(Lcom/bumptech/glide/load/ImageHeaderParser;)I
 
+    .line 16
+    .line 17
+    .line 18
     move-result v3
 
+    .line 19
     if-eq v3, v2, :cond_0
 
+    .line 20
+    .line 21
     return v3
 
+    .line 22
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
+    .line 23
+    .line 24
     goto :goto_0
 
+    .line 25
     :cond_1
     return v2
 .end method
@@ -414,40 +439,63 @@
     .line 1
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     const/4 v1, 0x0
 
+    .line 6
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 2
+    .line 7
+    .line 8
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object v2
 
+    .line 12
     check-cast v2, Lcom/bumptech/glide/load/ImageHeaderParser;
 
-    .line 3
+    .line 13
+    .line 14
     invoke-interface {p1, v2}, Lcom/bumptech/glide/load/ImageHeaderParserUtils$TypeReader;->getType(Lcom/bumptech/glide/load/ImageHeaderParser;)Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v2
 
-    .line 4
+    .line 18
     sget-object v3, Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;->UNKNOWN:Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
 
+    .line 19
+    .line 20
     if-eq v2, v3, :cond_0
 
+    .line 21
+    .line 22
     return-object v2
 
+    .line 23
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
+    .line 24
+    .line 25
     goto :goto_0
 
-    .line 5
+    .line 26
     :cond_1
     sget-object p0, Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;->UNKNOWN:Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
 
+    .line 27
+    .line 28
     return-object p0
 .end method

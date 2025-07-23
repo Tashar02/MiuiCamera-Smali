@@ -9,15 +9,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "eglCore"
-        }
-    .end annotation
-
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/effect/framework/gles/EglSurfaceBase;-><init>(Lcom/android/camera/effect/framework/gles/EglCore;)V
 
@@ -26,18 +17,6 @@
 
 .method public constructor <init>(Lcom/android/camera/effect/framework/gles/EglCore;II)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "eglCore",
-            "width",
-            "height"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0, p1}, Lcom/android/camera/effect/framework/gles/EglSurfaceBase;-><init>(Lcom/android/camera/effect/framework/gles/EglCore;)V
@@ -56,5 +35,8 @@
     .line 1
     invoke-virtual {p0}, Lcom/android/camera/effect/framework/gles/EglSurfaceBase;->releaseEglSurface()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

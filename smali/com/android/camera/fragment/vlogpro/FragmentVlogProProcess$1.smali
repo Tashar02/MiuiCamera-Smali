@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess$1;
+.class Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess$1;
 .super Ljava/lang/Object;
 .source "FragmentVlogProProcess.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;
+.field final synthetic this$0:Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess$1;->this$0:Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,13 +46,23 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess$1;->this$0:Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;->access$000(Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;)Landroid/widget/FrameLayout;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setVisibility(I)V
+    .line 8
+    invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

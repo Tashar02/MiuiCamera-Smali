@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field public mScroller:Landroid/widget/OverScroller;
+.field mScroller:Landroid/widget/OverScroller;
 
 
 # direct methods
@@ -19,23 +19,40 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     if-eqz p2, :cond_0
 
-    .line 2
+    .line 5
+    .line 6
     new-instance v0, Landroid/widget/OverScroller;
 
+    .line 7
+    .line 8
     invoke-direct {v0, p1, p2}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
 
+    .line 9
+    .line 10
+    .line 11
     goto :goto_0
 
+    .line 12
     :cond_0
     new-instance v0, Landroid/widget/OverScroller;
 
+    .line 13
+    .line 14
     invoke-direct {v0, p1}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;)V
 
+    .line 15
+    .line 16
+    .line 17
     :goto_0
     iput-object v0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 18
+    .line 19
     return-void
 .end method
 
@@ -77,8 +94,13 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->abortAnimation()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -90,10 +112,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->computeScrollOffset()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -171,10 +199,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getCurrVelocity()F
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -186,10 +220,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getCurrX()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -201,10 +241,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getCurrY()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -216,10 +262,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getFinalX()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -231,10 +283,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->getFinalY()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -246,10 +304,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->isFinished()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -261,10 +325,16 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/OverScroller;->isOverScrolled()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -276,8 +346,13 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2, p3}, Landroid/widget/OverScroller;->notifyHorizontalEdgeReached(III)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -289,8 +364,13 @@
     .line 1
     iget-object p0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2, p3}, Landroid/widget/OverScroller;->notifyVerticalEdgeReached(III)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -302,22 +382,34 @@
     .line 1
     iget-object v0, p0, Landroidx/core/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
+    .line 2
+    .line 3
     move v1, p1
 
+    .line 4
     move v2, p2
 
+    .line 5
     move v3, p3
 
+    .line 6
     move v4, p4
 
+    .line 7
     move v5, p5
 
+    .line 8
     move v6, p6
 
+    .line 9
     invoke-virtual/range {v0 .. v6}, Landroid/widget/OverScroller;->springBack(IIIIII)Z
 
+    .line 10
+    .line 11
+    .line 12
     move-result p0
 
+    .line 13
     return p0
 .end method
 

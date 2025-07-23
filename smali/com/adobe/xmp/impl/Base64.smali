@@ -19,98 +19,157 @@
 .method public static constructor <clinit>()V
     .locals 5
 
+    .line 1
     const/16 v0, 0x40
 
+    .line 2
+    .line 3
     new-array v0, v0, [B
 
-    .line 1
+    .line 4
+    .line 5
     fill-array-data v0, :array_0
 
+    .line 6
+    .line 7
+    .line 8
     sput-object v0, Lcom/adobe/xmp/impl/Base64;->base64:[B
 
+    .line 9
+    .line 10
     const/16 v0, 0xff
 
+    .line 11
+    .line 12
     new-array v1, v0, [B
 
-    .line 2
+    .line 13
+    .line 14
     sput-object v1, Lcom/adobe/xmp/impl/Base64;->ascii:[B
 
+    .line 15
+    .line 16
     const/4 v1, 0x0
 
+    .line 17
     move v2, v1
 
+    .line 18
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 3
+    .line 19
+    .line 20
     sget-object v3, Lcom/adobe/xmp/impl/Base64;->ascii:[B
 
+    .line 21
+    .line 22
     const/4 v4, -0x1
 
+    .line 23
     aput-byte v4, v3, v2
 
+    .line 24
+    .line 25
     add-int/lit8 v2, v2, 0x1
 
+    .line 26
+    .line 27
     goto :goto_0
 
-    .line 4
+    .line 28
     :cond_0
     :goto_1
     sget-object v0, Lcom/adobe/xmp/impl/Base64;->base64:[B
 
+    .line 29
+    .line 30
     array-length v2, v0
 
+    .line 31
     if-ge v1, v2, :cond_1
 
-    .line 5
+    .line 32
+    .line 33
     sget-object v2, Lcom/adobe/xmp/impl/Base64;->ascii:[B
 
+    .line 34
+    .line 35
     aget-byte v0, v0, v1
 
+    .line 36
+    .line 37
     int-to-byte v3, v1
 
+    .line 38
     aput-byte v3, v2, v0
 
+    .line 39
+    .line 40
     add-int/lit8 v1, v1, 0x1
 
+    .line 41
+    .line 42
     goto :goto_1
 
-    .line 6
+    .line 43
     :cond_1
     sget-object v0, Lcom/adobe/xmp/impl/Base64;->ascii:[B
 
+    .line 44
+    .line 45
     const/16 v1, 0x9
 
+    .line 46
+    .line 47
     const/4 v2, -0x2
 
+    .line 48
     aput-byte v2, v0, v1
 
+    .line 49
+    .line 50
     const/16 v1, 0xa
 
-    .line 7
+    .line 51
+    .line 52
     aput-byte v2, v0, v1
 
+    .line 53
+    .line 54
     const/16 v1, 0xd
 
-    .line 8
+    .line 55
+    .line 56
     aput-byte v2, v0, v1
 
+    .line 57
+    .line 58
     const/16 v1, 0x20
 
-    .line 9
+    .line 59
+    .line 60
     aput-byte v2, v0, v1
 
+    .line 61
+    .line 62
     const/16 v1, 0x3d
 
+    .line 63
+    .line 64
     const/4 v2, -0x3
 
-    .line 10
+    .line 65
     aput-byte v2, v0, v1
 
+    .line 66
+    .line 67
     return-void
 
+    .line 68
     nop
 
+    .line 69
     :array_0
     .array-data 1
         0x41t
@@ -186,6 +245,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

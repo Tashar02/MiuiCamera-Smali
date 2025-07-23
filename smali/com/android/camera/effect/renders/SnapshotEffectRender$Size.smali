@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;
+.class Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;
 .super Ljava/lang/Object;
 .source "SnapshotEffectRender.java"
 
@@ -17,7 +17,7 @@
 # instance fields
 .field public height:I
 
-.field public final synthetic this$0:Lcom/android/camera/effect/renders/SnapshotEffectRender;
+.field final synthetic this$0:Lcom/android/camera/effect/renders/SnapshotEffectRender;
 
 .field public width:I
 
@@ -25,14 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/effect/renders/SnapshotEffectRender;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 4
     iput-object p1, p0, Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;->this$0:Lcom/android/camera/effect/renders/SnapshotEffectRender;
@@ -44,18 +36,6 @@
 
 .method public constructor <init>(Lcom/android/camera/effect/renders/SnapshotEffectRender;II)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010,
-            0x0,
-            0x0
-        }
-        names = {
-            "this$0",
-            "width",
-            "height"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/renders/SnapshotEffectRender$Size;->this$0:Lcom/android/camera/effect/renders/SnapshotEffectRender;

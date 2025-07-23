@@ -1930,1622 +1930,1964 @@
     .locals 11
 
     .line 1
-    const-class v0, Ljava/lang/Long;
+    new-instance v0, Lcom/android/camera2/vendortag/u6;
 
-    const-class v1, Ljava/lang/String;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/u6;-><init>()V
 
-    const-class v2, Ljava/lang/Float;
+    const-class v1, Ljava/lang/Float;
 
-    const-class v3, [I
+    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    const-class v4, [F
+    move-result-object v0
 
-    const-class v5, Ljava/lang/Byte;
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FOCAL_LENGTH_35MM:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 2
+    new-instance v0, Lcom/android/camera2/vendortag/xc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/xc;-><init>()V
+
+    const-class v2, [F
+
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_BOUNDS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 3
+    new-instance v0, Lcom/android/camera2/vendortag/jd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/jd;-><init>()V
+
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_TARGET_BOUNDS_STABILIZED:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 4
+    new-instance v0, Lcom/android/camera2/vendortag/d7;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/d7;-><init>()V
+
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_TARGET_BOUNDS_ZOOMED:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 5
+    new-instance v0, Lcom/android/camera2/vendortag/p7;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/p7;-><init>()V
+
+    const-class v3, Ljava/lang/Integer;
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_STATUS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 6
+    new-instance v0, Lcom/android/camera2/vendortag/c8;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/c8;-><init>()V
+
+    const-class v4, [I
+
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_ACTIVE_OBJECTS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 7
+    new-instance v0, Lcom/android/camera2/vendortag/o8;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/o8;-><init>()V
+
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_SELECTED_OBJECTS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 8
+    new-instance v0, Lcom/android/camera2/vendortag/a9;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/a9;-><init>()V
+
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_PAUSED_OBJECTS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 9
+    new-instance v0, Lcom/android/camera2/vendortag/m9;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/m9;-><init>()V
+
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_OBJECT_BOUNDS_STABILIZED:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 10
+    new-instance v0, Lcom/android/camera2/vendortag/y9;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/y9;-><init>()V
+
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_OBJECT_BOUNDS_ZOOMED:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 11
+    new-instance v0, Lcom/android/camera2/vendortag/q7;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/q7;-><init>()V
+
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_DELAYED_TARGET_BOUNDS_STABILIZED:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 12
+    new-instance v0, Lcom/android/camera2/vendortag/fa;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/fa;-><init>()V
+
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_DELAYED_TARGET_BOUNDS_ZOOMED:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 13
+    new-instance v0, Lcom/android/camera2/vendortag/ra;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ra;-><init>()V
+
+    const-class v5, Ljava/lang/String;
+
+    invoke-static {v0, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 14
+    new-instance v0, Lcom/android/camera2/vendortag/db;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/db;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SKIN_COLOR:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 15
+    new-instance v0, Lcom/android/camera2/vendortag/pb;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/pb;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SLIM_FACE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 16
+    new-instance v0, Lcom/android/camera2/vendortag/bc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/bc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SKIN_SMOOTH:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 17
+    new-instance v0, Lcom/android/camera2/vendortag/nc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/nc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_ENLARGE_EYE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 18
+    new-instance v0, Lcom/android/camera2/vendortag/uc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/uc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_NOSE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 19
+    new-instance v0, Lcom/android/camera2/vendortag/vc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/vc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_RISORIUS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 20
+    new-instance v0, Lcom/android/camera2/vendortag/wc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/wc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_LIPS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 21
+    new-instance v0, Lcom/android/camera2/vendortag/yc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/yc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_CHIN:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 22
+    new-instance v0, Lcom/android/camera2/vendortag/zc;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/zc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_NECK:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 23
+    new-instance v0, Lcom/android/camera2/vendortag/ad;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ad;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SMILE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 24
+    new-instance v0, Lcom/android/camera2/vendortag/cd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/cd;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SLIM_NOSE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 25
+    new-instance v0, Lcom/android/camera2/vendortag/dd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/dd;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_HAIRLINE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 26
+    new-instance v0, Lcom/android/camera2/vendortag/ed;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ed;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_EYEBROW_DYE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 27
+    new-instance v0, Lcom/android/camera2/vendortag/fd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/fd;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_PUPIL_LINE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 28
+    new-instance v0, Lcom/android/camera2/vendortag/gd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/gd;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_JELLY_LIPS:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 29
+    new-instance v0, Lcom/android/camera2/vendortag/hd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/hd;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_BLUSHER:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 30
+    new-instance v0, Lcom/android/camera2/vendortag/id;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/id;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EYE_LIGHT_TYPE:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 31
+    new-instance v0, Lcom/android/camera2/vendortag/kd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/kd;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EYE_LIGHT_STRENGTH:Lcom/android/camera2/vendortag/VendorTag;
+
+    .line 32
+    new-instance v0, Lcom/android/camera2/vendortag/ld;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ld;-><init>()V
 
     const-class v6, Ljava/lang/Boolean;
 
-    const-class v7, [B
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    const-class v8, Ljava/lang/Integer;
+    move-result-object v0
 
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/ab;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ab;
-
-    invoke-static {v9, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FOCAL_LENGTH_35MM:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 2
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/dc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/dc;
-
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_BOUNDS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 3
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/o7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/o7;
-
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_TARGET_BOUNDS_STABILIZED:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 4
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/q9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/q9;
-
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_TARGET_BOUNDS_ZOOMED:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 5
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/bd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/bd;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_STATUS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 6
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/jb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/jb;
-
-    invoke-static {v9, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_ACTIVE_OBJECTS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 7
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/nb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/nb;
-
-    invoke-static {v9, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_SELECTED_OBJECTS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 8
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/gd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/gd;
-
-    invoke-static {v9, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_PAUSED_OBJECTS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 9
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/l8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/l8;
-
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_OBJECT_BOUNDS_STABILIZED:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 10
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/ja;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ja;
-
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_OBJECT_BOUNDS_ZOOMED:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 11
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/a9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/a9;
-
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_DELAYED_TARGET_BOUNDS_STABILIZED:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 12
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/s8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/s8;
-
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AUTOZOOM_DELAYED_TARGET_BOUNDS_ZOOMED:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 13
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/u7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/u7;
-
-    invoke-static {v9, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 14
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/z7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/z7;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SKIN_COLOR:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 15
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/wa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/wa;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SLIM_FACE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 16
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/v6;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/v6;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SKIN_SMOOTH:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 17
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/e8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/e8;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_ENLARGE_EYE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 18
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/r8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/r8;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_NOSE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 19
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/f7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/f7;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_RISORIUS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 20
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/v9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/v9;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_LIPS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 21
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/mb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/mb;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_CHIN:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 22
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/i8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/i8;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_NECK:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 23
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/kd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/kd;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SMILE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 24
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/z9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/z9;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SLIM_NOSE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 25
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/pa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/pa;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_HAIRLINE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 26
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/w8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/w8;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_EYEBROW_DYE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 27
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/oa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/oa;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_PUPIL_LINE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 28
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/fa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/fa;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_JELLY_LIPS:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 29
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/ub;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ub;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_BLUSHER:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 30
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/g7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/g7;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EYE_LIGHT_TYPE:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 31
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/d8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/d8;
-
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EYE_LIGHT_STRENGTH:Lcom/android/camera2/vendortag/VendorTag;
-
-    .line 32
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/w9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/w9;
-
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
-
-    move-result-object v9
-
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_SCENE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_SCENE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 33
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/ga;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ga;
+    new-instance v0, Lcom/android/camera2/vendortag/v6;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/v6;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_HEAD_SLIM:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_HEAD_SLIM:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 34
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/t9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/t9;
+    new-instance v0, Lcom/android/camera2/vendortag/w6;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/w6;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_BODY_SLIM:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_BODY_SLIM:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 35
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/y7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/y7;
+    new-instance v0, Lcom/android/camera2/vendortag/x6;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/x6;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SHOULDER_SLIM:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_SHOULDER_SLIM:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 36
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/ra;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ra;
+    new-instance v0, Lcom/android/camera2/vendortag/y6;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/y6;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_LEG_SLIM:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_LEG_SLIM:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 37
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/b9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/b9;
+    new-instance v0, Lcom/android/camera2/vendortag/z6;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/z6;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->WHOLE_BODY_SLIM:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->WHOLE_BODY_SLIM:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 38
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/n7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/n7;
+    new-instance v0, Lcom/android/camera2/vendortag/a7;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/a7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BUTT_SLIM:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BUTT_SLIM:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 39
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/qb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/qb;
+    new-instance v0, Lcom/android/camera2/vendortag/b7;
 
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/b7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FRONT_SINGLE_CAMERA_BOKEH:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FRONT_SINGLE_CAMERA_BOKEH:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 40
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/hb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/hb;
+    new-instance v0, Lcom/android/camera2/vendortag/c7;
 
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/c7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CONTROL_ENABLE_REMOSAIC:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CONTROL_ENABLE_REMOSAIC:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 41
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/w6;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/w6;
+    new-instance v0, Lcom/android/camera2/vendortag/e7;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/e7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CONTROL_ENABLE_SPECSHOT_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CONTROL_ENABLE_SPECSHOT_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 42
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/ic;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ic;
+    new-instance v0, Lcom/android/camera2/vendortag/g7;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/g7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CONTROL_ENABLE_SPECSHOT_MODE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CONTROL_ENABLE_SPECSHOT_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 43
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/i7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/i7;
+    new-instance v0, Lcom/android/camera2/vendortag/h7;
 
-    invoke-static {v9, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/h7;-><init>()V
 
-    move-result-object v9
+    const-class v7, Ljava/lang/Byte;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ULTRA_WIDE_LENS_DISTORTION_CORRECTION_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ULTRA_WIDE_LENS_DISTORTION_CORRECTION_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 44
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/ua;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ua;
+    new-instance v0, Lcom/android/camera2/vendortag/i7;
 
-    invoke-static {v9, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/i7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DEPURPLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DEPURPLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 45
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/u8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/u8;
+    new-instance v0, Lcom/android/camera2/vendortag/j7;
 
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/j7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->REAR_BOKEH_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->REAR_BOKEH_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 46
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/m7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/m7;
+    new-instance v0, Lcom/android/camera2/vendortag/k7;
 
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/k7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MFNR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MFNR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 47
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/a7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/a7;
+    new-instance v0, Lcom/android/camera2/vendortag/l7;
 
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/l7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SW_MFNR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SW_MFNR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 48
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/sa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/sa;
+    new-instance v0, Lcom/android/camera2/vendortag/m7;
 
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/m7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SW_MFNR_DISABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SW_MFNR_DISABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 49
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/p7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/p7;
+    new-instance v0, Lcom/android/camera2/vendortag/n7;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/n7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HHT_FRAMENUMBER:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HHT_FRAMENUMBER:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 50
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/fb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/fb;
+    new-instance v0, Lcom/android/camera2/vendortag/o7;
 
-    invoke-static {v9, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/o7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HHT_DISABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HHT_DISABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 51
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/za;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/za;
+    new-instance v0, Lcom/android/camera2/vendortag/r7;
 
-    invoke-static {v9, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/r7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->VIDEO_RECORD_STATE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->VIDEO_RECORD_STATE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 52
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/oc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/oc;
+    new-instance v0, Lcom/android/camera2/vendortag/s7;
 
-    invoke-static {v9, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/s7;-><init>()V
 
-    move-result-object v9
+    const-class v8, [B
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_INFO:Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_INFO:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 53
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/db;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/db;
+    new-instance v0, Lcom/android/camera2/vendortag/t7;
 
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/t7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_AGE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_AGE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 54
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/j7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/j7;
+    new-instance v0, Lcom/android/camera2/vendortag/u7;
 
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/u7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_GENDER:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_GENDER:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 55
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/bb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/bb;
+    new-instance v0, Lcom/android/camera2/vendortag/v7;
 
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/v7;-><init>()V
 
-    move-result-object v9
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v9, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_FACESCORE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_FACESCORE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 56
-    sget-object v9, LOooO0OO/OooO0O0/OooO0O0/o00O000/pb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/pb;
+    new-instance v0, Lcom/android/camera2/vendortag/w7;
 
-    invoke-static {v9, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/w7;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_PROP:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_PROP:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 57
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/n9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/n9;
+    new-instance v0, Lcom/android/camera2/vendortag/x7;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/x7;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SENSOR_HDR_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SENSOR_HDR_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 58
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/g8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/g8;
+    new-instance v0, Lcom/android/camera2/vendortag/y7;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/y7;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SCENE_DETECTION_RESULT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SCENE_DETECTION_RESULT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 59
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/x8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/x8;
+    new-instance v0, Lcom/android/camera2/vendortag/z7;
 
-    invoke-static {v4, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/z7;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AEC_LUX:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AEC_LUX:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 60
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/xb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/xb;
+    new-instance v0, Lcom/android/camera2/vendortag/a8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/a8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->REAL_BV:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->REAL_BV:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 61
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/gc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/gc;
+    new-instance v0, Lcom/android/camera2/vendortag/d8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/d8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->QVGA:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->QVGA:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 62
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/h7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/h7;
+    new-instance v0, Lcom/android/camera2/vendortag/e8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/e8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->QVGA_LUX:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->QVGA_LUX:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 63
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/h9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/h9;
+    new-instance v0, Lcom/android/camera2/vendortag/f8;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/f8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_SCENE_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_SCENE_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 64
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/na;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/na;
+    new-instance v0, Lcom/android/camera2/vendortag/g8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/g8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_SCENE_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_SCENE_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 65
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/v7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/v7;
+    new-instance v0, Lcom/android/camera2/vendortag/h8;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/h8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_HDR_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_HDR_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 66
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/e7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/e7;
+    new-instance v0, Lcom/android/camera2/vendortag/i8;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/i8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_HDRSR_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_HDRSR_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 67
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/l9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/l9;
+    new-instance v0, Lcom/android/camera2/vendortag/j8;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/j8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_HDRSR_REQUEST_EXPAND_NUMBER:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AI_HDRSR_REQUEST_EXPAND_NUMBER:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 68
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ib;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ib;
+    new-instance v0, Lcom/android/camera2/vendortag/k8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/k8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->LENS_DIRTY_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->LENS_DIRTY_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 69
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/wb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/wb;
+    new-instance v0, Lcom/android/camera2/vendortag/l8;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/l8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AWB_FRAME_CONTROL:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AWB_FRAME_CONTROL:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 70
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/p8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/p8;
+    new-instance v0, Lcom/android/camera2/vendortag/n8;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/n8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AEC_FRAME_CONTROL:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AEC_FRAME_CONTROL:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 71
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/uc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/uc;
+    new-instance v0, Lcom/android/camera2/vendortag/p8;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/p8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AF_FRAME_CONTROL:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AF_FRAME_CONTROL:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 72
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/m9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/m9;
+    new-instance v0, Lcom/android/camera2/vendortag/q8;
 
-    invoke-static {v4, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/q8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HISTOGRAM_STATS:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HISTOGRAM_STATS:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 73
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ea;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ea;
+    new-instance v0, Lcom/android/camera2/vendortag/r8;
 
-    invoke-static {v4, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/r8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AISHUT_EXIST_MOTION:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AISHUT_EXIST_MOTION:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 74
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/da;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/da;
+    new-instance v0, Lcom/android/camera2/vendortag/s8;
 
-    invoke-static {v4, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/s8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MTK_3A_FEATURE_AISHUT_CAPTURE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MTK_3A_FEATURE_AISHUT_CAPTURE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 75
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/yc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/yc;
+    new-instance v0, Lcom/android/camera2/vendortag/t8;
 
-    invoke-static {v4, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/t8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->P2_KEY_NOTIFICATION_RESULT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->P2_KEY_NOTIFICATION_RESULT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 76
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/sb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/sb;
+    new-instance v0, Lcom/android/camera2/vendortag/u8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/u8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_DEPTH_FOCUS:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_DEPTH_FOCUS:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 77
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/j9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/j9;
+    new-instance v0, Lcom/android/camera2/vendortag/v8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/v8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AF_TYPE_FOR_MTK:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AF_TYPE_FOR_MTK:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 78
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/b7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/b7;
+    new-instance v0, Lcom/android/camera2/vendortag/w8;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/w8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FAST_ZOOM_RESULT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FAST_ZOOM_RESULT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 79
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/u9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/u9;
+    new-instance v0, Lcom/android/camera2/vendortag/y8;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/y8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_EV_VALUES:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_EV_VALUES:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 80
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/lb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/lb;
+    new-instance v0, Lcom/android/camera2/vendortag/z8;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/z8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_RAW_EV_VALUES:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_RAW_EV_VALUES:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 81
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/kc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/kc;
+    new-instance v0, Lcom/android/camera2/vendortag/b9;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/b9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_SCENETYPE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_SCENETYPE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 82
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/yb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/yb;
+    new-instance v0, Lcom/android/camera2/vendortag/c9;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/c9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_ADRC:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECKER_ADRC:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 83
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ma;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ma;
+    new-instance v0, Lcom/android/camera2/vendortag/d9;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/d9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_MODE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 84
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/vc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/vc;
+    new-instance v0, Lcom/android/camera2/vendortag/e9;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/e9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DEBUG_INFO_VALUES:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DEBUG_INFO_VALUES:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 85
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/k9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/k9;
+    new-instance v0, Lcom/android/camera2/vendortag/f9;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/f9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EXIF_INFO_VALUES:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EXIF_INFO_VALUES:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 86
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/b8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/b8;
+    new-instance v0, Lcom/android/camera2/vendortag/g9;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/g9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EXIF_VIDEO_INFO_VALUES:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EXIF_VIDEO_INFO_VALUES:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 87
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ld;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ld;
+    new-instance v0, Lcom/android/camera2/vendortag/h9;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/h9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ULTRA_WIDE_RECOMMENDED_RESULT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ULTRA_WIDE_RECOMMENDED_RESULT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 88
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/cd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/cd;
+    new-instance v0, Lcom/android/camera2/vendortag/j9;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/j9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_BODY_SLIM_COUNT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BEAUTY_BODY_SLIM_COUNT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 89
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/t8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/t8;
+    new-instance v0, Lcom/android/camera2/vendortag/k9;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/k9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_SR_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_SR_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 90
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/z8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/z8;
+    new-instance v0, Lcom/android/camera2/vendortag/l9;
 
-    const-class v9, Landroid/graphics/Rect;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/l9;-><init>()V
 
-    invoke-static {v4, v9}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    const-class v2, Landroid/graphics/Rect;
 
-    move-result-object v4
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->POST_PROCESS_CROP_REGION:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->POST_PROCESS_CROP_REGION:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 91
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/y6;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/y6;
+    new-instance v0, Lcom/android/camera2/vendortag/n9;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/n9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_HDR_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_HDR_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 92
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/x6;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/x6;
+    new-instance v0, Lcom/android/camera2/vendortag/o9;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/o9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_HDRBOKEH_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_HDRBOKEH_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 93
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/o9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/o9;
+    new-instance v0, Lcom/android/camera2/vendortag/p9;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/p9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->RAW_HDR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->RAW_HDR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 94
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/vb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/vb;
+    new-instance v0, Lcom/android/camera2/vendortag/q9;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/q9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_HDR_SR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_HDR_SR_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 95
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/pc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/pc;
+    new-instance v0, Lcom/android/camera2/vendortag/r9;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/r9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->REMOSAIC_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->REMOSAIC_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 96
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/n8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/n8;
+    new-instance v0, Lcom/android/camera2/vendortag/s9;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/s9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HISTOGRAM_STATS_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HISTOGRAM_STATS_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 97
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/h8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/h8;
+    new-instance v0, Lcom/android/camera2/vendortag/u9;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/u9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SEMANTIC_SCENE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SEMANTIC_SCENE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 98
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/d9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/d9;
+    new-instance v0, Lcom/android/camera2/vendortag/v9;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/v9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->NON_SEMANTIC_SCENE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->NON_SEMANTIC_SCENE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 99
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/va;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/va;
+    new-instance v0, Lcom/android/camera2/vendortag/w9;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/w9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATE_SCENE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATE_SCENE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 100
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/aa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/aa;
+    new-instance v0, Lcom/android/camera2/vendortag/x9;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/x9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DXO_ASD_SCENE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DXO_ASD_SCENE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 101
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/rb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/rb;
+    new-instance v0, Lcom/android/camera2/vendortag/ca;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ca;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DXO_ASD_SCENE_AF:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DXO_ASD_SCENE_AF:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 102
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/u6;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/u6;
+    new-instance v0, Lcom/android/camera2/vendortag/na;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/na;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DXO_ASD_SCENE_AE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DXO_ASD_SCENE_AE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 103
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/zb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/zb;
+    new-instance v0, Lcom/android/camera2/vendortag/ya;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ya;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DISTORTION_FPC_DATA:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->DISTORTION_FPC_DATA:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 104
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/d7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/d7;
+    new-instance v0, Lcom/android/camera2/vendortag/jb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/jb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_MATER_CAMERA_ID:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_MATER_CAMERA_ID:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 105
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/c7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/c7;
+    new-instance v0, Lcom/android/camera2/vendortag/ub;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ub;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_MASTER_PHYSICAL_CAMERA_ID:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_MASTER_PHYSICAL_CAMERA_ID:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 106
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ia;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ia;
+    new-instance v0, Lcom/android/camera2/vendortag/fc;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/fc;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FAKE_SAT_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->FAKE_SAT_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 107
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ec;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ec;
+    new-instance v0, Lcom/android/camera2/vendortag/qc;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/qc;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FALLBACK_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FALLBACK_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 108
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/xa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/xa;
+    new-instance v0, Lcom/android/camera2/vendortag/bd;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/bd;-><init>()V
 
     sget-object v9, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
 
-    invoke-static {v4, v9}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v9}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    move-result-object v4
+    move-result-object v0
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BOKEH_FALLBACK_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BOKEH_FALLBACK_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 109
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/y8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/y8;
+    new-instance v0, Lcom/android/camera2/vendortag/md;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/md;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_DBG_INFO:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_DBG_INFO:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 110
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/jd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/jd;
+    new-instance v0, Lcom/android/camera2/vendortag/f7;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/f7;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_MOTION_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_MOTION_DETECTED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 111
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/bc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/bc;
+    new-instance v0, Lcom/android/camera2/vendortag/b8;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/b8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_EXIF:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_EXIF:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 112
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/fc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/fc;
+    new-instance v0, Lcom/android/camera2/vendortag/m8;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/m8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_ELLC_MODE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_ELLC_MODE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 113
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/wc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/wc;
+    new-instance v0, Lcom/android/camera2/vendortag/x8;
 
-    invoke-static {v4, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/x8;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ASD_EXIF_INFO:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ASD_EXIF_INFO:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 114
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/qc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/qc;
+    new-instance v0, Lcom/android/camera2/vendortag/i9;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/i9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_LLS_NEEDED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_LLS_NEEDED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 115
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/jc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/jc;
+    new-instance v0, Lcom/android/camera2/vendortag/t9;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/t9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECHER_ADRC:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECHER_ADRC:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 116
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ed;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ed;
+    new-instance v0, Lcom/android/camera2/vendortag/z9;
 
-    invoke-static {v4, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/z9;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECHER_LUXINDEX:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECHER_LUXINDEX:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 117
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/s7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/s7;
+    new-instance v0, Lcom/android/camera2/vendortag/aa;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/aa;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECHER_CAPTURE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CHECHER_CAPTURE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 118
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/r9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/r9;
+    new-instance v0, Lcom/android/camera2/vendortag/ba;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ba;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->THERMAL_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->THERMAL_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 119
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/f9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/f9;
+    new-instance v0, Lcom/android/camera2/vendortag/da;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/da;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->THERMAL_RESULT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->THERMAL_RESULT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 120
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/z6;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/z6;
+    new-instance v0, Lcom/android/camera2/vendortag/ea;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ea;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_THERMAL_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_THERMAL_LEVEL:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 121
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/lc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/lc;
+    new-instance v0, Lcom/android/camera2/vendortag/ga;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ga;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_CAPTURE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_CAPTURE_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 122
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/m8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/m8;
+    new-instance v0, Lcom/android/camera2/vendortag/ha;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ha;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->THERMAL_ALGO_DISABLE_MASK:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->THERMAL_ALGO_DISABLE_MASK:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 123
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/la;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/la;
+    new-instance v0, Lcom/android/camera2/vendortag/ia;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ia;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BATTERY_CAPACITY_REMIND_MASK:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->BATTERY_CAPACITY_REMIND_MASK:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 124
-    new-instance v4, Landroid/hardware/camera2/CaptureResult$Key;
+    new-instance v0, Landroid/hardware/camera2/CaptureResult$Key;
 
-    sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    const-string/jumbo v9, "xiaomi.algoup.iso_value"
 
-    const-string v10, "xiaomi.algoup.iso_value"
+    sget-object v10, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    invoke-direct {v4, v10, v9}, Landroid/hardware/camera2/CaptureResult$Key;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
+    invoke-direct {v0, v9, v10}, Landroid/hardware/camera2/CaptureResult$Key;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ISO_VALUE:Landroid/hardware/camera2/CaptureResult$Key;
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ISO_VALUE:Landroid/hardware/camera2/CaptureResult$Key;
 
     .line 125
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/md;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/md;
+    new-instance v0, Lcom/android/camera2/vendortag/ja;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ja;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AECISO_VALUE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AECISO_VALUE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 126
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/gb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/gb;
+    new-instance v0, Lcom/android/camera2/vendortag/ka;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ka;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_CHECKER_EV:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_CHECKER_EV:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 127
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ha;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ha;
+    new-instance v0, Lcom/android/camera2/vendortag/la;
 
-    invoke-static {v4, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/la;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_CHECKER_AEP_LINE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_CHECKER_AEP_LINE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 128
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ad;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ad;
+    new-instance v0, Lcom/android/camera2/vendortag/ma;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ma;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FALLBACKROLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FALLBACKROLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 129
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/k7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/k7;
+    new-instance v0, Lcom/android/camera2/vendortag/oa;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/oa;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_NEAR_RANGE_SCENE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_NEAR_RANGE_SCENE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 130
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/tb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/tb;
+    new-instance v0, Lcom/android/camera2/vendortag/pa;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/pa;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ZOOM_MAP_ROI:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ZOOM_MAP_ROI:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 131
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/x7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/x7;
+    new-instance v0, Lcom/android/camera2/vendortag/qa;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/qa;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ZOOM_MAP_RECT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ZOOM_MAP_RECT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 132
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/j8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/j8;
+    new-instance v0, Lcom/android/camera2/vendortag/sa;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/sa;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_SAT_MAP_DISPLAY:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_SAT_MAP_DISPLAY:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 133
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ob;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ob;
+    new-instance v0, Lcom/android/camera2/vendortag/ta;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ta;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_ZOOM_MAP_EIS_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IS_ZOOM_MAP_EIS_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 134
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/cb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/cb;
+    new-instance v0, Lcom/android/camera2/vendortag/ua;
+
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ua;-><init>()V
 
     const-class v6, [Landroid/graphics/Rect;
 
-    invoke-static {v4, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    move-result-object v4
+    move-result-object v0
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_STATISTICS_FACE_RECTANGLES:Lcom/android/camera2/vendortag/VendorTag;
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_STATISTICS_FACE_RECTANGLES:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 135
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/s9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/s9;
+    new-instance v0, Lcom/android/camera2/vendortag/va;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/va;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FUSION_SHOT_PIPELINE_READY:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FUSION_SHOT_PIPELINE_READY:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 136
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/id;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/id;
+    new-instance v0, Lcom/android/camera2/vendortag/wa;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/wa;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FUSION_IMAGE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_FUSION_IMAGE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 137
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/qa;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/qa;
+    new-instance v0, Lcom/android/camera2/vendortag/xa;
 
-    invoke-static {v4, v0}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/xa;-><init>()V
 
-    move-result-object v4
+    const-class v6, Ljava/lang/Long;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ANCHOR_FRAME_TIMESTAMP:Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ANCHOR_FRAME_TIMESTAMP:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 138
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/dd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/dd;
+    new-instance v0, Lcom/android/camera2/vendortag/za;
 
-    invoke-static {v4, v0}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/za;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AMBILIGHT_AE_EXPOSURE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->AMBILIGHT_AE_EXPOSURE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 139
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/sc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/sc;
+    new-instance v0, Lcom/android/camera2/vendortag/ab;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ab;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MTK_AISHUT_EXPOSURE_TIME:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MTK_AISHUT_EXPOSURE_TIME:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 140
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ta;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ta;
+    new-instance v0, Lcom/android/camera2/vendortag/bb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/bb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MTK_AISHUT_ISO:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MTK_AISHUT_ISO:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 141
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/eb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/eb;
+    new-instance v0, Lcom/android/camera2/vendortag/cb;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/cb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_SE_CAPTURE_TIME:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SUPER_NIGHT_SE_CAPTURE_TIME:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 142
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/i9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/i9;
+    new-instance v0, Lcom/android/camera2/vendortag/eb;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/eb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CAPTURE_EXP_TIME:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CAPTURE_EXP_TIME:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 143
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/mc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/mc;
+    new-instance v0, Lcom/android/camera2/vendortag/fb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/fb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EXTREME_DARK_SE_RESULT:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->EXTREME_DARK_SE_RESULT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 144
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/l7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/l7;
+    new-instance v0, Lcom/android/camera2/vendortag/gb;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/gb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_VELOCITY:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_VELOCITY:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 145
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ya;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ya;
+    new-instance v0, Lcom/android/camera2/vendortag/hb;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/hb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 146
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/o8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/o8;
+    new-instance v0, Lcom/android/camera2/vendortag/ib;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ib;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_TYPE1:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_TYPE1:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 147
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/kb;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/kb;
+    new-instance v0, Lcom/android/camera2/vendortag/kb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/kb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_ORIGEXP:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_ORIGEXP:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 148
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/v8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/v8;
+    new-instance v0, Lcom/android/camera2/vendortag/lb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/lb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_FLICKER:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_FLICKER:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 149
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/c9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/c9;
+    new-instance v0, Lcom/android/camera2/vendortag/mb;
 
-    invoke-static {v4, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/mb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_GAIN:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_CAPTURE_GAIN:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 150
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/rc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/rc;
+    new-instance v0, Lcom/android/camera2/vendortag/nb;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/nb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_SKIP_VELOCITY:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_MOTION_SKIP_VELOCITY:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 151
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/e9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/e9;
+    new-instance v0, Lcom/android/camera2/vendortag/ob;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ob;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->USE_CUSTOM_WB:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->USE_CUSTOM_WB:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 152
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/ac;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ac;
+    new-instance v0, Lcom/android/camera2/vendortag/qb;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/qb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->LASER_DIST:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->LASER_DIST:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 153
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/tc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/tc;
+    new-instance v0, Lcom/android/camera2/vendortag/rb;
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/rb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_AI_TOF:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MI_AI_TOF:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 154
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/cc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/cc;
+    new-instance v0, Lcom/android/camera2/vendortag/sb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/sb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ASD_IS_ZSL_HDR:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ASD_IS_ZSL_HDR:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 155
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/zc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/zc;
+    new-instance v0, Lcom/android/camera2/vendortag/tb;
 
-    invoke-static {v4, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/tb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SNAPSHOT_REQ_INFO:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SNAPSHOT_REQ_INFO:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 156
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/q8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/q8;
+    new-instance v0, Lcom/android/camera2/vendortag/vb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/vb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MCC_MASTER_CAMERA_ID:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MCC_MASTER_CAMERA_ID:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 157
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/k8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/k8;
+    new-instance v0, Lcom/android/camera2/vendortag/wb;
 
-    invoke-static {v4, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/wb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CAPTURE_REQUEST_SETTINGS:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HDR_CAPTURE_REQUEST_SETTINGS:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 158
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/c8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/c8;
+    new-instance v0, Lcom/android/camera2/vendortag/xb;
 
-    invoke-static {v4, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/xb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CAPTURE_PRECOLLECT_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->CAPTURE_PRECOLLECT_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 159
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/fd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/fd;
+    new-instance v0, Lcom/android/camera2/vendortag/yb;
 
-    invoke-static {v4, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/yb;-><init>()V
 
-    move-result-object v4
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ANCHOR_FRAME_ID_FOR_MULTI_CAPTURE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ANCHOR_FRAME_ID_FOR_MULTI_CAPTURE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 160
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/hd;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/hd;
+    new-instance v0, Lcom/android/camera2/vendortag/zb;
 
-    const-class v5, Landroid/util/Size;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/zb;-><init>()V
 
-    invoke-static {v4, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    const-class v7, Landroid/util/Size;
 
-    move-result-object v4
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v4, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_RAW_BUFFER_SIZE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SAT_RAW_BUFFER_SIZE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 161
-    sget-object v4, LOooO0OO/OooO0O0/OooO0O0/o00O000/q7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/q7;
+    new-instance v0, Lcom/android/camera2/vendortag/ac;
 
-    invoke-static {v4, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ac;-><init>()V
 
-    move-result-object v2
+    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v2, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ISO_DIGITAL_GAIN:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->ISO_DIGITAL_GAIN:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 162
-    sget-object v2, LOooO0OO/OooO0O0/OooO0O0/o00O000/a8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/a8;
+    new-instance v0, Lcom/android/camera2/vendortag/cc;
 
-    invoke-static {v2, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/cc;-><init>()V
 
-    move-result-object v2
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v2, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->PERFORMANCE_DUMP_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->PERFORMANCE_DUMP_ENABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 163
-    sget-object v2, LOooO0OO/OooO0O0/OooO0O0/o00O000/x9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/x9;
+    new-instance v0, Lcom/android/camera2/vendortag/dc;
 
-    invoke-static {v2, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/dc;-><init>()V
 
-    move-result-object v2
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v2, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MIVI_ALGO_DISABLED:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MIVI_ALGO_DISABLED:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 164
-    sget-object v2, LOooO0OO/OooO0O0/OooO0O0/o00O000/ka;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ka;
+    new-instance v0, Lcom/android/camera2/vendortag/ec;
 
-    invoke-static {v2, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ec;-><init>()V
 
-    move-result-object v2
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
-    sput-object v2, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->XIAOMI_MOTION_CAPTURE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
+    move-result-object v0
+
+    sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->XIAOMI_MOTION_CAPTURE_TYPE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 165
-    sget-object v2, LOooO0OO/OooO0O0/OooO0O0/o00O000/f8;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/f8;
+    new-instance v0, Lcom/android/camera2/vendortag/gc;
 
-    invoke-static {v2, v0}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/gc;-><init>()V
+
+    invoke-static {v0, v6}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->XIAOMI_MOTION_DETECTION_RESULT:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 166
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/y9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/y9;
+    new-instance v0, Lcom/android/camera2/vendortag/hc;
 
-    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/hc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MFNR_HDR_DISABLE_MFRN:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 167
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/r7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/r7;
+    new-instance v0, Lcom/android/camera2/vendortag/ic;
 
-    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/ic;-><init>()V
+
+    invoke-static {v0, v4}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MORE_FACE_POSE_INFORMATION:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 168
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/g9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/g9;
+    new-instance v0, Lcom/android/camera2/vendortag/jc;
 
-    sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/jc;-><init>()V
 
-    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->HEIC_ENABLE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 169
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/ba;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ba;
+    new-instance v0, Lcom/android/camera2/vendortag/kc;
 
-    const-class v2, Landroid/util/Size;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/kc;-><init>()V
 
-    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SNAP_SHOT_OUTPUT_SIZE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 170
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/t7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/t7;
+    new-instance v0, Lcom/android/camera2/vendortag/lc;
 
-    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/lc;-><init>()V
+
+    invoke-static {v0, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->IMAGE_NAME:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 171
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/ca;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/ca;
+    new-instance v0, Lcom/android/camera2/vendortag/mc;
 
-    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/mc;-><init>()V
+
+    invoke-static {v0, v5}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->MIVI2_EXIF:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 172
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/nc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/nc;
+    new-instance v0, Lcom/android/camera2/vendortag/oc;
 
-    invoke-static {v0, v7}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/oc;-><init>()V
+
+    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->SFE_PARAMETER:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 173
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/w7;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/w7;
+    new-instance v0, Lcom/android/camera2/vendortag/pc;
 
-    invoke-static {v0, v8}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/pc;-><init>()V
+
+    invoke-static {v0, v3}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->PSI_STRESS:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 174
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/xc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/xc;
+    new-instance v0, Lcom/android/camera2/vendortag/rc;
 
-    const-class v1, Landroid/graphics/Rect;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/rc;-><init>()V
 
-    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_FEATURES_LEFT_EYE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 175
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/p9;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/p9;
+    new-instance v0, Lcom/android/camera2/vendortag/sc;
 
-    const-class v1, Landroid/graphics/Rect;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/sc;-><init>()V
 
-    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
     sput-object v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->STATISTICS_FACE_FEATURES_RIGHT_EYE:Lcom/android/camera2/vendortag/VendorTag;
 
     .line 176
-    sget-object v0, LOooO0OO/OooO0O0/OooO0O0/o00O000/hc;->OooO00o:LOooO0OO/OooO0O0/OooO0O0/o00O000/hc;
+    new-instance v0, Lcom/android/camera2/vendortag/tc;
 
-    const-class v1, Landroid/graphics/Rect;
+    invoke-direct {v0}, Lcom/android/camera2/vendortag/tc;-><init>()V
 
-    invoke-static {v0, v1}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
+    invoke-static {v0, v2}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
 
     move-result-object v0
 
@@ -3560,22 +3902,929 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
+.end method
+
+.method public static synthetic OooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$104()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO00o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$101()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO0O0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$15()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO0OO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$40()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO0Oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$91()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$119()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO0o0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$90()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO0oO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$46()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooO0oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$77()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$103()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOO0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$65()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOO0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$18()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$61()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOOO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$29()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOOOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$42()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOOOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$53()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$142()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOOo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$127()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOOoo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$45()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$165()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$2()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOo00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$37()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOo0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$48()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOo0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$159()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOoO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$168()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOoO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$116()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOoOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$12()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOoo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$171()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOoo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$64()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$129()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooOooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$34()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$130()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$156()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo000()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$13()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo00O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$160()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo00o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$85()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo0O0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$30()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo0OO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$16()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$57()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo0o0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$163()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo0oO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$96()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooo0oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$21()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$95()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$8()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooO00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$155()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooO0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$121()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooOO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$144()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooOOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$154()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooOOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$17()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooOo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$11()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooOoO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$88()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooOoo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$44()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Ooooo00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$146()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Ooooo0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$25()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooooO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$58()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooooOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$108()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OooooOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$89()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$36()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Oooooo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$10()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic OoooooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$147()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic Ooooooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$97()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
 .end method
 
 .method public static create(Ljava/util/function/Supplier;Ljava/lang/Class;)Lcom/android/camera2/vendortag/VendorTag;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10,
-            0x10
-        }
-        names = {
-            "nameSupplier",
-            "klass"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -3595,1481 +4844,3906 @@
     .line 1
     new-instance v0, Lcom/android/camera2/vendortag/CaptureResultVendorTags$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p1, p0}, Lcom/android/camera2/vendortag/CaptureResultVendorTags$1;-><init>(Ljava/lang/Class;Ljava/util/function/Supplier;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$0()Ljava/lang/String;
+.method private static synthetic lambda$static$0()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.xiaomi.sensor.info.focalLength35mm"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$1()Ljava/lang/String;
+.method private static synthetic lambda$static$1()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.vidhance.autozoom.bounds"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$10()Ljava/lang/String;
+.method private static synthetic lambda$static$10()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.vidhance.autozoom.delayed_target_bounds_stabilized"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$100()Ljava/lang/String;
+.method private static synthetic lambda$static$100()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.asd.sceneDetectedAFResult"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.sceneDetectedAFResult"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$101()Ljava/lang/String;
+.method private static synthetic lambda$static$101()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.asd.sceneDetectedAEResult"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.sceneDetectedAEResult"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$102()Ljava/lang/String;
+.method private static synthetic lambda$static$102()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.distortion.distortioFpcData"
+    .line 1
+    const-string/jumbo v0, "xiaomi.distortion.distortioFpcData"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$103()Ljava/lang/String;
+.method private static synthetic lambda$static$103()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.masterCameraId"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$104()Ljava/lang/String;
+.method private static synthetic lambda$static$104()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.physicalCameraId"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$105()Ljava/lang/String;
+.method private static synthetic lambda$static$105()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.FakeSat.enabled"
+    .line 1
+    const-string/jumbo v0, "xiaomi.FakeSat.enabled"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$106()Ljava/lang/String;
+.method private static synthetic lambda$static$106()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.detected"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$107()Ljava/lang/String;
+.method private static synthetic lambda$static$107()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.bokeh.triggerFallback"
+    .line 1
+    const-string/jumbo v0, "xiaomi.bokeh.triggerFallback"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$108()Ljava/lang/String;
+.method private static synthetic lambda$static$108()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.sat.dbg.satDbgInfo"
+    .line 1
+    const-string/jumbo v0, "xiaomi.sat.dbg.satDbgInfo"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$109()Ljava/lang/String;
+.method private static synthetic lambda$static$109()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.misd.hdrmotionDetected"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.hdrmotionDetected"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$11()Ljava/lang/String;
+.method private static synthetic lambda$static$11()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.vidhance.autozoom.delayed_target_bounds_zoomed"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$110()Ljava/lang/String;
+.method private static synthetic lambda$static$110()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.misd.SuperNightExif"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.SuperNightExif"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$111()Ljava/lang/String;
+.method private static synthetic lambda$static$111()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.Ellc.mode"
+    .line 1
+    const-string/jumbo v0, "xiaomi.Ellc.mode"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$112()Ljava/lang/String;
+.method private static synthetic lambda$static$112()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.asd.asdExifInfo"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.asdExifInfo"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$113()Ljava/lang/String;
+.method private static synthetic lambda$static$113()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.qti.stats_control.is_lls_needed"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$114()Ljava/lang/String;
+.method private static synthetic lambda$static$114()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.snapshot.adrc"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$115()Ljava/lang/String;
+.method private static synthetic lambda$static$115()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.xiaomi.mivi2.luxIndex"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$116()Ljava/lang/String;
+.method private static synthetic lambda$static$116()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.snapshot.shotType"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$117()Ljava/lang/String;
+.method private static synthetic lambda$static$117()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.thermal.thermalLevel"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$118()Ljava/lang/String;
+.method private static synthetic lambda$static$118()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.thermal.thermalResult"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$119()Ljava/lang/String;
+.method private static synthetic lambda$static$119()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.asd.isHDRHighThermal"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.isHDRHighThermal"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$12()Ljava/lang/String;
+.method private static synthetic lambda$static$12()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.beauty.beautyLevelApplied"
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.beautyLevelApplied"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$120()Ljava/lang/String;
+.method private static synthetic lambda$static$120()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.misd.superNightCaptureMode"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.superNightCaptureMode"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$121()Ljava/lang/String;
+.method private static synthetic lambda$static$121()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.thermal.AlgoDisableMask"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$122()Ljava/lang/String;
+.method private static synthetic lambda$static$122()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.battery.CapacityRemindMask"
+    .line 1
+    const-string/jumbo v0, "xiaomi.battery.CapacityRemindMask"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$123()Ljava/lang/String;
+.method private static synthetic lambda$static$123()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.qti.chi.statsaec.AECISOValue"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$124()Ljava/lang/String;
+.method private static synthetic lambda$static$124()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.supernight.checker"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$125()Ljava/lang/String;
+.method private static synthetic lambda$static$125()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.supernight.aeplinechecker"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$126()Ljava/lang/String;
+.method private static synthetic lambda$static$126()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.fallbackRole"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$127()Ljava/lang/String;
+.method private static synthetic lambda$static$127()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.isNearRangeScene"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$128()Ljava/lang/String;
+.method private static synthetic lambda$static$128()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.mapROI"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$129()Ljava/lang/String;
+.method private static synthetic lambda$static$129()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.mapInnerRect"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$13()Ljava/lang/String;
+.method private static synthetic lambda$static$13()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.beauty.skinColorRatio"
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.skinColorRatio"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$130()Ljava/lang/String;
+.method private static synthetic lambda$static$130()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.isSatMapDisplay"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$131()Ljava/lang/String;
+.method private static synthetic lambda$static$131()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.xiaomi.ZOOMEisStatus.isZoomEisLocked"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$132()Ljava/lang/String;
+.method private static synthetic lambda$static$132()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.statistics.faceRectangles"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$133()Ljava/lang/String;
+.method private static synthetic lambda$static$133()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
+    .line 6
+    .line 7
     const-string v0, "com.xiaomi.capturefusion.isPipelineReady"
 
+    .line 8
+    .line 9
     goto :goto_0
 
+    .line 10
     :cond_0
-    const-string v0, "xiaomi.capturefusion.isPipelineReady"
+    const-string/jumbo v0, "xiaomi.capturefusion.isPipelineReady"
 
+    .line 11
+    .line 12
+    .line 13
     :goto_0
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$134()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.capturefusion.imageType"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$135()Ljava/lang/String;
+.method private static synthetic lambda$static$134()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
+    const-string/jumbo v0, "xiaomi.capturefusion.imageType"
 
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$135()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
+
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
+    .line 6
+    .line 7
     const-string v0, "com.xiaomi.mfnr.anchorTimeStamp"
 
+    .line 8
+    .line 9
     goto :goto_0
 
+    .line 10
     :cond_0
-    const-string v0, "xiaomi.mfnr.anchorTimeStamp"
+    const-string/jumbo v0, "xiaomi.mfnr.anchorTimeStamp"
 
+    .line 11
+    .line 12
+    .line 13
     :goto_0
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$136()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.super.night.exposure"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$137()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.mediatek.3afeature.aishutExposuretime"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$138()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.mediatek.3afeature.aishutISO"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$139()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.SuperNightCaptureExpTime"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$14()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.slimFaceRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$140()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.CaptureExpTime"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$141()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.asd.extremeDarkSeResult"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$142()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.motionVelocity"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$143()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.motionCaptureType"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$144()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.motionCaptureType1"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$145()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.motionCaptureOrigExp"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$146()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.motionCaptureFlicker"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$147()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.motionCaptureGain"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$148()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.skipMotionVelocity"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$149()Ljava/lang/String;
+.method private static synthetic lambda$static$136()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
+    const-string/jumbo v0, "xiaomi.super.night.exposure"
 
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$137()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.mediatek.3afeature.aishutExposuretime"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$138()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.mediatek.3afeature.aishutISO"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$139()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.SuperNightCaptureExpTime"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$14()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.slimFaceRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$140()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.CaptureExpTime"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$141()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.extremeDarkSeResult"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$142()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.motionVelocity"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$143()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.motionCaptureType"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$144()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.motionCaptureType1"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$145()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.motionCaptureOrigExp"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$146()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.motionCaptureFlicker"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$147()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.motionCaptureGain"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$148()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.skipMotionVelocity"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$149()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
+
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
-    const-string v0, "xiaomi.camera.awb.cct"
+    .line 6
+    .line 7
+    const-string/jumbo v0, "xiaomi.camera.awb.cct"
 
+    .line 8
+    .line 9
+    .line 10
     return-object v0
 
+    .line 11
     :cond_0
     const-string v0, "com.qti.stats.awbwrapper.AWBCCT"
 
+    .line 12
+    .line 13
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$15()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.skinSmoothRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$150()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.laserDist"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$151()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.miaitof"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$152()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.asd.isZSLHDR"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$153()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.asd.SnapshotReqInfo"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$154()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.qti.chi.multicamerainfo.MultiCameraIds"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$155()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.hdr.hdrFrameReq"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$156()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.mediatek.control.capture.preCollectEnable"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$157()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.multiframe.keyframeId"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$158()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.sat.rawsize"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$159()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.qti.sensorbps.gain"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$16()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.enlargeEyeRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$160()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.performance.dump.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$161()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.mivi.algo.disable"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$162()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.motionCaptureType"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$163()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.motiondetection.status"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$164()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.misd.isSingleHDR"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$165()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.objectTrackFacsPoss.FacePose"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$166()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.HeicSnapshot.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$167()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.mivi2.outputSize"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$168()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.snapshot.imageName"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$169()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.mivi2.exif"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$17()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.noseRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$170()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.3Adebug.SFEParameter"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$171()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.sysState.memPressureLevel"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$172()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.facefeatures.LeftEye"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$173()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.facefeatures.RightEye"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$174()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.facefeatures.Mouth"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$18()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.risoriusRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$19()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.lipsRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$2()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.vidhance.autozoom.target_bounds_stabilized"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$20()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.chinRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$21()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.neckRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$22()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.smileRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$23()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.slimNoseRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$24()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.hairlineRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$25()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.eyeBrowDyeRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$26()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.pupilLineRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$27()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.lipGlossRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$28()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.blushRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$29()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.eyeLightType"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$3()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.vidhance.autozoom.target_bounds_zoomed"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$30()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.eyeLightStrength"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$31()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.supernight.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$32()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.headSlimRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$33()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.bodySlimRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$34()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.shoulderSlimRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$35()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.legSlimRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$36()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.oneKeySlimRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$37()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.beauty.buttPlumpSlimRatio"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$38()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.bokeh.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$39()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.remosaic.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$4()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.vidhance.autozoom.status"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$40()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.specshot.mode.detected"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$41()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.specshot.mode.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$42()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.distortion.ultraWideDistortionLevel"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$43()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.depurple.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$44()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.bokehrear.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$45()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.mfnr.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$46()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.swmf.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$47()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.swmf.disabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$48()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.hht.frameNumber"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$49()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.hht.disabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$5()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.vidhance.autozoom.active_objects"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$50()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.video.recordState"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$51()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.faceAnalyzeResult.result"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$52()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.faceAnalyzeResult.age"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$53()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.faceAnalyzeResult.gender"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$54()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.faceAnalyzeResult.score"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$55()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.faceAnalyzeResult.prop"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$56()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "org.quic.camera2.statsconfigs.AECIsInsensorHDR"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$57()Ljava/lang/String;
-    .locals 1
-
-    const-string/jumbo v0, "xiaomi.scene.result"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$58()Ljava/lang/String;
+.method private static synthetic lambda$static$15()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
+    const-string/jumbo v0, "xiaomi.beauty.skinSmoothRatio"
 
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$150()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.laserDist"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$151()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.miaitof"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$152()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.isZSLHDR"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$153()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.SnapshotReqInfo"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$154()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.qti.chi.multicamerainfo.MultiCameraIds"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$155()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.hdrFrameReq"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$156()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.mediatek.control.capture.preCollectEnable"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$157()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.multiframe.keyframeId"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$158()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.sat.rawsize"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$159()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.qti.sensorbps.gain"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$16()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.enlargeEyeRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$160()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.performance.dump.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$161()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.mivi.algo.disable"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$162()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.motionCaptureType"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$163()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.motiondetection.status"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$164()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.isSingleHDR"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$165()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.objectTrackFacsPoss.FacePose"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$166()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.HeicSnapshot.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$167()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.mivi2.outputSize"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$168()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.snapshot.imageName"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$169()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.mivi2.exif"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$17()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.noseRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$170()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.3Adebug.SFEParameter"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$171()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.sysState.memPressureLevel"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$172()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.facefeatures.LeftEye"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$173()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.facefeatures.RightEye"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$174()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.facefeatures.Mouth"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$18()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.risoriusRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$19()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.lipsRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$2()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.vidhance.autozoom.target_bounds_stabilized"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$20()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.chinRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$21()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.neckRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$22()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.smileRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$23()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.slimNoseRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$24()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.hairlineRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$25()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.eyeBrowDyeRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$26()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.pupilLineRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$27()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.lipGlossRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$28()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.blushRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$29()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.eyeLightType"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$3()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.vidhance.autozoom.target_bounds_zoomed"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$30()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.eyeLightStrength"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$31()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.supernight.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$32()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.headSlimRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$33()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.bodySlimRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$34()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.shoulderSlimRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$35()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.legSlimRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$36()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.oneKeySlimRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$37()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.buttPlumpSlimRatio"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$38()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.bokeh.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$39()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.remosaic.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$4()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.vidhance.autozoom.status"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$40()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.specshot.mode.detected"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$41()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.specshot.mode.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$42()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.distortion.ultraWideDistortionLevel"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$43()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.depurple.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$44()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.bokehrear.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$45()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.mfnr.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$46()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.swmf.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$47()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.swmf.disabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$48()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.hht.frameNumber"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$49()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.hht.disabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$5()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.vidhance.autozoom.active_objects"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$50()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.video.recordState"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$51()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.faceAnalyzeResult.result"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$52()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.faceAnalyzeResult.age"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$53()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.faceAnalyzeResult.gender"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$54()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.faceAnalyzeResult.score"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$55()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.faceAnalyzeResult.prop"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$56()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "org.quic.camera2.statsconfigs.AECIsInsensorHDR"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$57()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.scene.result"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$58()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
+
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
+    .line 6
+    .line 7
     const-string v0, "com.xiaomi.statsconfigs.AecLux"
 
+    .line 8
+    .line 9
     return-object v0
 
+    .line 10
     :cond_0
     const-string v0, "com.qti.chi.statsaec.AecLux"
 
+    .line 11
+    .line 12
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$59()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.sat.real.bv"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$6()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.vidhance.autozoom.selected_objects"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$60()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.qvga.light.number"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$61()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.xiaomi.dummyluxmeter.value"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$62()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.asd.enabled"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$63()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.asd.sceneDetected"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$64()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.hdr.hdrDetected"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$65()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.hdr.srhdrDetected"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$66()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.hdr.srhdrRequestNumber"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$67()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "xiaomi.ai.add.lensDirtyDetected"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$68()Ljava/lang/String;
+.method private static synthetic lambda$static$59()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
+    const-string/jumbo v0, "xiaomi.sat.real.bv"
 
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$6()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.vidhance.autozoom.selected_objects"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$60()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.qvga.light.number"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$61()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.xiaomi.dummyluxmeter.value"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$62()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.enabled"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$63()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.sceneDetected"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$64()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.hdrDetected"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$65()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.srhdrDetected"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$66()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.srhdrRequestNumber"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$67()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.add.lensDirtyDetected"
+
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$68()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
+
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
-    const-string v0, "xiaomi.camera.awb.colorTemperature"
+    .line 6
+    .line 7
+    const-string/jumbo v0, "xiaomi.camera.awb.colorTemperature"
 
+    .line 8
+    .line 9
+    .line 10
     return-object v0
 
+    .line 11
     :cond_0
     const-string v0, "org.quic.camera2.statsconfigs.AWBFrameControl"
 
+    .line 12
+    .line 13
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$69()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "org.quic.camera2.statsconfigs.AECFrameControl"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$7()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.vidhance.autozoom.paused_objects"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$70()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "org.quic.camera2.statsconfigs.AFFrameControl"
-
-    return-object v0
-.end method
-
-.method public static synthetic lambda$static$71()Ljava/lang/String;
+.method private static synthetic lambda$static$69()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0o;->OooOOoo()Z
+    const-string v0, "org.quic.camera2.statsconfigs.AECFrameControl"
 
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$7()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.vidhance.autozoom.paused_objects"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$70()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "org.quic.camera2.statsconfigs.AFFrameControl"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method private static synthetic lambda$static$71()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lo000Oo0/OooO0O0;->OooOOoo()Z
+
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-eqz v0, :cond_0
 
-    const-string v0, "xiaomi.histogram.stats"
+    .line 6
+    .line 7
+    const-string/jumbo v0, "xiaomi.histogram.stats"
 
+    .line 8
+    .line 9
+    .line 10
     return-object v0
 
+    .line 11
     :cond_0
     const-string v0, "org.codeaurora.qcamera3.histogram.stats"
 
+    .line 12
+    .line 13
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$72()Ljava/lang/String;
+.method private static synthetic lambda$static$72()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.aishutter.existmotion"
+    .line 1
+    const-string/jumbo v0, "xiaomi.aishutter.existmotion"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$73()Ljava/lang/String;
+.method private static synthetic lambda$static$73()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.mediatek.3afeature.aishutCapture"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$74()Ljava/lang/String;
+.method private static synthetic lambda$static$74()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.mediatek.control.capture.next.ready"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$75()Ljava/lang/String;
+.method private static synthetic lambda$static$75()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "org.quic.camera.isDepthFocus.isDepthFocus"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$76()Ljava/lang/String;
+.method private static synthetic lambda$static$76()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.camera.af.type"
+    .line 1
+    const-string/jumbo v0, "xiaomi.camera.af.type"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$77()Ljava/lang/String;
+.method private static synthetic lambda$static$77()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.smoothTransition.result"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$78()Ljava/lang/String;
+.method private static synthetic lambda$static$78()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.hdr.hdrChecker"
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.hdrChecker"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$79()Ljava/lang/String;
+.method private static synthetic lambda$static$79()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.xiaomi.hdr.raw.hdrChecker"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$8()Ljava/lang/String;
+.method private static synthetic lambda$static$8()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.vidhance.autozoom.object_bounds_stabilized"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$80()Ljava/lang/String;
+.method private static synthetic lambda$static$80()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.hdr.hdrChecker.sceneType"
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.hdrChecker.sceneType"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$81()Ljava/lang/String;
+.method private static synthetic lambda$static$81()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.hdr.hdrChecker.adrc"
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.hdrChecker.adrc"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$82()Ljava/lang/String;
+.method private static synthetic lambda$static$82()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.hdr.hdrMode"
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.hdrMode"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$83()Ljava/lang/String;
+.method private static synthetic lambda$static$83()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.debugInfo.info"
+    .line 1
+    const-string/jumbo v0, "xiaomi.debugInfo.info"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$84()Ljava/lang/String;
+.method private static synthetic lambda$static$84()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.exifInfo.info"
+    .line 1
+    const-string/jumbo v0, "xiaomi.exifInfo.info"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$85()Ljava/lang/String;
+.method private static synthetic lambda$static$85()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.exifInfo.videoinfo"
+    .line 1
+    const-string/jumbo v0, "xiaomi.exifInfo.videoinfo"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$86()Ljava/lang/String;
+.method private static synthetic lambda$static$86()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.misd.ultraWideRecommended"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.ultraWideRecommended"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$87()Ljava/lang/String;
+.method private static synthetic lambda$static$87()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.beauty.bodySlimCnt"
+    .line 1
+    const-string/jumbo v0, "xiaomi.beauty.bodySlimCnt"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$88()Ljava/lang/String;
+.method private static synthetic lambda$static$88()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.superResolution.enabled"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$89()Ljava/lang/String;
+.method private static synthetic lambda$static$89()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string/jumbo v0, "xiaomi.superResolution.cropRegionMtk"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$9()Ljava/lang/String;
+.method private static synthetic lambda$static$9()Ljava/lang/String;
     .locals 1
 
+    .line 1
     const-string v0, "com.vidhance.autozoom.object_bounds_zoomed"
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$90()Ljava/lang/String;
+.method private static synthetic lambda$static$90()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.hdr.enabled"
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.enabled"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$91()Ljava/lang/String;
+.method private static synthetic lambda$static$91()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.bokeh.hdrEnabled"
+    .line 1
+    const-string/jumbo v0, "xiaomi.bokeh.hdrEnabled"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$92()Ljava/lang/String;
+.method private static synthetic lambda$static$92()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.hdr.raw.enabled"
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.raw.enabled"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$93()Ljava/lang/String;
+.method private static synthetic lambda$static$93()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.hdr.sr.enabled"
+    .line 1
+    const-string/jumbo v0, "xiaomi.hdr.sr.enabled"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$94()Ljava/lang/String;
+.method private static synthetic lambda$static$94()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.remosaic.detected"
+    .line 1
+    const-string/jumbo v0, "xiaomi.remosaic.detected"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$95()Ljava/lang/String;
+.method private static synthetic lambda$static$95()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.pro.video.histogram.stats.enabled"
+    .line 1
+    const-string/jumbo v0, "xiaomi.pro.video.histogram.stats.enabled"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$96()Ljava/lang/String;
+.method private static synthetic lambda$static$96()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.misd.SemanticScene"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.SemanticScene"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$97()Ljava/lang/String;
+.method private static synthetic lambda$static$97()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.misd.NonSemanticScene"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.NonSemanticScene"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$98()Ljava/lang/String;
+.method private static synthetic lambda$static$98()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.misd.StateScene"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.misd.StateScene"
 
+    .line 2
+    .line 3
+    .line 4
     return-object v0
 .end method
 
-.method public static synthetic lambda$static$99()Ljava/lang/String;
+.method private static synthetic lambda$static$99()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "xiaomi.ai.asd.sceneDetectedExt"
+    .line 1
+    const-string/jumbo v0, "xiaomi.ai.asd.sceneDetectedExt"
 
+    .line 2
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method public static synthetic o000()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$39()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$9()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$99()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000000()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$161()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000000O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$164()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000000o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$23()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$169()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000O0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$167()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000OO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$73()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000Oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$72()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000o0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$27()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000oO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$125()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00000oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$105()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$135()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000O0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$63()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000O00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$162()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000O0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$26()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000OO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$47()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000OO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$35()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000OOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$138()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000OOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$43()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000Oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$14()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000Oo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$98()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000OoO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$107()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000Ooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$32()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$54()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000o0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$143()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000o0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$50()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000o0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$0()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000oO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$82()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000oO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$132()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000oOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$52()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000oOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$139()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$122()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000oo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$49()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0000ooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$124()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$59()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$38()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$131()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O000()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$67()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O00O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$55()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$20()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0O0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$128()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0Oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$100()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$145()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0o0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$28()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0oO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$93()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000O0oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$68()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$24()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OO00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$81()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OO0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$75()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OO0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$150()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$110()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$31()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OOo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$152()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OOoO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$1()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$174()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Oo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$6()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Oo00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$106()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Oo0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$111()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Oo0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$60()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OoO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$5()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OoOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$41()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OoOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$114()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Ooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$79()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Ooo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$80()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000OooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$120()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000Oooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$141()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$51()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o000()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$170()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o00O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$94()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o00o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$113()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$151()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0O0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$137()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0OO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$70()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0Oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$83()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$172()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0o0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$112()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0oO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$74()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000o0oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$153()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oOoO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$69()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oOoo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$126()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$157()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$87()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oo00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$4()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oo0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$136()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oo0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$115()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000ooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$158()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000ooO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$7()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000ooOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$134()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000ooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$22()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000ooo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$109()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oooO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$86()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o000oooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$123()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00O0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$166()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00Oo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$62()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00Ooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$140()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00o0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$76()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00oO0O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$56()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00oO0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$71()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o00ooo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$84()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0O0O00()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$19()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0OO00O()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$33()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0OOO0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$117()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0Oo0oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$133()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0OoO0o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$102()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0OoOo0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$149()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0ooOO0()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$92()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0ooOOo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$173()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic o0ooOoO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$3()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic oo000o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$66()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic oo0o0Oo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$78()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic ooOO()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$118()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public static synthetic oooo00o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/android/camera2/vendortag/CaptureResultVendorTags;->lambda$static$148()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
     return-object v0
 .end method

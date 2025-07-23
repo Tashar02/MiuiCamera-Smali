@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/SingleSideFilm$DinaText;
+.class Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/SingleSideFilm$DinaText;
 .super Ljava/lang/Object;
 .source "SingleSideFilm.java"
 
@@ -15,28 +15,20 @@
 
 
 # instance fields
-.field public centerText:Ljava/lang/String;
+.field centerText:Ljava/lang/String;
 
-.field public leftText:Ljava/lang/String;
+.field leftText:Ljava/lang/String;
 
-.field public ratio:F
+.field ratio:F
 
-.field public rightText:Ljava/lang/String;
+.field rightText:Ljava/lang/String;
 
-.field public final synthetic this$0:Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/SingleSideFilm;
+.field final synthetic this$0:Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/SingleSideFilm;
 
 
 # direct methods
 .method private constructor <init>(Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/SingleSideFilm;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/SingleSideFilm$DinaText;->this$0:Lcom/android/camera2/compat/theme/custom/cv/cvwatermark/type/SingleSideFilm;

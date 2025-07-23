@@ -28,15 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/List;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "parameterDescriptionList"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,8 +41,12 @@
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/fragment/manually/adapter/ParameterDescriptionAdapter;->mParameterDescriptionList:Ljava/util/List;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -63,25 +58,21 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/manually/adapter/ParameterDescriptionAdapter;->mParameterDescriptionList:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -93,16 +84,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     iget-object v0, p0, Lcom/android/camera/fragment/manually/adapter/ParameterDescriptionAdapter;->mParameterDescriptionList:Ljava/util/List;
@@ -113,7 +94,7 @@
 
     check-cast v0, Lcom/android/camera/data/data/ComponentDataItem;
 
-    const v1, 0x7f0a03f6
+    const v1, 0x7f0b0430
 
     .line 3
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -127,7 +108,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    const v1, 0x7f0a03f9
+    const v1, 0x7f0b0433
 
     .line 5
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -141,7 +122,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    const v1, 0x7f0a03f5
+    const v1, 0x7f0b042f
 
     .line 7
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -167,7 +148,7 @@
     if-ne p2, p0, :cond_0
 
     .line 10
-    invoke-virtual {p1}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p0
 
@@ -176,29 +157,29 @@
     if-eqz p0, :cond_0
 
     .line 11
-    invoke-virtual {p1}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p0
 
     check-cast p0, Landroid/widget/LinearLayout$LayoutParams;
 
     .line 12
-    invoke-virtual {p1}, Landroid/widget/TextView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
 
-    const v0, 0x7f0707c1
+    const v0, 0x7f0707e6
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p2
 
     .line 13
-    invoke-virtual {p1}, Landroid/widget/TextView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f070869
+    const v0, 0x7f07088e
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -214,16 +195,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/manually/adapter/ParameterDescriptionAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -235,19 +206,9 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
@@ -255,7 +216,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0d00b7
+    const p2, 0x7f0e00c1
 
     const/4 v0, 0x0
 
@@ -264,7 +225,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f0a03f9
+    const p1, 0x7f0b0433
 
     .line 4
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -273,7 +234,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const-string/jumbo p2, "mipro-medium"
+    const-string p2, "mipro-medium"
 
     .line 5
     invoke-static {p2, v0}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
@@ -281,9 +242,9 @@
     move-result-object p2
 
     .line 6
-    invoke-static {p1, p2}, LOooO0OO/OooO0O0/OooO0OO/OooOO0;->OooO0Oo(Landroid/widget/TextView;Landroid/graphics/Typeface;)V
+    invoke-static {p1, p2}, Lo00000O0/OooOO0;->OooO0Oo(Landroid/widget/TextView;Landroid/graphics/Typeface;)V
 
-    const p1, 0x7f0a03f5
+    const p1, 0x7f0b042f
 
     .line 7
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -292,7 +253,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const-string/jumbo p2, "mipro-regular"
+    const-string p2, "mipro-regular"
 
     .line 8
     invoke-static {p2, v0}, Landroid/graphics/Typeface;->create(Ljava/lang/String;I)Landroid/graphics/Typeface;
@@ -300,7 +261,7 @@
     move-result-object p2
 
     .line 9
-    invoke-static {p1, p2}, LOooO0OO/OooO0O0/OooO0OO/OooOO0;->OooO0Oo(Landroid/widget/TextView;Landroid/graphics/Typeface;)V
+    invoke-static {p1, p2}, Lo00000O0/OooOO0;->OooO0Oo(Landroid/widget/TextView;Landroid/graphics/Typeface;)V
 
     .line 10
     new-instance p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;

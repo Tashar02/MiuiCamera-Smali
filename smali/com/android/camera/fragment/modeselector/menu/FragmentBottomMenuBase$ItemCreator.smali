@@ -16,14 +16,4 @@
 
 # virtual methods
 .method public abstract create(Landroid/view/ViewGroup;Z)Landroid/widget/TextView;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "group",
-            "needAlpha"
-        }
-    .end annotation
 .end method

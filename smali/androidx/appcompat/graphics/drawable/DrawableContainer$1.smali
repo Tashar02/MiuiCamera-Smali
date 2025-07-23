@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/graphics/drawable/DrawableContainer$1;
+.class Landroidx/appcompat/graphics/drawable/DrawableContainer$1;
 .super Ljava/lang/Object;
 .source "DrawableContainer.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/graphics/drawable/DrawableContainer;
+.field final synthetic this$0:Landroidx/appcompat/graphics/drawable/DrawableContainer;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/DrawableContainer$1;->this$0:Landroidx/appcompat/graphics/drawable/DrawableContainer;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,14 +46,24 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/DrawableContainer$1;->this$0:Landroidx/appcompat/graphics/drawable/DrawableContainer;
 
+    .line 2
+    .line 3
     const/4 v1, 0x1
 
+    .line 4
     invoke-virtual {v0, v1}, Landroidx/appcompat/graphics/drawable/DrawableContainer;->animate(Z)V
 
-    .line 2
+    .line 5
+    .line 6
+    .line 7
     iget-object p0, p0, Landroidx/appcompat/graphics/drawable/DrawableContainer$1;->this$0:Landroidx/appcompat/graphics/drawable/DrawableContainer;
 
+    .line 8
+    .line 9
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method

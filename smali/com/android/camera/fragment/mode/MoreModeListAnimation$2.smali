@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/mode/MoreModeListAnimation$2;
+.class Lcom/android/camera/fragment/mode/MoreModeListAnimation$2;
 .super Lmiuix/animation/listener/TransitionListener;
 .source "MoreModeListAnimation.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/mode/MoreModeListAnimation;
+.field final synthetic this$0:Lcom/android/camera/fragment/mode/MoreModeListAnimation;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/mode/MoreModeListAnimation;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/mode/MoreModeListAnimation$2;->this$0:Lcom/android/camera/fragment/mode/MoreModeListAnimation;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Lmiuix/animation/listener/TransitionListener;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,25 +39,12 @@
 # virtual methods
 .method public onUpdate(Ljava/lang/Object;Lmiuix/animation/property/FloatProperty;FFZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "toTag",
-            "property",
-            "value",
-            "velocity",
-            "isCompleted"
-        }
-    .end annotation
 
     .line 1
     invoke-super/range {p0 .. p5}, Lmiuix/animation/listener/TransitionListener;->onUpdate(Ljava/lang/Object;Lmiuix/animation/property/FloatProperty;FFZ)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/vectordrawable/graphics/drawable/AnimatorInflaterCompat$PathDataEvaluator;
+.class Landroidx/vectordrawable/graphics/drawable/AnimatorInflaterCompat$PathDataEvaluator;
 .super Ljava/lang/Object;
 .source "AnimatorInflaterCompat.java"
 

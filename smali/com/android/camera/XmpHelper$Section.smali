@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/XmpHelper$Section;
+.class Lcom/android/camera/XmpHelper$Section;
 .super Ljava/lang/Object;
 .source "XmpHelper.java"
 

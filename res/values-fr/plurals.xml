@@ -72,6 +72,14 @@
         <item quantity="other">"&lt;Data>La version de l'Appareil photo que vous utilisez n'est pas compatible avec le modèle de votre appareil.&lt;br>L'application se fermera dans &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Désinstaller les mises à jour de l'Appareil photo et réessayer.&lt;/Data>"</item>
         <item quantity="one">"&lt;Data>La version de l'Appareil photo que vous utilisez n'est pas compatible avec le modèle de votre appareil.&lt;br>L'application se fermera dans &lt;font color=#FFCE16>&lt;b>%1$d s&lt;/b>&lt;/font>. Désinstaller les mises à jour de l'Appareil photo et réessayer.&lt;/Data>"</item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avancer de %d secondes</item>
+        <item quantity="one">Avancer de %d seconde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Revenir en arrière de %d secondes</item>
+        <item quantity="one">Revenir en arrière de %d seconde</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d min</item>
         <item quantity="one">%1$d min</item>

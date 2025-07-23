@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,12 +32,14 @@
 .method public onChanged()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onItemRangeChanged(II)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -45,7 +50,7 @@
         .end annotation
     .end param
 
-    .line 1
+    .line 2
     invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;->onItemRangeChanged(II)V
 
     return-void
@@ -54,17 +59,27 @@
 .method public onItemRangeInserted(II)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onItemRangeMoved(III)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onItemRangeRemoved(II)V
     .locals 0
 
+    .line 1
+    return-void
+.end method
+
+.method public onStateRestorationPolicyChanged()V
+    .locals 0
+
+    .line 1
     return-void
 .end method

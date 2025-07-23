@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/HardwareCapabilities$16;
+.class Lcom/android/camera2/HardwareCapabilities$16;
 .super Lcom/xiaomi/camera/util/TypedValue;
 .source "HardwareCapabilities.java"
 
@@ -30,6 +30,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/camera/util/TypedValue;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

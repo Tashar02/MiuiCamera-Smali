@@ -16,38 +16,10 @@
 
 # virtual methods
 .method public abstract onScrollEnd(ZFI)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "isCancel",
-            "newRatio",
-            "action"
-        }
-    .end annotation
 .end method
 
 .method public abstract onScrollStart(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "target"
-        }
-    .end annotation
 .end method
 
 .method public abstract onTouchUpState(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "action"
-        }
-    .end annotation
 .end method

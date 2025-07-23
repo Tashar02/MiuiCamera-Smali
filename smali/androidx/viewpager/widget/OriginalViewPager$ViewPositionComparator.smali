@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager/widget/OriginalViewPager$ViewPositionComparator;
+.class Landroidx/viewpager/widget/OriginalViewPager$ViewPositionComparator;
 .super Ljava/lang/Object;
 .source "OriginalViewPager.java"
 
@@ -33,6 +33,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

@@ -46,7 +46,7 @@
 
 
 # instance fields
-.field public mTarget:I
+.field protected mTarget:I
 
 
 # direct methods
@@ -56,11 +56,16 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, -0x1
 
-    .line 2
+    .line 5
     iput v0, p0, Lcom/android/camera/effect/draw_mode/DrawAttribute;->mTarget:I
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -72,5 +77,7 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/draw_mode/DrawAttribute;->mTarget:I
 
+    .line 2
+    .line 3
     return p0
 .end method

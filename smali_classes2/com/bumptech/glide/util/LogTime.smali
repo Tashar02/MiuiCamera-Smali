@@ -9,31 +9,36 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 7
+    .locals 4
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
-
-    const/16 v3, 0x11
-
-    if-lt v0, v3, :cond_0
-
-    const-wide/high16 v3, 0x4024000000000000L    # 10.0
-
-    const-wide/high16 v5, 0x4018000000000000L    # 6.0
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
 
     .line 2
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Math;->pow(DD)D
+    .line 3
+    const-wide/high16 v2, 0x4018000000000000L    # 6.0
 
-    move-result-wide v3
+    .line 4
+    .line 5
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->pow(DD)D
 
-    div-double/2addr v1, v3
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
 
-    :cond_0
-    sput-wide v1, Lcom/bumptech/glide/util/LogTime;->MILLIS_MULTIPLIER:D
+    .line 9
+    const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
 
+    .line 10
+    .line 11
+    div-double/2addr v2, v0
+
+    .line 12
+    sput-wide v2, Lcom/bumptech/glide/util/LogTime;->MILLIS_MULTIPLIER:D
+
+    .line 13
+    .line 14
     return-void
 .end method
 
@@ -43,6 +48,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -52,16 +60,25 @@
     .line 1
     invoke-static {}, Lcom/bumptech/glide/util/LogTime;->getLogTime()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     sub-long/2addr v0, p0
 
+    .line 6
     long-to-double p0, v0
 
+    .line 7
     sget-wide v0, Lcom/bumptech/glide/util/LogTime;->MILLIS_MULTIPLIER:D
 
+    .line 8
+    .line 9
     mul-double/2addr p0, v0
 
+    .line 10
     return-wide p0
 .end method
 
@@ -72,24 +89,13 @@
     .end annotation
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x11
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
-    move-result-wide v0
-
-    return-wide v0
-
+    .line 2
     .line 3
-    :cond_0
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method

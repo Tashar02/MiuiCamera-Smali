@@ -21,23 +21,23 @@
 
 
 # instance fields
-.field public mComponentData:Lcom/android/camera/data/data/ComponentData;
+.field protected mComponentData:Lcom/android/camera/data/data/ComponentData;
 
-.field public final mContext:Landroid/content/Context;
+.field protected final mContext:Landroid/content/Context;
 
-.field public mDegree:I
+.field protected mDegree:I
 
-.field public mDisplayRotation:I
+.field protected mDisplayRotation:I
 
-.field public mEffectItemListener:Lcom/android/camera/fragment/EffectItemAdapter$IEffectItemListener;
+.field protected mEffectItemListener:Lcom/android/camera/fragment/EffectItemAdapter$IEffectItemListener;
 
-.field public mEglCore:Lcom/xiaomi/renderengine/gl/EglCore;
+.field protected mEglCore:Lcom/xiaomi/renderengine/gl/EglCore;
 
-.field public mLayoutInflater:Landroid/view/LayoutInflater;
+.field protected mLayoutInflater:Landroid/view/LayoutInflater;
 
-.field public mOnClickListener:Landroid/view/View$OnClickListener;
+.field protected mOnClickListener:Landroid/view/View$OnClickListener;
 
-.field public mSupportRealtimeEffect:Z
+.field protected mSupportRealtimeEffect:Z
 
 
 # direct methods
@@ -47,17 +47,6 @@
         ignore = false
         key = "isSupportPortraitLighting"
         type = 0x2
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "componentData"
-        }
     .end annotation
 
     .line 1
@@ -81,18 +70,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/camera/data/data/ComponentData;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "componentData",
-            "isSupportRealtimeEffect"
-        }
-    .end annotation
 
     .line 5
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
@@ -118,20 +95,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/camera/data/data/ComponentData;ZLcom/xiaomi/renderengine/gl/EglCore;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "componentData",
-            "isSupportRealtimeEffect",
-            "eglCore"
-        }
-    .end annotation
 
     .line 10
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
@@ -158,75 +121,117 @@
     return-void
 .end method
 
+.method public static synthetic OooO00o(Lcom/android/camera/fragment/EffectItemAdapter;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/android/camera/fragment/EffectItemAdapter;->lambda$setAccessible$0(Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
 .method private synthetic lambda$setAccessible$0(Landroid/view/View;)V
     .locals 0
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mEffectItemListener:Lcom/android/camera/fragment/EffectItemAdapter$IEffectItemListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
+    .line 4
+    .line 5
     invoke-interface {p0}, Lcom/android/camera/fragment/EffectItemAdapter$IEffectItemListener;->isAdded()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 10
+    .line 11
     invoke-virtual {p1}, Landroid/view/View;->getContentDescription()Ljava/lang/CharSequence;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
+    .line 15
     invoke-virtual {p1, p0}, Landroid/view/View;->announceForAccessibility(Ljava/lang/CharSequence;)V
 
+    .line 16
+    .line 17
+    .line 18
     :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic OooO00o(Landroid/view/View;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/camera/fragment/EffectItemAdapter;->lambda$setAccessible$0(Landroid/view/View;)V
-
-    return-void
-.end method
-
 .method public getItemCount()I
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mComponentData:Lcom/android/camera/data/data/ComponentData;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_1
 
+    .line 4
+    .line 5
     invoke-virtual {v0}, Lcom/android/camera/data/data/ComponentData;->getItems()Ljava/util/List;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
+    .line 9
     if-nez v0, :cond_0
 
+    .line 10
+    .line 11
     goto :goto_0
 
-    .line 2
+    .line 12
     :cond_0
     iget-object p0, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mComponentData:Lcom/android/camera/data/data/ComponentData;
 
+    .line 13
+    .line 14
     invoke-virtual {p0}, Lcom/android/camera/data/data/ComponentData;->getItems()Ljava/util/List;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object p0
 
+    .line 18
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 19
+    .line 20
+    .line 21
     move-result p0
 
+    .line 22
     return p0
 
+    .line 23
     :cond_1
     :goto_0
     const/4 p0, 0x0
 
+    .line 24
     return p0
 .end method
 
@@ -235,32 +240,16 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "i"
-        }
-    .end annotation
-
+    .line 1
     const-string p0, ""
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mComponentData:Lcom/android/camera/data/data/ComponentData;
@@ -300,7 +289,7 @@
     .line 6
     iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v0, 0x7f0a01d4
+    const v0, 0x7f0b01d4
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -315,7 +304,7 @@
     .line 7
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const p2, 0x7f0a01d2
+    const p2, 0x7f0b01d2
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -353,18 +342,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position",
-            "payloads"
-        }
-    .end annotation
 
     .line 9
     invoke-interface {p3}, Ljava/util/List;->isEmpty()Z
@@ -479,167 +456,255 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
-
     .line 1
     iget-boolean p2, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mSupportRealtimeEffect:Z
 
+    .line 2
+    .line 3
     const/4 v0, 0x0
 
+    .line 4
     if-eqz p2, :cond_0
 
-    .line 2
+    .line 5
+    .line 6
     iget-object p2, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d0048
+    .line 7
+    .line 8
+    const v1, 0x7f0e0047
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p2, v1, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p1
 
-    .line 3
+    .line 15
     new-instance p2, Lcom/android/camera/fragment/EffectItemAdapter$EffectRealtimeItemHolder;
 
+    .line 16
+    .line 17
     iget-object v0, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mEglCore:Lcom/xiaomi/renderengine/gl/EglCore;
 
+    .line 18
+    .line 19
     invoke-direct {p2, p0, p1, v0}, Lcom/android/camera/fragment/EffectItemAdapter$EffectRealtimeItemHolder;-><init>(Lcom/android/camera/fragment/EffectItemAdapter;Landroid/view/View;Lcom/xiaomi/renderengine/gl/EglCore;)V
 
+    .line 20
+    .line 21
+    .line 22
     goto :goto_0
 
-    .line 4
+    .line 23
     :cond_0
     iget-object p2, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d004a
+    .line 24
+    .line 25
+    const v1, 0x7f0e0049
 
+    .line 26
+    .line 27
+    .line 28
     invoke-virtual {p2, v1, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p1
 
-    .line 5
+    .line 32
     new-instance p2, Lcom/android/camera/fragment/EffectItemAdapter$EffectStillItemHolder;
 
+    .line 33
+    .line 34
     invoke-direct {p2, p0, p1}, Lcom/android/camera/fragment/EffectItemAdapter$EffectStillItemHolder;-><init>(Lcom/android/camera/fragment/EffectItemAdapter;Landroid/view/View;)V
 
-    .line 6
+    .line 35
+    .line 36
+    .line 37
     :goto_0
     iget-object p0, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
 
+    .line 38
+    .line 39
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 7
+    .line 40
+    .line 41
+    .line 42
     invoke-static {p1}, Lcom/android/camera/animation/FolmeUtils;->handleListItemTouch(Landroid/view/View;)V
 
+    .line 43
+    .line 44
+    .line 45
     return-object p2
 .end method
 
 .method public setAccessible(Landroid/view/View;IZ)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "desc",
-            "isSelected"
-        }
-    .end annotation
-
-    if-nez p1, :cond_0
-
-    return-void
 
     .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object v0
 
-    const v1, 0x7f1204bc
+    .line 8
+    const v1, 0x7f1304f7
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object v0
 
+    .line 15
     if-lez p2, :cond_1
 
-    .line 2
+    .line 16
+    .line 17
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object v0
 
+    .line 21
     invoke-virtual {v0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 22
+    .line 23
+    .line 24
     move-result-object v0
 
+    .line 25
     :cond_1
     if-eqz p3, :cond_2
 
-    .line 3
+    .line 26
+    .line 27
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 28
+    .line 29
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 30
+    .line 31
+    .line 32
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 33
+    .line 34
+    .line 35
     const-string p3, ", "
 
+    .line 36
+    .line 37
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
+    .line 38
+    .line 39
+    .line 40
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 41
+    .line 42
+    .line 43
     move-result-object p3
 
-    const v0, 0x7f1200bb
+    .line 44
+    const v0, 0x7f1300bb
 
+    .line 45
+    .line 46
+    .line 47
     invoke-virtual {p3, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 48
+    .line 49
+    .line 50
     move-result-object p3
 
+    .line 51
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 52
+    .line 53
+    .line 54
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 55
+    .line 56
+    .line 57
     move-result-object p2
 
-    .line 5
+    .line 58
     invoke-virtual {p1, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 6
+    .line 59
+    .line 60
+    .line 61
     invoke-static {}, Lcom/android/camera/Util;->isAccessible()Z
 
+    .line 62
+    .line 63
+    .line 64
     move-result p2
 
+    .line 65
     if-eqz p2, :cond_3
 
-    .line 7
-    new-instance p2, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/o0O00OOO;
+    .line 66
+    .line 67
+    new-instance p2, Lcom/android/camera/fragment/OooOo00;
 
-    invoke-direct {p2, p0, p1}, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/o0O00OOO;-><init>(Lcom/android/camera/fragment/EffectItemAdapter;Landroid/view/View;)V
+    .line 68
+    .line 69
+    invoke-direct {p2, p0, p1}, Lcom/android/camera/fragment/OooOo00;-><init>(Lcom/android/camera/fragment/EffectItemAdapter;Landroid/view/View;)V
 
+    .line 70
+    .line 71
+    .line 72
     const-wide/16 v0, 0x64
 
+    .line 73
+    .line 74
     invoke-virtual {p1, p2, v0, v1}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
+    .line 75
+    .line 76
+    .line 77
     goto :goto_0
 
-    .line 8
+    .line 78
     :cond_2
     invoke-virtual {p1, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
+    .line 79
+    .line 80
+    .line 81
     :cond_3
     :goto_0
     return-void
@@ -647,69 +712,45 @@
 
 .method public setDisplayRotation(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "displayRotation"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mDisplayRotation:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listener"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setOnEffectItemListener(Lcom/android/camera/fragment/EffectItemAdapter$IEffectItemListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "effectItemListener"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mEffectItemListener:Lcom/android/camera/fragment/EffectItemAdapter$IEffectItemListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setRotation(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -718,20 +759,15 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "componentData"
-        }
-    .end annotation
-
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/EffectItemAdapter;->mComponentData:Lcom/android/camera/data/data/ComponentData;
 
     .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

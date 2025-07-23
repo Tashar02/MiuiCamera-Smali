@@ -14,16 +14,20 @@
 
 
 # static fields
-.field public static final app_name:I = 0x7f120166
+.field public static final app_name:I = 0x7f130166
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f1209c8
+.field public static final status_bar_notification_info_overflow:I = 0x7f130a03
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

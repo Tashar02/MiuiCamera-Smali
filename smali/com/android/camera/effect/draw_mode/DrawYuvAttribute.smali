@@ -92,56 +92,6 @@
 
 .method public constructor <init>(Landroid/media/Image;Landroid/util/Size;Landroid/util/Size;IIZIIFJZZZLjava/lang/String;Ljava/lang/String;ZZLcom/android/camera/effect/renders/DeviceWatermarkParam;Lcom/android/camera/effect/EffectController$EffectRectAttribute;Lcom/android/camera/aiwatermark/data/WatermarkItem;Lcom/android/camera/aiwatermark/data/WatermarkItem;J)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "image",
-            "previewSize",
-            "picSize",
-            "cvStyleEffectId",
-            "effectIndex",
-            "isNeedDark",
-            "orientation",
-            "jpegRotation",
-            "shootRotation",
-            "date",
-            "mirror",
-            "applyWaterMark",
-            "isHeif",
-            "tiltShiftMode",
-            "timeWatermark",
-            "hasDualWaterMark",
-            "hasFrontWaterMark",
-            "deviceWatermarkParam",
-            "attribute",
-            "majorItem",
-            "minorItem",
-            "captureTime"
-        }
-    .end annotation
 
     move-object v0, p0
 
@@ -283,26 +233,20 @@
 # virtual methods
 .method public init(Lcom/android/camera/effect/MiYuvImage;Landroid/util/Size;)Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "image",
-            "previewSize"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mYuvImage:Lcom/android/camera/effect/MiYuvImage;
 
     .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mPreviewSize:Landroid/util/Size;
 
-    .line 3
+    .line 4
+    .line 5
     iput-object p2, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mPictureSize:Landroid/util/Size;
 
+    .line 6
+    .line 7
     return-object p0
 .end method
 
@@ -312,66 +256,72 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mOutputSize:Landroid/util/Size;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     invoke-virtual {v0}, Landroid/util/Size;->getWidth()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     iget-object p0, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mOutputSize:Landroid/util/Size;
 
+    .line 10
+    .line 11
     invoke-virtual {p0}, Landroid/util/Size;->getHeight()I
 
+    .line 12
+    .line 13
+    .line 14
     move-result p0
 
+    .line 15
     if-ne v0, p0, :cond_0
 
+    .line 16
+    .line 17
     const/4 p0, 0x1
 
+    .line 18
     goto :goto_0
 
+    .line 19
     :cond_0
     const/4 p0, 0x0
 
+    .line 20
     :goto_0
     return p0
 .end method
 
 .method public updatePosition(II)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "x",
-            "y"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mX:I
 
     .line 2
+    .line 3
     iput p2, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mY:I
 
+    .line 4
+    .line 5
     return-void
 .end method
 
 .method public updateZoom([F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "transform"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/draw_mode/DrawYuvAttribute;->mTransform:[F
 
+    .line 2
+    .line 3
     return-void
 .end method

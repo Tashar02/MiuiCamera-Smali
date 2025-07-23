@@ -1,4 +1,4 @@
-.class public Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;
+.class Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;
 .super Ljava/lang/Object;
 .source "DefaultItemAnimator.java"
 
@@ -34,19 +34,27 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->holder:Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
-    .line 3
+    .line 5
+    .line 6
     iput p2, p0, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->fromX:I
 
-    .line 4
+    .line 7
+    .line 8
     iput p3, p0, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->fromY:I
 
-    .line 5
+    .line 9
+    .line 10
     iput p4, p0, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->toX:I
 
-    .line 6
+    .line 11
+    .line 12
     iput p5, p0, Landroidx/recyclerview/widget/DefaultItemAnimator$MoveInfo;->toY:I
 
+    .line 13
+    .line 14
     return-void
 .end method

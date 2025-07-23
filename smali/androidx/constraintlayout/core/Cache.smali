@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public arrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
+.field arrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/constraintlayout/core/Pools$Pool<",
@@ -14,9 +14,9 @@
     .end annotation
 .end field
 
-.field public mIndexedVariables:[Landroidx/constraintlayout/core/SolverVariable;
+.field mIndexedVariables:[Landroidx/constraintlayout/core/SolverVariable;
 
-.field public optimizedArrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
+.field optimizedArrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/constraintlayout/core/Pools$Pool<",
@@ -26,7 +26,7 @@
     .end annotation
 .end field
 
-.field public solverVariablePool:Landroidx/constraintlayout/core/Pools$Pool;
+.field solverVariablePool:Landroidx/constraintlayout/core/Pools$Pool;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/constraintlayout/core/Pools$Pool<",
@@ -45,34 +45,62 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Landroidx/constraintlayout/core/Pools$SimplePool;
-
-    const/16 v1, 0x100
-
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/Pools$SimplePool;-><init>(I)V
-
-    iput-object v0, p0, Landroidx/constraintlayout/core/Cache;->optimizedArrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
-
     .line 3
-    new-instance v0, Landroidx/constraintlayout/core/Pools$SimplePool;
-
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/Pools$SimplePool;-><init>(I)V
-
-    iput-object v0, p0, Landroidx/constraintlayout/core/Cache;->arrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
-
     .line 4
     new-instance v0, Landroidx/constraintlayout/core/Pools$SimplePool;
 
+    .line 5
+    .line 6
+    const/16 v1, 0x100
+
+    .line 7
+    .line 8
     invoke-direct {v0, v1}, Landroidx/constraintlayout/core/Pools$SimplePool;-><init>(I)V
 
+    .line 9
+    .line 10
+    .line 11
+    iput-object v0, p0, Landroidx/constraintlayout/core/Cache;->optimizedArrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
+
+    .line 12
+    .line 13
+    new-instance v0, Landroidx/constraintlayout/core/Pools$SimplePool;
+
+    .line 14
+    .line 15
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/Pools$SimplePool;-><init>(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object v0, p0, Landroidx/constraintlayout/core/Cache;->arrayRowPool:Landroidx/constraintlayout/core/Pools$Pool;
+
+    .line 19
+    .line 20
+    new-instance v0, Landroidx/constraintlayout/core/Pools$SimplePool;
+
+    .line 21
+    .line 22
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/Pools$SimplePool;-><init>(I)V
+
+    .line 23
+    .line 24
+    .line 25
     iput-object v0, p0, Landroidx/constraintlayout/core/Cache;->solverVariablePool:Landroidx/constraintlayout/core/Pools$Pool;
 
+    .line 26
+    .line 27
     const/16 v0, 0x20
 
+    .line 28
+    .line 29
     new-array v0, v0, [Landroidx/constraintlayout/core/SolverVariable;
 
-    .line 5
+    .line 30
+    .line 31
     iput-object v0, p0, Landroidx/constraintlayout/core/Cache;->mIndexedVariables:[Landroidx/constraintlayout/core/SolverVariable;
 
+    .line 32
+    .line 33
     return-void
 .end method

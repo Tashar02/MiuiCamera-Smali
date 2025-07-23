@@ -8,14 +8,6 @@
 
 # virtual methods
 .method public abstract attachModule(Lcom/android/camera/module/Module;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "module"
-        }
-    .end annotation
 .end method
 
 .method public abstract getModule()Lcom/android/camera/module/Module;

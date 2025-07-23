@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/uber/rxdogtag/RxDogTag$NonCheckingPredicate;
+.class interface abstract Lcom/uber/rxdogtag/RxDogTag$NonCheckingPredicate;
 .super Ljava/lang/Object;
 .source "RxDogTag.java"
 

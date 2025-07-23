@@ -125,15 +125,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
-
     .line 1
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
@@ -194,16 +185,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "attrs"
-        }
-    .end annotation
 
     .line 14
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -268,19 +249,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "attrs",
-            "defStyleAttr"
-        }
-    .end annotation
-
     .line 27
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -342,8 +310,36 @@
 .method public static synthetic OooO00o(Lcom/android/camera/ui/CameraSnapView;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->resetDraggingDistance()V
 
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic OooO0O0(Lcom/android/camera/ui/CameraSnapView;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->lambda$setSnapClickEnable$1()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic OooO0OO(Lcom/android/camera/ui/CameraSnapView;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->lambda$updateMultiCapture$0()V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -353,6 +349,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -362,6 +360,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingTriggerDistance:F
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -371,6 +371,9 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->resetDraggingDistance()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -380,6 +383,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mHasCancelByOutside:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -389,213 +394,308 @@
     .line 1
     iget-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingHorizontal:Z
 
+    .line 2
+    .line 3
     iget-boolean v1, p0, Lcom/android/camera/ui/CameraSnapView;->mMovingHorizontal:Z
 
+    .line 4
+    .line 5
     const v2, 0x7f7fffff    # Float.MAX_VALUE
 
+    .line 6
+    .line 7
+    .line 8
     const/4 v3, 0x1
 
+    .line 9
     const/4 v4, 0x0
 
+    .line 10
     if-eq v0, v1, :cond_1
 
-    .line 2
+    .line 11
+    .line 12
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 13
+    .line 14
     invoke-interface {v0}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->canDragOutSuspendButton()Z
 
+    .line 15
+    .line 16
+    .line 17
     move-result v0
 
+    .line 18
     if-nez v0, :cond_0
 
-    .line 3
+    .line 19
+    .line 20
     iput v2, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingTriggerDistance:F
 
+    .line 21
+    .line 22
     return v4
 
-    .line 4
+    .line 23
     :cond_0
     iput-boolean v3, p0, Lcom/android/camera/ui/CameraSnapView;->mSticky:Z
 
+    .line 24
+    .line 25
     goto :goto_0
 
-    .line 5
+    .line 26
     :cond_1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 27
+    .line 28
     const/4 v1, 0x0
 
+    .line 29
     iget v5, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDraggingThreshold:F
 
+    .line 30
+    .line 31
     invoke-interface {v0, v1, v5, v4}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->handleDragCondition(FFZ)Z
 
+    .line 32
+    .line 33
+    .line 34
     move-result v0
 
+    .line 35
     if-nez v0, :cond_2
 
-    .line 6
+    .line 36
+    .line 37
     iput v2, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingTriggerDistance:F
 
+    .line 38
+    .line 39
     return v4
 
-    .line 7
+    .line 40
     :cond_2
     :goto_0
     iput-boolean v3, p0, Lcom/android/camera/ui/CameraSnapView;->mMoving:Z
 
+    .line 41
+    .line 42
     return v3
 .end method
 
 .method private initDragingTopBottom(II)V
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "left",
-            "top"
-        }
-    .end annotation
 
     .line 1
     iget v0, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
+    .line 2
+    .line 3
     iget v1, p0, Lcom/android/camera/ui/CameraSnapView;->mHeight:I
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     int-to-double v0, v0
 
+    .line 10
     const-wide v2, 0x3fde00d1b71758e2L    # 0.4688
 
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
     mul-double/2addr v0, v2
 
+    .line 16
     double-to-int v0, v0
 
+    .line 17
     iput v0, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingDistance:I
 
-    .line 2
+    .line 18
+    .line 19
     iput p2, p0, Lcom/android/camera/ui/CameraSnapView;->mGlobalTop:I
 
-    .line 3
+    .line 20
+    .line 21
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mGlobalLeft:I
 
+    .line 22
+    .line 23
     return-void
 .end method
 
 .method private initView(Landroid/content/Context;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "context"
-        }
-    .end annotation
 
     .line 1
     invoke-static {}, Lcom/android/camera/display/Display;->getCenterDisplayWidth()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     div-int/lit8 v0, v0, 0x2
 
-    .line 2
+    .line 6
+    .line 7
     invoke-static {p1}, Lcom/android/camera/display/Display;->getModeSelectorGap(Landroid/content/Context;)I
 
+    .line 8
+    .line 9
+    .line 10
     move-result v1
 
+    .line 11
     mul-int/lit8 v1, v1, 0x5
 
+    .line 12
+    .line 13
     sub-int/2addr v0, v1
 
+    .line 14
     iput v0, p0, Lcom/android/camera/ui/CameraSnapView;->mMaxOperationDistance:I
 
-    .line 3
+    .line 15
+    .line 16
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object p1
 
+    .line 20
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
+    .line 21
+    .line 22
+    .line 23
     move-result p1
 
+    .line 24
     int-to-float p1, p1
 
+    .line 25
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingMinDistance:F
 
+    .line 26
+    .line 27
     return-void
 .end method
 
 .method private isLongExp(I)Z
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "moduleIndex"
-        }
-    .end annotation
-
-    const/16 p0, 0xa3
-
-    const/4 v0, 0x0
-
-    if-eq p1, p0, :cond_1
-
-    const/16 p0, 0xa7
-
-    if-eq p1, p0, :cond_0
-
-    const/16 p0, 0xab
-
-    if-eq p1, p0, :cond_1
-
-    return v0
 
     .line 1
+    const/16 p0, 0xa3
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    if-eq p1, p0, :cond_1
+
+    .line 5
+    .line 6
+    const/16 p0, 0xa7
+
+    .line 7
+    .line 8
+    if-eq p1, p0, :cond_0
+
+    .line 9
+    .line 10
+    const/16 p0, 0xab
+
+    .line 11
+    .line 12
+    if-eq p1, p0, :cond_1
+
+    .line 13
+    .line 14
+    return v0
+
+    .line 15
     :cond_0
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemConfig()Lcom/android/camera/data/data/config/DataItemConfig;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p0
 
+    .line 19
     invoke-virtual {p0}, Lcom/android/camera/data/data/config/DataItemConfig;->getmComponentManuallyET()Lcom/android/camera/data/data/config/ComponentManuallyET;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object p0
 
+    .line 23
     invoke-virtual {p0, p1}, Lcom/android/camera/data/data/config/ComponentManuallyET;->isLongExpose(I)Z
 
+    .line 24
+    .line 25
+    .line 26
     move-result p0
 
+    .line 27
     return p0
 
-    .line 2
+    .line 28
     :cond_1
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemRunning()Lcom/android/camera/data/data/runing/DataItemRunning;
 
+    .line 29
+    .line 30
+    .line 31
     move-result-object p0
 
+    .line 32
     invoke-virtual {p0}, Lcom/android/camera/data/data/runing/DataItemRunning;->getMiviSuperNightData()Lcom/android/camera2/vendortag/struct/MiviSuperNightData;
 
+    .line 33
+    .line 34
+    .line 35
     move-result-object p0
 
+    .line 36
     if-eqz p0, :cond_2
 
-    .line 3
+    .line 37
+    .line 38
     invoke-virtual {p0}, Lcom/android/camera2/vendortag/struct/MiviSuperNightData;->isMiviNightCaptureInProgress()Z
 
+    .line 39
+    .line 40
+    .line 41
     move-result p0
 
+    .line 42
     if-eqz p0, :cond_2
 
+    .line 43
+    .line 44
     const/4 v0, 0x1
 
+    .line 45
     :cond_2
     return v0
 .end method
@@ -611,52 +711,88 @@
     .line 1
     iget-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->isNormalIntent:Z
 
-    const/4 v1, 0x1
-
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 4
+    .line 5
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OooOoo()Z
+    .line 9
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o0OoO000()Z
 
+    .line 10
+    .line 11
+    .line 12
     move-result v0
 
+    .line 13
     if-eqz v0, :cond_0
 
+    .line 14
+    .line 15
     iget-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->isSuspendShutterOn:Z
 
+    .line 16
+    .line 17
     if-eqz v0, :cond_0
 
+    .line 18
+    .line 19
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
-    .line 2
+    .line 20
+    .line 21
     invoke-interface {v0}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->getIsBack()I
 
+    .line 22
+    .line 23
+    .line 24
     move-result v0
 
-    const/4 v2, -0x1
+    .line 25
+    const/4 v1, -0x1
 
-    if-eq v0, v2, :cond_1
+    .line 26
+    const/4 v2, 0x1
 
+    .line 27
+    if-eq v0, v1, :cond_1
+
+    .line 28
+    .line 29
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
-    .line 3
+    .line 30
+    .line 31
     invoke-interface {p0}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->getIsBack()I
 
+    .line 32
+    .line 33
+    .line 34
     move-result p0
 
-    if-ne p0, v1, :cond_0
+    .line 35
+    if-ne p0, v2, :cond_0
 
+    .line 36
+    .line 37
     goto :goto_0
 
+    .line 38
     :cond_0
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
+    .line 39
     :cond_1
     :goto_0
-    return v1
+    return v2
 .end method
 
 .method private judgeRegionRect()V
@@ -665,102 +801,175 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mViewRegionRect:Landroid/graphics/Rect;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     if-eqz v0, :cond_0
 
+    .line 10
+    .line 11
     iget v0, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
+    .line 12
+    .line 13
     if-nez v0, :cond_2
 
+    .line 14
+    .line 15
     :cond_0
     const/4 v0, 0x0
 
+    .line 16
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 17
+    .line 18
     const-string v1, "CameraSnapView"
 
+    .line 19
+    .line 20
     const-string v2, "judgeRegionRect"
 
-    .line 2
+    .line 21
+    .line 22
     invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 23
+    .line 24
+    .line 25
     const/4 v0, 0x0
 
-    .line 3
+    .line 26
     invoke-static {p0, v0}, Lcom/android/camera/Util;->getViewLocalRect(Landroid/view/View;Landroid/graphics/Rect;)Landroid/graphics/Rect;
 
+    .line 27
+    .line 28
+    .line 29
     move-result-object v0
 
+    .line 30
     iput-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mViewRegionRect:Landroid/graphics/Rect;
 
-    .line 4
+    .line 31
+    .line 32
     new-instance v0, Landroid/graphics/Rect;
 
+    .line 33
+    .line 34
     iget-object v1, p0, Lcom/android/camera/ui/CameraSnapView;->mViewRegionRect:Landroid/graphics/Rect;
 
+    .line 35
+    .line 36
     invoke-direct {v0, v1}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
 
+    .line 37
+    .line 38
+    .line 39
     iput-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mClickRegionRect:Landroid/graphics/Rect;
 
-    .line 5
+    .line 40
+    .line 41
     iget v1, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
+    .line 42
+    .line 43
     iget p0, p0, Lcom/android/camera/ui/CameraSnapView;->mHeight:I
 
+    .line 44
+    .line 45
     if-le v1, p0, :cond_1
 
-    .line 6
+    .line 46
+    .line 47
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
+    .line 48
+    .line 49
     sub-int v3, v1, p0
 
+    .line 50
+    .line 51
     div-int/lit8 v3, v3, 0x2
 
+    .line 52
+    .line 53
     add-int/2addr v2, v3
 
+    .line 54
     iput v2, v0, Landroid/graphics/Rect;->left:I
 
-    .line 7
+    .line 55
+    .line 56
     iget v2, v0, Landroid/graphics/Rect;->right:I
 
+    .line 57
+    .line 58
     sub-int/2addr v1, p0
 
+    .line 59
     div-int/lit8 v1, v1, 0x2
 
+    .line 60
+    .line 61
     sub-int/2addr v2, v1
 
+    .line 62
     iput v2, v0, Landroid/graphics/Rect;->right:I
 
+    .line 63
+    .line 64
     goto :goto_0
 
-    .line 8
+    .line 65
     :cond_1
     iget v2, v0, Landroid/graphics/Rect;->top:I
 
+    .line 66
+    .line 67
     sub-int v3, p0, v1
 
+    .line 68
+    .line 69
     div-int/lit8 v3, v3, 0x2
 
+    .line 70
+    .line 71
     add-int/2addr v2, v3
 
+    .line 72
     iput v2, v0, Landroid/graphics/Rect;->top:I
 
-    .line 9
+    .line 73
+    .line 74
     iget v2, v0, Landroid/graphics/Rect;->bottom:I
 
+    .line 75
+    .line 76
     sub-int/2addr p0, v1
 
+    .line 77
     div-int/lit8 p0, p0, 0x2
 
+    .line 78
+    .line 79
     sub-int/2addr v2, p0
 
+    .line 80
     iput v2, v0, Landroid/graphics/Rect;->bottom:I
 
+    .line 81
+    .line 82
     :cond_2
     :goto_0
     return-void
@@ -772,35 +981,61 @@
     .line 1
     new-instance v0, Landroid/graphics/Rect;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0, v0}, Landroid/view/View;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
 
-    .line 3
+    .line 7
+    .line 8
+    .line 9
     iget-object v1, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 10
+    .line 11
     if-eqz v1, :cond_0
 
-    .line 4
+    .line 12
+    .line 13
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerX()I
 
+    .line 14
+    .line 15
+    .line 16
     move-result v2
 
+    .line 17
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerY()I
 
+    .line 18
+    .line 19
+    .line 20
     move-result v3
 
+    .line 21
     invoke-interface {v1, v2, v3}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->initFixedShutterCenter(II)V
 
-    .line 5
+    .line 22
+    .line 23
+    .line 24
     :cond_0
     iget v1, v0, Landroid/graphics/Rect;->left:I
 
+    .line 25
+    .line 26
     iget v0, v0, Landroid/graphics/Rect;->top:I
 
+    .line 27
+    .line 28
     invoke-direct {p0, v1, v0}, Lcom/android/camera/ui/CameraSnapView;->initDragingTopBottom(II)V
 
+    .line 29
+    .line 30
+    .line 31
     return-void
 .end method
 
@@ -810,108 +1045,167 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->onSnapDragging()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method private onTouchDownDefaultHandler(I)Z
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "currentMode"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 2
+    .line 3
     const/4 v1, 0x1
 
+    .line 4
     if-eqz v0, :cond_2
 
+    .line 5
+    .line 6
     invoke-interface {v0}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->canSnap()Z
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     if-nez v0, :cond_2
 
-    .line 2
+    .line 11
+    .line 12
     iget-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mMissTaken:Z
 
+    .line 13
+    .line 14
     if-nez v0, :cond_0
 
-    .line 3
+    .line 15
+    .line 16
     iput-boolean v1, p0, Lcom/android/camera/ui/CameraSnapView;->mMissTaken:Z
 
-    .line 4
+    .line 17
+    .line 18
     iget-wide v2, p0, Lcom/android/camera/ui/CameraSnapView;->mPressUpTime:J
 
+    .line 19
+    .line 20
     const-wide/16 v4, 0x0
 
+    .line 21
+    .line 22
     cmp-long v0, v2, v4
 
+    .line 23
+    .line 24
     if-lez v0, :cond_0
 
-    .line 5
+    .line 25
+    .line 26
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 27
+    .line 28
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
+    .line 29
+    .line 30
+    .line 31
     move-result-wide v2
 
+    .line 32
     iget-wide v4, p0, Lcom/android/camera/ui/CameraSnapView;->mPressUpTime:J
 
+    .line 33
+    .line 34
     sub-long/2addr v2, v4
 
+    .line 35
     invoke-interface {v0, v2, v3}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->onTrackSnapMissTaken(J)V
 
-    .line 6
+    .line 36
+    .line 37
+    .line 38
     :cond_0
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 39
+    .line 40
     invoke-interface {v0}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->canMoveWhenProcessing()Z
 
+    .line 41
+    .line 42
+    .line 43
     move-result v0
 
+    .line 44
     const-string v2, "CameraSnapView"
 
+    .line 45
+    .line 46
     const/4 v3, 0x0
 
+    .line 47
     if-eqz v0, :cond_1
 
-    new-array v0, v3, [Ljava/lang/Object;
+    .line 48
+    .line 49
+    const-string v0, "can not snap, but return true for dragging"
 
-    const-string v3, "can not snap, but return true for dragging"
+    .line 50
+    .line 51
+    new-array v3, v3, [Ljava/lang/Object;
 
-    .line 7
-    invoke-static {v2, v3, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 52
+    .line 53
+    invoke-static {v2, v0, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 54
+    .line 55
+    .line 56
     goto :goto_0
 
+    .line 57
     :cond_1
-    new-array p0, v3, [Ljava/lang/Object;
+    const-string p0, "can not snap"
 
-    const-string p1, "can not snap"
+    .line 58
+    .line 59
+    new-array p1, v3, [Ljava/lang/Object;
 
-    .line 8
-    invoke-static {v2, p1, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 60
+    .line 61
+    invoke-static {v2, p0, p1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 62
+    .line 63
+    .line 64
     return v3
 
-    .line 9
+    .line 65
     :cond_2
     :goto_0
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 66
+    .line 67
     if-eqz p0, :cond_3
 
-    .line 10
+    .line 68
+    .line 69
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->startScaleDownAnimation(I)V
 
+    .line 70
+    .line 71
+    .line 72
     :cond_3
     return v1
 .end method
@@ -919,134 +1213,188 @@
 .method private resetDraggingDistance()V
     .locals 12
 
+    .line 1
     const v0, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 1
+    .line 2
+    .line 3
+    .line 4
     iput v0, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingTriggerDistance:F
 
+    .line 5
+    .line 6
     const/4 v0, 0x0
 
-    .line 2
+    .line 7
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSticky:Z
 
-    .line 3
+    .line 8
+    .line 9
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mMoving:Z
 
-    .line 4
+    .line 10
+    .line 11
     iget v1, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingXOffset:F
 
+    .line 12
+    .line 13
     const/4 v2, 0x0
 
+    .line 14
     cmpl-float v1, v1, v2
 
+    .line 15
+    .line 16
     const/4 v3, 0x1
 
+    .line 17
     if-nez v1, :cond_0
 
+    .line 18
+    .line 19
     iget v1, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingYOffset:F
 
+    .line 20
+    .line 21
     cmpl-float v1, v1, v2
 
+    .line 22
+    .line 23
     if-eqz v1, :cond_3
 
+    .line 24
+    .line 25
     :cond_0
-    new-array v1, v0, [Ljava/lang/Object;
+    const-string v1, "resetDraggingDistance"
 
-    const-string v4, "CameraSnapView"
+    .line 26
+    .line 27
+    new-array v4, v0, [Ljava/lang/Object;
 
-    const-string v5, "resetDraggingDistance"
+    .line 28
+    .line 29
+    const-string v5, "CameraSnapView"
 
-    .line 5
-    invoke-static {v4, v5, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 30
+    .line 31
+    invoke-static {v5, v1, v4}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 6
+    .line 32
+    .line 33
+    .line 34
     iput v2, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingXOffset:F
 
-    .line 7
+    .line 35
+    .line 36
     iput v2, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingYOffset:F
 
-    .line 8
+    .line 37
+    .line 38
     iget-object v6, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 39
+    .line 40
     iget-boolean v7, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingHorizontal:Z
 
+    .line 41
+    .line 42
     if-eqz v7, :cond_1
 
+    .line 43
+    .line 44
     iget v1, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
+    .line 45
+    .line 46
     goto :goto_0
 
+    .line 47
     :cond_1
     iget v1, p0, Lcom/android/camera/ui/CameraSnapView;->mHeight:I
 
+    .line 48
+    .line 49
     :goto_0
     int-to-float v1, v1
 
+    .line 50
     move v8, v1
 
+    .line 51
     const/4 v9, 0x0
 
+    .line 52
     const/4 v10, 0x1
 
+    .line 53
     iget-object v1, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 54
+    .line 55
     invoke-interface {v1}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->getDragCondition()I
 
+    .line 56
+    .line 57
+    .line 58
     move-result v1
 
+    .line 59
     const/4 v4, 0x3
 
+    .line 60
     if-eq v1, v4, :cond_2
 
+    .line 61
+    .line 62
     move v11, v3
 
+    .line 63
     goto :goto_1
 
+    .line 64
     :cond_2
     move v11, v0
 
+    .line 65
     :goto_1
     invoke-virtual/range {v6 .. v11}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->startMoving(ZFFZZ)V
 
-    .line 9
+    .line 66
+    .line 67
+    .line 68
     :cond_3
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 69
+    .line 70
     if-eqz p0, :cond_4
 
-    .line 10
+    .line 71
+    .line 72
     invoke-interface {p0, v2, v2, v3}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->handleDragCondition(FFZ)Z
 
+    .line 73
+    .line 74
+    .line 75
     :cond_4
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic OooO0O0()V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->lambda$setSnapClickEnable$1()V
-
-    return-void
-.end method
-
-.method public synthetic OooO0OO()V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->lambda$updateMultiCapture$0()V
-
-    return-void
-.end method
-
 .method public addSegmentNow()V
     .locals 0
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->addSegmentNow()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1058,22 +1406,16 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "animationConfig",
-            "time"
-        }
-    .end annotation
-
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->expandSnapButton(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1083,6 +1425,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -1093,8 +1437,12 @@
     invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->judgeRegionRect()V
 
     .line 2
+    .line 3
+    .line 4
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mClickRegionRect:Landroid/graphics/Rect;
 
+    .line 5
+    .line 6
     return-object p0
 .end method
 
@@ -1104,10 +1452,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->hasSegments()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -1117,11 +1471,18 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->hideBottomPaintItem()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -1131,11 +1492,18 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->hideCirclePaintItem()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -1145,28 +1513,30 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->hideRoundPaintItem()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "who"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1176,10 +1546,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->isBottomVisible()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -1189,10 +1565,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->isRoundBaseVisible()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -1202,10 +1584,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->isRoundCurrentVisible()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -1215,6 +1603,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapButtonDownedStat:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -1224,6 +1614,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/ui/CameraSnapView;->mEnableSnapClick:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -1233,8 +1625,12 @@
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -1244,85 +1640,75 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDragging:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public longExposeCaptureCompleted(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->longExposeCaptureCompleted(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public longExposePrepare(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->prepareRecording(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public longExposeStart(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->startRecord(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "newConfig"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 p1, 0x0
 
-    .line 2
+    .line 5
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mViewRegionRect:Landroid/graphics/Rect;
 
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -1333,288 +1719,419 @@
     invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
     .line 3
-    invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->cancelAnimation()V
-
     .line 4
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 5
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->cancelAnimation()V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
+
+    .line 13
+    .line 14
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
-    .line 5
+    .line 15
+    .line 16
+    .line 17
     :cond_0
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mOnGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
+    .line 18
+    .line 19
     if-eqz v0, :cond_1
 
-    .line 6
+    .line 20
+    .line 21
     invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
+    .line 22
+    .line 23
+    .line 24
     move-result-object v0
 
+    .line 25
     iget-object v2, p0, Lcom/android/camera/ui/CameraSnapView;->mOnGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
+    .line 26
+    .line 27
     invoke-virtual {v0, v2}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 7
+    .line 28
+    .line 29
+    .line 30
     iput-object v1, p0, Lcom/android/camera/ui/CameraSnapView;->mOnGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
+    .line 31
+    .line 32
     :cond_1
     return-void
 .end method
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "canvas"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 2
+    .line 3
+    .line 4
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 5
+    .line 6
     if-eqz p0, :cond_0
 
-    .line 3
+    .line 7
+    .line 8
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->draw(Landroid/graphics/Canvas;)V
 
+    .line 9
+    .line 10
+    .line 11
     :cond_0
     return-void
 .end method
 
 .method public onForceVideoStateChange(Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "parameters"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mCurrentCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     iget-boolean v0, v0, Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;->forceVideoPattern:Z
 
+    .line 6
+    .line 7
     goto :goto_0
 
+    .line 8
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
+    .line 9
     :goto_0
     iget-boolean v1, p1, Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;->forceVideoPattern:Z
 
+    .line 10
+    .line 11
     if-ne v1, v0, :cond_1
 
+    .line 12
+    .line 13
     return-void
 
-    .line 3
+    .line 14
     :cond_1
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mCurrentCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
-    .line 4
+    .line 15
+    .line 16
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 17
+    .line 18
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->intoPattern(Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
 
-    .line 5
+    .line 19
+    .line 20
+    .line 21
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 22
+    .line 23
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->startModeChangeAnimation()V
 
+    .line 24
+    .line 25
+    .line 26
     return-void
 .end method
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "event"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->judgeRegionRect()V
 
     .line 2
+    .line 3
+    .line 4
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mClickRegionRect:Landroid/graphics/Rect;
 
+    .line 5
+    .line 6
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
+    .line 7
+    .line 8
+    .line 9
     move-result v1
 
+    .line 10
     float-to-int v1, v1
 
+    .line 11
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
+    .line 12
+    .line 13
+    .line 14
     move-result v2
 
+    .line 15
     float-to-int v2, v2
 
+    .line 16
     invoke-static {p0, v0, v1, v2}, Lcom/android/camera/Util;->isInViewRegionFixXY(Landroid/view/View;Landroid/graphics/Rect;II)Z
 
+    .line 17
+    .line 18
+    .line 19
     move-result v0
 
-    .line 3
+    .line 20
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
+    .line 21
+    .line 22
+    .line 23
     move-result v1
 
+    .line 24
     const/4 v2, 0x7
 
+    .line 25
     if-eq v1, v2, :cond_0
 
+    .line 26
+    .line 27
     const/16 v2, 0x9
 
+    .line 28
+    .line 29
     if-eq v1, v2, :cond_0
 
+    .line 30
+    .line 31
     goto :goto_0
 
+    .line 32
     :cond_0
     if-nez v0, :cond_1
 
+    .line 33
+    .line 34
     const/4 p0, 0x1
 
+    .line 35
     new-array p0, p0, [Ljava/lang/Object;
 
-    .line 4
+    .line 36
+    .line 37
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
+    .line 38
+    .line 39
+    .line 40
     move-result p1
 
+    .line 41
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 42
+    .line 43
+    .line 44
     move-result-object p1
 
+    .line 45
     const/4 v0, 0x0
 
+    .line 46
     aput-object p1, p0, v0
 
+    .line 47
+    .line 48
     const-string p1, "Hover event %s not in click region"
 
+    .line 49
+    .line 50
     invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
+    .line 51
+    .line 52
+    .line 53
     move-result-object p0
 
+    .line 54
     new-array p1, v0, [Ljava/lang/Object;
 
+    .line 55
+    .line 56
     const-string v1, "CameraSnapView"
 
+    .line 57
+    .line 58
     invoke-static {v1, p0, p1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 59
+    .line 60
+    .line 61
     return v0
 
-    .line 5
+    .line 62
     :cond_1
     :goto_0
     invoke-super {p0, p1}, Landroid/view/View;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
+    .line 63
+    .line 64
+    .line 65
     move-result p0
 
+    .line 66
     return p0
 .end method
 
 .method public onMeasure(II)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "widthMeasureSpec",
-            "heightMeasureSpec"
-        }
-    .end annotation
 
     .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     const/high16 v1, 0x40000000    # 2.0f
 
+    .line 6
+    .line 7
     if-eq v0, v1, :cond_0
 
-    .line 2
+    .line 8
+    .line 9
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
+    .line 10
+    .line 11
+    .line 12
     goto :goto_0
 
-    .line 3
+    .line 13
     :cond_0
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
+    .line 14
+    .line 15
+    .line 16
     move-result p1
 
+    .line 17
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
-    .line 4
+    .line 18
+    .line 19
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
+    .line 20
+    .line 21
+    .line 22
     move-result p1
 
+    .line 23
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mHeight:I
 
-    .line 5
+    .line 24
+    .line 25
     iget p2, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
+    .line 26
+    .line 27
     invoke-virtual {p0, p2, p1}, Landroid/view/View;->setMeasuredDimension(II)V
 
-    .line 6
+    .line 28
+    .line 29
+    .line 30
     iget p1, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
+    .line 31
+    .line 32
     iget p2, p0, Lcom/android/camera/ui/CameraSnapView;->mHeight:I
 
+    .line 33
+    .line 34
     invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
 
+    .line 35
+    .line 36
+    .line 37
     move-result p1
 
+    .line 38
     int-to-float p1, p1
 
+    .line 39
     const p2, 0x3f51ff2e    # 0.8203f
 
+    .line 40
+    .line 41
+    .line 42
     mul-float/2addr p1, p2
 
+    .line 43
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDraggingThreshold:F
 
-    .line 7
+    .line 44
+    .line 45
     iget-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 46
+    .line 47
     if-eqz p1, :cond_1
 
-    .line 8
+    .line 48
+    .line 49
     iget p2, p0, Lcom/android/camera/ui/CameraSnapView;->mWidth:I
 
+    .line 50
+    .line 51
     int-to-float p2, p2
 
+    .line 52
     iget p0, p0, Lcom/android/camera/ui/CameraSnapView;->mHeight:I
 
+    .line 53
+    .line 54
     int-to-float p0, p0
 
+    .line 55
     invoke-virtual {p1, p2, p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setWidthHeight(FF)V
 
+    .line 56
+    .line 57
+    .line 58
     :cond_1
     :goto_0
     return-void
@@ -1623,80 +2140,104 @@
 .method public onScreenOrientationChanged()V
     .locals 4
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     new-array v1, v0, [Ljava/lang/Object;
 
+    .line 3
+    .line 4
     const-string v2, "CameraSnapView"
 
+    .line 5
+    .line 6
     const-string v3, "onScreenOrientationChanged"
 
-    .line 1
+    .line 7
+    .line 8
     invoke-static {v2, v3, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 9
+    .line 10
+    .line 11
     const/4 v1, 0x0
 
-    .line 2
+    .line 12
     iput-object v1, p0, Lcom/android/camera/ui/CameraSnapView;->mViewRegionRect:Landroid/graphics/Rect;
 
-    .line 3
+    .line 13
+    .line 14
     iput v0, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingDistance:I
 
-    .line 4
+    .line 15
+    .line 16
     iget-object v1, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 17
+    .line 18
     if-eqz v1, :cond_0
 
-    .line 5
+    .line 19
+    .line 20
     invoke-interface {v1, v0, v0}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->initFixedShutterCenter(II)V
 
+    .line 21
+    .line 22
+    .line 23
     :cond_0
     const/4 v1, 0x1
 
-    .line 6
+    .line 24
     iput-boolean v1, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingHorizontal:Z
 
-    .line 7
+    .line 25
+    .line 26
     iput-boolean v1, p0, Lcom/android/camera/ui/CameraSnapView;->mMovingHorizontal:Z
 
-    .line 8
+    .line 27
+    .line 28
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingMinus:Z
 
-    .line 9
+    .line 29
+    .line 30
     invoke-static {}, Lcom/android/camera/display/Display;->fitDisplayFat()Z
 
+    .line 31
+    .line 32
+    .line 33
     move-result v1
 
+    .line 34
     if-eqz v1, :cond_1
 
-    .line 10
+    .line 35
+    .line 36
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingHorizontal:Z
 
-    .line 11
+    .line 37
+    .line 38
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mMovingHorizontal:Z
 
+    .line 39
+    .line 40
     :cond_1
     return-void
 .end method
 
 .method public onThemeChanged(ZLcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "inRecording",
-            "conditionReferred"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->onThemeChanged(ZLcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1706,28 +2247,28 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-virtual {p0}, Lcom/android/camera/ui/CameraSnapView;->showCirclePaintItem()V
 
-    .line 3
+    .line 6
+    .line 7
+    .line 8
     invoke-virtual {p0}, Lcom/android/camera/ui/CameraSnapView;->showRoundPaintItem()V
 
+    .line 9
+    .line 10
+    .line 11
     :cond_0
     return-void
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 26
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "event"
-        }
-    .end annotation
 
     move-object/from16 v0, p0
 
@@ -1817,7 +2358,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "this view is disabled. action="
+    const-string/jumbo v3, "this view is disabled. action="
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2203,12 +2744,12 @@
 
     invoke-virtual {v1, v12}, Landroid/os/Handler;->removeMessages(I)V
 
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string/jumbo v1, "snap cancel out, disable multi capture"
 
-    const-string v2, "snap cancel out, disable multi capture"
+    new-array v2, v5, [Ljava/lang/Object;
 
     .line 38
-    invoke-static {v4, v2, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 39
     iget-object v1, v0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
@@ -2238,12 +2779,12 @@
 
     if-gez v1, :cond_10
 
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string v1, "onTouchEvent: move sticky ----- "
 
-    const-string v5, "onTouchEvent: move sticky ----- "
+    new-array v5, v5, [Ljava/lang/Object;
 
     .line 43
-    invoke-static {v4, v5, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v5}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 44
     iget-object v15, v0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
@@ -2286,12 +2827,12 @@
 
     invoke-virtual {v1, v12}, Landroid/os/Handler;->removeMessages(I)V
 
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string/jumbo v1, "snap view separate"
 
-    const-string v2, "snap view separate"
+    new-array v2, v5, [Ljava/lang/Object;
 
     .line 50
-    invoke-static {v4, v2, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 51
     iget-object v15, v0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
@@ -2371,12 +2912,12 @@
     .line 58
     iput v11, v0, Lcom/android/camera/ui/CameraSnapView;->mDraggingTriggerDistance:F
 
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string v1, "onSnapDragging"
 
-    const-string v2, "onSnapDragging"
+    new-array v2, v5, [Ljava/lang/Object;
 
     .line 59
-    invoke-static {v4, v2, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 60
     iput-boolean v13, v0, Lcom/android/camera/ui/CameraSnapView;->mCancelRespond:Z
@@ -2408,11 +2949,11 @@
     sub-long v22, v6, v8
 
     .line 65
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v1
 
-    invoke-virtual {v1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OooOoo()Z
+    invoke-virtual {v1}, Lo000Oo0/OooO00o;->o0OoO000()Z
 
     move-result v1
 
@@ -2597,11 +3138,11 @@
     invoke-virtual {v2, v15}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
     .line 76
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v2
 
-    invoke-virtual {v2}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OooOoo()Z
+    invoke-virtual {v2}, Lo000Oo0/OooO00o;->o0OoO000()Z
 
     move-result v2
 
@@ -2634,12 +3175,12 @@
 
     if-eqz v2, :cond_1c
 
-    new-array v0, v5, [Ljava/lang/Object;
+    const-string/jumbo v0, "snap canceled twice"
 
-    const-string v1, "snap canceled twice"
+    new-array v1, v5, [Ljava/lang/Object;
 
     .line 79
-    invoke-static {v4, v1, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v5
 
@@ -2672,12 +3213,12 @@
 
     if-nez v2, :cond_1d
 
-    new-array v2, v5, [Ljava/lang/Object;
+    const-string/jumbo v2, "snap click action_up"
 
-    const-string v3, "snap click action_up"
+    new-array v3, v5, [Ljava/lang/Object;
 
     .line 84
-    invoke-static {v4, v3, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v2, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 85
     iget-object v2, v0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
@@ -2687,12 +3228,12 @@
     goto :goto_9
 
     :cond_1d
-    new-array v2, v5, [Ljava/lang/Object;
+    const-string/jumbo v2, "snap click force action_up"
 
-    const-string v3, "snap click force action_up"
+    new-array v3, v5, [Ljava/lang/Object;
 
     .line 86
-    invoke-static {v4, v3, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v2, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 87
     iget-object v2, v0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
@@ -2706,12 +3247,12 @@
     :cond_1e
     if-nez v1, :cond_1f
 
-    new-array v2, v5, [Ljava/lang/Object;
+    const-string/jumbo v2, "snap cancel out"
 
-    const-string v3, "snap cancel out"
+    new-array v3, v5, [Ljava/lang/Object;
 
     .line 88
-    invoke-static {v4, v3, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v2, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 89
     iget-object v2, v0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
@@ -2767,7 +3308,7 @@
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v11, "timeDiffer = "
+    const-string/jumbo v11, "timeDiffer = "
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2796,12 +3337,12 @@
 
     if-eqz v1, :cond_22
 
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string v1, "send long cancel in"
 
-    const-string v10, "send long cancel in"
+    new-array v10, v5, [Ljava/lang/Object;
 
     .line 100
-    invoke-static {v4, v10, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v10}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 101
     iget-object v1, v0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
@@ -2813,12 +3354,12 @@
     goto :goto_a
 
     :cond_22
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string v1, "send long cancel out"
 
-    const-string v10, "send long cancel out"
+    new-array v10, v5, [Ljava/lang/Object;
 
     .line 102
-    invoke-static {v4, v10, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v10}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 103
     iget-object v1, v0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
@@ -2830,11 +3371,11 @@
     .line 104
     :cond_23
     :goto_a
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v1
 
-    invoke-virtual {v1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OoO0OO()Z
+    invoke-virtual {v1}, Lo000Oo0/OooO00o;->o0ooOOO0()Z
 
     move-result v1
 
@@ -2928,12 +3469,12 @@
 
     if-eqz v3, :cond_2c
 
-    new-array v3, v5, [Ljava/lang/Object;
+    const-string/jumbo v3, "start scale up anim"
 
-    const-string v5, "start scale up anim"
+    new-array v5, v5, [Ljava/lang/Object;
 
     .line 107
-    invoke-static {v4, v5, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v5}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 108
     iget-object v3, v0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
@@ -3048,11 +3589,11 @@
     :cond_2c
     :goto_d
     :pswitch_1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v1
 
-    invoke-virtual {v1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OooOoo()Z
+    invoke-virtual {v1}, Lo000Oo0/OooO00o;->o0OoO000()Z
 
     move-result v1
 
@@ -3074,12 +3615,12 @@
     goto/16 :goto_12
 
     :cond_2d
-    new-array v2, v5, [Ljava/lang/Object;
+    const-string/jumbo v2, "snap click action_down"
 
-    const-string v3, "snap click action_down"
+    new-array v3, v5, [Ljava/lang/Object;
 
     .line 122
-    invoke-static {v4, v3, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v2, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 123
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -3093,12 +3634,12 @@
     .line 124
     invoke-virtual/range {p0 .. p0}, Lcom/android/camera/ui/CameraSnapView;->resetSnapButtonDownedStat()V
 
-    new-array v0, v5, [Ljava/lang/Object;
+    const-string/jumbo v0, "snap click action_down not in click region"
 
-    const-string v1, "snap click action_down not in click region"
+    new-array v1, v5, [Ljava/lang/Object;
 
     .line 125
-    invoke-static {v4, v1, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v5
 
@@ -3133,11 +3674,11 @@
     iput v2, v0, Lcom/android/camera/ui/CameraSnapView;->mDownY:F
 
     .line 132
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v2
 
-    invoke-virtual {v2}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OooOoo()Z
+    invoke-virtual {v2}, Lo000Oo0/OooO00o;->o0OoO000()Z
 
     move-result v2
 
@@ -3233,11 +3774,11 @@
     move-result v2
 
     .line 137
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v3
 
-    invoke-virtual {v3}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OoO0OO()Z
+    invoke-virtual {v3}, Lo000Oo0/OooO00o;->o0ooOOO0()Z
 
     move-result v3
 
@@ -3270,12 +3811,12 @@
 
     if-nez v3, :cond_31
 
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string v1, "can not snap, start down anim"
 
-    const-string v3, "can not snap, start down anim"
+    new-array v3, v5, [Ljava/lang/Object;
 
     .line 141
-    invoke-static {v4, v3, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v3}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 142
     iget-object v1, v0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
@@ -3313,12 +3854,12 @@
 
     if-nez v2, :cond_3e
 
-    new-array v0, v5, [Ljava/lang/Object;
+    const-string v0, "default return"
 
-    const-string v2, "default return"
+    new-array v2, v5, [Ljava/lang/Object;
 
     .line 146
-    invoke-static {v4, v2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v0, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v1
 
@@ -3352,11 +3893,11 @@
     if-eqz v2, :cond_33
 
     .line 150
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v2
 
-    invoke-virtual {v2}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000ooOO()Z
+    invoke-virtual {v2}, Lo000Oo0/OooO00o;->o000ooOO()Z
 
     move-result v2
 
@@ -3376,11 +3917,11 @@
 
     .line 152
     :cond_34
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v2
 
-    invoke-virtual {v2}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OoO0OO()Z
+    invoke-virtual {v2}, Lo000Oo0/OooO00o;->o0ooOOO0()Z
 
     move-result v2
 
@@ -3430,22 +3971,22 @@
 
     .line 157
     :pswitch_4
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v2
 
-    invoke-virtual {v2}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OOOOO()Z
+    invoke-virtual {v2}, Lo000Oo0/OooO00o;->o0OOOOOO()Z
 
     move-result v2
 
     if-nez v2, :cond_37
 
     .line 158
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v2
 
-    invoke-virtual {v2}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OoO0OO()Z
+    invoke-virtual {v2}, Lo000Oo0/OooO00o;->o0ooOOO0()Z
 
     move-result v2
 
@@ -3573,11 +4114,11 @@
     iput-boolean v5, v0, Lcom/android/camera/ui/CameraSnapView;->mMissTaken:Z
 
     .line 172
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v1
 
-    invoke-virtual {v1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OOOooo()Z
+    invoke-virtual {v1}, Lo000Oo0/OooO00o;->o0OOo000()Z
 
     move-result v1
 
@@ -3647,12 +4188,12 @@
 
     if-nez v1, :cond_47
 
-    new-array v1, v5, [Ljava/lang/Object;
+    const-string v1, "send long press delay"
 
-    const-string v2, "send long press delay"
+    new-array v2, v5, [Ljava/lang/Object;
 
     .line 182
-    invoke-static {v4, v2, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v1, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 183
     iget-object v1, v0, Lcom/android/camera/ui/CameraSnapView;->mSupportDraggingByStableCondition:Ljava/lang/Boolean;
@@ -3821,8 +4362,6 @@
     :goto_12
     return v13
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0xb7
         :pswitch_1
@@ -3880,15 +4419,6 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
-
     .line 2
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
@@ -3903,64 +4433,90 @@
     .line 1
     invoke-static {}, Lcom/android/camera/Util;->isAccessible()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
+    .line 5
     if-nez v0, :cond_1
 
+    .line 6
+    .line 7
     invoke-static {}, Lcom/android/camera/Util;->isVoiceAccessible()Z
 
+    .line 8
+    .line 9
+    .line 10
     move-result v0
 
+    .line 11
     if-eqz v0, :cond_0
 
+    .line 12
+    .line 13
     goto :goto_0
 
-    .line 2
+    .line 14
     :cond_0
     invoke-super {p0}, Landroid/view/View;->performClick()Z
 
+    .line 15
+    .line 16
+    .line 17
     move-result p0
 
+    .line 18
     return p0
 
-    .line 3
+    .line 19
     :cond_1
     :goto_0
     invoke-super {p0}, Landroid/view/View;->performClick()Z
 
-    .line 4
+    .line 20
+    .line 21
+    .line 22
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
 
+    .line 23
+    .line 24
     const/4 v1, 0x0
 
+    .line 25
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 5
+    .line 26
+    .line 27
+    .line 28
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
 
+    .line 29
+    .line 30
     const/4 v0, 0x1
 
+    .line 31
     invoke-virtual {p0, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
+    .line 32
+    .line 33
+    .line 34
     return v0
 .end method
 
 .method public prepareRecording(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->prepareRecording(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3970,8 +4526,13 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->removeLastSegment()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -3983,87 +4544,106 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "time"
-        }
-    .end annotation
-
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->resetSnapButton(I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public resetSnapButtonDownedStat()V
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapButtonDownedStat:Z
 
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public resetTriggerDragging(Z)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "forceReset"
-        }
-    .end annotation
 
     .line 1
     iget-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mCancelRespond:Z
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
+    .line 4
+    .line 5
     if-nez p1, :cond_0
 
+    .line 6
+    .line 7
     return-void
 
-    .line 2
+    .line 8
     :cond_0
     invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->resetDraggingDistance()V
 
-    .line 3
+    .line 9
+    .line 10
+    .line 11
     iget-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDragging:Z
 
+    .line 12
+    .line 13
     if-eqz p1, :cond_1
 
-    const/4 p1, 0x0
+    .line 14
+    .line 15
+    const-string p1, "resetTriggerDragging"
 
-    new-array v0, p1, [Ljava/lang/Object;
+    .line 16
+    .line 17
+    const/4 v0, 0x0
 
-    const-string v1, "CameraSnapView"
+    .line 18
+    new-array v1, v0, [Ljava/lang/Object;
 
-    const-string v2, "resetTriggerDragging"
+    .line 19
+    .line 20
+    const-string v2, "CameraSnapView"
 
-    .line 4
-    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 21
+    .line 22
+    invoke-static {v2, p1, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 5
-    iput-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDragging:Z
+    .line 23
+    .line 24
+    .line 25
+    iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDragging:Z
 
+    .line 26
+    .line 27
     const p1, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 6
+    .line 28
+    .line 29
+    .line 30
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingTriggerDistance:F
 
+    .line 31
+    .line 32
     const/4 p1, 0x1
 
-    .line 7
+    .line 33
     iput-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mHasCancelByOutside:Z
 
+    .line 34
+    .line 35
     :cond_1
     return-void
 .end method
@@ -4087,15 +4667,6 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
-
     .line 2
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
@@ -4106,289 +4677,414 @@
 
 .method public setCancelRespond(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cancelRespond"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mCancelRespond:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setDurationText(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "durationText"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setDurationText(Ljava/lang/String;)V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
 
 .method public setParameters(Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "parameters"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mCurrentCondition:Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;
 
+    .line 2
+    .line 3
     const-wide/16 v0, 0x0
 
-    .line 2
+    .line 4
+    .line 5
     iput-wide v0, p0, Lcom/android/camera/ui/CameraSnapView;->mPressUpTime:J
 
-    .line 3
+    .line 6
+    .line 7
     iget v0, p1, Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;->targetMode:I
 
+    .line 8
+    .line 9
     iput v0, p0, Lcom/android/camera/ui/CameraSnapView;->mCurrentMode:I
 
-    .line 4
+    .line 10
+    .line 11
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemGlobal()Lcom/android/camera/data/data/global/DataItemGlobal;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object v0
 
+    .line 15
     invoke-virtual {v0}, Lcom/android/camera/data/data/global/DataItemGlobal;->isNormalIntent()Z
 
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
+    .line 19
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->isNormalIntent:Z
 
-    .line 5
+    .line 20
+    .line 21
     iget v0, p0, Lcom/android/camera/ui/CameraSnapView;->mCurrentMode:I
 
+    .line 22
+    .line 23
     invoke-static {v0}, Lcom/android/camera/CameraSettings;->isSuspendShutterOn(I)Z
 
+    .line 24
+    .line 25
+    .line 26
     move-result v0
 
+    .line 27
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->isSuspendShutterOn:Z
 
-    .line 6
+    .line 28
+    .line 29
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 30
+    .line 31
     if-nez v0, :cond_0
 
-    .line 7
+    .line 32
+    .line 33
     new-instance v0, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 34
+    .line 35
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 36
+    .line 37
+    .line 38
     move-result-object v1
 
+    .line 39
     invoke-direct {v0, v1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;-><init>(Landroid/content/Context;)V
 
+    .line 40
+    .line 41
+    .line 42
     iput-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
-    .line 8
+    .line 43
+    .line 44
     iget v1, p0, Lcom/android/camera/ui/CameraSnapView;->mRotation:F
 
+    .line 45
+    .line 46
     invoke-virtual {v0, v1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setRotation(F)V
 
-    .line 9
+    .line 47
+    .line 48
+    .line 49
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 50
+    .line 51
     invoke-virtual {v0, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
-    .line 10
+    .line 52
+    .line 53
+    .line 54
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    .line 55
+    .line 56
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 57
+    .line 58
+    .line 59
     move-result-object v1
 
-    invoke-virtual {v1}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o0OoO0OO()Z
+    .line 60
+    invoke-virtual {v1}, Lo000Oo0/OooO00o;->o0ooOOO0()Z
 
+    .line 61
+    .line 62
+    .line 63
     move-result v1
 
+    .line 64
     invoke-virtual {v0, v1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setSupportThunderShutterAnim(Z)V
 
-    .line 11
+    .line 65
+    .line 66
+    .line 67
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 68
+    .line 69
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->intoPatternFromParameters(Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
 
+    .line 70
+    .line 71
+    .line 72
     goto :goto_0
 
-    .line 12
+    .line 73
     :cond_0
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->resetRecordingState()V
 
-    .line 13
+    .line 74
+    .line 75
+    .line 76
     iget-boolean v0, p1, Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;->needSnapButtonAnimation:Z
 
+    .line 77
+    .line 78
     if-eqz v0, :cond_1
 
-    .line 14
+    .line 79
+    .line 80
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 81
+    .line 82
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->intoPattern(Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
 
-    .line 15
+    .line 83
+    .line 84
+    .line 85
     iget-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 86
+    .line 87
     invoke-virtual {p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->startModeChangeAnimation()V
 
+    .line 88
+    .line 89
+    .line 90
     goto :goto_0
 
-    .line 16
+    .line 91
     :cond_1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 92
+    .line 93
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->intoPatternFromParameters(Lcom/android/camera/ui/drawable/snap/PaintConditionReferred;)V
 
-    .line 17
+    .line 94
+    .line 95
+    .line 96
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 97
+    .line 98
+    .line 99
     :goto_0
     const/16 p1, 0x1f4
 
-    .line 18
+    .line 100
+    .line 101
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mLongPressTime:I
 
-    .line 19
+    .line 102
+    .line 103
     invoke-virtual {p0}, Lcom/android/camera/ui/CameraSnapView;->onScreenOrientationChanged()V
 
+    .line 104
+    .line 105
+    .line 106
     return-void
 .end method
 
 .method public setRotation(F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "rotation"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mRotation:F
 
     .line 2
+    .line 3
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 4
+    .line 5
     if-eqz p0, :cond_0
 
-    .line 3
+    .line 6
+    .line 7
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setRotation(F)V
 
+    .line 8
+    .line 9
+    .line 10
     :cond_0
     return-void
 .end method
 
 .method public setSnapClickEnable(Z)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v1, "setClickEnable: "
 
+    .line 7
+    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v0
 
+    .line 18
     const/4 v1, 0x0
 
+    .line 19
     new-array v1, v1, [Ljava/lang/Object;
 
+    .line 20
+    .line 21
     const-string v2, "CameraSnapView"
 
+    .line 22
+    .line 23
     invoke-static {v2, v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 24
+    .line 25
+    .line 26
     iput-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mEnableSnapClick:Z
 
+    .line 27
+    .line 28
     if-nez p1, :cond_0
 
-    .line 3
+    .line 29
+    .line 30
     sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
+    .line 31
+    .line 32
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mSupportDraggingByStableCondition:Ljava/lang/Boolean;
 
-    .line 4
+    .line 33
+    .line 34
     invoke-direct {p0}, Lcom/android/camera/ui/CameraSnapView;->resetDraggingDistance()V
 
-    .line 5
+    .line 35
+    .line 36
+    .line 37
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
 
+    .line 38
+    .line 39
     const/4 p1, 0x0
 
+    .line 40
     invoke-virtual {p0, p1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
+    .line 41
+    .line 42
+    .line 43
     goto :goto_0
 
-    .line 6
+    .line 44
     :cond_0
     iget-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 45
+    .line 46
     invoke-interface {p1}, Lcom/android/camera/ui/CameraSnapView$SnapListener;->canMultiCaptureByStableCondition()Ljava/lang/Boolean;
 
+    .line 47
+    .line 48
+    .line 49
     move-result-object p1
 
+    .line 50
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mSupportDraggingByStableCondition:Ljava/lang/Boolean;
 
-    .line 7
+    .line 51
+    .line 52
     iget-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mOnGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
+    .line 53
+    .line 54
     if-nez p1, :cond_1
 
-    .line 8
-    new-instance p1, LOooO0OO/OooO0O0/OooO00o/o00OO0O/OooOOO;
+    .line 55
+    .line 56
+    new-instance p1, Lcom/android/camera/ui/OooOOOO;
 
-    invoke-direct {p1, p0}, LOooO0OO/OooO0O0/OooO00o/o00OO0O/OooOOO;-><init>(Lcom/android/camera/ui/CameraSnapView;)V
+    .line 57
+    .line 58
+    invoke-direct {p1, p0}, Lcom/android/camera/ui/OooOOOO;-><init>(Lcom/android/camera/ui/CameraSnapView;)V
 
+    .line 59
+    .line 60
+    .line 61
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mOnGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-    .line 9
+    .line 62
+    .line 63
     invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
+    .line 64
+    .line 65
+    .line 66
     move-result-object p1
 
+    .line 67
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->mOnGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
+    .line 68
+    .line 69
     invoke-virtual {p1, p0}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
+    .line 70
+    .line 71
+    .line 72
     :cond_1
     :goto_0
     return-void
@@ -4396,96 +5092,113 @@
 
 .method public setSnapListener(Lcom/android/camera/ui/CameraSnapView$SnapListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "snapListener"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mSnapListener:Lcom/android/camera/ui/CameraSnapView$SnapListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSnapNumValue(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "number"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setSnapNumValue(I)V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
 
 .method public setSnapNumVisible(ZZ)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "visible",
-            "anim"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "setSnapNumVisible "
+    .line 4
+    .line 5
+    .line 6
+    const-string/jumbo v1, "setSnapNumVisible "
 
+    .line 7
+    .line 8
+    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 10
+    .line 11
+    .line 12
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 13
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object v0
 
+    .line 19
     const/4 v1, 0x0
 
+    .line 20
     new-array v1, v1, [Ljava/lang/Object;
 
+    .line 21
+    .line 22
     const-string v2, "CameraSnapView"
 
+    .line 23
+    .line 24
     invoke-static {v2, v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
+    .line 25
+    .line 26
+    .line 27
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 28
+    .line 29
     if-eqz v0, :cond_0
 
-    .line 3
+    .line 30
+    .line 31
     invoke-virtual {v0, p1, p2}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setSnapNumVisible(ZZ)V
 
+    .line 32
+    .line 33
+    .line 34
     :cond_0
     if-nez p1, :cond_1
 
+    .line 35
+    .line 36
     const/4 p1, 0x0
 
-    .line 4
+    .line 37
     iput-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mViewRegionRect:Landroid/graphics/Rect;
 
+    .line 38
+    .line 39
     :cond_1
     return-void
 .end method
@@ -4504,62 +5217,69 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "progress"
-        }
-    .end annotation
-
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setSpecificProgress(I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public setStopButtonEnable(ZZ)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "enable",
-            "forceVisible"
-        }
-    .end annotation
 
     .line 1
     iget v0, p0, Lcom/android/camera/ui/CameraSnapView;->mCurrentMode:I
 
+    .line 2
+    .line 3
     const/16 v1, 0xb8
 
+    .line 4
+    .line 5
     if-eq v0, v1, :cond_0
 
+    .line 6
+    .line 7
     const/16 v1, 0xbb
 
+    .line 8
+    .line 9
     if-eq v0, v1, :cond_0
 
+    .line 10
+    .line 11
     const/16 v1, 0xd0
 
+    .line 12
+    .line 13
     if-eq v0, v1, :cond_0
 
+    .line 14
+    .line 15
     goto :goto_0
 
-    .line 2
+    .line 16
     :cond_0
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/CameraSnapView;->setSnapClickEnable(Z)V
 
-    .line 3
+    .line 17
+    .line 18
+    .line 19
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 20
+    .line 21
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setStopButtonEnable(ZZ)V
 
+    .line 22
+    .line 23
+    .line 24
     :goto_0
     return-void
 .end method
@@ -4570,11 +5290,18 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->showBottomPaintItem()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -4584,11 +5311,18 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->showCirclePaintItem()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -4603,8 +5337,13 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->showPaintCenterVPType()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4614,8 +5353,13 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->showPaintCenterVVItem()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -4625,33 +5369,38 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->showRoundPaintItem()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
 .method public skipDrawCenter(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isSkip"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->skipDrawCenter(Z)V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
@@ -4667,90 +5416,142 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->isFullScreen()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0805d2
+    .line 8
+    .line 9
+    const v0, 0x7f080622
 
+    .line 10
+    .line 11
+    .line 12
     goto :goto_0
 
+    .line 13
     :cond_0
-    const v0, 0x7f0805d4
+    const v0, 0x7f080624
 
-    .line 2
+    .line 14
+    .line 15
+    .line 16
     :goto_0
     invoke-static {v0}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOverlayResBySuffix(I)I
 
+    .line 17
+    .line 18
+    .line 19
     move-result v0
 
-    .line 3
+    .line 20
     invoke-static {}, Lcom/android/camera/customization/FlashHalo;->getInstance()Lcom/android/camera/customization/FlashHalo;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v1
 
+    .line 24
     invoke-virtual {v1}, Lcom/android/camera/customization/FlashHalo;->getHaloEnable()Z
 
+    .line 25
+    .line 26
+    .line 27
     move-result v1
 
+    .line 28
     if-eqz v1, :cond_1
 
-    .line 4
+    .line 29
+    .line 30
     invoke-static {}, Lcom/android/camera/customization/ThemeResource;->getInstance()Lcom/android/camera/customization/ThemeResource;
 
+    .line 31
+    .line 32
+    .line 33
     move-result-object v1
 
-    const v2, 0x7f0600b2
+    .line 34
+    const v2, 0x7f0600b7
 
+    .line 35
+    .line 36
+    .line 37
     invoke-static {v2}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOverlayResBySuffix(I)I
 
+    .line 38
+    .line 39
+    .line 40
     move-result v2
 
+    .line 41
     invoke-virtual {v1, v2}, Lcom/android/camera/customization/ThemeResource;->getColor(I)I
 
+    .line 42
+    .line 43
+    .line 44
     move-result v1
 
+    .line 45
     goto :goto_1
 
+    .line 46
     :cond_1
     const/4 v1, 0x0
 
-    .line 5
+    .line 47
     :goto_1
     iget-object v2, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 48
+    .line 49
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 50
+    .line 51
+    .line 52
     move-result-object p0
 
+    .line 53
     invoke-virtual {v2, p0, v0, v1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->showBitmap(Landroid/content/Context;II)V
 
+    .line 54
+    .line 55
+    .line 56
     return-void
 .end method
 
 .method public stopRecordResumeUI(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->directFinishRecord()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 7
+    .line 8
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->stopRecord(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -4762,136 +5563,208 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "anim"
-        }
-    .end annotation
-
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->clearBitmap(Z)V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
 
 .method public triggerAnimation(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animationConfig"
-        }
-    .end annotation
 
     .line 1
     iget v0, p0, Lcom/android/camera/ui/CameraSnapView;->mCurrentMode:I
 
+    .line 2
+    .line 3
     const/16 v1, 0xa6
 
+    .line 4
+    .line 5
     if-eq v0, v1, :cond_1
 
+    .line 6
+    .line 7
     const/16 v1, 0xa7
 
+    .line 8
+    .line 9
     if-eq v0, v1, :cond_0
 
+    .line 10
+    .line 11
     const/16 v1, 0xa9
 
+    .line 12
+    .line 13
     if-eq v0, v1, :cond_0
 
+    .line 14
+    .line 15
     const/16 v1, 0xb0
 
+    .line 16
+    .line 17
     if-eq v0, v1, :cond_1
 
+    .line 18
+    .line 19
     const/16 v1, 0xbb
 
+    .line 20
+    .line 21
     if-eq v0, v1, :cond_0
 
+    .line 22
+    .line 23
     const/16 v1, 0xbd
 
+    .line 24
+    .line 25
     if-eq v0, v1, :cond_0
 
+    .line 26
+    .line 27
     const/16 v1, 0xcc
 
+    .line 28
+    .line 29
     if-eq v0, v1, :cond_1
 
+    .line 30
+    .line 31
     const/16 v1, 0xd9
 
+    .line 32
+    .line 33
     if-eq v0, v1, :cond_0
 
+    .line 34
+    .line 35
     const/16 v1, 0xdb
 
+    .line 36
+    .line 37
     if-eq v0, v1, :cond_0
 
+    .line 38
+    .line 39
     const/16 v1, 0xb3
 
+    .line 40
+    .line 41
     if-eq v0, v1, :cond_0
 
+    .line 42
+    .line 43
     const/16 v1, 0xb4
 
+    .line 44
+    .line 45
     if-eq v0, v1, :cond_1
 
+    .line 46
+    .line 47
     const/16 v1, 0xcf
 
+    .line 48
+    .line 49
     if-eq v0, v1, :cond_1
 
+    .line 50
+    .line 51
     const/16 v1, 0xd0
 
+    .line 52
+    .line 53
     if-eq v0, v1, :cond_0
 
+    .line 54
+    .line 55
     packed-switch v0, :pswitch_data_0
 
+    .line 56
+    .line 57
+    .line 58
     packed-switch v0, :pswitch_data_1
 
+    .line 59
+    .line 60
+    .line 61
     packed-switch v0, :pswitch_data_2
 
+    .line 62
+    .line 63
+    .line 64
     packed-switch v0, :pswitch_data_3
 
+    .line 65
+    .line 66
+    .line 67
     goto :goto_0
 
-    .line 2
+    .line 68
     :cond_0
     :pswitch_0
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 69
+    .line 70
     if-eqz p0, :cond_2
 
-    .line 3
+    .line 71
+    .line 72
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->startRecordAnimation(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 73
+    .line 74
+    .line 75
     goto :goto_0
 
-    .line 4
+    .line 76
     :cond_1
     :pswitch_1
     iget-boolean v0, p1, Lcom/android/camera/fragment/bottom/BottomAnimationConfig;->mIsStart:Z
 
+    .line 77
+    .line 78
     if-nez v0, :cond_2
 
-    .line 5
+    .line 79
+    .line 80
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 81
+    .line 82
     if-eqz p0, :cond_2
 
-    .line 6
+    .line 83
+    .line 84
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->startRecordAnimation(Lcom/android/camera/fragment/bottom/BottomAnimationConfig;)V
 
+    .line 85
+    .line 86
+    .line 87
     :cond_2
     :goto_0
     return-void
 
+    .line 88
     nop
 
+    .line 89
     :pswitch_data_0
     .packed-switch 0xa1
         :pswitch_0
@@ -4899,6 +5772,16 @@
         :pswitch_0
     .end packed-switch
 
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
     :pswitch_data_1
     .packed-switch 0xab
         :pswitch_0
@@ -4906,6 +5789,16 @@
         :pswitch_0
     .end packed-switch
 
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
     :pswitch_data_2
     .packed-switch 0xb7
         :pswitch_0
@@ -4913,6 +5806,16 @@
         :pswitch_0
     .end packed-switch
 
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
     :pswitch_data_3
     .packed-switch 0xd4
         :pswitch_0
@@ -4924,109 +5827,159 @@
 
 .method public updateMultiCapture(Z)Z
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "updateMultiCapture: enable: "
+    .line 4
+    .line 5
+    .line 6
+    const-string/jumbo v1, "updateMultiCapture: enable: "
 
+    .line 7
+    .line 8
+    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 10
+    .line 11
+    .line 12
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 13
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object v0
 
+    .line 19
     const/4 v1, 0x0
 
+    .line 20
     new-array v2, v1, [Ljava/lang/Object;
 
+    .line 21
+    .line 22
     const-string v3, "CameraSnapView"
 
+    .line 23
+    .line 24
     invoke-static {v3, v0, v2}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 25
+    .line 26
+    .line 27
     const/4 v0, 0x1
 
+    .line 28
     if-eqz p1, :cond_2
 
-    .line 2
+    .line 29
+    .line 30
     iget-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDragging:Z
 
+    .line 31
+    .line 32
     if-nez p1, :cond_1
 
+    .line 33
+    .line 34
     iget-boolean p1, p0, Lcom/android/camera/ui/CameraSnapView;->mMoving:Z
 
+    .line 35
+    .line 36
     if-nez p1, :cond_0
 
+    .line 37
+    .line 38
     goto :goto_0
 
-    .line 3
+    .line 39
     :cond_0
     iput-boolean v0, p0, Lcom/android/camera/ui/CameraSnapView;->mTriggerDragging:Z
 
-    .line 4
+    .line 40
+    .line 41
     iget-object p1, p0, Lcom/android/camera/ui/CameraSnapView;->mHandler:Landroid/os/Handler;
 
+    .line 42
+    .line 43
     const/4 v1, 0x2
 
+    .line 44
     invoke-virtual {p1, v1}, Landroid/os/Handler;->removeMessages(I)V
 
+    .line 45
+    .line 46
+    .line 47
     const/4 p1, 0x0
 
-    .line 5
+    .line 48
     iput p1, p0, Lcom/android/camera/ui/CameraSnapView;->mDraggingTriggerDistance:F
 
-    .line 6
-    new-instance p1, LOooO0OO/OooO0O0/OooO00o/o00OO0O/OooOOOO;
+    .line 49
+    .line 50
+    new-instance p1, Lcom/android/camera/ui/OooOOO0;
 
-    invoke-direct {p1, p0}, LOooO0OO/OooO0O0/OooO00o/o00OO0O/OooOOOO;-><init>(Lcom/android/camera/ui/CameraSnapView;)V
+    .line 51
+    .line 52
+    invoke-direct {p1, p0}, Lcom/android/camera/ui/OooOOO0;-><init>(Lcom/android/camera/ui/CameraSnapView;)V
 
+    .line 53
+    .line 54
+    .line 55
     invoke-virtual {p0, p1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
+    .line 56
+    .line 57
+    .line 58
     goto :goto_1
 
+    .line 59
     :cond_1
     :goto_0
     return v1
 
-    .line 7
+    .line 60
     :cond_2
-    new-instance p1, LOooO0OO/OooO0O0/OooO00o/o00OO0O/OooOOO0;
+    new-instance p1, Lcom/android/camera/ui/OooOOO;
 
-    invoke-direct {p1, p0}, LOooO0OO/OooO0O0/OooO00o/o00OO0O/OooOOO0;-><init>(Lcom/android/camera/ui/CameraSnapView;)V
+    .line 61
+    .line 62
+    invoke-direct {p1, p0}, Lcom/android/camera/ui/OooOOO;-><init>(Lcom/android/camera/ui/CameraSnapView;)V
 
+    .line 63
+    .line 64
+    .line 65
     invoke-virtual {p0, p1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
+    .line 66
+    .line 67
+    .line 68
     :goto_1
     return v0
 .end method
 
 .method public updateSnapStatus(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "id"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/ui/CameraSnapView;->cameraSnapAnimateDrawable:Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapAnimateDrawable;->setBitmap(I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/mode/MoreModeListAnimation$1;
+.class Lcom/android/camera/fragment/mode/MoreModeListAnimation$1;
 .super Lmiuix/animation/property/ViewProperty;
 .source "MoreModeListAnimation.java"
 
@@ -15,28 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/mode/MoreModeListAnimation;
+.field final synthetic this$0:Lcom/android/camera/fragment/mode/MoreModeListAnimation;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/mode/MoreModeListAnimation;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0
-        }
-        names = {
-            "this$0",
-            "name"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/mode/MoreModeListAnimation$1;->this$0:Lcom/android/camera/fragment/mode/MoreModeListAnimation;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2}, Lmiuix/animation/property/ViewProperty;-><init>(Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -44,14 +39,6 @@
 # virtual methods
 .method public getValue(Landroid/view/View;)F
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "view"
-        }
-    .end annotation
 
     .line 2
     instance-of p0, p1, Lcom/android/camera/ui/SmoothRoundLayout;
@@ -73,7 +60,7 @@
 
     if-eqz p0, :cond_1
 
-    const p0, 0x7f0a0383
+    const p0, 0x7f0b03bc
 
     .line 5
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -99,14 +86,6 @@
 
 .method public bridge synthetic getValue(Ljava/lang/Object;)F
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "view"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Landroid/view/View;
@@ -120,16 +99,6 @@
 
 .method public setValue(Landroid/view/View;F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "v"
-        }
-    .end annotation
 
     .line 2
     instance-of p0, p1, Lcom/android/camera/ui/SmoothRoundLayout;
@@ -149,7 +118,7 @@
 
     if-eqz p0, :cond_1
 
-    const p0, 0x7f0a0383
+    const p0, 0x7f0b03bc
 
     .line 5
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -170,16 +139,6 @@
 
 .method public bridge synthetic setValue(Ljava/lang/Object;F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "view",
-            "v"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Landroid/view/View;

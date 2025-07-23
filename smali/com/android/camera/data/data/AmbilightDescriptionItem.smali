@@ -47,18 +47,6 @@
         .annotation build Landroidx/annotation/DrawableRes;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "nameRes",
-            "imageRes",
-            "part1"
-        }
-    .end annotation
 
     .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -89,22 +77,6 @@
         .annotation build Landroidx/annotation/DrawableRes;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "nameRes",
-            "imageRes",
-            "part1",
-            "imageRes2",
-            "part2"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -4,47 +4,46 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nFUGroupAnimationBundleData.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FUGroupAnimationBundleData.kt\ncom/faceunity/core/entity/FUGroupAnimationBundleData\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,77:1\n1819#2,2:78\n1819#2,2:80\n1819#2,2:82\n1819#2,2:84\n1819#2,2:86\n1819#2,2:88\n*E\n*S KotlinDebug\n*F\n+ 1 FUGroupAnimationBundleData.kt\ncom/faceunity/core/entity/FUGroupAnimationBundleData\n*L\n26#1,2:78\n29#1,2:80\n54#1,2:82\n57#1,2:84\n60#1,2:86\n67#1,2:88\n*E\n"
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
     bv = {
         0x1,
         0x0,
         0x3
     }
     d1 = {
-        "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u009d\u0001\u0008\u0007\u0012\u0006\u0010\u0013\u001a\u00020\u0012\u0012\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u0012\u0012\u0008\u0008\u0002\u0010\u0015\u001a\u00020\u0012\u0012\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u0005\u0012\n\u0008\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u0018\u0012\n\u0008\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0012\u0012\n\u0008\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0018\u0012\n\u0008\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u0005\u0012\u0018\u0008\u0002\u0010\u0010\u001a\u0012\u0012\u0004\u0012\u00020\u00010\tj\u0008\u0012\u0004\u0012\u00020\u0001`\u000b\u0012\u0018\u0008\u0002\u0010\u000c\u001a\u0012\u0012\u0004\u0012\u00020\n0\tj\u0008\u0012\u0004\u0012\u00020\n`\u000b\u00a2\u0006\u0004\u0008\u001d\u0010\u001eJ\u000f\u0010\u0002\u001a\u00020\u0000H\u0016\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0017\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0001H\u0016\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0015\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u0000\u00a2\u0006\u0004\u0008\u0006\u0010\u0008R)\u0010\u000c\u001a\u0012\u0012\u0004\u0012\u00020\n0\tj\u0008\u0012\u0004\u0012\u00020\n`\u000b8\u0006@\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010\r\u001a\u0004\u0008\u000e\u0010\u000fR)\u0010\u0010\u001a\u0012\u0012\u0004\u0012\u00020\u00010\tj\u0008\u0012\u0004\u0012\u00020\u0001`\u000b8\u0006@\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0010\u0010\r\u001a\u0004\u0008\u0011\u0010\u000f\u00a8\u0006\u001f"
+        "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0018\u00002\u00020\u0001B\u009b\u0001\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0008\u0002\u0010\t\u001a\u00020\n\u0012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\n\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u0007\u0012\u0018\u0008\u0002\u0010\u000e\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u000fj\u0008\u0012\u0004\u0012\u00020\u0001`\u0010\u0012\u0018\u0008\u0002\u0010\u0011\u001a\u0012\u0012\u0004\u0012\u00020\u00120\u000fj\u0008\u0012\u0004\u0012\u00020\u0012`\u0010\u00a2\u0006\u0002\u0010\u0013J\u0008\u0010\u0017\u001a\u00020\u0000H\u0016J\u0010\u0010\u0018\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u0001H\u0016J\u000e\u0010\u0018\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u0000R!\u0010\u000e\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u000fj\u0008\u0012\u0004\u0012\u00020\u0001`\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R!\u0010\u0011\u001a\u0012\u0012\u0004\u0012\u00020\u00120\u000fj\u0008\u0012\u0004\u0012\u00020\u0012`\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0015\u00a8\u0006\u001a"
     }
     d2 = {
         "Lcom/faceunity/core/entity/FUGroupAnimationBundleData;",
         "Lcom/faceunity/core/entity/FUAnimationBundleData;",
-        "clone",
-        "()Lcom/faceunity/core/entity/FUGroupAnimationBundleData;",
-        "data",
-        "",
-        "isEqual",
-        "(Lcom/faceunity/core/entity/FUAnimationBundleData;)Z",
-        "(Lcom/faceunity/core/entity/FUGroupAnimationBundleData;)Z",
-        "Ljava/util/ArrayList;",
-        "Lcom/faceunity/core/entity/FUBundleData;",
-        "Lkotlin/collections/ArrayList;",
-        "subProps",
-        "Ljava/util/ArrayList;",
-        "getSubProps",
-        "()Ljava/util/ArrayList;",
-        "subAnimations",
-        "getSubAnimations",
-        "",
         "path",
+        "",
         "name",
         "nodeName",
         "repeatable",
-        "internalLerp",
         "",
+        "internalLerp",
         "probability",
+        "",
         "randomGroupMark",
         "randomGroupIndex",
         "randomGroupRepeatable",
-        "<init>",
+        "subAnimations",
+        "Ljava/util/ArrayList;",
+        "Lkotlin/collections/ArrayList;",
+        "subProps",
+        "Lcom/faceunity/core/entity/FUBundleData;",
         "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;)V",
+        "getSubAnimations",
+        "()Ljava/util/ArrayList;",
+        "getSubProps",
+        "clone",
+        "isEqual",
+        "data",
         "lib_core_release"
     }
     k = 0x1
@@ -55,16 +54,9 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFUGroupAnimationBundleData.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FUGroupAnimationBundleData.kt\ncom/faceunity/core/entity/FUGroupAnimationBundleData\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,77:1\n1819#2,2:78\n1819#2,2:80\n1819#2,2:82\n1819#2,2:84\n1819#2,2:86\n1819#2,2:88\n*E\n*S KotlinDebug\n*F\n+ 1 FUGroupAnimationBundleData.kt\ncom/faceunity/core/entity/FUGroupAnimationBundleData\n*L\n26#1,2:78\n29#1,2:80\n54#1,2:82\n57#1,2:84\n60#1,2:86\n67#1,2:88\n*E\n"
-.end annotation
-
 
 # instance fields
 .field private final subAnimations:Ljava/util/ArrayList;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -72,18 +64,21 @@
             ">;"
         }
     .end annotation
+
+    .annotation build Lo00OOOo/OooOOOO;
+    .end annotation
 .end field
 
 .field private final subProps:Ljava/util/ArrayList;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
             "Lcom/faceunity/core/entity/FUBundleData;",
             ">;"
         }
+    .end annotation
+
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 .end field
 
@@ -92,12 +87,13 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 1
     const/4 v2, 0x0
 
     const/4 v3, 0x0
@@ -126,7 +122,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -134,16 +130,17 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 2
     const/4 v3, 0x0
 
     const/4 v4, 0x0
@@ -172,7 +169,7 @@
 
     move-object/from16 v2, p2
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -180,20 +177,21 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 3
     const/4 v4, 0x0
 
     const/4 v5, 0x0
@@ -222,7 +220,7 @@
 
     move-object/from16 v3, p3
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -230,20 +228,21 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 4
     const/4 v5, 0x0
 
     const/4 v6, 0x0
@@ -272,7 +271,7 @@
 
     move/from16 v4, p4
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -280,24 +279,25 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 5
     const/4 v6, 0x0
 
     const/4 v7, 0x0
@@ -326,7 +326,7 @@
 
     move-object/from16 v5, p5
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -334,24 +334,25 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;I)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 6
     const/4 v7, 0x0
 
     const/4 v8, 0x0
@@ -380,7 +381,7 @@
 
     move/from16 v6, p6
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -388,28 +389,29 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p7    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 7
     const/4 v8, 0x0
 
     const/4 v9, 0x0
@@ -438,7 +440,7 @@
 
     move-object/from16 v7, p7
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -446,32 +448,33 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p7    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p8    # Ljava/lang/Integer;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 8
     const/4 v9, 0x0
 
     const/4 v10, 0x0
@@ -500,7 +503,7 @@
 
     move-object/from16 v8, p8
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -508,36 +511,37 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p7    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p8    # Ljava/lang/Integer;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p9    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
+    .annotation build Lo000oOoo/o000OO0O;
     .end annotation
 
+    .line 9
     const/4 v10, 0x0
 
     const/4 v11, 0x0
@@ -566,7 +570,7 @@
 
     move-object/from16 v9, p9
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -574,40 +578,37 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;)V
     .locals 14
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p7    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p8    # Ljava/lang/Integer;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p9    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p10    # Ljava/util/ArrayList;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -626,6 +627,10 @@
         }
     .end annotation
 
+    .annotation build Lo000oOoo/o000OO0O;
+    .end annotation
+
+    .line 10
     const/4 v11, 0x0
 
     const/16 v12, 0x400
@@ -654,7 +659,7 @@
 
     move-object/from16 v10, p10
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     return-void
 .end method
@@ -662,44 +667,41 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 1
     .param p1    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p7    # Ljava/lang/String;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p8    # Ljava/lang/Integer;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p9    # Ljava/lang/Boolean;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
     .param p10    # Ljava/util/ArrayList;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p11    # Ljava/util/ArrayList;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
-    .annotation build LOooO0o/o00ooOoO/o00000OO;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -721,27 +723,30 @@
         }
     .end annotation
 
+    .annotation build Lo000oOoo/o000OO0O;
+    .end annotation
+
     const-string v0, "path"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "name"
 
-    invoke-static {p2, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "nodeName"
 
-    invoke-static {p3, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "subAnimations"
+    const-string/jumbo v0, "subAnimations"
 
-    invoke-static {p10, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p10, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "subProps"
+    const-string/jumbo v0, "subProps"
 
-    invoke-static {p11, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p11, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 5
+    .line 15
     invoke-direct/range {p0 .. p9}, Lcom/faceunity/core/entity/FUAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;)V
 
     iput-object p10, p0, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subAnimations:Ljava/util/ArrayList;
@@ -751,7 +756,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
     .locals 11
 
     move/from16 v0, p12
@@ -760,7 +765,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1
+    .line 11
     sget-object v1, Lcom/faceunity/core/entity/FUBundleData;->Companion:Lcom/faceunity/core/entity/FUBundleData$Companion;
 
     move-object v2, p1
@@ -781,7 +786,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 2
+    .line 12
     sget-object v3, Lcom/faceunity/core/entity/FULogicNodeEnum;->DEFAULT:Lcom/faceunity/core/entity/FULogicNodeEnum;
 
     invoke-virtual {v3}, Lcom/faceunity/core/entity/FULogicNodeEnum;->getNodeName()Ljava/lang/String;
@@ -870,7 +875,7 @@
 
     if-eqz v10, :cond_8
 
-    .line 3
+    .line 13
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
@@ -885,7 +890,7 @@
 
     if-eqz v0, :cond_9
 
-    .line 4
+    .line 14
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -951,7 +956,7 @@
 
 .method public clone()Lcom/faceunity/core/entity/FUGroupAnimationBundleData;
     .locals 15
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 3
@@ -1003,7 +1008,7 @@
 
     move-object v0, v14
 
-    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILOooO0o/o00ooOoO/o000O00O/o0OOO0o;)V
+    invoke-direct/range {v0 .. v13}, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Boolean;ILjava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/util/ArrayList;Ljava/util/ArrayList;ILo000oo0/o0O0O00;)V
 
     .line 4
     iget-object v0, p0, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subAnimations:Ljava/util/ArrayList;
@@ -1076,9 +1081,6 @@
 
 .method public final getSubAnimations()Ljava/util/ArrayList;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1088,17 +1090,19 @@
         }
     .end annotation
 
+    .annotation build Lo00OOOo/OooOOOO;
+    .end annotation
+
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subAnimations:Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public final getSubProps()Ljava/util/ArrayList;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1108,22 +1112,28 @@
         }
     .end annotation
 
+    .annotation build Lo00OOOo/OooOOOO;
+    .end annotation
+
     .line 1
     iget-object p0, p0, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subProps:Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public isEqual(Lcom/faceunity/core/entity/FUAnimationBundleData;)Z
     .locals 0
     .param p1    # Lcom/faceunity/core/entity/FUAnimationBundleData;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string p0, "data"
 
-    invoke-static {p1, p0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -1133,15 +1143,15 @@
 .method public final isEqual(Lcom/faceunity/core/entity/FUGroupAnimationBundleData;)Z
     .locals 4
     .param p1    # Lcom/faceunity/core/entity/FUGroupAnimationBundleData;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
     const-string v0, "data"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 2
     invoke-virtual {p0}, Lcom/faceunity/core/entity/FUBundleData;->getPath()Ljava/lang/String;
 
     move-result-object v0
@@ -1150,7 +1160,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooO0oO(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lo000oo0/o0000O;->OooO0oO(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -1162,7 +1172,7 @@
 
     return v1
 
-    .line 2
+    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/faceunity/core/entity/FUAnimationBundleData;->getNodeName()Ljava/lang/String;
 
@@ -1172,7 +1182,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooO0oO(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lo000oo0/o0000O;->OooO0oO(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -1182,7 +1192,7 @@
 
     return v1
 
-    .line 3
+    .line 4
     :cond_1
     invoke-virtual {p0}, Lcom/faceunity/core/entity/FUAnimationBundleData;->getRepeatable()Z
 
@@ -1196,16 +1206,16 @@
 
     return v1
 
-    .line 4
+    .line 5
     :cond_2
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 5
+    .line 6
     iget-object v2, p0, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subAnimations:Ljava/util/ArrayList;
 
-    .line 6
+    .line 7
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1223,7 +1233,7 @@
 
     check-cast v3, Lcom/faceunity/core/entity/FUAnimationBundleData;
 
-    .line 7
+    .line 8
     invoke-virtual {v3}, Lcom/faceunity/core/entity/FUBundleData;->getPath()Ljava/lang/String;
 
     move-result-object v3
@@ -1232,11 +1242,11 @@
 
     goto :goto_0
 
-    .line 8
+    .line 9
     :cond_3
     iget-object p0, p0, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subProps:Ljava/util/ArrayList;
 
-    .line 9
+    .line 10
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -1254,7 +1264,7 @@
 
     check-cast v2, Lcom/faceunity/core/entity/FUBundleData;
 
-    .line 10
+    .line 11
     invoke-virtual {v2}, Lcom/faceunity/core/entity/FUBundleData;->getPath()Ljava/lang/String;
 
     move-result-object v2
@@ -1263,11 +1273,11 @@
 
     goto :goto_1
 
-    .line 11
+    .line 12
     :cond_4
     iget-object p0, p1, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subAnimations:Ljava/util/ArrayList;
 
-    .line 12
+    .line 13
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -1285,7 +1295,7 @@
 
     check-cast v2, Lcom/faceunity/core/entity/FUAnimationBundleData;
 
-    .line 13
+    .line 14
     invoke-virtual {v2}, Lcom/faceunity/core/entity/FUBundleData;->getPath()Ljava/lang/String;
 
     move-result-object v3
@@ -1296,7 +1306,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 14
+    .line 15
     invoke-virtual {v2}, Lcom/faceunity/core/entity/FUBundleData;->getPath()Ljava/lang/String;
 
     move-result-object v2
@@ -1308,11 +1318,11 @@
     :cond_5
     return v1
 
-    .line 15
+    .line 16
     :cond_6
     iget-object p0, p1, Lcom/faceunity/core/entity/FUGroupAnimationBundleData;->subProps:Ljava/util/ArrayList;
 
-    .line 16
+    .line 17
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -1330,7 +1340,7 @@
 
     check-cast p1, Lcom/faceunity/core/entity/FUBundleData;
 
-    .line 17
+    .line 18
     invoke-virtual {p1}, Lcom/faceunity/core/entity/FUBundleData;->getPath()Ljava/lang/String;
 
     move-result-object v2
@@ -1341,7 +1351,7 @@
 
     if-eqz v2, :cond_7
 
-    .line 18
+    .line 19
     invoke-virtual {p1}, Lcom/faceunity/core/entity/FUBundleData;->getPath()Ljava/lang/String;
 
     move-result-object p1
@@ -1353,7 +1363,7 @@
     :cond_7
     return v1
 
-    .line 19
+    .line 20
     :cond_8
     invoke-virtual {v0}, Ljava/util/HashSet;->isEmpty()Z
 

@@ -1,4 +1,4 @@
-.class public final Lcom/ot/pubsub/b/f;
+.class final Lcom/ot/pubsub/b/f;
 .super Ljava/lang/Object;
 
 # interfaces
@@ -12,6 +12,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -23,5 +26,8 @@
     .line 1
     invoke-static {}, Lcom/ot/pubsub/b/e;->b()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

@@ -32,21 +32,17 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "outPutPath"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/fragment/vv/VVListBiFunction;->outputPath:Ljava/lang/String;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -54,17 +50,6 @@
 # virtual methods
 .method public apply(Ljava/util/List;Lcom/android/camera/resource/BaseResourceRaw;)Lcom/android/camera/fragment/vv/VVList;
     .locals 12
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "baseResourceCloudItems",
-            "resourceRaw"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -245,7 +230,7 @@
 
     .line 20
     :try_start_2
-    invoke-virtual {v3}, Ljava/io/BufferedOutputStream;->close()V
+    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -297,7 +282,7 @@
 
     .line 24
     :try_start_4
-    invoke-virtual {v2}, Ljava/io/BufferedOutputStream;->close()V
+    invoke-virtual {v2}, Ljava/io/OutputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
@@ -317,17 +302,6 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "baseResourceCloudItems",
-            "resourceRaw"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

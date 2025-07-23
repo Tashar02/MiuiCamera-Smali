@@ -1,4 +1,4 @@
-.class public Landroidx/media/MediaSessionManagerImplApi28;
+.class Landroidx/media/MediaSessionManagerImplApi28;
 .super Landroidx/media/MediaSessionManagerImplApi21;
 .source "MediaSessionManagerImplApi28.java"
 
@@ -16,55 +16,71 @@
 
 
 # instance fields
-.field public mObject:Landroid/media/session/MediaSessionManager;
+.field mObject:Landroid/media/session/MediaSessionManager;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Landroidx/media/MediaSessionManagerImplApi21;-><init>(Landroid/content/Context;)V
 
-    const-string/jumbo v0, "media_session"
-
     .line 2
+    .line 3
+    .line 4
+    const-string v0, "media_session"
+
+    .line 5
+    .line 6
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object p1
 
+    .line 10
     check-cast p1, Landroid/media/session/MediaSessionManager;
 
+    .line 11
+    .line 12
     iput-object p1, p0, Landroidx/media/MediaSessionManagerImplApi28;->mObject:Landroid/media/session/MediaSessionManager;
 
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
 .method public isTrustedForMediaControl(Landroidx/media/MediaSessionManager$RemoteUserInfoImpl;)Z
-    .locals 1
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "userInfo"
+        }
+    .end annotation
 
     .line 1
-    instance-of v0, p1, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;
-
-    if-eqz v0, :cond_0
+    invoke-super {p0, p1}, Landroidx/media/MediaSessionManagerImplApi21;->isTrustedForMediaControl(Landroidx/media/MediaSessionManager$RemoteUserInfoImpl;)Z
 
     .line 2
-    iget-object p0, p0, Landroidx/media/MediaSessionManagerImplApi28;->mObject:Landroid/media/session/MediaSessionManager;
-
-    check-cast p1, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;
-
-    iget-object p1, p1, Landroidx/media/MediaSessionManagerImplApi28$RemoteUserInfoImplApi28;->mObject:Landroid/media/session/MediaSessionManager$RemoteUserInfo;
-
-    invoke-virtual {p0, p1}, Landroid/media/session/MediaSessionManager;->isTrustedForMediaControl(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)Z
-
+    .line 3
+    .line 4
     move-result p0
 
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
-
+    .line 5
     return p0
 .end method

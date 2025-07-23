@@ -13,6 +13,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -50,16 +53,16 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    new-array v1, v2, [Ljava/lang/Object;
 
-    new-array v2, v2, [Ljava/lang/Object;
+    aput-object p0, v1, v5
 
-    aput-object p0, v2, v5
+    aput-object p1, v1, v6
 
-    aput-object p1, v2, v6
+    const/4 p0, 0x0
 
     .line 8
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -141,16 +144,16 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    new-array v1, v3, [Ljava/lang/Object;
 
-    new-array v2, v3, [Ljava/lang/Object;
+    aput-object p0, v1, v5
 
-    aput-object p0, v2, v5
+    aput-object p1, v1, v6
 
-    aput-object p1, v2, v6
+    const/4 p0, 0x0
 
     .line 3
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 

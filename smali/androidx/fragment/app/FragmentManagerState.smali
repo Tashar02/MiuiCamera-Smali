@@ -1,4 +1,4 @@
-.class public final Landroidx/fragment/app/FragmentManagerState;
+.class final Landroidx/fragment/app/FragmentManagerState;
 .super Ljava/lang/Object;
 .source "FragmentManagerState.java"
 
@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public mActive:Ljava/util/ArrayList;
+.field mActive:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -37,7 +37,7 @@
     .end annotation
 .end field
 
-.field public mAdded:Ljava/util/ArrayList;
+.field mAdded:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -47,11 +47,11 @@
     .end annotation
 .end field
 
-.field public mBackStack:[Landroidx/fragment/app/BackStackState;
+.field mBackStack:[Landroidx/fragment/app/BackStackState;
 
-.field public mBackStackIndex:I
+.field mBackStackIndex:I
 
-.field public mLaunchedFragments:Ljava/util/ArrayList;
+.field mLaunchedFragments:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -61,9 +61,9 @@
     .end annotation
 .end field
 
-.field public mPrimaryNavActiveWho:Ljava/lang/String;
+.field mPrimaryNavActiveWho:Ljava/lang/String;
 
-.field public mResultKeys:Ljava/util/ArrayList;
+.field mResultKeys:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -73,7 +73,7 @@
     .end annotation
 .end field
 
-.field public mResults:Ljava/util/ArrayList;
+.field mResults:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -91,10 +91,17 @@
     .line 1
     new-instance v0, Landroidx/fragment/app/FragmentManagerState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/fragment/app/FragmentManagerState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/fragment/app/FragmentManagerState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -225,8 +232,10 @@
 .method public describeContents()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -236,42 +245,75 @@
     .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentManagerState;->mActive:Ljava/util/ArrayList;
 
+    .line 2
+    .line 3
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iget-object v0, p0, Landroidx/fragment/app/FragmentManagerState;->mAdded:Ljava/util/ArrayList;
 
+    .line 7
+    .line 8
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
-    .line 3
+    .line 9
+    .line 10
+    .line 11
     iget-object v0, p0, Landroidx/fragment/app/FragmentManagerState;->mBackStack:[Landroidx/fragment/app/BackStackState;
 
+    .line 12
+    .line 13
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeTypedArray([Landroid/os/Parcelable;I)V
 
-    .line 4
+    .line 14
+    .line 15
+    .line 16
     iget p2, p0, Landroidx/fragment/app/FragmentManagerState;->mBackStackIndex:I
 
+    .line 17
+    .line 18
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 5
+    .line 19
+    .line 20
+    .line 21
     iget-object p2, p0, Landroidx/fragment/app/FragmentManagerState;->mPrimaryNavActiveWho:Ljava/lang/String;
 
+    .line 22
+    .line 23
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 6
+    .line 24
+    .line 25
+    .line 26
     iget-object p2, p0, Landroidx/fragment/app/FragmentManagerState;->mResultKeys:Ljava/util/ArrayList;
 
+    .line 27
+    .line 28
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
-    .line 7
+    .line 29
+    .line 30
+    .line 31
     iget-object p2, p0, Landroidx/fragment/app/FragmentManagerState;->mResults:Ljava/util/ArrayList;
 
+    .line 32
+    .line 33
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
-    .line 8
+    .line 34
+    .line 35
+    .line 36
     iget-object p0, p0, Landroidx/fragment/app/FragmentManagerState;->mLaunchedFragments:Ljava/util/ArrayList;
 
+    .line 37
+    .line 38
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
+    .line 39
+    .line 40
+    .line 41
     return-void
 .end method

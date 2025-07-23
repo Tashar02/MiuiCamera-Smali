@@ -1,2 +1,2 @@
-.class public synthetic Lcom/ot/pubsub/h/b;
+.class synthetic Lcom/ot/pubsub/h/b;
 .super Ljava/lang/Object;

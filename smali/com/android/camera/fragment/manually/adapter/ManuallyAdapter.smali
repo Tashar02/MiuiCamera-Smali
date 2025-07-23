@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field public mComponentDataList:Ljava/util/List;
+.field protected mComponentDataList:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -24,15 +24,15 @@
     .end annotation
 .end field
 
-.field public mCurrentMode:I
+.field protected mCurrentMode:I
 
-.field public mDegree:F
+.field protected mDegree:F
 
-.field public mItemWidth:I
+.field protected mItemWidth:I
 
-.field public mOnClickListener:Landroid/view/View$OnClickListener;
+.field protected mOnClickListener:Landroid/view/View$OnClickListener;
 
-.field public mSelectedTitle:I
+.field protected mSelectedTitle:I
     .annotation build Landroidx/annotation/StringRes;
     .end annotation
 .end field
@@ -41,21 +41,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/view/View$OnClickListener;Ljava/util/List;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "currentMode",
-            "onClickListener",
-            "componentDataList",
-            "itemWidth"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -70,17 +55,24 @@
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mCurrentMode:I
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    .line 4
+    .line 7
+    .line 8
     iput-object p3, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mComponentDataList:Ljava/util/List;
 
-    .line 5
+    .line 9
+    .line 10
     iput p4, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mItemWidth:I
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -92,10 +84,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mComponentDataList:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -105,21 +103,13 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mSelectedTitle:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -131,16 +121,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
     .locals 10
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     iget-object v0, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mComponentDataList:Ljava/util/List;
@@ -170,7 +150,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setRotation(F)V
 
-    const v0, 0x7f0a033b
+    const v0, 0x7f0b0373
 
     .line 6
     invoke-virtual {p1, v0}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -179,7 +159,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0a033c
+    const v1, 0x7f0b0374
 
     .line 7
     invoke-virtual {p1, v1}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -188,7 +168,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a033d
+    const v2, 0x7f0b0375
 
     .line 8
     invoke-virtual {p1, v2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -244,7 +224,7 @@
     invoke-virtual {p1, v7}, Landroid/view/View;->setEnabled(Z)V
 
     .line 15
-    invoke-virtual {v1, v7}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 16
     iget p0, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mCurrentMode:I
@@ -270,13 +250,13 @@
     invoke-virtual {v2, v8}, Lcom/android/camera/ui/ColorImageView;->setColor(I)V
 
     .line 21
-    invoke-virtual {v0, v6}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v0, v6}, Landroid/view/View;->setAlpha(F)V
 
     .line 22
-    invoke-virtual {v1, v6}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v1, v6}, Landroid/view/View;->setAlpha(F)V
 
     .line 23
-    invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v2, v6}, Landroid/view/View;->setAlpha(F)V
 
     return-void
 
@@ -341,13 +321,13 @@
     invoke-virtual {v3, v8}, Lcom/android/camera/ui/ColorImageView;->setColor(I)V
 
     .line 32
-    invoke-virtual {v0, v6}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v0, v6}, Landroid/view/View;->setAlpha(F)V
 
     .line 33
-    invoke-virtual {v1, v6}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v1, v6}, Landroid/view/View;->setAlpha(F)V
 
     .line 34
-    invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v3, v6}, Landroid/view/View;->setAlpha(F)V
 
     goto :goto_2
 
@@ -368,13 +348,13 @@
     const/high16 v3, 0x3f800000    # 1.0f
 
     .line 38
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v0, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 39
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setAlpha(F)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 40
-    invoke-virtual {v4, v3}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v4, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 41
     :goto_2
@@ -426,7 +406,7 @@
     if-nez v6, :cond_7
 
     .line 46
-    invoke-virtual {v1, v7}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 47
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -442,7 +422,7 @@
 
     move-result v3
 
-    const v6, 0x7f1208d3
+    const v6, 0x7f13090e
 
     if-ne v3, v6, :cond_8
 
@@ -481,7 +461,7 @@
 
     .line 54
     :goto_4
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 55
     iget v3, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mCurrentMode:I
@@ -508,13 +488,13 @@
     if-eq p0, v8, :cond_a
 
     .line 58
-    invoke-virtual {v2, p0}, Landroid/widget/ImageView;->setBackgroundResource(I)V
+    invoke-virtual {v2, p0}, Landroid/view/View;->setBackgroundResource(I)V
 
     goto :goto_5
 
     .line 59
     :cond_a
-    invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v2, v4}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 60
     :goto_5
@@ -580,7 +560,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f12008d
+    const v0, 0x7f13008d
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -600,16 +580,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -621,19 +591,9 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -641,7 +601,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0d00bb
+    const v0, 0x7f0e00c5
 
     const/4 v1, 0x0
 
@@ -672,20 +632,15 @@
 
 .method public setRotate(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
-
-    int-to-float p1, p1
 
     .line 1
+    int-to-float p1, p1
+
+    .line 2
     iput p1, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mDegree:F
 
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -695,17 +650,11 @@
         .annotation build Landroidx/annotation/StringRes;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "selectedTitle"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/manually/adapter/ManuallyAdapter;->mSelectedTitle:I
 
+    .line 2
+    .line 3
     return-void
 .end method

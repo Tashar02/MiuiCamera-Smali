@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/mode/ModeAdapter$2;
+.class Lcom/android/camera/fragment/mode/ModeAdapter$2;
 .super Lmiuix/animation/listener/TransitionListener;
 .source "ModeAdapter.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/mode/ModeAdapter;
+.field final synthetic this$0:Lcom/android/camera/fragment/mode/ModeAdapter;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/mode/ModeAdapter;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/mode/ModeAdapter$2;->this$0:Lcom/android/camera/fragment/mode/ModeAdapter;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Lmiuix/animation/listener/TransitionListener;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,24 +39,24 @@
 # virtual methods
 .method public onComplete(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "toTag"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Lmiuix/animation/listener/TransitionListener;->onComplete(Ljava/lang/Object;)V
 
     .line 2
+    .line 3
+    .line 4
     iget-object p0, p0, Lcom/android/camera/fragment/mode/ModeAdapter$2;->this$0:Lcom/android/camera/fragment/mode/ModeAdapter;
 
+    .line 5
+    .line 6
     const/4 p1, 0x1
 
+    .line 7
     invoke-static {p0, p1}, Lcom/android/camera/fragment/mode/ModeAdapter;->access$002(Lcom/android/camera/fragment/mode/ModeAdapter;Z)Z
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

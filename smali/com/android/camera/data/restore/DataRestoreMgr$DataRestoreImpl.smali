@@ -18,25 +18,22 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/data/restore/DataRestoreMgr;
+.field final synthetic this$0:Lcom/android/camera/data/restore/DataRestoreMgr;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/data/restore/DataRestoreMgr;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/data/restore/DataRestoreMgr$DataRestoreImpl;->this$0:Lcom/android/camera/data/restore/DataRestoreMgr;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

@@ -13,6 +13,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -21,35 +24,41 @@
 .method public onBufferingUpdateMainThread(I)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onErrorMainThread(II)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onVideoCompletionMainThread()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onVideoPreparedMainThread()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onVideoSizeChangedMainThread(II)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onVideoStoppedMainThread()V
     .locals 0
 
+    .line 1
     return-void
 .end method

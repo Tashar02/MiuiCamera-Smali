@@ -16,14 +16,4 @@
 
 # virtual methods
 .method public abstract onCheckedChanged(Lcom/android/camera/ui/ToggleSwitch;Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "s",
-            "isChecked"
-        }
-    .end annotation
 .end method

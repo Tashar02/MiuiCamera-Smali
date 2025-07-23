@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/load/model/UnitModelLoader$UnitFetcher;
+.class Lcom/bumptech/glide/load/model/UnitModelLoader$UnitFetcher;
 .super Ljava/lang/Object;
 .source "UnitModelLoader.java"
 
@@ -51,8 +51,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/model/UnitModelLoader$UnitFetcher;->resource:Ljava/lang/Object;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -61,12 +65,14 @@
 .method public cancel()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public cleanup()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -86,10 +92,16 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/model/UnitModelLoader$UnitFetcher;->resource:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -101,6 +113,8 @@
     .line 1
     sget-object p0, Lcom/bumptech/glide/load/DataSource;->LOCAL:Lcom/bumptech/glide/load/DataSource;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -126,7 +140,12 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/model/UnitModelLoader$UnitFetcher;->resource:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     invoke-interface {p2, p0}, Lcom/bumptech/glide/load/data/DataFetcher$DataCallback;->onDataReady(Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

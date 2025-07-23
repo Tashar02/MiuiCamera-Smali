@@ -664,6 +664,7 @@
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">ನಿಮ್ಮ ಡಿವೈಸ್‌ ವೈ-ಫೈಗೆ ಕನೆಕ್ಟ್‌ ಆದಂತೆ ಕಾಣಿಸುತ್ತಿಲ್ಲ. ಐಟಂಗಳನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡಲು %1$s MB ಯಷ್ಟು ಮೊಬೈಲ್‌ ಡೇಟಾ ಬಳಸಬೇಕೇ?</string>
     <string name="download_in_progress">ಡೌನ್‌ಲೋಡ್‌ ಆಗುತ್ತಿದೆ…</string>
+    <string name="download_network_error">ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿಲ್ಲ. ನೆಟ್‌ವರ್ಕ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.</string>
     <string name="download_title">ಡೇಟಾ ಬಳಕೆ ಎಚ್ಚರಿಕೆ</string>
     <string name="download_waiting">ಬಾಕಿ…</string>
     <string name="dual_camera_lens_covered_toast">ಲೆನ್ಸ್ ಕವರ್ ಆಗಿದೆ.</string>
@@ -1478,6 +1479,7 @@
     <string name="pref_camera_peak_entry_off">ಆಫ್‌</string>
     <string name="pref_camera_peak_entry_on">ಆ‌ನ್‌</string>
     <string name="pref_camera_peak_title">ಫೋಕಸ್ ಪೀಕಿಂಗ್‌</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">ಪೂರ್ಣಗೊಂಡಿದೆ</string>
     <string name="pref_camera_picturesize_title_simple_mode">ಕ್ಯಾಮರಾ ಫ್ರೇಮ್</string>
     <string name="pref_camera_portrait_mode_entry_off">ಪೋರ್ಟೇಟ್‌ ಮೋಡ್‌ ಆಫ್‌ ಆಗಿದೆ</string>
     <string name="pref_camera_portrait_mode_entry_on">ಪೋರ್ಟೇಟ್‌ ಮೋಡ್‌ ಆನ್‌‍ ಆಗಿದೆ</string>
@@ -1608,7 +1610,7 @@
     <string name="pref_dual_camera_video">ಡ್ಯುಯಲ್ ವೀಡಿಯೊ</string>
     <string name="pref_e_c_t_j">ಒರಿಜಿನಲ್‌ ಸೌಂಡ್‌</string>
     <string name="pref_e_p_k">ಬಾಹ್ಯ ಮೈಕ್‌</string>
-    <string name="pref_e_p_s_n">ಮೈಕ್‌ ಇರುವ ಬ್ಲೂಟೂತ್‌ ಇಯರ್‌ಫೋನ್‌ಗಳನ್ನು ಸಂಪರ್ಕಗೊಳಿಸಿರುವಾಗ ಬಾಹ್ಯ ಮೈಕ್ರೋಫೋನ್‌ ಬಳಸಿಕೊಂಡು ಸೌಂಡ್‌ ರೆಕಾರ್ಡ್‌ ಮಾಡಿ</string>
+    <string name="pref_e_p_s_n">ಮೈಕ್‌ ಇರುವ ಬ್ಲೂಟೂತ್‌ ಇಯರ್‌ಫೋನ್‌ಗಳನ್ನು ಕನೆಕ್ಟ್‌ ಮಾಡಿದಾಗ ಬಾಹ್ಯ ಮೈಕ್ರೋಫೋನ್‌ ಬಳಸಿಕೊಂಡು ಸೌಂಡ್‌ ರೆಕಾರ್ಡ್‌ ಮಾಡಿ</string>
     <string name="pref_face_beauty_title">ಬ್ಯೂಟಿಫೈ</string>
     <string name="pref_fingerprint_capture_title">ಬೆರಳಚ್ಚು ಶಟರ್</string>
     <string name="pref_focus_view_bg_tip">AE/AF ಲಾಕ್‌ ಆಗಿದೆ</string>

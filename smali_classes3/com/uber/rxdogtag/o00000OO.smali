@@ -1,36 +1,56 @@
 .class public final synthetic Lcom/uber/rxdogtag/o00000OO;
 .super Ljava/lang/Object;
-.source "lambda"
+.source "R8$$SyntheticClass"
 
 # interfaces
-.implements Lcom/uber/rxdogtag/RxDogTag$NonCheckingConsumer;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic OooO00o:Lcom/uber/rxdogtag/DogTagSubscriber;
+.field public final synthetic o0000o:Lcom/uber/rxdogtag/DogTagSubscriber;
+
+.field public final synthetic o0000oO0:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagSubscriber;)V
+.method public synthetic constructor <init>(Lcom/uber/rxdogtag/DogTagSubscriber;Ljava/lang/Object;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/uber/rxdogtag/o00000OO;->OooO00o:Lcom/uber/rxdogtag/DogTagSubscriber;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/uber/rxdogtag/o00000OO;->o0000o:Lcom/uber/rxdogtag/DogTagSubscriber;
 
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/uber/rxdogtag/o00000OO;->o0000oO0:Ljava/lang/Object;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 0
+.method public final run()V
+    .locals 1
 
-    iget-object p0, p0, Lcom/uber/rxdogtag/o00000OO;->OooO00o:Lcom/uber/rxdogtag/DogTagSubscriber;
+    .line 1
+    iget-object v0, p0, Lcom/uber/rxdogtag/o00000OO;->o0000o:Lcom/uber/rxdogtag/DogTagSubscriber;
 
-    check-cast p1, Ljava/lang/Throwable;
+    .line 2
+    .line 3
+    iget-object p0, p0, Lcom/uber/rxdogtag/o00000OO;->o0000oO0:Ljava/lang/Object;
 
-    invoke-virtual {p0, p1}, Lcom/uber/rxdogtag/DogTagSubscriber;->OooO0O0(Ljava/lang/Throwable;)V
+    .line 4
+    .line 5
+    invoke-static {v0, p0}, Lcom/uber/rxdogtag/DogTagSubscriber;->OooO0OO(Lcom/uber/rxdogtag/DogTagSubscriber;Ljava/lang/Object;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

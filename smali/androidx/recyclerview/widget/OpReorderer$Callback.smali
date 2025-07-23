@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/recyclerview/widget/OpReorderer$Callback;
+.class interface abstract Landroidx/recyclerview/widget/OpReorderer$Callback;
 .super Ljava/lang/Object;
 .source "OpReorderer.java"
 

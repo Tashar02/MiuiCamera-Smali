@@ -20,47 +20,75 @@
 .method public static constructor <clinit>()V
     .locals 3
 
+    .line 1
     const-string v0, "AES"
 
-    .line 1
+    .line 2
+    .line 3
     invoke-static {}, Lcom/ot/pubsub/c/a;->b()Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v1
 
+    .line 7
     sput-object v1, Lcom/ot/pubsub/c/a;->a:Ljava/lang/String;
 
-    .line 2
+    .line 8
+    .line 9
     invoke-static {}, Lcom/ot/pubsub/c/a;->c()Ljava/lang/String;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v1
 
+    .line 13
     sput-object v1, Lcom/ot/pubsub/c/a;->b:Ljava/lang/String;
 
-    .line 3
+    .line 14
+    .line 15
     :try_start_0
     invoke-static {v0}, Ljavax/crypto/KeyGenerator;->getInstance(Ljava/lang/String;)Ljavax/crypto/KeyGenerator;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object v1
 
+    .line 19
     sput-object v1, Lcom/ot/pubsub/c/a;->f:Ljavax/crypto/KeyGenerator;
 
+    .line 20
+    .line 21
     const/16 v2, 0x80
 
-    .line 4
+    .line 22
+    .line 23
     invoke-virtual {v1, v2}, Ljavax/crypto/KeyGenerator;->init(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 24
+    .line 25
+    .line 26
     goto :goto_0
 
+    .line 27
     :catch_0
     move-exception v1
 
+    .line 28
     const-string v2, "AesUtil e"
 
-    .line 5
+    .line 29
+    .line 30
     invoke-static {v0, v2, v1}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 31
+    .line 32
+    .line 33
     :goto_0
     return-void
 .end method
@@ -71,27 +99,28 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 6
-
-    const-string v0, ""
+    .locals 5
 
     .line 14
     :try_start_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget-object p0, Lcom/ot/pubsub/c/b;->a:Ljava/lang/String;
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -100,77 +129,74 @@
 
     move-result-object p0
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    move v2, v1
+    move v1, v0
 
     .line 16
     :goto_0
-    array-length v3, p0
+    array-length v2, p0
 
-    if-ge v2, v3, :cond_2
+    if-ge v1, v2, :cond_2
 
-    move v3, v1
+    move v2, v0
 
     .line 17
     :goto_1
-    array-length v4, p0
+    array-length v3, p0
 
-    add-int/lit8 v4, v4, -0x1
+    add-int/lit8 v3, v3, -0x1
 
-    if-ge v3, v4, :cond_1
+    if-ge v2, v3, :cond_1
 
     .line 18
+    aget-char v3, p0, v1
+
     aget-char v4, p0, v2
 
-    aget-char v5, p0, v3
-
-    if-ge v4, v5, :cond_0
+    if-ge v3, v4, :cond_0
 
     .line 19
-    aget-char v4, p0, v2
+    aput-char v4, p0, v1
 
     .line 20
-    aget-char v5, p0, v3
-
-    aput-char v5, p0, v2
-
-    .line 21
-    aput-char v4, p0, v3
+    aput-char v3, p0, v2
 
     :cond_0
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
     :cond_1
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 22
+    .line 21
     :cond_2
-    new-instance v1, Ljava/lang/String;
+    new-instance v0, Ljava/lang/String;
 
-    invoke-direct {v1, p0}, Ljava/lang/String;-><init>([C)V
+    invoke-direct {v0, p0}, Ljava/lang/String;-><init>([C)V
 
-    invoke-static {v1}, Lcom/ot/pubsub/c/d;->h(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/ot/pubsub/c/d;->h(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_2
 
-    .line 23
+    .line 22
     :catch_0
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "encodeFromSalt "
+    const-string v0, "encodeFromSalt "
 
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ""
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -182,8 +208,10 @@
 
     invoke-static {v1, p0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
+    move-object p0, v0
+
     :goto_2
-    return-object v0
+    return-object p0
 .end method
 
 .method public static a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -211,7 +239,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljavax/crypto/SecretKey;->getEncoded()[B
+    invoke-interface {v0}, Ljava/security/Key;->getEncoded()[B
 
     move-result-object v0
 
@@ -338,12 +366,12 @@
     :catch_0
     move-exception v0
 
+    const-string v1, "AES"
+
     .line 11
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
-
-    const-string v1, "AES"
 
     invoke-static {v1, v0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -505,12 +533,12 @@
     :catch_0
     move-exception v0
 
+    const-string v1, "AES"
+
     .line 11
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
-
-    const-string v1, "AES"
 
     invoke-static {v1, v0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -663,22 +691,36 @@
 .method public static d(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
+    .line 1
     const/16 v0, 0xa
 
-    .line 1
+    .line 2
+    .line 3
     invoke-static {p0, v0}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-static {p0, p1}, Lcom/ot/pubsub/c/a;->a([BLjava/lang/String;)[B
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
-    .line 2
+    .line 11
     new-instance p1, Ljava/lang/String;
 
+    .line 12
+    .line 13
     invoke-direct {p1, p0}, Ljava/lang/String;-><init>([B)V
 
+    .line 14
+    .line 15
+    .line 16
     return-object p1
 .end method
 
@@ -688,15 +730,27 @@
     .line 1
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p1
 
+    .line 9
     invoke-static {p0, p1}, Lcom/ot/pubsub/c/a;->a([B[B)[B
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object p0
 
+    .line 13
     return-object p0
 .end method

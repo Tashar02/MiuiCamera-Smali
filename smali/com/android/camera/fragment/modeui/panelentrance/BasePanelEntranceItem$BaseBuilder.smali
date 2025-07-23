@@ -48,31 +48,24 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "key"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, -0x1
-
     .line 2
-    iput v0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mKey:I
-
+    .line 3
+    .line 4
     const/4 v0, 0x1
 
-    .line 3
+    .line 5
     iput-boolean v0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mSupportRotation:Z
 
-    .line 4
+    .line 6
+    .line 7
     iput p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mKey:I
 
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -82,6 +75,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mSupportedCallback:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$SupportedCallback;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -91,6 +86,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mOnClickListener:Landroid/view/View$OnClickListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -100,6 +97,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mKey:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -109,6 +108,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mRes:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -118,6 +119,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mBgUpdater:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BackgroundUpdater;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -127,6 +130,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mDesc:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -136,6 +141,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mData:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -145,6 +152,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mIsActivated:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -154,6 +163,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mSupportRotation:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -163,6 +174,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mHideSelf:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -174,22 +187,18 @@
     .line 1
     new-instance v0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p0}, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;-><init>(Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object v0
 .end method
 
 .method public setActivated(Z)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "activated"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)TT;"
@@ -199,20 +208,13 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mIsActivated:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setBgUpdater(Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BackgroundUpdater;)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "bgUpdater"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -224,20 +226,13 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mBgUpdater:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BackgroundUpdater;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setData(Ljava/lang/Object;)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "data"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -249,20 +244,13 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mData:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setDesc(I)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "desc"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
@@ -272,20 +260,13 @@
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mDesc:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setHideSelf(Z)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "hideSelf"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)TT;"
@@ -295,20 +276,13 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mHideSelf:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "onClickListener"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -320,20 +294,13 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mOnClickListener:Landroid/view/View$OnClickListener;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setRes(I)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "res"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
@@ -343,20 +310,13 @@
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mRes:I
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setSupportRotation(Z)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "supportRotation"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)TT;"
@@ -366,20 +326,13 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mSupportRotation:Z
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public setSupportedCallback(Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$SupportedCallback;)Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "supportedCallback"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -391,5 +344,7 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$BaseBuilder;->mSupportedCallback:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem$SupportedCallback;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

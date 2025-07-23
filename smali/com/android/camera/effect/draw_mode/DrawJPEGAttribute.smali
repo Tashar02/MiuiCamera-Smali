@@ -79,260 +79,184 @@
 
 # direct methods
 .method public constructor <init>([BZIIIIIIZLcom/android/camera/effect/EffectController$EffectRectAttribute;Landroid/location/Location;Ljava/lang/String;JIIFZLjava/lang/String;ZLcom/xiaomi/camera/core/PictureInfo;ZZLjava/lang/String;ZZLcom/android/camera/effect/renders/DeviceWatermarkParam;ZIIILjava/lang/String;)V
-    .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "data",
-            "needThumbnail",
-            "previewW",
-            "previewH",
-            "w",
-            "h",
-            "effectIndex",
-            "effectCvIndex",
-            "isNeedDark",
-            "attribute",
-            "loc",
-            "title",
-            "date",
-            "orientation",
-            "jpegOrientation",
-            "shootRotation",
-            "mirror",
-            "algorithmName",
-            "applyWaterMark",
-            "info",
-            "deviceWatermark",
-            "isUltraPixelWatermark",
-            "timeWatermark",
-            "hasDualWaterMark",
-            "hasFrontWaterMark",
-            "deviceWatermarkParam",
-            "isPortraitRawData",
-            "requestModuleIdx",
-            "previewThumbnailHash",
-            "uiStyle",
-            "tiltShiftMode"
-        }
-    .end annotation
+    .locals 3
 
     move-object v0, p0
 
     .line 1
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawAttribute;-><init>()V
 
-    const/4 v1, 0x1
+    move v1, p3
 
     .line 2
-    iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mApplyWaterMark:Z
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mPreviewWidth:I
 
-    const/4 v2, 0x0
+    move v1, p4
 
     .line 3
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mUiStyle:I
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mPreviewHeight:I
 
-    move v2, p3
+    move v1, p5
 
     .line 4
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mPreviewWidth:I
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mWidth:I
 
-    move v2, p4
+    move v1, p6
 
     .line 5
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mPreviewHeight:I
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mHeight:I
 
-    move v2, p5
+    move-object v1, p1
 
     .line 6
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mWidth:I
+    iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mData:[B
 
-    move v2, p6
+    move v1, p2
 
     .line 7
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mHeight:I
+    iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mNeedThumbnail:Z
 
-    move-object v2, p1
+    move-wide/from16 v1, p13
 
     .line 8
-    iput-object v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mData:[B
+    iput-wide v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mDate:J
 
-    move v2, p2
+    move v1, p7
 
     .line 9
-    iput-boolean v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mNeedThumbnail:Z
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mEffectIndex:I
 
-    move-wide/from16 v2, p13
+    move v1, p8
 
     .line 10
-    iput-wide v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mDate:J
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mEffectCvIndex:I
 
-    move v2, p7
+    move v1, p9
 
     .line 11
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mEffectIndex:I
+    iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mIsNeedDrak:Z
 
-    move v2, p8
+    move-object v1, p10
 
     .line 12
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mEffectCvIndex:I
+    iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mAttribute:Lcom/android/camera/effect/EffectController$EffectRectAttribute;
 
-    move v2, p9
+    move-object v1, p11
 
     .line 13
-    iput-boolean v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mIsNeedDrak:Z
+    iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mLoc:Landroid/location/Location;
 
-    move-object v2, p10
+    move-object v1, p12
 
     .line 14
-    iput-object v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mAttribute:Lcom/android/camera/effect/EffectController$EffectRectAttribute;
+    iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mTitle:Ljava/lang/String;
 
-    move-object v2, p11
+    move/from16 v1, p15
 
     .line 15
-    iput-object v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mLoc:Landroid/location/Location;
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mOrientation:I
 
-    move-object/from16 v2, p12
+    move/from16 v1, p16
 
     .line 16
-    iput-object v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mTitle:Ljava/lang/String;
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mJpegOrientation:I
 
-    move/from16 v2, p15
+    move/from16 v1, p17
 
     .line 17
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mOrientation:I
+    iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mShootRotation:F
 
-    move/from16 v2, p16
+    move/from16 v1, p18
 
     .line 18
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mJpegOrientation:I
+    iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mMirror:Z
 
-    move/from16 v2, p17
+    const/4 v1, 0x1
 
     .line 19
-    iput v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mShootRotation:F
-
-    move/from16 v2, p18
-
-    .line 20
-    iput-boolean v2, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mMirror:Z
-
-    .line 21
     iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mFinalImage:Z
 
     move-object/from16 v1, p19
 
-    .line 22
+    .line 20
     iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mAlgorithmName:Ljava/lang/String;
 
     move/from16 v1, p20
 
-    .line 23
+    .line 21
     iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mApplyWaterMark:Z
 
     move-object/from16 v1, p21
 
-    .line 24
+    .line 22
     iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mInfo:Lcom/xiaomi/camera/core/PictureInfo;
 
     move/from16 v1, p22
 
-    .line 25
+    .line 23
     iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mDeviceWaterMarkEnabled:Z
 
     move/from16 v1, p23
 
-    .line 26
+    .line 24
     iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mIsUltraPixelWatermarkEnabled:Z
 
     move-object/from16 v1, p24
 
-    .line 27
+    .line 25
     iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mTimeWaterMarkText:Ljava/lang/String;
 
     move/from16 v1, p25
 
-    .line 28
+    .line 26
     iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mHasDualWaterMark:Z
 
     move/from16 v1, p26
 
-    .line 29
+    .line 27
     iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mHasFrontWaterMark:Z
 
     move-object/from16 v1, p27
 
-    .line 30
+    .line 28
     iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mDeviceWatermarkParam:Lcom/android/camera/effect/renders/DeviceWatermarkParam;
 
     move/from16 v1, p28
 
-    .line 31
+    .line 29
     iput-boolean v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mIsPortraitRawData:Z
 
     const/16 v1, 0x9
 
-    .line 32
+    .line 30
     iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawAttribute;->mTarget:I
 
     move/from16 v1, p29
 
-    .line 33
+    .line 31
     iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mRequestModuleIdx:I
 
     move/from16 v1, p30
 
-    .line 34
+    .line 32
     iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mPreviewThumbnailHash:I
 
     const/4 v1, 0x0
 
-    .line 35
+    .line 33
     iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mDataOfTheRegionUnderWatermarks:[B
 
-    .line 36
+    .line 34
     iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mCoordinatesOfTheRegionUnderWatermarks:[I
 
     move/from16 v1, p31
 
-    .line 37
+    .line 35
     iput v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mUiStyle:I
 
     move-object/from16 v1, p32
 
-    .line 38
+    .line 36
     iput-object v1, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mTiltShiftMode:Ljava/lang/String;
 
     return-void
@@ -351,5 +275,8 @@
     .line 1
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

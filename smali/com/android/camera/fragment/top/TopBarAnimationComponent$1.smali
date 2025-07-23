@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/top/TopBarAnimationComponent$1;
+.class Lcom/android/camera/fragment/top/TopBarAnimationComponent$1;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "TopBarAnimationComponent.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/top/TopBarAnimationComponent;
+.field final synthetic this$0:Lcom/android/camera/fragment/top/TopBarAnimationComponent;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/top/TopBarAnimationComponent;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/top/TopBarAnimationComponent$1;->this$0:Lcom/android/camera/fragment/top/TopBarAnimationComponent;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,15 +42,7 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animation"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method
 
@@ -62,14 +51,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "animation"
-        }
-    .end annotation
-
+    .line 1
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/zxing/decoders/CacheImageDecoder$3;
+.class Lcom/android/zxing/decoders/CacheImageDecoder$3;
 .super Ljava/lang/Object;
 .source "CacheImageDecoder.java"
 
@@ -27,26 +27,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
+.field final synthetic this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/zxing/decoders/CacheImageDecoder;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/zxing/decoders/CacheImageDecoder$3;->this$0:Lcom/android/zxing/decoders/CacheImageDecoder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -55,15 +52,6 @@
 .method public bridge synthetic accept(Ljava/lang/Object;)V
     .locals 0
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "throwable"
-        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Throws;
@@ -83,15 +71,6 @@
 .method public accept(Ljava/lang/Throwable;)V
     .locals 1
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "throwable"
-        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Throws;

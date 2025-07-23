@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/core/motion/utils/SplineSet$CoreSpline;
+.class Landroidx/constraintlayout/core/motion/utils/SplineSet$CoreSpline;
 .super Landroidx/constraintlayout/core/motion/utils/SplineSet;
 .source "SplineSet.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public start:J
+.field start:J
 
-.field public type:Ljava/lang/String;
+.field type:Ljava/lang/String;
 
 
 # direct methods
@@ -28,11 +28,16 @@
     invoke-direct {p0}, Landroidx/constraintlayout/core/motion/utils/SplineSet;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/constraintlayout/core/motion/utils/SplineSet$CoreSpline;->type:Ljava/lang/String;
 
-    .line 3
+    .line 5
+    .line 6
     iput-wide p2, p0, Landroidx/constraintlayout/core/motion/utils/SplineSet$CoreSpline;->start:J
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -44,16 +49,28 @@
     .line 1
     iget-object v0, p0, Landroidx/constraintlayout/core/motion/utils/SplineSet$CoreSpline;->type:Ljava/lang/String;
 
+    .line 2
+    .line 3
     invoke-interface {p1, v0}, Landroidx/constraintlayout/core/motion/utils/TypedValues;->getId(Ljava/lang/String;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
-    .line 2
+    .line 7
     invoke-virtual {p0, p2}, Landroidx/constraintlayout/core/motion/utils/SplineSet;->get(F)F
 
+    .line 8
+    .line 9
+    .line 10
     move-result p0
 
+    .line 11
     invoke-interface {p1, v0, p0}, Landroidx/constraintlayout/core/motion/utils/TypedValues;->setValue(IF)Z
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/ot/pubsub/util/oaid/helpers/g$a;
+.class Lcom/ot/pubsub/util/oaid/helpers/g$a;
 .super Ljava/lang/Object;
 
 
@@ -14,13 +14,13 @@
 
 
 # instance fields
-.field public a:Ljava/lang/Object;
+.field a:Ljava/lang/Object;
 
-.field public b:Ljava/lang/reflect/Method;
+.field b:Ljava/lang/reflect/Method;
 
-.field public c:[Ljava/lang/Object;
+.field c:[Ljava/lang/Object;
 
-.field public final synthetic d:Lcom/ot/pubsub/util/oaid/helpers/g;
+.field final synthetic d:Lcom/ot/pubsub/util/oaid/helpers/g;
 
 
 # direct methods
@@ -30,16 +30,24 @@
     .line 1
     iput-object p1, p0, Lcom/ot/pubsub/util/oaid/helpers/g$a;->d:Lcom/ot/pubsub/util/oaid/helpers/g;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
+    .line 4
+    .line 5
+    .line 6
     iput-object p2, p0, Lcom/ot/pubsub/util/oaid/helpers/g$a;->a:Ljava/lang/Object;
 
-    .line 3
+    .line 7
+    .line 8
     iput-object p3, p0, Lcom/ot/pubsub/util/oaid/helpers/g$a;->b:Ljava/lang/reflect/Method;
 
-    .line 4
+    .line 9
+    .line 10
     iput-object p4, p0, Lcom/ot/pubsub/util/oaid/helpers/g$a;->c:[Ljava/lang/Object;
 
+    .line 11
+    .line 12
     return-void
 .end method

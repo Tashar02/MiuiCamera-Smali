@@ -42,23 +42,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "r",
-            "mvpTransform",
-            "textureTransform",
-            "isSnapshot"
-        }
-    .end annotation
-
     .line 4
     invoke-direct {p0}, Lcom/android/camera/effect/draw_mode/DrawAttribute;-><init>()V
 
@@ -96,28 +79,6 @@
 # virtual methods
 .method public init(IIIII[F[FZ)Lcom/android/camera/effect/draw_mode/DrawTransformAttribute;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "left",
-            "top",
-            "right",
-            "bottom",
-            "mvpTransform",
-            "textureTransform",
-            "isSnapshot"
-        }
-    .end annotation
 
     .line 7
     iget-object v0, p0, Lcom/android/camera/effect/draw_mode/DrawTransformAttribute;->mDrawRect:Landroid/graphics/Rect;
@@ -147,23 +108,6 @@
 .method public init(ILandroid/graphics/Rect;[F[FZ)Lcom/android/camera/effect/draw_mode/DrawTransformAttribute;
     .locals 1
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "texId",
-            "r",
-            "mvpTransform",
-            "textureTransform",
-            "isSnapshot"
-        }
     .end annotation
 
     .line 1

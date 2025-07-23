@@ -4,47 +4,35 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+.annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010\u0007\n\u0002\u0008\r\u0008f\u0018\u00002\u00020\u0001J\u0011\u0010\u0003\u001a\u0004\u0018\u00010\u0002H&\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u000f\u0010\u0006\u001a\u00020\u0005H&\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u000f\u0010\u0008\u001a\u00020\u0005H&\u00a2\u0006\u0004\u0008\u0008\u0010\u0007J\u0011\u0010\n\u001a\u0004\u0018\u00010\tH&\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u0011\u0010\r\u001a\u0004\u0018\u00010\u000cH&\u00a2\u0006\u0004\u0008\r\u0010\u000eJ)\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0011\u001a\u00020\u00052\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u0012H&\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\u000f\u0010\u0017\u001a\u00020\u0014H&\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J\u000f\u0010\u0019\u001a\u00020\u0014H&\u00a2\u0006\u0004\u0008\u0019\u0010\u0018J\u000f\u0010\u001a\u001a\u00020\u0014H&\u00a2\u0006\u0004\u0008\u001a\u0010\u0018J\u001f\u0010\u001d\u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u0005H&\u00a2\u0006\u0004\u0008\u001d\u0010\u001eJ7\u0010%\u001a\u00020\u00142\u0006\u0010\u001f\u001a\u00020\u00052\u0006\u0010 \u001a\u00020\u00052\u0006\u0010\"\u001a\u00020!2\u0006\u0010#\u001a\u00020!2\u0006\u0010$\u001a\u00020\u0005H&\u00a2\u0006\u0004\u0008%\u0010&J\u000f\u0010\'\u001a\u00020!H&\u00a2\u0006\u0004\u0008\'\u0010(J\u0017\u0010*\u001a\u00020\u00142\u0006\u0010)\u001a\u00020!H&\u00a2\u0006\u0004\u0008*\u0010+J\u0017\u0010-\u001a\u00020\u00142\u0006\u0010,\u001a\u00020!H&\u00a2\u0006\u0004\u0008-\u0010+\u00a8\u0006."
+        "\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010\u0007\n\u0002\u0008\n\u0008f\u0018\u00002\u00020\u0001J\n\u0010\u0003\u001a\u0004\u0018\u00010\u0002H&J\u0008\u0010\u0005\u001a\u00020\u0004H&J\u0008\u0010\u0006\u001a\u00020\u0004H&J\n\u0010\u0008\u001a\u0004\u0018\u00010\u0007H&J\n\u0010\n\u001a\u0004\u0018\u00010\tH&J\"\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000c\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\u00042\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u000eH&J\u0008\u0010\u0012\u001a\u00020\u0010H&J\u0008\u0010\u0013\u001a\u00020\u0010H&J\u0008\u0010\u0014\u001a\u00020\u0010H&J\u0018\u0010\u0017\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0016\u001a\u00020\u0004H&J0\u0010\u001e\u001a\u00020\u00102\u0006\u0010\u0018\u001a\u00020\u00042\u0006\u0010\u0019\u001a\u00020\u00042\u0006\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u001c\u001a\u00020\u001a2\u0006\u0010\u001d\u001a\u00020\u0004H&J\u0008\u0010\u001f\u001a\u00020\u001aH&J\u0010\u0010!\u001a\u00020\u00102\u0006\u0010 \u001a\u00020\u001aH&J\u0010\u0010#\u001a\u00020\u00102\u0006\u0010\"\u001a\u00020\u001aH&\u00a8\u0006$"
     }
     d2 = {
         "Lcom/faceunity/core/camera/infe/IFaceUnityCamera;",
         "",
         "Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;",
         "getCameraFacing",
-        "()Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;",
         "",
         "getCameraWidth",
-        "()I",
         "getCameraHeight",
         "Landroid/graphics/SurfaceTexture;",
         "getSurfaceTexture",
-        "()Landroid/graphics/SurfaceTexture;",
         "Lcom/faceunity/core/camera/entity/FUCameraPreviewData;",
         "getCameraByte",
-        "()Lcom/faceunity/core/camera/entity/FUCameraPreviewData;",
         "Lcom/faceunity/core/camera/entity/FUCameraConfig;",
         "config",
         "texId",
         "Lcom/faceunity/core/camera/listener/OnFUCameraListener;",
         "onCameraListener",
-        "LOooO0o/o00OOOOo;",
+        "Lo000Oo0O/oo00oO;",
         "openCamera",
-        "(Lcom/faceunity/core/camera/entity/FUCameraConfig;ILcom/faceunity/core/camera/listener/OnFUCameraListener;)V",
         "closeCamera",
-        "()V",
         "releaseCamera",
         "switchCamera",
         "width",
         "height",
         "changeResolution",
-        "(II)V",
         "viewWidth",
         "viewHeight",
         "",
@@ -52,12 +40,9 @@
         "rawY",
         "areaSize",
         "handleFocus",
-        "(IIFFI)V",
         "getExposureCompensation",
-        "()F",
         "value",
         "setExposureCompensation",
-        "(F)V",
         "zoomRatio",
         "setZoomRatio",
         "lib_core_release"
@@ -79,12 +64,12 @@
 .end method
 
 .method public abstract getCameraByte()Lcom/faceunity/core/camera/entity/FUCameraPreviewData;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 .end method
 
 .method public abstract getCameraFacing()Lcom/faceunity/core/camera/enumeration/FUCameraFacingEnum;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 .end method
 
@@ -98,7 +83,7 @@
 .end method
 
 .method public abstract getSurfaceTexture()Landroid/graphics/SurfaceTexture;
-    .annotation build LOooO/OooO0OO/OooO00o/OooO;
+    .annotation build Lo00OOOo/OooOo00;
     .end annotation
 .end method
 
@@ -107,11 +92,11 @@
 
 .method public abstract openCamera(Lcom/faceunity/core/camera/entity/FUCameraConfig;ILcom/faceunity/core/camera/listener/OnFUCameraListener;)V
     .param p1    # Lcom/faceunity/core/camera/entity/FUCameraConfig;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
     .param p3    # Lcom/faceunity/core/camera/listener/OnFUCameraListener;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
 .end method

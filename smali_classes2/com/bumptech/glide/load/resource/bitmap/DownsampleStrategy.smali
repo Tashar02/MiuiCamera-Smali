@@ -30,7 +30,7 @@
 
 .field public static final FIT_CENTER:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
-.field public static final IS_BITMAP_FACTORY_SCALING_SUPPORTED:Z
+.field static final IS_BITMAP_FACTORY_SCALING_SUPPORTED:Z
 
 .field public static final NONE:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
@@ -52,74 +52,109 @@
     .line 1
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$AtLeast;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$AtLeast;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->AT_LEAST:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
-    .line 2
+    .line 7
+    .line 8
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$AtMost;
 
+    .line 9
+    .line 10
     invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$AtMost;-><init>()V
 
+    .line 11
+    .line 12
+    .line 13
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->AT_MOST:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
-    .line 3
+    .line 14
+    .line 15
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$FitCenter;
 
+    .line 16
+    .line 17
     invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$FitCenter;-><init>()V
 
+    .line 18
+    .line 19
+    .line 20
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->FIT_CENTER:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
-    .line 4
+    .line 21
+    .line 22
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterInside;
 
+    .line 23
+    .line 24
     invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterInside;-><init>()V
 
+    .line 25
+    .line 26
+    .line 27
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->CENTER_INSIDE:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
-    .line 5
+    .line 28
+    .line 29
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterOutside;
 
+    .line 30
+    .line 31
     invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$CenterOutside;-><init>()V
 
+    .line 32
+    .line 33
+    .line 34
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->CENTER_OUTSIDE:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
-    .line 6
+    .line 35
+    .line 36
     new-instance v1, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$None;
 
+    .line 37
+    .line 38
     invoke-direct {v1}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$None;-><init>()V
 
+    .line 39
+    .line 40
+    .line 41
     sput-object v1, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->NONE:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
-    .line 7
+    .line 42
+    .line 43
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->DEFAULT:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
 
+    .line 44
+    .line 45
     const-string v1, "com.bumptech.glide.load.resource.bitmap.Downsampler.DownsampleStrategy"
 
-    .line 8
+    .line 46
+    .line 47
     invoke-static {v1, v0}, Lcom/bumptech/glide/load/Option;->memory(Ljava/lang/String;Ljava/lang/Object;)Lcom/bumptech/glide/load/Option;
 
+    .line 48
+    .line 49
+    .line 50
     move-result-object v0
 
+    .line 51
     sput-object v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->OPTION:Lcom/bumptech/glide/load/Option;
 
-    .line 9
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
-
+    .line 52
+    .line 53
     const/4 v0, 0x1
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
+    .line 54
     sput-boolean v0, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;->IS_BITMAP_FACTORY_SCALING_SUPPORTED:Z
 
+    .line 55
+    .line 56
     return-void
 .end method
 
@@ -129,6 +164,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 

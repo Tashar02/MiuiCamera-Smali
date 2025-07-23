@@ -1,4 +1,4 @@
-.class public final Lorg/greenrobot/greendao/query/Query$QueryData;
+.class final Lorg/greenrobot/greendao/query/Query$QueryData;
 .super Lorg/greenrobot/greendao/query/AbstractQueryData;
 .source "Query.java"
 
@@ -35,23 +35,6 @@
 # direct methods
 .method public constructor <init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;II)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "dao",
-            "sql",
-            "initialValues",
-            "limitPosition",
-            "offsetPosition"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -68,11 +51,16 @@
     invoke-direct {p0, p1, p2, p3}, Lorg/greenrobot/greendao/query/AbstractQueryData;-><init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 2
+    .line 3
+    .line 4
     iput p4, p0, Lorg/greenrobot/greendao/query/Query$QueryData;->limitPosition:I
 
-    .line 3
+    .line 5
+    .line 6
     iput p5, p0, Lorg/greenrobot/greendao/query/Query$QueryData;->offsetPosition:I
 
+    .line 7
+    .line 8
     return-void
 .end method
 

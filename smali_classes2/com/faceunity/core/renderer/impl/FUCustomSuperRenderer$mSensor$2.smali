@@ -1,36 +1,12 @@
-.class public final Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer$mSensor$2;
-.super LOooO0o/o00ooOoO/o000O00O/o0000O0O;
+.class final Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer$mSensor$2;
+.super Lo000oo0/o000;
 .source "FUCustomSuperRenderer.kt"
 
 # interfaces
-.implements LOooO0o/o00ooOoO/o000O00/OooO00o;
+.implements Lo000oo00/OooOo00;
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
-    d1 = {
-        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0004\u001a\n \u0001*\u0004\u0018\u00010\u00000\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
-    }
-    d2 = {
-        "Landroid/hardware/Sensor;",
-        "kotlin.jvm.PlatformType",
-        "invoke",
-        "()Landroid/hardware/Sensor;",
-        "<anonymous>"
-    }
-    k = 0x3
-    mv = {
-        0x1,
-        0x4,
-        0x2
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/EnclosingMethod;
     value = Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer;-><init>(Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer$RendererModeEnum;Z)V
 .end annotation
@@ -42,28 +18,58 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LOooO0o/o00ooOoO/o000O00O/o0000O0O;",
-        "LOooO0o/o00ooOoO/o000O00/OooO00o<",
+        "Lo000oo0/o000;",
+        "Lo000oo00/OooOo00<",
         "Landroid/hardware/Sensor;",
         ">;"
     }
 .end annotation
 
+.annotation runtime Lo000Oo0O/o0000O0;
+    bv = {
+        0x1,
+        0x0,
+        0x3
+    }
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001H\n\u00a2\u0006\u0002\u0008\u0003"
+    }
+    d2 = {
+        "<anonymous>",
+        "Landroid/hardware/Sensor;",
+        "kotlin.jvm.PlatformType",
+        "invoke"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x4,
+        0x2
+    }
+.end annotation
+
 
 # instance fields
-.field public final synthetic this$0:Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer;
+.field final synthetic this$0:Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer;
 
 
 # direct methods
 .method public constructor <init>(Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer$mSensor$2;->this$0:Lcom/faceunity/core/renderer/impl/FUCustomSuperRenderer;
 
+    .line 2
+    .line 3
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, LOooO0o/o00ooOoO/o000O00O/o0000O0O;-><init>(I)V
+    .line 4
+    invoke-direct {p0, p1}, Lo000oo0/o000;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 

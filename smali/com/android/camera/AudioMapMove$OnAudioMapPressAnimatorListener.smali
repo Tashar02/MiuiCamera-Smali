@@ -22,12 +22,4 @@
 .end method
 
 .method public abstract setVolumeControlValue(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mValue"
-        }
-    .end annotation
 .end method

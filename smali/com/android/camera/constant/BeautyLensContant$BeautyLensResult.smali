@@ -1,4 +1,4 @@
-.class public interface abstract annotation Lcom/android/camera/constant/BeautyLensContant$BeautyLensResult;
+.class interface abstract annotation Lcom/android/camera/constant/BeautyLensContant$BeautyLensResult;
 .super Ljava/lang/Object;
 .source "BeautyLensContant.java"
 

@@ -111,6 +111,8 @@
     <attr name="actionbarOverlayMaskColorOled" format="reference|color" />
     <attr name="actionbarSearchMaskColor" format="reference|color" />
     <attr name="activityChooserViewStyle" format="reference" />
+    <attr name="ad_marker_color" format="color" />
+    <attr name="ad_marker_width" format="dimension" />
     <attr name="adapter" format="string" />
     <attr name="adjustable" format="boolean" />
     <attr name="alertDialogButtonGroupStyle" format="reference" />
@@ -139,6 +141,7 @@
         <enum name="constraint" value="4" />
     </attr>
     <attr name="animateRelativeTo" format="reference" />
+    <attr name="animation_enabled" format="boolean" />
     <attr name="antiAlias" format="boolean" />
     <attr name="applyMotionScene" format="boolean" />
     <attr name="arcMode">
@@ -175,6 +178,7 @@
         <enum name="animateToStart" value="3" />
         <enum name="animateToEnd" value="4" />
     </attr>
+    <attr name="auto_show" format="boolean" />
     <attr name="background" format="reference" />
     <attr name="backgroundColor" format="reference|color" />
     <attr name="backgroundLeft" format="reference" />
@@ -196,6 +200,11 @@
     <attr name="barLength" format="dimension" />
     <attr name="barOff" format="reference" />
     <attr name="barOn" format="reference" />
+    <attr name="bar_gravity">
+        <enum name="center" value="0" />
+        <enum name="bottom" value="1" />
+    </attr>
+    <attr name="bar_height" format="dimension" />
     <attr name="barrierAllowsGoneWidgets" format="boolean" />
     <attr name="barrierDirection">
         <enum name="left" value="0" />
@@ -216,6 +225,7 @@
     <attr name="bottomLeftArrow" format="reference" />
     <attr name="bottomRightArrow" format="reference" />
     <attr name="brightness" format="float" />
+    <attr name="buffered_color" format="color" />
     <attr name="buttonBackground" format="reference" />
     <attr name="buttonBackgroundWarning" format="reference" />
     <attr name="buttonBarButtonStyle" format="reference" />
@@ -303,6 +313,8 @@
     <attr name="checkablePreferenceItemColorPressedChecked" format="reference" />
     <attr name="checkboxStyle" format="reference" />
     <attr name="checked" format="reference|boolean" />
+    <attr name="checkedBackGround" format="reference" />
+    <attr name="checkedButton" format="reference" />
     <attr name="checkedTextViewStyle" format="reference" />
     <attr name="checkwidget_backgroundDisableAlpha" format="reference|integer" />
     <attr name="checkwidget_backgroundNormalAlpha" format="reference|integer" />
@@ -399,6 +411,7 @@
     <attr name="contextMenuSeparateItemBackground" format="reference|color" />
     <attr name="contrast" format="float" />
     <attr name="controlBackground" format="reference" />
+    <attr name="controller_layout_id" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="crossfade" format="float" />
     <attr name="currentState" format="reference" />
@@ -425,6 +438,7 @@
     <attr name="defaultQueryHint" format="string" />
     <attr name="defaultState" format="reference" />
     <attr name="defaultValue" format="reference|string|integer|boolean|float" />
+    <attr name="default_artwork" format="reference" />
     <attr name="degree" format="integer" />
     <attr name="deltaPolarAngle" format="float" />
     <attr name="deltaPolarRadius" format="float" />
@@ -635,6 +649,7 @@
     </attr>
     <attr name="fontProviderPackage" format="string" />
     <attr name="fontProviderQuery" format="string" />
+    <attr name="fontProviderSystemFontFamily" format="string" />
     <attr name="fontStyle">
         <enum name="normal" value="0" />
         <enum name="italic" value="1" />
@@ -656,6 +671,8 @@
     <attr name="headerView" format="reference" />
     <attr name="height" format="dimension" />
     <attr name="hideOnContentScroll" format="boolean" />
+    <attr name="hide_during_ads" format="boolean" />
+    <attr name="hide_on_touch" format="boolean" />
     <attr name="homeAsUpIndicator" format="reference" />
     <attr name="homeLayout" format="reference" />
     <attr name="horizontalPadding" format="reference|dimension" />
@@ -716,9 +733,11 @@
     <attr name="itemLeftRightPaddingOther" format="reference|integer|dimension" />
     <attr name="itemLeftRightPaddingZH" format="reference|integer|dimension" />
     <attr name="itemPadding" format="dimension" />
+    <attr name="itemSpacing" format="dimension" />
     <attr name="itemTopBottomMargin" format="reference|integer|dimension" />
     <attr name="itemTopBottomPaddingOther" format="reference|integer|dimension" />
     <attr name="itemTopBottomPaddingZH" format="reference|integer|dimension" />
+    <attr name="keep_content_on_player_reset" format="boolean" />
     <attr name="key" format="string" />
     <attr name="keyPositionType">
         <enum name="deltaRelative" value="0" />
@@ -726,6 +745,7 @@
         <enum name="parentRelative" value="2" />
     </attr>
     <attr name="keylines" format="reference" />
+    <attr name="lStar" format="float" />
     <attr name="label" format="reference" />
     <attr name="labelPadding" format="dimension" />
     <attr name="labelTextColor" format="reference|color" />
@@ -924,8 +944,14 @@
     <attr name="level" format="integer" />
     <attr name="limitBoundsTo" format="reference" />
     <attr name="lineGap" format="dimension" />
+    <attr name="lineGravity" format="integer">
+        <flag name="start" value="0x00000001" />
+        <flag name="end" value="0x00000002" />
+        <flag name="center" value="0x00000004" />
+    </attr>
     <attr name="lineHeight" format="dimension" />
     <attr name="lineLength" format="reference|dimension" />
+    <attr name="lineSpacing" format="dimension" />
     <attr name="lineWidth" format="dimension" />
     <attr name="listChoiceBackgroundIndicator" format="reference" />
     <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
@@ -1104,6 +1130,7 @@
         <flag name="disableScroll" value="0x00000002" />
         <flag name="supportScrollUp" value="0x00000004" />
     </attr>
+    <attr name="nestedScrollViewStyle" format="reference" />
     <attr name="numberPickerStyle" format="reference" />
     <attr name="numericModifiers">
         <flag name="META" value="0x00010000" />
@@ -1171,6 +1198,9 @@
         <enum name="invisible" value="4" />
         <enum name="gone" value="8" />
     </attr>
+    <attr name="played_ad_marker_color" format="color" />
+    <attr name="played_color" format="color" />
+    <attr name="player_layout_id" format="reference" />
     <attr name="polarRelativeTo" format="reference" />
     <attr name="popupMenuStyle" format="reference" />
     <attr name="popupTheme" format="reference" />
@@ -1240,6 +1270,7 @@
     <attr name="quantizeMotionSteps" format="integer" />
     <attr name="queryBackground" format="reference" />
     <attr name="queryHint" format="string" />
+    <attr name="queryPatterns" format="reference" />
     <attr name="radioButtonDrawable" format="reference" />
     <attr name="radioButtonDrawableTouchAnimEnable" format="boolean" />
     <attr name="radioButtonOnDrawableBackgroundColor" format="reference|color" />
@@ -1262,7 +1293,19 @@
     <attr name="region_heightMoreThan" format="dimension" />
     <attr name="region_widthLessThan" format="dimension" />
     <attr name="region_widthMoreThan" format="dimension" />
+    <attr name="repeat_toggle_modes">
+        <flag name="none" value="0x00000000" />
+        <flag name="one" value="0x00000001" />
+        <flag name="all" value="0x00000002" />
+    </attr>
     <attr name="resizable" format="reference|boolean" />
+    <attr name="resize_mode">
+        <enum name="fit" value="0" />
+        <enum name="fixed_width" value="1" />
+        <enum name="fixed_height" value="2" />
+        <enum name="fill" value="3" />
+        <enum name="zoom" value="4" />
+    </attr>
     <attr name="response" format="float" />
     <attr name="reverseLayout" format="boolean" />
     <attr name="rightArrow" format="reference" />
@@ -1281,6 +1324,11 @@
     <attr name="scrollRange" format="dimension" />
     <attr name="scrollStart" format="dimension" />
     <attr name="scrollableView" format="reference" />
+    <attr name="scrubber_color" format="color" />
+    <attr name="scrubber_disabled_size" format="dimension" />
+    <attr name="scrubber_dragged_size" format="dimension" />
+    <attr name="scrubber_drawable" format="reference" />
+    <attr name="scrubber_enabled_size" format="dimension" />
     <attr name="searchActionModeInputBackground" format="reference|color" />
     <attr name="searchEditTextBackground" format="reference" />
     <attr name="searchEditTextColor" format="reference|color" />
@@ -1305,6 +1353,7 @@
     <attr name="selectorButtonBackground" format="reference" />
     <attr name="setsTag" format="reference" />
     <attr name="shape" format="reference" />
+    <attr name="shortcutMatchRequired" format="boolean" />
     <attr name="shouldDisableView" format="boolean" />
     <attr name="showArrow" format="boolean" />
     <attr name="showAsAction">
@@ -1327,7 +1376,21 @@
     <attr name="showText" format="boolean" />
     <attr name="showTitle" format="boolean" />
     <attr name="showYear" format="boolean" />
+    <attr name="show_buffering">
+        <enum name="never" value="0" />
+        <enum name="when_playing" value="1" />
+        <enum name="always" value="2" />
+    </attr>
+    <attr name="show_fastforward_button" format="boolean" />
     <attr name="show_lunar" format="boolean" />
+    <attr name="show_next_button" format="boolean" />
+    <attr name="show_previous_button" format="boolean" />
+    <attr name="show_rewind_button" format="boolean" />
+    <attr name="show_shuffle_button" format="boolean" />
+    <attr name="show_subtitle_button" format="boolean" />
+    <attr name="show_timeout" format="integer" />
+    <attr name="show_vr_button" format="boolean" />
+    <attr name="shutter_background_color" format="color" />
     <attr name="singleChoiceItemLayout" format="reference" />
     <attr name="singleIcon" format="reference" />
     <attr name="singleLineTitle" format="boolean" />
@@ -1403,6 +1466,13 @@
     <attr name="summary" format="string" />
     <attr name="summaryOff" format="string" />
     <attr name="summaryOn" format="string" />
+    <attr name="surface_type">
+        <enum name="none" value="0" />
+        <enum name="surface_view" value="1" />
+        <enum name="texture_view" value="2" />
+        <enum name="spherical_gl_surface_view" value="3" />
+        <enum name="video_decoder_gl_surface_view" value="4" />
+    </attr>
     <attr name="switchMinWidth" format="dimension" />
     <attr name="switchPadding" format="dimension" />
     <attr name="switchPreferenceCompatStyle" format="reference" />
@@ -1504,6 +1574,7 @@
         <enum name="screen" value="15" />
         <enum name="add" value="16" />
     </attr>
+    <attr name="time_bar_min_update_interval" format="integer" />
     <attr name="tint" format="color" />
     <attr name="tintMode">
         <enum name="src_over" value="3" />
@@ -1546,6 +1617,7 @@
         <enum name="end" value="6" />
     </attr>
     <attr name="touchRegionId" format="reference" />
+    <attr name="touch_target_height" format="dimension" />
     <attr name="track" format="reference" />
     <attr name="trackTint" format="color" />
     <attr name="trackTintMode">
@@ -1579,9 +1651,12 @@
     <attr name="triggerSlack" format="float" />
     <attr name="triggerView" format="reference" />
     <attr name="ttcIndex" format="integer" />
+    <attr name="unplayed_color" format="color" />
     <attr name="upDuration" format="integer" />
     <attr name="updatesContinuously" format="boolean" />
     <attr name="useSimpleSummaryProvider" format="boolean" />
+    <attr name="use_artwork" format="boolean" />
+    <attr name="use_controller" format="boolean" />
     <attr name="value" format="float" />
     <attr name="viewInflaterClass" format="string" />
     <attr name="viewTransitionMode">

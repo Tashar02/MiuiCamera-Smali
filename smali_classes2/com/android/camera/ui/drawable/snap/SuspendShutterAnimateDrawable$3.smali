@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;
+.class Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;
 .super Lmiuix/view/animation/ExponentialEaseOutInterpolator;
 .source "SuspendShutterAnimateDrawable.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
+.field final synthetic this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Lmiuix/view/animation/ExponentialEaseOutInterpolator;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,90 +39,147 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "input"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Lmiuix/view/animation/ExponentialEaseOutInterpolator;->getInterpolation(F)F
 
-    move-result p1
-
     .line 2
-    iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
-
-    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$000(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintRound;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintRound;->updateValue(F)V
-
     .line 3
-    iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
-
-    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$200(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;->updateValue(F)V
-
     .line 4
-    iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
-
-    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$500(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintBottom;
-
-    move-result-object v0
-
-    iget v0, v0, Lcom/android/camera/ui/drawable/CameraPaintBase;->mCurrentAlpha:I
-
-    if-eqz v0, :cond_0
+    move-result p1
 
     .line 5
     iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
 
-    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$500(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintBottom;
+    .line 6
+    .line 7
+    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$000(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintRound;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v0
 
+    .line 11
+    invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintRound;->updateValue(F)V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$200(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;->updateValue(F)V
+
+    .line 21
+    .line 22
+    .line 23
+    iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
+
+    .line 24
+    .line 25
+    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$500(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintBottom;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    iget v0, v0, Lcom/android/camera/ui/drawable/CameraPaintBase;->mCurrentAlpha:I
+
+    .line 30
+    .line 31
+    if-eqz v0, :cond_0
+
+    .line 32
+    .line 33
+    iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
+
+    .line 34
+    .line 35
+    invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$500(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintBottom;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v0
+
+    .line 39
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintBottom;->updateValue(F)V
 
-    .line 6
+    .line 40
+    .line 41
+    .line 42
     :cond_0
     iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
 
+    .line 43
+    .line 44
     invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$300(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;
 
+    .line 45
+    .line 46
+    .line 47
     move-result-object v0
 
+    .line 48
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;->updateValue(F)V
 
-    .line 7
+    .line 49
+    .line 50
+    .line 51
     iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
 
+    .line 52
+    .line 53
     invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$400(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;
 
+    .line 54
+    .line 55
+    .line 56
     move-result-object v0
 
+    .line 57
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;->updateValue(F)V
 
-    .line 8
+    .line 58
+    .line 59
+    .line 60
     iget-object v0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
 
+    .line 61
+    .line 62
     invoke-static {v0}, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;->access$100(Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;)Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;
 
+    .line 63
+    .line 64
+    .line 65
     move-result-object v0
 
+    .line 66
     invoke-virtual {v0, p1}, Lcom/android/camera/ui/drawable/snap/CameraSnapPaintCircle;->updateValue(F)V
 
-    .line 9
+    .line 67
+    .line 68
+    .line 69
     iget-object p0, p0, Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable$3;->this$0:Lcom/android/camera/ui/drawable/snap/SuspendShutterAnimateDrawable;
 
+    .line 70
+    .line 71
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
+    .line 72
+    .line 73
+    .line 74
     return p1
 .end method

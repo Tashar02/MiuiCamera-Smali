@@ -663,6 +663,7 @@
     <string name="download_hint_cn">သင့်စက်တွင် WLAN ချိတ်ဆက်ထားပုံမရပါ။ အကြောင်းအရာများကို ယခုဒေါင်းလုဒ်လုပ်ရန် မိုဘိုင်းဒေတာ %1$s MB သုံးလိုသလား။</string>
     <string name="download_hint_wifi">သင့်စက်တွင် Wi-Fi ချိတ်ထားပုံမရပါ။ အကြောင်းအရာများကို ယခုဒေါင်းလုဒ်လုပ်ရန် မိုဘိုင်းဒေတာ %1$s MB သုံးလိုသလား။</string>
     <string name="download_in_progress">ဒေါင်းလုဒ်လုပ်နေသည်…</string>
+    <string name="download_network_error">ဒေါင်းလုဒ်လုပ်မရပါ။ ကွန်ရက်ဆက်တင်ကိုစစ်ပါ။</string>
     <string name="download_title">ဒေတာသုံးစွဲမှု သတိပေးချက်</string>
     <string name="download_waiting">ဆိုင်းငံ့ထားသည်…</string>
     <string name="dual_camera_lens_covered_toast">မှန်ဘီးလူးအား ကာထားသည်။</string>
@@ -1477,6 +1478,7 @@
     <string name="pref_camera_peak_entry_off">ပိတ်</string>
     <string name="pref_camera_peak_entry_on">ဖွင့်</string>
     <string name="pref_camera_peak_title">ဆုံချက် အထွတ်အထိပ်</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">အပြည့်</string>
     <string name="pref_camera_picturesize_title_simple_mode">ကင်မရာဖရိန်</string>
     <string name="pref_camera_portrait_mode_entry_off">လူပုံမုဒ်ကို ပိတ်ထားသည်</string>
     <string name="pref_camera_portrait_mode_entry_on">လူပုံမုဒ်ကို ဖွင့်ထားသည်</string>

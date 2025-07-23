@@ -14,6 +14,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -319,17 +322,17 @@
 
     new-array v1, v0, [Z
 
-    .line 14
+    .line 13
     new-instance v2, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v2}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    .line 15
+    .line 14
     invoke-interface {v2}, Ljava/util/concurrent/locks/Lock;->newCondition()Ljava/util/concurrent/locks/Condition;
 
     move-result-object v0
 
-    .line 16
+    .line 15
     new-instance v12, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;
 
     move-object v3, v12
@@ -352,30 +355,30 @@
 
     invoke-direct/range {v3 .. v11}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;-><init>(IILjava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;[FZZ)V
 
-    .line 17
+    .line 16
     new-instance v3, Lcom/miui/extravideo/interpolation/VideoInterpolator$2;
 
     invoke-direct {v3, v2, v1, v0}, Lcom/miui/extravideo/interpolation/VideoInterpolator$2;-><init>(Ljava/util/concurrent/locks/Lock;[ZLjava/util/concurrent/locks/Condition;)V
 
-    .line 18
+    .line 17
     invoke-virtual {v12, v3}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->setEncodeListener(Lcom/miui/extravideo/interpolation/EncodeListener;)V
 
-    .line 19
+    .line 18
     invoke-interface {v2}, Ljava/util/concurrent/locks/Lock;->lock()V
 
     const/4 v3, 0x0
 
-    .line 20
+    .line 19
     :try_start_0
     invoke-virtual {v12}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->doDecodeAndEncode()V
 
-    .line 21
+    .line 20
     invoke-interface {v0}, Ljava/util/concurrent/locks/Condition;->await()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 22
+    .line 21
     :goto_0
     invoke-interface {v2}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
@@ -389,9 +392,9 @@
     :catch_0
     move-exception v0
 
-    .line 23
+    .line 22
     :try_start_1
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     aput-boolean v3, v1, v3
     :try_end_1
@@ -399,17 +402,16 @@
 
     goto :goto_0
 
-    .line 24
     :goto_1
     aget-boolean v0, v1, v3
 
     return v0
 
-    .line 25
+    .line 23
     :goto_2
     invoke-interface {v2}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 26
+    .line 24
     throw v0
 .end method
 
@@ -502,7 +504,7 @@
 
     .line 10
     :try_start_1
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     aput-boolean p0, v0, p0
     :try_end_1
@@ -510,16 +512,15 @@
 
     goto :goto_0
 
-    .line 11
     :goto_1
     aget-boolean p0, v0, p0
 
     return p0
 
-    .line 12
+    .line 11
     :goto_2
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 13
+    .line 12
     throw p0
 .end method

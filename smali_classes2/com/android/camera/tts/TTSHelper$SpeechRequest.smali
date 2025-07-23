@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/tts/TTSHelper$SpeechRequest;
+.class Lcom/android/camera/tts/TTSHelper$SpeechRequest;
 .super Ljava/lang/Object;
 .source "TTSHelper.java"
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final mListener:Lcom/android/camera/tts/TTSHelper$Listener;
+.field final mListener:Lcom/android/camera/tts/TTSHelper$Listener;
 
-.field public final mTextToSpeak:Ljava/util/List;
+.field final mTextToSpeak:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -31,17 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/List;Lcom/android/camera/tts/TTSHelper$Listener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "textToSpeak",
-            "listener"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -57,10 +46,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/tts/TTSHelper$SpeechRequest;->mTextToSpeak:Ljava/util/List;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Lcom/android/camera/tts/TTSHelper$SpeechRequest;->mListener:Lcom/android/camera/tts/TTSHelper$Listener;
 
+    .line 7
+    .line 8
     return-void
 .end method

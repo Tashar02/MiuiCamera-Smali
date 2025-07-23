@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/SearchView$10;
+.class Landroidx/appcompat/widget/SearchView$10;
 .super Ljava/lang/Object;
 .source "SearchView.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/widget/SearchView;
+.field final synthetic this$0:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$10;->this$0:Landroidx/appcompat/widget/SearchView;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -38,12 +43,14 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -53,7 +60,12 @@
     .line 1
     iget-object p0, p0, Landroidx/appcompat/widget/SearchView$10;->this$0:Landroidx/appcompat/widget/SearchView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/SearchView;->onTextChanged(Ljava/lang/CharSequence;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

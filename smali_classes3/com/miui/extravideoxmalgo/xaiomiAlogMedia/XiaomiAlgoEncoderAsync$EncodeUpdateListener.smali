@@ -19,26 +19,10 @@
 .end method
 
 .method public abstract onEncodeEnd(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "finish"
-        }
-    .end annotation
 .end method
 
 .method public abstract onError()V
 .end method
 
 .method public abstract onInputBufferAvailable(Lcom/miui/extravideoxmalgo/XiaomiAlgoVideoInterpolatorImp/XiaomiAlgoEncodeBufferHolder;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "encodeBufferHolder"
-        }
-    .end annotation
 .end method

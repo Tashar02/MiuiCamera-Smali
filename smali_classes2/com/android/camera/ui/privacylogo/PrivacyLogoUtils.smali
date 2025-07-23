@@ -12,6 +12,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -21,16 +24,6 @@
         .annotation build Landroidx/annotation/LayoutRes;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "contentLayoutResId"
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
@@ -48,25 +41,13 @@
         .annotation build Landroidx/annotation/LayoutRes;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "contentLayoutResId",
-            "alwaysUseNightLogo"
-        }
-    .end annotation
 
     .line 2
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    const v1, 0x7f0d011d
+    const v1, 0x7f0e0127
 
     const/4 v2, 0x0
 
@@ -80,7 +61,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0a03de
+    const v0, 0x7f0b0418
 
     .line 5
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -89,7 +70,7 @@
 
     check-cast v0, Landroid/widget/FrameLayout;
 
-    const v2, 0x7f0a00c8
+    const v2, 0x7f0b00c8
 
     .line 6
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -103,7 +84,7 @@
 
     move-result-object p0
 
-    const v3, 0x7f070176
+    const v3, 0x7f070178
 
     invoke-virtual {p0, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -122,7 +103,7 @@
     invoke-virtual {p1, v3, v3, v3, p0}, Landroid/view/View;->setPadding(IIII)V
 
     .line 8
-    invoke-virtual {v0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 9
     invoke-virtual {v2, p2}, Lcom/android/camera/ui/privacylogo/PrivacyLogoView;->setAlwaysUseNightLogo(Z)V

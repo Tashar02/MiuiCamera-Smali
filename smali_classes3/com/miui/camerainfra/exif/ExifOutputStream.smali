@@ -42,39 +42,63 @@
     .line 1
     new-instance v0, Ljava/io/BufferedOutputStream;
 
+    .line 2
+    .line 3
     const/high16 v1, 0x10000
 
+    .line 4
+    .line 5
     invoke-direct {v0, p1, v1}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
+    .line 6
+    .line 7
+    .line 8
     invoke-direct {p0, v0}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
+    .line 9
+    .line 10
+    .line 11
     const/4 p1, 0x0
 
-    .line 2
+    .line 12
     iput p1, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mState:I
 
+    .line 13
+    .line 14
     const/4 v0, 0x1
 
+    .line 15
     new-array v0, v0, [B
 
-    .line 3
+    .line 16
+    .line 17
     iput-object v0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mSingleByteArray:[B
 
+    .line 18
+    .line 19
     const/4 v0, 0x4
 
-    .line 4
+    .line 20
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
+    .line 21
+    .line 22
+    .line 23
     move-result-object v0
 
+    .line 24
     iput-object v0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mBuffer:Ljava/nio/ByteBuffer;
 
-    .line 5
+    .line 25
+    .line 26
     iput-boolean p1, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->writeDataForHeif:Z
 
-    .line 6
+    .line 27
+    .line 28
     iput-object p2, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mInterface:Lcom/miui/camerainfra/exif/ExifInterface;
 
+    .line 29
+    .line 30
     return-void
 .end method
 
@@ -84,22 +108,36 @@
     .line 1
     iget-object v0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mBuffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->position()I
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     sub-int/2addr p1, v0
 
+    .line 8
     if-le p4, p1, :cond_0
 
+    .line 9
+    .line 10
     move p4, p1
 
-    .line 2
+    .line 11
     :cond_0
     iget-object p0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mBuffer:Ljava/nio/ByteBuffer;
 
+    .line 12
+    .line 13
     invoke-virtual {p0, p2, p3, p4}, Ljava/nio/ByteBuffer;->put([BII)Ljava/nio/ByteBuffer;
 
+    .line 14
+    .line 15
+    .line 16
     return p4
 .end method
 
@@ -114,89 +152,158 @@
     .line 1
     new-instance v0, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;
 
+    .line 2
+    .line 3
     iget-object v1, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
+    .line 4
+    .line 5
     sget-object v2, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
+    .line 6
+    .line 7
     invoke-direct {v0, v1, v2}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;-><init>(Ljava/io/OutputStream;Ljava/nio/ByteOrder;)V
 
+    .line 8
+    .line 9
+    .line 10
     if-eqz p1, :cond_0
 
-    .line 2
+    .line 11
+    .line 12
     iget-object v1, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mInterface:Lcom/miui/camerainfra/exif/ExifInterface;
 
+    .line 13
+    .line 14
     const/16 v2, 0xc
 
+    .line 15
+    .line 16
     invoke-virtual {v1, v2}, Lcom/miui/camerainfra/exif/ExifInterface;->setMimeType(I)V
 
+    .line 17
+    .line 18
+    .line 19
     const-string v1, "ExifOutputStream"
 
-    const-string/jumbo v2, "writeExifDataForHeif"
+    .line 20
+    .line 21
+    const-string v2, "writeExifDataForHeif"
 
-    .line 3
+    .line 22
+    .line 23
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 24
+    .line 25
+    .line 26
     const/4 v1, 0x4
 
+    .line 27
     new-array v1, v1, [B
 
-    .line 4
+    .line 28
+    .line 29
     fill-array-data v1, :array_0
 
-    .line 5
+    .line 30
+    .line 31
+    .line 32
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;->write([B)V
 
+    .line 33
+    .line 34
+    .line 35
     :cond_0
     const/16 v1, -0x1f
 
-    .line 6
+    .line 36
+    .line 37
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;->writeShort(S)V
 
-    .line 7
+    .line 38
+    .line 39
+    .line 40
     iget-object v2, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mInterface:Lcom/miui/camerainfra/exif/ExifInterface;
 
+    .line 41
+    .line 42
     invoke-virtual {v2, v0}, Lcom/miui/camerainfra/exif/ExifInterface;->writeExifSegment(Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;)I
 
+    .line 43
+    .line 44
+    .line 45
     if-eqz p1, :cond_1
 
-    .line 8
+    .line 46
+    .line 47
     iget-object p0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mInterface:Lcom/miui/camerainfra/exif/ExifInterface;
 
+    .line 48
+    .line 49
     const-string p1, "Xmp"
 
+    .line 50
+    .line 51
     invoke-virtual {p0, p1}, Lcom/miui/camerainfra/exif/ExifInterface;->getAttributeBytes(Ljava/lang/String;)[B
 
+    .line 52
+    .line 53
+    .line 54
     move-result-object p0
 
+    .line 55
     if-eqz p0, :cond_1
 
-    .line 9
+    .line 56
+    .line 57
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;->writeShort(S)V
 
-    .line 10
+    .line 58
+    .line 59
+    .line 60
     array-length p1, p0
 
+    .line 61
     sget-object v1, Lcom/miui/camerainfra/exif/ExifInterface;->IDENTIFIER_XMP_APP1:[B
 
+    .line 62
+    .line 63
     array-length v2, v1
 
+    .line 64
     add-int/2addr p1, v2
 
+    .line 65
     add-int/lit8 p1, p1, 0x2
 
+    .line 66
+    .line 67
     int-to-short p1, p1
 
+    .line 68
     invoke-virtual {v0, p1}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;->writeUnsignedShort(I)V
 
-    .line 11
+    .line 69
+    .line 70
+    .line 71
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;->write([B)V
 
-    .line 12
+    .line 72
+    .line 73
+    .line 74
     invoke-virtual {v0, p0}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataOutputStream;->write([B)V
 
+    .line 75
+    .line 76
+    .line 77
     :cond_1
     return-void
 
+    .line 78
+    nop
+
+    .line 79
     :array_0
     .array-data 1
         0x45t
@@ -214,6 +321,8 @@
     .line 1
     iput-object p1, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mIccData:[B
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -223,6 +332,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->writeDataForHeif:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -381,7 +492,7 @@
     .line 8
     iget-object v2, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mBuffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v2}, Ljava/nio/Buffer;->position()I
 
     move-result v2
 
@@ -418,7 +529,7 @@
     :cond_7
     iget-object v2, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mBuffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v2}, Ljava/nio/Buffer;->position()I
 
     move-result v2
 
@@ -567,7 +678,7 @@
     .line 28
     iget-object v0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mBuffer:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->position()I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
     move-result v0
 
@@ -651,16 +762,20 @@
         }
     .end annotation
 
+    .line 1
     const/4 v0, 0x1
 
-    .line 1
+    .line 2
     invoke-direct {p0, v0}, Lcom/miui/camerainfra/exif/ExifOutputStream;->writeExifData(Z)V
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method
 
 .method public writeIccProfileData()V
-    .locals 5
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -670,63 +785,113 @@
     .line 1
     iget-object v0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mIccData:[B
 
+    .line 2
+    .line 3
     if-nez v0, :cond_0
 
+    .line 4
+    .line 5
     return-void
 
-    .line 2
+    .line 6
     :cond_0
     new-instance v0, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
 
+    .line 7
+    .line 8
     iget-object v1, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
+    .line 9
+    .line 10
     invoke-direct {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 3
+    .line 11
+    .line 12
+    .line 13
     sget-object v1, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
+    .line 14
+    .line 15
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->setByteOrder(Ljava/nio/ByteOrder;)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
 
+    .line 16
+    .line 17
+    .line 18
     const/16 v1, -0x1e
 
-    .line 4
+    .line 19
+    .line 20
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeShort(S)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
 
-    .line 5
+    .line 21
+    .line 22
+    .line 23
     iget-object v1, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mIccData:[B
 
+    .line 24
+    .line 25
     array-length v1, v1
 
+    .line 26
     add-int/lit8 v1, v1, 0x10
 
+    .line 27
+    .line 28
     int-to-short v1, v1
 
+    .line 29
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeShort(S)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
 
+    .line 30
+    .line 31
+    .line 32
     const v1, 0x4943435f
 
-    const v2, 0x50524f46
-
-    const v3, 0x494c4500    # 836688.0f
-
-    const/16 v4, 0x101
-
-    .line 6
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeInt(I)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
 
-    .line 7
-    invoke-virtual {v0, v2}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeInt(I)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
+    .line 36
+    .line 37
+    .line 38
+    const v1, 0x50524f46
 
-    .line 8
-    invoke-virtual {v0, v3}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeInt(I)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
+    .line 39
+    .line 40
+    .line 41
+    invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeInt(I)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
 
-    .line 9
-    invoke-virtual {v0, v4}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeShort(S)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
+    .line 42
+    .line 43
+    .line 44
+    const v1, 0x494c4500    # 836688.0f
 
-    .line 10
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeInt(I)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
+
+    .line 48
+    .line 49
+    .line 50
+    const/16 v1, 0x101
+
+    .line 51
+    .line 52
+    invoke-virtual {v0, v1}, Lcom/miui/camerainfra/exif/OrderedDataOutputStream;->writeShort(S)Lcom/miui/camerainfra/exif/OrderedDataOutputStream;
+
+    .line 53
+    .line 54
+    .line 55
     iget-object p0, p0, Lcom/miui/camerainfra/exif/ExifOutputStream;->mIccData:[B
 
-    invoke-virtual {v0, p0}, Ljava/io/FilterOutputStream;->write([B)V
+    .line 56
+    .line 57
+    invoke-virtual {v0, p0}, Ljava/io/OutputStream;->write([B)V
 
+    .line 58
+    .line 59
+    .line 60
     return-void
 .end method

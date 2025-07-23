@@ -1,4 +1,4 @@
-.class public Lcom/android/camera2/compat/theme/custom/cv/panleentrance/FragmentCloneGalleryCV$CloneRecyclerAdapterCV;
+.class Lcom/android/camera2/compat/theme/custom/cv/panleentrance/FragmentCloneGalleryCV$CloneRecyclerAdapterCV;
 .super Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;
 .source "FragmentCloneGalleryCV.java"
 
@@ -17,20 +17,13 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View$OnClickListener;Landroidx/fragment/app/Fragment;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "l",
-            "frag"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/android/camera/fragment/clone/FragmentCloneGallery$CloneRecyclerAdapter;-><init>(Landroid/view/View$OnClickListener;Landroidx/fragment/app/Fragment;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -42,16 +35,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "pos"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -67,16 +50,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "pos"
-        }
-    .end annotation
 
     .line 2
     new-instance v0, Ljava/lang/StringBuilder;
@@ -114,9 +87,9 @@
 
     if-eqz p2, :cond_2
 
-    const v2, 0x7f0a0126
+    const v2, 0x7f0b0126
 
-    const v3, 0x7f0a0122
+    const v3, 0x7f0b0122
 
     if-eq p2, v1, :cond_1
 
@@ -134,7 +107,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f0a0124
+    const v3, 0x7f0b0124
 
     .line 5
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -150,12 +123,12 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f1202bb
+    const v4, 0x7f1302ba
 
     .line 7
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
 
-    const v2, 0x7f08016e
+    const v2, 0x7f08016f
 
     .line 8
     invoke-virtual {v3, v2}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -175,7 +148,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f1202d8
+    const v3, 0x7f1302d7
 
     .line 11
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
@@ -183,7 +156,7 @@
     goto :goto_0
 
     :cond_2
-    const v2, 0x7f0a0113
+    const v2, 0x7f0b0113
 
     .line 12
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -216,12 +189,12 @@
 
     if-ne p2, v1, :cond_4
 
-    const p2, 0x7f0a0116
+    const p2, 0x7f0b0116
 
     goto :goto_1
 
     :cond_4
-    const p2, 0x7f0a0125
+    const p2, 0x7f0b0125
 
     :goto_1
     invoke-virtual {p1, p2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -249,17 +222,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
-
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera2/compat/theme/custom/cv/panleentrance/FragmentCloneGalleryCV$CloneRecyclerAdapterCV;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
 
@@ -277,19 +239,8 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
-
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
@@ -297,14 +248,14 @@
 
     move-result-object p0
 
-    const v0, 0x7f0701d9
+    const v0, 0x7f0701db
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result p0
 
     .line 3
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -312,7 +263,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0701d8
+    const v1, 0x7f0701da
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -330,13 +281,13 @@
 
     if-eq p2, v1, :cond_0
 
-    move-object p1, v2
+    move-object p1, v3
 
     goto :goto_0
 
     .line 4
     :cond_0
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -344,9 +295,9 @@
 
     move-result-object p2
 
-    const v1, 0x7f0d0071
+    const v1, 0x7f0e007b
 
-    invoke-virtual {p2, v1, p1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p2, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
@@ -356,7 +307,7 @@
 
     .line 5
     :cond_1
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
@@ -364,9 +315,9 @@
 
     move-result-object p2
 
-    const v1, 0x7f0d006f
+    const v1, 0x7f0e0079
 
-    invoke-virtual {p2, v1, p1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p2, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
@@ -375,19 +326,19 @@
     :goto_0
     if-nez p1, :cond_2
 
-    new-array p0, v3, [Ljava/lang/Object;
+    const-string p0, "onCreateViewHolder: Fail to create rv item view"
 
-    const-string p1, "FragmentCloneGallery"
+    new-array p1, v2, [Ljava/lang/Object;
 
-    const-string p2, "onCreateViewHolder: Fail to create rv item view"
+    const-string p2, "FragmentCloneGallery"
 
     .line 6
-    invoke-static {p1, p2, p0}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p2, p0, p1}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 7
     new-instance p0, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
 
-    invoke-direct {p0, v2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;-><init>(Landroid/view/View;)V
+    invoke-direct {p0, v3}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;-><init>(Landroid/view/View;)V
 
     return-object p0
 

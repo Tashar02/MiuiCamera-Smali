@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/bumptech/glide/ModelTypes;
+.class interface abstract Lcom/bumptech/glide/ModelTypes;
 .super Ljava/lang/Object;
 .source "ModelTypes.java"
 

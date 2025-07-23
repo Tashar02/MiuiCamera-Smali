@@ -33,14 +33,6 @@
 
 .method public constructor <init>(Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "listener"
-        }
-    .end annotation
 
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -59,11 +51,17 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/animation/FolmeUtils$PhyAnimatorListener;->mListener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-interface {p0}, Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;->onCancel()V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
@@ -74,11 +72,17 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/animation/FolmeUtils$PhyAnimatorListener;->mListener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-interface {p0}, Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;->onEnd()V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
@@ -89,34 +93,38 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/animation/FolmeUtils$PhyAnimatorListener;->mListener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-interface {p0}, Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;->onStart()V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
 
 .method public onUpdate(F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "v"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/animation/FolmeUtils$PhyAnimatorListener;->mListener:Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;
 
+    .line 2
+    .line 3
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-interface {p0, p1}, Lcom/android/camera/animation/FolmeUtils$IPhyAnimatorListener;->onUpdate(F)V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method

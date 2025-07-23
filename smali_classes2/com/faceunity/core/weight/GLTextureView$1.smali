@@ -1,4 +1,4 @@
-.class public synthetic Lcom/faceunity/core/weight/GLTextureView$1;
+.class synthetic Lcom/faceunity/core/weight/GLTextureView$1;
 .super Ljava/lang/Object;
 .source "GLTextureView.java"
 

@@ -63,105 +63,85 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Landroidx/core/view/PointerIconCompat;->mPointerIcon:Ljava/lang/Object;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public static create(Landroid/graphics/Bitmap;FF)Landroidx/core/view/PointerIconCompat;
-    .locals 2
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x18
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     new-instance v0, Landroidx/core/view/PointerIconCompat;
 
+    .line 2
+    .line 3
     invoke-static {p0, p1, p2}, Landroid/view/PointerIcon;->create(Landroid/graphics/Bitmap;FF)Landroid/view/PointerIcon;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-direct {v0, p0}, Landroidx/core/view/PointerIconCompat;-><init>(Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-object v0
-
-    .line 3
-    :cond_0
-    new-instance p0, Landroidx/core/view/PointerIconCompat;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Landroidx/core/view/PointerIconCompat;-><init>(Ljava/lang/Object;)V
-
-    return-object p0
 .end method
 
 .method public static getSystemIcon(Landroid/content/Context;I)Landroidx/core/view/PointerIconCompat;
-    .locals 2
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x18
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     new-instance v0, Landroidx/core/view/PointerIconCompat;
 
+    .line 2
+    .line 3
     invoke-static {p0, p1}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-direct {v0, p0}, Landroidx/core/view/PointerIconCompat;-><init>(Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-object v0
-
-    .line 3
-    :cond_0
-    new-instance p0, Landroidx/core/view/PointerIconCompat;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Landroidx/core/view/PointerIconCompat;-><init>(Ljava/lang/Object;)V
-
-    return-object p0
 .end method
 
 .method public static load(Landroid/content/res/Resources;I)Landroidx/core/view/PointerIconCompat;
-    .locals 2
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x18
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
     new-instance v0, Landroidx/core/view/PointerIconCompat;
 
+    .line 2
+    .line 3
     invoke-static {p0, p1}, Landroid/view/PointerIcon;->load(Landroid/content/res/Resources;I)Landroid/view/PointerIcon;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-direct {v0, p0}, Landroidx/core/view/PointerIconCompat;-><init>(Ljava/lang/Object;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-object v0
-
-    .line 3
-    :cond_0
-    new-instance p0, Landroidx/core/view/PointerIconCompat;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Landroidx/core/view/PointerIconCompat;-><init>(Ljava/lang/Object;)V
-
-    return-object p0
 .end method
 
 
@@ -177,5 +157,7 @@
     .line 1
     iget-object p0, p0, Landroidx/core/view/PointerIconCompat;->mPointerIcon:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

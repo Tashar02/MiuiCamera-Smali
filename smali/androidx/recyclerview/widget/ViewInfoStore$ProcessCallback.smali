@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/recyclerview/widget/ViewInfoStore$ProcessCallback;
+.class interface abstract Landroidx/recyclerview/widget/ViewInfoStore$ProcessCallback;
 .super Ljava/lang/Object;
 .source "ViewInfoStore.java"
 

@@ -664,6 +664,7 @@
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">Изгледа вашиот уред не е поврзан со Wi-Fi. Да се ​​користат %1$s MB мобилни податоци за преземање ставки сега?</string>
     <string name="download_in_progress">Преземање…</string>
+    <string name="download_network_error">Не можеше да се преземе. Проверете ги мрежните поставки.</string>
     <string name="download_title">Предупредување за употреба на податоци</string>
     <string name="download_waiting">На чекање…</string>
     <string name="dual_camera_lens_covered_toast">Леќата е покриена.</string>
@@ -1478,6 +1479,7 @@
     <string name="pref_camera_peak_entry_off">Исклучено</string>
     <string name="pref_camera_peak_entry_on">Вклучено</string>
     <string name="pref_camera_peak_title">Макс. фокус</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Полно</string>
     <string name="pref_camera_picturesize_title_simple_mode">Рамка на камера</string>
     <string name="pref_camera_portrait_mode_entry_off">Режим Портрет е исклучен</string>
     <string name="pref_camera_portrait_mode_entry_on">Режим Портрет е вклучен</string>

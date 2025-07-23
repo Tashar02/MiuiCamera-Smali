@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public final drawable:Landroid/graphics/drawable/Drawable;
+.field protected final drawable:Landroid/graphics/drawable/Drawable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -44,14 +44,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {p1}, Lcom/bumptech/glide/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p1
 
+    .line 8
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
+    .line 9
+    .line 10
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/drawable/DrawableResource;->drawable:Landroid/graphics/drawable/Drawable;
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -110,36 +120,62 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/resource/drawable/DrawableResource;->drawable:Landroid/graphics/drawable/Drawable;
 
+    .line 2
+    .line 3
     instance-of v0, p0, Landroid/graphics/drawable/BitmapDrawable;
 
+    .line 4
+    .line 5
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     check-cast p0, Landroid/graphics/drawable/BitmapDrawable;
 
+    .line 8
+    .line 9
     invoke-virtual {p0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object p0
 
+    .line 13
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->prepareToDraw()V
 
+    .line 14
+    .line 15
+    .line 16
     goto :goto_0
 
-    .line 3
+    .line 17
     :cond_0
     instance-of v0, p0, Lcom/bumptech/glide/load/resource/gif/GifDrawable;
 
+    .line 18
+    .line 19
     if-eqz v0, :cond_1
 
-    .line 4
+    .line 20
+    .line 21
     check-cast p0, Lcom/bumptech/glide/load/resource/gif/GifDrawable;
 
+    .line 22
+    .line 23
     invoke-virtual {p0}, Lcom/bumptech/glide/load/resource/gif/GifDrawable;->getFirstFrame()Landroid/graphics/Bitmap;
 
+    .line 24
+    .line 25
+    .line 26
     move-result-object p0
 
+    .line 27
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->prepareToDraw()V
 
+    .line 28
+    .line 29
+    .line 30
     :cond_1
     :goto_0
     return-void

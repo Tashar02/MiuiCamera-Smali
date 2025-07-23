@@ -43,8 +43,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/model/UriLoader$StreamFactory;->contentResolver:Landroid/content/ContentResolver;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -101,5 +105,6 @@
 .method public teardown()V
     .locals 0
 
+    .line 1
     return-void
 .end method

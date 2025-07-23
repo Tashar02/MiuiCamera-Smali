@@ -46,6 +46,7 @@
     <color name="video_prompter_import_container_bg_color_1">#ff161616</color>
     <color name="video_prompter_import_text_color">#ccffffff</color>
     <color name="video_prompter_text_count_color">#33ffffff</color>
+    <color name="visual_check_textview_unchecked_text_color">#ccffffff</color>
     <color name="vp_workspace_empty_text_color">#66ffffff</color>
     <color name="vp_workspace_item_more_select">#66ffffff</color>
     <color name="vp_workspace_item_time_color">#80ffffff</color>

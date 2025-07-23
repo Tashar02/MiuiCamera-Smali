@@ -78,23 +78,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;Landroid/view/View$OnClickListener;Lcom/android/camera/ui/SlideSwitchButton$SlideSwitchListener;I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "supportedConfigs",
-            "onClickListener",
-            "slideSwitchListener",
-            "degree"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -112,137 +95,205 @@
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mRowLists:Ljava/util/List;
-
     .line 3
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mAnimationList:Ljava/util/List;
-
     .line 4
     new-instance v0, Ljava/util/ArrayList;
 
+    .line 5
+    .line 6
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mRowHeightLists:Ljava/util/List;
-
-    const/4 v0, -0x1
-
-    .line 5
-    iput v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mCurrentRow:I
-
-    .line 6
-    iput-object p1, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mContext:Landroid/content/Context;
-
     .line 7
-    iput-object p2, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mSupportedConfigs:Ljava/util/List;
-
     .line 8
-    iput-object p3, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
-
     .line 9
-    iput-object p4, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mSlideSwitchListener:Lcom/android/camera/ui/SlideSwitchButton$SlideSwitchListener;
-
-    const p1, 0x7f0704b8
-
-    const p2, 0x3ec28f5c    # 0.38f
+    iput-object v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mRowLists:Ljava/util/List;
 
     .line 10
+    .line 11
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    iput-object v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mAnimationList:Ljava/util/List;
+
+    .line 17
+    .line 18
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 19
+    .line 20
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mRowHeightLists:Ljava/util/List;
+
+    .line 24
+    .line 25
+    const/4 v0, -0x1
+
+    .line 26
+    iput v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mCurrentRow:I
+
+    .line 27
+    .line 28
+    iput-object p1, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mContext:Landroid/content/Context;
+
+    .line 29
+    .line 30
+    iput-object p2, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mSupportedConfigs:Ljava/util/List;
+
+    .line 31
+    .line 32
+    iput-object p3, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
+
+    .line 33
+    .line 34
+    iput-object p4, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mSlideSwitchListener:Lcom/android/camera/ui/SlideSwitchButton$SlideSwitchListener;
+
+    .line 35
+    .line 36
+    const p1, 0x7f0704dd
+
+    .line 37
+    .line 38
+    .line 39
+    const p2, 0x3ec28f5c    # 0.38f
+
+    .line 40
+    .line 41
+    .line 42
     invoke-static {p1, p2}, Lcom/android/camera/CameraSettings;->getResourceFloat(IF)F
 
+    .line 43
+    .line 44
+    .line 45
     move-result p1
 
+    .line 46
     iput p1, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mAnimationScaleSize:F
 
-    .line 11
+    .line 47
+    .line 48
     iput p5, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mDegree:I
 
+    .line 49
+    .line 50
     return-void
 .end method
 
 .method private getRow(I)I
     .locals 5
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "position"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    const/4 v1, -0x1
-
-    move v2, v1
-
-    move v1, v0
 
     .line 1
+    const/4 v0, -0x1
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    move v2, v1
+
+    .line 4
     :goto_0
     invoke-virtual {p0}, Lcom/android/camera/fragment/top/ExtraAdapter;->getItemCount()I
 
+    .line 5
+    .line 6
+    .line 7
     move-result v3
 
-    if-ge v0, v3, :cond_4
+    .line 8
+    if-ge v1, v3, :cond_4
 
-    .line 2
-    invoke-virtual {p0, v0}, Lcom/android/camera/fragment/top/ExtraAdapter;->getItemViewType(I)I
+    .line 9
+    .line 10
+    invoke-virtual {p0, v1}, Lcom/android/camera/fragment/top/ExtraAdapter;->getItemViewType(I)I
 
+    .line 11
+    .line 12
+    .line 13
     move-result v3
 
+    .line 14
     const/4 v4, 0x1
 
+    .line 15
     if-ne v3, v4, :cond_0
 
-    add-int/lit8 v2, v2, 0x1
-
-    add-int/lit8 v1, v2, 0x1
-
-    goto :goto_2
-
-    :cond_0
-    if-eqz v1, :cond_1
-
-    sub-int v3, v0, v1
-
-    .line 3
-    rem-int/lit8 v3, v3, 0x4
-
-    if-nez v3, :cond_2
-
-    goto :goto_1
-
-    .line 4
-    :cond_1
-    rem-int/lit8 v3, v0, 0x4
-
-    if-nez v3, :cond_2
-
-    :goto_1
-    add-int/lit8 v2, v2, 0x1
-
-    :cond_2
-    :goto_2
-    if-ne p1, v0, :cond_3
-
-    goto :goto_3
-
-    :cond_3
+    .line 16
+    .line 17
     add-int/lit8 v0, v0, 0x1
 
+    .line 18
+    .line 19
+    add-int/lit8 v2, v0, 0x1
+
+    .line 20
+    .line 21
+    goto :goto_2
+
+    .line 22
+    :cond_0
+    if-eqz v2, :cond_1
+
+    .line 23
+    .line 24
+    sub-int v3, v1, v2
+
+    .line 25
+    .line 26
+    rem-int/lit8 v3, v3, 0x4
+
+    .line 27
+    .line 28
+    if-nez v3, :cond_2
+
+    .line 29
+    .line 30
+    goto :goto_1
+
+    .line 31
+    :cond_1
+    rem-int/lit8 v3, v1, 0x4
+
+    .line 32
+    .line 33
+    if-nez v3, :cond_2
+
+    .line 34
+    .line 35
+    :goto_1
+    add-int/lit8 v0, v0, 0x1
+
+    .line 36
+    .line 37
+    :cond_2
+    :goto_2
+    if-ne p1, v1, :cond_3
+
+    .line 38
+    .line 39
+    goto :goto_3
+
+    .line 40
+    :cond_3
+    add-int/lit8 v1, v1, 0x1
+
+    .line 41
+    .line 42
     goto :goto_0
 
+    .line 43
     :cond_4
     :goto_3
-    return v2
+    return v0
 .end method
 
 .method private getTotalRow()I
@@ -315,44 +366,72 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     move v1, v0
 
-    .line 1
+    .line 3
     :goto_0
     iget-object v2, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mAnimationList:Ljava/util/List;
 
+    .line 4
+    .line 5
     invoke-interface {v2}, Ljava/util/List;->size()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v2
 
+    .line 9
     if-ge v1, v2, :cond_1
 
-    .line 2
+    .line 10
+    .line 11
     iget-object v2, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mAnimationList:Ljava/util/List;
 
+    .line 12
+    .line 13
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 14
+    .line 15
+    .line 16
     move-result-object v2
 
+    .line 17
     check-cast v2, Landroid/animation/ObjectAnimator;
 
-    invoke-virtual {v2}, Landroid/animation/ObjectAnimator;->isRunning()Z
+    .line 18
+    .line 19
+    invoke-virtual {v2}, Landroid/animation/Animator;->isRunning()Z
 
+    .line 20
+    .line 21
+    .line 22
     move-result v2
 
+    .line 23
     if-eqz v2, :cond_0
 
+    .line 24
+    .line 25
     const/4 v0, 0x1
 
+    .line 26
     goto :goto_1
 
+    .line 27
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
+    .line 28
+    .line 29
     goto :goto_0
 
+    .line 30
     :cond_1
     :goto_1
     return v0
@@ -366,6 +445,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mDegree:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -384,14 +465,6 @@
 
 .method public getItemCount(I)I
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "viewType"
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
@@ -427,84 +500,119 @@
 
 .method public getItemViewType(I)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "position"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mSupportedConfigs:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     check-cast p0, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;
 
+    .line 8
+    .line 9
     invoke-virtual {p0}, Lcom/android/camera/fragment/modeui/topconfig/TopConfigItem;->getConfigItem()I
 
+    .line 10
+    .line 11
+    .line 12
     move-result p0
 
+    .line 13
     const/16 p1, 0xad
 
+    .line 14
+    .line 15
     if-eq p0, p1, :cond_0
 
+    .line 16
+    .line 17
     const/16 p1, 0xae
 
+    .line 18
+    .line 19
     if-eq p0, p1, :cond_0
 
+    .line 20
+    .line 21
     const/16 p1, 0xb9
 
+    .line 22
+    .line 23
     if-eq p0, p1, :cond_0
 
+    .line 24
+    .line 25
     const/16 p1, 0xbb
 
+    .line 26
+    .line 27
     if-eq p0, p1, :cond_0
 
+    .line 28
+    .line 29
     const/16 p1, 0xcc
 
+    .line 30
+    .line 31
     if-eq p0, p1, :cond_0
 
+    .line 32
+    .line 33
     const/16 p1, 0xd0
 
+    .line 34
+    .line 35
     if-eq p0, p1, :cond_0
 
+    .line 36
+    .line 37
     const/16 p1, 0xd2
 
+    .line 38
+    .line 39
     if-eq p0, p1, :cond_0
 
+    .line 40
+    .line 41
     const/16 p1, 0xd5
 
+    .line 42
+    .line 43
     if-eq p0, p1, :cond_0
 
+    .line 44
+    .line 45
     const/16 p1, 0xe2
 
+    .line 46
+    .line 47
     if-eq p0, p1, :cond_0
 
+    .line 48
+    .line 49
     const/4 p0, 0x2
 
+    .line 50
     return p0
 
+    .line 51
     :cond_0
     const/4 p0, 0x1
 
+    .line 52
     return p0
 .end method
 
 .method public getTotalRow(I)I
     .locals 5
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
@@ -604,16 +712,6 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1010,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -625,16 +723,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
     .locals 19
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     move-object/from16 v0, p0
 
@@ -706,7 +794,7 @@
 
     iget-object v6, v0, Lcom/android/camera/fragment/top/ExtraAdapter;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f0a0530
+    const v7, 0x7f0b0573
 
     invoke-interface {v5, v6, v7}, Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;->getTopMenuRes(Landroid/content/Context;I)I
 
@@ -738,7 +826,7 @@
 
     move-result v3
 
-    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setEnabled(Z)V
+    invoke-virtual {v1, v3}, Landroid/view/View;->setEnabled(Z)V
 
     .line 11
     iget-object v3, v0, Lcom/android/camera/fragment/top/ExtraAdapter;->mSlideSwitchListener:Lcom/android/camera/ui/SlideSwitchButton$SlideSwitchListener;
@@ -776,19 +864,19 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_7
 
     :cond_1
-    const v2, 0x7f0a01ef
+    const v2, 0x7f0b0220
 
     .line 15
     invoke-virtual {v1, v2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
 
     move-result-object v2
 
-    const v5, 0x7f0a01ee
+    const v5, 0x7f0b021f
 
     .line 16
     invoke-virtual {v1, v5}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -804,7 +892,7 @@
 
     invoke-interface {v7, v5}, Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;->getColorCircleBackgroundView(Lcom/android/camera/ui/ColorCircleBackgroundView;)V
 
-    const v7, 0x7f0a01ed
+    const v7, 0x7f0b021e
 
     .line 18
     invoke-virtual {v1, v7}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -813,14 +901,14 @@
 
     check-cast v7, Lcom/airbnb/lottie/LottieAnimationView;
 
-    const v8, 0x7f0a0456
+    const v8, 0x7f0b0490
 
     .line 19
     invoke-virtual {v1, v8}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
 
     move-result-object v8
 
-    const v10, 0x7f0a01f0
+    const v10, 0x7f0b0221
 
     .line 20
     invoke-virtual {v1, v10}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -832,7 +920,7 @@
     .line 21
     invoke-virtual {v10, v6}, Landroid/widget/TextView;->setSelected(Z)V
 
-    const v11, 0x7f0a02b2
+    const v11, 0x7f0b02ea
 
     .line 22
     invoke-virtual {v1, v11}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -905,9 +993,9 @@
 
     move-result-object v12
 
-    const v13, 0x7f080c7a
+    const v13, 0x7f080ccc
 
-    const v6, 0x7f0600dc
+    const v6, 0x7f0600e1
 
     invoke-virtual {v12, v11, v13, v6}, Lcom/android/camera/customization/ThemeResource;->setBackgroundColor(Landroid/view/View;II)V
 
@@ -955,7 +1043,7 @@
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v15, 0x7f1200d1
+    const v15, 0x7f1300d1
 
     invoke-virtual {v4, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -980,7 +1068,7 @@
 
     aput-object v16, v7, v18
 
-    const v15, 0x7f10000b
+    const v15, 0x7f11000b
 
     invoke-virtual {v4, v15, v6, v7}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -990,20 +1078,20 @@
 
     invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v6, 0x7f10000c
+    const/4 v6, 0x1
 
-    const/4 v7, 0x1
-
-    new-array v14, v7, [Ljava/lang/Object;
+    new-array v7, v6, [Ljava/lang/Object;
 
     .line 41
     invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v7
+    move-result-object v6
 
-    aput-object v7, v14, v18
+    aput-object v6, v7, v18
 
-    invoke-virtual {v4, v6, v12, v14}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+    const v6, 0x7f11000c
+
+    invoke-virtual {v4, v6, v12, v7}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1021,7 +1109,7 @@
     :cond_4
     move-object/from16 v17, v7
 
-    const v6, 0x7f1200d0
+    const v6, 0x7f1300d0
 
     .line 43
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1031,7 +1119,7 @@
     invoke-virtual {v2, v6}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     :goto_1
-    const v6, 0x7f1200d2
+    const v6, 0x7f1300d2
 
     .line 44
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1061,7 +1149,7 @@
 
     if-eqz v6, :cond_6
 
-    const v6, 0x7f1200b6
+    const v6, 0x7f1300b6
 
     .line 47
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1073,7 +1161,7 @@
     goto :goto_2
 
     :cond_6
-    const v6, 0x7f1200b5
+    const v6, 0x7f1300b5
 
     .line 48
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1083,7 +1171,7 @@
     invoke-virtual {v2, v6}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     :goto_2
-    const v6, 0x7f1200b7
+    const v6, 0x7f1300b7
 
     .line 49
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1136,7 +1224,7 @@
     .line 56
     invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v7, 0x7f12009b
+    const v7, 0x7f13009b
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1159,7 +1247,7 @@
     .line 58
     invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v7, 0x7f120043
+    const v7, 0x7f130043
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1296,16 +1384,6 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/top/ExtraAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -1317,71 +1395,61 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
-    const/4 p0, 0x0
+    const/4 p0, 0x1
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    if-ne p2, v0, :cond_0
+    if-ne p2, p0, :cond_0
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object p2
+    move-result-object p0
 
-    invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+    invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
-    move-result-object p2
+    move-result-object p0
 
     .line 3
     invoke-static {}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOperationTopMenu()Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;
 
-    move-result-object v0
+    move-result-object p2
 
-    invoke-interface {v0}, Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;->getMulitItem()I
+    invoke-interface {p2}, Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;->getMulitItem()I
 
-    move-result v0
+    move-result p2
 
-    invoke-virtual {p2, v0, p1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p0, p2, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x2
+    const/4 p0, 0x2
 
-    if-ne p2, v0, :cond_1
+    if-ne p2, p0, :cond_1
 
     .line 4
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object p2
+    move-result-object p0
 
-    invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+    invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
-    move-result-object p2
+    move-result-object p0
 
     .line 5
     invoke-static {}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOperationTopMenu()Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;
 
-    move-result-object v0
+    move-result-object p2
 
-    invoke-interface {v0}, Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;->getToggleItem()I
+    invoke-interface {p2}, Lcom/android/camera2/compat/theme/common/MiThemeOperationTopMenuInterface;->getToggleItem()I
 
-    move-result v0
+    move-result p2
 
-    invoke-virtual {p2, v0, p1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    invoke-virtual {p0, p2, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p0
 
@@ -1401,14 +1469,6 @@
 
 .method public bridge synthetic onViewAttachedToWindow(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "holder"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -1420,24 +1480,16 @@
 
 .method public onViewAttachedToWindow(Lcom/android/camera/fragment/CommonRecyclerViewHolder;)V
     .locals 8
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "holder"
-        }
-    .end annotation
 
     .line 2
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onViewAttachedToWindow(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V
 
     .line 3
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
     move-result-object v0
 
-    invoke-virtual {v0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00OO000()Z
+    invoke-virtual {v0}, Lo000Oo0/OooO00o;->o00OO000()Z
 
     move-result v0
 
@@ -1590,103 +1642,113 @@
 
 .method public setAnimateHeight(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "height"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mAnimateHeight:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setDegree(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setRowHeightLists(IIII)V
     .locals 5
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "multiTypeCount",
-            "toggleTypeRow",
-            "mulitItemHeight",
-            "toggleItemHeight"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mRowHeightLists:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
+    .line 4
+    .line 5
+    .line 6
     const/4 v0, 0x0
 
+    .line 7
     move v1, v0
 
+    .line 8
     move v2, v1
 
+    .line 9
     :goto_0
     if-ge v1, p1, :cond_0
 
+    .line 10
+    .line 11
     add-int/2addr v2, p3
 
-    .line 2
+    .line 12
     iget-object v3, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mRowHeightLists:Ljava/util/List;
 
+    .line 13
+    .line 14
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v4
 
+    .line 18
     invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 19
+    .line 20
+    .line 21
     add-int/lit8 v1, v1, 0x1
 
+    .line 22
+    .line 23
     goto :goto_0
 
+    .line 24
     :cond_0
     :goto_1
     if-ge v0, p2, :cond_1
 
+    .line 25
+    .line 26
     add-int/2addr v2, p4
 
-    .line 3
+    .line 27
     iget-object p1, p0, Lcom/android/camera/fragment/top/ExtraAdapter;->mRowHeightLists:Ljava/util/List;
 
+    .line 28
+    .line 29
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 30
+    .line 31
+    .line 32
     move-result-object p3
 
+    .line 33
     invoke-interface {p1, p3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    .line 34
+    .line 35
+    .line 36
     add-int/lit8 v0, v0, 0x1
 
+    .line 37
+    .line 38
     goto :goto_1
 
+    .line 39
     :cond_1
     return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public mSpringSystem:Lcom/facebook/rebound/BaseSpringSystem;
+.field protected mSpringSystem:Lcom/facebook/rebound/BaseSpringSystem;
 
 
 # direct methods
@@ -14,6 +14,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -25,6 +28,8 @@
     .line 1
     iput-object p1, p0, Lcom/facebook/rebound/SpringLooper;->mSpringSystem:Lcom/facebook/rebound/BaseSpringSystem;
 
+    .line 2
+    .line 3
     return-void
 .end method
 

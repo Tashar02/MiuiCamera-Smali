@@ -165,7 +165,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
@@ -250,7 +250,7 @@
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    const-string/jumbo v8, "timestamp"
+    const-string v8, "timestamp"
 
     .line 6
     iget-wide v9, v6, Lcom/ot/pubsub/b/l;->c:J
@@ -422,7 +422,7 @@
 
     :goto_2
     :try_start_3
-    const-string/jumbo p1, "updateToDb error: "
+    const-string p1, "updateToDb error: "
 
     .line 20
     invoke-static {v2, p1, p0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -658,7 +658,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -719,7 +719,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -776,7 +776,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -833,7 +833,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -890,7 +890,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -935,7 +935,7 @@
     move-exception p0
 
     .line 10
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
     return-void
@@ -1007,7 +1007,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1069,7 +1069,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1151,7 +1151,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo p2, "will return common sample "
+    const-string p2, "will return common sample "
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1176,7 +1176,7 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo p1, "will return event sample "
+    const-string p1, "will return event sample "
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1206,7 +1206,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1219,7 +1219,7 @@
     invoke-static {v0, p0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
-    const-string/jumbo p0, "will return def sample"
+    const-string p0, "will return def sample"
 
     .line 47
     invoke-static {v0, p0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;)V
@@ -1245,11 +1245,11 @@
     .line 28
     invoke-static {v2}, Lcom/ot/pubsub/g/a;->a(Ljava/lang/Runnable;)V
 
-    const-wide/16 v3, 0x5
-
     .line 29
     :try_start_0
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    const-wide/16 v3, 0x5
 
     invoke-virtual {v2, v3, v4, v1}, Ljava/util/concurrent/FutureTask;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
@@ -1319,7 +1319,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1372,18 +1372,28 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/ot/pubsub/b/h;->f(Ljava/lang/String;)Lcom/ot/pubsub/b/l;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     iget-object p0, p0, Lcom/ot/pubsub/b/l;->d:Ljava/lang/String;
 
+    .line 8
+    .line 9
     return-object p0
 
+    .line 10
     :cond_0
     const-string p0, ""
 
+    .line 11
+    .line 12
     return-object p0
 .end method
 
@@ -1393,27 +1403,43 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/ot/pubsub/b/h;->f(Ljava/lang/String;)Lcom/ot/pubsub/b/l;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     if-eqz p0, :cond_0
 
-    .line 2
+    .line 6
+    .line 7
     iget-object p0, p0, Lcom/ot/pubsub/b/l;->e:Lorg/json/JSONObject;
 
+    .line 8
+    .line 9
     if-eqz p0, :cond_0
 
-    const-string/jumbo p1, "version"
+    .line 10
+    .line 11
+    const-string p1, "version"
 
-    .line 3
+    .line 12
+    .line 13
     invoke-virtual {p0, p1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
 
+    .line 14
+    .line 15
+    .line 16
     move-result p0
 
+    .line 17
     return p0
 
+    .line 18
     :cond_0
     const/4 p0, 0x0
 
+    .line 19
     return p0
 .end method
 
@@ -1423,108 +1449,200 @@
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v1, "getAppConfigData start, appId: "
 
+    .line 7
+    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 12
+    .line 13
+    .line 14
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v0
 
+    .line 18
     const-string v1, "ConfigDbManager"
 
+    .line 19
+    .line 20
     invoke-static {v1, v0}, Lcom/ot/pubsub/util/k;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
+    .line 21
+    .line 22
+    .line 23
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
+    .line 24
+    .line 25
+    .line 26
     move-result v0
 
+    .line 27
     if-eqz v0, :cond_0
 
+    .line 28
+    .line 29
     const/4 p0, 0x0
 
+    .line 30
     return-object p0
 
-    .line 3
+    .line 31
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/ot/pubsub/b/h;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 32
+    .line 33
     invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 34
+    .line 35
+    .line 36
     move-result-object v0
 
+    .line 37
     if-eqz v0, :cond_1
 
+    .line 38
+    .line 39
     iget-object v0, p0, Lcom/ot/pubsub/b/h;->d:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 40
+    .line 41
     invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
 
+    .line 42
+    .line 43
+    .line 44
     move-result v0
 
+    .line 45
     if-eqz v0, :cond_2
 
+    .line 46
+    .line 47
     iget-object v0, p0, Lcom/ot/pubsub/b/h;->d:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 48
+    .line 49
     invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 50
+    .line 51
+    .line 52
     move-result-object v0
 
+    .line 53
     check-cast v0, Ljava/lang/Boolean;
 
+    .line 54
+    .line 55
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 56
+    .line 57
+    .line 58
     move-result v0
 
+    .line 59
     if-eqz v0, :cond_2
 
-    .line 4
+    .line 60
+    .line 61
     :cond_1
     invoke-virtual {p0, p1}, Lcom/ot/pubsub/b/h;->b(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 62
+    .line 63
+    .line 64
     goto :goto_0
 
+    .line 65
     :catch_0
     move-exception v0
 
-    .line 5
+    .line 66
     new-instance v2, Ljava/lang/StringBuilder;
 
+    .line 67
+    .line 68
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 69
+    .line 70
+    .line 71
     const-string v3, "getConfig error: "
 
+    .line 72
+    .line 73
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    .line 74
+    .line 75
+    .line 76
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
+    .line 77
+    .line 78
+    .line 79
     move-result-object v0
 
+    .line 80
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 81
+    .line 82
+    .line 83
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 84
+    .line 85
+    .line 86
     move-result-object v0
 
+    .line 87
     invoke-static {v1, v0}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
+    .line 88
+    .line 89
+    .line 90
     :cond_2
     :goto_0
     iget-object p0, p0, Lcom/ot/pubsub/b/h;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 91
+    .line 92
     invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 93
+    .line 94
+    .line 95
     move-result-object p0
 
+    .line 96
     check-cast p0, Lcom/ot/pubsub/b/l;
 
+    .line 97
+    .line 98
     return-object p0
 .end method

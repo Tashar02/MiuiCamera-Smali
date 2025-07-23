@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/customization/PreferenceCustomSound$MyGridLayoutManager;
+.class Lcom/android/camera/customization/PreferenceCustomSound$MyGridLayoutManager;
 .super Landroidx/recyclerview/widget/GridLayoutManager;
 .source "PreferenceCustomSound.java"
 
@@ -15,31 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/customization/PreferenceCustomSound;
+.field final synthetic this$0:Lcom/android/camera/customization/PreferenceCustomSound;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/customization/PreferenceCustomSound;Landroid/content/Context;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x0,
-            0x0
-        }
-        names = {
-            "this$0",
-            "context",
-            "spanCount"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/customization/PreferenceCustomSound$MyGridLayoutManager;->this$0:Lcom/android/camera/customization/PreferenceCustomSound;
 
     .line 2
+    .line 3
     invoke-direct {p0, p2, p3}, Landroidx/recyclerview/widget/GridLayoutManager;-><init>(Landroid/content/Context;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -48,7 +40,9 @@
 .method public canScrollVertically()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

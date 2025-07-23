@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/Camera$3;
+.class Lcom/android/camera/Camera$3;
 .super Ljava/lang/Object;
 .source "Camera.java"
 
@@ -28,26 +28,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/Camera;
+.field final synthetic this$0:Lcom/android/camera/Camera;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/Camera;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/Camera$3;->this$0:Lcom/android/camera/Camera;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -59,15 +56,6 @@
         .annotation build Lio/reactivex/annotations/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "baseModuleNullHolder"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -242,7 +230,7 @@
     .line 23
     iget-object v2, p0, Lcom/android/camera/Camera$3;->this$0:Lcom/android/camera/Camera;
 
-    const v4, 0x7f0a040a
+    const v4, 0x7f0b0444
 
     invoke-virtual {v2, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -286,11 +274,11 @@
 
     move-result-object p0
 
-    new-array p1, v3, [Ljava/lang/Object;
+    const-string p1, "CameraSetupConsumer#accept: switch module done"
 
-    const-string v0, "CameraSetupConsumer#accept: switch module done"
+    new-array v0, v3, [Ljava/lang/Object;
 
-    invoke-static {p0, v0, p1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p0, p1, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 28
     invoke-static {}, Lcom/android/camera/performance/PerformanceManager;->getInstance()Lcom/android/camera/performance/PerformanceManager;
@@ -308,15 +296,6 @@
         .annotation build Lio/reactivex/annotations/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "baseModuleNullHolder"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

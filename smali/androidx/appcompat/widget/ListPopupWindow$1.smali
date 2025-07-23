@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ListPopupWindow$1;
+.class Landroidx/appcompat/widget/ListPopupWindow$1;
 .super Landroidx/appcompat/widget/ForwardingListener;
 .source "ListPopupWindow.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/widget/ListPopupWindow;
+.field final synthetic this$0:Landroidx/appcompat/widget/ListPopupWindow;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$1;->this$0:Landroidx/appcompat/widget/ListPopupWindow;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p2}, Landroidx/appcompat/widget/ForwardingListener;-><init>(Landroid/view/View;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 

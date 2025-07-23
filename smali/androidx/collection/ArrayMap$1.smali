@@ -1,4 +1,4 @@
-.class public Landroidx/collection/ArrayMap$1;
+.class Landroidx/collection/ArrayMap$1;
 .super Landroidx/collection/MapCollections;
 .source "ArrayMap.java"
 
@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/collection/ArrayMap;
+.field final synthetic this$0:Landroidx/collection/ArrayMap;
 
 
 # direct methods
@@ -32,8 +32,13 @@
     .line 1
     iput-object p1, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroidx/collection/MapCollections;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,8 +50,13 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/collection/SimpleArrayMap;->clear()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -56,14 +66,23 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/collection/SimpleArrayMap;->mArray:[Ljava/lang/Object;
 
+    .line 4
+    .line 5
     shl-int/lit8 p1, p1, 0x1
 
+    .line 6
+    .line 7
     add-int/2addr p1, p2
 
+    .line 8
     aget-object p0, p0, p1
 
+    .line 9
+    .line 10
     return-object p0
 .end method
 
@@ -80,6 +99,8 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -89,8 +110,12 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     iget p0, p0, Landroidx/collection/SimpleArrayMap;->mSize:I
 
+    .line 4
+    .line 5
     return p0
 .end method
 
@@ -100,10 +125,16 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfKey(Ljava/lang/Object;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -113,10 +144,16 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->indexOfValue(Ljava/lang/Object;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -131,8 +168,13 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2}, Landroidx/collection/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -142,8 +184,13 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/collection/SimpleArrayMap;->removeAt(I)Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -158,9 +205,15 @@
     .line 1
     iget-object p0, p0, Landroidx/collection/ArrayMap$1;->this$0:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, p2}, Landroidx/collection/SimpleArrayMap;->setValueAt(ILjava/lang/Object;)Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method

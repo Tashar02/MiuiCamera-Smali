@@ -41,7 +41,12 @@
             .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP_PREFIX:Landroidx/annotation/RestrictTo$Scope;
         }
     .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 .end field
+
+.field static final RESULT_SUCCESS:I
 
 
 # direct methods
@@ -51,6 +56,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -59,11 +67,13 @@
 .method public onTypefaceRequestFailed(I)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public onTypefaceRetrieved(Landroid/graphics/Typeface;)V
     .locals 0
 
+    .line 1
     return-void
 .end method

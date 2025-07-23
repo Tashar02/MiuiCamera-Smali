@@ -16,34 +16,12 @@
 
 # virtual methods
 .method public abstract init(IIILcom/android/camera/fragment/vlogpro/VPItem;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "width",
-            "height",
-            "cameraFacing",
-            "vpItem"
-        }
-    .end annotation
 .end method
 
 .method public abstract pausedRecording()V
 .end method
 
 .method public abstract prepareRecording(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "index"
-        }
-    .end annotation
 .end method
 
 .method public abstract release()V

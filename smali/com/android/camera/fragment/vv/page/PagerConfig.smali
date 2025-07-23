@@ -17,6 +17,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -28,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -37,6 +41,8 @@
     .line 1
     sget v0, Lcom/android/camera/fragment/vv/page/PagerConfig;->sFlingThreshold:I
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -46,6 +52,8 @@
     .line 1
     sget v0, Lcom/android/camera/fragment/vv/page/PagerConfig;->sMillisecondsPreInch:F
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -57,6 +65,8 @@
     .line 1
     sget-boolean v0, Lcom/android/camera/fragment/vv/page/PagerConfig;->sShowLog:Z
 
+    .line 2
+    .line 3
     return v0
 .end method
 
@@ -65,18 +75,11 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "flingThreshold"
-        }
-    .end annotation
-
     .line 1
     sput p0, Lcom/android/camera/fragment/vv/page/PagerConfig;->sFlingThreshold:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -85,18 +88,11 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "millisecondsPreInch"
-        }
-    .end annotation
-
     .line 1
     sput p0, Lcom/android/camera/fragment/vv/page/PagerConfig;->sMillisecondsPreInch:F
 
+    .line 2
+    .line 3
     return-void
 .end method
 
@@ -105,17 +101,10 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "showLog"
-        }
-    .end annotation
-
     .line 1
     sput-boolean p0, Lcom/android/camera/fragment/vv/page/PagerConfig;->sShowLog:Z
 
+    .line 2
+    .line 3
     return-void
 .end method

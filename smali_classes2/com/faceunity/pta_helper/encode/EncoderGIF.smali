@@ -31,11 +31,16 @@
 .method public static constructor <clinit>()V
     .locals 1
 
+    .line 1
     const-string v0, "FUP2AHelper"
 
-    .line 1
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -45,6 +50,9 @@
     .line 1
     invoke-direct {p0}, Lcom/faceunity/pta_helper/encode/SequenceFrame;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -68,13 +76,18 @@
 .method public init(Ljava/lang/String;II)Z
     .locals 1
 
+    .line 1
     const/4 v0, 0x0
 
-    .line 1
+    .line 2
     invoke-virtual {p0, p1, p2, p3, v0}, Lcom/faceunity/pta_helper/encode/SequenceFrame;->init(Ljava/lang/String;III)Z
 
+    .line 3
+    .line 4
+    .line 5
     move-result p0
 
+    .line 6
     return p0
 .end method
 
@@ -84,10 +97,16 @@
     .line 1
     iget-wide v0, p0, Lcom/faceunity/pta_helper/encode/SequenceFrame;->encoder:J
 
+    .line 2
+    .line 3
     invoke-direct {p0, v0, v1, p1}, Lcom/faceunity/pta_helper/encode/EncoderGIF;->setDither(JI)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -97,10 +116,16 @@
     .line 1
     iget-wide v0, p0, Lcom/faceunity/pta_helper/encode/SequenceFrame;->encoder:J
 
+    .line 2
+    .line 3
     invoke-direct {p0, v0, v1, p1}, Lcom/faceunity/pta_helper/encode/EncoderGIF;->setEncoder(JI)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -110,10 +135,16 @@
     .line 1
     iget-wide v0, p0, Lcom/faceunity/pta_helper/encode/SequenceFrame;->encoder:J
 
+    .line 2
+    .line 3
     invoke-direct {p0, v0, v1, p1, p2}, Lcom/faceunity/pta_helper/encode/EncoderGIF;->setImageSizeToComputeColorTable(JII)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -123,10 +154,16 @@
     .line 1
     iget-wide v0, p0, Lcom/faceunity/pta_helper/encode/SequenceFrame;->encoder:J
 
+    .line 2
+    .line 3
     invoke-direct {p0, v0, v1, p1}, Lcom/faceunity/pta_helper/encode/EncoderGIF;->setSample(JI)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -136,9 +173,15 @@
     .line 1
     iget-wide v0, p0, Lcom/faceunity/pta_helper/encode/SequenceFrame;->encoder:J
 
+    .line 2
+    .line 3
     invoke-direct {p0, v0, v1, p1}, Lcom/faceunity/pta_helper/encode/EncoderGIF;->setThreadCount(JI)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method

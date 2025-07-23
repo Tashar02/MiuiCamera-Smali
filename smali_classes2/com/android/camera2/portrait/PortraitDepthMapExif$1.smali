@@ -1,4 +1,4 @@
-.class public synthetic Lcom/android/camera2/portrait/PortraitDepthMapExif$1;
+.class synthetic Lcom/android/camera2/portrait/PortraitDepthMapExif$1;
 .super Ljava/lang/Object;
 .source "PortraitDepthMapExif.java"
 

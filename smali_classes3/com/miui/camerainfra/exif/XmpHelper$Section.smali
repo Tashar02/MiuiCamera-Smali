@@ -1,4 +1,4 @@
-.class public Lcom/miui/camerainfra/exif/XmpHelper$Section;
+.class Lcom/miui/camerainfra/exif/XmpHelper$Section;
 .super Ljava/lang/Object;
 .source "XmpHelper.java"
 

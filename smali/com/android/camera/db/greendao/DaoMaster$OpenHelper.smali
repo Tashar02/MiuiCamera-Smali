@@ -20,17 +20,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "name"
-        }
-    .end annotation
-
     const/4 v0, 0x7
 
     .line 1
@@ -41,18 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "name",
-            "factory"
-        }
-    .end annotation
 
     const/4 v0, 0x7
 
@@ -66,28 +43,32 @@
 # virtual methods
 .method public onCreate(Lorg/greenrobot/greendao/database/Database;)V
     .locals 3
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "db"
-        }
-    .end annotation
-
-    const/4 p0, 0x0
-
-    new-array v0, p0, [Ljava/lang/Object;
-
-    const-string v1, "greenDAO"
-
-    const-string v2, "Creating tables for schema version 7"
 
     .line 1
-    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    const/4 p0, 0x0
 
     .line 2
+    new-array v0, p0, [Ljava/lang/Object;
+
+    .line 3
+    .line 4
+    const-string v1, "greenDAO"
+
+    .line 5
+    .line 6
+    const-string v2, "Creating tables for schema version 7"
+
+    .line 7
+    .line 8
+    invoke-static {v1, v2, v0}, Lcom/android/camera/log/Log;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
     invoke-static {p1, p0}, Lcom/android/camera/db/greendao/DaoMaster;->createAllTables(Lorg/greenrobot/greendao/database/Database;Z)V
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method

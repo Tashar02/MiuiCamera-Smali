@@ -1,4 +1,4 @@
-.class public Lcom/miui/camerainfra/exif/ExifInterface$SeekableByteOrderedDataInputStream;
+.class Lcom/miui/camerainfra/exif/ExifInterface$SeekableByteOrderedDataInputStream;
 .super Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataInputStream;
 .source "ExifInterface.java"
 
@@ -38,7 +38,7 @@
 
     const p1, 0x7fffffff
 
-    invoke-virtual {p0, p1}, Ljava/io/DataInputStream;->mark(I)V
+    invoke-virtual {p0, p1}, Ljava/io/InputStream;->mark(I)V
 
     return-void
 
@@ -69,7 +69,7 @@
 
     const p1, 0x7fffffff
 
-    invoke-virtual {p0, p1}, Ljava/io/DataInputStream;->mark(I)V
+    invoke-virtual {p0, p1}, Ljava/io/InputStream;->mark(I)V
 
     return-void
 .end method
@@ -87,34 +87,53 @@
     .line 1
     iget v0, p0, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataInputStream;->mPosition:I
 
+    .line 2
+    .line 3
     int-to-long v1, v0
 
+    .line 4
     cmp-long v1, v1, p1
 
+    .line 5
+    .line 6
     if-lez v1, :cond_0
 
+    .line 7
+    .line 8
     const/4 v0, 0x0
 
-    .line 2
+    .line 9
     iput v0, p0, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataInputStream;->mPosition:I
 
-    .line 3
+    .line 10
+    .line 11
     iget-object v0, p0, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataInputStream;->mDataInputStream:Ljava/io/DataInputStream;
 
-    invoke-virtual {v0}, Ljava/io/DataInputStream;->reset()V
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/io/InputStream;->reset()V
 
+    .line 14
+    .line 15
+    .line 16
     goto :goto_0
 
+    .line 17
     :cond_0
     int-to-long v0, v0
 
+    .line 18
     sub-long/2addr p1, v0
 
+    .line 19
     :goto_0
     long-to-int p1, p1
 
-    .line 4
+    .line 20
     invoke-virtual {p0, p1}, Lcom/miui/camerainfra/exif/ExifInterface$ByteOrderedDataInputStream;->skipFully(I)V
 
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method

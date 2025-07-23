@@ -37,6 +37,14 @@
 
 .method public constructor <init>(Landroid/support/v4/media/MediaMetadataCompat;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "source"
+        }
+    .end annotation
 
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -60,7 +68,18 @@
     .locals 3
     .annotation build Landroidx/annotation/RestrictTo;
         value = {
-            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP:Landroidx/annotation/RestrictTo$Scope;
+            .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY:Landroidx/annotation/RestrictTo$Scope;
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "source",
+            "maxBitmapSize"
         }
     .end annotation
 
@@ -70,7 +89,7 @@
     .line 7
     iget-object p1, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
-    invoke-virtual {p1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+    invoke-virtual {p1}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
     move-result-object p1
 
@@ -95,7 +114,7 @@
     .line 8
     iget-object v1, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
-    invoke-virtual {v1, v0}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -136,61 +155,103 @@
 
 .method private scaleBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 1
-
-    int-to-float p0, p2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bmp",
+            "maxSize"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result p2
-
-    int-to-float p2, p2
-
-    div-float p2, p0, p2
+    int-to-float p0, p2
 
     .line 2
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    div-float/2addr p0, v0
-
-    .line 3
-    invoke-static {p2, p0}, Ljava/lang/Math;->min(FF)F
-
-    move-result p0
-
-    .line 4
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result p2
-
-    int-to-float p2, p2
-
-    mul-float/2addr p2, p0
-
-    float-to-int p2, p2
-
-    .line 5
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
-    move-result v0
-
-    int-to-float v0, v0
-
-    mul-float/2addr v0, p0
-
-    float-to-int p0, v0
-
-    const/4 v0, 0x1
+    .line 3
+    .line 4
+    .line 5
+    move-result p2
 
     .line 6
+    int-to-float p2, p2
+
+    .line 7
+    div-float p2, p0, p2
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    int-to-float v0, v0
+
+    .line 14
+    div-float/2addr p0, v0
+
+    .line 15
+    invoke-static {p2, p0}, Ljava/lang/Math;->min(FF)F
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p2
+
+    .line 23
+    int-to-float p2, p2
+
+    .line 24
+    mul-float/2addr p2, p0
+
+    .line 25
+    float-to-int p2, p2
+
+    .line 26
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v0
+
+    .line 30
+    int-to-float v0, v0
+
+    .line 31
+    mul-float/2addr v0, p0
+
+    .line 32
+    float-to-int p0, v0
+
+    .line 33
+    const/4 v0, 0x1
+
+    .line 34
     invoke-static {p1, p0, p2, v0}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
+    .line 35
+    .line 36
+    .line 37
     move-result-object p0
 
+    .line 38
     return-object p0
 .end method
 
@@ -202,354 +263,660 @@
     .line 1
     new-instance v0, Landroid/support/v4/media/MediaMetadataCompat;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
+    .line 4
+    .line 5
     invoke-direct {v0, p0}, Landroid/support/v4/media/MediaMetadataCompat;-><init>(Landroid/os/Bundle;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-object v0
 .end method
 
 .method public putBitmap(Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/support/v4/media/MediaMetadataCompat$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->containsKey(Ljava/lang/Object;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v1
 
+    .line 7
     if-eqz v1, :cond_1
 
-    .line 2
+    .line 8
+    .line 9
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v0
 
+    .line 13
     check-cast v0, Ljava/lang/Integer;
 
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
+    .line 19
     const/4 v1, 0x2
 
+    .line 20
     if-ne v0, v1, :cond_0
 
+    .line 21
+    .line 22
     goto :goto_0
 
-    .line 3
+    .line 23
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 24
+    .line 25
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 26
+    .line 27
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 28
+    .line 29
+    .line 30
     const-string v0, "The "
 
+    .line 31
+    .line 32
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 36
+    .line 37
+    .line 38
     const-string p1, " key cannot be used to put a Bitmap"
 
+    .line 39
+    .line 40
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 41
+    .line 42
+    .line 43
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 44
+    .line 45
+    .line 46
     move-result-object p1
 
+    .line 47
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 48
+    .line 49
+    .line 50
     throw p0
 
-    .line 4
+    .line 51
     :cond_1
     :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
+    .line 52
+    .line 53
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
+    .line 54
+    .line 55
+    .line 56
     return-object p0
 .end method
 
 .method public putLong(Ljava/lang/String;J)Landroid/support/v4/media/MediaMetadataCompat$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->containsKey(Ljava/lang/Object;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v1
 
+    .line 7
     if-eqz v1, :cond_1
 
-    .line 2
+    .line 8
+    .line 9
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v0
 
+    .line 13
     check-cast v0, Ljava/lang/Integer;
 
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
+    .line 19
     if-nez v0, :cond_0
 
+    .line 20
+    .line 21
     goto :goto_0
 
-    .line 3
+    .line 22
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 23
+    .line 24
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 25
+    .line 26
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 27
+    .line 28
+    .line 29
     const-string p3, "The "
 
+    .line 30
+    .line 31
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 32
+    .line 33
+    .line 34
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 35
+    .line 36
+    .line 37
     const-string p1, " key cannot be used to put a long"
 
+    .line 38
+    .line 39
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 40
+    .line 41
+    .line 42
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 43
+    .line 44
+    .line 45
     move-result-object p1
 
+    .line 46
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 47
+    .line 48
+    .line 49
     throw p0
 
-    .line 4
+    .line 50
     :cond_1
     :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
-    invoke-virtual {v0, p1, p2, p3}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+    .line 51
+    .line 52
+    invoke-virtual {v0, p1, p2, p3}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
+    .line 53
+    .line 54
+    .line 55
     return-object p0
 .end method
 
 .method public putRating(Ljava/lang/String;Landroid/support/v4/media/RatingCompat;)Landroid/support/v4/media/MediaMetadataCompat$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->containsKey(Ljava/lang/Object;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v1
 
+    .line 7
     if-eqz v1, :cond_1
 
-    .line 2
+    .line 8
+    .line 9
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v0
 
+    .line 13
     check-cast v0, Ljava/lang/Integer;
 
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
+    .line 19
     const/4 v1, 0x3
 
+    .line 20
     if-ne v0, v1, :cond_0
 
+    .line 21
+    .line 22
     goto :goto_0
 
-    .line 3
+    .line 23
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 24
+    .line 25
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 26
+    .line 27
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 28
+    .line 29
+    .line 30
     const-string v0, "The "
 
+    .line 31
+    .line 32
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 36
+    .line 37
+    .line 38
     const-string p1, " key cannot be used to put a Rating"
 
+    .line 39
+    .line 40
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 41
+    .line 42
+    .line 43
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 44
+    .line 45
+    .line 46
     move-result-object p1
 
+    .line 47
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 48
+    .line 49
+    .line 50
     throw p0
 
-    .line 4
+    .line 51
     :cond_1
     :goto_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_2
-
-    .line 5
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
+    .line 52
+    .line 53
     invoke-virtual {p2}, Landroid/support/v4/media/RatingCompat;->getRating()Ljava/lang/Object;
 
+    .line 54
+    .line 55
+    .line 56
     move-result-object p2
 
+    .line 57
     check-cast p2, Landroid/os/Parcelable;
 
+    .line 58
+    .line 59
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    goto :goto_1
-
-    .line 6
-    :cond_2
-    iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
-
-    invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
-
-    :goto_1
+    .line 60
+    .line 61
+    .line 62
     return-object p0
 .end method
 
 .method public putString(Ljava/lang/String;Ljava/lang/String;)Landroid/support/v4/media/MediaMetadataCompat$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->containsKey(Ljava/lang/Object;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v1
 
+    .line 7
     if-eqz v1, :cond_1
 
-    .line 2
+    .line 8
+    .line 9
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v0
 
+    .line 13
     check-cast v0, Ljava/lang/Integer;
 
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
+    .line 19
     const/4 v1, 0x1
 
+    .line 20
     if-ne v0, v1, :cond_0
 
+    .line 21
+    .line 22
     goto :goto_0
 
-    .line 3
+    .line 23
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 24
+    .line 25
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 26
+    .line 27
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 28
+    .line 29
+    .line 30
     const-string v0, "The "
 
+    .line 31
+    .line 32
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 36
+    .line 37
+    .line 38
     const-string p1, " key cannot be used to put a String"
 
+    .line 39
+    .line 40
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 41
+    .line 42
+    .line 43
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 44
+    .line 45
+    .line 46
     move-result-object p1
 
+    .line 47
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 48
+    .line 49
+    .line 50
     throw p0
 
-    .line 4
+    .line 51
     :cond_1
     :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
+    .line 52
+    .line 53
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
+    .line 54
+    .line 55
+    .line 56
     return-object p0
 .end method
 
 .method public putText(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/support/v4/media/MediaMetadataCompat$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 1
     sget-object v0, Landroid/support/v4/media/MediaMetadataCompat;->METADATA_KEYS_TYPE:Landroidx/collection/ArrayMap;
 
+    .line 2
+    .line 3
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->containsKey(Ljava/lang/Object;)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v1
 
+    .line 7
     if-eqz v1, :cond_1
 
-    .line 2
+    .line 8
+    .line 9
     invoke-virtual {v0, p1}, Landroidx/collection/SimpleArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object v0
 
+    .line 13
     check-cast v0, Ljava/lang/Integer;
 
+    .line 14
+    .line 15
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
+    .line 16
+    .line 17
+    .line 18
     move-result v0
 
+    .line 19
     const/4 v1, 0x1
 
+    .line 20
     if-ne v0, v1, :cond_0
 
+    .line 21
+    .line 22
     goto :goto_0
 
-    .line 3
+    .line 23
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
+    .line 24
+    .line 25
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 26
+    .line 27
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 28
+    .line 29
+    .line 30
     const-string v0, "The "
 
+    .line 31
+    .line 32
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 33
+    .line 34
+    .line 35
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 36
+    .line 37
+    .line 38
     const-string p1, " key cannot be used to put a CharSequence"
 
+    .line 39
+    .line 40
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 41
+    .line 42
+    .line 43
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 44
+    .line 45
+    .line 46
     move-result-object p1
 
+    .line 47
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 48
+    .line 49
+    .line 50
     throw p0
 
-    .line 4
+    .line 51
     :cond_1
     :goto_0
     iget-object v0, p0, Landroid/support/v4/media/MediaMetadataCompat$Builder;->mBundle:Landroid/os/Bundle;
 
+    .line 52
+    .line 53
     invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
+    .line 54
+    .line 55
+    .line 56
     return-object p0
 .end method

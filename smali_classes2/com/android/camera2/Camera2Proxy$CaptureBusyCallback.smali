@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onCaptureCompleted(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "success"
-        }
-    .end annotation
 .end method

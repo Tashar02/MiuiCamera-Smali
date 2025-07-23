@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/zxing/decoders/qrcode/MlkitWrapper$Scanner;
+.class abstract Lcom/android/zxing/decoders/qrcode/MlkitWrapper$Scanner;
 .super Ljava/lang/Object;
 .source "MlkitWrapper.java"
 
@@ -42,7 +42,9 @@
 
     move-result-object v0
 
-    sget-object v1, LOooO0OO/OooO0O0/OooO0o0/OooO00o/o00Oo0/OooO0o;->o0000o0o:LOooO0OO/OooO0O0/OooO0o0/OooO00o/o00Oo0/OooO0o;
+    new-instance v1, Lcom/android/zxing/decoders/qrcode/OooO0o;
+
+    invoke-direct {v1}, Lcom/android/zxing/decoders/qrcode/OooO0o;-><init>()V
 
     .line 5
     invoke-virtual {v0, v1}, Lio/reactivex/Flowable;->subscribe(Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
@@ -63,7 +65,19 @@
     return-void
 .end method
 
-.method public static synthetic lambda$new$0(Ljava/lang/Long;)V
+.method public static synthetic OooO00o(Ljava/lang/Long;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/android/zxing/decoders/qrcode/MlkitWrapper$Scanner;->lambda$new$0(Ljava/lang/Long;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private static synthetic lambda$new$0(Ljava/lang/Long;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -74,6 +88,9 @@
     .line 1
     invoke-static {}, Lcom/android/zxing/decoders/qrcode/MlkitWrapper;->access$700()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -85,7 +102,12 @@
     .line 1
     iget-object p0, p0, Lcom/android/zxing/decoders/qrcode/MlkitWrapper$Scanner;->cancelJobInfoTask:Lio/reactivex/disposables/Disposable;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Lio/reactivex/disposables/Disposable;->dispose()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

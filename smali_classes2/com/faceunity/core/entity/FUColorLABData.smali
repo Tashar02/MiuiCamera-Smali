@@ -4,47 +4,40 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
+.annotation runtime Lo000Oo0O/o0000O0;
     bv = {
         0x1,
         0x0,
         0x3
     }
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\u000e\n\u0002\u0008\r\u0008\u0086\u0008\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\r\u001a\u00020\u0008\u0012\u0006\u0010\u000e\u001a\u00020\u0008\u0012\u0006\u0010\u000f\u001a\u00020\u0008\u00a2\u0006\u0004\u0008\u001d\u0010\u001eJ\u0015\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\r\u0010\u0006\u001a\u00020\u0000\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0010\u0010\t\u001a\u00020\u0008H\u00c6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0008H\u00c6\u0003\u00a2\u0006\u0004\u0008\u000b\u0010\nJ\u0010\u0010\u000c\u001a\u00020\u0008H\u00c6\u0003\u00a2\u0006\u0004\u0008\u000c\u0010\nJ.\u0010\u0010\u001a\u00020\u00002\u0008\u0008\u0002\u0010\r\u001a\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u00082\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0008H\u00c6\u0001\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u0010\u0010\u0013\u001a\u00020\u0012H\u00d6\u0001\u00a2\u0006\u0004\u0008\u0013\u0010\u0014J\u0010\u0010\u0015\u001a\u00020\u0008H\u00d6\u0001\u00a2\u0006\u0004\u0008\u0015\u0010\nJ\u001a\u0010\u0017\u001a\u00020\u00032\u0008\u0010\u0016\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\u0017\u0010\u0018R\u0019\u0010\u000f\u001a\u00020\u00088\u0006@\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000f\u0010\u0019\u001a\u0004\u0008\u001a\u0010\nR\u0019\u0010\r\u001a\u00020\u00088\u0006@\u0006\u00a2\u0006\u000c\n\u0004\u0008\r\u0010\u0019\u001a\u0004\u0008\u001b\u0010\nR\u0019\u0010\u000e\u001a\u00020\u00088\u0006@\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000e\u0010\u0019\u001a\u0004\u0008\u001c\u0010\n\u00a8\u0006\u001f"
+        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\r\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0000\u0008\u0086\u0008\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0006J\u0006\u0010\u000b\u001a\u00020\u0000J\t\u0010\u000c\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\r\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u000e\u001a\u00020\u0003H\u00c6\u0003J\'\u0010\u000f\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0003H\u00c6\u0001J\u0013\u0010\u0010\u001a\u00020\u00112\u0008\u0010\u0012\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u0013\u001a\u00020\u0003H\u00d6\u0001J\u000e\u0010\u0014\u001a\u00020\u00112\u0006\u0010\u0015\u001a\u00020\u0000J\t\u0010\u0016\u001a\u00020\u0017H\u00d6\u0001R\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008R\u0011\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\u0008R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0008\u00a8\u0006\u0018"
     }
     d2 = {
         "Lcom/faceunity/core/entity/FUColorLABData;",
         "",
-        "data",
-        "",
-        "isEqual",
-        "(Lcom/faceunity/core/entity/FUColorLABData;)Z",
-        "clone",
-        "()Lcom/faceunity/core/entity/FUColorLABData;",
-        "",
-        "component1",
-        "()I",
-        "component2",
-        "component3",
         "l",
+        "",
         "a",
         "b",
-        "copy",
-        "(III)Lcom/faceunity/core/entity/FUColorLABData;",
-        "",
-        "toString",
-        "()Ljava/lang/String;",
-        "hashCode",
-        "other",
-        "equals",
-        "(Ljava/lang/Object;)Z",
-        "I",
+        "(III)V",
+        "getA",
+        "()I",
         "getB",
         "getL",
-        "getA",
-        "<init>",
-        "(III)V",
+        "clone",
+        "component1",
+        "component2",
+        "component3",
+        "copy",
+        "equals",
+        "",
+        "other",
+        "hashCode",
+        "isEqual",
+        "data",
+        "toString",
+        "",
         "lib_core_release"
     }
     k = 0x1
@@ -71,43 +64,75 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     iput p1, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 5
+    .line 6
     iput p2, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 7
+    .line 8
     iput p3, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 9
+    .line 10
     return-void
 .end method
 
 .method public static synthetic copy$default(Lcom/faceunity/core/entity/FUColorLABData;IIIILjava/lang/Object;)Lcom/faceunity/core/entity/FUColorLABData;
     .locals 0
 
+    .line 1
     and-int/lit8 p5, p4, 0x1
 
+    .line 2
+    .line 3
     if-eqz p5, :cond_0
 
+    .line 4
+    .line 5
     iget p1, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 6
+    .line 7
     :cond_0
     and-int/lit8 p5, p4, 0x2
 
+    .line 8
+    .line 9
     if-eqz p5, :cond_1
 
+    .line 10
+    .line 11
     iget p2, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 12
+    .line 13
     :cond_1
     and-int/lit8 p4, p4, 0x4
 
+    .line 14
+    .line 15
     if-eqz p4, :cond_2
 
+    .line 16
+    .line 17
     iget p3, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 18
+    .line 19
     :cond_2
     invoke-virtual {p0, p1, p2, p3}, Lcom/faceunity/core/entity/FUColorLABData;->copy(III)Lcom/faceunity/core/entity/FUColorLABData;
 
+    .line 20
+    .line 21
+    .line 22
     move-result-object p0
 
+    .line 23
     return-object p0
 .end method
 
@@ -115,103 +140,160 @@
 # virtual methods
 .method public final clone()Lcom/faceunity/core/entity/FUColorLABData;
     .locals 3
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
     .line 1
     new-instance v0, Lcom/faceunity/core/entity/FUColorLABData;
 
+    .line 2
+    .line 3
     iget v1, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 4
+    .line 5
     iget v2, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 6
+    .line 7
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 8
+    .line 9
     invoke-direct {v0, v1, v2, p0}, Lcom/faceunity/core/entity/FUColorLABData;-><init>(III)V
 
+    .line 10
+    .line 11
+    .line 12
     return-object v0
 .end method
 
 .method public final component1()I
     .locals 0
 
+    .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public final component2()I
     .locals 0
 
+    .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public final component3()I
     .locals 0
 
+    .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public final copy(III)Lcom/faceunity/core/entity/FUColorLABData;
     .locals 0
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
+    .line 1
     new-instance p0, Lcom/faceunity/core/entity/FUColorLABData;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p1, p2, p3}, Lcom/faceunity/core/entity/FUColorLABData;-><init>(III)V
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO;
+        .annotation build Lo00OOOo/OooOo00;
         .end annotation
     .end param
 
+    .line 1
     if-eq p0, p1, :cond_1
 
+    .line 2
+    .line 3
     instance-of v0, p1, Lcom/faceunity/core/entity/FUColorLABData;
 
+    .line 4
+    .line 5
     if-eqz v0, :cond_0
 
+    .line 6
+    .line 7
     check-cast p1, Lcom/faceunity/core/entity/FUColorLABData;
 
+    .line 8
+    .line 9
     iget v0, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 10
+    .line 11
     iget v1, p1, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 12
+    .line 13
     if-ne v0, v1, :cond_0
 
+    .line 14
+    .line 15
     iget v0, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 16
+    .line 17
     iget v1, p1, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 18
+    .line 19
     if-ne v0, v1, :cond_0
 
+    .line 20
+    .line 21
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 22
+    .line 23
     iget p1, p1, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 24
+    .line 25
     if-ne p0, p1, :cond_0
 
+    .line 26
+    .line 27
     goto :goto_0
 
+    .line 28
     :cond_0
     const/4 p0, 0x0
 
+    .line 29
     return p0
 
+    .line 30
     :cond_1
     :goto_0
     const/4 p0, 0x1
 
+    .line 31
     return p0
 .end method
 
@@ -221,6 +303,8 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -230,6 +314,8 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -239,122 +325,220 @@
     .line 1
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public hashCode()I
     .locals 2
 
+    .line 1
     iget v0, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 2
+    .line 3
     invoke-static {v0}, Ljava/lang/Integer;->hashCode(I)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 8
+    .line 9
     iget v1, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 10
+    .line 11
     invoke-static {v1}, Ljava/lang/Integer;->hashCode(I)I
 
+    .line 12
+    .line 13
+    .line 14
     move-result v1
 
+    .line 15
     add-int/2addr v0, v1
 
+    .line 16
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 17
+    .line 18
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 19
+    .line 20
     invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
 
+    .line 21
+    .line 22
+    .line 23
     move-result p0
 
+    .line 24
     add-int/2addr v0, p0
 
+    .line 25
     return v0
 .end method
 
 .method public final isEqual(Lcom/faceunity/core/entity/FUColorLABData;)Z
     .locals 2
     .param p1    # Lcom/faceunity/core/entity/FUColorLABData;
-        .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+        .annotation build Lo00OOOo/OooOOOO;
         .end annotation
     .end param
 
+    .line 1
     const-string v0, "data"
 
-    invoke-static {p1, v0}, LOooO0o/o00ooOoO/o000O00O/o0000oo;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lo000oo0/o0000O;->OooOOOo(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 4
+    .line 5
+    .line 6
     iget v0, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 7
+    .line 8
     iget v1, p1, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 9
+    .line 10
     if-ne v0, v1, :cond_0
 
+    .line 11
+    .line 12
     iget v0, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 13
+    .line 14
     iget v1, p1, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 15
+    .line 16
     if-ne v0, v1, :cond_0
 
+    .line 17
+    .line 18
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 19
+    .line 20
     iget p1, p1, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 21
+    .line 22
     if-ne p0, p1, :cond_0
 
+    .line 23
+    .line 24
     const/4 p0, 0x1
 
+    .line 25
     goto :goto_0
 
+    .line 26
     :cond_0
     const/4 p0, 0x0
 
+    .line 27
     :goto_0
     return p0
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 2
-    .annotation build LOooO/OooO0OO/OooO00o/OooO0o;
+    .annotation build Lo00OOOo/OooOOOO;
     .end annotation
 
+    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string v1, "FUColorLABData(l="
 
+    .line 7
+    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 9
+    .line 10
+    .line 11
     iget v1, p0, Lcom/faceunity/core/entity/FUColorLABData;->l:I
 
+    .line 12
+    .line 13
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 14
+    .line 15
+    .line 16
     const-string v1, ", a="
 
+    .line 17
+    .line 18
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     iget v1, p0, Lcom/faceunity/core/entity/FUColorLABData;->a:I
 
+    .line 22
+    .line 23
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 24
+    .line 25
+    .line 26
     const-string v1, ", b="
 
+    .line 27
+    .line 28
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 29
+    .line 30
+    .line 31
     iget p0, p0, Lcom/faceunity/core/entity/FUColorLABData;->b:I
 
+    .line 32
+    .line 33
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 34
+    .line 35
+    .line 36
     const-string p0, ")"
 
+    .line 37
+    .line 38
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 39
+    .line 40
+    .line 41
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 42
+    .line 43
+    .line 44
     move-result-object p0
 
+    .line 45
     return-object p0
 .end method

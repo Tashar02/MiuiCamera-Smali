@@ -6,18 +6,13 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera2/imagereaders/ImageReaderParam;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "param"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera2/imagereaders/ImageReaderHandler;-><init>(Lcom/android/camera2/imagereaders/ImageReaderParam;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -31,56 +26,96 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/module/shottype/ChainHandler;->mParam:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     check-cast v0, Lcom/android/camera2/imagereaders/ImageReaderParam;
 
+    .line 4
+    .line 5
     invoke-virtual {v0}, Lcom/android/camera2/imagereaders/ImageReaderParam;->getRawCallbackType()I
 
+    .line 6
+    .line 7
+    .line 8
     move-result v0
 
+    .line 9
     and-int/lit8 v1, v0, 0x28
 
+    .line 10
+    .line 11
     const/4 v2, 0x1
 
+    .line 12
     const/4 v3, 0x0
 
+    .line 13
     if-nez v1, :cond_1
 
+    .line 14
+    .line 15
     and-int/lit8 v1, v0, 0x10
 
+    .line 16
+    .line 17
     if-nez v1, :cond_1
 
+    .line 18
+    .line 19
     const/16 v1, 0x10
 
+    .line 20
+    .line 21
     if-ne v0, v1, :cond_0
 
-    .line 2
+    .line 22
+    .line 23
     iget-object p0, p0, Lcom/android/camera/module/shottype/ChainHandler;->mParam:Ljava/lang/Object;
 
+    .line 24
+    .line 25
     check-cast p0, Lcom/android/camera2/imagereaders/ImageReaderParam;
 
-    .line 3
+    .line 26
+    .line 27
     invoke-virtual {p0}, Lcom/android/camera2/imagereaders/ImageReaderParam;->getCameraId()I
 
+    .line 28
+    .line 29
+    .line 30
     move-result p0
 
+    .line 31
     if-ne p0, v2, :cond_0
 
+    .line 32
+    .line 33
     goto :goto_0
 
+    .line 34
     :cond_0
     return v3
 
+    .line 35
     :cond_1
     :goto_0
-    new-array p0, v3, [Ljava/lang/Object;
+    const-string p0, "could other handle"
 
-    const-string v0, "ImageReaderHandler"
+    .line 36
+    .line 37
+    new-array v0, v3, [Ljava/lang/Object;
 
-    const-string v1, "could other handle"
+    .line 38
+    .line 39
+    const-string v1, "ImageReaderHandler"
 
-    .line 4
-    invoke-static {v0, v1, p0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 40
+    .line 41
+    invoke-static {v1, p0, v0}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
+    .line 42
+    .line 43
+    .line 44
     return v2
 .end method
 

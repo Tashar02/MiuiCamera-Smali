@@ -16,16 +16,4 @@
 
 # virtual methods
 .method public abstract onFrameBuffer(Ljava/nio/ByteBuffer;II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "buf",
-            "width",
-            "height"
-        }
-    .end annotation
 .end method

@@ -28,14 +28,24 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {p1}, Lcom/bumptech/glide/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p1
 
+    .line 8
     check-cast p1, [B
 
+    .line 9
+    .line 10
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bytes/BytesResource;->bytes:[B
 
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -81,6 +91,8 @@
     .line 1
     const-class p0, [B
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -90,13 +102,17 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/resource/bytes/BytesResource;->bytes:[B
 
+    .line 2
+    .line 3
     array-length p0, p0
 
+    .line 4
     return p0
 .end method
 
 .method public recycle()V
     .locals 0
 
+    .line 1
     return-void
 .end method

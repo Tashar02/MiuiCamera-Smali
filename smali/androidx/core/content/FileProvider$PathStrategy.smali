@@ -1,4 +1,4 @@
-.class public interface abstract Landroidx/core/content/FileProvider$PathStrategy;
+.class interface abstract Landroidx/core/content/FileProvider$PathStrategy;
 .super Ljava/lang/Object;
 .source "FileProvider.java"
 

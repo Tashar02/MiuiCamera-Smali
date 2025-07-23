@@ -1,4 +1,4 @@
-.class public Landroidx/documentfile/provider/SingleDocumentFile;
+.class Landroidx/documentfile/provider/SingleDocumentFile;
 .super Landroidx/documentfile/provider/DocumentFile;
 .source "SingleDocumentFile.java"
 
@@ -27,11 +27,16 @@
     invoke-direct {p0, p1}, Landroidx/documentfile/provider/DocumentFile;-><init>(Landroidx/documentfile/provider/DocumentFile;)V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p2, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p3, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -43,12 +48,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->canRead(Landroid/content/Context;Landroid/net/Uri;)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -58,12 +71,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->canWrite(Landroid/content/Context;Landroid/net/Uri;)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -73,8 +94,13 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     throw p0
 .end method
 
@@ -84,8 +110,13 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     throw p0
 .end method
 
@@ -96,23 +127,37 @@
     :try_start_0
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 8
+    .line 9
     invoke-static {v0, p0}, Landroid/provider/DocumentsContract;->deleteDocument(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
 
+    .line 10
+    .line 11
+    .line 12
     move-result p0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 13
     return p0
 
+    .line 14
     :catch_0
     const/4 p0, 0x0
 
+    .line 15
     return p0
 .end method
 
@@ -122,12 +167,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->exists(Landroid/content/Context;Landroid/net/Uri;)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -139,12 +192,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->getName(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
+    .line 9
     return-object p0
 .end method
 
@@ -156,12 +217,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->getType(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
+    .line 9
     return-object p0
 .end method
 
@@ -171,6 +240,8 @@
     .line 1
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -180,12 +251,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->isDirectory(Landroid/content/Context;Landroid/net/Uri;)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -195,12 +274,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->isFile(Landroid/content/Context;Landroid/net/Uri;)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -210,12 +297,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->isVirtual(Landroid/content/Context;Landroid/net/Uri;)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -225,12 +320,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->lastModified(Landroid/content/Context;Landroid/net/Uri;)J
 
+    .line 6
+    .line 7
+    .line 8
     move-result-wide v0
 
+    .line 9
     return-wide v0
 .end method
 
@@ -240,12 +343,20 @@
     .line 1
     iget-object v0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mContext:Landroid/content/Context;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/documentfile/provider/SingleDocumentFile;->mUri:Landroid/net/Uri;
 
+    .line 4
+    .line 5
     invoke-static {v0, p0}, Landroidx/documentfile/provider/DocumentsContractApi19;->length(Landroid/content/Context;Landroid/net/Uri;)J
 
+    .line 6
+    .line 7
+    .line 8
     move-result-wide v0
 
+    .line 9
     return-wide v0
 .end method
 
@@ -255,8 +366,13 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     throw p0
 .end method
 
@@ -266,7 +382,12 @@
     .line 1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     throw p0
 .end method

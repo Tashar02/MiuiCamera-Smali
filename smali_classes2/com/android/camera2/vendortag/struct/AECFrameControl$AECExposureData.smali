@@ -31,6 +31,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -40,6 +43,8 @@
     .line 1
     iput-wide p1, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mExposureTime:J
 
+    .line 2
+    .line 3
     return-wide p1
 .end method
 
@@ -49,6 +54,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mLinearGain:F
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -58,6 +65,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mSensitivity:F
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -67,6 +76,8 @@
     .line 1
     iput p1, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mDeltaEVFromTarget:F
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -78,6 +89,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mDeltaEVFromTarget:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -87,6 +100,8 @@
     .line 1
     iget-wide v0, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mExposureTime:J
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -96,6 +111,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mLinearGain:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -105,5 +122,7 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/vendortag/struct/AECFrameControl$AECExposureData;->mSensitivity:F
 
+    .line 2
+    .line 3
     return p0
 .end method

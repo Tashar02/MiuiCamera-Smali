@@ -1,11 +1,11 @@
-.class public Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;
+.class Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;
 .super Landroidx/media/MediaBrowserServiceCompat$Result;
 .source "MediaBrowserServiceCompat.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21;->onLoadChildren(Ljava/lang/String;Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;)V
+    value = Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21;->onLoadChildren(Ljava/lang/String;Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,22 +24,41 @@
 
 
 # instance fields
-.field public final synthetic this$1:Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21;
+.field final synthetic this$1:Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21;
 
-.field public final synthetic val$resultWrapper:Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;
+.field final synthetic val$resultWrapper:Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21;Ljava/lang/Object;Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;)V
+.method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21;Ljava/lang/Object;Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "debug",
+            "val$resultWrapper"
+        }
+    .end annotation
 
     .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;->this$1:Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21;
 
-    iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;->val$resultWrapper:Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;
+    .line 2
+    .line 3
+    iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;->val$resultWrapper:Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;
 
+    .line 4
+    .line 5
     invoke-direct {p0, p2}, Landroidx/media/MediaBrowserServiceCompat$Result;-><init>(Ljava/lang/Object;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -49,15 +68,32 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;->val$resultWrapper:Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;
+    iget-object p0, p0, Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;->val$resultWrapper:Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;
 
-    invoke-virtual {p0}, Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;->detach()V
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;->detach()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public bridge synthetic onResultSent(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "list"
+        }
+    .end annotation
 
     .line 1
     check-cast p1, Ljava/util/List;
@@ -69,6 +105,19 @@
 
 .method public onResultSent(Ljava/util/List;)V
     .locals 4
+    .param p1    # Ljava/util/List;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -123,9 +172,9 @@
 
     .line 7
     :cond_1
-    iget-object p0, p0, Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;->val$resultWrapper:Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;
+    iget-object p0, p0, Landroidx/media/MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2;->val$resultWrapper:Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;
 
-    invoke-virtual {p0, v0}, Landroidx/media/MediaBrowserServiceCompatApi21$ResultWrapper;->sendResult(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Landroidx/media/MediaBrowserServiceCompat$ResultWrapper;->sendResult(Ljava/lang/Object;)V
 
     return-void
 .end method

@@ -27,6 +27,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -36,21 +37,32 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const-wide/16 v0, 0x0
 
-    .line 2
+    .line 5
+    .line 6
     iput-wide v0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->playerInst:J
 
+    .line 7
+    .line 8
     const-string v0, ""
 
-    .line 3
+    .line 9
+    .line 10
     iput-object v0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->url:Ljava/lang/String;
 
+    .line 11
+    .line 12
     const/4 v0, 0x0
 
-    .line 4
+    .line 13
     iput-object v0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -96,15 +108,25 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "cancel compressing MP4 files"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-static {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->cancelCompressingMP4FileJni(Ljava/lang/String;)I
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     return p0
 .end method
 
@@ -117,15 +139,25 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "compress MP4 files"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-static {p0, p1, p2, p3}, Lcom/xiaomi/Video2GifPlayer/Player;->compressMP4FileJni(Ljava/lang/String;Ljava/lang/String;J)I
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     return p0
 .end method
 
@@ -297,8 +329,12 @@
     .line 1
     invoke-static {}, Lcom/xiaomi/Video2GifPlayer/Player;->versionJni()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     return-object v0
 .end method
 
@@ -316,8 +352,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->GetCurrentStreamPositionJni()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method
 
@@ -327,6 +367,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->addFlashFilterJni(I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -336,6 +379,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->addGrayscaleFilterJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -345,6 +391,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->addMotionFlowFilterJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -354,6 +403,9 @@
     .line 1
     invoke-direct/range {p0 .. p5}, Lcom/xiaomi/Video2GifPlayer/Player;->addPngMixFilterJni(Ljava/lang/String;FFFF)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -363,6 +415,9 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->addRecordingSessionJni(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -372,6 +427,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->addShakeFilterJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -381,6 +439,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->addSlowDownFilterJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -390,6 +451,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->addSobelEdgeDetectionFilterJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -399,6 +463,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->addSoulFilterJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -408,6 +475,9 @@
     .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/xiaomi/Video2GifPlayer/Player;->addVideoMapFilterJni(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -417,8 +487,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->bufferTimeMaxJni()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method
 
@@ -428,24 +502,41 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "constructPlayer"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iput-object p2, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
-    .line 3
+    .line 9
+    .line 10
     invoke-virtual {p3}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
+    .line 12
+    .line 13
     move-result p2
 
+    .line 14
     invoke-direct {p0, p1, p2, p4, p5}, Lcom/xiaomi/Video2GifPlayer/Player;->constructPlayerJni(Ljava/lang/String;IJ)J
 
+    .line 15
+    .line 16
+    .line 17
     move-result-wide p1
 
+    .line 18
     iput-wide p1, p0, Lcom/xiaomi/Video2GifPlayer/Player;->playerInst:J
 
+    .line 19
+    .line 20
     return-void
 .end method
 
@@ -455,8 +546,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->currentPlaybackTimeJni()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method
 
@@ -466,8 +561,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->debugReportJni()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method
 
@@ -477,26 +576,42 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "destructPlayer"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 6
+    .line 7
+    .line 8
     const/4 v0, 0x0
 
-    .line 2
+    .line 9
     invoke-virtual {p0, v0}, Lcom/xiaomi/Video2GifPlayer/Player;->setVideoSurface(Landroid/view/Surface;)V
 
-    .line 3
+    .line 10
+    .line 11
+    .line 12
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->destructPlayerJni()V
 
-    .line 4
+    .line 13
+    .line 14
+    .line 15
     iput-object v0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 16
+    .line 17
     const-wide/16 v0, 0x0
 
-    .line 5
+    .line 18
+    .line 19
     iput-wide v0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->playerInst:J
 
+    .line 20
+    .line 21
     return-void
 .end method
 
@@ -506,8 +621,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->durationJni()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method
 
@@ -517,8 +636,12 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->editorPlayerSetVolumeInnerJni(F)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -528,8 +651,12 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->editorPlayerSetVolumeExternalMp3Jni(F)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -546,10 +673,15 @@
     iput-object p1, p0, Lcom/xiaomi/Video2GifPlayer/Player;->url:Ljava/lang/String;
 
     .line 2
+    .line 3
     invoke-virtual/range {p0 .. p6}, Lcom/xiaomi/Video2GifPlayer/Player;->editorPlayerStartJni(Ljava/lang/String;Ljava/lang/String;JJ)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -562,6 +694,9 @@
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->enableEqWithModeJni(ZI)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -574,6 +709,9 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->enableExtremeLargeVolumeJni(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -586,6 +724,9 @@
     .line 1
     invoke-virtual {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->enableFixedVolumeJni(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -598,6 +739,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->enableVideoFilterJni(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -607,15 +751,25 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "get audio transfer"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->getAudioTransferJni()J
 
+    .line 9
+    .line 10
+    .line 11
     move-result-wide v0
 
+    .line 12
     return-wide v0
 .end method
 
@@ -625,8 +779,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->getCurrentAudioTimestampJni()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method
 
@@ -636,8 +794,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->getCurrentCachePositionJni()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method
 
@@ -647,15 +809,25 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "get stream ID"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->getStreamIdJni()J
 
+    .line 9
+    .line 10
+    .line 11
     move-result-wide v0
 
+    .line 12
     return-wide v0
 .end method
 
@@ -665,8 +837,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->getTimestampOfCurrentVideoFrameJni()J
 
+    .line 2
+    .line 3
+    .line 4
     move-result-wide v0
 
+    .line 5
     return-wide v0
 .end method
 
@@ -676,8 +852,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->isPausedJni()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -687,6 +867,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->muteAudioJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -696,15 +879,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onAudioRenderingStart"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onAudioRenderingStart()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -714,15 +908,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onFirstPacketRecved"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onFirstPacketRecved()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -732,31 +937,61 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
+    .line 4
+    .line 5
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     const-string v2, "callback:onOpenStreamFailed"
 
+    .line 9
+    .line 10
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 11
+    .line 12
+    .line 13
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 14
+    .line 15
+    .line 16
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 17
+    .line 18
+    .line 19
     move-result-object v1
 
+    .line 20
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 21
+    .line 22
+    .line 23
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 24
+    .line 25
     invoke-static {p1}, Lcom/xiaomi/Video2GifPlayer/enums/AVErrorState;->int2enum(I)Lcom/xiaomi/Video2GifPlayer/enums/AVErrorState;
 
+    .line 26
+    .line 27
+    .line 28
     move-result-object p1
 
+    .line 29
     invoke-interface {p0, p1}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onOpenStreamFailed(Lcom/xiaomi/Video2GifPlayer/enums/AVErrorState;)V
 
+    .line 30
+    .line 31
+    .line 32
     return-void
 .end method
 
@@ -766,15 +1001,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onPlayerPaused"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onPlayerPaused()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -784,15 +1030,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onPlayerResumed"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onPlayerResumed()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -802,15 +1059,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onPlayerStarted"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onPlayerStarted()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -820,15 +1088,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onPlayerStoped"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onPlayerStoped()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -838,15 +1117,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onSeekCompleted"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onSeekCompleted()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -856,15 +1146,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onStartBuffering"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onStartBuffering()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -874,15 +1175,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onStartPlaying"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onStartPlaying()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -892,31 +1204,62 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
+    .line 4
+    .line 5
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     const-string v2, "debug::onStartWithTimeInvalid, the file duration is "
 
+    .line 9
+    .line 10
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 11
+    .line 12
+    .line 13
     invoke-virtual {v1, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
+    .line 14
+    .line 15
+    .line 16
     const-string v2, "ms"
 
+    .line 17
+    .line 18
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 22
+    .line 23
+    .line 24
     move-result-object v1
 
+    .line 25
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 26
+    .line 27
+    .line 28
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 29
+    .line 30
     invoke-interface {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onStartWithTimeInvalid(J)V
 
+    .line 31
+    .line 32
+    .line 33
     return-void
 .end method
 
@@ -926,15 +1269,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onStreamEOF"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onStreamEOF()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -944,15 +1298,26 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onVideoRenderingStart"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 9
+    .line 10
     invoke-interface {p0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onVideoRenderingStart()V
 
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -962,32 +1327,52 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifPlayer/Player;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "callback:onVideoSizeChanged"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     new-instance v0, Lcom/xiaomi/Video2GifPlayer/datastruct/VideoSize;
 
+    .line 9
+    .line 10
     const/4 v1, 0x0
 
+    .line 11
     invoke-direct {v0, v1, v1}, Lcom/xiaomi/Video2GifPlayer/datastruct/VideoSize;-><init>(FF)V
 
+    .line 12
+    .line 13
+    .line 14
     int-to-float p1, p1
 
-    .line 3
+    .line 15
     iput p1, v0, Lcom/xiaomi/Video2GifPlayer/datastruct/VideoSize;->video_width:F
 
+    .line 16
+    .line 17
     int-to-float p1, p2
 
-    .line 4
+    .line 18
     iput p1, v0, Lcom/xiaomi/Video2GifPlayer/datastruct/VideoSize;->video_height:F
 
-    .line 5
+    .line 19
+    .line 20
     iget-object p0, p0, Lcom/xiaomi/Video2GifPlayer/Player;->pc:Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;
 
+    .line 21
+    .line 22
     invoke-interface {p0, v0}, Lcom/xiaomi/Video2GifPlayer/callback/PlayerCallback;->onVideoSizeChanged(Lcom/xiaomi/Video2GifPlayer/datastruct/VideoSize;)V
 
+    .line 23
+    .line 24
+    .line 25
     return-void
 .end method
 
@@ -997,6 +1382,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->pauseJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1006,6 +1394,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->pauseCacheThreadOtherJni(Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1015,6 +1406,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->pauseCacheThreadUriJni(Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1024,6 +1418,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->pauseCacheThreadUriAllJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1033,12 +1430,20 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->playbackStateJni()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     invoke-static {p0}, Lcom/xiaomi/Video2GifPlayer/enums/PlayerPlaybackState;->int2enum(I)Lcom/xiaomi/Video2GifPlayer/enums/PlayerPlaybackState;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object p0
 
+    .line 9
     return-object p0
 .end method
 
@@ -1048,6 +1453,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->redrawJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1058,10 +1466,15 @@
     iput-object p1, p0, Lcom/xiaomi/Video2GifPlayer/Player;->url:Ljava/lang/String;
 
     .line 2
+    .line 3
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->reloadJni(Ljava/lang/String;Z)Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -1071,6 +1484,9 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->removeRecordingSessionJni(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1080,8 +1496,12 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->resumeJni()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -1091,12 +1511,20 @@
     .line 1
     invoke-virtual {p3}, Ljava/lang/Enum;->ordinal()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p3
 
+    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/xiaomi/Video2GifPlayer/Player;->seekToJni(JI)Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     return p0
 .end method
 
@@ -1106,24 +1534,37 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setAllFileSizeJni(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 .method public setBufferTimeMax(J)V
     .locals 2
 
+    .line 1
     const-wide/16 v0, 0x78
 
+    .line 2
+    .line 3
     cmp-long v0, p1, v0
 
+    .line 4
+    .line 5
     if-gez v0, :cond_0
 
+    .line 6
+    .line 7
     return-void
 
-    .line 1
+    .line 8
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setBufferTimeMaxJni(J)V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -1133,6 +1574,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setCachePathJni(Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1142,6 +1586,9 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setCacheSizeJni(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1151,6 +1598,9 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setCacheSpeedJni(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1160,10 +1610,17 @@
     .line 1
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
+    .line 5
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setEnableCacheTypeJni(I)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -1173,6 +1630,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setFrameLoopJni(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1182,10 +1642,17 @@
     .line 1
     invoke-virtual {p1}, Lcom/xiaomi/Video2GifPlayer/Player$SurfaceGravity;->toInt()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p1
 
+    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/xiaomi/Video2GifPlayer/Player;->setGravityJni(III)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -1195,6 +1662,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setIpListJni([Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1204,6 +1674,9 @@
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setMaxDownloadBufferTimeJni(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1216,6 +1689,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setResolveDnsJni(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1225,6 +1701,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setSpeakerJni(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1234,6 +1713,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setSpeakerVolumeJni(F)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1243,8 +1725,12 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setSpeedRatioJni(D)Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
@@ -1254,6 +1740,9 @@
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setSpeedUpThresholdJni(J)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1266,6 +1755,9 @@
     .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/Video2GifPlayer/Player;->setUserIdandClienIpJni(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1275,6 +1767,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setVideoFilterJni(Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1284,6 +1779,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setVideoFilterIntensityJni(F)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1293,6 +1791,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setVideoSurfaceJni(Landroid/view/Surface;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1302,6 +1803,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->setWifiStatusJni(Z)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1311,6 +1815,9 @@
     .line 1
     invoke-direct/range {p0 .. p5}, Lcom/xiaomi/Video2GifPlayer/Player;->shiftUpJni(FFFFF)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1348,6 +1855,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->startCacheUriJni(Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1357,6 +1867,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->startCacheUriAllJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1366,6 +1879,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->startCacheUriOtherJni(Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1375,6 +1891,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->stopJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1384,6 +1903,9 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->unMuteAudioJni()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1393,6 +1915,9 @@
     .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/Video2GifPlayer/Player;->updateCacheUriJni([Ljava/lang/String;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1402,7 +1927,11 @@
     .line 1
     invoke-direct {p0}, Lcom/xiaomi/Video2GifPlayer/Player;->videoSizeJni()Lcom/xiaomi/Video2GifPlayer/datastruct/VideoSize;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     return-object p0
 .end method

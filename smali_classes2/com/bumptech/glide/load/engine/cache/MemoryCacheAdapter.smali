@@ -17,6 +17,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -25,22 +28,29 @@
 .method public clearMemory()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public getCurrentSize()J
     .locals 2
 
+    .line 1
     const-wide/16 v0, 0x0
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
 .method public getMaxSize()J
     .locals 2
 
+    .line 1
     const-wide/16 v0, 0x0
 
+    .line 2
+    .line 3
     return-wide v0
 .end method
 
@@ -68,16 +78,24 @@
         }
     .end annotation
 
+    .line 1
     if-eqz p2, :cond_0
 
-    .line 1
+    .line 2
+    .line 3
     iget-object p0, p0, Lcom/bumptech/glide/load/engine/cache/MemoryCacheAdapter;->listener:Lcom/bumptech/glide/load/engine/cache/MemoryCache$ResourceRemovedListener;
 
+    .line 4
+    .line 5
     invoke-interface {p0, p2}, Lcom/bumptech/glide/load/engine/cache/MemoryCache$ResourceRemovedListener;->onResourceRemoved(Lcom/bumptech/glide/load/engine/Resource;)V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     const/4 p0, 0x0
 
+    .line 9
     return-object p0
 .end method
 
@@ -100,8 +118,10 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
@@ -115,17 +135,21 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/cache/MemoryCacheAdapter;->listener:Lcom/bumptech/glide/load/engine/cache/MemoryCache$ResourceRemovedListener;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setSizeMultiplier(F)V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method public trimMemory(I)V
     .locals 0
 
+    .line 1
     return-void
 .end method

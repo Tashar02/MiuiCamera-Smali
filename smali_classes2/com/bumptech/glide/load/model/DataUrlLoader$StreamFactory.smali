@@ -50,12 +50,21 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Lcom/bumptech/glide/load/model/DataUrlLoader$StreamFactory$1;
 
+    .line 5
+    .line 6
     invoke-direct {v0, p0}, Lcom/bumptech/glide/load/model/DataUrlLoader$StreamFactory$1;-><init>(Lcom/bumptech/glide/load/model/DataUrlLoader$StreamFactory;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Lcom/bumptech/glide/load/model/DataUrlLoader$StreamFactory;->opener:Lcom/bumptech/glide/load/model/DataUrlLoader$DataDecoder;
 
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -85,15 +94,23 @@
     .line 1
     new-instance p1, Lcom/bumptech/glide/load/model/DataUrlLoader;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Lcom/bumptech/glide/load/model/DataUrlLoader$StreamFactory;->opener:Lcom/bumptech/glide/load/model/DataUrlLoader$DataDecoder;
 
+    .line 4
+    .line 5
     invoke-direct {p1, p0}, Lcom/bumptech/glide/load/model/DataUrlLoader;-><init>(Lcom/bumptech/glide/load/model/DataUrlLoader$DataDecoder;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-object p1
 .end method
 
 .method public teardown()V
     .locals 0
 
+    .line 1
     return-void
 .end method

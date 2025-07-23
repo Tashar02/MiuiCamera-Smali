@@ -60,55 +60,66 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/airbnb/lottie/LottieAnimationView;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "parentView",
-            "pickerImageView"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x0
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mUpDownAnimFlag:Z
 
+    .line 6
+    .line 7
     const/16 v0, 0xc0
 
-    .line 3
+    .line 8
+    .line 9
     iput v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mCurrentType:I
 
-    .line 4
+    .line 10
+    .line 11
     iput v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mModulePersistentType:I
 
-    .line 5
+    .line 12
+    .line 13
     iput-object p1, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    .line 6
+    .line 14
+    .line 15
     iput-object p2, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerParent:Landroid/view/ViewGroup;
 
-    .line 7
+    .line 16
+    .line 17
     iput-object p3, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    const p2, 0x7f0708ac
+    .line 18
+    .line 19
+    const p2, 0x7f0708cd
 
+    .line 20
+    .line 21
+    .line 22
     const p3, 0x3eb33333    # 0.35f
 
-    .line 8
+    .line 23
+    .line 24
+    .line 25
     invoke-static {p1, p2, p3}, Lcom/android/camera/CameraSettings;->getResourceFloat(Landroid/content/Context;IF)F
 
+    .line 26
+    .line 27
+    .line 28
     move-result p1
 
+    .line 29
     iput p1, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mScaleSize:F
 
+    .line 30
+    .line 31
     return-void
 .end method
 
@@ -120,8 +131,13 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/airbnb/lottie/LottieAnimationView;->cancelAnimation()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -131,19 +147,30 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerParent:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getBackground()Landroid/graphics/drawable/Drawable;
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     if-eqz p0, :cond_0
 
+    .line 8
+    .line 9
     const/4 p0, 0x1
 
+    .line 10
     goto :goto_0
 
+    .line 11
     :cond_0
     const/4 p0, 0x0
 
+    .line 12
     :goto_0
     return p0
 .end method
@@ -159,14 +186,24 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCurrent()Landroid/graphics/drawable/Drawable;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
     return-object p0
 .end method
 
@@ -176,6 +213,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mCurrentType:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -185,6 +224,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -194,6 +235,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerParent:Landroid/view/ViewGroup;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -205,21 +248,30 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mModulePersistentType:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public hide()V
     .locals 3
 
+    .line 1
     const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    .line 2
+    const/16 v1, 0xc0
 
-    const/16 v2, 0xc0
+    .line 3
+    .line 4
+    const/4 v2, 0x0
 
-    .line 1
-    invoke-virtual {p0, v0, v1, v2}, Lcom/android/camera/fragment/bottom/action/Pickers;->loadByType(Ljava/util/List;ZI)V
+    .line 5
+    invoke-virtual {p0, v2, v0, v1}, Lcom/android/camera/fragment/bottom/action/Pickers;->loadByType(Ljava/util/List;ZI)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -229,19 +281,6 @@
         .annotation build Lcom/android/camera/fragment/bottom/action/Pickers$LocationType;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "animateInElements",
-            "animation",
-            "newType"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -265,21 +304,6 @@
         .annotation build Lcom/android/camera/fragment/bottom/action/Pickers$LocationType;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "animateInElements",
-            "animation",
-            "newType",
-            "forceLoad"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -292,7 +316,7 @@
     .line 2
     iget-object v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerParent:Landroid/view/ViewGroup;
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getTag()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -324,7 +348,7 @@
     :cond_0
     iget-object p4, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerParent:Landroid/view/ViewGroup;
 
-    invoke-virtual {p4}, Landroid/view/ViewGroup;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p4}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object p4
 
@@ -353,7 +377,7 @@
 
     iput-boolean v3, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mNeedBackground:Z
 
-    const v3, 0x7f12003a
+    const v3, 0x7f13003a
 
     const/high16 v4, 0x3f800000    # 1.0f
 
@@ -377,11 +401,11 @@
     .line 8
     iget-object v3, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {v3}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v6, 0x7f12011b
+    const v6, 0x7f13011b
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -396,7 +420,7 @@
 
     iget-object v8, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f08066d
+    const v9, 0x7f0806bd
 
     invoke-interface {v7, v8, v9}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->getBottomRes(Landroid/content/Context;I)I
 
@@ -415,11 +439,11 @@
     .line 11
     iget-object v3, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {v3}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v6, 0x7f12008a
+    const v6, 0x7f13008a
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -434,7 +458,7 @@
 
     iget-object v8, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f0806c7
+    const v9, 0x7f080717
 
     invoke-interface {v7, v8, v9}, Lcom/android/camera2/compat/theme/common/MiThemeOperationMimojiInterface;->getIconDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
@@ -462,11 +486,11 @@
     .line 15
     iget-object v3, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {v3}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v6, 0x7f1200be
+    const v6, 0x7f1300be
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -475,7 +499,7 @@
     .line 16
     iget-object v6, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    const v7, 0x7f0806c0
+    const v7, 0x7f080710
 
     invoke-virtual {v6, v7}, Lcom/airbnb/lottie/LottieAnimationView;->setImageResource(I)V
 
@@ -497,7 +521,7 @@
 
     iget-object v7, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f060410
+    const v8, 0x7f060415
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getColor(I)I
 
@@ -514,11 +538,11 @@
     :pswitch_4
     iget-object v3, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {v3}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v6, 0x7f120058
+    const v6, 0x7f130058
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -545,7 +569,7 @@
 
     iget-object v8, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f110081
+    const v9, 0x7f120081
 
     invoke-interface {v7, v8, v9}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->getBottomRes(Landroid/content/Context;I)I
 
@@ -565,7 +589,7 @@
 
     iget-object v8, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f11007f
+    const v9, 0x7f12007f
 
     invoke-interface {v7, v8, v9}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->getBottomRes(Landroid/content/Context;I)I
 
@@ -605,7 +629,7 @@
     :cond_3
     iget-object v6, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {v6}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v6}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -642,7 +666,7 @@
 
     iget-object v9, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f110125
+    const v10, 0x7f120126
 
     invoke-interface {v8, v9, v10}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->getBottomRes(Landroid/content/Context;I)I
 
@@ -686,7 +710,7 @@
     :cond_4
     iget-object v6, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {v6}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v6}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -723,7 +747,7 @@
 
     iget-object v9, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f110131
+    const v10, 0x7f120132
 
     invoke-interface {v8, v9, v10}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->getBottomRes(Landroid/content/Context;I)I
 
@@ -756,11 +780,11 @@
 
     iget-object v6, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {v6}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v6}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
-    const v7, 0x7f120035
+    const v7, 0x7f130035
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -775,7 +799,7 @@
     iget-object v6, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
     .line 41
-    invoke-virtual {v6}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+    invoke-virtual {v6}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -786,12 +810,12 @@
 
     if-eqz v7, :cond_5
 
-    const v7, 0x7f1206bc
+    const v7, 0x7f1306f7
 
     goto :goto_3
 
     :cond_5
-    const v7, 0x7f1206ba
+    const v7, 0x7f1306f5
 
     .line 43
     :goto_3
@@ -812,7 +836,7 @@
 
     iget-object v7, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f0806af
+    const v8, 0x7f0806ff
 
     invoke-interface {v6, v7, v8}, Lcom/android/camera2/compat/theme/common/MiThemeOperationMimojiInterface;->getIconDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
@@ -852,7 +876,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Landroid/view/ViewGroup;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v7, v8}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     if-eqz v0, :cond_6
 
@@ -905,7 +929,7 @@
     .line 53
     iget-object v7, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerParent:Landroid/view/ViewGroup;
 
-    invoke-virtual {v7, v5}, Landroid/view/ViewGroup;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v7, v5}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     :cond_8
     const/16 v5, 0xc0
@@ -938,14 +962,12 @@
 
     if-eqz v6, :cond_10
 
-    const/4 p4, 0x0
-
     if-eqz v1, :cond_c
 
     goto :goto_7
 
     :cond_c
-    move p3, p4
+    const/4 p3, 0x0
 
     .line 57
     :goto_7
@@ -962,7 +984,7 @@
     :cond_d
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-virtual {p0, v3}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     const/16 p0, 0x96
 
@@ -1084,8 +1106,6 @@
     :goto_8
     return-void
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0xc0
         :pswitch_8
@@ -1106,6 +1126,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mNeedBackground:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -1115,73 +1137,101 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/airbnb/lottie/LottieAnimationView;->playAnimation()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public playSwitchCameraAnimation(ILandroid/view/View;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cameraFacing",
-            "view"
-        }
-    .end annotation
-
-    const-wide/16 v0, 0x12c
-
-    const/4 p0, 0x1
-
-    if-ne p1, p0, :cond_0
 
     .line 1
-    invoke-static {p2}, Landroidx/core/view/ViewCompat;->animate(Landroid/view/View;)Landroidx/core/view/ViewPropertyAnimatorCompat;
-
-    move-result-object p0
-
-    const/high16 p1, -0x3ccc0000    # -180.0f
+    const/4 p0, 0x1
 
     .line 2
-    invoke-virtual {p0, p1}, Landroidx/core/view/ViewPropertyAnimatorCompat;->rotationBy(F)Landroidx/core/view/ViewPropertyAnimatorCompat;
-
-    move-result-object p0
+    const-wide/16 v0, 0x12c
 
     .line 3
-    invoke-virtual {p0, v0, v1}, Landroidx/core/view/ViewPropertyAnimatorCompat;->setDuration(J)Landroidx/core/view/ViewPropertyAnimatorCompat;
-
-    move-result-object p0
-
     .line 4
-    invoke-virtual {p0}, Landroidx/core/view/ViewPropertyAnimatorCompat;->start()V
-
-    goto :goto_0
+    if-ne p1, p0, :cond_0
 
     .line 5
+    .line 6
+    invoke-static {p2}, Landroidx/core/view/ViewCompat;->animate(Landroid/view/View;)Landroidx/core/view/ViewPropertyAnimatorCompat;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    const/high16 p1, -0x3ccc0000    # -180.0f
+
+    .line 11
+    .line 12
+    invoke-virtual {p0, p1}, Landroidx/core/view/ViewPropertyAnimatorCompat;->rotationBy(F)Landroidx/core/view/ViewPropertyAnimatorCompat;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    invoke-virtual {p0, v0, v1}, Landroidx/core/view/ViewPropertyAnimatorCompat;->setDuration(J)Landroidx/core/view/ViewPropertyAnimatorCompat;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    invoke-virtual {p0}, Landroidx/core/view/ViewPropertyAnimatorCompat;->start()V
+
+    .line 21
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
     :cond_0
     invoke-static {p2}, Landroidx/core/view/ViewCompat;->animate(Landroid/view/View;)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
+    .line 25
+    .line 26
+    .line 27
     move-result-object p0
 
+    .line 28
     const/high16 p1, 0x43340000    # 180.0f
 
-    .line 6
+    .line 29
+    .line 30
     invoke-virtual {p0, p1}, Landroidx/core/view/ViewPropertyAnimatorCompat;->rotationBy(F)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
+    .line 31
+    .line 32
+    .line 33
     move-result-object p0
 
-    .line 7
+    .line 34
     invoke-virtual {p0, v0, v1}, Landroidx/core/view/ViewPropertyAnimatorCompat;->setDuration(J)Landroidx/core/view/ViewPropertyAnimatorCompat;
 
+    .line 35
+    .line 36
+    .line 37
     move-result-object p0
 
-    .line 8
+    .line 38
     invoke-virtual {p0}, Landroidx/core/view/ViewPropertyAnimatorCompat;->start()V
 
+    .line 39
+    .line 40
+    .line 41
     :goto_0
     return-void
 .end method
@@ -1192,8 +1242,13 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/airbnb/lottie/LottieAnimationView;->playAnimation()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1208,65 +1263,116 @@
     .line 1
     iget-boolean v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mUpDownAnimFlag:Z
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
+    .line 4
+    .line 5
     const/4 v0, 0x0
 
-    .line 2
+    .line 6
     iput-boolean v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mUpDownAnimFlag:Z
 
-    .line 3
+    .line 7
+    .line 8
     iget-object v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 9
+    .line 10
     invoke-static {}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOperationBottom()Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object v1
 
+    .line 14
     iget-object v2, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f11007f
+    .line 15
+    .line 16
+    const v3, 0x7f12007f
 
+    .line 17
+    .line 18
+    .line 19
     invoke-interface {v1, v2, v3}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->getBottomRes(Landroid/content/Context;I)I
 
+    .line 20
+    .line 21
+    .line 22
     move-result v1
 
+    .line 23
     invoke-virtual {v0, v1}, Lcom/airbnb/lottie/LottieAnimationView;->setAnimation(I)V
 
-    .line 4
+    .line 24
+    .line 25
+    .line 26
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 27
+    .line 28
     invoke-virtual {p0}, Lcom/airbnb/lottie/LottieAnimationView;->playAnimation()V
 
+    .line 29
+    .line 30
+    .line 31
     goto :goto_0
 
+    .line 32
     :cond_0
     const/4 v0, 0x1
 
-    .line 5
+    .line 33
     iput-boolean v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mUpDownAnimFlag:Z
 
-    .line 6
+    .line 34
+    .line 35
     iget-object v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 36
+    .line 37
     invoke-static {}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOperationBottom()Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;
 
+    .line 38
+    .line 39
+    .line 40
     move-result-object v1
 
+    .line 41
     iget-object v2, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f110081
+    .line 42
+    .line 43
+    const v3, 0x7f120081
 
+    .line 44
+    .line 45
+    .line 46
     invoke-interface {v1, v2, v3}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->getBottomRes(Landroid/content/Context;I)I
 
+    .line 47
+    .line 48
+    .line 49
     move-result v1
 
+    .line 50
     invoke-virtual {v0, v1}, Lcom/airbnb/lottie/LottieAnimationView;->setAnimation(I)V
 
-    .line 7
+    .line 51
+    .line 52
+    .line 53
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerImageView:Lcom/airbnb/lottie/LottieAnimationView;
 
+    .line 54
+    .line 55
     invoke-virtual {p0}, Lcom/airbnb/lottie/LottieAnimationView;->playAnimation()V
 
+    .line 56
+    .line 57
+    .line 58
     :goto_0
     return-void
 .end method
@@ -1279,41 +1385,36 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "res"
-        }
-    .end annotation
-
     .line 1
     invoke-virtual {p0}, Lcom/android/camera/fragment/bottom/action/Pickers;->getLayout()Landroid/view/View;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     invoke-virtual {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
 .method public setClickabled(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enabled"
-        }
-    .end annotation
 
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mPickerParent:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setClickable(Z)V
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/view/View;->setClickable(Z)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -1323,39 +1424,32 @@
         .annotation build Lcom/android/camera/fragment/bottom/action/Pickers$LocationType;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "type"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mModulePersistentType:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x10
-        }
-        names = {
-            "l"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0}, Lcom/android/camera/fragment/bottom/action/Pickers;->getLayout()Landroid/view/View;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
+    .line 5
     invoke-virtual {p0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -1365,28 +1459,50 @@
     .line 1
     iget v0, p0, Lcom/android/camera/fragment/bottom/action/Pickers;->mCurrentType:I
 
+    .line 2
+    .line 3
     const/4 v1, 0x0
 
+    .line 4
     const/4 v2, 0x0
 
+    .line 5
     invoke-virtual {p0, v1, v2, v0}, Lcom/android/camera/fragment/bottom/action/Pickers;->loadByType(Ljava/util/List;ZI)V
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-static {}, Lcom/android/camera2/compat/theme/MiThemeCompat;->getOperationBottom()Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object v0
 
+    .line 12
     const/4 v1, 0x1
 
+    .line 13
     new-array v1, v1, [Landroid/view/View;
 
+    .line 14
+    .line 15
     invoke-virtual {p0}, Lcom/android/camera/fragment/bottom/action/Pickers;->getLayout()Landroid/view/View;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p0
 
+    .line 19
     aput-object p0, v1, v2
 
+    .line 20
+    .line 21
     invoke-interface {v0, v1}, Lcom/android/camera2/compat/theme/common/MiThemeOperationBottomInterface;->handleTouch([Landroid/view/View;)V
 
+    .line 22
+    .line 23
+    .line 24
     return-void
 .end method

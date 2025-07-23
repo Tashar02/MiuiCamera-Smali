@@ -1,6 +1,6 @@
 .class public final enum Landroidx/annotation/InspectableProperty$ValueType;
 .super Ljava/lang/Enum;
-.source "InspectableProperty.java"
+.source "InspectableProperty.kt"
 
 
 # annotations
@@ -19,6 +19,32 @@
         "Landroidx/annotation/InspectableProperty$ValueType;",
         ">;"
     }
+.end annotation
+
+.annotation runtime Lo000Oo0O/o0000O0;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\t\u0008\u0086\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\t\u00a8\u0006\n"
+    }
+    d2 = {
+        "Landroidx/annotation/InspectableProperty$ValueType;",
+        "",
+        "(Ljava/lang/String;I)V",
+        "NONE",
+        "INFERRED",
+        "INT_ENUM",
+        "INT_FLAG",
+        "COLOR",
+        "GRAVITY",
+        "RESOURCE_ID",
+        "annotation"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
 .end annotation
 
 
@@ -41,116 +67,270 @@
 
 
 # direct methods
+.method private static final synthetic $values()[Landroidx/annotation/InspectableProperty$ValueType;
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x7
+
+    .line 2
+    new-array v0, v0, [Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 3
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    sget-object v2, Landroidx/annotation/InspectableProperty$ValueType;->NONE:Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 6
+    .line 7
+    aput-object v2, v0, v1
+
+    .line 8
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    sget-object v2, Landroidx/annotation/InspectableProperty$ValueType;->INFERRED:Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 11
+    .line 12
+    aput-object v2, v0, v1
+
+    .line 13
+    .line 14
+    const/4 v1, 0x2
+
+    .line 15
+    sget-object v2, Landroidx/annotation/InspectableProperty$ValueType;->INT_ENUM:Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 16
+    .line 17
+    aput-object v2, v0, v1
+
+    .line 18
+    .line 19
+    const/4 v1, 0x3
+
+    .line 20
+    sget-object v2, Landroidx/annotation/InspectableProperty$ValueType;->INT_FLAG:Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 21
+    .line 22
+    aput-object v2, v0, v1
+
+    .line 23
+    .line 24
+    const/4 v1, 0x4
+
+    .line 25
+    sget-object v2, Landroidx/annotation/InspectableProperty$ValueType;->COLOR:Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 26
+    .line 27
+    aput-object v2, v0, v1
+
+    .line 28
+    .line 29
+    const/4 v1, 0x5
+
+    .line 30
+    sget-object v2, Landroidx/annotation/InspectableProperty$ValueType;->GRAVITY:Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 31
+    .line 32
+    aput-object v2, v0, v1
+
+    .line 33
+    .line 34
+    const/4 v1, 0x6
+
+    .line 35
+    sget-object v2, Landroidx/annotation/InspectableProperty$ValueType;->RESOURCE_ID:Landroidx/annotation/InspectableProperty$ValueType;
+
+    .line 36
+    .line 37
+    aput-object v2, v0, v1
+
+    .line 38
+    .line 39
+    return-object v0
+.end method
+
 .method public static constructor <clinit>()V
-    .locals 15
+    .locals 3
 
     .line 1
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
+    .line 2
+    .line 3
     const-string v1, "NONE"
 
+    .line 4
+    .line 5
     const/4 v2, 0x0
 
+    .line 6
     invoke-direct {v0, v1, v2}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
 
+    .line 7
+    .line 8
+    .line 9
     sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->NONE:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 2
-    new-instance v1, Landroidx/annotation/InspectableProperty$ValueType;
+    .line 10
+    .line 11
+    new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
-    const-string v3, "INFERRED"
+    .line 12
+    .line 13
+    const-string v1, "INFERRED"
 
-    const/4 v4, 0x1
+    .line 14
+    .line 15
+    const/4 v2, 0x1
 
-    invoke-direct {v1, v3, v4}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
+    .line 16
+    invoke-direct {v0, v1, v2}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Landroidx/annotation/InspectableProperty$ValueType;->INFERRED:Landroidx/annotation/InspectableProperty$ValueType;
+    .line 17
+    .line 18
+    .line 19
+    sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->INFERRED:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 3
-    new-instance v3, Landroidx/annotation/InspectableProperty$ValueType;
+    .line 20
+    .line 21
+    new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
-    const-string v5, "INT_ENUM"
+    .line 22
+    .line 23
+    const-string v1, "INT_ENUM"
 
-    const/4 v6, 0x2
+    .line 24
+    .line 25
+    const/4 v2, 0x2
 
-    invoke-direct {v3, v5, v6}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
+    .line 26
+    invoke-direct {v0, v1, v2}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Landroidx/annotation/InspectableProperty$ValueType;->INT_ENUM:Landroidx/annotation/InspectableProperty$ValueType;
+    .line 27
+    .line 28
+    .line 29
+    sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->INT_ENUM:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 4
-    new-instance v5, Landroidx/annotation/InspectableProperty$ValueType;
+    .line 30
+    .line 31
+    new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
-    const-string v7, "INT_FLAG"
+    .line 32
+    .line 33
+    const-string v1, "INT_FLAG"
 
-    const/4 v8, 0x3
+    .line 34
+    .line 35
+    const/4 v2, 0x3
 
-    invoke-direct {v5, v7, v8}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
+    .line 36
+    invoke-direct {v0, v1, v2}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Landroidx/annotation/InspectableProperty$ValueType;->INT_FLAG:Landroidx/annotation/InspectableProperty$ValueType;
+    .line 37
+    .line 38
+    .line 39
+    sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->INT_FLAG:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 5
-    new-instance v7, Landroidx/annotation/InspectableProperty$ValueType;
+    .line 40
+    .line 41
+    new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
-    const-string v9, "COLOR"
+    .line 42
+    .line 43
+    const-string v1, "COLOR"
 
-    const/4 v10, 0x4
+    .line 44
+    .line 45
+    const/4 v2, 0x4
 
-    invoke-direct {v7, v9, v10}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
+    .line 46
+    invoke-direct {v0, v1, v2}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Landroidx/annotation/InspectableProperty$ValueType;->COLOR:Landroidx/annotation/InspectableProperty$ValueType;
+    .line 47
+    .line 48
+    .line 49
+    sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->COLOR:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 6
-    new-instance v9, Landroidx/annotation/InspectableProperty$ValueType;
+    .line 50
+    .line 51
+    new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
-    const-string v11, "GRAVITY"
+    .line 52
+    .line 53
+    const-string v1, "GRAVITY"
 
-    const/4 v12, 0x5
+    .line 54
+    .line 55
+    const/4 v2, 0x5
 
-    invoke-direct {v9, v11, v12}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
+    .line 56
+    invoke-direct {v0, v1, v2}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Landroidx/annotation/InspectableProperty$ValueType;->GRAVITY:Landroidx/annotation/InspectableProperty$ValueType;
+    .line 57
+    .line 58
+    .line 59
+    sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->GRAVITY:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 7
-    new-instance v11, Landroidx/annotation/InspectableProperty$ValueType;
+    .line 60
+    .line 61
+    new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
-    const-string v13, "RESOURCE_ID"
+    .line 62
+    .line 63
+    const-string v1, "RESOURCE_ID"
 
-    const/4 v14, 0x6
+    .line 64
+    .line 65
+    const/4 v2, 0x6
 
-    invoke-direct {v11, v13, v14}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
+    .line 66
+    invoke-direct {v0, v1, v2}, Landroidx/annotation/InspectableProperty$ValueType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Landroidx/annotation/InspectableProperty$ValueType;->RESOURCE_ID:Landroidx/annotation/InspectableProperty$ValueType;
+    .line 67
+    .line 68
+    .line 69
+    sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->RESOURCE_ID:Landroidx/annotation/InspectableProperty$ValueType;
 
-    const/4 v13, 0x7
+    .line 70
+    .line 71
+    invoke-static {}, Landroidx/annotation/InspectableProperty$ValueType;->$values()[Landroidx/annotation/InspectableProperty$ValueType;
 
-    new-array v13, v13, [Landroidx/annotation/InspectableProperty$ValueType;
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v0
 
-    aput-object v0, v13, v2
+    .line 75
+    sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->$VALUES:[Landroidx/annotation/InspectableProperty$ValueType;
 
-    aput-object v1, v13, v4
-
-    aput-object v3, v13, v6
-
-    aput-object v5, v13, v8
-
-    aput-object v7, v13, v10
-
-    aput-object v9, v13, v12
-
-    aput-object v11, v13, v14
-
-    .line 8
-    sput-object v13, Landroidx/annotation/InspectableProperty$ValueType;->$VALUES:[Landroidx/annotation/InspectableProperty$ValueType;
-
+    .line 76
+    .line 77
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -160,12 +340,20 @@
     .line 1
     const-class v0, Landroidx/annotation/InspectableProperty$ValueType;
 
+    .line 2
+    .line 3
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     check-cast p0, Landroidx/annotation/InspectableProperty$ValueType;
 
+    .line 8
+    .line 9
     return-object p0
 .end method
 
@@ -175,11 +363,19 @@
     .line 1
     sget-object v0, Landroidx/annotation/InspectableProperty$ValueType;->$VALUES:[Landroidx/annotation/InspectableProperty$ValueType;
 
-    invoke-virtual {v0}, [Landroidx/annotation/InspectableProperty$ValueType;->clone()Ljava/lang/Object;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     check-cast v0, [Landroidx/annotation/InspectableProperty$ValueType;
 
+    .line 8
+    .line 9
     return-object v0
 .end method

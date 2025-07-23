@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/motion/widget/TouchResponse$2;
+.class Landroidx/constraintlayout/motion/widget/TouchResponse$2;
 .super Ljava/lang/Object;
 .source "TouchResponse.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/constraintlayout/motion/widget/TouchResponse;
+.field final synthetic this$0:Landroidx/constraintlayout/motion/widget/TouchResponse;
 
 
 # direct methods
@@ -36,8 +36,13 @@
     .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/TouchResponse$2;->this$0:Landroidx/constraintlayout/motion/widget/TouchResponse;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -62,5 +67,6 @@
         }
     .end annotation
 
+    .line 1
     return-void
 .end method

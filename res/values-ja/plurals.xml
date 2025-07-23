@@ -54,6 +54,14 @@
     <plurals name="exit_version_hint">
         <item quantity="other">&lt;Data>使用しているカメラのバージョンはデバイスのモデルと互換性がありません。&lt;br>アプリは&lt;font color=#FFCE16>&lt;b>%1$d 秒&lt;/b>&lt;/font>後に終了します。カメラのアップデートをアンインストールして、もう一度お試しください。&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d 秒早送り</item>
+        <item quantity="one">%d 秒早送り</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d 秒巻き戻し</item>
+        <item quantity="one">%d 秒巻き戻し</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d分</item>
     </plurals>

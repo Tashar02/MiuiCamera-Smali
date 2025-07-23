@@ -26,7 +26,7 @@
 
 
 # static fields
-.field public static final NO_ANIMATION:Lcom/bumptech/glide/request/transition/NoTransition;
+.field static final NO_ANIMATION:Lcom/bumptech/glide/request/transition/NoTransition;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/bumptech/glide/request/transition/NoTransition<",
@@ -52,17 +52,30 @@
     .line 1
     new-instance v0, Lcom/bumptech/glide/request/transition/NoTransition;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Lcom/bumptech/glide/request/transition/NoTransition;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/bumptech/glide/request/transition/NoTransition;->NO_ANIMATION:Lcom/bumptech/glide/request/transition/NoTransition;
 
-    .line 2
+    .line 7
+    .line 8
     new-instance v0, Lcom/bumptech/glide/request/transition/NoTransition$NoAnimationFactory;
 
+    .line 9
+    .line 10
     invoke-direct {v0}, Lcom/bumptech/glide/request/transition/NoTransition$NoAnimationFactory;-><init>()V
 
+    .line 11
+    .line 12
+    .line 13
     sput-object v0, Lcom/bumptech/glide/request/transition/NoTransition;->NO_ANIMATION_FACTORY:Lcom/bumptech/glide/request/transition/TransitionFactory;
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -72,6 +85,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -90,6 +106,8 @@
     .line 1
     sget-object v0, Lcom/bumptech/glide/request/transition/NoTransition;->NO_ANIMATION:Lcom/bumptech/glide/request/transition/NoTransition;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -108,6 +126,8 @@
     .line 1
     sget-object v0, Lcom/bumptech/glide/request/transition/NoTransition;->NO_ANIMATION_FACTORY:Lcom/bumptech/glide/request/transition/TransitionFactory;
 
+    .line 2
+    .line 3
     return-object v0
 .end method
 
@@ -116,7 +136,9 @@
 .method public transition(Ljava/lang/Object;Lcom/bumptech/glide/request/transition/Transition$ViewAdapter;)Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

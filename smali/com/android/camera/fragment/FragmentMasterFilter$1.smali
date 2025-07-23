@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/FragmentMasterFilter$1;
+.class Lcom/android/camera/fragment/FragmentMasterFilter$1;
 .super Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;
 .source "FragmentMasterFilter.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/FragmentMasterFilter;
+.field final synthetic this$0:Lcom/android/camera/fragment/FragmentMasterFilter;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/FragmentMasterFilter;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/FragmentMasterFilter$1;->this$0:Lcom/android/camera/fragment/FragmentMasterFilter;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -48,26 +45,23 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "recyclerView",
-            "newState"
-        }
-    .end annotation
-
     .line 1
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
 
     .line 2
+    .line 3
+    .line 4
     iget-object p0, p0, Lcom/android/camera/fragment/FragmentMasterFilter$1;->this$0:Lcom/android/camera/fragment/FragmentMasterFilter;
 
+    .line 5
+    .line 6
     const/4 p1, 0x0
 
+    .line 7
     invoke-virtual {p0, p1}, Lcom/android/camera/fragment/FragmentMasterFilter;->setIsAnimation(Z)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

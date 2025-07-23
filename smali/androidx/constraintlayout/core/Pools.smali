@@ -1,4 +1,4 @@
-.class public final Landroidx/constraintlayout/core/Pools;
+.class final Landroidx/constraintlayout/core/Pools;
 .super Ljava/lang/Object;
 .source "Pools.java"
 
@@ -23,5 +23,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public final Lcom/bumptech/glide/load/engine/DiskCacheStrategy$2;
+.class final Lcom/bumptech/glide/load/engine/DiskCacheStrategy$2;
 .super Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
 .source "DiskCacheStrategy.java"
 
@@ -21,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,31 +32,39 @@
 .method public decodeCachedData()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public decodeCachedResource()Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public isDataCacheable(Lcom/bumptech/glide/load/DataSource;)Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
 .method public isResourceCacheable(ZLcom/bumptech/glide/load/DataSource;Lcom/bumptech/glide/load/EncodeStrategy;)Z
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

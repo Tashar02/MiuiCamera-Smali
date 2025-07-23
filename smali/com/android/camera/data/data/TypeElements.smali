@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public mComponentData:Lcom/android/camera/data/data/ComponentData;
+.field protected mComponentData:Lcom/android/camera/data/data/ComponentData;
 
 .field private mTypeItemList:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -20,15 +20,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/data/data/ComponentData;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "componentData"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C:",
@@ -41,7 +32,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/data/data/TypeElements;->mComponentData:Lcom/android/camera/data/data/ComponentData;
 
+    .line 5
+    .line 6
     return-void
 .end method

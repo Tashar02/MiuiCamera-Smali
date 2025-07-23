@@ -16,14 +16,4 @@
 
 # virtual methods
 .method public abstract onCameraError(Lcom/android/camera2/Camera2Proxy;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "camera",
-            "error"
-        }
-    .end annotation
 .end method

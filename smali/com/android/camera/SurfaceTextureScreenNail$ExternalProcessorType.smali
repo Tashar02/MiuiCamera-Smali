@@ -21,27 +21,26 @@
 
 .field public static final NEED_BLUR:I = 0x2
 
+.field public static final VLOG_PRO:I = 0x3
+
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/SurfaceTextureScreenNail;
+.field final synthetic this$0:Lcom/android/camera/SurfaceTextureScreenNail;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/SurfaceTextureScreenNail;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/SurfaceTextureScreenNail$ExternalProcessorType;->this$0:Lcom/android/camera/SurfaceTextureScreenNail;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

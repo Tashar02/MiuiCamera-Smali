@@ -664,6 +664,7 @@
     <string name="download_hint_cn">נראה שהמכשיר שלך אינו מחובר ל-WLAN. האם להשתמש ב-%1$s MB של נתונים ניידים כדי להוריד פריטים כעת?</string>
     <string name="download_hint_wifi">נראה שהמכשיר שלך אינו מחובר ל-Wi-Fi. האם להשתמש ב-%1$s MB של נתונים ניידים כדי להוריד פריטים כעת?</string>
     <string name="download_in_progress">מוריד…</string>
+    <string name="download_network_error">לא ניתן להוריד. יש לבדוק את הגדרות הרשת.</string>
     <string name="download_title">אזהרת ניצול נתונים</string>
     <string name="download_waiting">ממתין…</string>
     <string name="dual_camera_lens_covered_toast">העדשה מוסתרת.</string>
@@ -1478,6 +1479,7 @@
     <string name="pref_camera_peak_entry_off">כבוי</string>
     <string name="pref_camera_peak_entry_on">מופעל</string>
     <string name="pref_camera_peak_title">מיקוד מירבי</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">מלא</string>
     <string name="pref_camera_picturesize_title_simple_mode">מסגרת תמונה</string>
     <string name="pref_camera_portrait_mode_entry_off">"מצב 'דיוקן' כבוי"</string>
     <string name="pref_camera_portrait_mode_entry_on">"מצב 'דיוקן' מופעל"</string>

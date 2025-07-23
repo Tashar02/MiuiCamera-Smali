@@ -43,25 +43,39 @@
     .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
-    const-string/jumbo v1, "yyyyMMdd"
-
-    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lcom/ot/pubsub/g/i;->m:Ljava/text/SimpleDateFormat;
-
-    const/4 v0, 0x1
-
     .line 2
-    sput-boolean v0, Lcom/ot/pubsub/g/i;->n:Z
-
-    const/4 v1, 0x0
-
     .line 3
-    sput-boolean v1, Lcom/ot/pubsub/g/i;->o:Z
+    const-string v1, "yyyyMMdd"
 
     .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lcom/ot/pubsub/g/i;->m:Ljava/text/SimpleDateFormat;
+
+    .line 9
+    .line 10
+    const/4 v0, 0x1
+
+    .line 11
+    sput-boolean v0, Lcom/ot/pubsub/g/i;->n:Z
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    sput-boolean v1, Lcom/ot/pubsub/g/i;->o:Z
+
+    .line 15
+    .line 16
     sput-boolean v0, Lcom/ot/pubsub/g/i;->p:Z
 
+    .line 17
+    .line 18
     return-void
 .end method
 
@@ -71,6 +85,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -236,7 +253,7 @@
 
     invoke-direct {v2}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -402,7 +419,7 @@
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v8
 
@@ -415,7 +432,7 @@
     invoke-static {v6, v7}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 35
-    invoke-virtual {v4}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
@@ -546,7 +563,7 @@
 
     invoke-direct {v4}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v2, v4}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -663,7 +680,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -676,7 +693,7 @@
     invoke-static {v1, v2}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 17
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -721,7 +738,7 @@
 
     invoke-direct {v2}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -809,7 +826,7 @@
     .line 12
     invoke-virtual {v4, v5, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    const-string/jumbo p0, "topic"
+    const-string p0, "topic"
 
     .line 13
     invoke-virtual {v4, p0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
@@ -871,7 +888,7 @@
     move-result-object p0
 
     .line 22
-    invoke-virtual {p2, p0}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
+    invoke-virtual {p2, p0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     .line 23
     invoke-virtual {p2}, Ljava/io/BufferedWriter;->newLine()V
@@ -938,7 +955,7 @@
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p4
 
@@ -951,7 +968,7 @@
     invoke-static {p2, p3}, Lcom/ot/pubsub/util/k;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 28
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
@@ -1034,34 +1051,67 @@
     .line 1
     invoke-static {}, Lcom/ot/pubsub/util/b;->a()Landroid/content/Context;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
-    .line 2
+    .line 5
     new-instance v1, Ljava/lang/StringBuilder;
 
+    .line 6
+    .line 7
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 8
+    .line 9
+    .line 10
     invoke-virtual {v0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object v0
 
+    .line 14
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v0
 
+    .line 18
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 19
+    .line 20
+    .line 21
     sget-object v0, Ljava/io/File;->separator:Ljava/lang/String;
 
+    .line 22
+    .line 23
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 24
+    .line 25
+    .line 26
     const-string v0, "ot_pubsub"
 
+    .line 27
+    .line 28
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 29
+    .line 30
+    .line 31
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 32
+    .line 33
+    .line 34
     move-result-object v0
 
+    .line 35
     return-object v0
 .end method

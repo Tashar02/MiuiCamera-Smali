@@ -24,18 +24,13 @@
 # direct methods
 .method public constructor <init>(Lcom/android/camera/data/data/runing/DataItemRunning;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dataItemBase"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/camera/data/data/ComponentData;-><init>(Lcom/android/camera/data/data/DataItemBase;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -46,17 +41,11 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "currentMode"
-        }
-    .end annotation
-
+    .line 1
     const-string p0, "OFF"
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -65,8 +54,10 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -84,37 +75,49 @@
         }
     .end annotation
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return-object p0
 .end method
 
 .method public getKey(I)Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
 
     .line 1
     new-instance p0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     const-string/jumbo v0, "pref_camera_macro_scene_mode_key_"
 
+    .line 7
+    .line 8
+    .line 9
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 10
+    .line 11
+    .line 12
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 13
+    .line 14
+    .line 15
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 16
+    .line 17
+    .line 18
     move-result-object p0
 
+    .line 19
     return-object p0
 .end method
 
@@ -122,101 +125,105 @@
     .locals 0
 
     .line 1
-    invoke-static {}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o000o0o0()LOooO0OO/OooO0oO/OooO00o/OooO0OO;
+    invoke-static {}, Lo000Oo0/OooO00o;->o000o0o0()Lo000Oo0/OooO00o;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object p0
 
-    invoke-virtual {p0}, LOooO0OO/OooO0oO/OooO00o/OooO0OO;->o00Ooo0o()Z
+    .line 5
+    invoke-virtual {p0}, Lo000Oo0/OooO00o;->o00Ooo0o()Z
 
+    .line 6
+    .line 7
+    .line 8
     move-result p0
 
+    .line 9
     if-eqz p0, :cond_0
 
-    const p0, 0x7f1209d6
+    .line 10
+    .line 11
+    const p0, 0x7f130a11
 
+    .line 12
+    .line 13
+    .line 14
     return p0
 
+    .line 15
     :cond_0
-    const p0, 0x7f120515
+    const p0, 0x7f130550
 
+    .line 16
+    .line 17
+    .line 18
     return p0
 .end method
 
 .method public isSwitchOn(I)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
+    .locals 1
 
     .line 1
+    const-string v0, "ON"
+
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/data/data/ComponentData;->getComponentValue(I)Ljava/lang/String;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
-    const-string p1, "ON"
+    .line 7
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
+    .line 8
+    .line 9
+    .line 10
     move-result p0
 
+    .line 11
     return p0
 .end method
 
 .method public reInit(IZ)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cameraId",
-            "isNormalIntent"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
 .method public setSwitchOff(I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
-
-    const-string v0, "OFF"
 
     .line 1
+    const-string v0, "OFF"
+
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, v0}, Lcom/android/camera/data/data/ComponentData;->setComponentValue(ILjava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public setSwitchOn(I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
-
-    const-string v0, "ON"
 
     .line 1
+    const-string v0, "ON"
+
+    .line 2
+    .line 3
     invoke-virtual {p0, p1, v0}, Lcom/android/camera/data/data/ComponentData;->setComponentValue(ILjava/lang/String;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

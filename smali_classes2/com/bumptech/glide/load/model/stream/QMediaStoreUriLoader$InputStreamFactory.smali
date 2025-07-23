@@ -33,7 +33,12 @@
     .line 1
     const-class v0, Ljava/io/InputStream;
 
+    .line 2
+    .line 3
     invoke-direct {p0, p1, v0}, Lcom/bumptech/glide/load/model/stream/QMediaStoreUriLoader$Factory;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

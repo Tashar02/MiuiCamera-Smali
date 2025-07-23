@@ -1,4 +1,4 @@
-.class public Landroidx/media/MediaBrowserServiceCompat$1;
+.class Landroidx/media/MediaBrowserServiceCompat$1;
 .super Landroidx/media/MediaBrowserServiceCompat$Result;
 .source "MediaBrowserServiceCompat.java"
 
@@ -24,34 +24,65 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/media/MediaBrowserServiceCompat;
+.field final synthetic this$0:Landroidx/media/MediaBrowserServiceCompat;
 
-.field public final synthetic val$connection:Landroidx/media/MediaBrowserServiceCompat$ConnectionRecord;
+.field final synthetic val$connection:Landroidx/media/MediaBrowserServiceCompat$ConnectionRecord;
 
-.field public final synthetic val$notifyChildrenChangedOptions:Landroid/os/Bundle;
+.field final synthetic val$notifyChildrenChangedOptions:Landroid/os/Bundle;
 
-.field public final synthetic val$parentId:Ljava/lang/String;
+.field final synthetic val$parentId:Ljava/lang/String;
 
-.field public final synthetic val$subscribeOptions:Landroid/os/Bundle;
+.field final synthetic val$subscribeOptions:Landroid/os/Bundle;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/Object;Landroidx/media/MediaBrowserServiceCompat$ConnectionRecord;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x1010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "debug",
+            "val$connection",
+            "val$parentId",
+            "val$subscribeOptions",
+            "val$notifyChildrenChangedOptions"
+        }
+    .end annotation
 
     .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$1;->this$0:Landroidx/media/MediaBrowserServiceCompat;
 
+    .line 2
+    .line 3
     iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$1;->val$connection:Landroidx/media/MediaBrowserServiceCompat$ConnectionRecord;
 
+    .line 4
+    .line 5
     iput-object p4, p0, Landroidx/media/MediaBrowserServiceCompat$1;->val$parentId:Ljava/lang/String;
 
+    .line 6
+    .line 7
     iput-object p5, p0, Landroidx/media/MediaBrowserServiceCompat$1;->val$subscribeOptions:Landroid/os/Bundle;
 
+    .line 8
+    .line 9
     iput-object p6, p0, Landroidx/media/MediaBrowserServiceCompat$1;->val$notifyChildrenChangedOptions:Landroid/os/Bundle;
 
+    .line 10
+    .line 11
     invoke-direct {p0, p2}, Landroidx/media/MediaBrowserServiceCompat$Result;-><init>(Ljava/lang/Object;)V
 
+    .line 12
+    .line 13
+    .line 14
     return-void
 .end method
 
@@ -59,6 +90,18 @@
 # virtual methods
 .method public bridge synthetic onResultSent(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "list"
+        }
+    .end annotation
 
     .line 1
     check-cast p1, Ljava/util/List;
@@ -70,6 +113,19 @@
 
 .method public onResultSent(Ljava/util/List;)V
     .locals 5
+    .param p1    # Ljava/util/List;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -149,11 +205,11 @@
 
     if-eqz v0, :cond_2
 
+    .line 6
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$1;->this$0:Landroidx/media/MediaBrowserServiceCompat;
 
     iget-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$1;->val$subscribeOptions:Landroid/os/Bundle;
 
-    .line 6
     invoke-virtual {v0, p1, v1}, Landroidx/media/MediaBrowserServiceCompat;->applyOptions(Ljava/util/List;Landroid/os/Bundle;)Ljava/util/List;
 
     move-result-object p1

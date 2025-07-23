@@ -664,6 +664,7 @@ cаптау және жақсарту"</string>
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">Сіздің құрылғыңыз Wi-Fi-ға қосылмаған сияқтысыз. Элементтерді орнату үшін %1$s МБ мобильді интернет пайдаланылсын ба?</string>
     <string name="download_in_progress">Жүктеу…</string>
+    <string name="download_network_error">Жүктеу мүмкін болмады. Желі баптауларын тексеріңіз.</string>
     <string name="download_title">Деректерді пайдалану туралы ескерту</string>
     <string name="download_waiting">Күту…</string>
     <string name="dual_camera_lens_covered_toast">Линза жабылған.</string>
@@ -1478,6 +1479,7 @@ cаптау және жақсарту"</string>
     <string name="pref_camera_peak_entry_off">Өшіру</string>
     <string name="pref_camera_peak_entry_on">Қосу</string>
     <string name="pref_camera_peak_title">Фокустау аймағын таңдау</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Толық</string>
     <string name="pref_camera_picturesize_title_simple_mode">Суреттің өлшемі</string>
     <string name="pref_camera_portrait_mode_entry_off">Портрет режимі өшірулі</string>
     <string name="pref_camera_portrait_mode_entry_on">Портрет режимі қосулы</string>

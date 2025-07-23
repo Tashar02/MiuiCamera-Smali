@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ActivityBase$4;
+.class Lcom/android/camera/ActivityBase$4;
 .super Ljava/lang/Object;
 .source "ActivityBase.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/ActivityBase;
+.field final synthetic this$0:Lcom/android/camera/ActivityBase;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ActivityBase;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ActivityBase$4;->this$0:Lcom/android/camera/ActivityBase;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,7 +46,12 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/ActivityBase$4;->this$0:Lcom/android/camera/ActivityBase;
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/android/camera/ActivityBase;->access$200(Lcom/android/camera/ActivityBase;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

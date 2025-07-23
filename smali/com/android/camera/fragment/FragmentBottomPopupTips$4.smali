@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/FragmentBottomPopupTips$4;
+.class Lcom/android/camera/fragment/FragmentBottomPopupTips$4;
 .super Ljava/lang/Object;
 .source "FragmentBottomPopupTips.java"
 
@@ -18,38 +18,35 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/FragmentBottomPopupTips;
+.field final synthetic this$0:Lcom/android/camera/fragment/FragmentBottomPopupTips;
 
-.field public final synthetic val$gestureListener:Lcom/android/camera/fragment/modeui/panelentrance/NormalPanelEntranceItem$OnGestureListener;
+.field final synthetic val$gestureListener:Lcom/android/camera/fragment/modeui/panelentrance/NormalPanelEntranceItem$OnGestureListener;
 
-.field public final synthetic val$item:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;
+.field final synthetic val$item:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/FragmentBottomPopupTips;Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;Lcom/android/camera/fragment/modeui/panelentrance/NormalPanelEntranceItem$OnGestureListener;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$item",
-            "val$gestureListener"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips$4;->this$0:Lcom/android/camera/fragment/FragmentBottomPopupTips;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips$4;->val$item:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips$4;->val$gestureListener:Lcom/android/camera/fragment/modeui/panelentrance/NormalPanelEntranceItem$OnGestureListener;
 
+    .line 6
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -66,10 +63,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips$4;->this$0:Lcom/android/camera/fragment/FragmentBottomPopupTips;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/android/camera/fragment/FragmentBottomPopupTips;->checkClick()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -84,17 +87,29 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips$4;->val$item:Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Lcom/android/camera/fragment/modeui/panelentrance/BasePanelEntranceItem;->isHideBySelf()Z
 
+    .line 4
+    .line 5
+    .line 6
     move-result v0
 
+    .line 7
     if-nez v0, :cond_0
 
-    .line 2
+    .line 8
+    .line 9
     iget-object p0, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips$4;->this$0:Lcom/android/camera/fragment/FragmentBottomPopupTips;
 
+    .line 10
+    .line 11
     invoke-virtual {p0}, Lcom/android/camera/fragment/FragmentBottomPopupTips;->onTipImageClick()V
 
+    .line 12
+    .line 13
+    .line 14
     :cond_0
     return-void
 .end method
@@ -107,19 +122,15 @@
         type = 0x0
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "event"
-        }
-    .end annotation
-
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips$4;->val$gestureListener:Lcom/android/camera/fragment/modeui/panelentrance/NormalPanelEntranceItem$OnGestureListener;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Lcom/android/camera/fragment/modeui/panelentrance/NormalPanelEntranceItem$OnGestureListener;->onUp(Landroid/view/MotionEvent;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$1;
+.class Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$1;
 .super Ljava/lang/Object;
 .source "VideoInterpolatorAsyncImp.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;
+.field final synthetic this$0:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;
 
 
 # direct methods
@@ -36,8 +36,13 @@
     .line 1
     iput-object p1, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$1;->this$0:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -49,7 +54,12 @@
     .line 1
     iget-object p0, p0, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp$1;->this$0:Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;->access$200(Lcom/miui/extravideo/interpolation/VideoInterpolatorAsyncImp;)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

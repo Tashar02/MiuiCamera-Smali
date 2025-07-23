@@ -15,69 +15,87 @@
 
 
 # instance fields
-.field public mComponentRunningPictureStyle:Lcom/android/camera/data/data/ComponentData;
+.field protected mComponentRunningPictureStyle:Lcom/android/camera/data/data/ComponentData;
 
 .field private mCount:I
 
-.field public mCurrentMode:I
+.field protected mCurrentMode:I
 
-.field public mDegree:I
+.field protected mDegree:I
 
-.field public mOnClickListener:Landroid/view/View$OnClickListener;
+.field protected mOnClickListener:Landroid/view/View$OnClickListener;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/view/View$OnClickListener;Lcom/android/camera/data/data/runing/ComponentRunningPictureStyle;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "currentMode",
-            "onClickListener",
-            "componentRunningPictureStyle"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput p2, p0, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->mCurrentMode:I
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p3, p0, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    .line 4
+    .line 7
+    .line 8
     iput-object p4, p0, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->mComponentRunningPictureStyle:Lcom/android/camera/data/data/ComponentData;
 
-    .line 5
+    .line 9
+    .line 10
     invoke-virtual {p4}, Lcom/android/camera/data/data/ComponentData;->getItems()Ljava/util/List;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object p1
 
+    .line 14
     invoke-interface {p1}, Ljava/util/List;->size()I
 
+    .line 15
+    .line 16
+    .line 17
     move-result p1
 
+    .line 18
     iput p1, p0, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->mCount:I
 
+    .line 19
+    .line 20
     return-void
 .end method
 
-.method public static synthetic lambda$setAccessible$0(Landroid/view/View;)V
-    .locals 1
-
-    const/16 v0, 0x80
+.method public static synthetic OooO00o(Landroid/view/View;)V
+    .locals 0
 
     .line 1
+    invoke-static {p0}, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->lambda$setAccessible$0(Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private static synthetic lambda$setAccessible$0(Landroid/view/View;)V
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x80
+
+    .line 2
+    .line 3
     invoke-virtual {p0, v0}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -89,21 +107,13 @@
     .line 1
     iget p0, p0, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->mCount:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 7
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     invoke-static {}, Lcom/android/camera/display/Display;->fitDisplayThin()Z
@@ -134,7 +144,7 @@
     :cond_1
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f080864
+    const v1, 0x7f0808b6
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -144,7 +154,7 @@
     :cond_2
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f080862
+    const v1, 0x7f0808b4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -152,7 +162,7 @@
     :goto_0
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f0a013a
+    const v1, 0x7f0b013a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +178,7 @@
     .line 7
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f0a032a
+    const v1, 0x7f0b0362
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -201,7 +211,7 @@
     .line 10
     iget-object v3, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v4, 0x7f0a032c
+    const v4, 0x7f0b0364
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -276,7 +286,7 @@
     invoke-virtual {v0, v1}, Lcom/android/camera/ui/ColorImageView;->setColor(I)V
 
     .line 20
-    invoke-virtual {v3}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -323,18 +333,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position",
-            "payloads"
-        }
-    .end annotation
 
     .line 24
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
@@ -344,140 +342,211 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object p0
-
-    const p2, 0x7f0d0129
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, p2, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    const p2, 0x7f0e0133
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p0, p2, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
     new-instance p1, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleViewHolder;
 
+    .line 18
+    .line 19
     invoke-direct {p1, p0}, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleViewHolder;-><init>(Landroid/view/View;)V
 
+    .line 20
+    .line 21
+    .line 22
     return-object p1
 .end method
 
 .method public setAccessible(Landroid/view/View;IZ)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "view",
-            "desc",
-            "isSelected"
-        }
-    .end annotation
-
-    if-nez p1, :cond_0
-
-    return-void
 
     .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    return-void
+
+    .line 4
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p0
 
-    const v0, 0x7f1204bc
+    .line 8
+    const v0, 0x7f1304f7
 
+    .line 9
+    .line 10
+    .line 11
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
+    .line 15
     if-lez p2, :cond_1
 
-    .line 2
+    .line 16
+    .line 17
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object p0
 
+    .line 21
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 22
+    .line 23
+    .line 24
     move-result-object p0
 
+    .line 25
     :cond_1
     if-eqz p3, :cond_2
 
-    .line 3
+    .line 26
+    .line 27
     new-instance p2, Ljava/lang/StringBuilder;
 
+    .line 28
+    .line 29
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 30
+    .line 31
+    .line 32
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 33
+    .line 34
+    .line 35
     const-string p0, ", "
 
+    .line 36
+    .line 37
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
+    .line 38
+    .line 39
+    .line 40
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 41
+    .line 42
+    .line 43
     move-result-object p0
 
-    const p3, 0x7f1200bb
+    .line 44
+    const p3, 0x7f1300bb
 
+    .line 45
+    .line 46
+    .line 47
     invoke-virtual {p0, p3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 48
+    .line 49
+    .line 50
     move-result-object p0
 
+    .line 51
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 52
+    .line 53
+    .line 54
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 55
+    .line 56
+    .line 57
     move-result-object p0
 
-    .line 5
+    .line 58
     invoke-virtual {p1, p0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 6
+    .line 59
+    .line 60
+    .line 61
     invoke-static {}, Lcom/android/camera/Util;->isAccessible()Z
 
+    .line 62
+    .line 63
+    .line 64
     move-result p0
 
+    .line 65
     if-eqz p0, :cond_3
 
-    .line 7
-    new-instance p0, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO00o0Oo/OooO0OO;
+    .line 66
+    .line 67
+    new-instance p0, Lcom/android/camera/fragment/manually/OooO00o;
 
-    invoke-direct {p0, p1}, LOooO0OO/OooO0O0/OooO00o/o00O0OoO/oO00o0Oo/OooO0OO;-><init>(Landroid/view/View;)V
+    .line 68
+    .line 69
+    invoke-direct {p0, p1}, Lcom/android/camera/fragment/manually/OooO00o;-><init>(Landroid/view/View;)V
 
+    .line 70
+    .line 71
+    .line 72
     const-wide/16 p2, 0x64
 
+    .line 73
+    .line 74
     invoke-virtual {p1, p0, p2, p3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
+    .line 75
+    .line 76
+    .line 77
     goto :goto_0
 
-    .line 8
+    .line 78
     :cond_2
     invoke-virtual {p1, p0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
+    .line 79
+    .line 80
+    .line 81
     :cond_3
     :goto_0
     return-void
@@ -485,17 +554,11 @@
 
 .method public setRotation(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "degree"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/fragment/manually/FragmentManualPictureStyle$PictureStyleAdapter;->mDegree:I
 
+    .line 2
+    .line 3
     return-void
 .end method

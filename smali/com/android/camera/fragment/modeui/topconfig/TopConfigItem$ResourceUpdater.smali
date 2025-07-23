@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract updateResource(I)Lcom/android/camera/fragment/modeui/topconfig/TopItemResource;
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "newMode"
-        }
-    .end annotation
 .end method

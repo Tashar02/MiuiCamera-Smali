@@ -26,7 +26,7 @@
 
 .field public static final _ID:Ljava/lang/String; = "_id"
 
-.field public static final a:Ljava/lang/String; = "content://com.arcsoft.content.provider.avatar2.content.provider/"
+.field protected static final a:Ljava/lang/String; = "content://com.arcsoft.content.provider.avatar2.content.provider/"
 
 .field public static final sUriMatcher:Landroid/content/UriMatcher;
 
@@ -35,33 +35,55 @@
 .method public static constructor <clinit>()V
     .locals 4
 
+    .line 1
     const-string v0, "content://com.arcsoft.content.provider.avatar2.content.provider/avatar_db"
 
-    .line 1
+    .line 2
+    .line 3
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
+    .line 7
     sput-object v0, Lcom/arcsoft/avatar2/provider/AvatarProfile;->AVATAR_URI:Landroid/net/Uri;
 
-    .line 2
+    .line 8
+    .line 9
     new-instance v0, Landroid/content/UriMatcher;
 
+    .line 10
+    .line 11
     const/4 v1, -0x1
 
+    .line 12
     invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
 
+    .line 13
+    .line 14
+    .line 15
     sput-object v0, Lcom/arcsoft/avatar2/provider/AvatarProfile;->sUriMatcher:Landroid/content/UriMatcher;
 
-    const-string v1, "com.arcsoft.content.provider.avatar2.content.provider"
+    .line 16
+    .line 17
+    const-string v1, "avatar_db"
 
-    const-string v2, "avatar_db"
+    .line 18
+    .line 19
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    .line 20
+    const-string v3, "com.arcsoft.content.provider.avatar2.content.provider"
 
-    .line 3
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+    .line 21
+    .line 22
+    invoke-virtual {v0, v3, v1, v2}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
+    .line 23
+    .line 24
+    .line 25
     return-void
 .end method
 
@@ -71,5 +93,8 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

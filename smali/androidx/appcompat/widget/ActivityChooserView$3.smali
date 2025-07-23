@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActivityChooserView$3;
+.class Landroidx/appcompat/widget/ActivityChooserView$3;
 .super Landroid/view/View$AccessibilityDelegate;
 .source "ActivityChooserView.java"
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/appcompat/widget/ActivityChooserView;
+.field final synthetic this$0:Landroidx/appcompat/widget/ActivityChooserView;
 
 
 # direct methods
@@ -25,8 +25,13 @@
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$3;->this$0:Landroidx/appcompat/widget/ActivityChooserView;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -39,13 +44,23 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
     .line 2
+    .line 3
+    .line 4
     invoke-static {p2}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->wrap(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object p0
 
+    .line 8
     const/4 p1, 0x1
 
+    .line 9
     invoke-virtual {p0, p1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->setCanOpenPopup(Z)V
 
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method

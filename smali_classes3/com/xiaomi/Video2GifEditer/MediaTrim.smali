@@ -19,6 +19,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -28,6 +29,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -37,15 +41,25 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifEditer/MediaTrim;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "MediaTrim"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-static/range {p0 .. p8}, Lcom/xiaomi/Video2GifEditer/MediaTrim;->MediaTrimJni(Ljava/lang/String;Ljava/lang/String;JJIILcom/xiaomi/Video2GifEditer/MediaTrim$Callback;)I
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     return p0
 .end method
 
@@ -58,15 +72,25 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifEditer/MediaTrim;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "cancel MediaTrim "
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-static {p0}, Lcom/xiaomi/Video2GifEditer/MediaTrim;->cancelmediatrimJni(Ljava/lang/String;)I
 
+    .line 9
+    .line 10
+    .line 11
     move-result p0
 
+    .line 12
     return p0
 .end method
 

@@ -14,6 +14,9 @@
     .line 1
     invoke-direct {p0}, Lcom/android/camera/fragment/settings/BasePreferenceActivity;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -22,27 +25,27 @@
 .method public getPreferenceFragmentTag()Ljava/lang/String;
     .locals 0
 
+    .line 1
     const-string p0, "CameraPreferenceFragment"
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "savedInstanceState"
-        }
-    .end annotation
 
     .line 1
     invoke-super {p0, p1}, Lcom/android/camera/fragment/settings/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
+    .line 3
+    .line 4
     invoke-virtual {p0}, Lcom/android/camera/fragment/settings/BasePreferenceActivity;->transitFromWhere()V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method

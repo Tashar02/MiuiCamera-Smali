@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/videoplayer/ui/VideoPlayerView$2;
+.class Lcom/android/camera/videoplayer/ui/VideoPlayerView$2;
 .super Ljava/lang/Object;
 .source "VideoPlayerView.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/videoplayer/ui/VideoPlayerView;
+.field final synthetic this$0:Lcom/android/camera/videoplayer/ui/VideoPlayerView;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/videoplayer/ui/VideoPlayerView$2;->this$0:Lcom/android/camera/videoplayer/ui/VideoPlayerView;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,11 +46,20 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/videoplayer/ui/VideoPlayerView$2;->this$0:Lcom/android/camera/videoplayer/ui/VideoPlayerView;
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lcom/android/camera/videoplayer/ui/VideoPlayerView;->access$000(Lcom/android/camera/videoplayer/ui/VideoPlayerView;)Lcom/android/camera/videoplayer/ui/VideoPlayerView$BackgroundThreadMediaPlayerListener;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     invoke-interface {p0}, Lcom/android/camera/videoplayer/ui/VideoPlayerView$BackgroundThreadMediaPlayerListener;->onVideoPreparedBackgroundThread()V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/camera/customization/TintColorTableView$OnColorChangeListener;
+.class interface abstract Lcom/android/camera/customization/TintColorTableView$OnColorChangeListener;
 .super Ljava/lang/Object;
 .source "TintColorTableView.java"
 
@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onColorChange(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "colorIndex"
-        }
-    .end annotation
 .end method

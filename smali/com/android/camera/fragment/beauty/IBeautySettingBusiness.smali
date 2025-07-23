@@ -18,15 +18,6 @@
         .annotation build Lcom/android/camera/data/data/runing/ComponentRunningShine$ShineType;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "beautyType"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,38 +37,12 @@
 .end method
 
 .method public abstract setCurrentItemType(Lcom/android/camera/fragment/beauty/BeautyItem;Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "item",
-            "isfromUser"
-        }
-    .end annotation
 .end method
 
 .method public abstract setDisplayNameRes(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "res"
-        }
-    .end annotation
 .end method
 
 .method public abstract setProgressForCurrentItem(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "progress"
-        }
-    .end annotation
 .end method
 
 .method public abstract updateExtraTable()V

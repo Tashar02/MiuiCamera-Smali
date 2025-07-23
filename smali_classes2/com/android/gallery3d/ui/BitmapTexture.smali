@@ -4,20 +4,12 @@
 
 
 # instance fields
-.field public mContentBitmap:Landroid/graphics/Bitmap;
+.field protected mContentBitmap:Landroid/graphics/Bitmap;
 
 
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "bitmap"
-        }
-    .end annotation
 
     .line 3
     invoke-direct {p0}, Lcom/android/gallery3d/ui/UploadedTexture;-><init>()V
@@ -49,16 +41,6 @@
 
 .method public constructor <init>(Landroid/graphics/Bitmap;Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "bitmap",
-            "isOpaque"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0, p1}, Lcom/android/gallery3d/ui/BitmapTexture;-><init>(Landroid/graphics/Bitmap;)V
@@ -77,20 +59,15 @@
     .line 1
     iget-object p0, p0, Lcom/android/gallery3d/ui/BitmapTexture;->mContentBitmap:Landroid/graphics/Bitmap;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
 .method public onFreeBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "bitmap"
-        }
-    .end annotation
 
+    .line 1
     return-void
 .end method
 
@@ -100,5 +77,7 @@
     .line 1
     iget-object p0, p0, Lcom/android/gallery3d/ui/BitmapTexture;->mContentBitmap:Landroid/graphics/Bitmap;
 
+    .line 2
+    .line 3
     return-object p0
 .end method

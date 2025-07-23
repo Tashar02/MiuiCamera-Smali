@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/manager/ApplicationLifecycle;
+.class Lcom/bumptech/glide/manager/ApplicationLifecycle;
 .super Ljava/lang/Object;
 .source "ApplicationLifecycle.java"
 
@@ -13,6 +13,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -28,6 +31,9 @@
     .line 1
     invoke-interface {p1}, Lcom/bumptech/glide/manager/LifecycleListener;->onStart()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -38,5 +44,6 @@
         .end annotation
     .end param
 
+    .line 1
     return-void
 .end method

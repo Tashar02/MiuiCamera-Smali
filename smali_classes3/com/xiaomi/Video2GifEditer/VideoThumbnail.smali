@@ -11,6 +11,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -20,6 +21,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -29,13 +33,22 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifEditer/VideoThumbnail;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "CancelThumbnails"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-static {}, Lcom/xiaomi/Video2GifEditer/VideoThumbnail;->CancelThumbnailsJni()V
 
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
@@ -48,15 +61,25 @@
     .line 1
     sget-object v0, Lcom/xiaomi/Video2GifEditer/VideoThumbnail;->TAG:Ljava/lang/String;
 
+    .line 2
+    .line 3
     const-string v1, "GenerateThumbnails"
 
+    .line 4
+    .line 5
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
+    .line 6
+    .line 7
+    .line 8
     invoke-static {p0, p1, p2, p3, p4}, Lcom/xiaomi/Video2GifEditer/VideoThumbnail;->GenerateThumbnailsJni(Ljava/lang/String;Ljava/lang/String;III)[Ljava/lang/String;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
+    .line 12
     return-object p0
 .end method
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/vv/FragmentVVFeature$1;
+.class Lcom/android/camera/fragment/vv/FragmentVVFeature$1;
 .super Ljava/lang/Object;
 .source "FragmentVVFeature.java"
 
@@ -18,26 +18,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/vv/FragmentVVFeature;
+.field final synthetic this$0:Lcom/android/camera/fragment/vv/FragmentVVFeature;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/vv/FragmentVVFeature;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vv/FragmentVVFeature$1;->this$0:Lcom/android/camera/fragment/vv/FragmentVVFeature;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -48,21 +45,18 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "dialog"
-        }
-    .end annotation
-
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/vv/FragmentVVFeature$1;->this$0:Lcom/android/camera/fragment/vv/FragmentVVFeature;
 
+    .line 2
+    .line 3
     const/4 p1, 0x0
 
+    .line 4
     invoke-static {p0, p1}, Lcom/android/camera/fragment/vv/FragmentVVFeature;->access$002(Lcom/android/camera/fragment/vv/FragmentVVFeature;Lmiuix/appcompat/app/AlertDialog;)Lmiuix/appcompat/app/AlertDialog;
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method

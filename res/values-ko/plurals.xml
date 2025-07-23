@@ -54,6 +54,14 @@
     <plurals name="exit_version_hint">
         <item quantity="other">&lt;Data>사용 중이신 카메라 버전이 기기 모델과 호환되지 않습니다.&lt;br>앱이 &lt;font color=#FFCE16>&lt;b>%1$d초&lt;/b>&lt;/font> 후에 종료됩니다. 카메라의 업데이트를 제거하시고 다시 시도하십시오.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d초 빨리 감기</item>
+        <item quantity="one">%d초 빨리 감기</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d초 되감기</item>
+        <item quantity="one">%d초 되감기</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d분</item>
     </plurals>

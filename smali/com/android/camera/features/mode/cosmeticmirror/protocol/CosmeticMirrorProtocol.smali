@@ -22,14 +22,24 @@
     .line 1
     invoke-static {}, Lcom/android/camera/protocol/ModeCoordinatorImpl;->getInstance()Lcom/android/camera/protocol/ModeCoordinatorImpl;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     const-class v1, Lcom/android/camera/features/mode/cosmeticmirror/protocol/CosmeticMirrorProtocol;
 
+    .line 6
+    .line 7
     invoke-virtual {v0, v1}, Lcom/android/camera/protocol/ModeCoordinatorImpl;->getAttachProtocol2(Ljava/lang/Class;)Ljava/util/Optional;
 
+    .line 8
+    .line 9
+    .line 10
     move-result-object v0
 
+    .line 11
     return-object v0
 .end method
 
@@ -39,23 +49,7 @@
 .end method
 
 .method public abstract setEnable(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 .end method
 
 .method public abstract setSeekBarByZoom(F)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "zoom"
-        }
-    .end annotation
 .end method

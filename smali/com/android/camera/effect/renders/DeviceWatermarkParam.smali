@@ -36,41 +36,37 @@
 # direct methods
 .method public constructor <init>(ZZZLjava/lang/String;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "deviceWaterMarkEnable",
-            "frontEnable",
-            "isUltraMP",
-            "path"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 2
+    .line 5
+    .line 6
     iput v0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mWatermarkScale:F
 
-    .line 3
+    .line 7
+    .line 8
     iput-boolean p1, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsDeviceWatermarkEnable:Z
 
-    .line 4
+    .line 9
+    .line 10
     iput-boolean p2, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsFrontWatermarkEnable:Z
 
-    .line 5
+    .line 11
+    .line 12
     iput-boolean p3, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsUltraMPWatermarkEnable:Z
 
-    .line 6
+    .line 13
+    .line 14
     iput-object p4, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mPath:Ljava/lang/String;
 
+    .line 15
+    .line 16
     return-void
 .end method
 
@@ -80,6 +76,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsCinematicAspectRatio:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -89,6 +87,8 @@
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsLTR:Z
 
+    .line 2
+    .line 3
     return p1
 .end method
 
@@ -98,6 +98,8 @@
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mCustomText:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p1
 .end method
 
@@ -109,6 +111,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mCustomText:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -118,6 +122,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mDeviceWaterMark:Lcom/android/camera/effect/renders/WaterMark;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -127,6 +133,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mPath:Ljava/lang/String;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -136,6 +144,8 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mTimeWaterMark:Lcom/android/camera/effect/renders/WaterMark;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -145,6 +155,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mWatermarkScale:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -154,6 +166,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsCinematicAspectRatio:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -163,6 +177,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsDeviceWatermarkEnable:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -172,6 +188,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsFrontWatermarkEnable:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -181,6 +199,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsLTR:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -190,56 +210,40 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mIsUltraMPWatermarkEnable:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setDeviceWaterMark(Lcom/android/camera/effect/renders/WaterMark;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "deviceWaterMark"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mDeviceWaterMark:Lcom/android/camera/effect/renders/WaterMark;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setTimeWaterMark(Lcom/android/camera/effect/renders/WaterMark;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timeWaterMark"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mTimeWaterMark:Lcom/android/camera/effect/renders/WaterMark;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setWatermarkScale(F)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "watermarkScale"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/effect/renders/DeviceWatermarkParam;->mWatermarkScale:F
 
+    .line 2
+    .line 3
     return-void
 .end method

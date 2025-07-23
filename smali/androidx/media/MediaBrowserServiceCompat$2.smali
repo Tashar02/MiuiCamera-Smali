@@ -1,4 +1,4 @@
-.class public Landroidx/media/MediaBrowserServiceCompat$2;
+.class Landroidx/media/MediaBrowserServiceCompat$2;
 .super Landroidx/media/MediaBrowserServiceCompat$Result;
 .source "MediaBrowserServiceCompat.java"
 
@@ -23,22 +23,41 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroidx/media/MediaBrowserServiceCompat;
+.field final synthetic this$0:Landroidx/media/MediaBrowserServiceCompat;
 
-.field public final synthetic val$receiver:Landroid/support/v4/os/ResultReceiver;
+.field final synthetic val$receiver:Landroid/support/v4/os/ResultReceiver;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/Object;Landroid/support/v4/os/ResultReceiver;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "debug",
+            "val$receiver"
+        }
+    .end annotation
 
     .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$2;->this$0:Landroidx/media/MediaBrowserServiceCompat;
 
+    .line 2
+    .line 3
     iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$2;->val$receiver:Landroid/support/v4/os/ResultReceiver;
 
+    .line 4
+    .line 5
     invoke-direct {p0, p2}, Landroidx/media/MediaBrowserServiceCompat$Result;-><init>(Ljava/lang/Object;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -46,6 +65,18 @@
 # virtual methods
 .method public onResultSent(Landroid/support/v4/media/MediaBrowserCompat$MediaItem;)V
     .locals 2
+    .param p1    # Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 2
     invoke-virtual {p0}, Landroidx/media/MediaBrowserServiceCompat$Result;->getFlags()I
@@ -73,7 +104,7 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    const-string/jumbo v1, "media_item"
+    const-string v1, "media_item"
 
     .line 5
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
@@ -90,6 +121,18 @@
 
 .method public bridge synthetic onResultSent(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 1
     check-cast p1, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;

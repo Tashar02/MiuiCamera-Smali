@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess$3;
+.class Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess$3;
 .super Lcom/android/camera/fragment/DefaultItemAnimator;
 .source "FragmentVlogProProcess.java"
 
@@ -15,26 +15,23 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;
+.field final synthetic this$0:Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010
-        }
-        names = {
-            "this$0"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess$3;->this$0:Lcom/android/camera/fragment/vlogpro/FragmentVlogProProcess;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Lcom/android/camera/fragment/DefaultItemAnimator;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -46,15 +43,8 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "viewHolder"
-        }
-    .end annotation
 
+    .line 1
     const/4 p0, 0x1
 
     return p0
@@ -70,17 +60,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "viewHolder",
-            "payloads"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -91,6 +70,7 @@
         }
     .end annotation
 
+    .line 2
     const/4 p0, 0x1
 
     return p0

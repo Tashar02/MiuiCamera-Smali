@@ -62,10 +62,17 @@
     .line 1
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/ot/pubsub/g/l;->q:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -106,7 +113,7 @@
 
     if-nez p1, :cond_0
 
-    const-string/jumbo p0, "tracking.miui.com"
+    const-string p0, "tracking.miui.com"
 
     return-object p0
 
@@ -127,7 +134,7 @@
 
     if-eqz p1, :cond_1
 
-    const-string/jumbo p0, "tracking.intl.miui.com"
+    const-string p0, "tracking.intl.miui.com"
 
     :cond_1
     return-object p0
@@ -136,14 +143,18 @@
 .method private f()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
 .method private g()Ljava/lang/String;
     .locals 0
 
+    .line 1
     const-string p0, "https://"
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -153,47 +164,79 @@
     .line 1
     invoke-static {}, Lcom/ot/pubsub/util/m;->p()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
-    .line 2
+    .line 5
     invoke-static {}, Lcom/ot/pubsub/util/m;->q()Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
+    .line 9
     const-string v1, "sdkconfig.ad.intl.xiaomi.com"
 
+    .line 10
+    .line 11
     if-nez p0, :cond_0
 
+    .line 12
+    .line 13
     return-object v1
 
+    .line 14
     :cond_0
     const-string p0, "IN"
 
-    .line 3
+    .line 15
+    .line 16
     invoke-static {v0, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
+    .line 17
+    .line 18
+    .line 19
     move-result p0
 
+    .line 20
     if-eqz p0, :cond_1
 
+    .line 21
+    .line 22
     const-string p0, "sdkconfig.ad.india.xiaomi.com"
 
+    .line 23
+    .line 24
     return-object p0
 
+    .line 25
     :cond_1
     const-string p0, "RU"
 
-    .line 4
+    .line 26
+    .line 27
     invoke-static {v0, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
+    .line 28
+    .line 29
+    .line 30
     move-result p0
 
+    .line 31
     if-eqz p0, :cond_2
 
+    .line 32
+    .line 33
     const-string p0, "sdkconfig.ad.rus.xiaomi.com"
 
+    .line 34
+    .line 35
     return-object p0
 
+    .line 36
     :cond_2
     return-object v1
 .end method
@@ -204,18 +247,28 @@
     .line 1
     invoke-static {}, Lcom/ot/pubsub/util/m;->p()Z
 
+    .line 2
+    .line 3
+    .line 4
     move-result v0
 
-    .line 2
+    .line 5
     invoke-static {}, Lcom/ot/pubsub/util/m;->q()Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v1
 
-    .line 3
+    .line 9
     invoke-direct {p0, v0, v1}, Lcom/ot/pubsub/g/l;->a(ZLjava/lang/String;)Ljava/lang/String;
 
+    .line 10
+    .line 11
+    .line 12
     move-result-object p0
 
+    .line 13
     return-object p0
 .end method
 
@@ -256,7 +309,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "updateHostMap:"
+    const-string v2, "updateHostMap:"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -351,11 +404,11 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "updateHostMap: "
+    const-string v2, "updateHostMap: "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -418,18 +471,32 @@
     .line 1
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->g()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->h()Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v1
 
+    .line 9
     const-string v2, "/api/v1/token"
 
+    .line 10
+    .line 11
     invoke-virtual {p0, v0, v1, v2}, Lcom/ot/pubsub/g/l;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
+    .line 15
     return-object p0
 .end method
 
@@ -439,18 +506,32 @@
     .line 1
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->g()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->i()Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v1
 
+    .line 9
     const-string v2, "/track/key_get"
 
+    .line 10
+    .line 11
     invoke-virtual {p0, v0, v1, v2}, Lcom/ot/pubsub/g/l;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
+    .line 15
     return-object p0
 .end method
 
@@ -460,18 +541,32 @@
     .line 1
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->g()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->h()Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v1
 
+    .line 9
     const-string v2, "/api/v4/detail/config_common"
 
+    .line 10
+    .line 11
     invoke-virtual {p0, v0, v1, v2}, Lcom/ot/pubsub/g/l;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
+    .line 15
     return-object p0
 .end method
 
@@ -481,17 +576,31 @@
     .line 1
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->g()Ljava/lang/String;
 
+    .line 2
+    .line 3
+    .line 4
     move-result-object v0
 
+    .line 5
     invoke-direct {p0}, Lcom/ot/pubsub/g/l;->h()Ljava/lang/String;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v1
 
+    .line 9
     const-string v2, "/api/v4/detail/config_p"
 
+    .line 10
+    .line 11
     invoke-virtual {p0, v0, v1, v2}, Lcom/ot/pubsub/g/l;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 12
+    .line 13
+    .line 14
     move-result-object p0
 
+    .line 15
     return-object p0
 .end method

@@ -107,182 +107,297 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    const/4 v0, 0x0
-
-    const/16 v1, 0x101
-
     .line 1
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_BLUR:I
-
-    const/16 v1, 0x102
+    const/16 v0, 0x101
 
     .line 2
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_GRADIENTER:I
-
-    const/16 v1, 0x103
-
     .line 3
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_TILTSHIFT:I
-
-    const/16 v1, 0x104
+    const/4 v1, 0x0
 
     .line 4
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_GAUSSIAN:I
-
-    const/16 v1, 0x105
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
 
     .line 5
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_PEAKINGMF:I
-
-    const/16 v1, 0x106
-
     .line 6
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_STICKER:I
-
-    const/16 v1, 0x107
-
     .line 7
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_YUV2RGB:I
-
-    const/16 v1, 0x108
+    move-result v0
 
     .line 8
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_RGB2YUV:I
-
-    const/16 v1, 0x109
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_BLUR:I
 
     .line 9
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_ZEBRA:I
-
-    const/16 v1, 0x10a
-
     .line 10
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_KALEIDOSCOPE:I
-
-    const/16 v1, 0x10b
+    const/16 v0, 0x102
 
     .line 11
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_YUV4442RGB:I
-
-    const/16 v1, 0x10c
-
     .line 12
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_CINEMATIC:I
-
-    const/16 v1, 0x10d
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
 
     .line 13
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v1
-
-    sput v1, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_MIMOJI:I
-
-    const/16 v1, 0x10e
-
     .line 14
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v0
-
-    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_TRANSFORM:I
-
-    const/4 v0, 0x1
-
-    const/16 v1, 0x200
-
     .line 15
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
     move-result v0
-
-    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_NONE:I
-
-    const/4 v0, 0x4
-
-    const/16 v1, 0x301
 
     .line 16
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
-
-    move-result v0
-
-    sput v0, Lcom/android/camera/effect/FilterInfo;->RENDER_ID_MAKEUP:I
-
-    const/16 v0, 0xd
-
-    const/16 v1, 0x400
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_GRADIENTER:I
 
     .line 17
-    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+    .line 18
+    const/16 v0, 0x103
 
+    .line 19
+    .line 20
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 21
+    .line 22
+    .line 23
     move-result v0
 
+    .line 24
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_TILTSHIFT:I
+
+    .line 25
+    .line 26
+    const/16 v0, 0x104
+
+    .line 27
+    .line 28
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v0
+
+    .line 32
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_GAUSSIAN:I
+
+    .line 33
+    .line 34
+    const/16 v0, 0x105
+
+    .line 35
+    .line 36
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v0
+
+    .line 40
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_PEAKINGMF:I
+
+    .line 41
+    .line 42
+    const/16 v0, 0x106
+
+    .line 43
+    .line 44
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v0
+
+    .line 48
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_STICKER:I
+
+    .line 49
+    .line 50
+    const/16 v0, 0x107
+
+    .line 51
+    .line 52
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_YUV2RGB:I
+
+    .line 57
+    .line 58
+    const/16 v0, 0x108
+
+    .line 59
+    .line 60
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v0
+
+    .line 64
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_RGB2YUV:I
+
+    .line 65
+    .line 66
+    const/16 v0, 0x109
+
+    .line 67
+    .line 68
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v0
+
+    .line 72
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_ZEBRA:I
+
+    .line 73
+    .line 74
+    const/16 v0, 0x10a
+
+    .line 75
+    .line 76
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 77
+    .line 78
+    .line 79
+    move-result v0
+
+    .line 80
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_KALEIDOSCOPE:I
+
+    .line 81
+    .line 82
+    const/16 v0, 0x10b
+
+    .line 83
+    .line 84
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 85
+    .line 86
+    .line 87
+    move-result v0
+
+    .line 88
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_YUV4442RGB:I
+
+    .line 89
+    .line 90
+    const/16 v0, 0x10c
+
+    .line 91
+    .line 92
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v0
+
+    .line 96
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_CINEMATIC:I
+
+    .line 97
+    .line 98
+    const/16 v0, 0x10d
+
+    .line 99
+    .line 100
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v0
+
+    .line 104
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_MIMOJI:I
+
+    .line 105
+    .line 106
+    const/16 v0, 0x10e
+
+    .line 107
+    .line 108
+    invoke-static {v1, v0}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v0
+
+    .line 112
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_TRANSFORM:I
+
+    .line 113
+    .line 114
+    const/4 v0, 0x1
+
+    .line 115
+    const/16 v1, 0x200
+
+    .line 116
+    .line 117
+    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 118
+    .line 119
+    .line 120
+    move-result v0
+
+    .line 121
+    sput v0, Lcom/android/camera/effect/FilterInfo;->FILTER_ID_NONE:I
+
+    .line 122
+    .line 123
+    const/4 v0, 0x4
+
+    .line 124
+    const/16 v1, 0x301
+
+    .line 125
+    .line 126
+    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 127
+    .line 128
+    .line 129
+    move-result v0
+
+    .line 130
+    sput v0, Lcom/android/camera/effect/FilterInfo;->RENDER_ID_MAKEUP:I
+
+    .line 131
+    .line 132
+    const/16 v0, 0xd
+
+    .line 133
+    .line 134
+    const/16 v1, 0x400
+
+    .line 135
+    .line 136
+    invoke-static {v0, v1}, Lcom/android/camera/effect/FilterInfo;->getId(II)I
+
+    .line 137
+    .line 138
+    .line 139
+    move-result v0
+
+    .line 140
     sput v0, Lcom/android/camera/effect/FilterInfo;->CV_STYLE_FILTER_ID_0_NONE:I
 
+    .line 141
+    .line 142
     return-void
 .end method
 
 .method public constructor <init>(II)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "id",
-            "order"
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
@@ -294,20 +409,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 6
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "id",
-            "nameResId",
-            "iconResId",
-            "order"
-        }
-    .end annotation
 
     .line 2
     invoke-static {p1}, Lcom/android/camera/effect/FilterInfo;->getCategory(I)I
@@ -333,22 +434,6 @@
 
 .method public constructor <init>(IIIII)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "category",
-            "index",
-            "nameResId",
-            "iconResId",
-            "order"
-        }
-    .end annotation
 
     .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -373,33 +458,19 @@
 
 .method public static getCategory(I)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "id"
-        }
-    .end annotation
 
+    .line 1
     shr-int/lit8 p0, p0, 0x10
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public static getId(II)I
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "category",
-            "index"
-        }
-    .end annotation
 
+    .line 1
     shl-int/lit8 p0, p0, 0x10
 
     or-int/2addr p0, p1
@@ -409,19 +480,16 @@
 
 .method public static getIndex(I)I
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "id"
-        }
-    .end annotation
 
+    .line 1
     const v0, 0xffff
 
+    .line 2
+    .line 3
+    .line 4
     and-int/2addr p0, v0
 
+    .line 5
     return p0
 .end method
 
@@ -433,14 +501,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "another"
-        }
-    .end annotation
 
     .line 2
     iget p0, p0, Lcom/android/camera/effect/FilterInfo;->mOrder:I
@@ -473,14 +533,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "another"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/effect/FilterInfo;
@@ -497,44 +549,57 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "o"
-        }
-    .end annotation
-
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     if-eqz p1, :cond_1
 
-    .line 1
+    .line 3
+    .line 4
     instance-of v1, p1, Lcom/android/camera/effect/FilterInfo;
 
+    .line 5
+    .line 6
     if-nez v1, :cond_0
 
+    .line 7
+    .line 8
     goto :goto_0
 
-    .line 2
+    .line 9
     :cond_0
     iget v1, p0, Lcom/android/camera/effect/FilterInfo;->mCategory:I
 
+    .line 10
+    .line 11
     check-cast p1, Lcom/android/camera/effect/FilterInfo;
 
+    .line 12
+    .line 13
     iget v2, p1, Lcom/android/camera/effect/FilterInfo;->mCategory:I
 
+    .line 14
+    .line 15
     if-ne v1, v2, :cond_1
 
+    .line 16
+    .line 17
     iget p0, p0, Lcom/android/camera/effect/FilterInfo;->mIndex:I
 
+    .line 18
+    .line 19
     iget p1, p1, Lcom/android/camera/effect/FilterInfo;->mIndex:I
 
+    .line 20
+    .line 21
     if-ne p0, p1, :cond_1
 
+    .line 22
+    .line 23
     const/4 v0, 0x1
 
+    .line 24
     :cond_1
     :goto_0
     return v0
@@ -546,13 +611,15 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/FilterInfo;->mIconResId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public getId()I
     .locals 1
 
-    .line 1
+    .line 2
     iget v0, p0, Lcom/android/camera/effect/FilterInfo;->mCategory:I
 
     shl-int/lit8 v0, v0, 0x10
@@ -570,6 +637,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/FilterInfo;->mNameResId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -579,6 +648,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/FilterInfo;->mOrder:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -588,6 +659,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera/effect/FilterInfo;->tagUniqueFilterId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -597,39 +670,29 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera/effect/FilterInfo;->mIsNeedRect:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setNeedRect(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "needRect"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera/effect/FilterInfo;->mIsNeedRect:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setTagUniqueFilterId(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "tagUniqueFilterId"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/camera/effect/FilterInfo;->tagUniqueFilterId:I
 
+    .line 2
+    .line 3
     return-void
 .end method

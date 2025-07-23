@@ -15,28 +15,9 @@
 
 # virtual methods
 .method public abstract appendTo(Ljava/lang/StringBuilder;Ljava/lang/String;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "builder",
-            "tableAlias"
-        }
-    .end annotation
 .end method
 
 .method public abstract appendValuesTo(Ljava/util/List;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "values"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/request/target/ViewTarget$1;
+.class Lcom/bumptech/glide/request/target/ViewTarget$1;
 .super Ljava/lang/Object;
 .source "ViewTarget.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/bumptech/glide/request/target/ViewTarget;
+.field final synthetic this$0:Lcom/bumptech/glide/request/target/ViewTarget;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/request/target/ViewTarget$1;->this$0:Lcom/bumptech/glide/request/target/ViewTarget;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -41,8 +46,13 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/request/target/ViewTarget$1;->this$0:Lcom/bumptech/glide/request/target/ViewTarget;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/bumptech/glide/request/target/ViewTarget;->resumeMyRequest()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -52,7 +62,12 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/request/target/ViewTarget$1;->this$0:Lcom/bumptech/glide/request/target/ViewTarget;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Lcom/bumptech/glide/request/target/ViewTarget;->pauseMyRequest()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

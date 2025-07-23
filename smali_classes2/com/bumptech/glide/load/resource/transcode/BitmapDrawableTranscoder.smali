@@ -109,9 +109,15 @@
     .line 1
     iget-object p0, p0, Lcom/bumptech/glide/load/resource/transcode/BitmapDrawableTranscoder;->resources:Landroid/content/res/Resources;
 
+    .line 2
+    .line 3
     invoke-static {p0, p1}, Lcom/bumptech/glide/load/resource/bitmap/LazyBitmapDrawableResource;->obtain(Landroid/content/res/Resources;Lcom/bumptech/glide/load/engine/Resource;)Lcom/bumptech/glide/load/engine/Resource;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method

@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field public mHandler:Landroid/os/Handler;
+.field mHandler:Landroid/os/Handler;
 
 .field private mHandlerCallback:Landroid/os/Handler$Callback;
 
-.field public mInflateThread:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;
+.field mInflateThread:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;
 
-.field public mInflater:Landroid/view/LayoutInflater;
+.field mInflater:Landroid/view/LayoutInflater;
 
 
 # direct methods
@@ -40,35 +40,63 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$1;
 
+    .line 5
+    .line 6
     invoke-direct {v0, p0}, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$1;-><init>(Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;->mHandlerCallback:Landroid/os/Handler$Callback;
 
-    .line 3
+    .line 10
+    .line 11
     new-instance v0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$BasicInflater;
 
+    .line 12
+    .line 13
     invoke-direct {v0, p1}, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$BasicInflater;-><init>(Landroid/content/Context;)V
 
+    .line 14
+    .line 15
+    .line 16
     iput-object v0, p0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 4
+    .line 17
+    .line 18
     new-instance p1, Landroid/os/Handler;
 
+    .line 19
+    .line 20
     iget-object v0, p0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;->mHandlerCallback:Landroid/os/Handler$Callback;
 
+    .line 21
+    .line 22
     invoke-direct {p1, v0}, Landroid/os/Handler;-><init>(Landroid/os/Handler$Callback;)V
 
+    .line 23
+    .line 24
+    .line 25
     iput-object p1, p0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;->mHandler:Landroid/os/Handler;
 
-    .line 5
+    .line 26
+    .line 27
     invoke-static {}, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;->getInstance()Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;
 
+    .line 28
+    .line 29
+    .line 30
     move-result-object p1
 
+    .line 31
     iput-object p1, p0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;->mInflateThread:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;
 
+    .line 32
+    .line 33
     return-void
 .end method
 
@@ -91,34 +119,64 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    const-string v0, "callback argument may not be null!"
-
     .line 1
-    invoke-static {p3, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    if-eqz p3, :cond_0
 
     .line 2
+    .line 3
     iget-object v0, p0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;->mInflateThread:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;
 
+    .line 4
+    .line 5
     invoke-virtual {v0}, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;->obtainRequest()Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;
 
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
-    .line 3
+    .line 9
     iput-object p0, v0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;->inflater:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;
 
-    .line 4
+    .line 10
+    .line 11
     iput p1, v0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;->resid:I
 
-    .line 5
+    .line 12
+    .line 13
     iput-object p2, v0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;->parent:Landroid/view/ViewGroup;
 
-    .line 6
+    .line 14
+    .line 15
     iput-object p3, v0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;->callback:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$OnInflateFinishedListener;
 
-    .line 7
+    .line 16
+    .line 17
     iget-object p0, p0, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater;->mInflateThread:Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;
 
+    .line 18
+    .line 19
     invoke-virtual {p0, v0}, Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateThread;->enqueue(Landroidx/asynclayoutinflater/view/AsyncLayoutInflater$InflateRequest;)V
 
+    .line 20
+    .line 21
+    .line 22
     return-void
+
+    .line 23
+    :cond_0
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    .line 24
+    .line 25
+    const-string p1, "callback argument may not be null!"
+
+    .line 26
+    .line 27
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 28
+    .line 29
+    .line 30
+    throw p0
 .end method

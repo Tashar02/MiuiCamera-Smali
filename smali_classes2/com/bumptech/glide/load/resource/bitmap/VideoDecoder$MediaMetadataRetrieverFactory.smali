@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/load/resource/bitmap/VideoDecoder$MediaMetadataRetrieverFactory;
+.class Lcom/bumptech/glide/load/resource/bitmap/VideoDecoder$MediaMetadataRetrieverFactory;
 .super Ljava/lang/Object;
 .source "VideoDecoder.java"
 
@@ -24,6 +24,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -35,7 +38,12 @@
     .line 1
     new-instance p0, Landroid/media/MediaMetadataRetriever;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Landroid/media/MediaMetadataRetriever;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-object p0
 .end method

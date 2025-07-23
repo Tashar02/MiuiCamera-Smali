@@ -664,6 +664,7 @@
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">உங்கள் சாதனம் Wi-Fi உடன் இணைக்கப்படவில்லை போல தெரிகிறது. உருப்படிகளைப் பதிவிறக்க, %1$s MB மொபைல் தரவைப் பயன்படுத்தவா?</string>
     <string name="download_in_progress">பதிவிறக்குகிறது…</string>
+    <string name="download_network_error">பதிவிறக்க முடியவில்லை, நெட்வொர்க் இணைப்புகளைச் சோதிக்கவும்.</string>
     <string name="download_title">தரவு பயன்பாட்டு எச்சரிக்கை</string>
     <string name="download_waiting">நிலுவையிலுள்ளது…</string>
     <string name="dual_camera_lens_covered_toast">லென்ஸ் மூடப்பட்டிருந்தது.</string>
@@ -1478,6 +1479,7 @@ A4 தாளில் வயர்லெஸ் வழியில் நகல�
     <string name="pref_camera_peak_entry_off">அணை</string>
     <string name="pref_camera_peak_entry_on">இயக்கு</string>
     <string name="pref_camera_peak_title">ஃபோகஸ் உச்சம்</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">நிரம்பியது</string>
     <string name="pref_camera_picturesize_title_simple_mode">கேமரா ஃப்ரேம்</string>
     <string name="pref_camera_portrait_mode_entry_off">போர்ட்ரெயிட் பயன்முறை அணைக்கப்பட்டது</string>
     <string name="pref_camera_portrait_mode_entry_on">போர்ட்ரெயிட் பயன்முறை இயக்கப்பட்டது</string>

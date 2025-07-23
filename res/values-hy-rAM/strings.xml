@@ -664,6 +664,7 @@
     <string name="download_hint_cn">"Looks like your device isn't connected to WLAN. Use %1$s MB of mobile data to download items now?"</string>
     <string name="download_hint_wifi">Կարծես ձեր սարքը միացված չէ Wi-Fi-ին: Օգտագործե՞լ այժմ %1$s ՄԲ բջջային տվյալներ՝ տարրեր ներբեռնելու համար:</string>
     <string name="download_in_progress">Ներբեռնում…</string>
+    <string name="download_network_error">Չհաջողվեց ներբեռնել: Ստուգեք ձեր ցանցի կարգավորումները:</string>
     <string name="download_title">Տվյալների օգտագործման նախազգուշացում</string>
     <string name="download_waiting">Սպասում է…</string>
     <string name="dual_camera_lens_covered_toast">Ոսպնյակը ծածկված է:</string>
@@ -1478,6 +1479,7 @@ a և առաջ բերում մարդկանց։"</string>
     <string name="pref_camera_peak_entry_off">Անջատված</string>
     <string name="pref_camera_peak_entry_on">Միացված</string>
     <string name="pref_camera_peak_title">Ֆոկուսի բարձրակետ</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Ամբողջական</string>
     <string name="pref_camera_picturesize_title_simple_mode">Տեսախցիկի շրջանակ</string>
     <string name="pref_camera_portrait_mode_entry_off">Դիմանկարի ռեժիմն անջատված է</string>
     <string name="pref_camera_portrait_mode_entry_on">Դիմանկարի ռեժիմը միացված է</string>

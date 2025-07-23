@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/core/app/ShareCompat$Api16Impl;,
         Landroidx/core/app/ShareCompat$IntentReader;,
         Landroidx/core/app/ShareCompat$IntentBuilder;
     }
@@ -31,6 +32,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -48,20 +52,22 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 13
+    .line 10
     invoke-interface {p0, p1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 14
+    .line 11
     invoke-static {p0, p2}, Landroidx/core/app/ShareCompat;->configureMenuItem(Landroid/view/MenuItem;Landroidx/core/app/ShareCompat$IntentBuilder;)V
 
     return-void
 
-    .line 15
+    .line 12
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -98,6 +104,8 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
     .line 1
     invoke-interface {p0}, Landroid/view/MenuItem;->getActionProvider()Landroid/view/ActionProvider;
@@ -159,35 +167,13 @@
     .line 8
     invoke-virtual {p1}, Landroidx/core/app/ShareCompat$IntentBuilder;->getIntent()Landroid/content/Intent;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-virtual {v0, v1}, Landroid/widget/ShareActionProvider;->setShareIntent(Landroid/content/Intent;)V
+    invoke-virtual {v0, p1}, Landroid/widget/ShareActionProvider;->setShareIntent(Landroid/content/Intent;)V
 
     .line 9
     invoke-interface {p0, v0}, Landroid/view/MenuItem;->setActionProvider(Landroid/view/ActionProvider;)Landroid/view/MenuItem;
 
-    .line 10
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x10
-
-    if-ge v0, v1, :cond_1
-
-    .line 11
-    invoke-interface {p0}, Landroid/view/MenuItem;->hasSubMenu()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 12
-    invoke-virtual {p1}, Landroidx/core/app/ShareCompat$IntentBuilder;->createChooserIntent()Landroid/content/Intent;
-
-    move-result-object p1
-
-    invoke-interface {p0, p1}, Landroid/view/MenuItem;->setIntent(Landroid/content/Intent;)Landroid/view/MenuItem;
-
-    :cond_1
     return-void
 .end method
 

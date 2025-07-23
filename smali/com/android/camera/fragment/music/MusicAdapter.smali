@@ -40,27 +40,12 @@
 
 .field private mSelMaxDuration:J
 
-.field public mTransform:Lcom/bumptech/glide/request/RequestOptions;
+.field mTransform:Lcom/bumptech/glide/request/RequestOptions;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View$OnClickListener;Ljava/util/List;J)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "context",
-            "onClickListener",
-            "musicList",
-            "duration"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,146 +60,240 @@
     .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
     const/4 v0, 0x3
 
+    .line 5
     new-array v0, v0, [Landroid/graphics/drawable/Drawable;
 
-    .line 2
+    .line 6
+    .line 7
     iput-object v0, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicDefaultCovers:[Landroid/graphics/drawable/Drawable;
 
-    .line 3
+    .line 8
+    .line 9
     iput-object p1, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mContext:Landroid/content/Context;
 
-    .line 4
+    .line 10
+    .line 11
     iput-object p2, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    .line 5
+    .line 12
+    .line 13
     iput-object p3, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicList:Ljava/util/List;
 
-    .line 6
+    .line 14
+    .line 15
     iput-wide p4, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mSelMaxDuration:J
 
-    .line 7
+    .line 16
+    .line 17
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 18
+    .line 19
+    .line 20
     move-result-object p1
 
-    const p2, 0x7f07078a
+    .line 21
+    const p2, 0x7f0707af
 
+    .line 22
+    .line 23
+    .line 24
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
+    .line 25
+    .line 26
+    .line 27
     move-result p1
 
-    .line 8
+    .line 28
     new-instance p2, Lcom/bumptech/glide/request/RequestOptions;
 
+    .line 29
+    .line 30
     invoke-direct {p2}, Lcom/bumptech/glide/request/RequestOptions;-><init>()V
 
+    .line 31
+    .line 32
+    .line 33
     new-instance p3, Lcom/bumptech/glide/load/MultiTransformation;
 
+    .line 34
+    .line 35
     const/4 p4, 0x2
 
+    .line 36
     new-array p5, p4, [Lcom/bumptech/glide/load/Transformation;
 
+    .line 37
+    .line 38
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/CenterCrop;
 
+    .line 39
+    .line 40
     invoke-direct {v0}, Lcom/bumptech/glide/load/resource/bitmap/CenterCrop;-><init>()V
 
+    .line 41
+    .line 42
+    .line 43
     const/4 v1, 0x0
 
+    .line 44
     aput-object v0, p5, v1
 
+    .line 45
+    .line 46
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/RoundedCorners;
 
+    .line 47
+    .line 48
     invoke-direct {v0, p1}, Lcom/bumptech/glide/load/resource/bitmap/RoundedCorners;-><init>(I)V
 
+    .line 49
+    .line 50
+    .line 51
     const/4 p1, 0x1
 
+    .line 52
     aput-object v0, p5, p1
 
+    .line 53
+    .line 54
     invoke-direct {p3, p5}, Lcom/bumptech/glide/load/MultiTransformation;-><init>([Lcom/bumptech/glide/load/Transformation;)V
 
+    .line 55
+    .line 56
+    .line 57
     invoke-virtual {p2, p3}, Lcom/bumptech/glide/request/BaseRequestOptions;->transform(Lcom/bumptech/glide/load/Transformation;)Lcom/bumptech/glide/request/BaseRequestOptions;
 
+    .line 58
+    .line 59
+    .line 60
     move-result-object p2
 
+    .line 61
     check-cast p2, Lcom/bumptech/glide/request/RequestOptions;
 
+    .line 62
+    .line 63
     iput-object p2, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mTransform:Lcom/bumptech/glide/request/RequestOptions;
 
-    .line 9
+    .line 64
+    .line 65
     iget-object p2, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicDefaultCovers:[Landroid/graphics/drawable/Drawable;
 
+    .line 66
+    .line 67
     iget-object p3, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mContext:Landroid/content/Context;
 
-    const p5, 0x7f08044b
+    .line 68
+    .line 69
+    const p5, 0x7f08049b
 
+    .line 70
+    .line 71
+    .line 72
     invoke-virtual {p3, p5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
+    .line 73
+    .line 74
+    .line 75
     move-result-object p3
 
+    .line 76
     aput-object p3, p2, v1
 
-    .line 10
+    .line 77
+    .line 78
     iget-object p2, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicDefaultCovers:[Landroid/graphics/drawable/Drawable;
 
+    .line 79
+    .line 80
     iget-object p3, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mContext:Landroid/content/Context;
 
-    const p5, 0x7f08044c
+    .line 81
+    .line 82
+    const p5, 0x7f08049c
 
+    .line 83
+    .line 84
+    .line 85
     invoke-virtual {p3, p5}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
+    .line 86
+    .line 87
+    .line 88
     move-result-object p3
 
+    .line 89
     aput-object p3, p2, p1
 
-    .line 11
+    .line 90
+    .line 91
     iget-object p1, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicDefaultCovers:[Landroid/graphics/drawable/Drawable;
 
+    .line 92
+    .line 93
     iget-object p0, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mContext:Landroid/content/Context;
 
-    const p2, 0x7f08044d
+    .line 94
+    .line 95
+    const p2, 0x7f08049d
 
+    .line 96
+    .line 97
+    .line 98
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
+    .line 99
+    .line 100
+    .line 101
     move-result-object p0
 
+    .line 102
     aput-object p0, p1, p4
 
+    .line 103
+    .line 104
     return-void
 .end method
 
 .method private compareTime(JJ)Z
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "t1",
-            "t2"
-        }
-    .end annotation
-
-    long-to-int p0, p1
 
     .line 1
+    long-to-int p0, p1
+
+    .line 2
     div-int/lit16 p0, p0, 0x3e8
 
+    .line 3
+    .line 4
     long-to-int p1, p3
 
+    .line 5
     div-int/lit16 p1, p1, 0x3e8
 
+    .line 6
+    .line 7
     if-le p0, p1, :cond_0
 
+    .line 8
+    .line 9
     const/4 p0, 0x1
 
+    .line 10
     goto :goto_0
 
+    .line 11
     :cond_0
     const/4 p0, 0x0
 
+    .line 12
     :goto_0
     return p0
 .end method
@@ -227,25 +306,21 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicList:Ljava/util/List;
 
+    .line 2
+    .line 3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 1
     check-cast p1, Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -257,16 +332,6 @@
 
 .method public onBindViewHolder(Lcom/android/camera/fragment/CommonRecyclerViewHolder;I)V
     .locals 11
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "holder",
-            "position"
-        }
-    .end annotation
 
     .line 2
     iget-object v0, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicList:Ljava/util/List;
@@ -307,7 +372,7 @@
 
     iget v1, v1, Landroid/content/res/Configuration;->fontScale:F
 
-    const v2, 0x7f0a03a7
+    const v2, 0x7f0b03e0
 
     .line 7
     invoke-virtual {p1, v2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -365,7 +430,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f1204ce
+    const v5, 0x7f130509
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -375,7 +440,7 @@
     :cond_2
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v3, 0x7f0a03b9
+    const v3, 0x7f0b03f2
 
     .line 15
     invoke-virtual {p1, v3}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -429,7 +494,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f1204d9
+    const v5, 0x7f130514
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -439,7 +504,7 @@
     :cond_5
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v3, 0x7f0a03b8
+    const v3, 0x7f0b03f1
 
     .line 23
     invoke-virtual {p1, v3}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -540,7 +605,7 @@
     invoke-virtual {v4, v3}, Lcom/bumptech/glide/RequestBuilder;->into(Landroid/widget/ImageView;)Lcom/bumptech/glide/request/target/ViewTarget;
 
     :goto_2
-    const v3, 0x7f0a03a8
+    const v3, 0x7f0b03e1
 
     .line 34
     invoke-virtual {p1, v3}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -597,7 +662,7 @@
     invoke-virtual {v3, v5}, Landroid/view/View;->setVisibility(I)V
 
     :goto_3
-    const v3, 0x7f0a03b4
+    const v3, 0x7f0b03ed
 
     .line 43
     invoke-virtual {p1, v3}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -616,9 +681,9 @@
     invoke-static {v4}, Lcom/android/camera/animation/FolmeUtils;->touchScaleTint([Landroid/view/View;)V
 
     .line 45
-    invoke-virtual {v3, v0}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v3, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    const v4, 0x7f0a03b1
+    const v4, 0x7f0b03ea
 
     .line 46
     invoke-virtual {p1, v4}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -628,14 +693,14 @@
     check-cast v4, Landroid/widget/ProgressBar;
 
     .line 47
-    invoke-virtual {v4, v0}, Landroid/widget/ProgressBar;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v4, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 48
     new-instance v7, Lcom/android/camera/fragment/music/MusicAdapter$1;
 
     invoke-direct {v7, p0, v3, p2, v4}, Lcom/android/camera/fragment/music/MusicAdapter$1;-><init>(Lcom/android/camera/fragment/music/MusicAdapter;Landroid/widget/ImageView;ILandroid/widget/ProgressBar;)V
 
-    invoke-virtual {v3, v7}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 49
     invoke-virtual {v0}, Lcom/android/camera/fragment/music/LiveMusicInfo;->isBuffing()Z
@@ -648,7 +713,7 @@
     invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 51
-    invoke-virtual {v4, v6}, Landroid/widget/ProgressBar;->setVisibility(I)V
+    invoke-virtual {v4, v6}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_4
 
@@ -657,7 +722,7 @@
     invoke-virtual {v3, v6}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 53
-    invoke-virtual {v4, v5}, Landroid/widget/ProgressBar;->setVisibility(I)V
+    invoke-virtual {v4, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 54
     :goto_4
@@ -667,7 +732,7 @@
 
     if-eqz p2, :cond_9
 
-    const p2, 0x7f0806bf
+    const p2, 0x7f08070f
 
     .line 55
     invoke-virtual {v3, p2}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -675,18 +740,18 @@
     .line 56
     iget-object p2, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120087
+    const v4, 0x7f130087
 
     invoke-virtual {p2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-virtual {v3, p2}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_5
 
     :cond_9
-    const p2, 0x7f0806b2
+    const p2, 0x7f080702
 
     .line 57
     invoke-virtual {v3, p2}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -694,16 +759,16 @@
     .line 58
     iget-object p2, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120088
+    const v4, 0x7f130088
 
     invoke-virtual {p2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-virtual {v3, p2}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     :goto_5
-    const p2, 0x7f0a03ab
+    const p2, 0x7f0b03e4
 
     .line 59
     invoke-virtual {p1, p2}, Lcom/android/camera/fragment/CommonRecyclerViewHolder;->getView(I)Landroid/view/View;
@@ -753,7 +818,7 @@
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 65
-    invoke-virtual {v2}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
@@ -778,7 +843,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f070765
+    const p2, 0x7f07078a
 
     invoke-virtual {p0, p2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -788,23 +853,13 @@
 
     .line 68
     :goto_6
-    invoke-virtual {v2, p1}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v2, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
 .end method
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 1
     invoke-virtual {p0, p1, p2}, Lcom/android/camera/fragment/music/MusicAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
@@ -816,19 +871,9 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/android/camera/fragment/CommonRecyclerViewHolder;
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "parent",
-            "viewType"
-        }
-    .end annotation
 
     .line 2
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
@@ -836,7 +881,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0d00dd
+    const p2, 0x7f0e00e7
 
     const/4 v0, 0x0
 
@@ -858,15 +903,6 @@
     .annotation build Lcom/android/camera/jacoco/JacocoForceIgnore;
     .end annotation
 
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "musicList"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -880,24 +916,22 @@
     iput-object p1, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mMusicList:Ljava/util/List;
 
     .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 .method public setItemOnClickInterface(Lcom/android/camera/fragment/music/MusicAdapter$ItemOnClickInterface;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mitemOnClickInterface"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/fragment/music/MusicAdapter;->mItemOnClickInterface:Lcom/android/camera/fragment/music/MusicAdapter$ItemOnClickInterface;
 
+    .line 2
+    .line 3
     return-void
 .end method

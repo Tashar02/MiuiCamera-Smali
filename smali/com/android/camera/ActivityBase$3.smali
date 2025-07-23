@@ -1,4 +1,4 @@
-.class public Lcom/android/camera/ActivityBase$3;
+.class Lcom/android/camera/ActivityBase$3;
 .super Ljava/lang/Object;
 .source "ActivityBase.java"
 
@@ -27,32 +27,29 @@
 
 
 # instance fields
-.field public final synthetic this$0:Lcom/android/camera/ActivityBase;
+.field final synthetic this$0:Lcom/android/camera/ActivityBase;
 
-.field public final synthetic val$start:J
+.field final synthetic val$start:J
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/camera/ActivityBase;J)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x8010,
-            0x1010
-        }
-        names = {
-            "this$0",
-            "val$start"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera/ActivityBase$3;->this$0:Lcom/android/camera/ActivityBase;
 
+    .line 2
+    .line 3
     iput-wide p2, p0, Lcom/android/camera/ActivityBase$3;->val$start:J
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -60,14 +57,6 @@
 # virtual methods
 .method public accept(Landroid/graphics/Bitmap;)V
     .locals 4
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "bitmap"
-        }
-    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -138,15 +127,6 @@
 
 .method public bridge synthetic accept(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000
-        }
-        names = {
-            "bitmap"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

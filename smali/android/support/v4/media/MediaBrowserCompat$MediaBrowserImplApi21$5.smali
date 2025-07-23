@@ -1,4 +1,4 @@
-.class public Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;
+.class Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;
 .super Ljava/lang/Object;
 .source "MediaBrowserCompat.java"
 
@@ -18,30 +18,55 @@
 
 
 # instance fields
-.field public final synthetic this$0:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;
+.field final synthetic this$0:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;
 
-.field public final synthetic val$callback:Landroid/support/v4/media/MediaBrowserCompat$SearchCallback;
+.field final synthetic val$callback:Landroid/support/v4/media/MediaBrowserCompat$SearchCallback;
 
-.field public final synthetic val$extras:Landroid/os/Bundle;
+.field final synthetic val$extras:Landroid/os/Bundle;
 
-.field public final synthetic val$query:Ljava/lang/String;
+.field final synthetic val$query:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;Landroid/support/v4/media/MediaBrowserCompat$SearchCallback;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$callback",
+            "val$query",
+            "val$extras"
+        }
+    .end annotation
 
     .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;->this$0:Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21;
 
+    .line 2
+    .line 3
     iput-object p2, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;->val$callback:Landroid/support/v4/media/MediaBrowserCompat$SearchCallback;
 
+    .line 4
+    .line 5
     iput-object p3, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;->val$query:Ljava/lang/String;
 
+    .line 6
+    .line 7
     iput-object p4, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;->val$extras:Landroid/os/Bundle;
 
+    .line 8
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -53,11 +78,20 @@
     .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;->val$callback:Landroid/support/v4/media/MediaBrowserCompat$SearchCallback;
 
+    .line 2
+    .line 3
     iget-object v1, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;->val$query:Ljava/lang/String;
 
+    .line 4
+    .line 5
     iget-object p0, p0, Landroid/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi21$5;->val$extras:Landroid/os/Bundle;
 
+    .line 6
+    .line 7
     invoke-virtual {v0, v1, p0}, Landroid/support/v4/media/MediaBrowserCompat$SearchCallback;->onError(Ljava/lang/String;Landroid/os/Bundle;)V
 
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

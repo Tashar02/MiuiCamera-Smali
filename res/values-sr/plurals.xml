@@ -90,6 +90,16 @@
         <item quantity="one">&lt;Data>Верзија Kамере коју користите није компатибилна са моделом вашег уређаја.&lt;br>Апликација ће се затворити за &lt;font color=#FFCE16>&lt;b>%1$d секунду&lt;/b>&lt;/font>. Деинсталирајте ажурирања камере и покушајте поново.&lt;/Data></item>
         <item quantity="few">&lt;Data>Верзија Kамере коју користите није компатибилна са моделом вашег уређаја.&lt;br>Апликација ће се затворити за &lt;font color=#FFCE16>&lt;b>%1$d секунде&lt;/b>&lt;/font>. Деинсталирајте ажурирања камере и покушајте поново.&lt;/Data></item>
     </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Премотајте %d секунди унапред</item>
+        <item quantity="one">Премотајте %d секунду унапред</item>
+        <item quantity="few">Премотајте %d секунде унапред</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Премотајте %d секунди уназад</item>
+        <item quantity="one">Премотајте %d секунду уназад</item>
+        <item quantity="few">Премотајте %d секунде уназад</item>
+    </plurals>
     <plurals name="fastmotion_pro_min_unit">
         <item quantity="other">%1$d минута</item>
         <item quantity="one">%1$d минут</item>

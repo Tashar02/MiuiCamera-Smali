@@ -1,4 +1,4 @@
-.class public synthetic Lcom/miui/extravideoxmalgo/XiaomiAlgoVideoInterpolatorImp/XiaomiAlgoVideoInterpolatorImp$1;
+.class synthetic Lcom/miui/extravideoxmalgo/XiaomiAlgoVideoInterpolatorImp/XiaomiAlgoVideoInterpolatorImp$1;
 .super Ljava/lang/Object;
 .source "XiaomiAlgoVideoInterpolatorImp.java"
 

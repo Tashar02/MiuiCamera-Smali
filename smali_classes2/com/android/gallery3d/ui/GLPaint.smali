@@ -11,37 +11,22 @@
 
 # direct methods
 .method public constructor <init>(FI)V
-    .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "mLineWidth",
-            "mColor"
-        }
-    .end annotation
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/high16 v0, 0x3f800000    # 1.0f
-
     .line 2
-    iput v0, p0, Lcom/android/gallery3d/ui/GLPaint;->mLineWidth:F
-
-    const/4 v0, 0x0
-
     .line 3
-    iput v0, p0, Lcom/android/gallery3d/ui/GLPaint;->mColor:I
-
     .line 4
     iput p1, p0, Lcom/android/gallery3d/ui/GLPaint;->mLineWidth:F
 
     .line 5
+    .line 6
     iput p2, p0, Lcom/android/gallery3d/ui/GLPaint;->mColor:I
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -53,6 +38,8 @@
     .line 1
     iget p0, p0, Lcom/android/gallery3d/ui/GLPaint;->mColor:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -62,56 +49,56 @@
     .line 1
     iget p0, p0, Lcom/android/gallery3d/ui/GLPaint;->mLineWidth:F
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public setColor(I)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "color"
-        }
-    .end annotation
 
     .line 1
     iput p1, p0, Lcom/android/gallery3d/ui/GLPaint;->mColor:I
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public setLineWidth(F)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "width"
-        }
-    .end annotation
 
+    .line 1
     const/4 v0, 0x0
 
+    .line 2
     cmpl-float v0, p1, v0
 
+    .line 3
+    .line 4
     if-ltz v0, :cond_0
 
+    .line 5
+    .line 6
     const/4 v0, 0x1
 
+    .line 7
     goto :goto_0
 
+    .line 8
     :cond_0
     const/4 v0, 0x0
 
-    .line 1
+    .line 9
     :goto_0
     invoke-static {v0}, Lcom/android/gallery3d/ui/Utils;->assertTrue(Z)V
 
-    .line 2
+    .line 10
+    .line 11
+    .line 12
     iput p1, p0, Lcom/android/gallery3d/ui/GLPaint;->mLineWidth:F
 
+    .line 13
+    .line 14
     return-void
 .end method

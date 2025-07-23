@@ -1,4 +1,4 @@
-.class public final Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;
+.class final Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;
 .super Ljava/lang/Object;
 .source "FUSchedulerManager.kt"
 
@@ -7,17 +7,21 @@
 
 
 # annotations
-.annotation runtime LOooO0o/o0000Ooo;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/faceunity/core/support/FUSchedulerManager;->scheduleNext()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0010\u0004\u001a\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0001\u0010\u0002\u00a8\u0006\u0003"
     }
     d2 = {
-        "LOooO0o/o00OOOOo;",
+        "Lo000Oo0O/oo00oO;",
         "run",
         "()V",
         "com/faceunity/core/support/FUSchedulerManager$scheduleNext$1$1",
@@ -31,32 +35,31 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/faceunity/core/support/FUSchedulerManager;->scheduleNext()V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = null
-.end annotation
-
 
 # instance fields
-.field public final synthetic $unit$inlined:LOooO0o/o00ooOoO/o000O00/OooO00o;
+.field final synthetic $unit$inlined:Lo000oo00/OooOo00;
 
-.field public final synthetic this$0:Lcom/faceunity/core/support/FUSchedulerManager;
+.field final synthetic this$0:Lcom/faceunity/core/support/FUSchedulerManager;
 
 
 # direct methods
-.method public constructor <init>(Lcom/faceunity/core/support/FUSchedulerManager;LOooO0o/o00ooOoO/o000O00/OooO00o;)V
+.method public constructor <init>(Lcom/faceunity/core/support/FUSchedulerManager;Lo000oo00/OooOo00;)V
     .locals 0
 
+    .line 1
     iput-object p1, p0, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;->this$0:Lcom/faceunity/core/support/FUSchedulerManager;
 
-    iput-object p2, p0, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;->$unit$inlined:LOooO0o/o00ooOoO/o000O00/OooO00o;
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;->$unit$inlined:Lo000oo00/OooOo00;
 
+    .line 4
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -66,9 +69,14 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;->$unit$inlined:LOooO0o/o00ooOoO/o000O00/OooO00o;
+    iget-object p0, p0, Lcom/faceunity/core/support/FUSchedulerManager$scheduleNext$$inlined$synchronized$lambda$1;->$unit$inlined:Lo000oo00/OooOo00;
 
-    invoke-interface {p0}, LOooO0o/o00ooOoO/o000O00/OooO00o;->invoke()Ljava/lang/Object;
+    .line 2
+    .line 3
+    invoke-interface {p0}, Lo000oo00/OooOo00;->invoke()Ljava/lang/Object;
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

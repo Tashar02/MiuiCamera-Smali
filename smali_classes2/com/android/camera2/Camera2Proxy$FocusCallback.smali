@@ -16,12 +16,4 @@
 
 # virtual methods
 .method public abstract onFocusStateChanged(Lcom/android/camera/module/loader/camera2/FocusTask;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "focusTask"
-        }
-    .end annotation
 .end method

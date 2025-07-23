@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final TAG_SAVED_STATE_HANDLE_CONTROLLER:Ljava/lang/String; = "androidx.lifecycle.savedstate.vm.tag"
+.field static final TAG_SAVED_STATE_HANDLE_CONTROLLER:Ljava/lang/String; = "androidx.lifecycle.savedstate.vm.tag"
 
 
 # instance fields
@@ -41,22 +41,36 @@
     invoke-direct {p0}, Landroidx/lifecycle/ViewModelProvider$KeyedFactory;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     invoke-interface {p1}, Landroidx/savedstate/SavedStateRegistryOwner;->getSavedStateRegistry()Landroidx/savedstate/SavedStateRegistry;
 
+    .line 5
+    .line 6
+    .line 7
     move-result-object v0
 
+    .line 8
     iput-object v0, p0, Landroidx/lifecycle/AbstractSavedStateViewModelFactory;->mSavedStateRegistry:Landroidx/savedstate/SavedStateRegistry;
 
-    .line 3
+    .line 9
+    .line 10
     invoke-interface {p1}, Landroidx/lifecycle/LifecycleOwner;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
+    .line 11
+    .line 12
+    .line 13
     move-result-object p1
 
+    .line 14
     iput-object p1, p0, Landroidx/lifecycle/AbstractSavedStateViewModelFactory;->mLifecycle:Landroidx/lifecycle/Lifecycle;
 
-    .line 4
+    .line 15
+    .line 16
     iput-object p2, p0, Landroidx/lifecycle/AbstractSavedStateViewModelFactory;->mDefaultArgs:Landroid/os/Bundle;
 
+    .line 17
+    .line 18
     return-void
 .end method
 
@@ -245,9 +259,16 @@
     .line 1
     iget-object v0, p0, Landroidx/lifecycle/AbstractSavedStateViewModelFactory;->mSavedStateRegistry:Landroidx/savedstate/SavedStateRegistry;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Landroidx/lifecycle/AbstractSavedStateViewModelFactory;->mLifecycle:Landroidx/lifecycle/Lifecycle;
 
+    .line 4
+    .line 5
     invoke-static {p1, v0, p0}, Landroidx/lifecycle/SavedStateHandleController;->attachHandleIfNeeded(Landroidx/lifecycle/ViewModel;Landroidx/savedstate/SavedStateRegistry;Landroidx/lifecycle/Lifecycle;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

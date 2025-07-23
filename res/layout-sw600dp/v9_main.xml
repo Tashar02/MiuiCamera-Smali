@@ -18,7 +18,5 @@
     <FrameLayout android:id="@id/module_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <FrameLayout android:id="@id/full_screen_feature" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <ViewStub android:id="@id/screen_hint_stub" android:layout="@layout/on_screen_hint" android:inflatedId="@id/screen_hint" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/v9_smart_control_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.android.camera.ui.V9SuspendShutterButton android:id="@id/v9_smart_shutter_button" android:visibility="invisible" android:clickable="true" android:layout_width="@dimen/bottom_snap_width" android:layout_height="@dimen/bottom_snap_width" android:contentDescription="@string/accessibility_shutter_button" />
-    </FrameLayout>
+    <ViewStub android:id="@id/smart_ctrl_stub" android:layout="@layout/v9_smart_control_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </com.android.camera.ui.CameraRootView>

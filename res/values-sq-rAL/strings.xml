@@ -664,6 +664,7 @@ dokumente të skanuara automatikisht"</string>
     <string name="download_hint_cn">Me sa duket pajisja juaj nuk është e lidhur me WLAN. Përdorni %1$s MB të dhëna celulare për të shkarkuar artikuj tani?</string>
     <string name="download_hint_wifi">Me sa duket pajisja juaj nuk është e lidhur me Wi-Fi. Përdorni %1$s MB të dhëna celulare për të shkarkuar artikuj tani?</string>
     <string name="download_in_progress">Duke shkarkuar…</string>
+    <string name="download_network_error">Nuk mund të shkarkohej. Kontrollo cilësimet e rrjetit.</string>
     <string name="download_title">Paralajmërim për përdorim interneti celular</string>
     <string name="download_waiting">Në pritje…</string>
     <string name="dual_camera_lens_covered_toast">Lentja është mbuluar.</string>
@@ -862,7 +863,7 @@ Patro thjerrëzën për efekt më të mirë."</string>
     <string name="lighting_hint_too_far">Afroje kamerën</string>
     <string name="lighting_hint_usage">"Mund të përdorësh efekte ndriçimi studioje
 në modalitetin Portret"</string>
-    <string name="lighting_lanshan">dekadentizëm</string>
+    <string name="lighting_lanshan">Dekadentizëm</string>
     <string name="lighting_movie_light_effect_title">Efektet kinematike</string>
     <string name="lighting_neon">Neon</string>
     <string name="lighting_nostalgia">nostalgji</string>
@@ -1478,6 +1479,7 @@ Mbaj objektin në fokus teksa mjegullosni sfondin."</string>
     <string name="pref_camera_peak_entry_off">Fikur</string>
     <string name="pref_camera_peak_entry_on">Ndezur</string>
     <string name="pref_camera_peak_title">Fokusimi duke arritur kulmin</string>
+    <string name="pref_camera_picturesize_entry_fullscreen">Plot</string>
     <string name="pref_camera_picturesize_title_simple_mode">Korniza e kamerës</string>
     <string name="pref_camera_portrait_mode_entry_off">Modaliteti i portretit është fikur</string>
     <string name="pref_camera_portrait_mode_entry_on">Modaliteti i portretit është ndezur</string>

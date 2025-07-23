@@ -5,12 +5,4 @@
 
 # virtual methods
 .method public abstract onASDChange(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "spots"
-        }
-    .end annotation
 .end method

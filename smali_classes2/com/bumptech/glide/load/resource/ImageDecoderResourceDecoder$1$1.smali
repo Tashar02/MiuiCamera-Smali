@@ -1,4 +1,4 @@
-.class public Lcom/bumptech/glide/load/resource/ImageDecoderResourceDecoder$1$1;
+.class Lcom/bumptech/glide/load/resource/ImageDecoderResourceDecoder$1$1;
 .super Ljava/lang/Object;
 .source "ImageDecoderResourceDecoder.java"
 
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic this$1:Lcom/bumptech/glide/load/resource/ImageDecoderResourceDecoder$1;
+.field final synthetic this$1:Lcom/bumptech/glide/load/resource/ImageDecoderResourceDecoder$1;
 
 
 # direct methods
@@ -28,8 +28,13 @@
     .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/ImageDecoderResourceDecoder$1$1;->this$1:Lcom/bumptech/glide/load/resource/ImageDecoderResourceDecoder$1;
 
+    .line 2
+    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -42,7 +47,9 @@
         .end annotation
     .end param
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method

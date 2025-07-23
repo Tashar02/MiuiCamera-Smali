@@ -59,17 +59,17 @@
 
 
 # instance fields
-.field public final mActualCameraId:I
+.field final mActualCameraId:I
 
 .field private mAnchorCallback:Lcom/android/camera2/Camera2Proxy$PreviewCallback;
 
 .field private mButtonStatus:Lcom/android/camera/module/loader/camera2/ButtonStatus;
 
-.field public mCacheImageDecoder:Lcom/android/zxing/decoders/CacheImageDecoder;
+.field protected mCacheImageDecoder:Lcom/android/zxing/decoders/CacheImageDecoder;
 
 .field private final mCallbackLock:Ljava/lang/Object;
 
-.field public mErrorCallback:Lcom/android/camera2/Camera2Proxy$CameraErrorCallback;
+.field protected mErrorCallback:Lcom/android/camera2/Camera2Proxy$CameraErrorCallback;
 
 .field private mFocusCallback:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
@@ -81,7 +81,7 @@
     .end annotation
 .end field
 
-.field public mFocusFrameAvailable:Ljava/lang/ref/WeakReference;
+.field protected mFocusFrameAvailable:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -125,36 +125,41 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "id"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Ljava/lang/Object;
 
+    .line 5
+    .line 6
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 10
+    .line 11
     const/4 v0, 0x0
 
-    .line 3
+    .line 12
     iput-boolean v0, p0, Lcom/android/camera2/Camera2Proxy;->mIsFixedShotTimeEnabled:Z
 
-    .line 4
+    .line 13
+    .line 14
     iput-boolean v0, p0, Lcom/android/camera2/Camera2Proxy;->mIsHdrDegradeMFNREnabled:Z
 
-    .line 5
+    .line 15
+    .line 16
     iput p1, p0, Lcom/android/camera2/Camera2Proxy;->mActualCameraId:I
 
+    .line 17
+    .line 18
     return-void
 .end method
 
@@ -164,36 +169,12 @@
 .end method
 
 .method public abstract applyOfflineFlushEnable(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "moduleIndex"
-        }
-    .end annotation
 .end method
 
 .method public abstract cancelFocus(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "moduleIndex"
-        }
-    .end annotation
 .end method
 
 .method public abstract cancelSession(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "keepCapture"
-        }
-    .end annotation
 .end method
 
 .method public abstract captureAbortBurst()V
@@ -208,18 +189,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "burstCount",
-            "dataCallback",
-            "parallelCallback"
-        }
-    .end annotation
 .end method
 
 .method public abstract captureBurstPictures(IZLcom/android/camera2/Camera2Proxy$PictureCallback;Lcom/xiaomi/camera/core/ParallelCallback;)V
@@ -231,53 +200,15 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "burstCount",
-            "isCaptureDownScene",
-            "dataCallback",
-            "parallelCallback"
-        }
-    .end annotation
 .end method
 
 .method public abstract captureVideoSnapshot(Lcom/android/camera2/Camera2Proxy$PictureCallback;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cb"
-        }
-    .end annotation
 .end method
 
 .method public abstract clearShotQueue(Ljava/lang/String;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "info"
-        }
-    .end annotation
 .end method
 
 .method public abstract close(I)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "reason"
-        }
-    .end annotation
 .end method
 
 .method public abstract forceTurnFlashOffAndPausePreview()V
@@ -289,24 +220,31 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mAnchorCallback:Lcom/android/camera2/Camera2Proxy$PreviewCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-object p0
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
@@ -319,24 +257,31 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mButtonStatus:Lcom/android/camera/module/loader/camera2/ButtonStatus;
 
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-object p0
 
+    .line 8
     :catchall_0
     move-exception p0
 
-    .line 3
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
@@ -370,38 +315,55 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mFocusCallback:Ljava/lang/ref/WeakReference;
 
+    .line 5
+    .line 6
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
+    .line 12
     check-cast p0, Lcom/android/camera2/Camera2Proxy$FocusCallback;
 
+    .line 13
+    .line 14
     goto :goto_0
 
+    .line 15
     :cond_0
     const/4 p0, 0x0
 
-    .line 3
+    .line 16
     :goto_0
     monitor-exit v0
 
+    .line 17
     return-object p0
 
+    .line 18
     :catchall_0
     move-exception p0
 
+    .line 19
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 20
     throw p0
 .end method
 
@@ -414,6 +376,8 @@
     .line 1
     iget p0, p0, Lcom/android/camera2/Camera2Proxy;->mActualCameraId:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -423,40 +387,57 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mMetadataCallback:Ljava/lang/ref/WeakReference;
 
+    .line 5
+    .line 6
     if-eqz p0, :cond_0
 
-    .line 3
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
+    .line 12
     check-cast p0, Lcom/android/camera2/Camera2Proxy$CameraMetaDataCallback;
 
+    .line 13
+    .line 14
     monitor-exit v0
 
+    .line 15
     return-object p0
 
-    .line 4
+    .line 16
     :cond_0
     monitor-exit v0
 
+    .line 17
     const/4 p0, 0x0
 
+    .line 18
     return-object p0
 
+    .line 19
     :catchall_0
     move-exception p0
 
+    .line 20
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 21
     throw p0
 .end method
 
@@ -472,24 +453,31 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mParallelCallback:Lcom/xiaomi/camera/core/ParallelCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-object p0
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
@@ -499,24 +487,31 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mPictureCallBack:Lcom/android/camera2/Camera2Proxy$PictureCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-object p0
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
@@ -526,32 +521,41 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mPreviewCallback:Lcom/android/camera2/Camera2Proxy$PreviewCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-object p0
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
 .method public getPreviewCallbackType()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -582,38 +586,55 @@
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iget-object p0, p0, Lcom/android/camera2/Camera2Proxy;->mScreenLightCallback:Ljava/lang/ref/WeakReference;
 
+    .line 5
+    .line 6
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
+    .line 12
     check-cast p0, Lcom/android/camera2/Camera2Proxy$ScreenLightCallback;
 
+    .line 13
+    .line 14
     goto :goto_0
 
+    .line 15
     :cond_0
     const/4 p0, 0x0
 
-    .line 3
+    .line 16
     :goto_0
     monitor-exit v0
 
+    .line 17
     return-object p0
 
+    .line 18
     :catchall_0
     move-exception p0
 
+    .line 19
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 20
     throw p0
 .end method
 
@@ -627,14 +648,6 @@
 .end method
 
 .method public abstract isCaptureBusy(Z)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "simple"
-        }
-    .end annotation
 .end method
 
 .method public abstract isCaptureState()Z
@@ -655,6 +668,8 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/Camera2Proxy;->mIsFixedShotTimeEnabled:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -669,18 +684,12 @@
     .line 1
     iget-boolean p0, p0, Lcom/android/camera2/Camera2Proxy;->mIsHdrDegradeMFNREnabled:Z
 
+    .line 2
+    .line 3
     return p0
 .end method
 
 .method public abstract isHighQualityQuickShot(J)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timestamp"
-        }
-    .end annotation
 .end method
 
 .method public abstract isHighQualityQuickShotBusy()Z
@@ -690,44 +699,18 @@
 .end method
 
 .method public abstract isNeedFlashForAuto(Ljava/lang/Integer;I)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "currentAEState",
-            "flashMode"
-        }
-    .end annotation
 .end method
 
 .method public abstract isNeedFlashOn()Z
 .end method
 
 .method public abstract isParallelBusy(Z)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "onlyCheckShutter"
-        }
-    .end annotation
 .end method
 
 .method public abstract isPreviewReady()Z
 .end method
 
 .method public abstract isQuickShot(J)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timestamp"
-        }
-    .end annotation
 .end method
 
 .method public abstract isSessionReady()Z
@@ -737,48 +720,28 @@
 .end method
 
 .method public abstract lockExposure(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "stayLocked"
-        }
-    .end annotation
 .end method
 
 .method public abstract lockExposure(ZZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "stayLocked",
-            "isMoreFrame"
-        }
-    .end annotation
 .end method
 
 .method public notifyOnError(I)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "error"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mErrorCallback:Lcom/android/camera2/Camera2Proxy$CameraErrorCallback;
 
+    .line 2
+    .line 3
     if-eqz v0, :cond_0
 
-    .line 2
+    .line 4
+    .line 5
     invoke-interface {v0, p0, p1}, Lcom/android/camera2/Camera2Proxy$CameraErrorCallback;->onCameraError(Lcom/android/camera2/Camera2Proxy;I)V
 
+    .line 6
+    .line 7
+    .line 8
     :cond_0
     return-void
 .end method
@@ -793,27 +756,9 @@
 .end method
 
 .method public abstract onCapabilityChanged(Lcom/android/camera2/CameraCapabilities;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "capabilities"
-        }
-    .end annotation
 .end method
 
 .method public abstract onMultiSnapEnd(ZLcom/android/camera2/MiCamera2Shot;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "success",
-            "shot"
-        }
-    .end annotation
 .end method
 
 .method public abstract onParallelImagePostProcStart()V
@@ -823,14 +768,6 @@
 .end method
 
 .method public abstract onPreviewThumbnailReceived(Lcom/android/camera/Thumbnail;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "t"
-        }
-    .end annotation
 .end method
 
 .method public abstract pausePreview()V
@@ -841,28 +778,12 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cb"
-        }
-    .end annotation
 .end method
 
 .method public abstract releaseFakeSurfaceIfNeed()V
 .end method
 
 .method public abstract releasePreview(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "reason"
-        }
-    .end annotation
 .end method
 
 .method public abstract resetConfigs()V
@@ -875,189 +796,101 @@
 .end method
 
 .method public abstract sendSatFallbackDisableRequest(ZZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "isRepeatingRequest",
-            "disable"
-        }
-    .end annotation
 .end method
 
 .method public abstract sendSatFallbackRequest(I)I
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "moduleIndex"
-        }
-    .end annotation
 .end method
 
 .method public abstract setAlgorithmPreviewFormat(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "format"
-        }
-    .end annotation
 .end method
 
 .method public abstract setAlgorithmPreviewSize(Lcom/android/camera/CameraSize;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "size"
-        }
-    .end annotation
 .end method
 
 .method public setAnchorCallback(Lcom/android/camera2/Camera2Proxy$PreviewCallback;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "previewCallback"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iput-object p1, p0, Lcom/android/camera2/Camera2Proxy;->mAnchorCallback:Lcom/android/camera2/Camera2Proxy$PreviewCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-void
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
 .method public abstract setAutoZoomStartCapture([FZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "value",
-            "isRecording"
-        }
-    .end annotation
 .end method
 
 .method public abstract setAutoZoomStopCapture(IZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "value",
-            "isRecording"
-        }
-    .end annotation
 .end method
 
 .method public setButtonStatus(Lcom/android/camera/module/loader/camera2/ButtonStatus;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "status"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iput-object p1, p0, Lcom/android/camera2/Camera2Proxy;->mButtonStatus:Lcom/android/camera/module/loader/camera2/ButtonStatus;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-void
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
 .method public abstract setCacheImageDecoder(Lcom/android/zxing/decoders/CacheImageDecoder;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "decoder"
-        }
-    .end annotation
 .end method
 
 .method public abstract setCaptureBusyCallback(Lcom/android/camera2/Camera2Proxy$CaptureBusyCallback;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "c"
-        }
-    .end annotation
 .end method
 
 .method public abstract setConfig(Lcom/android/camera2/CameraConfigManager;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "configManager"
-        }
-    .end annotation
 .end method
 
 .method public abstract setCvLens(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cvLens"
-        }
-    .end annotation
 .end method
 
 .method public setErrorCallback(Lcom/android/camera2/Camera2Proxy$CameraErrorCallback;)V
@@ -1066,421 +899,319 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cb"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lcom/android/camera2/Camera2Proxy;->mErrorCallback:Lcom/android/camera2/Camera2Proxy$CameraErrorCallback;
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public abstract setExposureTime(J)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "time"
-        }
-    .end annotation
 .end method
 
 .method public setFixShotTimeEnabled(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/Camera2Proxy;->mIsFixedShotTimeEnabled:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public abstract setFlashMode(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "flashMode"
-        }
-    .end annotation
 .end method
 
 .method public setFocusCallback(Lcom/android/camera2/Camera2Proxy$FocusCallback;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cb"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     new-instance v1, Ljava/lang/ref/WeakReference;
 
+    .line 5
+    .line 6
     invoke-direct {v1, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v1, p0, Lcom/android/camera2/Camera2Proxy;->mFocusCallback:Ljava/lang/ref/WeakReference;
 
-    .line 3
+    .line 10
+    .line 11
     monitor-exit v0
 
+    .line 12
     return-void
 
+    .line 13
     :catchall_0
     move-exception p0
 
+    .line 14
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 15
     throw p0
 .end method
 
 .method public setFocusFrameAvailable(Lcom/android/camera2/Camera2Proxy$IFirstCaptureFocus;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "focusFrameAvailable"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
 
+    .line 2
+    .line 3
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 4
+    .line 5
+    .line 6
     iput-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mFocusFrameAvailable:Ljava/lang/ref/WeakReference;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
 .method public abstract setFrontSoftLightValues(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
 .end method
 
 .method public setHdrDegradeMFNREnabled(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "enable"
-        }
-    .end annotation
 
     .line 1
     iput-boolean p1, p0, Lcom/android/camera2/Camera2Proxy;->mIsHdrDegradeMFNREnabled:Z
 
+    .line 2
+    .line 3
     return-void
 .end method
 
 .method public abstract setISO(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "iso"
-        }
-    .end annotation
 .end method
 
 .method public setMetaDataCallback(Lcom/android/camera2/Camera2Proxy$CameraMetaDataCallback;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cb"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     new-instance v1, Ljava/lang/ref/WeakReference;
 
+    .line 5
+    .line 6
     invoke-direct {v1, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v1, p0, Lcom/android/camera2/Camera2Proxy;->mMetadataCallback:Ljava/lang/ref/WeakReference;
 
-    .line 3
+    .line 10
+    .line 11
     monitor-exit v0
 
+    .line 12
     return-void
 
+    .line 13
     :catchall_0
     move-exception p0
 
+    .line 14
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 15
     throw p0
 .end method
 
 .method public abstract setModuleParameter(II)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "module",
-            "bogusCameraId"
-        }
-    .end annotation
 .end method
 
 .method public setParallelCallback(Lcom/xiaomi/camera/core/ParallelCallback;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "parallelCallback"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iput-object p1, p0, Lcom/android/camera2/Camera2Proxy;->mParallelCallback:Lcom/xiaomi/camera/core/ParallelCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-void
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
 .method public setPictureCallback(Lcom/android/camera2/Camera2Proxy$PictureCallback;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "callback"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iput-object p1, p0, Lcom/android/camera2/Camera2Proxy;->mPictureCallBack:Lcom/android/camera2/Camera2Proxy$PictureCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-void
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
 .method public abstract setPictureFormat(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "format"
-        }
-    .end annotation
 .end method
 
 .method public abstract setPictureMaxImages(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "maxImages"
-        }
-    .end annotation
 .end method
 
 .method public abstract setPictureSize(Lcom/android/camera/CameraSize;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "size"
-        }
-    .end annotation
 .end method
 
 .method public setPreviewCallback(Lcom/android/camera2/Camera2Proxy$PreviewCallback;)V
     .locals 1
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "previewCallback"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     iput-object p1, p0, Lcom/android/camera2/Camera2Proxy;->mPreviewCallback:Lcom/android/camera2/Camera2Proxy$PreviewCallback;
 
-    .line 3
+    .line 5
+    .line 6
     monitor-exit v0
 
+    .line 7
     return-void
 
+    .line 8
     :catchall_0
     move-exception p0
 
+    .line 9
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 10
     throw p0
 .end method
 
 .method public setScreenLightCallback(Lcom/android/camera2/Camera2Proxy$ScreenLightCallback;)V
     .locals 2
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "cb"
-        }
-    .end annotation
 
     .line 1
     iget-object v0, p0, Lcom/android/camera2/Camera2Proxy;->mCallbackLock:Ljava/lang/Object;
 
+    .line 2
+    .line 3
     monitor-enter v0
 
-    .line 2
+    .line 4
     :try_start_0
     new-instance v1, Ljava/lang/ref/WeakReference;
 
+    .line 5
+    .line 6
     invoke-direct {v1, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 7
+    .line 8
+    .line 9
     iput-object v1, p0, Lcom/android/camera2/Camera2Proxy;->mScreenLightCallback:Ljava/lang/ref/WeakReference;
 
-    .line 3
+    .line 10
+    .line 11
     monitor-exit v0
 
+    .line 12
     return-void
 
+    .line 13
     :catchall_0
     move-exception p0
 
+    .line 14
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 15
     throw p0
 .end method
 
 .method public abstract setSnapParam(Lcom/android/camera2/SnapParam;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "snapParam"
-        }
-    .end annotation
 .end method
 
 .method public abstract setTimeLapseSpeed(I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "timeLapseSpeed"
-        }
-    .end annotation
 .end method
 
 .method public abstract startFocus(Lcom/android/camera/module/loader/camera2/FocusTask;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "focusTask",
-            "moduleIndex"
-        }
-    .end annotation
 .end method
 
 .method public abstract startHighSpeedRecordPreview()V
@@ -1495,25 +1226,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "previewSurface",
-            "recordingSurface",
-            "operationMode",
-            "videoQuality",
-            "fpsRange",
-            "cb"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1533,64 +1245,12 @@
 .end method
 
 .method public abstract startPreviewCallback(Lcom/android/camera2/Camera2Proxy$PreviewCallback;Lcom/android/camera2/Camera2Proxy$PreviewCallback;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "cb",
-            "anchorCallback"
-        }
-    .end annotation
 .end method
 
 .method public abstract startPreviewSession(Landroid/view/Surface;IILandroid/view/Surface;IZLcom/android/camera2/Camera2Proxy$CameraPreviewCallback;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "surface",
-            "previewCallbackType",
-            "rawCallbackType",
-            "mapSurface",
-            "operatingMode",
-            "enableParallelSession",
-            "cb"
-        }
-    .end annotation
 .end method
 
 .method public abstract startPreviewSession(Landroid/view/Surface;IILandroid/view/Surface;IZZLcom/android/camera2/Camera2Proxy$CameraPreviewCallback;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "surface",
-            "previewCallbackType",
-            "rawCallbackType",
-            "mapSurface",
-            "operatingMode",
-            "enableParallelSession",
-            "enableParallelSnapshot",
-            "cb"
-        }
-    .end annotation
 .end method
 
 .method public abstract startRecordPreview()V
@@ -1605,82 +1265,18 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "previewSurface",
-            "recordingSurface",
-            "enableVideoSnapshot",
-            "operatingMode",
-            "cb"
-        }
-    .end annotation
 .end method
 
 .method public abstract startRecording(ZZ)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "recordFromScreen",
-            "needAbortCapture"
-        }
-    .end annotation
 .end method
 
 .method public abstract startTrackFocus(Landroid/graphics/Rect;I)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0
-        }
-        names = {
-            "rect",
-            "moduleIndex"
-        }
-    .end annotation
 .end method
 
 .method public abstract startVideoPreviewSession(Landroid/view/Surface;IILandroid/view/Surface;IZLcom/android/camera2/Camera2Proxy$CameraPreviewCallback;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "surface",
-            "previewCallbackType",
-            "rawCallbackType",
-            "mapSurface",
-            "operatingMode",
-            "enableParallelSession",
-            "cb"
-        }
-    .end annotation
 .end method
 
 .method public abstract stopPreviewCallback(Z)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "isRelease"
-        }
-    .end annotation
 .end method
 
 .method public abstract stopRecording()V
@@ -1691,18 +1287,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "dataCallback",
-            "parallelCallback",
-            "buttonStatus"
-        }
-    .end annotation
 .end method
 
 .method public abstract takeSimplePicture(Lcom/android/camera2/Camera2Proxy$PictureCallback;Lcom/android/camera/storage/ImageSaver;Lcom/android/camera/ui/RenderEngineInterface;)V
@@ -1718,18 +1302,6 @@
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0,
-            0x0,
-            0x0
-        }
-        names = {
-            "dataCallback",
-            "saver",
-            "renderEngine"
-        }
-    .end annotation
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -1740,28 +1312,56 @@
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
+    .line 7
+    .line 8
+    .line 9
     move-result-object v1
 
+    .line 10
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 11
+    .line 12
+    .line 13
     const-string v1, " - cid: "
 
+    .line 14
+    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 16
+    .line 17
+    .line 18
     invoke-virtual {p0}, Lcom/android/camera2/Camera2Proxy;->getId()I
 
+    .line 19
+    .line 20
+    .line 21
     move-result p0
 
+    .line 22
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 23
+    .line 24
+    .line 25
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 26
+    .line 27
+    .line 28
     move-result-object p0
 
+    .line 29
     return-object p0
 .end method
 
@@ -1769,26 +1369,10 @@
 .end method
 
 .method public abstract updateDeferPreviewSession(Landroid/view/Surface;)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "surface"
-        }
-    .end annotation
 .end method
 
 .method public abstract updateFlashStateTimeLock()V
 .end method
 
 .method public abstract useSingleCaptureForHdrPlusMfnr(Lcom/android/camera2/CameraCapabilities;)Z
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "caps"
-        }
-    .end annotation
 .end method

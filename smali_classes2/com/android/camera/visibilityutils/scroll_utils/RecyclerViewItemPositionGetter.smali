@@ -22,6 +22,7 @@
 .method public static constructor <clinit>()V
     .locals 0
 
+    .line 1
     return-void
 .end method
 
@@ -32,11 +33,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     iput-object p1, p0, Lcom/android/camera/visibilityutils/scroll_utils/RecyclerViewItemPositionGetter;->mLayoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    .line 3
+    .line 5
+    .line 6
     iput-object p2, p0, Lcom/android/camera/visibilityutils/scroll_utils/RecyclerViewItemPositionGetter;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -48,10 +54,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/visibilityutils/scroll_utils/RecyclerViewItemPositionGetter;->mLayoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getChildAt(I)Landroid/view/View;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method
 
@@ -61,10 +73,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/visibilityutils/scroll_utils/RecyclerViewItemPositionGetter;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -74,10 +92,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/visibilityutils/scroll_utils/RecyclerViewItemPositionGetter;->mLayoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->findFirstVisibleItemPosition()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -87,10 +111,16 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/visibilityutils/scroll_utils/RecyclerViewItemPositionGetter;->mLayoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
 
+    .line 2
+    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->findLastVisibleItemPosition()I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method
 
@@ -100,9 +130,15 @@
     .line 1
     iget-object p0, p0, Lcom/android/camera/visibilityutils/scroll_utils/RecyclerViewItemPositionGetter;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 2
+    .line 3
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
+    .line 4
+    .line 5
+    .line 6
     move-result p0
 
+    .line 7
     return p0
 .end method

@@ -25,23 +25,36 @@
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
     new-instance v0, Landroidx/customview/view/AbsSavedState$1;
 
+    .line 2
+    .line 3
     invoke-direct {v0}, Landroidx/customview/view/AbsSavedState$1;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Landroidx/customview/view/AbsSavedState;->EMPTY_STATE:Landroidx/customview/view/AbsSavedState;
 
-    .line 2
+    .line 7
+    .line 8
     new-instance v0, Landroidx/customview/view/AbsSavedState$2;
 
+    .line 9
+    .line 10
     invoke-direct {v0}, Landroidx/customview/view/AbsSavedState$2;-><init>()V
 
+    .line 11
+    .line 12
+    .line 13
     sput-object v0, Landroidx/customview/view/AbsSavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -159,8 +172,10 @@
 .method public describeContents()I
     .locals 0
 
+    .line 1
     const/4 p0, 0x0
 
+    .line 2
     return p0
 .end method
 
@@ -172,6 +187,8 @@
     .line 1
     iget-object p0, p0, Landroidx/customview/view/AbsSavedState;->mSuperState:Landroid/os/Parcelable;
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -181,7 +198,12 @@
     .line 1
     iget-object p0, p0, Landroidx/customview/view/AbsSavedState;->mSuperState:Landroid/os/Parcelable;
 
+    .line 2
+    .line 3
     invoke-virtual {p1, p0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

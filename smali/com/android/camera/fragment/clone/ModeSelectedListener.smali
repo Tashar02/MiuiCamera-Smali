@@ -8,12 +8,4 @@
 .end method
 
 .method public abstract onModeSelected(Lcom/xiaomi/fenshen/FenShenCam$Mode;)V
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x0
-        }
-        names = {
-            "mode"
-        }
-    .end annotation
 .end method

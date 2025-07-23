@@ -24,27 +24,26 @@
 
 # direct methods
 .method public constructor <init>(II[F)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x3
-
-    new-array v0, v0, [F
-
     .line 2
-    iput-object v0, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->coordinates:[F
-
     .line 3
+    .line 4
     iput p1, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->channelLabel:I
 
-    .line 4
+    .line 5
+    .line 6
     iput p2, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->channelFlags:I
 
-    .line 5
+    .line 7
+    .line 8
     iput-object p3, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->coordinates:[F
 
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -56,6 +55,8 @@
     .line 1
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->channelFlags:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -65,6 +66,8 @@
     .line 1
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->channelLabel:I
 
+    .line 2
+    .line 3
     return p0
 .end method
 
@@ -74,6 +77,8 @@
     .line 1
     iget-object p0, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->coordinates:[F
 
+    .line 2
+    .line 3
     return-object p0
 .end method
 
@@ -83,9 +88,15 @@
     .line 1
     iget p0, p0, Lorg/jcodec/containers/mp4/boxes/ChannelBox$ChannelDescription;->channelLabel:I
 
+    .line 2
+    .line 3
     invoke-static {p0}, Lorg/jcodec/common/model/Label;->getByVal(I)Lorg/jcodec/common/model/Label;
 
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
+    .line 7
     return-object p0
 .end method

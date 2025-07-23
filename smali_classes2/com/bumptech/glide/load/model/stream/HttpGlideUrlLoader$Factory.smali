@@ -48,14 +48,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    .line 3
+    .line 4
     new-instance v0, Lcom/bumptech/glide/load/model/ModelCache;
 
+    .line 5
+    .line 6
     const-wide/16 v1, 0x1f4
 
+    .line 7
+    .line 8
     invoke-direct {v0, v1, v2}, Lcom/bumptech/glide/load/model/ModelCache;-><init>(J)V
 
+    .line 9
+    .line 10
+    .line 11
     iput-object v0, p0, Lcom/bumptech/glide/load/model/stream/HttpGlideUrlLoader$Factory;->modelCache:Lcom/bumptech/glide/load/model/ModelCache;
 
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -81,15 +92,23 @@
     .line 1
     new-instance p1, Lcom/bumptech/glide/load/model/stream/HttpGlideUrlLoader;
 
+    .line 2
+    .line 3
     iget-object p0, p0, Lcom/bumptech/glide/load/model/stream/HttpGlideUrlLoader$Factory;->modelCache:Lcom/bumptech/glide/load/model/ModelCache;
 
+    .line 4
+    .line 5
     invoke-direct {p1, p0}, Lcom/bumptech/glide/load/model/stream/HttpGlideUrlLoader;-><init>(Lcom/bumptech/glide/load/model/ModelCache;)V
 
+    .line 6
+    .line 7
+    .line 8
     return-object p1
 .end method
 
 .method public teardown()V
     .locals 0
 
+    .line 1
     return-void
 .end method
